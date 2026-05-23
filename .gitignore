@@ -1,1 +1,3 @@
 .vercel
+.tmp_pdfs/
+.tmp_pypdf/
