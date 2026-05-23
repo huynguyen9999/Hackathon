@@ -1,3 +1,4 @@
+import { spreadRoadmapNodePositions } from "@/lib/roadmap-layout";
 import type {
   EdgeType,
   FlowEdge,
@@ -53,7 +54,7 @@ export function roadmapNodeToFlowNode(node: RoadmapNode): FlowNode | null {
 }
 
 export function roadmapNodesToFlowNodes(nodes: RoadmapNode[]): FlowNode[] {
-  return nodes
+  return spreadRoadmapNodePositions(nodes)
     .map(roadmapNodeToFlowNode)
     .filter((n): n is FlowNode => n !== null);
 }

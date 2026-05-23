@@ -14,54 +14,405 @@
     "source_url": "https://www.pstat.ucsb.edu/media/161"
   },
   "nodes": [
-    { "id": "math-3a", "node_type": "course", "label": "MATH 3A", "title": "Calculus I", "units": 4, "self_learnable": false, "position_x": 80, "position_y": 80 },
-    { "id": "math-3b", "node_type": "course", "label": "MATH 3B", "title": "Calculus II", "units": 4, "self_learnable": false, "position_x": 80, "position_y": 200 },
-    { "id": "cmpsc-8", "node_type": "course", "label": "CMPSC 8", "title": "Intro to Python", "units": 4, "self_learnable": true, "position_x": 280, "position_y": 80 },
-    { "id": "math-4a", "node_type": "course", "label": "MATH 4A", "title": "Linear Algebra", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 200 },
-    { "id": "cmpsc-9", "node_type": "course", "label": "CMPSC 9", "title": "Intermediate Python", "units": 4, "self_learnable": true, "position_x": 480, "position_y": 80 },
-    { "id": "math-6a", "node_type": "course", "label": "MATH 6A", "title": "Vector Calculus I", "units": 4, "self_learnable": false, "position_x": 480, "position_y": 200 },
-    { "id": "math-4b", "node_type": "course", "label": "MATH 4B", "title": "Differential Equations", "units": 4, "self_learnable": false, "position_x": 480, "position_y": 320 },
-    { "id": "pstat-10", "node_type": "course", "label": "PSTAT 10", "title": "Probability and Statistics", "units": 5, "self_learnable": false, "position_x": 680, "position_y": 200 },
-    { "id": "math-8", "node_type": "course", "label": "MATH 8", "title": "Transition to Proofs", "units": 5, "self_learnable": false, "position_x": 680, "position_y": 320 },
-    { "id": "math-6b", "node_type": "course", "label": "MATH 6B", "title": "Vector Calculus II", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 320 },
-    { "id": "pstat-120a", "node_type": "course", "label": "PSTAT 120A", "title": "Probability", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 200 },
-    { "id": "pstat-120b", "node_type": "course", "label": "PSTAT 120B", "title": "Statistics", "units": 4, "self_learnable": false, "position_x": 1080, "position_y": 120 },
-    { "id": "pstat-171", "node_type": "course", "label": "PSTAT 171", "title": "Stochastic Calculus", "units": 4, "self_learnable": false, "position_x": 1080, "position_y": 240 },
-    { "id": "pstat-160a", "node_type": "course", "label": "PSTAT 160A", "title": "Mathematical Statistics", "units": 4, "self_learnable": false, "position_x": 1280, "position_y": 120 },
-    { "id": "pstat-126", "node_type": "course", "label": "PSTAT 126", "title": "Regression Analysis", "units": 4, "self_learnable": false, "position_x": 1280, "position_y": 240 },
-    { "id": "pstat-170", "node_type": "course", "label": "PSTAT 170", "title": "Mathematical Finance", "units": 4, "self_learnable": false, "position_x": 1480, "position_y": 120 },
-    { "id": "pstat-174", "node_type": "course", "label": "PSTAT 174", "title": "Financial Mathematics", "units": 4, "self_learnable": false, "position_x": 1680, "position_y": 120 },
-    { "id": "pstat-172a", "node_type": "course", "label": "PSTAT 172A", "title": "Actuarial Models I", "units": 4, "self_learnable": false, "position_x": 1680, "position_y": 240 },
-    { "id": "pstat-172b", "node_type": "course", "label": "PSTAT 172B", "title": "Actuarial Models II", "units": 4, "self_learnable": false, "position_x": 1880, "position_y": 120 },
-    { "id": "pstat-173", "node_type": "course", "label": "PSTAT 173", "title": "Actuarial Statistics", "units": 4, "self_learnable": false, "position_x": 1880, "position_y": 240 },
-    { "id": "career-actuary", "node_type": "career", "label": "Actuary", "title": "SOA / CAS actuary", "self_learnable": false, "position_x": 2080, "position_y": 80 },
-    { "id": "career-risk", "node_type": "career", "label": "Risk analyst", "title": "Enterprise risk & insurance", "self_learnable": false, "position_x": 2080, "position_y": 200 },
-    { "id": "career-quant", "node_type": "career", "label": "Quant finance", "title": "Quantitative finance", "self_learnable": false, "position_x": 2080, "position_y": 320 },
-    { "id": "career-bsms", "node_type": "career", "label": "BS/MS pathway", "title": "Combined BS/MS + industry thesis", "self_learnable": false, "position_x": 2080, "position_y": 440 }
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "Calculus I",
+      "description": "Limits, derivatives, and integrals—foundation for probability, finance, and actuarial modeling.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "math-3b",
+      "node_type": "course",
+      "label": "MATH 3B",
+      "title": "Calculus II",
+      "description": "Integration techniques, sequences, and series; prerequisite for linear algebra and vector calculus.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 300
+    },
+    {
+      "id": "cmpsc-8",
+      "node_type": "course",
+      "label": "CMPSC 8",
+      "title": "Introduction to Python",
+      "description": "Python programming for data analysis and computation—required preparation for actuarial coursework.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "math-4a",
+      "node_type": "course",
+      "label": "MATH 4A",
+      "title": "Linear Algebra",
+      "description": "Vector spaces, matrices, and linear transformations; core math for statistics and actuarial models.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 300
+    },
+    {
+      "id": "cmpsc-9",
+      "node_type": "course",
+      "label": "CMPSC 9",
+      "title": "Intermediate Python",
+      "description": "Intermediate Python and software skills; recommended over CMPSC 16 for actuarial majors.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "math-6a",
+      "node_type": "course",
+      "label": "MATH 6A",
+      "title": "Vector Calculus I",
+      "description": "Multivariable calculus: partial derivatives, multiple integrals, and vector fields.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 300
+    },
+    {
+      "id": "math-4b",
+      "node_type": "course",
+      "label": "MATH 4B",
+      "title": "Differential Equations",
+      "description": "Ordinary differential equations and applications in science, economics, and risk modeling.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 520
+    },
+    {
+      "id": "pstat-10",
+      "node_type": "course",
+      "label": "PSTAT 10",
+      "title": "Probability and Statistics",
+      "description": "Introductory probability and statistics; gateway to upper-division PSTAT actuarial sequence.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "math-8",
+      "node_type": "course",
+      "label": "MATH 8",
+      "title": "Transition to Proofs",
+      "description": "Proof writing and discrete math; required for upper-division probability and mathematical statistics.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 300
+    },
+    {
+      "id": "math-6b",
+      "node_type": "course",
+      "label": "MATH 6B",
+      "title": "Vector Calculus II",
+      "description": "Line and surface integrals, Green's, Stokes', and divergence theorems.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 300
+    },
+    {
+      "id": "pstat-120a",
+      "node_type": "course",
+      "label": "PSTAT 120A",
+      "title": "Probability",
+      "description": "Rigorous probability theory: random variables, distributions, and limit theorems for actuarial exams.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "pstat-120b",
+      "node_type": "course",
+      "label": "PSTAT 120B",
+      "title": "Statistics",
+      "description": "Statistical inference: estimation, hypothesis testing, and confidence intervals.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "pstat-171",
+      "node_type": "course",
+      "label": "PSTAT 171",
+      "title": "Stochastic Calculus",
+      "description": "Brownian motion, Itô calculus, and stochastic processes for quantitative finance and actuarial science.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "pstat-160a",
+      "node_type": "course",
+      "label": "PSTAT 160A",
+      "title": "Mathematical Statistics",
+      "description": "Theory of point estimation, sufficiency, and statistical decision theory.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "pstat-126",
+      "node_type": "course",
+      "label": "PSTAT 126",
+      "title": "Regression Analysis",
+      "description": "Linear and multiple regression, model diagnostics, and applied statistical modeling.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "pstat-170",
+      "node_type": "course",
+      "label": "PSTAT 170",
+      "title": "Mathematical Finance",
+      "description": "Option pricing, portfolio theory, and financial derivatives using stochastic methods.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "pstat-174",
+      "node_type": "course",
+      "label": "PSTAT 174",
+      "title": "Financial Mathematics",
+      "description": "Interest theory, annuities, and actuarial mathematics aligned with SOA Exam FM topics.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "pstat-172a",
+      "node_type": "course",
+      "label": "PSTAT 172A",
+      "title": "Actuarial Models I",
+      "description": "Life contingencies, survival models, and life insurance mathematics (Exam LTAM prep).",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 300
+    },
+    {
+      "id": "pstat-172b",
+      "node_type": "course",
+      "label": "PSTAT 172B",
+      "title": "Actuarial Models II",
+      "description": "Loss models, credibility, and short-term insurance actuarial methods.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 80
+    },
+    {
+      "id": "pstat-173",
+      "node_type": "course",
+      "label": "PSTAT 173",
+      "title": "Actuarial Statistics",
+      "description": "Statistical methods for actuarial modeling and Exam STAM preparation.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 300
+    },
+    {
+      "id": "career-actuary",
+      "node_type": "career",
+      "label": "Actuary",
+      "title": "SOA / CAS Actuary",
+      "description": "Pricing and reserving for insurance, pensions, and enterprise risk—SOA or CAS credential track.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 80
+    },
+    {
+      "id": "career-risk",
+      "node_type": "career",
+      "label": "Risk Analyst",
+      "title": "Enterprise Risk & Insurance",
+      "description": "Quantify and manage financial, operational, and insurance risk for firms and regulators.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 300
+    },
+    {
+      "id": "career-quant",
+      "node_type": "career",
+      "label": "Quant Finance",
+      "title": "Quantitative Finance",
+      "description": "Derivatives pricing, trading strategies, and risk analytics in banking and asset management.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 520
+    },
+    {
+      "id": "career-bsms",
+      "node_type": "career",
+      "label": "BS/MS Pathway",
+      "title": "Combined BS/MS + Industry Thesis",
+      "description": "UCSB actuarial BS/MS program with accelerated graduate coursework and industry thesis option.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 740
+    }
   ],
   "edges": [
-    { "id": "e1", "source_id": "math-3a", "target_id": "math-3b", "edge_type": "prerequisite" },
-    { "id": "e2", "source_id": "math-3b", "target_id": "math-4a", "edge_type": "prerequisite" },
-    { "id": "e3", "source_id": "math-3b", "target_id": "math-6a", "edge_type": "prerequisite" },
-    { "id": "e4", "source_id": "math-4a", "target_id": "math-8", "edge_type": "prerequisite" },
-    { "id": "e5", "source_id": "math-6a", "target_id": "math-6b", "edge_type": "prerequisite" },
-    { "id": "e6", "source_id": "math-4a", "target_id": "math-4b", "edge_type": "prerequisite" },
-    { "id": "e7", "source_id": "cmpsc-8", "target_id": "cmpsc-9", "edge_type": "prerequisite" },
-    { "id": "e8", "source_id": "math-3a", "target_id": "pstat-10", "edge_type": "prerequisite" },
-    { "id": "e9", "source_id": "pstat-10", "target_id": "pstat-120a", "edge_type": "prerequisite" },
-    { "id": "e10", "source_id": "math-8", "target_id": "pstat-120a", "edge_type": "prerequisite" },
-    { "id": "e11", "source_id": "pstat-120a", "target_id": "pstat-120b", "edge_type": "prerequisite" },
-    { "id": "e12", "source_id": "pstat-120a", "target_id": "pstat-160a", "edge_type": "prerequisite" },
-    { "id": "e13", "source_id": "pstat-120b", "target_id": "pstat-126", "edge_type": "prerequisite" },
-    { "id": "e14", "source_id": "pstat-120a", "target_id": "pstat-171", "edge_type": "prerequisite" },
-    { "id": "e15", "source_id": "pstat-171", "target_id": "pstat-170", "edge_type": "prerequisite" },
-    { "id": "e16", "source_id": "pstat-160a", "target_id": "pstat-174", "edge_type": "prerequisite" },
-    { "id": "e17", "source_id": "pstat-170", "target_id": "pstat-172a", "edge_type": "prerequisite" },
-    { "id": "e18", "source_id": "pstat-172a", "target_id": "pstat-172b", "edge_type": "prerequisite" },
-    { "id": "e19", "source_id": "pstat-172b", "target_id": "pstat-173", "edge_type": "prerequisite" },
-    { "id": "e20", "source_id": "pstat-173", "target_id": "career-actuary", "edge_type": "leads_to" },
-    { "id": "e21", "source_id": "pstat-174", "target_id": "career-risk", "edge_type": "leads_to" },
-    { "id": "e22", "source_id": "pstat-170", "target_id": "career-quant", "edge_type": "leads_to" },
-    { "id": "e23", "source_id": "pstat-172b", "target_id": "career-bsms", "edge_type": "leads_to" }
+    {
+      "id": "e1",
+      "source_id": "math-3a",
+      "target_id": "math-3b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3b",
+      "target_id": "math-4a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "math-3b",
+      "target_id": "math-6a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "math-4a",
+      "target_id": "math-8",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "math-6a",
+      "target_id": "math-6b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "math-4a",
+      "target_id": "math-4b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "cmpsc-8",
+      "target_id": "cmpsc-9",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "math-3a",
+      "target_id": "pstat-10",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "pstat-10",
+      "target_id": "pstat-120a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e10",
+      "source_id": "math-8",
+      "target_id": "pstat-120a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e11",
+      "source_id": "pstat-120a",
+      "target_id": "pstat-120b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e12",
+      "source_id": "pstat-120a",
+      "target_id": "pstat-160a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e13",
+      "source_id": "pstat-120b",
+      "target_id": "pstat-126",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e14",
+      "source_id": "pstat-120a",
+      "target_id": "pstat-171",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e15",
+      "source_id": "pstat-171",
+      "target_id": "pstat-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e16",
+      "source_id": "pstat-160a",
+      "target_id": "pstat-174",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e17",
+      "source_id": "pstat-170",
+      "target_id": "pstat-172a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e18",
+      "source_id": "pstat-172a",
+      "target_id": "pstat-172b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e19",
+      "source_id": "pstat-172b",
+      "target_id": "pstat-173",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e20",
+      "source_id": "pstat-173",
+      "target_id": "career-actuary",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "e21",
+      "source_id": "pstat-174",
+      "target_id": "career-risk",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "e22",
+      "source_id": "pstat-170",
+      "target_id": "career-quant",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "e23",
+      "source_id": "pstat-172b",
+      "target_id": "career-bsms",
+      "edge_type": "leads_to"
+    }
   ]
 }
