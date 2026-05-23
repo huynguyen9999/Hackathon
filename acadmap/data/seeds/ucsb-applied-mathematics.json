@@ -11,7 +11,8 @@
   },
   "metadata": {
     "source": "UCSB L&S Applied Mathematics (2025-2026)",
-    "source_url": "https://catalog.ucsb.edu/programs/BSAPM"
+    "source_url": "https://catalog.ucsb.edu/programs/BSAPM",
+    "layout": "digit_columns"
   },
   "nodes": [
     {
@@ -23,7 +24,7 @@
       "units": 4,
       "self_learnable": false,
       "position_x": 80,
-      "position_y": 80
+      "position_y": 60
     },
     {
       "id": "math-4a",
@@ -33,8 +34,8 @@
       "description": "Linear Algebra & Differential Equations — part of the Applied Mathematics prerequisite and major sequence.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 380,
-      "position_y": 80
+      "position_x": 80,
+      "position_y": 235
     },
     {
       "id": "math-8",
@@ -44,8 +45,8 @@
       "description": "Transition to Proofs — part of the Applied Mathematics prerequisite and major sequence.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 680,
-      "position_y": 80
+      "position_x": 80,
+      "position_y": 585
     },
     {
       "id": "phys-7a",
@@ -55,8 +56,8 @@
       "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 980,
-      "position_y": 80
+      "position_x": 80,
+      "position_y": 410
     },
     {
       "id": "math-118a",
@@ -66,8 +67,8 @@
       "description": "Real Analysis — part of the Applied Mathematics prerequisite and major sequence.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 1280,
-      "position_y": 80
+      "position_x": 320,
+      "position_y": 235
     },
     {
       "id": "math-111a",
@@ -77,8 +78,8 @@
       "description": "Abstract Algebra — part of the Applied Mathematics prerequisite and major sequence.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 1580,
-      "position_y": 80
+      "position_x": 320,
+      "position_y": 60
     },
     {
       "id": "math-124",
@@ -88,8 +89,8 @@
       "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 1880,
-      "position_y": 80
+      "position_x": 320,
+      "position_y": 410
     },
     {
       "id": "math-132",
@@ -99,8 +100,8 @@
       "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 2180,
-      "position_y": 80
+      "position_x": 320,
+      "position_y": 585
     },
     {
       "id": "math-160",
@@ -110,8 +111,8 @@
       "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 2480,
-      "position_y": 80
+      "position_x": 320,
+      "position_y": 760
     },
     {
       "id": "math-170",
@@ -121,8 +122,8 @@
       "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 2780,
-      "position_y": 80
+      "position_x": 320,
+      "position_y": 935
     },
     {
       "id": "career-data-science",
@@ -131,8 +132,8 @@
       "title": "Data science",
       "description": "Career path for Applied Mathematics graduates: Data science.",
       "self_learnable": false,
-      "position_x": 3080,
-      "position_y": 80
+      "position_x": 560,
+      "position_y": 60
     },
     {
       "id": "career-engineering",
@@ -141,8 +142,8 @@
       "title": "Engineering",
       "description": "Career path for Applied Mathematics graduates: Engineering.",
       "self_learnable": false,
-      "position_x": 3080,
-      "position_y": 300
+      "position_x": 560,
+      "position_y": 235
     },
     {
       "id": "career-finance",
@@ -151,8 +152,8 @@
       "title": "Finance",
       "description": "Career path for Applied Mathematics graduates: Finance.",
       "self_learnable": false,
-      "position_x": 3080,
-      "position_y": 520
+      "position_x": 560,
+      "position_y": 410
     },
     {
       "id": "career-research",
@@ -161,8 +162,8 @@
       "title": "Research",
       "description": "Career path for Applied Mathematics graduates: Research.",
       "self_learnable": false,
-      "position_x": 3080,
-      "position_y": 740
+      "position_x": 560,
+      "position_y": 585
     }
   ],
   "edges": [

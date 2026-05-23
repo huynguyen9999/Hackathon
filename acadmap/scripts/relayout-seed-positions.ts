@@ -5,7 +5,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 
-import { spreadRoadmapNodePositions } from "../lib/roadmap-layout";
+import { layoutRoadmapNodes } from "../lib/roadmap-layout";
 import type { SeedRoadmapInput } from "../lib/types";
 
 const SEEDS_DIR = path.join(process.cwd(), "data", "seeds");
@@ -27,7 +27,8 @@ async function main() {
     const raw = await fs.readFile(filePath, "utf-8");
     const seed = JSON.parse(raw) as SeedRoadmapInput;
 
-    seed.nodes = spreadRoadmapNodePositions(seed.nodes);
+    const layout = seed.metadata?.layout as string | undefined;
+    seed.nodes = layoutRoadmapNodes(seed.nodes, layout);
     await fs.writeFile(filePath, `${JSON.stringify(seed, null, 2)}\n`, "utf-8");
     console.log(`Relaid out ${file} (${seed.nodes.length} nodes)`);
   }

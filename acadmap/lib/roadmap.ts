@@ -77,6 +77,7 @@ export function seedInputToDetail(
     edges,
     school,
     major,
+    metadata: input.metadata,
   };
 }
 

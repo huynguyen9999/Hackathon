@@ -23,8 +23,12 @@ export function RoadmapView({ roadmap, departmentFaculty }: RoadmapViewProps) {
   );
 
   const flowNodes = useMemo(
-    () => roadmapNodesToFlowNodes(roadmap.nodes),
-    [roadmap.nodes],
+    () =>
+      roadmapNodesToFlowNodes(
+        roadmap.nodes,
+        roadmap.metadata?.layout as string | undefined,
+      ),
+    [roadmap.nodes, roadmap.metadata?.layout],
   );
 
   const flowEdges = useMemo(

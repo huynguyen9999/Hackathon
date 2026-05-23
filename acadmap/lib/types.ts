@@ -73,6 +73,7 @@ export interface SeedRoadmapInput {
 export interface RoadmapDetail extends Roadmap {
   school: School;
   major: Major;
+  metadata?: SeedRoadmapInput["metadata"];
 }
 
 /** GET /api/roadmaps list item (no nodes/edges). */

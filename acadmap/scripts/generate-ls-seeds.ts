@@ -5,7 +5,7 @@
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "fs";
 import path from "path";
 
-import { spreadRoadmapNodePositions } from "../lib/roadmap-layout";
+import { layoutRoadmapNodes } from "../lib/roadmap-layout";
 import type { CourseRef, LsMajorDetail } from "../lib/ucsb-major-detail-types";
 import type { SeedRoadmapInput } from "../lib/types";
 
@@ -92,9 +92,7 @@ function buildSeed(
     throw new Error(`${detail.slug}: not enough valid course codes (${courses.length})`);
   }
 
-  const courseNodes = courses.map((ref, index) => {
-    const col = index;
-    return {
+  const courseNodes = courses.map((ref) => ({
       id: slugifyCode(ref.code),
       node_type: "course" as const,
       label: ref.code,
@@ -102,12 +100,10 @@ function buildSeed(
       description: courseDescription(ref, detail.name),
       units: ref.units ?? 4,
       self_learnable: /CMPSC|CS|python|programming/i.test(ref.code + (ref.title ?? "")),
-      position_x: 80 + col * 300,
+      position_x: 80,
       position_y: 80,
-    };
-  });
+    }));
 
-  const careerStartX = 80 + courseNodes.length * 300;
   const careerNodes = careers.map((outcome, index) => ({
     id: careerId(outcome, index),
     node_type: "career" as const,
@@ -115,7 +111,7 @@ function buildSeed(
     title: outcome,
     description: `Career path for ${detail.name} graduates: ${outcome}.`,
     self_learnable: false,
-    position_x: careerStartX,
+    position_x: 80,
     position_y: 80 + index * 220,
   }));
 
@@ -156,8 +152,9 @@ function buildSeed(
     metadata: {
       source: `UCSB L&S ${detail.name} (${detail.catalog_year})`,
       source_url: sourceUrl,
+      layout: "digit_columns",
     },
-    nodes: spreadRoadmapNodePositions([...courseNodes, ...careerNodes]),
+    nodes: layoutRoadmapNodes([...courseNodes, ...careerNodes], "digit_columns"),
     edges,
   };
 
