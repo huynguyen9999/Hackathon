@@ -1,0 +1,70 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Financial Mathematics and Statistics",
+    "slug": "financial-mathematics-and-statistics",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "PSTAT FMS major sheet 2025-26",
+    "source_url": "https://www.pstat.ucsb.edu/media/160"
+  },
+  "nodes": [
+    { "id": "econ-1", "node_type": "course", "label": "ECON 1", "title": "Principles of Microeconomics", "units": 4, "self_learnable": false, "position_x": 80, "position_y": 80 },
+    { "id": "econ-2", "node_type": "course", "label": "ECON 2", "title": "Principles of Macroeconomics", "units": 4, "self_learnable": false, "position_x": 80, "position_y": 200 },
+    { "id": "math-3a", "node_type": "course", "label": "MATH 3A", "title": "Calculus I", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 80 },
+    { "id": "math-3b", "node_type": "course", "label": "MATH 3B", "title": "Calculus II", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 200 },
+    { "id": "math-4a", "node_type": "course", "label": "MATH 4A", "title": "Linear Algebra", "units": 4, "self_learnable": false, "position_x": 480, "position_y": 80 },
+    { "id": "econ-10a", "node_type": "course", "label": "ECON 10A", "title": "Intermediate Microeconomics", "units": 5, "self_learnable": false, "position_x": 480, "position_y": 200 },
+    { "id": "cmpsc-8", "node_type": "course", "label": "CMPSC 8", "title": "Intro to Python", "units": 4, "self_learnable": true, "position_x": 480, "position_y": 320 },
+    { "id": "math-6a", "node_type": "course", "label": "MATH 6A", "title": "Vector Calculus I", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 80 },
+    { "id": "pstat-10", "node_type": "course", "label": "PSTAT 10", "title": "Probability and Statistics", "units": 5, "self_learnable": false, "position_x": 680, "position_y": 200 },
+    { "id": "math-4b", "node_type": "course", "label": "MATH 4B", "title": "Differential Equations", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 320 },
+    { "id": "math-8", "node_type": "course", "label": "MATH 8", "title": "Transition to Proofs", "units": 5, "self_learnable": false, "position_x": 880, "position_y": 200 },
+    { "id": "math-6b", "node_type": "course", "label": "MATH 6B", "title": "Vector Calculus II", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 320 },
+    { "id": "pstat-120a", "node_type": "course", "label": "PSTAT 120A", "title": "Probability", "units": 4, "self_learnable": false, "position_x": 1080, "position_y": 200 },
+    { "id": "pstat-120b", "node_type": "course", "label": "PSTAT 120B", "title": "Statistics", "units": 4, "self_learnable": false, "position_x": 1280, "position_y": 120 },
+    { "id": "pstat-160a", "node_type": "course", "label": "PSTAT 160A", "title": "Mathematical Statistics", "units": 4, "self_learnable": false, "position_x": 1280, "position_y": 240 },
+    { "id": "pstat-160b", "node_type": "course", "label": "PSTAT 160B", "title": "Mathematical Statistics II", "units": 4, "self_learnable": false, "position_x": 1480, "position_y": 120 },
+    { "id": "pstat-126", "node_type": "course", "label": "PSTAT 126", "title": "Regression Analysis", "units": 4, "self_learnable": false, "position_x": 1480, "position_y": 240 },
+    { "id": "math-117", "node_type": "course", "label": "MATH 117", "title": "Series and Sequences", "units": 4, "self_learnable": false, "position_x": 1680, "position_y": 120 },
+    { "id": "math-104a", "node_type": "course", "label": "MATH 104A", "title": "Numerical Analysis", "units": 4, "self_learnable": false, "position_x": 1880, "position_y": 80 },
+    { "id": "pstat-170", "node_type": "course", "label": "PSTAT 170", "title": "Mathematical Finance", "units": 4, "self_learnable": false, "position_x": 1880, "position_y": 200 },
+    { "id": "math-104b", "node_type": "course", "label": "MATH 104B", "units": 4, "self_learnable": false, "position_x": 2080, "position_y": 80 },
+    { "id": "math-104c", "node_type": "course", "label": "MATH 104C", "units": 4, "self_learnable": false, "position_x": 2280, "position_y": 80 },
+    { "id": "career-quant", "node_type": "career", "label": "Quant finance", "title": "Quantitative finance / trading", "self_learnable": false, "position_x": 2480, "position_y": 80 },
+    { "id": "career-risk", "node_type": "career", "label": "Risk analyst", "title": "Risk management & insurance", "self_learnable": false, "position_x": 2480, "position_y": 200 },
+    { "id": "career-ds", "node_type": "career", "label": "Data science", "title": "Data science & analytics", "self_learnable": false, "position_x": 2480, "position_y": 320 },
+    { "id": "career-grad", "node_type": "career", "label": "Grad school", "title": "MS/PhD in statistics or financial math", "self_learnable": false, "position_x": 2480, "position_y": 440 }
+  ],
+  "edges": [
+    { "id": "e1", "source_id": "math-3a", "target_id": "math-3b", "edge_type": "prerequisite" },
+    { "id": "e2", "source_id": "math-3b", "target_id": "math-4a", "edge_type": "prerequisite" },
+    { "id": "e3", "source_id": "math-3b", "target_id": "math-6a", "edge_type": "prerequisite" },
+    { "id": "e4", "source_id": "math-4a", "target_id": "math-8", "edge_type": "prerequisite" },
+    { "id": "e5", "source_id": "math-6a", "target_id": "math-6b", "edge_type": "prerequisite" },
+    { "id": "e6", "source_id": "math-4a", "target_id": "math-4b", "edge_type": "prerequisite" },
+    { "id": "e7", "source_id": "econ-1", "target_id": "econ-2", "edge_type": "recommended" },
+    { "id": "e8", "source_id": "econ-1", "target_id": "econ-10a", "edge_type": "prerequisite" },
+    { "id": "e9", "source_id": "math-3a", "target_id": "pstat-10", "edge_type": "prerequisite" },
+    { "id": "e10", "source_id": "pstat-10", "target_id": "pstat-120a", "edge_type": "prerequisite" },
+    { "id": "e11", "source_id": "math-8", "target_id": "pstat-120a", "edge_type": "prerequisite" },
+    { "id": "e12", "source_id": "pstat-120a", "target_id": "pstat-120b", "edge_type": "prerequisite" },
+    { "id": "e13", "source_id": "pstat-120a", "target_id": "pstat-160a", "edge_type": "prerequisite" },
+    { "id": "e14", "source_id": "pstat-160a", "target_id": "pstat-160b", "edge_type": "prerequisite" },
+    { "id": "e15", "source_id": "pstat-120b", "target_id": "pstat-126", "edge_type": "prerequisite" },
+    { "id": "e16", "source_id": "math-8", "target_id": "math-117", "edge_type": "prerequisite" },
+    { "id": "e17", "source_id": "pstat-160a", "target_id": "pstat-170", "edge_type": "prerequisite" },
+    { "id": "e18", "source_id": "math-117", "target_id": "math-104a", "edge_type": "prerequisite" },
+    { "id": "e19", "source_id": "math-104a", "target_id": "math-104b", "edge_type": "prerequisite" },
+    { "id": "e20", "source_id": "math-104b", "target_id": "math-104c", "edge_type": "prerequisite" },
+    { "id": "e21", "source_id": "pstat-170", "target_id": "career-quant", "edge_type": "leads_to" },
+    { "id": "e22", "source_id": "pstat-126", "target_id": "career-ds", "edge_type": "leads_to" },
+    { "id": "e23", "source_id": "pstat-160b", "target_id": "career-risk", "edge_type": "leads_to" },
+    { "id": "e24", "source_id": "math-104c", "target_id": "career-grad", "edge_type": "leads_to" }
+  ]
+}

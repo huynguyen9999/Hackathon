@@ -47,9 +47,13 @@ Use this file when running **multiple Cursor agents** (or subagents) in parallel
 
 > Split majors across sciences, social sciences, humanities, and languages/arts. Edit `lib/ucsb-dept-urls.ts`, then run `npm run fetch:ls` + `npm run validate:ls`. Prompt templates in `docs/UCSB-LS-RESEARCH.md`.
 
+**L&S major sheet agent** (Wave 1+)
+
+> Parse department major sheet PDF → write `data/ucsb/ls-majors/{slug}.json` following `lib/ucsb-major-detail-types.ts`. Add URLs to `data/ucsb/major-sheet-sources.json`. Run `npm run validate:details` + `npm run sync:details`. Use FMS (`financial-mathematics-and-statistics.json`) as the reference. QA checklist in `docs/UCSB-LS-RESEARCH.md`.
+
 **Data agent** — per major
 
-> Create `data/seeds/ucsb-{slug}.json` from catalog core courses + official prerequisites. Mark `roadmap_available: true` in catalog when done.
+> Create `data/seeds/ucsb-{slug}.json` from catalog core courses + official prerequisites. Mark `roadmap_available: true` in catalog when done (or run `npm run sync:details` after seed exists). FMS pilot: `data/seeds/ucsb-financial-mathematics-and-statistics.json`.
 
 ### Phase 3 — Split across agents
 
@@ -96,6 +100,9 @@ cp .env.example .env.local   # optional until Supabase is live
 npm run dev                  # http://localhost:3000
 npm run fetch:ls             # merge 58 L&S majors into ls-catalog.json
 npm run validate:ls          # assert catalog integrity
+npm run fetch:sheets         # scaffold ls-majors from major-sheet-sources.json
+npm run validate:details     # validate ls-majors/*.json schema
+npm run sync:details         # sync detail_available, sheet URLs into ls-catalog.json
 ```
 
 If the parent folder path contains `:`, prefer:

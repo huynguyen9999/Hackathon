@@ -1,0 +1,44 @@
+{
+  "catalog_year": "2025-2026",
+  "sources": {
+    "financial-mathematics-and-statistics": {
+      "dept_page": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/fms-major",
+      "major_sheet_pdf": "https://www.pstat.ucsb.edu/sites/default/files/2025-10/Financial%20Mathematics%20%26%20Statistics%20Major%20%282025%29%20%281%29.pdf",
+      "major_sheet_media": "https://www.pstat.ucsb.edu/media/160",
+      "plan_of_study_pdf": "https://www.pstat.ucsb.edu/media/68"
+    },
+    "actuarial-science": {
+      "dept_page": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/actuarial-science-major",
+      "major_sheet_pdf": "https://www.pstat.ucsb.edu/media/161",
+      "plan_of_study_pdf": "https://www.pstat.ucsb.edu/media/69"
+    },
+    "statistics-and-data-science": {
+      "dept_page": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/stats-and-data-science-major",
+      "major_sheet_pdf": "https://www.pstat.ucsb.edu/media/158",
+      "plan_of_study_pdf": "https://www.pstat.ucsb.edu/media/106"
+    },
+    "economics": {
+      "dept_page": "https://econ.ucsb.edu/programs/undergraduate/majors",
+      "major_sheet_pdf": "https://econ.ucsb.edu/sites/default/files/2025-10/Economics%20Major%20%282025%29.pdf",
+      "plan_of_study_pdf": "https://econ.ucsb.edu/sites/default/files/2022-04/ECON%20suggested%20plan%20%20%281%29.pdf"
+    },
+    "economics-and-accounting": {
+      "dept_page": "https://econ.ucsb.edu/programs/undergraduate/majors",
+      "major_sheet_pdf": "https://econ.ucsb.edu/sites/default/files/2025-10/Economics%20%26%20Accounting%20Major%20%282025%29.pdf",
+      "plan_of_study_pdf": "https://econ.ucsb.edu/sites/default/files/2021-06/Economics%20%26%20Accounting%20Major%20Suggested%20Plan%20of%20Study.pdf"
+    },
+    "mathematics": {
+      "dept_page": "https://www.math.ucsb.edu/undergraduate",
+      "major_sheet_pdf": "https://catalog.ucsb.edu/programs/BAMATH",
+      "catalog_program_code": "BAMATH"
+    }
+  },
+  "wave_1": [
+    "financial-mathematics-and-statistics",
+    "actuarial-science",
+    "statistics-and-data-science",
+    "economics",
+    "economics-and-accounting",
+    "mathematics"
+  ]
+}

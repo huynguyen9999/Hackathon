@@ -8,7 +8,10 @@
     "start": "node ./node_modules/next/dist/bin/next start",
     "lint": "node ./node_modules/next/dist/bin/next lint",
     "fetch:ls": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-ls-requirements.ts",
-    "validate:ls": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ls-catalog.ts"
+    "validate:ls": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ls-catalog.ts",
+    "fetch:sheets": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-major-sheets.ts",
+    "sync:details": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-ls-details.ts",
+    "validate:details": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ls-major-details.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",

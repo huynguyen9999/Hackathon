@@ -33,6 +33,14 @@ export function MajorCatalogGrid({
                 <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase text-emerald-200">
                   Live graph
                 </span>
+              ) : showRequirementsLevel && major.requirements_level === "roadmap" ? (
+                <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase text-emerald-200">
+                  Live graph
+                </span>
+              ) : showRequirementsLevel && major.requirements_level === "sheet" ? (
+                <span className="rounded-full bg-teal-500/15 px-2 py-0.5 text-[10px] font-bold uppercase text-teal-200">
+                  Sheet detail
+                </span>
               ) : showRequirementsLevel && major.requirements_level === "full" ? (
                 <span className="rounded-full bg-teal-500/15 px-2 py-0.5 text-[10px] font-bold uppercase text-teal-200">
                   Full requirements

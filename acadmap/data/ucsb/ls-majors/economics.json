@@ -1,0 +1,104 @@
+{
+  "slug": "economics",
+  "name": "Economics",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "Economics major sheet (2025)",
+      "url": "https://econ.ucsb.edu/sites/default/files/2025-10/Economics%20Major%20%282025%29.pdf"
+    },
+    {
+      "title": "Economics suggested plan",
+      "url": "https://econ.ucsb.edu/sites/default/files/2022-04/ECON%20suggested%20plan%20%20%281%29.pdf"
+    },
+    {
+      "title": "Department — majors",
+      "url": "https://econ.ucsb.edu/programs/undergraduate/majors"
+    }
+  ],
+  "pre_major": {
+    "label": "Pre-major",
+    "units": 15,
+    "courses": [
+      { "code": "ECON 1", "units": 4 },
+      { "code": "ECON 2", "units": 4 },
+      { "code": "ECON 10A", "units": 5, "notes": "Must be taken at UCSB" }
+    ],
+    "notes": [
+      "Qualify for full major: ECON 1, 2, 10A with UC GPA 2.85+; no grade below C.",
+      "ECON 5 or PSTAT 120A and calculus (MATH 2A-B, 3A-B, or 34A-B) required with C+ but excluded from pre-major GPA."
+    ]
+  },
+  "preparation": {
+    "label": "Preparation for the major",
+    "unit_range": "13-15",
+    "courses": [
+      { "code": "ECON 5", "alternatives": ["PSTAT 120A"], "units": 5 },
+      {
+        "code": "MATH 2A",
+        "alternatives": ["MATH 3A", "MATH 34A"],
+        "units": 4,
+        "notes": "Full calc sequence 2A-B, 3A-B, or 34A-B"
+      },
+      { "code": "MATH 2B", "alternatives": ["MATH 3B", "MATH 34B"], "units": 4 }
+    ],
+    "notes": ["ECON 5 and ECON 10A must be taken at UCSB."]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division core",
+      "units": 12,
+      "courses": [
+        { "code": "ECON 100B", "units": 4 },
+        { "code": "ECON 101", "units": 4 },
+        { "code": "ECON 140A", "units": 4 }
+      ]
+    },
+    {
+      "label": "Upper-division electives — Area D",
+      "choose_units": 24,
+      "courses": [
+        { "code": "ECON 100C" },
+        { "code": "ECON 106" },
+        { "code": "ECON 115" },
+        { "code": "ECON 130" },
+        { "code": "ECON 140B" },
+        { "code": "ECON 171" },
+        { "code": "ECON 181" }
+      ],
+      "notes": ["Six courses from approved UD ECON list on major sheet."]
+    },
+    {
+      "label": "Additional upper-division elective",
+      "choose_units": 4,
+      "courses": [
+        { "code": "ECON 118" },
+        { "code": "ECON 136A" },
+        { "code": "ECON 185" }
+      ],
+      "notes": ["One course from Area D list or ECON 118, 136A-C, 137A-B, 138A-B, 185."]
+    }
+  ],
+  "regulations": {
+    "pre_major_gpa": 2.85,
+    "major_gpa": 2.0,
+    "letter_grade_minimum": "C",
+    "pnp_allowed": false,
+    "other": ["Maximum 4 units of ECON 199 apply to UD major. ECON 199RA does not count."]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "ECON 1", "units": 4 }] },
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "ECON 2", "units": 4 }, { "code": "MATH 3A", "units": 4 }] },
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 3B", "units": 4 }] },
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "ECON 10A", "units": 5 }] },
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "ECON 5", "units": 5 }] },
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "ECON 100B", "units": 4 }] },
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "ECON 101", "units": 4 }] },
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "ECON 140A", "units": 4 }] },
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "ECON 130", "units": 4, "notes": "Elective example" }] },
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "UD ECON elective" }] },
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "UD ECON elective" }] },
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "UD ECON elective" }] }
+  ],
+  "career_outcomes": ["Financial analyst", "Consulting", "Data analytics", "Public policy", "Graduate study"]
+}

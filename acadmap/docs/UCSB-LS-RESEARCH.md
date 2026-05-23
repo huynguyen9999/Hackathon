@@ -20,6 +20,57 @@ AcadMap catalogs **58 L&S majors** in `data/ucsb/ls-catalog.json`. Sources:
 
 Optional catalog HTML fetch: `npm run fetch:ls -- --fetch-catalog`
 
+### Major sheet detail pipeline (Wave 1+)
+
+Department **major sheets** and **plans of study** are richer than catalog summaries. Sheet-fidelity data lives in per-major JSON under `data/ucsb/ls-majors/{slug}.json` (type: `LsMajorDetail` in `lib/ucsb-major-detail-types.ts`).
+
+| Step | Command / file | Purpose |
+|------|----------------|---------|
+| Source registry | `data/ucsb/major-sheet-sources.json` | Slug → dept page, major sheet PDF, plan of study PDF |
+| Scaffold fetch | `npm run fetch:sheets` | `scripts/fetch-major-sheets.ts` — preserves hand-authored files |
+| Author / QA detail | `data/ucsb/ls-majors/*.json` | Pre-major, prep, UD core, regulations, quarter plans |
+| Sync catalog flags | `npm run sync:details` | Sets `detail_available`, `requirements_level`, sheet URLs, career outcomes |
+| Validate detail schema | `npm run validate:details` | Asserts every `ls-majors/*.json` file |
+| Roadmap seed (Phase 2) | `data/seeds/ucsb-{slug}.json` | Interactive React Flow graph when complete |
+
+**Wave 1 majors with sheet detail (2025–26):**
+
+| Major | Slug | Major sheet | Plan of study |
+|-------|------|-------------|---------------|
+| Financial Mathematics & Statistics | financial-mathematics-and-statistics | [PSTAT media/160](https://www.pstat.ucsb.edu/media/160) | [media/68](https://www.pstat.ucsb.edu/media/68) |
+| Actuarial Science | actuarial-science | PSTAT dept | PSTAT dept |
+| Statistics and Data Science | statistics-and-data-science | PSTAT dept | PSTAT dept |
+| Economics | economics | Econ dept | Econ dept |
+| Economics and Accounting | economics-and-accounting | Econ dept | Econ dept |
+| Mathematics | mathematics | Math dept | Math dept |
+
+URLs for Wave 1 are centralized in `major-sheet-sources.json`.
+
+### FMS reference example
+
+Use `data/ucsb/ls-majors/financial-mathematics-and-statistics.json` as the gold-standard template when authoring new detail files.
+
+**Pre-major (40–41 units):** ECON 1–2; MATH 2A/3A–6B + MATH/PSTAT 8; 2.5 GPA; no P/NP.
+
+**Preparation (13–14 units):** One of CMPSC 8/9/16 or ENGR 3; ECON 10A; PSTAT 10.
+
+**Upper-division (52 units):** MATH 104A-B-C, 117; PSTAT 120A-B, 126, 160A-B, 170; 12-unit elective pool.
+
+**UI:** `/schools/ucsb/letters-science/financial-mathematics-and-statistics` renders `MajorSheetRequirements`, `MajorRegulationsCard`, and `QuarterTimeline` (GE/LASAR slots via `lib/lasar-planning.ts`).
+
+**Roadmap:** `data/seeds/ucsb-financial-mathematics-and-statistics.json` — `roadmap_available: true`, link from major page.
+
+### Major sheet QA checklist
+
+When parsing or hand-authoring `ls-majors/{slug}.json`:
+
+1. Split **pre-major** vs **preparation** vs **upper-division** blocks correctly (do not put UD courses in prep).
+2. Course codes match the PDF exactly (e.g. PSTAT 120A is upper-division, not pre-major).
+3. Unit totals and `choose_n` / `choose_units` elective pools match the sheet.
+4. Regulations: GPA thresholds, letter-grade-only, P/NP, excluded courses, transfer tiers.
+5. `recommended_plans`: freshman and transfer tracks with quarter/year labels from the plan-of-study PDF.
+6. Run `npm run validate:details` and `npm run sync:details` before merging.
+
 ## Slug aliases (legacy redirects)
 
 | Old slug | Canonical slug |
@@ -105,7 +156,8 @@ Each major entry sets `department_url`, `curriculum_url`, `catalog_program_code`
 
 - `/schools/ucsb` — college picker (Engineering + L&S)
 - `/schools/ucsb/letters-science` — L&S hub (search + A–Z, 58 majors)
-- `/schools/ucsb/letters-science/[major]` — major requirements
+- `/schools/ucsb/letters-science/[major]` — major requirements (sheet detail when `detail_available`, else summary)
+- `/roadmap/ucsb/financial-mathematics-and-statistics` — FMS interactive roadmap (Phase 2 pilot)
 - Legacy `/schools/ucsb/{major}` redirects to engineering or L&S path
 
 ## LASAR vs GEAR
@@ -134,3 +186,10 @@ When extending L&S data:
 2. Run `npm run fetch:ls` to regenerate `ls-catalog.json`.
 3. Run `npm run validate:ls` and `npm run build`.
 4. Set `roadmap_available: true` only when a seed exists under `data/seeds/`.
+
+When adding **major sheet detail**:
+
+1. Add PDF URLs to `data/ucsb/major-sheet-sources.json`.
+2. Author `data/ucsb/ls-majors/{slug}.json` (use FMS as reference — see Major sheet detail pipeline above).
+3. Run `npm run validate:details` → `npm run sync:details` → `npm run build`.
+4. Optional Phase 2: create `data/seeds/ucsb-{slug}.json` and re-run `sync:details` for `roadmap_available`.

@@ -7,6 +7,7 @@ import {
   lsCollegeHubHref,
   lsMajorHubHref,
 } from "@/lib/ucsb-paths";
+import type { LsMajorDetail } from "@/lib/ucsb-major-detail-types";
 import type { UcsbMajor, UcsbSchoolInfo, UcsbSource } from "@/lib/ucsb-types";
 
 export { LS_COLLEGE_SLUG, lsCollegeHubHref, lsMajorHubHref };
@@ -48,6 +49,27 @@ export type LsCatalog = {
 };
 
 const CATALOG_PATH = path.join(process.cwd(), "data", "ucsb", "ls-catalog.json");
+const MAJOR_DETAIL_DIR = path.join(process.cwd(), "data", "ucsb", "ls-majors");
+
+export function lsMajorDetailPath(slug: string): string {
+  return path.join(MAJOR_DETAIL_DIR, `${slug}.json`);
+}
+
+export async function loadLsMajorDetail(
+  majorSlug: string,
+): Promise<LsMajorDetail | null> {
+  if (typeof window !== "undefined") {
+    throw new Error("loadLsMajorDetail() is server-only");
+  }
+
+  const slug = resolveLsSlug(majorSlug);
+  try {
+    const raw = await fs.readFile(lsMajorDetailPath(slug), "utf-8");
+    return JSON.parse(raw) as LsMajorDetail;
+  } catch {
+    return null;
+  }
+}
 
 export async function loadUcsbLsCatalog(): Promise<LsCatalog | null> {
   if (typeof window !== "undefined") {

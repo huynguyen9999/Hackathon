@@ -1,0 +1,95 @@
+{
+  "slug": "economics-and-accounting",
+  "name": "Economics and Accounting",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "Econ & Accounting major sheet (2025)",
+      "url": "https://econ.ucsb.edu/sites/default/files/2025-10/Economics%20%26%20Accounting%20Major%20%282025%29.pdf"
+    },
+    {
+      "title": "Suggested plan of study",
+      "url": "https://econ.ucsb.edu/sites/default/files/2021-06/Economics%20%26%20Accounting%20Major%20Suggested%20Plan%20of%20Study.pdf"
+    }
+  ],
+  "pre_major": {
+    "label": "Pre-major",
+    "units": 25,
+    "courses": [
+      { "code": "ECON 1", "units": 4 },
+      { "code": "ECON 2", "units": 4 },
+      { "code": "ECON 3A", "units": 5 },
+      { "code": "ECON 3B", "units": 5 },
+      { "code": "ECON 10A", "units": 5, "notes": "Must be taken at UCSB" }
+    ],
+    "notes": [
+      "Qualify: ECON 1, 2, 3A, 3B, 10A with UC GPA 2.85+; no grade below C."
+    ]
+  },
+  "preparation": {
+    "label": "Preparation for the major",
+    "unit_range": "13-15",
+    "courses": [
+      { "code": "ECON 5", "alternatives": ["PSTAT 120A"], "units": 5 },
+      { "code": "MATH 2A", "alternatives": ["MATH 3A", "MATH 34A"], "units": 4 },
+      { "code": "MATH 2B", "alternatives": ["MATH 3B", "MATH 34B"], "units": 4 }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division core",
+      "units": 16,
+      "courses": [
+        { "code": "ECON 100B", "units": 4 },
+        { "code": "ECON 101", "units": 4 },
+        { "code": "ECON 134A", "units": 4 },
+        { "code": "ECON 140A", "units": 4 }
+      ]
+    },
+    {
+      "label": "Accounting sequence",
+      "units": 21,
+      "courses": [
+        { "code": "ECON 118", "units": 4 },
+        { "code": "ECON 136A", "units": 4 },
+        { "code": "ECON 136B", "units": 4 },
+        { "code": "ECON 136C", "units": 5 },
+        { "code": "ECON 137A", "units": 4 }
+      ]
+    },
+    {
+      "label": "Upper-division electives",
+      "choose_units": 12,
+      "courses": [
+        { "code": "ECON 132A" },
+        { "code": "ECON 132B" },
+        { "code": "ECON 137B" },
+        { "code": "ECON 138A" },
+        { "code": "ECON 185" }
+      ],
+      "notes": ["One UD elective from broad ECON list; two from accounting-related list on major sheet."]
+    }
+  ],
+  "regulations": {
+    "pre_major_gpa": 2.85,
+    "major_gpa": 2.0,
+    "letter_grade_minimum": "C",
+    "pnp_allowed": false,
+    "other": ["ECON 189 does not count toward CPA 36 accounting units. Max 4 units ECON 199."]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "ECON 1", "units": 4 }] },
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "ECON 2", "units": 4 }, { "code": "MATH 3A", "units": 4 }] },
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "ECON 3A", "units": 5 }] },
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "ECON 3B", "units": 5 }] },
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "ECON 10A", "units": 5 }] },
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "ECON 5", "units": 5 }] },
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "ECON 100B", "units": 4 }, { "code": "ECON 118", "units": 4 }] },
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "ECON 101", "units": 4 }, { "code": "ECON 136A", "units": 4 }] },
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "ECON 134A", "units": 4 }, { "code": "ECON 136B", "units": 4 }] },
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "ECON 140A", "units": 4 }, { "code": "ECON 136C", "units": 5 }] },
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "ECON 137A", "units": 4 }] },
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "UD ECON elective" }] }
+  ],
+  "career_outcomes": ["Accounting", "Finance", "CPA track (grad)", "Corporate finance", "Consulting"]
+}

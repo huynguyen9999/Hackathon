@@ -1,0 +1,192 @@
+{
+  "slug": "financial-mathematics-and-statistics",
+  "name": "Financial Mathematics and Statistics",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "FMS major sheet (2025-26)",
+      "url": "https://www.pstat.ucsb.edu/sites/default/files/2025-10/Financial%20Mathematics%20%26%20Statistics%20Major%20%282025%29%20%281%29.pdf"
+    },
+    {
+      "title": "FMS recommended plan of study",
+      "url": "https://www.pstat.ucsb.edu/media/68"
+    },
+    {
+      "title": "Department — FMS major",
+      "url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/fms-major"
+    },
+    {
+      "title": "UCSB Catalog — BSFMS",
+      "url": "https://catalog.ucsb.edu/programs/BSFMS"
+    }
+  ],
+  "pre_major": {
+    "label": "Pre-major",
+    "unit_range": "39-41",
+    "courses": [
+      { "code": "ECON 1", "title": "Principles of Microeconomics", "units": 4 },
+      { "code": "ECON 2", "title": "Principles of Macroeconomics", "units": 4 },
+      { "code": "MATH 2A", "alternatives": ["MATH 3A"], "units": 4, "notes": "Calculus I" },
+      { "code": "MATH 2B", "alternatives": ["MATH 3B"], "units": 4, "notes": "Calculus II" },
+      { "code": "MATH 4A", "title": "Linear Algebra", "units": 4 },
+      { "code": "MATH 4B", "title": "Differential Equations", "units": 4 },
+      { "code": "MATH 6A", "title": "Vector Calculus I", "units": 4 },
+      { "code": "MATH 6B", "title": "Vector Calculus II", "units": 4 },
+      { "code": "MATH 8", "alternatives": ["PSTAT 8"], "units": 5, "notes": "Transition to proofs / probability theory" }
+    ],
+    "notes": [
+      "Complete all pre-major courses with 2.5+ UC GPA to enter full major.",
+      "Either MATH 4A, 4B, 6A, or 6B must be completed with grade B or better to take MATH 8 or PSTAT 8.",
+      "MATH 8 is required if you plan to take upper-division MATH beyond 117 and 104A-B-C."
+    ]
+  },
+  "preparation": {
+    "label": "Preparation for the major",
+    "unit_range": "13-14",
+    "courses": [
+      {
+        "code": "CMPSC 8",
+        "alternatives": ["CMPSC 9", "CMPSC 16", "ENGR 3"],
+        "units": 4,
+        "notes": "One programming course required; CMPSC 8 (Python) or ENGR 3 (Matlab) common choices"
+      },
+      { "code": "ECON 10A", "title": "Intermediate Microeconomic Theory", "units": 5 },
+      { "code": "PSTAT 10", "title": "Probability and Statistics", "units": 5 }
+    ],
+    "choose_n": 1,
+    "notes": [
+      "All pre-major and preparation courses require grade C or better.",
+      "Preparation courses are excluded from pre-major GPA but count toward overall major GPA."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division core — Mathematics",
+      "units": 16,
+      "courses": [
+        { "code": "MATH 104A", "title": "Introductory Numerical Analysis", "units": 4 },
+        { "code": "MATH 104B", "units": 4 },
+        { "code": "MATH 104C", "units": 4 },
+        { "code": "MATH 117", "title": "Series and Sequences", "units": 4 }
+      ]
+    },
+    {
+      "label": "Upper-division core — Statistics",
+      "units": 20,
+      "courses": [
+        { "code": "PSTAT 120A", "alternatives": ["PSTAT W 120A"], "units": 4 },
+        { "code": "PSTAT 120B", "units": 4 },
+        { "code": "PSTAT 126", "units": 4 },
+        { "code": "PSTAT 160A", "alternatives": ["PSTAT W 160A"], "units": 4 },
+        { "code": "PSTAT 160B", "units": 4 }
+      ]
+    },
+    {
+      "label": "Upper-division core — Financial mathematics",
+      "units": 4,
+      "courses": [
+        {
+          "code": "PSTAT 170",
+          "title": "Mathematical Finance",
+          "units": 4,
+          "notes": "PSTAT 171 recommended preparation"
+        }
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Upper-division major electives",
+    "choose_units": 12,
+    "courses": [
+      { "code": "ECON 100B" },
+      { "code": "ECON 101" },
+      { "code": "ECON 130" },
+      { "code": "ECON 134A" },
+      { "code": "ECON 134B" },
+      { "code": "ECON 140B" },
+      { "code": "ECON 141" },
+      { "code": "ECON 171" },
+      { "code": "ECON 181" },
+      { "code": "MATH 108A" },
+      { "code": "MATH 108B" },
+      { "code": "MATH 124A" },
+      { "code": "MATH 124B" },
+      { "code": "MATH 132A" },
+      { "code": "MATH 199" },
+      { "code": "PSTAT 120C" },
+      { "code": "PSTAT 130" },
+      { "code": "PSTAT 131" },
+      { "code": "PSTAT 132" },
+      { "code": "PSTAT 134" },
+      { "code": "PSTAT 135" },
+      { "code": "PSTAT 171" },
+      { "code": "PSTAT 173" },
+      { "code": "PSTAT 174", "alternatives": ["PSTAT W 174"] },
+      { "code": "PSTAT 176" },
+      { "code": "PSTAT 199" }
+    ],
+    "notes": [
+      "52 total upper-division major units required (40 core + 12 electives)."
+    ]
+  },
+  "regulations": {
+    "pre_major_gpa": 2.5,
+    "major_gpa": 2.0,
+    "letter_grade_minimum": "C",
+    "letter_grade_only": true,
+    "pnp_allowed": false,
+    "excluded_courses": [
+      "MATH 100A-B",
+      "MATH 101A-B",
+      "MATH 102A-B",
+      "MATH 193",
+      "PSTAT 109",
+      "PSTAT 182T",
+      "PSTAT W 182T",
+      "PSTAT 188",
+      "PSTAT 190",
+      "PSTAT 193"
+    ],
+    "transfer_admission_rules": [
+      "Two or more pre-major courses remaining at UCSB: complete with 2.5 GPA.",
+      "One pre-major course remaining: complete with C+ and one upper-division major course with C.",
+      "All pre-major complete: complete two upper-division major courses with C in each."
+    ],
+    "other": [
+      "Upper-division PSTAT courses (except 120A) restricted to full majors during Pass 1 and Pass 2.",
+      "Up to 8 upper-division units may overlap between two majors with chair approval."
+    ]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 3A", "units": 4 }, { "code": "ECON 1", "units": 4 }] },
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 3B", "units": 4 }, { "code": "CMPSC 8", "units": 4 }, { "code": "ECON 2", "units": 4 }] },
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 4A", "units": 4 }, { "code": "ECON 10A", "units": 5 }] },
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 6A", "units": 4 }, { "code": "PSTAT 10", "units": 5 }, { "code": "MATH 4B", "units": 4 }] },
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 8", "units": 5 }, { "code": "MATH 6B", "units": 4 }] },
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "PSTAT 120A", "units": 4 }] },
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "PSTAT 120B", "units": 4 }, { "code": "PSTAT 160A", "units": 4 }] },
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 160B", "units": 4 }, { "code": "PSTAT 126", "units": 4 }] },
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 117", "units": 4 }, { "code": "PSTAT 174", "units": 4, "notes": "Elective example" }] },
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 104A", "units": 4 }, { "code": "PSTAT 170", "units": 4 }] },
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 104B", "units": 4 }, { "code": "PSTAT 171", "units": 4, "notes": "Elective example" }] },
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 104C", "units": 4 }, { "code": "ECON 130", "units": 4, "notes": "Elective example" }] },
+    { "year": 1, "quarter": "Fall", "track": "transfer", "entries": [{ "code": "PSTAT 120A", "units": 4 }, { "code": "ECON 10A", "units": 5 }] },
+    { "year": 1, "quarter": "Winter", "track": "transfer", "entries": [{ "code": "PSTAT 10", "units": 5 }, { "code": "PSTAT 160A", "units": 4 }, { "code": "MATH 8", "units": 5 }] },
+    { "year": 1, "quarter": "Spring", "track": "transfer", "entries": [{ "code": "PSTAT 120B", "units": 4 }, { "code": "PSTAT 160B", "units": 4 }, { "code": "MATH 117", "units": 4 }] },
+    { "year": 2, "quarter": "Fall", "track": "transfer", "entries": [{ "code": "MATH 104A", "units": 4 }, { "code": "PSTAT 170", "units": 4 }, { "slot": "ELECTIVE", "label": "Major elective (4 units)" }] },
+    { "year": 2, "quarter": "Winter", "track": "transfer", "entries": [{ "code": "MATH 104B", "units": 4 }, { "code": "PSTAT 126", "units": 4 }, { "slot": "ELECTIVE", "label": "Major elective (4 units)" }] },
+    { "year": 2, "quarter": "Spring", "track": "transfer", "entries": [{ "code": "MATH 104C", "units": 4 }, { "slot": "ELECTIVE", "label": "Major elective (4 units)" }] }
+  ],
+  "career_outcomes": [
+    "Quantitative finance",
+    "Investment banking",
+    "Risk analysis",
+    "Actuarial (with exams)",
+    "Data science",
+    "Graduate study"
+  ],
+  "notes": [
+    "Joint program offered by PSTAT, Mathematics, and Economics.",
+    "Recommended plan does not include GE/LASAR — add via timeline overlay on AcadMap."
+  ]
+}

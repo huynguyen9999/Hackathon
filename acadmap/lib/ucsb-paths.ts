@@ -28,3 +28,10 @@ export function coeCollegeHubHref(schoolShortName: string): string {
 export function schoolHubHref(schoolShortName: string): string {
   return `/schools/${schoolShortName}`;
 }
+
+export function majorRoadmapHref(
+  schoolShortName: string,
+  majorSlug: string,
+): string {
+  return `/roadmap/${schoolShortName}/${majorSlug}`;
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "mathematics",
+  "name": "Mathematics",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — Mathematics BA",
+      "url": "https://catalog.ucsb.edu/programs/BAMATH"
+    },
+    {
+      "title": "Mathematics department",
+      "url": "https://www.math.ucsb.edu/undergraduate"
+    }
+  ],
+  "pre_major": {
+    "label": "Pre-major / lower-division",
+    "unit_range": "24-28",
+    "courses": [
+      { "code": "MATH 2A", "alternatives": ["MATH 3A"], "units": 4 },
+      { "code": "MATH 2B", "alternatives": ["MATH 3B"], "units": 4 },
+      { "code": "MATH 4A", "title": "Linear Algebra", "units": 4 },
+      { "code": "MATH 4B", "title": "Differential Equations", "units": 4 },
+      { "code": "MATH 8", "title": "Transition to Proofs", "units": 5 }
+    ],
+    "notes": ["Selective major for transfers. BS track also requires MATH 6A-B."]
+  },
+  "preparation": {
+    "label": "Additional preparation (BS / applied)",
+    "courses": [
+      { "code": "MATH 6A", "units": 4, "notes": "BS and applied tracks" },
+      { "code": "MATH 6B", "units": 4 },
+      { "code": "PHYS 7A", "units": 4, "notes": "Recommended for applied track" }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Core upper-division",
+      "units": 24,
+      "courses": [
+        { "code": "MATH 111A", "title": "Abstract Algebra", "units": 4 },
+        { "code": "MATH 111B", "units": 4 },
+        { "code": "MATH 118A", "title": "Real Analysis", "units": 4 },
+        { "code": "MATH 118B", "units": 4 },
+        { "code": "MATH 118C", "units": 4 }
+      ]
+    },
+    {
+      "label": "Upper-division electives",
+      "choose_units": 24,
+      "courses": [
+        { "code": "MATH 117" },
+        { "code": "MATH 124A" },
+        { "code": "MATH 132A" },
+        { "code": "MATH 160A" },
+        { "code": "MATH 104A" }
+      ],
+      "notes": ["BA and BS tracks differ in elective requirements — see catalog PDF."]
+    }
+  ],
+  "regulations": {
+    "major_gpa": 2.0,
+    "letter_grade_minimum": "C",
+    "pnp_allowed": false,
+    "other": ["Teaching concentration available for high-school prep."]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 3A", "units": 4 }] },
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 3B", "units": 4 }] },
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 4A", "units": 4 }] },
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 4B", "units": 4 }] },
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 8", "units": 5 }] },
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 6A", "units": 4 }] },
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 111A", "units": 4 }] },
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 118A", "units": 4 }] },
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 111B", "units": 4 }] },
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 118B", "units": 4 }] },
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 118C", "units": 4 }] },
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "MATH elective" }] }
+  ],
+  "career_outcomes": ["Data science", "Actuarial", "Finance", "Teaching", "Graduate study"]
+}

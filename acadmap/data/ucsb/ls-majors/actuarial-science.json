@@ -1,0 +1,109 @@
+{
+  "slug": "actuarial-science",
+  "name": "Actuarial Science",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "Actuarial Science BS major sheet",
+      "url": "https://www.pstat.ucsb.edu/media/161"
+    },
+    {
+      "title": "Recommended plan of study",
+      "url": "https://www.pstat.ucsb.edu/media/69"
+    },
+    {
+      "title": "Department page",
+      "url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/actuarial-science-major"
+    }
+  ],
+  "pre_major": {
+    "label": "Pre-major",
+    "unit_range": "30-32",
+    "courses": [
+      { "code": "MATH 2A", "alternatives": ["MATH 3A"], "units": 4 },
+      { "code": "MATH 2B", "alternatives": ["MATH 3B"], "units": 4 },
+      { "code": "MATH 4A", "units": 4 },
+      { "code": "MATH 4B", "units": 4 },
+      { "code": "MATH 6A", "units": 4 },
+      { "code": "MATH 8", "alternatives": ["PSTAT 8"], "units": 5 },
+      { "code": "PSTAT 10", "units": 5 }
+    ],
+    "notes": [
+      "2.5+ UC GPA. Max two pre-major repeats (one per course). C or better required.",
+      "Grade B or better in MATH 4A/4B/6A/6B for MATH/PSTAT 8."
+    ]
+  },
+  "preparation": {
+    "label": "Preparation for the major",
+    "units": 8,
+    "courses": [
+      { "code": "CMPSC 8", "units": 4, "notes": "Required" },
+      { "code": "CMPSC 9", "alternatives": ["CMPSC 16"], "units": 4, "notes": "Required with C or better" }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Statistics core",
+      "units": 16,
+      "courses": [
+        { "code": "PSTAT 120A", "alternatives": ["PSTAT W 120A"], "units": 4 },
+        { "code": "PSTAT 120B", "units": 4 },
+        { "code": "PSTAT 160A", "alternatives": ["PSTAT W 160A"], "units": 4 },
+        { "code": "PSTAT 160B", "units": 4 }
+      ]
+    },
+    {
+      "label": "Actuarial / financial mathematics",
+      "units": 16,
+      "courses": [
+        { "code": "PSTAT 171", "units": 4 },
+        { "code": "PSTAT 172A", "units": 4 },
+        { "code": "PSTAT 172B", "units": 4 },
+        { "code": "PSTAT 173", "units": 4 }
+      ]
+    },
+    {
+      "label": "Upper-division electives",
+      "choose_units": 16,
+      "courses": [
+        { "code": "PSTAT 170" },
+        { "code": "PSTAT 174" },
+        { "code": "PSTAT 176" },
+        { "code": "ECON 100B" },
+        { "code": "ECON 130" },
+        { "code": "MATH 104A" }
+      ],
+      "notes": ["See major sheet for full elective pool. VEE courses encouraged for SOA exams."]
+    }
+  ],
+  "regulations": {
+    "pre_major_gpa": 2.5,
+    "major_gpa": 2.0,
+    "letter_grade_minimum": "C",
+    "pnp_allowed": false,
+    "transfer_admission_rules": [
+      "Two+ pre-major courses at UCSB: complete with 2.5 GPA.",
+      "One pre-major course remaining: 2.5 GPA on remaining course + PSTAT 120A.",
+      "All pre-major complete: meet GPA with PSTAT 120A."
+    ],
+    "other": [
+      "UCSB Center of Actuarial Excellence. VEE-approved courses available.",
+      "Writing 107A/B not required before declaring full major."
+    ]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 3A", "units": 4 }] },
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 3B", "units": 4 }] },
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 4A", "units": 4 }] },
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 4B", "units": 4 }, { "code": "CMPSC 8", "units": 4 }] },
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 6A", "units": 4 }, { "code": "CMPSC 9", "units": 4 }] },
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 8", "units": 5 }, { "code": "PSTAT 10", "units": 5 }] },
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "PSTAT 120A", "units": 4 }] },
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 120B", "units": 4 }, { "code": "PSTAT 160A", "units": 4 }] },
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "PSTAT 160B", "units": 4 }] },
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "PSTAT 171", "units": 4 }, { "code": "PSTAT 172A", "units": 4 }] },
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 172B", "units": 4 }, { "code": "PSTAT 173", "units": 4 }] },
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "Actuarial elective" }] }
+  ],
+  "career_outcomes": ["Actuary", "Risk analyst", "Insurance", "Quantitative finance", "Data science"]
+}

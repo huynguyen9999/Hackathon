@@ -1,0 +1,104 @@
+{
+  "slug": "statistics-and-data-science",
+  "name": "Statistics and Data Science",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "Stats & Data Science BS major sheet",
+      "url": "https://www.pstat.ucsb.edu/media/158"
+    },
+    {
+      "title": "BS plan of study",
+      "url": "https://www.pstat.ucsb.edu/media/106"
+    },
+    {
+      "title": "Department page",
+      "url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/stats-and-data-science-major"
+    }
+  ],
+  "pre_major": {
+    "label": "Pre-major",
+    "unit_range": "30-32",
+    "courses": [
+      { "code": "MATH 2A", "alternatives": ["MATH 3A"], "units": 4 },
+      { "code": "MATH 2B", "alternatives": ["MATH 3B"], "units": 4 },
+      { "code": "MATH 4A", "units": 4 },
+      { "code": "MATH 4B", "units": 4 },
+      { "code": "MATH 6A", "units": 4 },
+      { "code": "MATH 8", "alternatives": ["PSTAT 8"], "units": 5 },
+      { "code": "PSTAT 10", "units": 5 }
+    ],
+    "notes": [
+      "2.5+ UC GPA on pre-major courses. Max two pre-major repeats (one per course).",
+      "Grade B or better in one of MATH 4A/4B/6A/6B required for MATH/PSTAT 8."
+    ]
+  },
+  "preparation": {
+    "label": "Preparation for the major",
+    "units": 8,
+    "courses": [
+      { "code": "CMPSC 8", "alternatives": ["CMPSC W 8"], "units": 4 },
+      { "code": "CMPSC 9", "alternatives": ["CMPSC 16"], "units": 4, "notes": "CMPSC 9 recommended over 16" }
+    ],
+    "notes": ["Both CMPSC 8 and 9/16 required with C or better."]
+  },
+  "upper_division": [
+    {
+      "label": "Probability and statistics core",
+      "units": 16,
+      "courses": [
+        { "code": "PSTAT 120A", "alternatives": ["PSTAT W 120A"], "units": 4 },
+        { "code": "PSTAT 120B", "units": 4 },
+        { "code": "PSTAT 122", "units": 4 },
+        { "code": "PSTAT 126", "units": 4 }
+      ]
+    },
+    {
+      "label": "PSTAT electives",
+      "choose_units": 24,
+      "courses": [
+        { "code": "PSTAT 130" },
+        { "code": "PSTAT 131" },
+        { "code": "PSTAT 160A", "alternatives": ["PSTAT W 160A"] },
+        { "code": "PSTAT 160B" },
+        { "code": "PSTAT 174", "alternatives": ["PSTAT W 174"] },
+        { "code": "PSTAT 175" }
+      ]
+    },
+    {
+      "label": "Mathematics / related electives",
+      "choose_units": 8,
+      "courses": [
+        { "code": "MATH 104A" },
+        { "code": "MATH 117" },
+        { "code": "MATH 118A" },
+        { "code": "ECON 100B" },
+        { "code": "ECON 101" }
+      ],
+      "notes": ["8 units from approved PSTAT, MATH, or ECON list on major sheet."]
+    }
+  ],
+  "regulations": {
+    "pre_major_gpa": 2.5,
+    "major_gpa": 2.0,
+    "letter_grade_minimum": "C",
+    "pnp_allowed": false,
+    "excluded_courses": ["MATH 100A-B", "MATH 101A-B", "MATH 102A-B", "MATH 193", "PSTAT 109", "PSTAT 182T", "PSTAT 188", "PSTAT 190", "PSTAT 193"]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 3A", "units": 4 }] },
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 3B", "units": 4 }] },
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 4A", "units": 4 }] },
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 4B", "units": 4 }, { "code": "CMPSC 8", "units": 4 }] },
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 6A", "units": 4 }, { "code": "CMPSC 9", "units": 4 }] },
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 8", "units": 5 }, { "code": "PSTAT 10", "units": 5 }] },
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "PSTAT 120A", "units": 4 }] },
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 120B", "units": 4 }, { "code": "PSTAT 122", "units": 4 }] },
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "PSTAT 126", "units": 4 }] },
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "PSTAT 160A", "units": 4 }] },
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 160B", "units": 4 }] },
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "PSTAT / MATH elective" }] }
+  ],
+  "career_outcomes": ["Data science", "Machine learning", "Biostatistics", "Actuarial", "Tech industry"],
+  "notes": ["BS track (48 UD units). BA track requires 36 UD units — see department."]
+}
