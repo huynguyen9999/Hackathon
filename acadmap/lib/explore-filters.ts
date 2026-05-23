@@ -80,6 +80,7 @@ const COLLEGE_VALUES: ExploreCollege[] = [
   "engineering",
   "letters-science",
   "creative-studies",
+  "graduate",
 ];
 
 const EXPERIENCE_VALUES: ExperienceType[] = ["graph", "guide", "catalog"];

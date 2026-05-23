@@ -111,6 +111,8 @@ function majorHubHref(
       return lsMajorHubHref(schoolShortName, slug);
     case "creative-studies":
       return ccsMajorHubHref(schoolShortName, slug);
+    case "graduate":
+      return `/schools/ucsb/graduate`;
   }
 }
 
