@@ -1,0 +1,283 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Psychological and Brain Sciences",
+    "slug": "psychological-and-brain-sciences",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Psychological and Brain Sciences (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAPSY",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "psy-1",
+      "node_type": "course",
+      "label": "PSY 1",
+      "title": "Introductory Psychology",
+      "description": "Introductory Psychology — part of the Psychological and Brain Sciences prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "pstat-5",
+      "node_type": "course",
+      "label": "PSTAT 5",
+      "title": "PSTAT 5",
+      "description": "Required or recommended course for the Psychological and Brain Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "psy-10a",
+      "node_type": "course",
+      "label": "PSY 10A",
+      "title": "Research Methods in Psychology",
+      "description": "Required or recommended course for the Psychological and Brain Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "psy-10b",
+      "node_type": "course",
+      "label": "PSY 10B",
+      "title": "Statistical Methods in Psychology",
+      "description": "Statistical Methods in Psychology — part of the Psychological and Brain Sciences prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "psy-102a",
+      "node_type": "course",
+      "label": "PSY 102A",
+      "title": "Introduction to Social Psychology",
+      "description": "Introduction to Social Psychology — part of the Psychological and Brain Sciences prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "psy-105",
+      "node_type": "course",
+      "label": "PSY 105",
+      "title": "Introduction to Developmental Psychology",
+      "description": "Introduction to Developmental Psychology — part of the Psychological and Brain Sciences prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "psy-110",
+      "node_type": "course",
+      "label": "PSY 110",
+      "title": "Introduction to Cognitive Psychology",
+      "description": "Introduction to Cognitive Psychology — part of the Psychological and Brain Sciences prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "psy-112",
+      "node_type": "course",
+      "label": "PSY 112",
+      "title": "Introduction to Biopsychology",
+      "description": "Introduction to Biopsychology — part of the Psychological and Brain Sciences prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    },
+    {
+      "id": "psy-130",
+      "node_type": "course",
+      "label": "PSY 130",
+      "title": "PSY 130",
+      "description": "Required or recommended course for the Psychological and Brain Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 760
+    },
+    {
+      "id": "psy-140",
+      "node_type": "course",
+      "label": "PSY 140",
+      "title": "PSY 140",
+      "description": "Required or recommended course for the Psychological and Brain Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 935
+    },
+    {
+      "id": "psy-150",
+      "node_type": "course",
+      "label": "PSY 150",
+      "title": "PSY 150",
+      "description": "Required or recommended course for the Psychological and Brain Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 1110
+    },
+    {
+      "id": "psy-170",
+      "node_type": "course",
+      "label": "PSY 170",
+      "title": "PSY 170",
+      "description": "Required or recommended course for the Psychological and Brain Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 1285
+    },
+    {
+      "id": "career-clinical-grad",
+      "node_type": "career",
+      "label": "Clinical",
+      "title": "Clinical (grad)",
+      "description": "Career path for Psychological and Brain Sciences graduates: Clinical (grad).",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 60
+    },
+    {
+      "id": "career-ux-research",
+      "node_type": "career",
+      "label": "UX research",
+      "title": "UX research",
+      "description": "Career path for Psychological and Brain Sciences graduates: UX research.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 235
+    },
+    {
+      "id": "career-hr",
+      "node_type": "career",
+      "label": "HR",
+      "title": "HR",
+      "description": "Career path for Psychological and Brain Sciences graduates: HR.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 410
+    },
+    {
+      "id": "career-market-research",
+      "node_type": "career",
+      "label": "Market research",
+      "title": "Market research",
+      "description": "Career path for Psychological and Brain Sciences graduates: Market research.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "psy-1",
+      "target_id": "pstat-5",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "pstat-5",
+      "target_id": "psy-10a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "psy-10a",
+      "target_id": "psy-10b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "psy-10b",
+      "target_id": "psy-102a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "psy-102a",
+      "target_id": "psy-105",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "psy-105",
+      "target_id": "psy-110",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "psy-110",
+      "target_id": "psy-112",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "psy-112",
+      "target_id": "psy-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "psy-130",
+      "target_id": "psy-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e10",
+      "source_id": "psy-140",
+      "target_id": "psy-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e11",
+      "source_id": "psy-150",
+      "target_id": "psy-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "psy-170",
+      "target_id": "career-clinical-grad",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "psy-140",
+      "target_id": "career-ux-research",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "psy-170",
+      "target_id": "career-hr",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "psy-140",
+      "target_id": "career-market-research",
+      "edge_type": "leads_to"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Physics",
+    "slug": "physics",
+    "degree_type": "BA/BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Physics (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSPHY",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "phys-7a",
+      "node_type": "course",
+      "label": "PHYS 7A",
+      "title": "PHYS 7A",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "phys-51",
+      "node_type": "course",
+      "label": "PHYS 51",
+      "title": "PHYS 51",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "phys-105a",
+      "node_type": "course",
+      "label": "PHYS 105A",
+      "title": "PHYS 105A",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "phys-110a",
+      "node_type": "course",
+      "label": "PHYS 110A",
+      "title": "PHYS 110A",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "phys-115a",
+      "node_type": "course",
+      "label": "PHYS 115A",
+      "title": "PHYS 115A",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "phys-120",
+      "node_type": "course",
+      "label": "PHYS 120",
+      "title": "PHYS 120",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    },
+    {
+      "id": "phys-130",
+      "node_type": "course",
+      "label": "PHYS 130",
+      "title": "PHYS 130",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 760
+    },
+    {
+      "id": "phys-134",
+      "node_type": "course",
+      "label": "PHYS 134",
+      "title": "PHYS 134",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 935
+    },
+    {
+      "id": "phys-145",
+      "node_type": "course",
+      "label": "PHYS 145",
+      "title": "PHYS 145",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 1110
+    },
+    {
+      "id": "phys-199",
+      "node_type": "course",
+      "label": "PHYS 199",
+      "title": "PHYS 199",
+      "description": "Required or recommended course for the Physics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 1285
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Physics graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 60
+    },
+    {
+      "id": "career-engineering",
+      "node_type": "career",
+      "label": "Engineering",
+      "title": "Engineering",
+      "description": "Career path for Physics graduates: Engineering.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 235
+    },
+    {
+      "id": "career-quant-finance",
+      "node_type": "career",
+      "label": "Quant finance",
+      "title": "Quant finance",
+      "description": "Career path for Physics graduates: Quant finance.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 410
+    },
+    {
+      "id": "career-national-labs",
+      "node_type": "career",
+      "label": "National labs",
+      "title": "National labs",
+      "description": "Career path for Physics graduates: National labs.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "phys-7a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3a",
+      "target_id": "phys-51",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "phys-51",
+      "target_id": "phys-105a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "phys-105a",
+      "target_id": "phys-110a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "phys-110a",
+      "target_id": "phys-115a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "phys-115a",
+      "target_id": "phys-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "phys-120",
+      "target_id": "phys-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "phys-130",
+      "target_id": "phys-134",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "phys-134",
+      "target_id": "phys-145",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e10",
+      "source_id": "phys-145",
+      "target_id": "phys-199",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "phys-199",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "phys-134",
+      "target_id": "career-engineering",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "phys-199",
+      "target_id": "career-quant-finance",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "phys-134",
+      "target_id": "career-national-labs",
+      "edge_type": "leads_to"
+    }
+  ]
+}

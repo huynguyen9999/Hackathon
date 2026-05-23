@@ -1,0 +1,147 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Theater",
+    "slug": "theater",
+    "degree_type": "BA/BFA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Theater (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BATHR",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "thtr-130",
+      "node_type": "course",
+      "label": "THTR 130",
+      "title": "THTR 130",
+      "description": "Required or recommended course for the Theater major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "thtr-150",
+      "node_type": "course",
+      "label": "THTR 150",
+      "title": "THTR 150",
+      "description": "Required or recommended course for the Theater major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "thtr-170",
+      "node_type": "course",
+      "label": "THTR 170",
+      "title": "THTR 170",
+      "description": "Required or recommended course for the Theater major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "thtr-190",
+      "node_type": "course",
+      "label": "THTR 190",
+      "title": "THTR 190",
+      "description": "Required or recommended course for the Theater major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "career-performance",
+      "node_type": "career",
+      "label": "Performance",
+      "title": "Performance",
+      "description": "Career path for Theater graduates: Performance.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "career-directing",
+      "node_type": "career",
+      "label": "Directing",
+      "title": "Directing",
+      "description": "Career path for Theater graduates: Directing.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "career-design",
+      "node_type": "career",
+      "label": "Design",
+      "title": "Design",
+      "description": "Career path for Theater graduates: Design.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "career-arts-administration",
+      "node_type": "career",
+      "label": "Arts administration",
+      "title": "Arts administration",
+      "description": "Career path for Theater graduates: Arts administration.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "thtr-130",
+      "target_id": "thtr-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "thtr-150",
+      "target_id": "thtr-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "thtr-170",
+      "target_id": "thtr-190",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "thtr-190",
+      "target_id": "career-performance",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "thtr-150",
+      "target_id": "career-directing",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "thtr-190",
+      "target_id": "career-design",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "thtr-150",
+      "target_id": "career-arts-administration",
+      "edge_type": "leads_to"
+    }
+  ]
+}

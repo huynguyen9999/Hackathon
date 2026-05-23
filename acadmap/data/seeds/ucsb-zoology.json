@@ -1,0 +1,215 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Zoology",
+    "slug": "zoology",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Zoology (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSZOO",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Zoology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Zoology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "eemb-2",
+      "node_type": "course",
+      "label": "EEMB 2",
+      "title": "EEMB 2",
+      "description": "Series through EEMB 3",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "phys-6a",
+      "node_type": "course",
+      "label": "PHYS 6A",
+      "title": "PHYS 6A",
+      "description": "Required or recommended course for the Zoology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "eemb-120",
+      "node_type": "course",
+      "label": "EEMB 120",
+      "title": "EEMB 120",
+      "description": "Required or recommended course for the Zoology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "eemb-157",
+      "node_type": "course",
+      "label": "EEMB 157",
+      "title": "EEMB 157",
+      "description": "Required or recommended course for the Zoology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "eemb-184",
+      "node_type": "course",
+      "label": "EEMB 184",
+      "title": "EEMB 184",
+      "description": "Required or recommended course for the Zoology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "eemb-199",
+      "node_type": "course",
+      "label": "EEMB 199",
+      "title": "EEMB 199",
+      "description": "Required or recommended course for the Zoology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    },
+    {
+      "id": "career-wildlife-biology",
+      "node_type": "career",
+      "label": "Wildlife biology",
+      "title": "Wildlife biology",
+      "description": "Career path for Zoology graduates: Wildlife biology.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "career-conservation",
+      "node_type": "career",
+      "label": "Conservation",
+      "title": "Conservation",
+      "description": "Career path for Zoology graduates: Conservation.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "career-veterinary-grad",
+      "node_type": "career",
+      "label": "Veterinary",
+      "title": "Veterinary (grad)",
+      "description": "Career path for Zoology graduates: Veterinary (grad).",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "career-research",
+      "node_type": "career",
+      "label": "Research",
+      "title": "Research",
+      "description": "Career path for Zoology graduates: Research.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chem-1a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3a",
+      "target_id": "eemb-2",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "eemb-2",
+      "target_id": "phys-6a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "phys-6a",
+      "target_id": "eemb-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "eemb-120",
+      "target_id": "eemb-157",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "eemb-157",
+      "target_id": "eemb-184",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "eemb-184",
+      "target_id": "eemb-199",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "eemb-199",
+      "target_id": "career-wildlife-biology",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "eemb-157",
+      "target_id": "career-conservation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "eemb-199",
+      "target_id": "career-veterinary-grad",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "eemb-157",
+      "target_id": "career-research",
+      "edge_type": "leads_to"
+    }
+  ]
+}

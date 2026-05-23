@@ -1,0 +1,181 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Philosophy",
+    "slug": "philosophy",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Philosophy (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAPHIL",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "phil-20a",
+      "node_type": "course",
+      "label": "PHIL 20A",
+      "title": "History of Philosophy sequence (or equivalent)",
+      "description": "History of Philosophy sequence (or equivalent) — part of the Philosophy prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "phil-3",
+      "node_type": "course",
+      "label": "PHIL 3",
+      "title": "PHIL 3",
+      "description": "Required or recommended course for the Philosophy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "phil-100",
+      "node_type": "course",
+      "label": "PHIL 100",
+      "title": "PHIL 100",
+      "description": "Required or recommended course for the Philosophy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "phil-112",
+      "node_type": "course",
+      "label": "PHIL 112",
+      "title": "PHIL 112",
+      "description": "Required or recommended course for the Philosophy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "phil-115",
+      "node_type": "course",
+      "label": "PHIL 115",
+      "title": "PHIL 115",
+      "description": "Required or recommended course for the Philosophy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "phil-124",
+      "node_type": "course",
+      "label": "PHIL 124",
+      "title": "PHIL 124",
+      "description": "Required or recommended course for the Philosophy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for Philosophy graduates: Law.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 60
+    },
+    {
+      "id": "career-public-policy",
+      "node_type": "career",
+      "label": "Public policy",
+      "title": "Public policy",
+      "description": "Career path for Philosophy graduates: Public policy.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 235
+    },
+    {
+      "id": "career-ethics-consulting",
+      "node_type": "career",
+      "label": "Ethics consulting",
+      "title": "Ethics consulting",
+      "description": "Career path for Philosophy graduates: Ethics consulting.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 410
+    },
+    {
+      "id": "career-academia",
+      "node_type": "career",
+      "label": "Academia",
+      "title": "Academia",
+      "description": "Career path for Philosophy graduates: Academia.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "phil-20a",
+      "target_id": "phil-3",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "phil-3",
+      "target_id": "phil-100",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "phil-100",
+      "target_id": "phil-112",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "phil-112",
+      "target_id": "phil-115",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "phil-115",
+      "target_id": "phil-124",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "phil-124",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "phil-112",
+      "target_id": "career-public-policy",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "phil-124",
+      "target_id": "career-ethics-consulting",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "phil-112",
+      "target_id": "career-academia",
+      "edge_type": "leads_to"
+    }
+  ]
+}

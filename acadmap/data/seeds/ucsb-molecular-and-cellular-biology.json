@@ -1,0 +1,215 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Molecular and Cellular Biology",
+    "slug": "molecular-and-cellular-biology",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Molecular and Cellular Biology (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSMCDB",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Molecular and Cellular Biology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Molecular and Cellular Biology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "mcdb-1a",
+      "node_type": "course",
+      "label": "MCDB 1A",
+      "title": "MCDB 1A",
+      "description": "Required or recommended course for the Molecular and Cellular Biology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "phys-6a",
+      "node_type": "course",
+      "label": "PHYS 6A",
+      "title": "PHYS 6A",
+      "description": "Required or recommended course for the Molecular and Cellular Biology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "mcdb-108a",
+      "node_type": "course",
+      "label": "MCDB 108A",
+      "title": "MCDB 108A",
+      "description": "Required or recommended course for the Molecular and Cellular Biology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "mcdb-131",
+      "node_type": "course",
+      "label": "MCDB 131",
+      "title": "MCDB 131",
+      "description": "Required or recommended course for the Molecular and Cellular Biology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "mcdb-150",
+      "node_type": "course",
+      "label": "MCDB 150",
+      "title": "MCDB 150",
+      "description": "Required or recommended course for the Molecular and Cellular Biology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "mcdb-199",
+      "node_type": "course",
+      "label": "MCDB 199",
+      "title": "MCDB 199",
+      "description": "Required or recommended course for the Molecular and Cellular Biology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    },
+    {
+      "id": "career-biotech",
+      "node_type": "career",
+      "label": "Biotech",
+      "title": "Biotech",
+      "description": "Career path for Molecular and Cellular Biology graduates: Biotech.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "career-medicine",
+      "node_type": "career",
+      "label": "Medicine",
+      "title": "Medicine",
+      "description": "Career path for Molecular and Cellular Biology graduates: Medicine.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "career-research",
+      "node_type": "career",
+      "label": "Research",
+      "title": "Research",
+      "description": "Career path for Molecular and Cellular Biology graduates: Research.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "career-pharmaceutical",
+      "node_type": "career",
+      "label": "Pharmaceutical",
+      "title": "Pharmaceutical",
+      "description": "Career path for Molecular and Cellular Biology graduates: Pharmaceutical.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chem-1a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3a",
+      "target_id": "mcdb-1a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "mcdb-1a",
+      "target_id": "phys-6a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "phys-6a",
+      "target_id": "mcdb-108a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "mcdb-108a",
+      "target_id": "mcdb-131",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "mcdb-131",
+      "target_id": "mcdb-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "mcdb-150",
+      "target_id": "mcdb-199",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "mcdb-199",
+      "target_id": "career-biotech",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "mcdb-131",
+      "target_id": "career-medicine",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "mcdb-199",
+      "target_id": "career-research",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "mcdb-131",
+      "target_id": "career-pharmaceutical",
+      "edge_type": "leads_to"
+    }
+  ]
+}

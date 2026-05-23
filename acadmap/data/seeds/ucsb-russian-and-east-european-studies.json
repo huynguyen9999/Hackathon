@@ -1,0 +1,147 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Russian and East European Studies",
+    "slug": "russian-and-east-european-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Russian and East European Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAREES",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "russ-120",
+      "node_type": "course",
+      "label": "RUSS 120",
+      "title": "RUSS 120",
+      "description": "Required or recommended course for the Russian and East European Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "gss-130",
+      "node_type": "course",
+      "label": "GSS 130",
+      "title": "GSS 130",
+      "description": "Required or recommended course for the Russian and East European Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "hist-140",
+      "node_type": "course",
+      "label": "HIST 140",
+      "title": "HIST 140",
+      "description": "Required or recommended course for the Russian and East European Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "gss-170",
+      "node_type": "course",
+      "label": "GSS 170",
+      "title": "GSS 170",
+      "description": "Required or recommended course for the Russian and East European Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "career-diplomacy",
+      "node_type": "career",
+      "label": "Diplomacy",
+      "title": "Diplomacy",
+      "description": "Career path for Russian and East European Studies graduates: Diplomacy.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for Russian and East European Studies graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "career-intelligence-analysis",
+      "node_type": "career",
+      "label": "Intelligence/analysis",
+      "title": "Intelligence/analysis",
+      "description": "Career path for Russian and East European Studies graduates: Intelligence/analysis.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Russian and East European Studies graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "russ-120",
+      "target_id": "gss-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "gss-130",
+      "target_id": "hist-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "hist-140",
+      "target_id": "gss-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "gss-170",
+      "target_id": "career-diplomacy",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "gss-130",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "gss-170",
+      "target_id": "career-intelligence-analysis",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "gss-130",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    }
+  ]
+}

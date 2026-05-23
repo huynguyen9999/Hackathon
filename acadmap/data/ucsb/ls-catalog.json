@@ -1665,7 +1665,7 @@
       "department_url": "https://www.math.ucsb.edu/",
       "curriculum_url": "https://www.math.ucsb.edu/undergraduate",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "MATH 2A-B or 3A-B",
         "MATH 4A-B (linear algebra, differential equations)",
@@ -1692,7 +1692,7 @@
         "Teaching",
         "Graduate study"
       ],
-      "requirements_level": "sheet",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#mathematics",
       "catalog_program_code": "BAMATH",
       "selective": true,
@@ -1707,7 +1707,7 @@
       "department_url": "https://www.history.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAMDS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "HIST 4A-B or medieval surveys",
         "Latin or relevant language study",
@@ -1733,7 +1733,7 @@
         "Publishing",
         "Law"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#medieval-studies",
       "catalog_program_code": "BAMDS",
       "detail_available": true
@@ -1746,7 +1746,7 @@
       "department_url": "https://www.religion.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAMES",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "MES lower-division surveys",
         "Middle Eastern language study (recommended)",
@@ -1772,7 +1772,7 @@
         "Graduate study",
         "Policy"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#middle-east-studies",
       "catalog_program_code": "BAMES",
       "detail_available": true
@@ -1785,7 +1785,7 @@
       "department_url": "https://www.biology.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSMCDB",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B-C",
         "MATH 3A-B",
@@ -1812,7 +1812,7 @@
         "Pharmaceutical",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#molecular-and-cellular-biology",
       "catalog_program_code": "BSMCDB",
       "selective": true,
@@ -1826,7 +1826,7 @@
       "department_url": "https://www.music.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAMUS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "MUS lower-division theory",
         "Performance ensemble participation",
@@ -1852,7 +1852,7 @@
         "Arts administration",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#music-performance-music-studies",
       "catalog_program_code": "BAMUS",
       "detail_available": true
@@ -1865,7 +1865,7 @@
       "department_url": "https://www.philosophy.ucsb.edu/",
       "curriculum_url": "https://www.philosophy.ucsb.edu/undergraduate",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "PHIL 20A-B-C — History of Philosophy sequence (or equivalent)",
         "Lower-division PHIL electives",
@@ -1891,7 +1891,7 @@
         "Academia",
         "Tech ethics"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#philosophy",
       "catalog_program_code": "BAPHIL",
       "detail_available": true
@@ -1904,7 +1904,7 @@
       "department_url": "https://www.physics.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSPHY",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "PHYS 7A-B-C-D-L (introductory physics series + lab)",
         "MATH 3A-B, 4A-B, 6A-B (calculus series)",
@@ -1932,7 +1932,7 @@
         "National labs",
         "Data science"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#physics",
       "catalog_program_code": "BSPHY",
       "selective": true,
@@ -1946,7 +1946,7 @@
       "department_url": "https://www.biology.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSPSIO",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B-C",
         "MATH 3A-B",
@@ -1973,7 +1973,7 @@
         "Graduate study",
         "Allied health"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#physiology",
       "catalog_program_code": "BSPSIO",
       "selective": true,
@@ -1987,7 +1987,7 @@
       "department_url": "https://www.polsci.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAPOL",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "POL S 1 — American Government",
         "POL S 6 — Introduction to Data Analysis",
@@ -2014,7 +2014,7 @@
         "Campaigns",
         "Journalism"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#political-science",
       "catalog_program_code": "BAPOL",
       "detail_available": true
@@ -2027,7 +2027,7 @@
       "department_url": "https://www.spanport.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAPORT",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "PORT 1-6 — Portuguese language sequence",
         "Lower-division Luso-Brazilian culture",
@@ -2053,7 +2053,7 @@
         "Teaching",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#portuguese",
       "catalog_program_code": "BAPORT",
       "detail_available": true
@@ -2066,7 +2066,7 @@
       "department_url": "https://www.psych.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAPSY",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "PSY 1 — Introductory Psychology",
         "PSTAT 5 or 5LS (or equivalent statistics)",
@@ -2095,7 +2095,7 @@
         "Market research",
         "Neuroscience"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#psychological-and-brain-sciences",
       "catalog_program_code": "BAPSY",
       "selective": true,
@@ -2109,7 +2109,7 @@
       "department_url": "https://www.religion.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BARS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "RS lower-division surveys",
         "World religions gateway courses",
@@ -2135,7 +2135,7 @@
         "Graduate study",
         "International NGOs"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#religious-studies",
       "catalog_program_code": "BARS",
       "detail_available": true
@@ -2148,7 +2148,7 @@
       "department_url": "https://www.gss.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAREES",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "RUSS language sequence",
         "Lower-division REES surveys",
@@ -2174,7 +2174,7 @@
         "Graduate study",
         "International NGOs"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#russian-and-east-european-studies",
       "catalog_program_code": "BAREES",
       "detail_available": true
@@ -2187,7 +2187,7 @@
       "department_url": "https://www.soc.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BASOC",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "SOC 1 — Introduction to Sociology",
         "SOC 2 — Social Problems",
@@ -2213,7 +2213,7 @@
         "Public health",
         "Nonprofit"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#sociology",
       "catalog_program_code": "BASOC",
       "detail_available": true
@@ -2226,7 +2226,7 @@
       "department_url": "https://www.spanport.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BASPN",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "SPAN 1-6 — Spanish language sequence",
         "Lower-division Spanish literature/culture",
@@ -2252,7 +2252,7 @@
         "Law",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#spanish",
       "catalog_program_code": "BASPN",
       "detail_available": true
@@ -2265,7 +2265,7 @@
       "department_url": "https://www.pstat.ucsb.edu/",
       "curriculum_url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/stats-and-data-science-major",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "MATH 3A-B — Calculus",
         "MATH 4A — Linear Algebra",
@@ -2292,7 +2292,7 @@
         "Actuarial",
         "Tech industry"
       ],
-      "requirements_level": "sheet",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#statistics-and-data-science",
       "catalog_program_code": "BSPSTAT",
       "selective": true,
@@ -2308,7 +2308,7 @@
       "department_url": "https://www.theaterdance.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BATHR",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "THTR lower-division acting/directing",
         "THTR history/theory",
@@ -2334,7 +2334,7 @@
         "Arts administration",
         "Film/TV"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#theater",
       "catalog_program_code": "BATHR",
       "detail_available": true
@@ -2347,7 +2347,7 @@
       "department_url": "https://www.biology.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSZOO",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B-C",
         "MATH 3A-B",
@@ -2374,7 +2374,7 @@
         "Research",
         "Zoo/aquarium"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#zoology",
       "catalog_program_code": "BSZOO",
       "selective": true,

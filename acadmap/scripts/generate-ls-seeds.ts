@@ -18,7 +18,10 @@ const MAX_COURSES = 14;
 const MAX_CAREERS = 4;
 
 const COURSE_CODE =
-  /^[A-Z]{2,10}\s+\d+[A-Z]{0,2}$/;
+  /^(?:[A-Z]{1,10}\s+)+\d+[A-Z]?$/;
+
+const COURSE_CODE_PREFIX =
+  /^((?:[A-Z]{1,10}\s+)+\d+[A-Z]?)\b/;
 
 const SKIP_CODE =
   /elective|upper-division|upper division|cluster|lab or|research|methods course|studio|concentration|portfolio|exhibition|capstone|approved|choose|sample|subdisciplines|biochemistry courses|science elective/i;
@@ -34,7 +37,39 @@ function isValidCourseCode(code: string): boolean {
   return COURSE_CODE.test(trimmed);
 }
 
-function collectCourseRefs(detail: LsMajorDetail): CourseRef[] {
+function parseCatalogPrepLine(line: string): CourseRef | null {
+  const match = line.match(COURSE_CODE_PREFIX);
+  if (!match || !isValidCourseCode(match[1]!.trim())) return null;
+  const code = match[1]!.trim();
+  const title = line.replace(/^[^—–-]+[—–-]\s*/, "").trim();
+  return {
+    code,
+    title: title && title !== code && title.length < 80 ? title : undefined,
+  };
+}
+
+type CatalogMajorSlice = {
+  preparation_for_major?: string[];
+  sample_electives?: string[];
+};
+
+function collectCatalogCourseRefs(catalogMajor: CatalogMajorSlice): CourseRef[] {
+  const refs: CourseRef[] = [];
+  for (const line of catalogMajor.preparation_for_major ?? []) {
+    const ref = parseCatalogPrepLine(line);
+    if (ref) refs.push(ref);
+  }
+  for (const code of catalogMajor.sample_electives ?? []) {
+    const trimmed = code.trim();
+    if (isValidCourseCode(trimmed)) refs.push({ code: trimmed });
+  }
+  return refs;
+}
+
+function collectCourseRefs(
+  detail: LsMajorDetail,
+  catalogMajor?: CatalogMajorSlice,
+): CourseRef[] {
   const seen = new Set<string>();
   const out: CourseRef[] = [];
 
@@ -57,6 +92,10 @@ function collectCourseRefs(detail: LsMajorDetail): CourseRef[] {
       if ("slot" in entry) continue;
       add(entry);
     }
+  }
+
+  if (out.length < MAX_COURSES && catalogMajor) {
+    for (const ref of collectCatalogCourseRefs(catalogMajor)) add(ref);
   }
 
   return out.slice(0, MAX_COURSES);
@@ -84,8 +123,9 @@ function careerId(label: string, index: number): string {
 function buildSeed(
   detail: LsMajorDetail,
   degreeType: string,
+  catalogMajor?: CatalogMajorSlice,
 ): SeedRoadmapInput {
-  const courses = collectCourseRefs(detail);
+  const courses = collectCourseRefs(detail, catalogMajor);
   const careers = detail.career_outcomes.slice(0, MAX_CAREERS);
 
   if (courses.length < 3) {
@@ -171,7 +211,13 @@ function main() {
   const force = process.argv.includes("--force");
 
   const catalog = JSON.parse(readFileSync(CATALOG_PATH, "utf-8")) as {
-    majors: { slug: string; degree_type: string; name: string }[];
+    majors: {
+      slug: string;
+      degree_type: string;
+      name: string;
+      preparation_for_major?: string[];
+      sample_electives?: string[];
+    }[];
   };
 
   const targets = onlySlug
@@ -199,7 +245,7 @@ function main() {
     }
 
     try {
-      const seed = buildSeed(detail, major.degree_type);
+      const seed = buildSeed(detail, major.degree_type, major);
       writeFileSync(outPath, `${JSON.stringify(seed, null, 2)}\n`, "utf-8");
       console.log(`Wrote ${outPath} (${seed.nodes.length} nodes)`);
       written++;

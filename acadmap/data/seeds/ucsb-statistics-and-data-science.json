@@ -1,0 +1,317 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Statistics and Data Science",
+    "slug": "statistics-and-data-science",
+    "degree_type": "BA/BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Statistics and Data Science (2025-2026)",
+    "source_url": "https://www.pstat.ucsb.edu/media/158",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "math-2a",
+      "node_type": "course",
+      "label": "MATH 2A",
+      "title": "MATH 2A",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "math-2b",
+      "node_type": "course",
+      "label": "MATH 2B",
+      "title": "MATH 2B",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "math-4a",
+      "node_type": "course",
+      "label": "MATH 4A",
+      "title": "MATH 4A",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "math-4b",
+      "node_type": "course",
+      "label": "MATH 4B",
+      "title": "MATH 4B",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "math-6a",
+      "node_type": "course",
+      "label": "MATH 6A",
+      "title": "MATH 6A",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 760
+    },
+    {
+      "id": "math-8",
+      "node_type": "course",
+      "label": "MATH 8",
+      "title": "MATH 8",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 1110
+    },
+    {
+      "id": "pstat-10",
+      "node_type": "course",
+      "label": "PSTAT 10",
+      "title": "PSTAT 10",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "cmpsc-8",
+      "node_type": "course",
+      "label": "CMPSC 8",
+      "title": "CMPSC 8",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 80,
+      "position_y": 935
+    },
+    {
+      "id": "cmpsc-9",
+      "node_type": "course",
+      "label": "CMPSC 9",
+      "title": "CMPSC 9",
+      "description": "CMPSC 9 recommended over 16",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 80,
+      "position_y": 1285
+    },
+    {
+      "id": "pstat-120a",
+      "node_type": "course",
+      "label": "PSTAT 120A",
+      "title": "PSTAT 120A",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "pstat-120b",
+      "node_type": "course",
+      "label": "PSTAT 120B",
+      "title": "PSTAT 120B",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "pstat-122",
+      "node_type": "course",
+      "label": "PSTAT 122",
+      "title": "PSTAT 122",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "pstat-126",
+      "node_type": "course",
+      "label": "PSTAT 126",
+      "title": "PSTAT 126",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    },
+    {
+      "id": "pstat-130",
+      "node_type": "course",
+      "label": "PSTAT 130",
+      "title": "PSTAT 130",
+      "description": "Required or recommended course for the Statistics and Data Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 760
+    },
+    {
+      "id": "career-data-science",
+      "node_type": "career",
+      "label": "Data science",
+      "title": "Data science",
+      "description": "Career path for Statistics and Data Science graduates: Data science.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 60
+    },
+    {
+      "id": "career-machine-learning",
+      "node_type": "career",
+      "label": "Machine learning",
+      "title": "Machine learning",
+      "description": "Career path for Statistics and Data Science graduates: Machine learning.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 235
+    },
+    {
+      "id": "career-biostatistics",
+      "node_type": "career",
+      "label": "Biostatistics",
+      "title": "Biostatistics",
+      "description": "Career path for Statistics and Data Science graduates: Biostatistics.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 410
+    },
+    {
+      "id": "career-actuarial",
+      "node_type": "career",
+      "label": "Actuarial",
+      "title": "Actuarial",
+      "description": "Career path for Statistics and Data Science graduates: Actuarial.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "math-2a",
+      "target_id": "math-2b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-2b",
+      "target_id": "math-4a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "math-4a",
+      "target_id": "math-4b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "math-4b",
+      "target_id": "math-6a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "math-6a",
+      "target_id": "math-8",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "math-8",
+      "target_id": "pstat-10",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "pstat-10",
+      "target_id": "cmpsc-8",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "cmpsc-8",
+      "target_id": "cmpsc-9",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "cmpsc-9",
+      "target_id": "pstat-120a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e10",
+      "source_id": "pstat-120a",
+      "target_id": "pstat-120b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e11",
+      "source_id": "pstat-120b",
+      "target_id": "pstat-122",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e12",
+      "source_id": "pstat-122",
+      "target_id": "pstat-126",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e13",
+      "source_id": "pstat-126",
+      "target_id": "pstat-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "pstat-130",
+      "target_id": "career-data-science",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "pstat-122",
+      "target_id": "career-machine-learning",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "pstat-130",
+      "target_id": "career-biostatistics",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "pstat-122",
+      "target_id": "career-actuarial",
+      "edge_type": "leads_to"
+    }
+  ]
+}

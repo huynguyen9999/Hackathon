@@ -1,0 +1,215 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Physiology",
+    "slug": "physiology",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Physiology (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSPSIO",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Physiology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Physiology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "mcdb-1a",
+      "node_type": "course",
+      "label": "MCDB 1A",
+      "title": "MCDB 1A",
+      "description": "Required or recommended course for the Physiology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "phys-6a",
+      "node_type": "course",
+      "label": "PHYS 6A",
+      "title": "PHYS 6A",
+      "description": "Required or recommended course for the Physiology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "mcdb-108a",
+      "node_type": "course",
+      "label": "MCDB 108A",
+      "title": "MCDB 108A",
+      "description": "Required or recommended course for the Physiology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "eemb-120",
+      "node_type": "course",
+      "label": "EEMB 120",
+      "title": "EEMB 120",
+      "description": "Required or recommended course for the Physiology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "mcdb-131",
+      "node_type": "course",
+      "label": "MCDB 131",
+      "title": "MCDB 131",
+      "description": "Required or recommended course for the Physiology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "phys-6c",
+      "node_type": "course",
+      "label": "PHYS 6C",
+      "title": "PHYS 6C",
+      "description": "Required or recommended course for the Physiology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 760
+    },
+    {
+      "id": "career-medicine",
+      "node_type": "career",
+      "label": "Medicine",
+      "title": "Medicine",
+      "description": "Career path for Physiology graduates: Medicine.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "career-physiology-research",
+      "node_type": "career",
+      "label": "Physiology research",
+      "title": "Physiology research",
+      "description": "Career path for Physiology graduates: Physiology research.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "career-pharmaceutical",
+      "node_type": "career",
+      "label": "Pharmaceutical",
+      "title": "Pharmaceutical",
+      "description": "Career path for Physiology graduates: Pharmaceutical.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Physiology graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chem-1a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3a",
+      "target_id": "mcdb-1a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "mcdb-1a",
+      "target_id": "phys-6a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "phys-6a",
+      "target_id": "mcdb-108a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "mcdb-108a",
+      "target_id": "eemb-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "eemb-120",
+      "target_id": "mcdb-131",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "mcdb-131",
+      "target_id": "phys-6c",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "phys-6c",
+      "target_id": "career-medicine",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "eemb-120",
+      "target_id": "career-physiology-research",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "phys-6c",
+      "target_id": "career-pharmaceutical",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "eemb-120",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    }
+  ]
+}

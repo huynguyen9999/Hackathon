@@ -1,0 +1,147 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Music Performance / Music Studies",
+    "slug": "music-performance-music-studies",
+    "degree_type": "BM/BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Music Performance / Music Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAMUS",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "mus-130",
+      "node_type": "course",
+      "label": "MUS 130",
+      "title": "MUS 130",
+      "description": "Required or recommended course for the Music Performance / Music Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "mus-150",
+      "node_type": "course",
+      "label": "MUS 150",
+      "title": "MUS 150",
+      "description": "Required or recommended course for the Music Performance / Music Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "mus-170",
+      "node_type": "course",
+      "label": "MUS 170",
+      "title": "MUS 170",
+      "description": "Required or recommended course for the Music Performance / Music Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "mus-190",
+      "node_type": "course",
+      "label": "MUS 190",
+      "title": "MUS 190",
+      "description": "Required or recommended course for the Music Performance / Music Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "career-performance",
+      "node_type": "career",
+      "label": "Performance",
+      "title": "Performance",
+      "description": "Career path for Music Performance / Music Studies graduates: Performance.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "career-composition",
+      "node_type": "career",
+      "label": "Composition",
+      "title": "Composition",
+      "description": "Career path for Music Performance / Music Studies graduates: Composition.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "career-music-education",
+      "node_type": "career",
+      "label": "Music education",
+      "title": "Music education",
+      "description": "Career path for Music Performance / Music Studies graduates: Music education.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "career-arts-administration",
+      "node_type": "career",
+      "label": "Arts administration",
+      "title": "Arts administration",
+      "description": "Career path for Music Performance / Music Studies graduates: Arts administration.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "mus-130",
+      "target_id": "mus-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "mus-150",
+      "target_id": "mus-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "mus-170",
+      "target_id": "mus-190",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "mus-190",
+      "target_id": "career-performance",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "mus-150",
+      "target_id": "career-composition",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "mus-190",
+      "target_id": "career-music-education",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "mus-150",
+      "target_id": "career-arts-administration",
+      "edge_type": "leads_to"
+    }
+  ]
+}

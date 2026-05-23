@@ -1,0 +1,164 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Medieval Studies",
+    "slug": "medieval-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Medieval Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAMDS",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "hist-4a",
+      "node_type": "course",
+      "label": "HIST 4A",
+      "title": "HIST 4A",
+      "description": "Required or recommended course for the Medieval Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "hist-130",
+      "node_type": "course",
+      "label": "HIST 130",
+      "title": "HIST 130",
+      "description": "Required or recommended course for the Medieval Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    },
+    {
+      "id": "haa-130",
+      "node_type": "course",
+      "label": "HAA 130",
+      "title": "HAA 130",
+      "description": "Required or recommended course for the Medieval Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "clas-110",
+      "node_type": "course",
+      "label": "CLAS 110",
+      "title": "CLAS 110",
+      "description": "Required or recommended course for the Medieval Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "eng-130",
+      "node_type": "course",
+      "label": "ENG 130",
+      "title": "ENG 130",
+      "description": "Required or recommended course for the Medieval Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Medieval Studies graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "career-museum-archives",
+      "node_type": "career",
+      "label": "Museum/archives",
+      "title": "Museum/archives",
+      "description": "Career path for Medieval Studies graduates: Museum/archives.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for Medieval Studies graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "career-publishing",
+      "node_type": "career",
+      "label": "Publishing",
+      "title": "Publishing",
+      "description": "Career path for Medieval Studies graduates: Publishing.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "hist-4a",
+      "target_id": "hist-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "hist-130",
+      "target_id": "haa-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "haa-130",
+      "target_id": "clas-110",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "clas-110",
+      "target_id": "eng-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "eng-130",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "haa-130",
+      "target_id": "career-museum-archives",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "eng-130",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "haa-130",
+      "target_id": "career-publishing",
+      "edge_type": "leads_to"
+    }
+  ]
+}

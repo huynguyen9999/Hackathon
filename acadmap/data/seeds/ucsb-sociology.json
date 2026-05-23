@@ -1,0 +1,249 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Sociology",
+    "slug": "sociology",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Sociology (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BASOC",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "soc-1",
+      "node_type": "course",
+      "label": "SOC 1",
+      "title": "Introduction to Sociology",
+      "description": "Introduction to Sociology — part of the Sociology prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "soc-2",
+      "node_type": "course",
+      "label": "SOC 2",
+      "title": "Social Problems",
+      "description": "Social Problems — part of the Sociology prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "pstat-5",
+      "node_type": "course",
+      "label": "PSTAT 5",
+      "title": "PSTAT 5",
+      "description": "Required or recommended course for the Sociology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "soc-3",
+      "node_type": "course",
+      "label": "SOC 3",
+      "title": "SOC 3",
+      "description": "Required or recommended course for the Sociology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "soc-100",
+      "node_type": "course",
+      "label": "SOC 100",
+      "title": "Sociological Theory",
+      "description": "Sociological Theory — part of the Sociology prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "soc-101",
+      "node_type": "course",
+      "label": "SOC 101",
+      "title": "Research Methods",
+      "description": "Required or recommended course for the Sociology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "soc-120",
+      "node_type": "course",
+      "label": "SOC 120",
+      "title": "SOC 120",
+      "description": "Required or recommended course for the Sociology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "soc-130",
+      "node_type": "course",
+      "label": "SOC 130",
+      "title": "SOC 130",
+      "description": "Required or recommended course for the Sociology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    },
+    {
+      "id": "soc-142",
+      "node_type": "course",
+      "label": "SOC 142",
+      "title": "SOC 142",
+      "description": "Required or recommended course for the Sociology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 760
+    },
+    {
+      "id": "soc-185",
+      "node_type": "course",
+      "label": "SOC 185",
+      "title": "SOC 185",
+      "description": "Required or recommended course for the Sociology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 935
+    },
+    {
+      "id": "career-social-work-grad",
+      "node_type": "career",
+      "label": "Social work",
+      "title": "Social work (grad)",
+      "description": "Career path for Sociology graduates: Social work (grad).",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "career-market-research",
+      "node_type": "career",
+      "label": "Market research",
+      "title": "Market research",
+      "description": "Career path for Sociology graduates: Market research.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "career-hr",
+      "node_type": "career",
+      "label": "HR",
+      "title": "HR",
+      "description": "Career path for Sociology graduates: HR.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "career-public-health",
+      "node_type": "career",
+      "label": "Public health",
+      "title": "Public health",
+      "description": "Career path for Sociology graduates: Public health.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "soc-1",
+      "target_id": "soc-2",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "soc-2",
+      "target_id": "pstat-5",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "pstat-5",
+      "target_id": "soc-3",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "soc-3",
+      "target_id": "soc-100",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "soc-100",
+      "target_id": "soc-101",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "soc-101",
+      "target_id": "soc-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "soc-120",
+      "target_id": "soc-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "soc-130",
+      "target_id": "soc-142",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "soc-142",
+      "target_id": "soc-185",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "soc-185",
+      "target_id": "career-social-work-grad",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "soc-130",
+      "target_id": "career-market-research",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "soc-185",
+      "target_id": "career-hr",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "soc-130",
+      "target_id": "career-public-health",
+      "edge_type": "leads_to"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Middle East Studies",
+    "slug": "middle-east-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Middle East Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAMES",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "mes-130",
+      "node_type": "course",
+      "label": "MES 130",
+      "title": "MES 130",
+      "description": "Required or recommended course for the Middle East Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "rs-130",
+      "node_type": "course",
+      "label": "RS 130",
+      "title": "RS 130",
+      "description": "Required or recommended course for the Middle East Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "hist-140",
+      "node_type": "course",
+      "label": "HIST 140",
+      "title": "HIST 140",
+      "description": "Required or recommended course for the Middle East Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "mes-170",
+      "node_type": "course",
+      "label": "MES 170",
+      "title": "MES 170",
+      "description": "Required or recommended course for the Middle East Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "career-diplomacy",
+      "node_type": "career",
+      "label": "Diplomacy",
+      "title": "Diplomacy",
+      "description": "Career path for Middle East Studies graduates: Diplomacy.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "career-international-ngos",
+      "node_type": "career",
+      "label": "International NGOs",
+      "title": "International NGOs",
+      "description": "Career path for Middle East Studies graduates: International NGOs.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "career-journalism",
+      "node_type": "career",
+      "label": "Journalism",
+      "title": "Journalism",
+      "description": "Career path for Middle East Studies graduates: Journalism.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Middle East Studies graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "mes-130",
+      "target_id": "rs-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "rs-130",
+      "target_id": "hist-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "hist-140",
+      "target_id": "mes-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "mes-170",
+      "target_id": "career-diplomacy",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "rs-130",
+      "target_id": "career-international-ngos",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "mes-170",
+      "target_id": "career-journalism",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "rs-130",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    }
+  ]
+}

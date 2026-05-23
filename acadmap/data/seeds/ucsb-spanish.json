@@ -1,0 +1,181 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Spanish",
+    "slug": "spanish",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Spanish (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BASPN",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "span-1",
+      "node_type": "course",
+      "label": "SPAN 1",
+      "title": "Spanish language sequence",
+      "description": "Series through SPAN 6",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "span-100",
+      "node_type": "course",
+      "label": "SPAN 100",
+      "title": "Advanced Spanish",
+      "description": "Advanced Spanish — part of the Spanish prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "span-120",
+      "node_type": "course",
+      "label": "SPAN 120",
+      "title": "SPAN 120",
+      "description": "Required or recommended course for the Spanish major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "span-140",
+      "node_type": "course",
+      "label": "SPAN 140",
+      "title": "SPAN 140",
+      "description": "Required or recommended course for the Spanish major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    },
+    {
+      "id": "span-160",
+      "node_type": "course",
+      "label": "SPAN 160",
+      "title": "SPAN 160",
+      "description": "Required or recommended course for the Spanish major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 760
+    },
+    {
+      "id": "lais-130",
+      "node_type": "course",
+      "label": "LAIS 130",
+      "title": "LAIS 130",
+      "description": "Required or recommended course for the Spanish major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for Spanish graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "career-education",
+      "node_type": "career",
+      "label": "Education",
+      "title": "Education",
+      "description": "Career path for Spanish graduates: Education.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "career-international-business",
+      "node_type": "career",
+      "label": "International business",
+      "title": "International business",
+      "description": "Career path for Spanish graduates: International business.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for Spanish graduates: Law.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "span-1",
+      "target_id": "span-100",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "span-100",
+      "target_id": "span-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "span-120",
+      "target_id": "span-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "span-140",
+      "target_id": "span-160",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "span-160",
+      "target_id": "lais-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "lais-130",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "span-140",
+      "target_id": "career-education",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "lais-130",
+      "target_id": "career-international-business",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "span-140",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    }
+  ]
+}

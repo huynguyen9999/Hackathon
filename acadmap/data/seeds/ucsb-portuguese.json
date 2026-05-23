@@ -1,0 +1,181 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Portuguese",
+    "slug": "portuguese",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Portuguese (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAPORT",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "port-1",
+      "node_type": "course",
+      "label": "PORT 1",
+      "title": "Portuguese language sequence",
+      "description": "Series through PORT 6",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "port-100",
+      "node_type": "course",
+      "label": "PORT 100",
+      "title": "Advanced Portuguese",
+      "description": "Advanced Portuguese — part of the Portuguese prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "port-120",
+      "node_type": "course",
+      "label": "PORT 120",
+      "title": "PORT 120",
+      "description": "Required or recommended course for the Portuguese major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "port-140",
+      "node_type": "course",
+      "label": "PORT 140",
+      "title": "PORT 140",
+      "description": "Required or recommended course for the Portuguese major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    },
+    {
+      "id": "port-160",
+      "node_type": "course",
+      "label": "PORT 160",
+      "title": "PORT 160",
+      "description": "Required or recommended course for the Portuguese major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 760
+    },
+    {
+      "id": "lais-130",
+      "node_type": "course",
+      "label": "LAIS 130",
+      "title": "LAIS 130",
+      "description": "Required or recommended course for the Portuguese major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for Portuguese graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "career-international-development",
+      "node_type": "career",
+      "label": "International development",
+      "title": "International development",
+      "description": "Career path for Portuguese graduates: International development.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "career-diplomacy",
+      "node_type": "career",
+      "label": "Diplomacy",
+      "title": "Diplomacy",
+      "description": "Career path for Portuguese graduates: Diplomacy.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for Portuguese graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "port-1",
+      "target_id": "port-100",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "port-100",
+      "target_id": "port-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "port-120",
+      "target_id": "port-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "port-140",
+      "target_id": "port-160",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "port-160",
+      "target_id": "lais-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "lais-130",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "port-140",
+      "target_id": "career-international-development",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "lais-130",
+      "target_id": "career-diplomacy",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "port-140",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    }
+  ]
+}

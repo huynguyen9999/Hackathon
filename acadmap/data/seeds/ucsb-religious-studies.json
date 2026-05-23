@@ -1,0 +1,147 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Religious Studies",
+    "slug": "religious-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Religious Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BARS",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "rs-130",
+      "node_type": "course",
+      "label": "RS 130",
+      "title": "RS 130",
+      "description": "Required or recommended course for the Religious Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "rs-150",
+      "node_type": "course",
+      "label": "RS 150",
+      "title": "RS 150",
+      "description": "Required or recommended course for the Religious Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "rs-170",
+      "node_type": "course",
+      "label": "RS 170",
+      "title": "RS 170",
+      "description": "Required or recommended course for the Religious Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "rs-190",
+      "node_type": "course",
+      "label": "RS 190",
+      "title": "RS 190",
+      "description": "Required or recommended course for the Religious Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 585
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for Religious Studies graduates: Law.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "career-nonprofit",
+      "node_type": "career",
+      "label": "Nonprofit",
+      "title": "Nonprofit",
+      "description": "Career path for Religious Studies graduates: Nonprofit.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 235
+    },
+    {
+      "id": "career-education",
+      "node_type": "career",
+      "label": "Education",
+      "title": "Education",
+      "description": "Career path for Religious Studies graduates: Education.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 410
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Religious Studies graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 320,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "rs-130",
+      "target_id": "rs-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "rs-150",
+      "target_id": "rs-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "rs-170",
+      "target_id": "rs-190",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "rs-190",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "rs-150",
+      "target_id": "career-nonprofit",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "rs-190",
+      "target_id": "career-education",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "rs-150",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Political Science",
+    "slug": "political-science",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Political Science (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAPOL",
+    "layout": "digit_columns"
+  },
+  "nodes": [
+    {
+      "id": "pol-s-1",
+      "node_type": "course",
+      "label": "POL S 1",
+      "title": "American Government",
+      "description": "American Government — part of the Political Science prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 60
+    },
+    {
+      "id": "pol-s-6",
+      "node_type": "course",
+      "label": "POL S 6",
+      "title": "Introduction to Data Analysis",
+      "description": "Introduction to Data Analysis — part of the Political Science prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 235
+    },
+    {
+      "id": "pol-s-7",
+      "node_type": "course",
+      "label": "POL S 7",
+      "title": "Introduction to International Relations",
+      "description": "Introduction to International Relations — part of the Political Science prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 410
+    },
+    {
+      "id": "pol-s-12",
+      "node_type": "course",
+      "label": "POL S 12",
+      "title": "Introduction to Comparative Politics",
+      "description": "Introduction to Comparative Politics — part of the Political Science prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 320,
+      "position_y": 60
+    },
+    {
+      "id": "pol-s-105",
+      "node_type": "course",
+      "label": "POL S 105",
+      "title": "POL S 105",
+      "description": "Required or recommended course for the Political Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 60
+    },
+    {
+      "id": "pol-s-120",
+      "node_type": "course",
+      "label": "POL S 120",
+      "title": "POL S 120",
+      "description": "Required or recommended course for the Political Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 235
+    },
+    {
+      "id": "pol-s-130",
+      "node_type": "course",
+      "label": "POL S 130",
+      "title": "POL S 130",
+      "description": "Required or recommended course for the Political Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 410
+    },
+    {
+      "id": "pol-s-174",
+      "node_type": "course",
+      "label": "POL S 174",
+      "title": "POL S 174",
+      "description": "Required or recommended course for the Political Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 560,
+      "position_y": 585
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for Political Science graduates: Law.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 60
+    },
+    {
+      "id": "career-government",
+      "node_type": "career",
+      "label": "Government",
+      "title": "Government",
+      "description": "Career path for Political Science graduates: Government.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 235
+    },
+    {
+      "id": "career-foreign-service",
+      "node_type": "career",
+      "label": "Foreign service",
+      "title": "Foreign service",
+      "description": "Career path for Political Science graduates: Foreign service.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 410
+    },
+    {
+      "id": "career-campaigns",
+      "node_type": "career",
+      "label": "Campaigns",
+      "title": "Campaigns",
+      "description": "Career path for Political Science graduates: Campaigns.",
+      "self_learnable": false,
+      "position_x": 800,
+      "position_y": 585
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "pol-s-1",
+      "target_id": "pol-s-6",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "pol-s-6",
+      "target_id": "pol-s-7",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "pol-s-7",
+      "target_id": "pol-s-12",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "pol-s-12",
+      "target_id": "pol-s-105",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "pol-s-105",
+      "target_id": "pol-s-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "pol-s-120",
+      "target_id": "pol-s-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "pol-s-130",
+      "target_id": "pol-s-174",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "pol-s-174",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "pol-s-120",
+      "target_id": "career-government",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "pol-s-174",
+      "target_id": "career-foreign-service",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "pol-s-120",
+      "target_id": "career-campaigns",
+      "edge_type": "leads_to"
+    }
+  ]
+}
