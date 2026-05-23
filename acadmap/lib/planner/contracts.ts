@@ -114,4 +114,10 @@ export type PlanMember = {
   userId: string;
   role: PlannerRole;
   createdAt: string;
+  displayName?: string;
+};
+
+export type PlannerProfile = {
+  userId: string;
+  displayName?: string;
 };

@@ -1,0 +1,376 @@
+{
+  "school": {
+    "name": "UC Los Angeles",
+    "short_name": "ucla",
+    "location": "Los Angeles, CA",
+    "college": "Henry Samueli School of Engineering and Applied Science",
+    "official_url": "https://samueli.ucla.edu/",
+    "majors_url": "https://samueli.ucla.edu/academics/undergraduate/",
+    "gear_publications_url": "https://www.seasoasa.ucla.edu/"
+  },
+  "gear": {
+    "catalog_year": "2025-2026",
+    "pdf_url": "https://www.seasoasa.ucla.edu/wp-content/uploads/seasoasa/UCLASamueli-Anncmt-25-26.pdf",
+    "note": "Official UCLA Samueli School Announcement. Students follow requirements for their catalog year."
+  },
+  "gear_framework": {
+    "total_units": "180 units minimum",
+    "university_requirements": [
+      "UC Entry Level Writing Requirement",
+      "American History and Institutions"
+    ],
+    "ge_general_subject_areas": [
+      "Arts & Humanities (3 courses)",
+      "Social Sciences (3 courses)",
+      "Scientific Inquiry (2 courses)",
+      "Life Sciences (1 course)"
+    ],
+    "ge_special_subject_areas": [
+      "Diversity (1 course)",
+      "Writing II (1 course)",
+      "Engineering ethics via ENGR 185EW or equivalent"
+    ],
+    "gear_note": "BS engineering students complete UCLA GE plus engineering breadth. See Announcement p.24."
+  },
+  "majors": [
+    {
+      "name": "Aerospace Engineering",
+      "slug": "aerospace-engineering",
+      "degree_type": "BS",
+      "department": "Mechanical & Aerospace Engineering",
+      "department_url": "https://mae.ucla.edu/",
+      "curriculum_url": "https://mae.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "MATH 33A-B",
+        "PHYSICS 1A-B-C",
+        "MECH&AE 82",
+        "MECH&AE 94"
+      ],
+      "upper_division_required": [
+        "MECH&AE 103",
+        "MECH&AE 104",
+        "MECH&AE 105A",
+        "MECH&AE 106A-B",
+        "MECH&AE 150A"
+      ],
+      "career_outcomes": [
+        "Aerospace Engineer",
+        "Systems Engineer",
+        "Propulsion Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog"
+    },
+    {
+      "name": "Bioengineering",
+      "slug": "bioengineering",
+      "degree_type": "BS",
+      "department": "Bioengineering",
+      "department_url": "https://bioeng.ucla.edu/",
+      "curriculum_url": "https://bioeng.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 20A-B",
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "PHYSICS 1A-B",
+        "BIOENGR 100"
+      ],
+      "upper_division_required": [
+        "BIOENGR 110",
+        "BIOENGR 120",
+        "BIOENGR 140",
+        "BIOENGR 165EW"
+      ],
+      "career_outcomes": [
+        "Bioengineer",
+        "Medical Device Engineer",
+        "Research Scientist"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog"
+    },
+    {
+      "name": "Chemical Engineering",
+      "slug": "chemical-engineering",
+      "degree_type": "BS",
+      "department": "Chemical & Biomolecular Engineering",
+      "department_url": "https://www.chemeng.ucla.edu/",
+      "curriculum_url": "https://www.chemeng.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 20A-B",
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "MATH 33A-B",
+        "PHYSICS 1A-B",
+        "CHEM 20L"
+      ],
+      "upper_division_required": [
+        "CH ENGR 100",
+        "CH ENGR 101A-B",
+        "CH ENGR 102A-B",
+        "CH ENGR 103"
+      ],
+      "career_outcomes": [
+        "Process Engineer",
+        "Materials Engineer",
+        "Energy Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog"
+    },
+    {
+      "name": "Civil Engineering",
+      "slug": "civil-engineering",
+      "degree_type": "BS",
+      "department": "Civil & Environmental Engineering",
+      "department_url": "https://www.cee.ucla.edu/",
+      "curriculum_url": "https://www.cee.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "PHYSICS 1A-B",
+        "CEE 22",
+        "CEE 23"
+      ],
+      "upper_division_required": [
+        "CEE 108",
+        "CEE 110",
+        "CEE 120",
+        "CEE 130",
+        "CEE 180"
+      ],
+      "career_outcomes": [
+        "Structural Engineer",
+        "Transportation Engineer",
+        "Environmental Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog"
+    },
+    {
+      "name": "Computer Engineering",
+      "slug": "computer-engineering",
+      "degree_type": "BS",
+      "department": "Computer Science",
+      "department_url": "https://www.cs.ucla.edu/",
+      "curriculum_url": "https://www.cs.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "COM SCI 1",
+        "COM SCI 31",
+        "COM SCI 32",
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "PHYSICS 1A-B",
+        "EC ENGR 3A"
+      ],
+      "upper_division_required": [
+        "COM SCI 33",
+        "COM SCI M51A",
+        "EC ENGR 131A",
+        "EC ENGR 133A",
+        "COM SCI 180"
+      ],
+      "career_outcomes": [
+        "Computer Systems Engineer",
+        "Embedded Engineer",
+        "Hardware Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog"
+    },
+    {
+      "name": "Computer Science",
+      "slug": "computer-science",
+      "degree_type": "BS",
+      "department": "Computer Science",
+      "department_url": "https://www.cs.ucla.edu/",
+      "curriculum_url": "https://www.cs.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": true,
+      "preparation_for_major": [
+        "COM SCI 1",
+        "COM SCI 31",
+        "COM SCI 32",
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "MATH 61",
+        "PHYSICS 1A-B"
+      ],
+      "upper_division_required": [
+        "COM SCI 33",
+        "COM SCI M51A",
+        "COM SCI 35L",
+        "COM SCI 111",
+        "COM SCI 118",
+        "COM SCI 130",
+        "COM SCI 131",
+        "COM SCI 180"
+      ],
+      "career_outcomes": [
+        "Software Engineer",
+        "ML Engineer",
+        "Systems Engineer",
+        "Security Engineer"
+      ],
+      "detail_available": true,
+      "requirements_level": "roadmap"
+    },
+    {
+      "name": "Computer Science and Engineering",
+      "slug": "computer-science-and-engineering",
+      "degree_type": "BS",
+      "department": "Computer Science",
+      "department_url": "https://www.cs.ucla.edu/",
+      "curriculum_url": "https://www.cs.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "COM SCI 1",
+        "COM SCI 31",
+        "COM SCI 32",
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "PHYSICS 1A-B",
+        "EC ENGR 3A"
+      ],
+      "upper_division_required": [
+        "COM SCI 33",
+        "COM SCI M51A",
+        "EC ENGR 131A",
+        "COM SCI 111",
+        "COM SCI 180"
+      ],
+      "career_outcomes": [
+        "Software Engineer",
+        "Systems Architect",
+        "Research Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog"
+    },
+    {
+      "name": "Electrical Engineering",
+      "slug": "electrical-engineering",
+      "degree_type": "BS",
+      "department": "Electrical & Computer Engineering",
+      "department_url": "https://www.ee.ucla.edu/",
+      "curriculum_url": "https://www.ee.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "MATH 33A-B",
+        "PHYSICS 1A-B-C",
+        "EC ENGR 3A",
+        "EC ENGR 10"
+      ],
+      "upper_division_required": [
+        "EC ENGR 100",
+        "EC ENGR 101A",
+        "EC ENGR 102",
+        "EC ENGR 131A",
+        "EC ENGR 133A",
+        "EC ENGR 152A",
+        "EC ENGR 152B"
+      ],
+      "career_outcomes": [
+        "Hardware Engineer",
+        "RF Engineer",
+        "Signal Processing Engineer",
+        "Chip Designer"
+      ],
+      "detail_available": true,
+      "requirements_level": "gear"
+    },
+    {
+      "name": "Materials Engineering",
+      "slug": "materials-engineering",
+      "degree_type": "BS",
+      "department": "Materials Science & Engineering",
+      "department_url": "https://www.mse.ucla.edu/",
+      "curriculum_url": "https://www.mse.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 20A-B",
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "PHYSICS 1A-B",
+        "MAT SCI 104"
+      ],
+      "upper_division_required": [
+        "MAT SCI 120",
+        "MAT SCI 130",
+        "MAT SCI 140A-B",
+        "MAT SCI 143A"
+      ],
+      "career_outcomes": [
+        "Materials Scientist",
+        "Semiconductor Engineer",
+        "Battery Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog"
+    },
+    {
+      "name": "Mechanical Engineering",
+      "slug": "mechanical-engineering",
+      "degree_type": "BS",
+      "department": "Mechanical & Aerospace Engineering",
+      "department_url": "https://mae.ucla.edu/",
+      "curriculum_url": "https://mae.ucla.edu/",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 31A-B",
+        "MATH 32A-B",
+        "MATH 33A-B",
+        "PHYSICS 1A-B-C",
+        "MECH&AE 82",
+        "MECH&AE 94"
+      ],
+      "upper_division_required": [
+        "MECH&AE 103",
+        "MECH&AE 104",
+        "MECH&AE 105A",
+        "MECH&AE 106A-B",
+        "MECH&AE 156A-B"
+      ],
+      "career_outcomes": [
+        "Mechanical Design Engineer",
+        "Robotics Engineer",
+        "Thermal Systems Engineer"
+      ],
+      "detail_available": true,
+      "requirements_level": "gear"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Samueli Announcement 2025-2026 (PDF)",
+      "url": "https://www.seasoasa.ucla.edu/wp-content/uploads/seasoasa/UCLASamueli-Anncmt-25-26.pdf"
+    },
+    {
+      "title": "UCLA Samueli School",
+      "url": "https://samueli.ucla.edu/"
+    },
+    {
+      "title": "SEASOASA",
+      "url": "https://www.seasoasa.ucla.edu/"
+    }
+  ],
+  "last_updated": "2026-05-23"
+}

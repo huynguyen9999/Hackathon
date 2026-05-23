@@ -6,25 +6,34 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  GLOBAL: Navbar (Home | Explore | Contribute) + Footer      │
+│  GLOBAL: Navbar (Home | Schools | Explore | Contribute) + Footer      │
 └─────────────────────────────────────────────────────────────┘
 
 /  LANDING
    ├─ Hero: tagline + primary CTA → Explore
-   ├─ Featured colleges → /schools/ucsb/engineering, /schools/ucsb/letters-science, /schools/ucsb/creative-studies
+   ├─ School picker cards → /schools/ucsb, /schools/ucla
    └─ Value props (3 columns)
 
-/explore  DISCOVERY HUB (all 72 UCSB majors)
+/schools  SCHOOL DIRECTORY
+   └─ Cards for each registered school → /schools/[school]
+
+/explore  DISCOVERY HUB (multi-school majors)
    ├─ Goal lanes: switching majors | undecided | selective programs
-   ├─ Search + filter sidebar (college, experience, interest, degree, admission, department)
+   ├─ Search + filter sidebar (school, college, experience, interest, degree, department)
    ├─ View modes: grid | by college | by department
-   ├─ URL shareable filters (?college=letters-science&tags=stem&graph=1)
+   ├─ URL shareable filters (?school=ucla&college=engineering&graph=1)
    ├─ ExploreMajorCard → graph (if live) or major guide or official source
    ├─ Compare modal (2 majors: shared prep + careers)
    └─ Empty / no-graph states → major guide + /contribute
 
-/schools/[school]  UCSB OVERVIEW
-   └─ College cards → Engineering | Letters & Science | Creative Studies
+/schools/[school]  SCHOOL COMMUNITY HUB
+   ├─ Pinned announcements (maintainers)
+   ├─ Ask the community Q&A + contributor spotlight
+   ├─ Recently updated roadmaps + course review leaderboard
+   ├─ Alumni outcomes feed
+   └─ College cards → Engineering | (UCSB: L&S, CCS)
+
+/schools/[school]  (legacy note: was UCSB-only overview)
 
 /schools/[school]/engineering  COE HUB
    ├─ CollegeBanner (GEAR) + SchoolHero

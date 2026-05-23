@@ -8,6 +8,10 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { SourceList } from "@/components/SourceList";
 import { schoolHubHref } from "@/lib/ucsb-coe";
 import {
+  getSchoolConfig,
+  schoolHasCollege,
+} from "@/lib/schools/registry";
+import {
   ccsCollegeHubHref,
   ccsMajorHubHref,
   loadUcsbCcsCatalog,
@@ -18,20 +22,22 @@ type PageProps = {
 };
 
 export async function generateMetadata({ params }: PageProps) {
-  if (params.school !== "ucsb") {
+  const config = await getSchoolConfig(params.school);
+  if (!config) {
     return { title: "Creative Studies | iGauchoBack" };
   }
   const catalog = await loadUcsbCcsCatalog();
   return {
     title: `${catalog?.college.name ?? "CCS"} | iGauchoBack`,
-    description: `Browse ${catalog?.majors.length ?? 0} CCS majors at UC Santa Barbara with major sheets, admission requirements, and 4-year plans.`,
+    description: `Browse ${catalog?.majors.length ?? 0} CCS majors at ${config.name}.`,
   };
 }
 
 export default async function CreativeStudiesHubPage({ params }: PageProps) {
   const { school } = params;
 
-  if (school !== "ucsb") {
+  const config = await getSchoolConfig(school);
+  if (!config || !(await schoolHasCollege(school, "creative-studies"))) {
     notFound();
   }
 

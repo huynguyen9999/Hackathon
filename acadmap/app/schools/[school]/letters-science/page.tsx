@@ -11,26 +11,32 @@ import {
   lsCollegeHubHref,
 } from "@/lib/ucsb-ls";
 import { schoolHubHref } from "@/lib/ucsb-coe";
+import {
+  getSchoolConfig,
+  schoolHasCollege,
+} from "@/lib/schools/registry";
 
 type PageProps = {
   params: { school: string };
 };
 
 export async function generateMetadata({ params }: PageProps) {
-  if (params.school !== "ucsb") {
+  const config = await getSchoolConfig(params.school);
+  if (!config) {
     return { title: "Letters & Science | iGauchoBack" };
   }
   const catalog = await loadUcsbLsCatalog();
   return {
     title: `${catalog?.school.college ?? "L&S"} | iGauchoBack`,
-    description: `Browse ${catalog?.majors.length ?? 0} L&S majors at UC Santa Barbara (LASAR + DUELS).`,
+    description: `Browse ${catalog?.majors.length ?? 0} L&S majors at ${config.name}.`,
   };
 }
 
 export default async function LettersScienceHubPage({ params }: PageProps) {
   const { school } = params;
 
-  if (school !== "ucsb") {
+  const config = await getSchoolConfig(school);
+  if (!config || !(await schoolHasCollege(school, "letters-science"))) {
     notFound();
   }
 

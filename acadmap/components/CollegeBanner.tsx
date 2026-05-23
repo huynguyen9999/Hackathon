@@ -8,6 +8,7 @@ export type CollegeBannerProps = {
   coeCatalog?: CoeCatalog | null;
   lsCatalog?: LsCatalog | null;
   ccsCatalog?: CcsCatalog | null;
+  schoolShortName?: string;
   className?: string;
 };
 
@@ -16,10 +17,27 @@ export function CollegeBanner({
   coeCatalog,
   lsCatalog,
   ccsCatalog,
+  schoolShortName,
   className = "",
 }: CollegeBannerProps) {
   if (variant === "engineering" && coeCatalog?.gear) {
-    return <GearBanner gear={coeCatalog.gear} className={className} />;
+    const isUcla = schoolShortName === "ucla";
+    return (
+      <GearBanner
+        gear={coeCatalog.gear}
+        className={className}
+        headline={
+          isUcla
+            ? "UCLA Samueli School Announcement"
+            : "General Engineering Academic Requirements (GEAR)"
+        }
+        buttonLabel={
+          isUcla
+            ? `Open ${coeCatalog.gear.catalog_year} Announcement PDF ↗`
+            : undefined
+        }
+      />
+    );
   }
 
   if (variant === "letters-science" && lsCatalog) {

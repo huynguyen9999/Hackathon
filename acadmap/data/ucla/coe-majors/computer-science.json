@@ -1,0 +1,322 @@
+{
+  "slug": "computer-science",
+  "name": "Computer Science",
+  "catalog_year": "2025-2026",
+  "gear_page": 78,
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "Samueli Announcement 2025-2026",
+      "url": "https://www.seasoasa.ucla.edu/wp-content/uploads/seasoasa/UCLASamueli-Anncmt-25-26.pdf"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "units": 40,
+    "courses": [
+      {
+        "code": "COM SCI 1",
+        "units": 4
+      },
+      {
+        "code": "COM SCI 31",
+        "units": 4
+      },
+      {
+        "code": "COM SCI 32",
+        "units": 4
+      },
+      {
+        "code": "MATH 31A",
+        "units": 4
+      },
+      {
+        "code": "MATH 31B",
+        "units": 4
+      },
+      {
+        "code": "MATH 32A",
+        "units": 4
+      },
+      {
+        "code": "MATH 32B",
+        "units": 4
+      },
+      {
+        "code": "MATH 61",
+        "units": 4
+      },
+      {
+        "code": "PHYSICS 1A",
+        "units": 4
+      },
+      {
+        "code": "PHYSICS 1B",
+        "units": 4
+      }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "units": 32,
+      "courses": [
+        {
+          "code": "COM SCI 33",
+          "units": 4
+        },
+        {
+          "code": "COM SCI M51A",
+          "units": 4
+        },
+        {
+          "code": "COM SCI 35L",
+          "units": 4
+        },
+        {
+          "code": "COM SCI 111",
+          "units": 4
+        },
+        {
+          "code": "COM SCI 118",
+          "units": 4
+        },
+        {
+          "code": "COM SCI 130",
+          "units": 4
+        },
+        {
+          "code": "COM SCI 131",
+          "units": 4
+        },
+        {
+          "code": "COM SCI 180",
+          "units": 4
+        }
+      ]
+    }
+  ],
+  "regulations": {
+    "letter_grade_only": true,
+    "letter_grade_minimum": "C",
+    "pnp_allowed": false,
+    "other": [
+      "Minimum 180 units for BS degree.",
+      "See Samueli Announcement for full policies."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COM SCI 1",
+          "units": 1
+        },
+        {
+          "code": "MATH 31A",
+          "units": 4
+        },
+        {
+          "slot": "GE",
+          "label": "GE",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COM SCI 31",
+          "units": 4
+        },
+        {
+          "code": "MATH 31B",
+          "units": 4
+        },
+        {
+          "slot": "GE",
+          "label": "GE",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COM SCI 32",
+          "units": 4
+        },
+        {
+          "code": "MATH 32A",
+          "units": 4
+        },
+        {
+          "code": "PHYSICS 1A",
+          "units": 5
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COM SCI 33",
+          "units": 4
+        },
+        {
+          "code": "COM SCI M51A",
+          "units": 4
+        },
+        {
+          "code": "MATH 32B",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COM SCI 35L",
+          "units": 4
+        },
+        {
+          "code": "MATH 33A",
+          "units": 4
+        },
+        {
+          "slot": "GE",
+          "label": "GE",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COM SCI 111",
+          "units": 4
+        },
+        {
+          "code": "MATH 61",
+          "units": 4
+        },
+        {
+          "slot": "GE",
+          "label": "GE",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COM SCI 118",
+          "units": 4
+        },
+        {
+          "code": "COM SCI 130",
+          "units": 4
+        },
+        {
+          "slot": "ELECTIVE",
+          "label": "CS elective",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COM SCI 131",
+          "units": 4
+        },
+        {
+          "slot": "ELECTIVE",
+          "label": "CS elective",
+          "units": 4
+        },
+        {
+          "slot": "GE",
+          "label": "GE",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "slot": "ELECTIVE",
+          "label": "CS elective",
+          "units": 4
+        },
+        {
+          "slot": "ELECTIVE",
+          "label": "CS elective",
+          "units": 4
+        },
+        {
+          "slot": "GE",
+          "label": "GE",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COM SCI 180",
+          "units": 4
+        },
+        {
+          "slot": "ELECTIVE",
+          "label": "CS elective",
+          "units": 4
+        },
+        {
+          "slot": "ELECTIVE",
+          "label": "CS elective",
+          "units": 4
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Software Engineer",
+    "ML Engineer",
+    "Systems Engineer",
+    "Security Engineer"
+  ],
+  "quality_tier": "gear",
+  "notes": [
+    "Quarter plan derived from Samueli Announcement curriculum tables."
+  ]
+}

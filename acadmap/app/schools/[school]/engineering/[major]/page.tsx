@@ -7,48 +7,59 @@ import { MajorRegulationsCard } from "@/components/MajorRegulationsCard";
 import { MajorRequirements } from "@/components/MajorRequirements";
 import { MajorSheetRequirements } from "@/components/MajorSheetRequirements";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { loadCoeCatalog, loadCoeMajorDetail } from "@/lib/school-catalog";
 import {
   coeCollegeHubHref,
-  getUcsbMajorBySlug,
-  loadCoeMajorDetail,
-  loadUcsbCoeCatalog,
+  getCoeMajorBySlug,
   majorRoadmapHref,
   schoolHubHref,
 } from "@/lib/ucsb-coe";
+import {
+  getSchoolConfig,
+  schoolHasCollege,
+} from "@/lib/schools/registry";
 
 type PageProps = {
   params: { school: string; major: string };
 };
 
 export async function generateMetadata({ params }: PageProps) {
-  if (params.school !== "ucsb") {
+  const config = await getSchoolConfig(params.school);
+  if (!config) {
     return { title: "Major | iGauchoBack" };
   }
-  const major = await getUcsbMajorBySlug(params.major);
+  const major = await getCoeMajorBySlug(params.school, params.major);
   if (!major) return { title: "Major not found | iGauchoBack" };
+  const sourceLabel = params.school === "ucla" ? "Samueli" : "GEAR";
   return {
-    title: `${major.name} (GEAR) | iGauchoBack`,
-    description: `UCSB ${major.name} GEAR requirements and 4-year quarter plan.`,
+    title: `${major.name} (${sourceLabel}) | iGauchoBack`,
+    description: `${config.name} ${major.name} requirements and quarter plan.`,
   };
 }
 
 export default async function EngineeringMajorPage({ params }: PageProps) {
   const { school, major: majorSlug } = params;
 
-  if (school !== "ucsb") {
+  const config = await getSchoolConfig(school);
+  if (!config || !(await schoolHasCollege(school, "engineering"))) {
     notFound();
   }
 
-  const catalog = await loadUcsbCoeCatalog();
-  const major = await getUcsbMajorBySlug(majorSlug);
-  const detail = await loadCoeMajorDetail(majorSlug);
+  const catalog = await loadCoeCatalog(school);
+  const major = await getCoeMajorBySlug(school, majorSlug);
+  const detail = await loadCoeMajorDetail(school, majorSlug);
 
   if (!catalog || !major) {
     notFound();
   }
 
   const shortName = catalog.school.short_name;
+  const isUcla = shortName === "ucla";
   const roadmapHref = majorRoadmapHref(shortName, major.slug);
+  const pdfLabel = isUcla ? "Announcement PDF" : "GEAR PDF";
+  const requirementsLabel = isUcla
+    ? "Samueli major requirements"
+    : "GEAR major requirements";
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
@@ -76,16 +87,16 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
               href={catalog.gear.pdf_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-gaucho-blue-light/40 px-5 py-2.5 text-sm font-semibold text-gaucho-blue dark:text-gaucho-gold-light transition hover:bg-gaucho-blue-dark/50"
+              className="rounded-xl border border-gaucho-blue-light/40 px-5 py-2.5 text-sm font-semibold text-gaucho-blue transition hover:bg-gaucho-blue-dark/50 dark:text-gaucho-gold-light"
             >
-              GEAR PDF ↗
+              {pdfLabel} ↗
             </a>
             {major.curriculum_url ? (
               <a
                 href={major.curriculum_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-slate-300 dark:border-slate-600/40 px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:bg-slate-100 dark:hover:bg-slate-800/60"
+                className="rounded-xl border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:bg-slate-100 dark:border-slate-600/40 dark:text-slate-300 dark:hover:bg-slate-800/60"
               >
                 Department curriculum ↗
               </a>
@@ -95,7 +106,11 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
       />
 
       <div className="space-y-8">
-        <CollegeBanner variant="engineering" coeCatalog={catalog} />
+        <CollegeBanner
+          variant="engineering"
+          coeCatalog={catalog}
+          schoolShortName={shortName}
+        />
 
         {detail ? (
           <>
@@ -106,13 +121,13 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
               coeGeFramework={catalog.gear_framework}
             />
             {major.roadmap_available ? (
-              <section className="rounded-xl border border-dashed border-gaucho-blue-light/30 bg-slate-100 dark:bg-slate-900/30 p-6 text-center">
+              <section className="rounded-xl border border-dashed border-gaucho-blue-light/30 bg-slate-100 p-6 text-center dark:bg-slate-900/30">
                 <p className="text-sm text-slate-600 dark:text-slate-400">
-                  Interactive graph shows prerequisite chains from GEAR.
+                  Interactive graph shows prerequisite chains from official sources.
                 </p>
                 <Link
                   href={roadmapHref}
-                  className="mt-4 inline-flex text-sm font-medium text-gaucho-blue dark:text-gaucho-gold hover:text-gaucho-blue dark:text-gaucho-gold-light"
+                  className="mt-4 inline-flex text-sm font-medium text-gaucho-blue hover:text-gaucho-blue-light dark:text-gaucho-gold"
                 >
                   View roadmap graph →
                 </Link>
@@ -123,14 +138,16 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
           <>
             <MajorRequirements
               major={major}
-              requirementsLabel="GEAR major requirements"
+              requirementsLabel={requirementsLabel}
               pageRefLabel={
-                major.gear_page != null ? ` · GEAR p.${major.gear_page}` : undefined
+                major.gear_page != null
+                  ? ` · ${isUcla ? "Announcement" : "GEAR"} p.${major.gear_page}`
+                  : undefined
               }
             />
-            <p className="rounded-xl border border-gaucho-blue/25 bg-gaucho-gold/10 dark:bg-gaucho-blue/20 px-4 py-3 text-sm text-gaucho-blue dark:text-gaucho-gold-light/90">
-              Interactive roadmap coming soon. Requirements above are from GEAR
-              2025-26.
+            <p className="rounded-xl border border-gaucho-blue/25 bg-gaucho-gold/10 px-4 py-3 text-sm text-gaucho-blue dark:bg-gaucho-blue/20 dark:text-gaucho-gold-light/90">
+              Interactive roadmap coming soon. Requirements above are from{" "}
+              {catalog.gear.catalog_year} official sources.
             </p>
           </>
         )}

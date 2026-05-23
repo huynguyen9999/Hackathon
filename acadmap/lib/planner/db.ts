@@ -3,6 +3,7 @@ import type {
   Plan,
   PlanComment,
   PlanMember,
+  PlannerProfile,
   PlannerRole,
   PlanVersion,
   PlannedCourseState,
@@ -57,6 +58,11 @@ type PlanCreditRow = {
   score_or_grade: string | null;
   mapped_node_ids: string[];
   notes: string | null;
+};
+
+type PlannerProfileRow = {
+  user_id: string;
+  display_name: string | null;
 };
 
 function toQuarter(row: PlanCourseStateRow) {
@@ -497,7 +503,7 @@ export async function acceptPlanShareToken(
 }
 
 
-export async function getPlanMembers(planId: string, userId: string): Promise<{ members: PlanMember[]; myRole: PlannerRole } | null> {
+export async function getPlanMembers(planId: string, userId: string): Promise<{ members: PlanMember[]; myRole: PlannerRole; currentUserId: string } | null> {
   const supabase = await createServerClient();
 
   const { data: membership, error: membershipError } = await supabase
@@ -518,13 +524,37 @@ export async function getPlanMembers(planId: string, userId: string): Promise<{ 
 
   if (error) throw error;
 
+  const memberRows = (data ?? []) as Array<{
+    plan_id: string;
+    user_id: string;
+    role: string;
+    created_at: string;
+  }>;
+
+  const userIds = Array.from(new Set(memberRows.map((row) => row.user_id)));
+  const { data: profiles, error: profileError } = await supabase
+    .from("planner_profiles")
+    .select("user_id, display_name")
+    .in("user_id", userIds);
+
+  if (profileError) throw profileError;
+
+  const displayNameByUserId = new Map(
+    ((profiles ?? []) as PlannerProfileRow[]).map((profile) => [
+      profile.user_id,
+      profile.display_name ?? undefined,
+    ]),
+  );
+
   return {
     myRole: membership.role as PlannerRole,
-    members: (data ?? []).map((row) => ({
-      planId: row.plan_id as string,
-      userId: row.user_id as string,
+    currentUserId: userId,
+    members: memberRows.map((row) => ({
+      planId: row.plan_id,
+      userId: row.user_id,
       role: row.role as PlannerRole,
-      createdAt: row.created_at as string,
+      createdAt: row.created_at,
+      displayName: displayNameByUserId.get(row.user_id),
     })),
   };
 }
@@ -535,7 +565,7 @@ export async function managePlanMember(input: {
   targetUserId: string;
   role?: "advisor" | "viewer";
   remove?: boolean;
-}): Promise<{ members: PlanMember[]; myRole: PlannerRole } | null> {
+}): Promise<{ members: PlanMember[]; myRole: PlannerRole; currentUserId: string } | null> {
   const supabase = await createServerClient();
 
   const { data: actorMembership, error: actorError } = await supabase
@@ -572,4 +602,44 @@ export async function managePlanMember(input: {
   }
 
   return getPlanMembers(input.planId, input.actorUserId);
+}
+
+
+export async function getMyPlannerProfile(userId: string): Promise<PlannerProfile | null> {
+  const supabase = await createServerClient();
+
+  const { data, error } = await supabase
+    .from("planner_profiles")
+    .select("user_id, display_name")
+    .eq("user_id", userId)
+    .maybeSingle();
+
+  if (error) throw error;
+  if (!data) return null;
+
+  return {
+    userId: data.user_id as string,
+    displayName: (data.display_name as string | null) ?? undefined,
+  };
+}
+
+export async function upsertMyPlannerProfile(userId: string, displayName: string): Promise<PlannerProfile> {
+  const supabase = await createServerClient();
+
+  const cleaned = displayName.trim();
+  const { data, error } = await supabase
+    .from("planner_profiles")
+    .upsert({
+      user_id: userId,
+      display_name: cleaned || null,
+    })
+    .select("user_id, display_name")
+    .single();
+
+  if (error) throw error;
+
+  return {
+    userId: data.user_id as string,
+    displayName: (data.display_name as string | null) ?? undefined,
+  };
 }

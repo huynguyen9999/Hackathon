@@ -9,6 +9,7 @@ import { APP_LOGO_INITIALS, APP_NAME } from "@/lib/brand";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
+  { href: "/schools", label: "Schools" },
   { href: "/explore", label: "Explore" },
   { href: "/contribute", label: "Contribute" },
 ] as const;
@@ -37,7 +38,7 @@ export function Navbar({ className = "" }: NavbarProps) {
               {APP_NAME}
             </span>
             <span className="text-xs text-slate-500 dark:text-slate-400">
-              UCSB degree planning
+              Degree planning & community
             </span>
           </span>
         </Link>

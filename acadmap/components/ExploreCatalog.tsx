@@ -33,6 +33,7 @@ import type {
 
 export type ExploreCatalogProps = {
   majors: ExploreMajor[];
+  schoolOptions?: { value: string; label: string }[];
 };
 
 function groupByCollege(
@@ -74,6 +75,16 @@ function ActiveFilterChips({
         onChange({
           ...filters,
           colleges: filters.colleges.filter((x) => x !== c),
+        }),
+    });
+  }
+  for (const s of filters.schools) {
+    chips.push({
+      label: s.toUpperCase(),
+      clear: () =>
+        onChange({
+          ...filters,
+          schools: filters.schools.filter((x) => x !== s),
         }),
     });
   }
@@ -153,8 +164,8 @@ function ExploreEmptyState({
         </>
       )}
       <div className="mt-6 flex flex-wrap justify-center gap-3">
-        <Link href="/schools/ucsb" className="btn-secondary text-xs">
-          Browse by college
+        <Link href="/schools" className="btn-secondary text-xs">
+          Browse school hubs
         </Link>
         <Link href="/contribute" className="btn-primary text-xs">
           Help build a graph
@@ -179,7 +190,7 @@ function NoGraphBanner({ count }: { count: number }) {
   );
 }
 
-export function ExploreCatalog({ majors }: ExploreCatalogProps) {
+export function ExploreCatalog({ majors, schoolOptions = [] }: ExploreCatalogProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -394,6 +405,7 @@ export function ExploreCatalog({ majors }: ExploreCatalogProps) {
             filters={filters}
             departments={departments}
             degreeTypes={degreeTypes}
+            schoolOptions={schoolOptions}
             onChange={pushFilters}
           />
         </div>

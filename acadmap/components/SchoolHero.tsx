@@ -3,11 +3,16 @@ import type { CoeCatalog } from "@/lib/ucsb-coe";
 
 export type SchoolHeroProps = {
   catalog: CoeCatalog;
+  schoolShortName?: string;
 };
 
-export function SchoolHero({ catalog }: SchoolHeroProps) {
+export function SchoolHero({ catalog, schoolShortName }: SchoolHeroProps) {
   const { school, majors, gear } = catalog;
   const available = majors.filter((m) => m.roadmap_available).length;
+  const isUcla = schoolShortName === "ucla" || school.short_name === "ucla";
+  const pdfLabel = isUcla
+    ? `${gear.catalog_year} Announcement PDF ↗`
+    : `${gear.catalog_year} GEAR PDF ↗`;
 
   return (
     <section className="rounded-lg border border-gaucho-blue/15 bg-white p-6 dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark/50 sm:p-8">
@@ -56,7 +61,7 @@ export function SchoolHero({ catalog }: SchoolHeroProps) {
           rel="noopener noreferrer"
           className="rounded-lg bg-gaucho-blue px-4 py-2 text-sm font-medium text-white transition hover:bg-gaucho-blue-light"
         >
-          {gear.catalog_year} GEAR PDF ↗
+          {pdfLabel}
         </a>
       </div>
     </section>

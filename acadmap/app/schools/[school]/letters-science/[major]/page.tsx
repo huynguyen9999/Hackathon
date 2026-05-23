@@ -18,6 +18,10 @@ import {
 } from "@/lib/ucsb-ls";
 import { majorRoadmapHref } from "@/lib/ucsb-paths";
 import { schoolHubHref } from "@/lib/ucsb-coe";
+import {
+  getSchoolConfig,
+  schoolHasCollege,
+} from "@/lib/schools/registry";
 import { loadDepartmentFacultyForMajor } from "@/lib/ucsb-faculty";
 
 type PageProps = {
@@ -25,21 +29,23 @@ type PageProps = {
 };
 
 export async function generateMetadata({ params }: PageProps) {
-  if (params.school !== "ucsb") {
+  const config = await getSchoolConfig(params.school);
+  if (!config) {
     return { title: "Major | iGauchoBack" };
   }
   const major = await getUcsbLsMajorBySlug(params.major);
   if (!major) return { title: "Major not found | iGauchoBack" };
   return {
     title: `${major.name} | iGauchoBack`,
-    description: `UCSB ${major.name} L&S requirements (LASAR + department major sheet).`,
+    description: `${config.name} ${major.name} L&S requirements.`,
   };
 }
 
 export default async function LettersScienceMajorPage({ params }: PageProps) {
   const { school, major: majorSlug } = params;
 
-  if (school !== "ucsb") {
+  const config = await getSchoolConfig(school);
+  if (!config || !(await schoolHasCollege(school, "letters-science"))) {
     notFound();
   }
 

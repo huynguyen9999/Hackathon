@@ -1,0 +1,20 @@
+{
+  "engineering:computer-science": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": false
+  },
+  "engineering:electrical-engineering": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": false
+  },
+  "engineering:mechanical-engineering": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": false
+  }
+}

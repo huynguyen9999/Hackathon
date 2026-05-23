@@ -30,6 +30,7 @@ export type ExploreFiltersProps = {
   filters: ExploreFiltersState;
   departments: string[];
   degreeTypes: string[];
+  schoolOptions?: { value: string; label: string }[];
   onChange: (next: ExploreFiltersState) => void;
   className?: string;
 };
@@ -86,6 +87,7 @@ export function ExploreFilters({
   filters,
   departments,
   degreeTypes,
+  schoolOptions = [],
   onChange,
   className = "",
 }: ExploreFiltersProps) {
@@ -96,6 +98,22 @@ export function ExploreFilters({
     <aside
       className={`space-y-6 rounded-lg border border-gaucho-blue/10 bg-white p-4 dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark/30 ${className}`}
     >
+      {schoolOptions.length > 0 ? (
+        <FilterSection title="School">
+          {schoolOptions.map(({ value, label }) => (
+            <Chip
+              key={value}
+              active={filters.schools.includes(value)}
+              onClick={() =>
+                patch({ schools: toggleInList(filters.schools, value) })
+              }
+            >
+              {label.replace("UC ", "")}
+            </Chip>
+          ))}
+        </FilterSection>
+      ) : null}
+
       <FilterSection title="College">
         {COLLEGE_OPTIONS.map(({ value, label }) => (
           <Chip

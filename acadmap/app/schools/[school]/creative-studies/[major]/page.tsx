@@ -17,6 +17,10 @@ import {
   ccsCollegeHubHref,
 } from "@/lib/ucsb-ccs";
 import { schoolHubHref } from "@/lib/ucsb-coe";
+import {
+  getSchoolConfig,
+  schoolHasCollege,
+} from "@/lib/schools/registry";
 
 type PageProps = {
   params: { school: string; major: string };
@@ -27,21 +31,23 @@ function catalogProgramUrl(code: string): string {
 }
 
 export async function generateMetadata({ params }: PageProps) {
-  if (params.school !== "ucsb") {
+  const config = await getSchoolConfig(params.school);
+  if (!config) {
     return { title: "Major | iGauchoBack" };
   }
   const major = await getUcsbCcsMajorBySlug(params.major);
   if (!major) return { title: "Major not found | iGauchoBack" };
   return {
     title: `${major.name} | iGauchoBack`,
-    description: `UCSB CCS ${major.name} — admission requirements, major sheet, and 4-year plan.`,
+    description: `${config.name} CCS ${major.name} requirements and plan.`,
   };
 }
 
 export default async function CreativeStudiesMajorPage({ params }: PageProps) {
   const { school, major: majorSlug } = params;
 
-  if (school !== "ucsb") {
+  const config = await getSchoolConfig(school);
+  if (!config || !(await schoolHasCollege(school, "creative-studies"))) {
     notFound();
   }
 

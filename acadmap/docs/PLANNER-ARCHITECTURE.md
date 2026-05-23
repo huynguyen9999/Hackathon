@@ -56,3 +56,8 @@ Planner workspace includes:
 - share-link generation (advisor/viewer)
 - comment thread panel
 - collaborator management panel (owner can change advisor/viewer roles and remove members)
+
+
+## Identity Presentation
+
+Collaborators are rendered with display names from `planner_profiles` when available, with user-id fallback if not set yet. Users can edit their own display name from the planner workspace.

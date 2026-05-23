@@ -47,6 +47,9 @@ export function ExploreMajorCard({
   return (
     <article className="card-glow flex h-full flex-col rounded-lg border border-gaucho-blue/15 bg-white p-4 dark:bg-gaucho-blue-dark/40">
       <div className="mb-2 flex flex-wrap items-center gap-2">
+        <span className="rounded bg-slate-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:bg-gaucho-blue/30 dark:text-slate-300">
+          {major.schoolShortName.toUpperCase()}
+        </span>
         <span className="rounded bg-gaucho-blue/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold-light">
           {major.collegeLabel}
         </span>

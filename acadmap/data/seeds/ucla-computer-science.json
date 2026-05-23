@@ -1,0 +1,197 @@
+{
+  "school": {
+    "name": "UC Los Angeles",
+    "short_name": "ucla",
+    "location": "Los Angeles, CA"
+  },
+  "major": {
+    "name": "Computer Science",
+    "slug": "computer-science",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCLA Samueli Announcement 2025-2026",
+    "source_url": "https://www.seasoasa.ucla.edu/wp-content/uploads/seasoasa/UCLASamueli-Anncmt-25-26.pdf",
+    "announcement_page": 78
+  },
+  "nodes": [
+    {
+      "id": "com-sci-1",
+      "node_type": "course",
+      "label": "COM SCI 1",
+      "title": "Freshman Computer Science Seminar",
+      "description": "Introduction to CS at UCLA: advising, ethics, and career paths.",
+      "units": 1,
+      "self_learnable": true,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "com-sci-31",
+      "node_type": "course",
+      "label": "COM SCI 31",
+      "title": "Introduction to Computer Science I",
+      "description": "C++ programming, control structures, functions, and arrays.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "com-sci-32",
+      "node_type": "course",
+      "label": "COM SCI 32",
+      "title": "Introduction to Computer Science II",
+      "description": "Object-oriented programming, recursion, and data structures intro.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "com-sci-33",
+      "node_type": "course",
+      "label": "COM SCI 33",
+      "title": "Introduction to Computer Organization",
+      "description": "Machine organization, assembly, memory, and performance.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "com-sci-m51a",
+      "node_type": "course",
+      "label": "COM SCI M51A",
+      "title": "Logic Design of Digital Systems",
+      "description": "Boolean algebra, combinational and sequential logic design.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 300
+    },
+    {
+      "id": "com-sci-35l",
+      "node_type": "course",
+      "label": "COM SCI 35L",
+      "title": "Software Construction Laboratory",
+      "description": "Software tools, version control, testing, and project-based development.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "com-sci-111",
+      "node_type": "course",
+      "label": "COM SCI 111",
+      "title": "Operating Systems Principles",
+      "description": "Processes, memory management, file systems, and concurrency.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "com-sci-130",
+      "node_type": "course",
+      "label": "COM SCI 130",
+      "title": "Software Engineering",
+      "description": "Software lifecycle, design patterns, and team project development.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "com-sci-180",
+      "node_type": "course",
+      "label": "COM SCI 180",
+      "title": "Introduction to Algorithms and Complexity",
+      "description": "Graph algorithms, NP-completeness, and advanced algorithm design.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "career-swe",
+      "node_type": "career",
+      "label": "Software Engineer",
+      "title": "Software Engineer",
+      "description": "Build scalable systems at tech companies.",
+      "units": 0,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "career-ml",
+      "node_type": "career",
+      "label": "ML Engineer",
+      "title": "ML Engineer",
+      "description": "Deploy machine learning models in production.",
+      "units": 0,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 300
+    }
+  ],
+  "edges": [
+    {
+      "source": "com-sci-1",
+      "target": "com-sci-31",
+      "edge_type": "recommended"
+    },
+    {
+      "source": "com-sci-31",
+      "target": "com-sci-32",
+      "edge_type": "prerequisite"
+    },
+    {
+      "source": "com-sci-32",
+      "target": "com-sci-33",
+      "edge_type": "prerequisite"
+    },
+    {
+      "source": "com-sci-32",
+      "target": "com-sci-m51a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "source": "com-sci-33",
+      "target": "com-sci-35l",
+      "edge_type": "prerequisite"
+    },
+    {
+      "source": "com-sci-35l",
+      "target": "com-sci-111",
+      "edge_type": "prerequisite"
+    },
+    {
+      "source": "com-sci-35l",
+      "target": "com-sci-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "source": "com-sci-111",
+      "target": "com-sci-180",
+      "edge_type": "prerequisite"
+    },
+    {
+      "source": "com-sci-180",
+      "target": "career-swe",
+      "edge_type": "leads_to"
+    },
+    {
+      "source": "com-sci-130",
+      "target": "career-swe",
+      "edge_type": "leads_to"
+    },
+    {
+      "source": "com-sci-180",
+      "target": "career-ml",
+      "edge_type": "leads_to"
+    }
+  ]
+}

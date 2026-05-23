@@ -1,137 +1,132 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { SchoolHubCommunity } from "@/components/community/SchoolHubCommunity";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { coeCollegeHubHref, loadUcsbCoeCatalog, schoolHubHref } from "@/lib/ucsb-coe";
-import { ccsCollegeHubHref, loadUcsbCcsCatalog } from "@/lib/ucsb-ccs";
-import { loadUcsbLsCatalog, lsCollegeHubHref } from "@/lib/ucsb-ls";
+import { loadCommunityHubData } from "@/lib/community/data";
+import { loadCoeCatalog } from "@/lib/school-catalog";
+import {
+  ccsCollegeHubHref,
+  coeCollegeHubHref,
+  lsCollegeHubHref,
+} from "@/lib/ucsb-paths";
+import { loadUcsbCcsCatalog } from "@/lib/ucsb-ccs";
+import { loadUcsbLsCatalog } from "@/lib/ucsb-ls";
+import {
+  getSchoolConfig,
+  listActiveSchools,
+} from "@/lib/schools/registry";
 
 type PageProps = {
   params: { school: string };
 };
 
+function collegeHubHref(school: string, slug: string): string {
+  switch (slug) {
+    case "engineering":
+      return coeCollegeHubHref(school);
+    case "letters-science":
+      return lsCollegeHubHref(school);
+    case "creative-studies":
+      return ccsCollegeHubHref(school);
+    default:
+      return `/schools/${school}/${slug}`;
+  }
+}
+
+export async function generateStaticParams() {
+  const schools = await listActiveSchools();
+  return schools.map((s) => ({ school: s.short_name }));
+}
+
 export async function generateMetadata({ params }: PageProps) {
-  if (params.school !== "ucsb") {
+  const config = await getSchoolConfig(params.school);
+  if (!config) {
     return { title: "School | iGauchoBack" };
   }
   return {
-    title: "UC Santa Barbara | iGauchoBack",
-    description:
-      "Browse UCSB College of Engineering (GEAR), College of Letters & Science (LASAR), and College of Creative Studies (CCS) major requirements.",
+    title: `${config.name} | iGauchoBack`,
+    description: `Community hub, roadmaps, and major requirements for ${config.name}.`,
   };
 }
 
-const COLLEGE_CARDS = [
-  {
-    slug: "engineering",
-    href: (s: string) => coeCollegeHubHref(s),
-    title: "College of Engineering",
-    subtitle: "Robert Mehrabian College of Engineering",
-    description:
-      "5 BS majors · GEAR 2025-26 PDF · Interactive EE roadmap",
-    stats: (coeCount: number, live: number) =>
-      `${coeCount} majors · ${live} live graph${live !== 1 ? "s" : ""}`,
-  },
-  {
-    slug: "letters-science",
-    href: (s: string) => lsCollegeHubHref(s),
-    title: "College of Letters & Science",
-    subtitle: "80+ majors across 45+ departments",
-    description:
-      "LASAR + DUELS · Prep, upper-division, electives for popular majors",
-    stats: (lsCount: number) => `${lsCount} majors cataloged`,
-  },
-  {
-    slug: "creative-studies",
-    href: (s: string) => ccsCollegeHubHref(s),
-    title: "College of Creative Studies",
-    subtitle: "9 selective majors · research from day one",
-    description:
-      "Major sheets, admission requirements, and 4-year plans for all CCS majors",
-    stats: (ccsCount: number) => `${ccsCount} majors with detail pages`,
-  },
-] as const;
-
-export default async function UcsbOverviewPage({ params }: PageProps) {
+export default async function SchoolHubPage({ params }: PageProps) {
   const { school } = params;
+  const config = await getSchoolConfig(school);
 
-  if (school !== "ucsb") {
+  if (!config) {
     notFound();
   }
 
-  const coe = await loadUcsbCoeCatalog();
-  const ls = await loadUcsbLsCatalog();
-  const ccs = await loadUcsbCcsCatalog();
+  const communityData = await loadCommunityHubData(school);
 
-  if (!coe || !ls || !ccs) {
-    notFound();
-  }
-
-  const coeLive = coe.majors.filter((m) => m.roadmap_available).length;
-  const shortName = coe.school.short_name;
+  const collegeStats = await Promise.all(
+    config.colleges.map(async (college) => {
+      if (college.catalogType === "coe") {
+        const catalog = await loadCoeCatalog(school);
+        const live = catalog?.majors.filter((m) => m.roadmap_available).length ?? 0;
+        return {
+          college,
+          majorCount: catalog?.majors.length ?? 0,
+          liveGraphs: live,
+        };
+      }
+      if (college.catalogType === "ls" && school === "ucsb") {
+        const ls = await loadUcsbLsCatalog();
+        return { college, majorCount: ls?.majors.length ?? 0, liveGraphs: 0 };
+      }
+      if (college.catalogType === "ccs" && school === "ucsb") {
+        const ccs = await loadUcsbCcsCatalog();
+        return { college, majorCount: ccs?.majors.length ?? 0, liveGraphs: 0 };
+      }
+      return { college, majorCount: 0, liveGraphs: 0 };
+    }),
+  );
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
       <PageHeader
-        breadcrumbs={[{ label: "Explore", href: "/explore" }, { label: "UCSB" }]}
-        eyebrow="UC Santa Barbara"
-        title="Choose your college"
-        description="iGauchoBack catalogs graduation requirements from official UCSB sources—GEAR for Engineering, LASAR/DUELS for Letters & Science, and CCS major sheets for Creative Studies."
+        breadcrumbs={[{ label: "Schools", href: "/schools" }, { label: config.name }]}
+        eyebrow={config.location}
+        title={`${config.name} hub`}
+        description="Community Q&A, course reviews, alumni outcomes, and college major catalogs — your one-stop shop for degree planning."
       />
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {COLLEGE_CARDS.map((card) => {
-          const isEng = card.slug === "engineering";
-          const isCcs = card.slug === "creative-studies";
-          const border =
-            "border-gaucho-blue/20 hover:border-gaucho-gold/40";
-          const stat = isEng
-            ? card.stats(coe.majors.length, coeLive)
-            : isCcs
-              ? card.stats(ccs.majors.length)
-              : card.stats(ls.majors.length);
+      <SchoolHubCommunity schoolShortName={school} data={communityData} />
 
-          return (
+      <section className="mt-14">
+        <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
+          Choose your college
+        </h2>
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+          Browse official requirements and interactive roadmaps by college.
+        </p>
+
+        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {collegeStats.map(({ college, majorCount, liveGraphs }) => (
             <Link
-              key={card.slug}
-              href={card.href(shortName)}
-              className={`card-glow group flex flex-col rounded-lg border bg-white p-8 transition dark:bg-gaucho-blue-dark/40 ${border}`}
+              key={college.slug}
+              href={collegeHubHref(school, college.slug)}
+              className="card-glow group flex flex-col rounded-lg border border-gaucho-blue/20 bg-white p-8 transition hover:border-gaucho-gold/40 dark:bg-gaucho-blue-dark/40"
             >
               <p className="text-xs font-bold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold">
-                {card.subtitle}
+                {college.subtitle}
               </p>
-              <h2 className="mt-2 text-2xl font-bold text-gaucho-blue group-hover:text-gaucho-blue-light dark:text-white dark:group-hover:text-gaucho-gold">
-                {card.title}
-              </h2>
+              <h3 className="mt-2 text-2xl font-bold text-gaucho-blue group-hover:text-gaucho-blue-light dark:text-white dark:group-hover:text-gaucho-gold">
+                {college.label}
+              </h3>
               <p className="mt-3 flex-1 text-sm text-slate-600 dark:text-slate-400">
-                {card.description}
+                {college.description}
               </p>
               <p className="mt-4 text-sm font-medium text-gaucho-blue dark:text-gaucho-gold">
-                {stat} →
+                {majorCount} majors
+                {liveGraphs > 0 ? ` · ${liveGraphs} live graph${liveGraphs !== 1 ? "s" : ""}` : ""}{" "}
+                →
               </p>
             </Link>
-          );
-        })}
-      </div>
-
-      <p className="mt-10 text-center text-xs text-slate-900 dark:text-slate-500">
-        Sources:{" "}
-        <a
-          href="https://admissions.sa.ucsb.edu/majors"
-          className="text-gaucho-blue hover:underline dark:text-gaucho-gold"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          UCSB Admissions
-        </a>
-        {" · "}
-        <a
-          href={schoolHubHref(shortName)}
-          className="text-gaucho-blue hover:underline dark:text-gaucho-gold"
-        >
-          iGauchoBack UCSB hub
-        </a>
-      </p>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
