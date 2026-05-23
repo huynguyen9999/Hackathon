@@ -9,7 +9,7 @@ import {
   roadmapEdgesToFlowEdges,
   roadmapNodesToFlowNodes,
 } from "@/lib/flow";
-import type { AcadMapNodeData, RoadmapDetail } from "@/lib/types";
+import type { iGauchoBackNodeData, RoadmapDetail } from "@/lib/types";
 import type { DepartmentFacultyFile } from "@/lib/ucsb-faculty-types";
 
 export type RoadmapViewProps = {
@@ -18,7 +18,7 @@ export type RoadmapViewProps = {
 };
 
 export function RoadmapView({ roadmap, departmentFaculty }: RoadmapViewProps) {
-  const [selectedNode, setSelectedNode] = useState<Node<AcadMapNodeData> | null>(
+  const [selectedNode, setSelectedNode] = useState<Node<iGauchoBackNodeData> | null>(
     null,
   );
 
@@ -38,7 +38,7 @@ export function RoadmapView({ roadmap, departmentFaculty }: RoadmapViewProps) {
 
   const onNodeClick: NodeMouseHandler = useCallback((_event, node) => {
     setSelectedNode((prev) =>
-      prev?.id === node.id ? null : (node as Node<AcadMapNodeData>),
+      prev?.id === node.id ? null : (node as Node<iGauchoBackNodeData>),
     );
   }, []);
 

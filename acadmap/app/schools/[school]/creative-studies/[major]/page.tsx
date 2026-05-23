@@ -28,12 +28,12 @@ function catalogProgramUrl(code: string): string {
 
 export async function generateMetadata({ params }: PageProps) {
   if (params.school !== "ucsb") {
-    return { title: "Major | AcadMap" };
+    return { title: "Major | iGauchoBack" };
   }
   const major = await getUcsbCcsMajorBySlug(params.major);
-  if (!major) return { title: "Major not found | AcadMap" };
+  if (!major) return { title: "Major not found | iGauchoBack" };
   return {
-    title: `${major.name} | AcadMap`,
+    title: `${major.name} | iGauchoBack`,
     description: `UCSB CCS ${major.name} — admission requirements, major sheet, and 4-year plan.`,
   };
 }

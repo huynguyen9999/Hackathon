@@ -1,12 +1,12 @@
 "use client";
 
 import type { Node } from "@xyflow/react";
-import type { AcadMapNodeData } from "@/lib/types";
+import type { iGauchoBackNodeData } from "@/lib/types";
 import type { DepartmentFacultyFile } from "@/lib/ucsb-faculty-types";
 import { FacultySidebarSection } from "@/components/FacultySidebarSection";
 
 export type SidebarProps = {
-  selectedNode: Node<AcadMapNodeData> | null;
+  selectedNode: Node<iGauchoBackNodeData> | null;
   departmentFaculty?: DepartmentFacultyFile | null;
   onClose?: () => void;
   className?: string;

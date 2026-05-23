@@ -114,13 +114,13 @@ export type CareerNodeData = {
   focused?: boolean;
 };
 
-export type AcadMapNodeData = RoadmapNodeData | CareerNodeData;
+export type iGauchoBackNodeData = RoadmapNodeData | CareerNodeData;
 
 export type FlowNode = {
   id: string;
   type: "course" | "career";
   position: { x: number; y: number };
-  data: AcadMapNodeData;
+  data: iGauchoBackNodeData;
 };
 
 export type FlowEdge = {

@@ -12,10 +12,10 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps) {
   if (params.school !== "ucsb") {
-    return { title: "School | AcadMap" };
+    return { title: "School | iGauchoBack" };
   }
   return {
-    title: "UC Santa Barbara | AcadMap",
+    title: "UC Santa Barbara | iGauchoBack",
     description:
       "Browse UCSB College of Engineering (GEAR), College of Letters & Science (LASAR), and College of Creative Studies (CCS) major requirements.",
   };
@@ -76,7 +76,7 @@ export default async function UcsbOverviewPage({ params }: PageProps) {
         breadcrumbs={[{ label: "Explore", href: "/explore" }, { label: "UCSB" }]}
         eyebrow="UC Santa Barbara"
         title="Choose your college"
-        description="AcadMap catalogs graduation requirements from official UCSB sources—GEAR for Engineering, LASAR/DUELS for Letters & Science, and CCS major sheets for Creative Studies."
+        description="iGauchoBack catalogs graduation requirements from official UCSB sources—GEAR for Engineering, LASAR/DUELS for Letters & Science, and CCS major sheets for Creative Studies."
       />
 
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -129,7 +129,7 @@ export default async function UcsbOverviewPage({ params }: PageProps) {
           href={schoolHubHref(shortName)}
           className="text-gaucho-blue hover:underline dark:text-gaucho-gold"
         >
-          AcadMap UCSB hub
+          iGauchoBack UCSB hub
         </a>
       </p>
     </div>

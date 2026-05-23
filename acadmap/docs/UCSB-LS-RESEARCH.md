@@ -1,6 +1,6 @@
 # UCSB College of Letters & Science — research notes
 
-AcadMap catalogs **58 L&S majors** in `data/ucsb/ls-catalog.json`. Sources:
+iGauchoBack catalogs **58 L&S majors** in `data/ucsb/ls-catalog.json`. Sources:
 
 | Source | URL | Use |
 |--------|-----|-----|

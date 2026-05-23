@@ -27,7 +27,7 @@ export function SearchBar({
 
   return (
     <div className={`relative ${className}`}>
-      <label htmlFor="acadmap-search" className="sr-only">
+      <label htmlFor="igauchoback-search" className="sr-only">
         Search schools or majors
       </label>
       <span
@@ -48,7 +48,7 @@ export function SearchBar({
         </svg>
       </span>
       <input
-        id="acadmap-search"
+        id="igauchoback-search"
         type="search"
         value={value}
         onChange={(e) => setValue(e.target.value)}

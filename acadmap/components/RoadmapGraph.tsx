@@ -141,8 +141,8 @@ export function RoadmapGraph({
         maxZoom={1.5}
         proOptions={{ hideAttribution: true }}
         className={[
-          "acadmap-flow",
-          focusedNodeId ? "acadmap-flow--focused" : "",
+          "igauchoback-flow",
+          focusedNodeId ? "igauchoback-flow--focused" : "",
         ].join(" ")}
       >
         <Background

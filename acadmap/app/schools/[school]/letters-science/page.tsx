@@ -18,11 +18,11 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps) {
   if (params.school !== "ucsb") {
-    return { title: "Letters & Science | AcadMap" };
+    return { title: "Letters & Science | iGauchoBack" };
   }
   const catalog = await loadUcsbLsCatalog();
   return {
-    title: `${catalog?.school.college ?? "L&S"} | AcadMap`,
+    title: `${catalog?.school.college ?? "L&S"} | iGauchoBack`,
     description: `Browse ${catalog?.majors.length ?? 0} L&S majors at UC Santa Barbara (LASAR + DUELS).`,
   };
 }

@@ -18,11 +18,11 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps) {
   if (params.school !== "ucsb") {
-    return { title: "Engineering | AcadMap" };
+    return { title: "Engineering | iGauchoBack" };
   }
   const catalog = await loadUcsbCoeCatalog();
   return {
-    title: `${catalog?.school.college ?? "Engineering"} | AcadMap`,
+    title: `${catalog?.school.college ?? "Engineering"} | iGauchoBack`,
     description: `Browse ${catalog?.majors.length ?? 5} engineering majors at UC Santa Barbara (GEAR 2025-26).`,
   };
 }

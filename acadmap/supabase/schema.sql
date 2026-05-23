@@ -1,4 +1,4 @@
--- AcadMap — Postgres schema (matches lib/types.ts)
+-- iGauchoBack — Postgres schema (matches lib/types.ts)
 -- Run in Supabase SQL editor.
 
 create extension if not exists "pgcrypto";

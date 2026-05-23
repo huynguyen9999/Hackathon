@@ -19,11 +19,11 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps) {
   if (params.school !== "ucsb") {
-    return { title: "Creative Studies | AcadMap" };
+    return { title: "Creative Studies | iGauchoBack" };
   }
   const catalog = await loadUcsbCcsCatalog();
   return {
-    title: `${catalog?.college.name ?? "CCS"} | AcadMap`,
+    title: `${catalog?.college.name ?? "CCS"} | iGauchoBack`,
     description: `Browse ${catalog?.majors.length ?? 0} CCS majors at UC Santa Barbara with major sheets, admission requirements, and 4-year plans.`,
   };
 }
@@ -117,7 +117,7 @@ export default async function CreativeStudiesHubPage({ params }: PageProps) {
             <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">CCS majors</h2>
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
               Each major has a dedicated apply page, major sheet PDF, and suggested
-              4-year plan on AcadMap.
+              4-year plan on iGauchoBack.
             </p>
           </div>
           <MajorCatalogGrid

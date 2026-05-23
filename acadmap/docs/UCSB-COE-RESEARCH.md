@@ -1,6 +1,6 @@
 # UCSB College of Engineering — Research snapshot
 
-Compiled for AcadMap from official UCSB sources (May 2026). Not a live scrape—verify before academic planning.
+Compiled for iGauchoBack from official UCSB sources (May 2026). Not a live scrape—verify before academic planning.
 
 ## College overview
 

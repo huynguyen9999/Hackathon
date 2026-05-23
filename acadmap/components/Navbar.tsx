@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { APP_LOGO_INITIALS, APP_NAME } from "@/lib/brand";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -28,11 +29,11 @@ export function Navbar({ className = "" }: NavbarProps) {
             className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-gaucho-blue text-sm font-bold text-gaucho-gold"
             aria-hidden
           >
-            AM
+            {APP_LOGO_INITIALS}
           </span>
           <span className="flex flex-col gap-0.5">
             <span className="text-lg font-bold tracking-tight text-gaucho-blue dark:text-white">
-              AcadMap
+              {APP_NAME}
             </span>
             <span className="text-xs text-slate-500 dark:text-slate-400">
               UCSB degree planning

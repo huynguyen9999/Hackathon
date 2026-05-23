@@ -4,7 +4,7 @@ Phase 1–2 store **planning hints** (`teaches[]` on faculty JSON). Phase 3 adds
 
 ## Current state
 
-- AcadMap sidebar shows faculty linked via manual `teaches` tags (e.g. PSTAT 173 → Michael Ludkovski).
+- iGauchoBack sidebar shows faculty linked via manual `teaches` tags (e.g. PSTAT 173 → Michael Ludkovski).
 - Copy explicitly says: *"Planning hints only — check GOLD for current instructors."*
 - No GOLD API or scrape exists in this repo today.
 
@@ -22,7 +22,7 @@ Phase 1–2 store **planning hints** (`teaches[]` on faculty JSON). Phase 3 adds
 1. Add `course_offerings` table: `course_code`, `quarter`, `instructor_name`, `instructor_profile_url`, `source`, `fetched_at`.
 2. Nightly or term-start job: fetch GOLD public schedule pages or approved export.
 3. Extend `FacultySidebarSection` to prefer live offerings when `quarter` matches current term; fall back to `teaches[]`.
-4. Link out to GOLD for enrollment either way — AcadMap does not replace registration.
+4. Link out to GOLD for enrollment either way — iGauchoBack does not replace registration.
 
 ## Out of scope
 

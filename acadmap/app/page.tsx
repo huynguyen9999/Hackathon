@@ -117,7 +117,7 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
         <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">
-          Why AcadMap
+          Why iGauchoBack
         </h2>
         <ul className="grid gap-4 sm:grid-cols-3">
           {FEATURES.map((feature) => (

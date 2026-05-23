@@ -21,11 +21,11 @@ export async function generateMetadata({ params }: PageProps) {
   const roadmap = await getRoadmapBySlug(school, major);
 
   if (!roadmap) {
-    return { title: "Roadmap not found | AcadMap" };
+    return { title: "Roadmap not found | iGauchoBack" };
   }
 
   return {
-    title: `${roadmap.school.short_name.toUpperCase()} ${roadmap.major.name} | AcadMap`,
+    title: `${roadmap.school.short_name.toUpperCase()} ${roadmap.major.name} | iGauchoBack`,
     description: `Degree roadmap for ${roadmap.major.name} at ${roadmap.school.name}.`,
   };
 }

@@ -22,12 +22,12 @@ type PageProps = {
 
 export async function generateMetadata({ params }: PageProps) {
   if (params.school !== "ucsb") {
-    return { title: "Major | AcadMap" };
+    return { title: "Major | iGauchoBack" };
   }
   const major = await getUcsbMajorBySlug(params.major);
-  if (!major) return { title: "Major not found | AcadMap" };
+  if (!major) return { title: "Major not found | iGauchoBack" };
   return {
-    title: `${major.name} (GEAR) | AcadMap`,
+    title: `${major.name} (GEAR) | iGauchoBack`,
     description: `UCSB ${major.name} GEAR requirements and 4-year quarter plan.`,
   };
 }

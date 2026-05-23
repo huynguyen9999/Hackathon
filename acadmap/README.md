@@ -1,4 +1,4 @@
-# AcadMap
+# iGauchoBack
 
 Interactive degree roadmaps—courses, prerequisites, and career paths—built with Next.js 14, React Flow, and optional Supabase.
 

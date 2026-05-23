@@ -145,7 +145,7 @@ async function fetchCatalogSupplement(code: string): Promise<{ prep: string[]; u
   try {
     const url = catalogProgramUrl(code);
     const res = await fetch(url, {
-      headers: { "User-Agent": "AcadMap/1.0 (education catalog indexer)" },
+      headers: { "User-Agent": "iGauchoBack/1.0 (education catalog indexer)" },
       signal: AbortSignal.timeout(15000),
     });
     if (!res.ok) return null;

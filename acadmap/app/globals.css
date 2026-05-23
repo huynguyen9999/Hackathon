@@ -37,32 +37,32 @@ body {
 }
 
 /* React Flow */
-.acadmap-flow .react-flow__edge-path {
+.igauchoback-flow .react-flow__edge-path {
   stroke: var(--acad-primary);
   stroke-width: 2;
 }
 
-.acadmap-flow .react-flow__edge.selected .react-flow__edge-path {
+.igauchoback-flow .react-flow__edge.selected .react-flow__edge-path {
   stroke: var(--acad-accent);
 }
 
-.acadmap-flow .react-flow__attribution {
+.igauchoback-flow .react-flow__attribution {
   display: none;
 }
 
-.acadmap-flow .react-flow__pane {
+.igauchoback-flow .react-flow__pane {
   cursor: grab;
 }
 
-.acadmap-flow .react-flow__pane:active {
+.igauchoback-flow .react-flow__pane:active {
   cursor: grabbing;
 }
 
-.acadmap-flow--focused .react-flow__pane {
+.igauchoback-flow--focused .react-flow__pane {
   cursor: default;
 }
 
-.acadmap-flow--focused .react-flow__background {
+.igauchoback-flow--focused .react-flow__background {
   opacity: 0.4;
   transition: opacity 0.2s ease;
 }

@@ -1,4 +1,4 @@
-# AcadMap — Site layout & information architecture
+# iGauchoBack — Site layout & information architecture
 
 Defined layout for the UCSB College of Engineering expansion and all future schools.
 

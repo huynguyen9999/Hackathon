@@ -6,7 +6,7 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { loadUcsbExploreIndex } from "@/lib/ucsb-explore-index";
 
 export const metadata = {
-  title: "Explore | AcadMap",
+  title: "Explore | iGauchoBack",
   description:
     "Discover all UCSB majors—filter by college, interest, and interactive graph availability.",
 };

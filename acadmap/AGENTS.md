@@ -1,10 +1,10 @@
-# AcadMap — Agent delegation guide
+# iGauchoBack — Agent delegation guide
 
 Use this file when running **multiple Cursor agents** (or subagents) in parallel. Each role owns a slice of the repo; avoid overlapping edits without coordination.
 
 ## Project north star
 
-**AcadMap** — school-specific, major-specific degree roadmaps with real course codes and career outcome nodes. MVP runs on JSON seeds; production graduates to Supabase.
+**iGauchoBack** — school-specific, major-specific degree roadmaps with real course codes and career outcome nodes. MVP runs on JSON seeds; production graduates to Supabase.
 
 ## Agent roles
 

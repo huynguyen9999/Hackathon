@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 
 import { Navbar } from "@/components/Navbar";
+import { APP_NAME, APP_TAGLINE } from "@/lib/brand";
 import { themeInitScript } from "@/lib/theme";
 
 import "./globals.css";
@@ -14,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AcadMap - Your degree, mapped.",
+  title: `${APP_NAME} - ${APP_TAGLINE}`,
   description:
     "Interactive degree roadmaps for courses, prerequisites, and career paths.",
 };
@@ -35,7 +36,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <footer className="border-t border-gaucho-blue/10 bg-white py-6 text-center text-xs text-slate-500 dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark">
-          AcadMap · UCSB degree roadmaps
+          {APP_NAME} · UCSB degree roadmaps
         </footer>
       </body>
     </html>
