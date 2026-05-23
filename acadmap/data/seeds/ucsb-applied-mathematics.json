@@ -12,158 +12,170 @@
   "metadata": {
     "source": "UCSB L&S Applied Mathematics (2025-2026)",
     "source_url": "https://catalog.ucsb.edu/programs/BSAPM",
-    "layout": "digit_columns"
+    "course_descriptions_url": "https://ucsbplat.com/curriculum/major/MATH"
   },
   "nodes": [
     {
       "id": "math-3a",
       "node_type": "course",
       "label": "MATH 3A",
-      "title": "Calculus",
-      "description": "Calculus — part of the Applied Mathematics prerequisite and major sequence.",
+      "title": "Calculus with Applications, First Course",
+      "description": "Differential calculus including analytic geometry, limits, derivatives, techniques and applications of differentiation; introduction to integration; logarithmic and trigonometric functions.",
       "units": 4,
       "self_learnable": false,
       "position_x": 80,
-      "position_y": 60
+      "position_y": 80,
+      "resources": [
+        {
+          "name": "UCSBPlat — MATH courses",
+          "url": "https://ucsbplat.com/curriculum/major/MATH"
+        }
+      ]
     },
     {
       "id": "math-4a",
       "node_type": "course",
       "label": "MATH 4A",
-      "title": "Linear Algebra & Differential Equations",
-      "description": "Linear Algebra & Differential Equations — part of the Applied Mathematics prerequisite and major sequence.",
+      "title": "Linear Algebra with Applications",
+      "description": "Systems of linear equations, matrix algebra, determinants, vector spaces and subspaces, basis and dimension, linear transformations, eigenvalues and eigenvectors, diagonalization, and orthogonality.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 80,
-      "position_y": 235
+      "position_x": 380,
+      "position_y": 80
     },
     {
       "id": "math-8",
       "node_type": "course",
       "label": "MATH 8",
-      "title": "Transition to Proofs",
-      "description": "Transition to Proofs — part of the Applied Mathematics prerequisite and major sequence.",
-      "units": 4,
+      "title": "Transition to Higher Mathematics",
+      "description": "Propositional logic, techniques of mathematical proof, and fundamental structures including sets, functions, and relations. Essential preparation for upper-division mathematics major courses.",
+      "units": 5,
       "self_learnable": false,
-      "position_x": 80,
-      "position_y": 585
+      "position_x": 680,
+      "position_y": 80
     },
     {
       "id": "phys-7a",
       "node_type": "course",
       "label": "PHYS 7A",
-      "title": "PHYS 7A",
-      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "title": "Basic Physics",
+      "description": "Kinematics in 3D, Newton's laws, energy, momentum and collisions, rotation, statics and equilibrium.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 80,
-      "position_y": 410
+      "position_x": 980,
+      "position_y": 80,
+      "resources": [
+        {
+          "name": "UCSBPlat — PHYS 7A",
+          "url": "https://ucsbplat.com/curriculum/course/PHYS%207A"
+        }
+      ]
     },
     {
       "id": "math-118a",
       "node_type": "course",
       "label": "MATH 118A",
       "title": "Real Analysis",
-      "description": "Real Analysis — part of the Applied Mathematics prerequisite and major sequence.",
+      "description": "Axioms of the real numbers, topology of metric spaces, numerical sequences, and infinite series.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 320,
-      "position_y": 235
+      "position_x": 1280,
+      "position_y": 80
     },
     {
       "id": "math-111a",
       "node_type": "course",
       "label": "MATH 111A",
       "title": "Abstract Algebra",
-      "description": "Abstract Algebra — part of the Applied Mathematics prerequisite and major sequence.",
+      "description": "Introduction to group theory for finite groups: homomorphisms, normal subgroups, quotients, direct products, group actions, and classification of finitely generated Abelian groups.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 320,
-      "position_y": 60
+      "position_x": 1580,
+      "position_y": 80
     },
     {
       "id": "math-124",
       "node_type": "course",
       "label": "MATH 124",
-      "title": "MATH 124",
-      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "title": "Partial Differential Equations",
+      "description": "Wave, heat, and potential equations. (UCSB catalog: MATH 124A.)",
       "units": 4,
       "self_learnable": false,
-      "position_x": 320,
-      "position_y": 410
+      "position_x": 1880,
+      "position_y": 80
     },
     {
       "id": "math-132",
       "node_type": "course",
       "label": "MATH 132",
-      "title": "MATH 132",
-      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "title": "Optimization",
+      "description": "Global and local optimization, constrained and unconstrained optimization, convex versus nonconvex optimization, gradient methods, Newton and quasi-Newton methods, and trust region methods. (UCSB catalog: MATH 132A.)",
       "units": 4,
       "self_learnable": false,
-      "position_x": 320,
-      "position_y": 585
+      "position_x": 2180,
+      "position_y": 80
     },
     {
       "id": "math-160",
       "node_type": "course",
       "label": "MATH 160",
-      "title": "MATH 160",
-      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "title": "Introduction to Numerical Analysis",
+      "description": "Numerical methods for nonlinear equations (Newton method), integration (quadrature and composite integration), and initial value problems for ODEs (Euler and Runge–Kutta methods). (UCSB catalog: MATH 104A.)",
       "units": 4,
       "self_learnable": false,
-      "position_x": 320,
-      "position_y": 760
+      "position_x": 2480,
+      "position_y": 80
     },
     {
       "id": "math-170",
       "node_type": "course",
       "label": "MATH 170",
-      "title": "MATH 170",
-      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "title": "Introduction to Mathematical Finance",
+      "description": "Mathematical methods for asset pricing models, equilibrium and derivative pricing, options, bonds, and the term structure of interest rates; optimization models for risk management and financial engineering.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 320,
-      "position_y": 935
+      "position_x": 2780,
+      "position_y": 80
     },
     {
       "id": "career-data-science",
       "node_type": "career",
       "label": "Data science",
       "title": "Data science",
-      "description": "Career path for Applied Mathematics graduates: Data science.",
+      "description": "Career path for Applied Mathematics graduates: data science.",
       "self_learnable": false,
-      "position_x": 560,
-      "position_y": 60
+      "position_x": 3080,
+      "position_y": 80
     },
     {
       "id": "career-engineering",
       "node_type": "career",
       "label": "Engineering",
       "title": "Engineering",
-      "description": "Career path for Applied Mathematics graduates: Engineering.",
+      "description": "Career path for Applied Mathematics graduates: engineering.",
       "self_learnable": false,
-      "position_x": 560,
-      "position_y": 235
+      "position_x": 3080,
+      "position_y": 300
     },
     {
       "id": "career-finance",
       "node_type": "career",
       "label": "Finance",
       "title": "Finance",
-      "description": "Career path for Applied Mathematics graduates: Finance.",
+      "description": "Career path for Applied Mathematics graduates: finance.",
       "self_learnable": false,
-      "position_x": 560,
-      "position_y": 410
+      "position_x": 3080,
+      "position_y": 520
     },
     {
       "id": "career-research",
       "node_type": "career",
       "label": "Research",
       "title": "Research",
-      "description": "Career path for Applied Mathematics graduates: Research.",
+      "description": "Career path for Applied Mathematics graduates: research.",
       "self_learnable": false,
-      "position_x": 560,
-      "position_y": 585
+      "position_x": 3080,
+      "position_y": 740
     }
   ],
   "edges": [
