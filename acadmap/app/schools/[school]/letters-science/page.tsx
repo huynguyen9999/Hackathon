@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { CollegeBanner } from "@/components/CollegeBanner";
 import { LsFrameworkCard } from "@/components/LsFrameworkCard";
-import { MajorCatalogGrid } from "@/components/MajorCatalogGrid";
+import { LsMajorCatalog } from "@/components/LsMajorCatalog";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SourceList } from "@/components/SourceList";
 import {
@@ -122,11 +122,9 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
               .
             </p>
           </div>
-          <MajorCatalogGrid
+          <LsMajorCatalog
             majors={catalog.majors}
             getMajorHref={(slug) => lsMajorHubHref(shortName, slug)}
-            badgeLabel="Requirements"
-            ctaLabel="View major requirements"
           />
         </section>
 

@@ -1,6 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 
 import { coeMajorHubHref, getUcsbMajorBySlug } from "@/lib/ucsb-coe";
+import { resolveLsSlug } from "@/lib/ucsb-dept-urls";
 import { getUcsbLsMajorBySlug, lsMajorHubHref } from "@/lib/ucsb-ls";
 
 type PageProps = {
@@ -22,7 +23,8 @@ export default async function LegacyMajorRedirectPage({ params }: PageProps) {
 
   const lsMajor = await getUcsbLsMajorBySlug(majorSlug);
   if (lsMajor) {
-    redirect(lsMajorHubHref(school, majorSlug));
+    const canonical = resolveLsSlug(majorSlug);
+    redirect(lsMajorHubHref(school, canonical));
   }
 
   notFound();

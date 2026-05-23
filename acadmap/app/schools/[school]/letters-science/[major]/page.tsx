@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { CollegeBanner } from "@/components/CollegeBanner";
 import { MajorRequirements } from "@/components/MajorRequirements";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { catalogProgramUrl } from "@/lib/ucsb-dept-urls";
 import { getUcsbLsMajorBySlug, loadUcsbLsCatalog, lsCollegeHubHref } from "@/lib/ucsb-ls";
 import { schoolHubHref } from "@/lib/ucsb-coe";
 
@@ -53,6 +54,16 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
         description={major.department}
         actions={
           <>
+            {major.admissions_url ? (
+              <a
+                href={major.admissions_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl border border-teal-500/40 px-5 py-2.5 text-sm font-semibold text-teal-200 transition hover:bg-teal-950/50"
+              >
+                Admissions major page ↗
+              </a>
+            ) : null}
             {major.department_url ? (
               <a
                 href={major.department_url}
@@ -64,18 +75,41 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
               </a>
             ) : null}
             <a
-              href={major.curriculum_url}
+              href={
+                major.catalog_program_code
+                  ? catalogProgramUrl(major.catalog_program_code)
+                  : major.curriculum_url
+              }
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl border border-slate-600/40 px-5 py-2.5 text-sm font-semibold text-slate-300 transition hover:bg-slate-800/60"
             >
-              Curriculum / plan ↗
+              UCSB Catalog program ↗
             </a>
           </>
         }
       />
 
       <div className="space-y-8">
+        {major.requirements_level === "partial" ? (
+          <p className="rounded-xl border border-amber-500/30 bg-amber-950/25 px-4 py-3 text-sm text-amber-100/90">
+            Requirements below are summarized from department and catalog sources.
+            Verify on the{" "}
+            <a
+              href={
+                major.catalog_program_code
+                  ? catalogProgramUrl(major.catalog_program_code)
+                  : major.curriculum_url
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal-300 underline"
+            >
+              official UCSB Catalog
+            </a>{" "}
+            before planning your degree.
+          </p>
+        ) : null}
         <CollegeBanner variant="letters-science" lsCatalog={catalog} />
         <MajorRequirements
           major={major}

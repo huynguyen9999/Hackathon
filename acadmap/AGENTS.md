@@ -41,7 +41,11 @@ Use this file when running **multiple Cursor agents** (or subagents) in parallel
 
 **L&S research agent** (read-only)
 
-> Use https://admissions.sa.ucsb.edu/majors and https://duels.ucsb.edu/degree-planning/degree-requirements. Department URLs: `https://{dept}.ucsb.edu/` or `https://www.{dept}.ucsb.edu/`. Update `data/ucsb/ls-catalog.json` and `docs/UCSB-LS-RESEARCH.md`.
+> Use https://admissions.sa.ucsb.edu/majors (58 L&S majors) and https://duels.ucsb.edu/degree-planning/degree-requirements. Department URLs live in `lib/ucsb-dept-urls.ts`. Run `npm run fetch:ls` to merge into `data/ucsb/ls-catalog.json`. See `docs/UCSB-LS-RESEARCH.md`.
+
+**L&S cluster agents** (parallel QA)
+
+> Split majors across sciences, social sciences, humanities, and languages/arts. Edit `lib/ucsb-dept-urls.ts`, then run `npm run fetch:ls` + `npm run validate:ls`. Prompt templates in `docs/UCSB-LS-RESEARCH.md`.
 
 **Data agent** — per major
 
@@ -90,6 +94,8 @@ cd acadmap
 npm install
 cp .env.example .env.local   # optional until Supabase is live
 npm run dev                  # http://localhost:3000
+npm run fetch:ls             # merge 58 L&S majors into ls-catalog.json
+npm run validate:ls          # assert catalog integrity
 ```
 
 If the parent folder path contains `:`, prefer:

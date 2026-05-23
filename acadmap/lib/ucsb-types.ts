@@ -1,5 +1,7 @@
 /** Shared UCSB college catalog shapes (CoE + L&S). */
 
+export type RequirementsLevel = "full" | "partial";
+
 export type UcsbMajor = {
   name: string;
   slug: string;
@@ -18,6 +20,10 @@ export type UcsbMajor = {
   sample_electives: string[];
   career_outcomes: string[];
   notes?: string;
+  requirements_level?: RequirementsLevel;
+  admissions_url?: string;
+  catalog_program_code?: string;
+  selective?: boolean;
 };
 
 export type UcsbSource = {

@@ -49,78 +49,326 @@
   },
   "majors": [
     {
-      "name": "Economics",
-      "slug": "economics",
-      "degree_type": "BA",
-      "department": "Department of Economics",
-      "department_url": "https://www.econ.ucsb.edu/",
-      "curriculum_url": "https://econ.ucsb.edu/programs/undergraduate/majors",
+      "name": "Actuarial Science",
+      "slug": "actuarial-science",
+      "degree_type": "BS",
+      "department": "Department of Statistics & Applied Probability",
+      "department_url": "https://www.pstat.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSACT",
       "graduation_units": 180,
       "roadmap_available": false,
       "preparation_for_major": [
-        "ECON 1 — Principles of Microeconomics",
-        "ECON 2 — Principles of Macroeconomics",
-        "ECON 10A — Intermediate Microeconomic Theory",
-        "ECON 5 or PSTAT 120A",
-        "MATH 2A-B or 3A-B or 34A-B (C or better)",
-        "Pre-major GPA 2.85+ on ECON 1, 2, 10A (UC courses only; no grade below C)"
+        "MATH 3A — Calculus I",
+        "MATH 3B — Calculus II",
+        "MATH 4A — Linear Algebra",
+        "MATH 6A — Vector Calculus",
+        "CMPSC 8, 9, or 16 — Programming",
+        "PSTAT 120A — Probability (recommended)"
       ],
       "upper_division_required": [
-        "ECON 100B — Intermediate Macroeconomic Theory",
-        "ECON 101 — Introduction to Econometrics",
-        "ECON 140A",
-        "Six additional upper-division ECON electives (24 units total UD)"
+        "PSTAT 160A-B — Mathematical Statistics",
+        "PSTAT 173 — Actuarial Statistics",
+        "PSTAT 174 — Financial Mathematics",
+        "Upper-division PSTAT/MATH electives"
       ],
       "departmental_electives_units": 24,
-      "departmental_electives_note": "40 upper-division ECON units required total. P/NP not allowed for major courses. Must obtain full-major status before UD ECON enrollment.",
-      "sample_electives": ["ECON 115", "ECON 130", "ECON 140B", "ECON 150A", "ECON 171"],
-      "career_outcomes": [
-        "Financial analyst",
-        "Consulting",
-        "Data analytics",
-        "Public policy",
-        "Graduate study in economics"
+      "departmental_electives_note": "Selective major. Transfer prep: Calc I–II, linear algebra, multivariable calc, intro programming (C or better, GPA 2.75+). SOA exam prep encouraged.",
+      "sample_electives": [
+        "PSTAT 175",
+        "PSTAT 176",
+        "MATH 117",
+        "ECON 1"
       ],
-      "notes": "ECON 5 and ECON 10A must be taken at UCSB."
+      "career_outcomes": [
+        "Actuary",
+        "Risk analyst",
+        "Insurance",
+        "Quantitative finance",
+        "Data science"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#actuarial-science",
+      "catalog_program_code": "BSACT",
+      "selective": true
     },
     {
-      "name": "Psychology",
-      "slug": "psychology",
+      "name": "Anthropology",
+      "slug": "anthropology",
       "degree_type": "BA",
-      "department": "Department of Psychological & Brain Sciences",
-      "department_url": "https://www.psych.ucsb.edu/",
-      "curriculum_url": "https://catalog.ucsb.edu/programs/BAPSY",
+      "department": "Department of Anthropology",
+      "department_url": "https://www.anth.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAANT",
       "graduation_units": 180,
       "roadmap_available": false,
       "preparation_for_major": [
-        "PSY 1 — Introductory Psychology",
-        "PSTAT 5 or 5LS (or equivalent statistics)",
-        "PSY 10A — Research Methods in Psychology",
-        "PSY 10B — Statistical Methods in Psychology"
+        "ANTH 2 — Introductory Cultural Anthropology",
+        "ANTH 3 or 5 (biological archaeology / archaeology intro)",
+        "Statistics or methods prep course"
       ],
       "upper_division_required": [
-        "PSY 102A — Introduction to Social Psychology",
-        "PSY 105 — Introduction to Developmental Psychology",
-        "PSY 110 — Introduction to Cognitive Psychology",
-        "PSY 112 — Introduction to Biopsychology",
-        "Additional upper-division PSY electives per major sheet"
+        "ANTH 102 (theory)",
+        "Methods course (ethnographic or archaeological)",
+        "Upper-division ANTH electives in subdisciplines"
       ],
-      "departmental_electives_units": 20,
-      "departmental_electives_note": "Selective major; check department for current prep GPA and petition process. Requirements vary by catalog year—verify on GOLD progress check.",
-      "sample_electives": ["PSY 130", "PSY 140", "PSY 150", "PSY 170"],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Subfields: sociocultural, archaeology, biological anthropology.",
+      "sample_electives": [
+        "ANTH 120",
+        "ANTH 130",
+        "ANTH 150",
+        "ANTH 170"
+      ],
       "career_outcomes": [
-        "Clinical/counseling paths (grad school)",
         "UX research",
-        "Human resources",
-        "Market research",
-        "Neuroscience research"
-      ]
+        "Museums",
+        "International development",
+        "Public health",
+        "Academia"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#anthropology",
+      "catalog_program_code": "BAANT"
     },
     {
-      "name": "Biology",
-      "slug": "biology",
+      "name": "Applied Mathematics",
+      "slug": "applied-mathematics",
       "degree_type": "BS",
-      "department": "Department of Ecology, Evolution & Marine Biology / MCDB",
+      "department": "Department of Mathematics",
+      "department_url": "https://www.math.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSAPM",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 3A-B — Calculus",
+        "MATH 4A-B — Linear Algebra & Differential Equations",
+        "MATH 8 — Transition to Proofs",
+        "PHYS 7A-B (recommended)"
+      ],
+      "upper_division_required": [
+        "MATH 118A-B-C — Real Analysis",
+        "MATH 111A-B — Abstract Algebra",
+        "Applied math cluster electives (numerical, ODE/PDE, modeling)"
+      ],
+      "departmental_electives_units": 24,
+      "departmental_electives_note": "BS Applied Mathematics emphasizes modeling and computation. Selective major with strong math GPA.",
+      "sample_electives": [
+        "MATH 124",
+        "MATH 132",
+        "MATH 160",
+        "MATH 170"
+      ],
+      "career_outcomes": [
+        "Data science",
+        "Engineering",
+        "Finance",
+        "Research",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#applied-mathematics",
+      "catalog_program_code": "BSAPM",
+      "selective": true
+    },
+    {
+      "name": "Aquatic Biology",
+      "slug": "aquatic-biology",
+      "degree_type": "BS",
+      "department": "Department of Ecology, Evolution, and Marine Biology",
+      "department_url": "https://www.biology.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSAQB",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 1A-B-C (or 2 series)",
+        "MATH 3A-B",
+        "EEMB 2-3 or MCDB 1A-B",
+        "PHYS 6A-B-C or 7A-B-C"
+      ],
+      "upper_division_required": [
+        "EEMB upper-division marine/aquatic courses",
+        "Laboratory/field requirement",
+        "Capstone or research"
+      ],
+      "departmental_electives_units": 36,
+      "departmental_electives_note": "Focus on marine and freshwater systems. Field and lab intensive.",
+      "sample_electives": [
+        "EEMB 120",
+        "EEMB 157",
+        "EEMB 184",
+        "EEMB 199"
+      ],
+      "career_outcomes": [
+        "Marine biology",
+        "Conservation",
+        "Fisheries",
+        "Environmental consulting",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#aquatic-biology",
+      "catalog_program_code": "BSAQB",
+      "selective": true
+    },
+    {
+      "name": "Art",
+      "slug": "art",
+      "degree_type": "BA",
+      "department": "Department of Art",
+      "department_url": "https://www.art.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAART",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "ART 1A-B-C — Foundation studio sequence",
+        "ART 12 — Art history survey",
+        "Lower-division studio electives"
+      ],
+      "upper_division_required": [
+        "Upper-division studio concentration",
+        "ART history/theory courses",
+        "Senior exhibition or portfolio review"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Studio areas include painting, sculpture, print, digital media, and photography.",
+      "sample_electives": [
+        "ART 130",
+        "ART 140",
+        "ART 150",
+        "ART 190"
+      ],
+      "career_outcomes": [
+        "Fine arts",
+        "Graphic design",
+        "Museum/gallery",
+        "Teaching",
+        "Creative direction"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#art",
+      "catalog_program_code": "BAART"
+    },
+    {
+      "name": "Asian American Studies",
+      "slug": "asian-american-studies",
+      "degree_type": "BA",
+      "department": "Department of Asian American Studies",
+      "department_url": "https://www.asam.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAASAM",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "AS AM 1 — Introduction to Asian American Studies",
+        "Lower-division AS AM courses",
+        "Related ethnic studies or history survey"
+      ],
+      "upper_division_required": [
+        "Upper-division AS AM electives",
+        "Research or community engagement project",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Interdisciplinary focus on Asian American history, culture, and politics.",
+      "sample_electives": [
+        "AS AM 110",
+        "AS AM 130",
+        "AS AM 150",
+        "AS AM 170"
+      ],
+      "career_outcomes": [
+        "Law",
+        "Education",
+        "Nonprofit",
+        "Public policy",
+        "Community organizing"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#asian-american-studies",
+      "catalog_program_code": "BAASAM"
+    },
+    {
+      "name": "Asian Studies",
+      "slug": "asian-studies",
+      "degree_type": "BA",
+      "department": "Department of East Asian Languages and Cultural Studies",
+      "department_url": "https://www.ealc.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAASST",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "EACS lower-division surveys",
+        "Language study (Chinese, Japanese, or Korean)",
+        "Area history or culture course"
+      ],
+      "upper_division_required": [
+        "Upper-division EACS courses",
+        "Advanced language or literature",
+        "Senior thesis option"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Regional focus on East Asia with language requirement.",
+      "sample_electives": [
+        "EACS 120",
+        "EACS 140",
+        "CHIN 120",
+        "JAPAN 120"
+      ],
+      "career_outcomes": [
+        "International business",
+        "Diplomacy",
+        "Translation",
+        "Teaching",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#asian-studies",
+      "catalog_program_code": "BAASST"
+    },
+    {
+      "name": "Biochemistry",
+      "slug": "biochemistry",
+      "degree_type": "BS",
+      "department": "Department of Chemistry and Biochemistry",
+      "department_url": "https://www.chem.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSBCH",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 1A-B-C",
+        "CHEM 6AL-BL",
+        "MATH 3A-B, 4A-B",
+        "PHYS 7A-B-C",
+        "CHEM 109A-B-C"
+      ],
+      "upper_division_required": [
+        "CHEM 113A-B-C — Physical Chemistry",
+        "BCHM/MCDB biochemistry courses",
+        "Upper-division lab or research"
+      ],
+      "departmental_electives_units": 12,
+      "departmental_electives_note": "Selective major. Heavy chemistry and biology integration. Pre-med and biotech paths.",
+      "sample_electives": [
+        "CHEM 171",
+        "MCDB 108A",
+        "CHEM 173",
+        "BCHM 142"
+      ],
+      "career_outcomes": [
+        "Biotech",
+        "Pharmaceutical R&D",
+        "Medicine",
+        "Research",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#biochemistry",
+      "catalog_program_code": "BSBCH",
+      "selective": true
+    },
+    {
+      "name": "Biological Sciences",
+      "slug": "biological-sciences",
+      "degree_type": "BA/BS",
+      "department": "Department of Ecology, Evolution, and Marine Biology / MCDB",
       "department_url": "https://www.biology.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSBIO",
       "graduation_units": 180,
@@ -139,15 +387,103 @@
         "Capstone or senior project (per emphasis/track)"
       ],
       "departmental_electives_units": 40,
-      "departmental_electives_note": "BS Biology spans EEMB and MCDB areas; students choose emphasis with department advisor. Many pre-health students use this major.",
-      "sample_electives": ["EEMB 120", "MCDB 108A", "EEMB 157", "MCDB 131"],
+      "departmental_electives_note": "BS Biological Sciences spans EEMB and MCDB. Selective major for transfers.",
+      "sample_electives": [
+        "EEMB 120",
+        "MCDB 108A",
+        "EEMB 157",
+        "MCDB 131"
+      ],
       "career_outcomes": [
-        "Medicine / health professions",
-        "Biotech research",
+        "Medicine",
+        "Biotech",
         "Environmental science",
         "Marine biology",
-        "Graduate study in biology"
-      ]
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#biological-sciences",
+      "catalog_program_code": "BSBIO",
+      "selective": true
+    },
+    {
+      "name": "Biopsychology",
+      "slug": "biopsychology",
+      "degree_type": "BS",
+      "department": "Department of Psychological & Brain Sciences",
+      "department_url": "https://www.psych.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSBPSY",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "PSY 1 — Introductory Psychology",
+        "CHEM 1A-B (or 2 series)",
+        "MATH 3A-B",
+        "MCDB 1A-B or EEMB 2",
+        "PSY 10A-B — Methods and Statistics"
+      ],
+      "upper_division_required": [
+        "PSY 112 — Biopsychology",
+        "Upper-division neuroscience/psych electives",
+        "Research methods or lab"
+      ],
+      "departmental_electives_units": 24,
+      "departmental_electives_note": "BS track with heavier biology and neuroscience than BA Psychology.",
+      "sample_electives": [
+        "PSY 112",
+        "PSY 114",
+        "MCDB 108A",
+        "PSY 199"
+      ],
+      "career_outcomes": [
+        "Neuroscience research",
+        "Medicine",
+        "Pharmaceutical",
+        "Graduate study",
+        "Clinical psychology"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#biopsychology",
+      "catalog_program_code": "BSBPSY",
+      "selective": true
+    },
+    {
+      "name": "Black Studies",
+      "slug": "black-studies",
+      "degree_type": "BA",
+      "department": "Department of Black Studies",
+      "department_url": "https://www.blackstudies.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BABLS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "BL ST 1 — Introduction to Black Studies",
+        "Lower-division BL ST courses",
+        "Related history or sociology survey"
+      ],
+      "upper_division_required": [
+        "Upper-division BL ST electives",
+        "Theory or methods course",
+        "Senior seminar or project"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Interdisciplinary study of African diaspora history, culture, and politics.",
+      "sample_electives": [
+        "BL ST 110",
+        "BL ST 130",
+        "BL ST 150",
+        "BL ST 170"
+      ],
+      "career_outcomes": [
+        "Law",
+        "Education",
+        "Social work",
+        "Public policy",
+        "Community leadership"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#black-studies",
+      "catalog_program_code": "BABLS"
     },
     {
       "name": "Chemistry",
@@ -172,15 +508,1298 @@
         "Research or senior thesis (recommended)"
       ],
       "departmental_electives_units": 12,
-      "departmental_electives_note": "ACS-certified track available. Heavy lab workload; verify sequence timing with department advisor.",
-      "sample_electives": ["CHEM 171", "CHEM 173", "CHEM 174", "CHEM 180"],
+      "departmental_electives_note": "ACS-certified track available. Selective major.",
+      "sample_electives": [
+        "CHEM 171",
+        "CHEM 173",
+        "CHEM 174",
+        "CHEM 180"
+      ],
       "career_outcomes": [
         "Pharmaceutical R&D",
         "Materials science",
-        "Chemical engineering (grad)",
         "Teaching",
+        "Graduate study",
         "Analytical chemistry"
-      ]
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#chemistry",
+      "catalog_program_code": "BSCHEM",
+      "selective": true
+    },
+    {
+      "name": "Chicano and Chicana Studies",
+      "slug": "chicano-and-chicano-studies",
+      "degree_type": "BA",
+      "department": "Department of Chicana and Chicano Studies",
+      "department_url": "https://www.chicst.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BACHST",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CH ST 1A-B — Introduction to Chicana/o Studies",
+        "Lower-division CH ST courses",
+        "Related history or Spanish language course"
+      ],
+      "upper_division_required": [
+        "Upper-division CH ST electives",
+        "Community engagement or research",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Focus on Chicana/o and Latina/o history, culture, and social justice.",
+      "sample_electives": [
+        "CH ST 110",
+        "CH ST 130",
+        "CH ST 150",
+        "CH ST 170"
+      ],
+      "career_outcomes": [
+        "Education",
+        "Law",
+        "Social work",
+        "Public policy",
+        "Community organizing"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#chicano-and-chicano-studies",
+      "catalog_program_code": "BACHST"
+    },
+    {
+      "name": "Chinese",
+      "slug": "chinese",
+      "degree_type": "BA",
+      "department": "Department of East Asian Languages and Cultural Studies",
+      "department_url": "https://www.ealc.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BACHIN",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHIN 1-6 — Chinese language sequence",
+        "EACS lower-division survey",
+        "Lower-division Chinese culture course"
+      ],
+      "upper_division_required": [
+        "CHIN 120+ — Advanced Chinese",
+        "Upper-division literature/culture",
+        "Senior project"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Language proficiency through advanced coursework required.",
+      "sample_electives": [
+        "CHIN 120",
+        "CHIN 140",
+        "EACS 130",
+        "EACS 150"
+      ],
+      "career_outcomes": [
+        "Translation",
+        "International business",
+        "Diplomacy",
+        "Teaching",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#chinese",
+      "catalog_program_code": "BACHIN"
+    },
+    {
+      "name": "Classics",
+      "slug": "classics",
+      "degree_type": "BA",
+      "department": "Department of Classics",
+      "department_url": "https://www.classics.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BACLAS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "Greek or Latin language sequence",
+        "CLAS lower-division surveys",
+        "Ancient history or mythology survey"
+      ],
+      "upper_division_required": [
+        "Advanced Greek/Latin reading",
+        "Upper-division classical civilization",
+        "Senior thesis option"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Emphasis on ancient Greek and Roman languages, literature, and history.",
+      "sample_electives": [
+        "CLAS 110",
+        "CLAS 130",
+        "GREEK 100",
+        "LATIN 100"
+      ],
+      "career_outcomes": [
+        "Law",
+        "Teaching",
+        "Museum/archives",
+        "Graduate study",
+        "Publishing"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#classics",
+      "catalog_program_code": "BACLAS"
+    },
+    {
+      "name": "Communication",
+      "slug": "communication",
+      "degree_type": "BA",
+      "department": "Department of Communication",
+      "department_url": "https://www.comm.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BACOMM",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "COMM 1 — Introduction to Communication",
+        "COMM 88A or statistics course",
+        "Lower-division COMM courses"
+      ],
+      "upper_division_required": [
+        "COMM 100A-B (communication theory/methods)",
+        "Upper-division COMM electives",
+        "Senior capstone / project"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Selective major with prep GPA requirement.",
+      "sample_electives": [
+        "COMM 121",
+        "COMM 130",
+        "COMM 145",
+        "COMM 160"
+      ],
+      "career_outcomes": [
+        "Marketing",
+        "Media",
+        "Corporate comms",
+        "UX",
+        "Law"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#communication",
+      "catalog_program_code": "BACOMM"
+    },
+    {
+      "name": "Comparative Literature",
+      "slug": "comparative-literature",
+      "degree_type": "BA",
+      "department": "Department of Comparative Literature",
+      "department_url": "https://www.complit.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BACMLT",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "Lower-division literature in two languages",
+        "C LIT gateway courses",
+        "Foreign language through intermediate level"
+      ],
+      "upper_division_required": [
+        "Upper-division C LIT courses",
+        "Literary theory requirement",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Cross-cultural literary study; foreign language proficiency required.",
+      "sample_electives": [
+        "C LIT 110",
+        "C LIT 130",
+        "C LIT 150",
+        "C LIT 170"
+      ],
+      "career_outcomes": [
+        "Publishing",
+        "Translation",
+        "Teaching",
+        "Graduate study",
+        "International NGOs"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#comparative-literature",
+      "catalog_program_code": "BACMLT"
+    },
+    {
+      "name": "Dance",
+      "slug": "dance",
+      "degree_type": "BA/BFA",
+      "department": "Department of Theater and Dance",
+      "department_url": "https://www.theaterdance.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BADAN",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "DANCE lower-division technique courses",
+        "DANCE history/theory",
+        "Performance participation"
+      ],
+      "upper_division_required": [
+        "Advanced technique",
+        "Choreography or production",
+        "Senior performance/project"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "BFA requires audition. BA track available.",
+      "sample_electives": [
+        "DANCE 130",
+        "DANCE 150",
+        "DANCE 170",
+        "DANCE 190"
+      ],
+      "career_outcomes": [
+        "Professional dance",
+        "Choreography",
+        "Teaching",
+        "Arts administration",
+        "Physical therapy"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#dance",
+      "catalog_program_code": "BADAN"
+    },
+    {
+      "name": "Earth Science",
+      "slug": "earth-science",
+      "degree_type": "BA/BS",
+      "department": "Department of Earth Science",
+      "department_url": "https://www.earth.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSEAR",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 1A-B",
+        "MATH 3A-B, 4A",
+        "EARTH 2-4 — Intro geology sequence",
+        "PHYS 7A-B or 6A-B"
+      ],
+      "upper_division_required": [
+        "EARTH upper-division core",
+        "Field/lab requirement",
+        "Emphasis area electives (geology, geophysics, etc.)"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "BA and BS tracks with emphases in climate, geology, geobiology, geophysics.",
+      "sample_electives": [
+        "EARTH 120",
+        "EARTH 130",
+        "EARTH 150",
+        "EARTH 170"
+      ],
+      "career_outcomes": [
+        "Environmental consulting",
+        "Geology",
+        "Climate science",
+        "Energy",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#earth-science",
+      "catalog_program_code": "BSEAR"
+    },
+    {
+      "name": "Ecology and Evolution",
+      "slug": "ecology-and-evolution",
+      "degree_type": "BS",
+      "department": "Department of Ecology, Evolution, and Marine Biology",
+      "department_url": "https://www.biology.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSEEMB",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 1A-B-C",
+        "MATH 3A-B",
+        "EEMB 2-3",
+        "PHYS 6A-B-C or 7A-B-C"
+      ],
+      "upper_division_required": [
+        "EEMB ecology/evolution core",
+        "Field or lab intensive course",
+        "Upper-division EEMB electives"
+      ],
+      "departmental_electives_units": 36,
+      "departmental_electives_note": "Selective major. Focus on population, community, and evolutionary biology.",
+      "sample_electives": [
+        "EEMB 120",
+        "EEMB 157",
+        "EEMB 184",
+        "EEMB 199"
+      ],
+      "career_outcomes": [
+        "Conservation",
+        "Research",
+        "Environmental policy",
+        "Graduate study",
+        "Wildlife biology"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#ecology-and-evolution",
+      "catalog_program_code": "BSEEMB",
+      "selective": true
+    },
+    {
+      "name": "Economics",
+      "slug": "economics",
+      "degree_type": "BA",
+      "department": "Department of Economics",
+      "department_url": "https://www.econ.ucsb.edu/",
+      "curriculum_url": "https://econ.ucsb.edu/programs/undergraduate/majors",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "ECON 1 — Principles of Microeconomics",
+        "ECON 2 — Principles of Macroeconomics",
+        "ECON 10A — Intermediate Microeconomic Theory",
+        "ECON 5 or PSTAT 120A",
+        "MATH 2A-B or 3A-B or 34A-B (C or better)",
+        "Pre-major GPA 2.85+ on ECON 1, 2, 10A (UC courses only; no grade below C)"
+      ],
+      "upper_division_required": [
+        "ECON 100B — Intermediate Macroeconomic Theory",
+        "ECON 101 — Introduction to Econometrics",
+        "ECON 140A",
+        "Six additional upper-division ECON electives (24 units total UD)"
+      ],
+      "departmental_electives_units": 24,
+      "departmental_electives_note": "Selective major. ECON 5 and 10A must be taken at UCSB.",
+      "sample_electives": [
+        "ECON 115",
+        "ECON 130",
+        "ECON 140B",
+        "ECON 171"
+      ],
+      "career_outcomes": [
+        "Financial analyst",
+        "Consulting",
+        "Data analytics",
+        "Public policy",
+        "Graduate study"
+      ],
+      "notes": "ECON 5 and ECON 10A must be taken at UCSB.",
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#economics",
+      "catalog_program_code": "BAECON",
+      "selective": true
+    },
+    {
+      "name": "Economics and Accounting",
+      "slug": "economics-and-accounting",
+      "degree_type": "BA",
+      "department": "Department of Economics",
+      "department_url": "https://www.econ.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAECAC",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "ECON 1 — Microeconomics",
+        "ECON 2 — Macroeconomics",
+        "Two calculus courses (MATH 3A-B or equivalent)",
+        "GPA 2.75+ in prep courses (C or better each)"
+      ],
+      "upper_division_required": [
+        "ECON 100B, 101, 140A",
+        "Accounting/finance electives",
+        "Upper-division ECON courses"
+      ],
+      "departmental_electives_units": 24,
+      "departmental_electives_note": "Selective major. Combines economics with accounting coursework. Verify accounting course list with department.",
+      "sample_electives": [
+        "ECON 115",
+        "ECON 130",
+        "ECON 150A",
+        "ECON 171"
+      ],
+      "career_outcomes": [
+        "Accounting",
+        "Finance",
+        "Consulting",
+        "CPA track (grad)",
+        "Corporate finance"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#economics-and-accounting",
+      "catalog_program_code": "BAECAC",
+      "selective": true
+    },
+    {
+      "name": "English",
+      "slug": "english",
+      "degree_type": "BA",
+      "department": "Department of English",
+      "department_url": "https://www.english.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAENG",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "Lower-division English literature surveys",
+        "Writing 50 or equivalent (may overlap GE)",
+        "ENG 10 or gateway courses"
+      ],
+      "upper_division_required": [
+        "Upper-division ENG by historical period and genre",
+        "Literary theory / criticism course",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Literature and creative writing tracks available.",
+      "sample_electives": [
+        "ENG 101",
+        "ENG 115",
+        "ENG 130",
+        "ENG 150"
+      ],
+      "career_outcomes": [
+        "Publishing",
+        "Teaching",
+        "Law",
+        "Technical writing",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#english",
+      "catalog_program_code": "BAENG"
+    },
+    {
+      "name": "Environmental Studies",
+      "slug": "environmental-studies",
+      "degree_type": "BA/BS",
+      "department": "Environmental Studies Program",
+      "department_url": "https://www.es.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAES",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "ENV S 1 — Introduction to Environmental Studies",
+        "CHEM 1A or EARTH 2",
+        "ECON 1 or GEOG 5",
+        "Statistics course"
+      ],
+      "upper_division_required": [
+        "ENV S core upper-division",
+        "Concentration electives (policy, science, etc.)",
+        "Senior project or internship"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Interdisciplinary BA/BS with science and policy tracks.",
+      "sample_electives": [
+        "ENV S 130",
+        "ENV S 150",
+        "ENV S 170",
+        "ENV S 190"
+      ],
+      "career_outcomes": [
+        "Environmental policy",
+        "Conservation",
+        "Sustainability",
+        "Law",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#environmental-studies",
+      "catalog_program_code": "BAES"
+    },
+    {
+      "name": "Feminist Studies",
+      "slug": "feminist-studies",
+      "degree_type": "BA",
+      "department": "Department of Feminist Studies",
+      "department_url": "https://www.femst.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAFEM",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "FEMST 1 — Introduction to Feminist Studies",
+        "Lower-division FEMST courses",
+        "Related sociology or history survey"
+      ],
+      "upper_division_required": [
+        "Upper-division FEMST electives",
+        "Theory/methods course",
+        "Senior seminar or project"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Interdisciplinary focus on gender, sexuality, and social justice.",
+      "sample_electives": [
+        "FEMST 110",
+        "FEMST 130",
+        "FEMST 150",
+        "FEMST 170"
+      ],
+      "career_outcomes": [
+        "Law",
+        "Social work",
+        "Public health",
+        "Nonprofit",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#feminist-studies",
+      "catalog_program_code": "BAFEM"
+    },
+    {
+      "name": "Film and Media Studies",
+      "slug": "film-and-media-studies",
+      "degree_type": "BA",
+      "department": "Department of Film and Media Studies",
+      "department_url": "https://www.filmandmedia.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAFMS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "FAMST 1 — Introduction to Film Studies",
+        "FAMST lower-division surveys",
+        "Production or theory gateway"
+      ],
+      "upper_division_required": [
+        "Upper-division FAMST theory/history",
+        "Production or analysis electives",
+        "Senior project"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Critical studies and production tracks.",
+      "sample_electives": [
+        "FAMST 110",
+        "FAMST 130",
+        "FAMST 150",
+        "FAMST 170"
+      ],
+      "career_outcomes": [
+        "Film/TV production",
+        "Media analysis",
+        "Marketing",
+        "Journalism",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#film-and-media-studies",
+      "catalog_program_code": "BAFMS"
+    },
+    {
+      "name": "Financial Mathematics and Statistics",
+      "slug": "financial-mathematics-and-statistics",
+      "degree_type": "BS",
+      "department": "Department of Statistics & Applied Probability",
+      "department_url": "https://www.pstat.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSFMS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 3A-B — Calculus",
+        "MATH 4A — Linear Algebra",
+        "MATH 6A — Vector Calculus",
+        "PSTAT 120A — Probability",
+        "ECON 1-2 (recommended)"
+      ],
+      "upper_division_required": [
+        "PSTAT 160A-B — Statistics",
+        "Financial math electives",
+        "Upper-division PSTAT/MATH courses"
+      ],
+      "departmental_electives_units": 24,
+      "departmental_electives_note": "Quantitative finance and statistics focus.",
+      "sample_electives": [
+        "PSTAT 174",
+        "PSTAT 176",
+        "MATH 117",
+        "ECON 130"
+      ],
+      "career_outcomes": [
+        "Quantitative finance",
+        "Risk analysis",
+        "Data science",
+        "Actuarial",
+        "Banking"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#financial-mathematics-and-statistics",
+      "catalog_program_code": "BSFMS",
+      "selective": true
+    },
+    {
+      "name": "French",
+      "slug": "french",
+      "degree_type": "BA",
+      "department": "Department of French and Italian",
+      "department_url": "https://www.frit.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAFR",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "FR 1-6 — French language sequence",
+        "Lower-division French literature/culture",
+        "Intermediate French composition"
+      ],
+      "upper_division_required": [
+        "FR 100+ — Advanced French",
+        "Upper-division literature/culture",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Language proficiency through advanced coursework.",
+      "sample_electives": [
+        "FR 120",
+        "FR 140",
+        "FR 160",
+        "FR 180"
+      ],
+      "career_outcomes": [
+        "Translation",
+        "International relations",
+        "Teaching",
+        "Publishing",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#french",
+      "catalog_program_code": "BAFR"
+    },
+    {
+      "name": "Geography",
+      "slug": "geography",
+      "degree_type": "BA/BS",
+      "department": "Department of Geography",
+      "department_url": "https://www.geog.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAGEO",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "GEOG 5 — Human Geography",
+        "GEOG 12 — Maps and Spatial Reasoning",
+        "Statistics or GIS intro"
+      ],
+      "upper_division_required": [
+        "Upper-division GEOG electives",
+        "GIS or methods course",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "BA human geography and BS physical geography/GIS emphases.",
+      "sample_electives": [
+        "GEOG 130",
+        "GEOG 150",
+        "GEOG 170",
+        "GEOG 190"
+      ],
+      "career_outcomes": [
+        "GIS analyst",
+        "Urban planning",
+        "Environmental consulting",
+        "Remote sensing",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#geography",
+      "catalog_program_code": "BAGEO"
+    },
+    {
+      "name": "German",
+      "slug": "german",
+      "degree_type": "BA",
+      "department": "Department of Germanic and Slavic Studies",
+      "department_url": "https://www.gss.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAGERM",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "GER 1-6 — German language sequence",
+        "Lower-division German culture/literature",
+        "Intermediate German composition"
+      ],
+      "upper_division_required": [
+        "GER 100+ — Advanced German",
+        "Upper-division literature/culture",
+        "Senior project"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Language and cultural studies of German-speaking world.",
+      "sample_electives": [
+        "GER 120",
+        "GER 140",
+        "GER 160",
+        "GER 180"
+      ],
+      "career_outcomes": [
+        "Translation",
+        "International business",
+        "Teaching",
+        "Graduate study",
+        "EU policy"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#german",
+      "catalog_program_code": "BAGERM"
+    },
+    {
+      "name": "Global Studies",
+      "slug": "global-studies",
+      "degree_type": "BA",
+      "department": "Department of Global Studies",
+      "department_url": "https://www.global.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAGS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "GLOBL 1 — Introduction to Global Studies",
+        "Foreign language study",
+        "Regional survey course"
+      ],
+      "upper_division_required": [
+        "Upper-division GLOBL core",
+        "Concentration electives",
+        "Senior capstone or study abroad integration"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Interdisciplinary international affairs major. Study abroad encouraged.",
+      "sample_electives": [
+        "GLOBL 130",
+        "GLOBL 150",
+        "GLOBL 170",
+        "GLOBL 190"
+      ],
+      "career_outcomes": [
+        "International NGOs",
+        "Diplomacy",
+        "Development",
+        "Law",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#global-studies",
+      "catalog_program_code": "BAGS"
+    },
+    {
+      "name": "History",
+      "slug": "history",
+      "degree_type": "BA",
+      "department": "Department of History",
+      "department_url": "https://www.history.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAHIS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "HIST 4A-B-C or regional surveys",
+        "Lower-division HIST electives",
+        "Writing or research methods course"
+      ],
+      "upper_division_required": [
+        "Upper-division HIST by region and era",
+        "HIST 201 (historiography) or equivalent",
+        "Research seminar / senior thesis option"
+      ],
+      "departmental_electives_units": 36,
+      "departmental_electives_note": "Regional concentrations available.",
+      "sample_electives": [
+        "HIST 105",
+        "HIST 121",
+        "HIST 140",
+        "HIST 180"
+      ],
+      "career_outcomes": [
+        "Law",
+        "Education",
+        "Public history",
+        "Government",
+        "Journalism"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#history",
+      "catalog_program_code": "BAHIS"
+    },
+    {
+      "name": "History of Art and Architecture",
+      "slug": "history-of-art-and-architecture",
+      "degree_type": "BA",
+      "department": "Department of History of Art and Architecture",
+      "department_url": "https://www.haa.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAHAA",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "HAA lower-division surveys",
+        "Art history gateway courses",
+        "Studio art or architecture intro (recommended)"
+      ],
+      "upper_division_required": [
+        "Upper-division HAA by period/region",
+        "Methods/theory course",
+        "Senior thesis option"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Visual culture from antiquity to contemporary.",
+      "sample_electives": [
+        "HAA 130",
+        "HAA 150",
+        "HAA 170",
+        "HAA 190"
+      ],
+      "career_outcomes": [
+        "Museum/gallery",
+        "Architecture",
+        "Conservation",
+        "Graduate study",
+        "Publishing"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#history-of-art-and-architecture",
+      "catalog_program_code": "BAHAA"
+    },
+    {
+      "name": "History of Policy, Law, and Governance",
+      "slug": "history-of-policy-law-and-governance",
+      "degree_type": "BA",
+      "department": "Department of History",
+      "department_url": "https://www.history.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAHPLG",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "HIST lower-division surveys",
+        "POL S 1 or introductory policy course",
+        "Statistics or research methods course"
+      ],
+      "upper_division_required": [
+        "Upper-division HIST/POL S cross-listed courses",
+        "Policy/governance focus electives",
+        "Senior research project"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Interdisciplinary major combining history with policy and law.",
+      "sample_electives": [
+        "HIST 130",
+        "POL S 120",
+        "HIST 170",
+        "POL S 174"
+      ],
+      "career_outcomes": [
+        "Law",
+        "Public policy",
+        "Government",
+        "Nonprofit",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#history-of-policy-law-and-governance",
+      "catalog_program_code": "BAHPLG"
+    },
+    {
+      "name": "Hydrologic Sciences and Policy",
+      "slug": "hydrologic-sciences-and-policy",
+      "degree_type": "BS",
+      "department": "Department of Geography / Bren School",
+      "department_url": "https://www.geog.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSHSP",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 1A-B",
+        "MATH 3A-B",
+        "GEOG or EARTH intro",
+        "Statistics"
+      ],
+      "upper_division_required": [
+        "Hydrology/water policy core",
+        "Science and policy electives",
+        "Senior project"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Interdisciplinary water science and policy program.",
+      "sample_electives": [
+        "GEOG 130",
+        "ENV S 150",
+        "EARTH 130",
+        "GEOG 170"
+      ],
+      "career_outcomes": [
+        "Water resources",
+        "Environmental policy",
+        "Hydrology",
+        "Consulting",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#hydrologic-sciences-and-policy",
+      "catalog_program_code": "BSHSP"
+    },
+    {
+      "name": "Italian Studies",
+      "slug": "italian-studies",
+      "degree_type": "BA",
+      "department": "Department of French and Italian",
+      "department_url": "https://www.frit.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAITST",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "ITAL 1-6 — Italian language sequence",
+        "Lower-division Italian culture",
+        "Intermediate Italian composition"
+      ],
+      "upper_division_required": [
+        "ITAL 100+ — Advanced Italian",
+        "Upper-division literature/culture",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Italian language, literature, and cultural studies.",
+      "sample_electives": [
+        "ITAL 120",
+        "ITAL 140",
+        "ITAL 160",
+        "ITAL 180"
+      ],
+      "career_outcomes": [
+        "Translation",
+        "International relations",
+        "Teaching",
+        "Arts",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#italian-studies",
+      "catalog_program_code": "BAITST"
+    },
+    {
+      "name": "Japanese",
+      "slug": "japanese",
+      "degree_type": "BA",
+      "department": "Department of East Asian Languages and Cultural Studies",
+      "department_url": "https://www.ealc.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAJAPN",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "JAPAN 1-6 — Japanese language sequence",
+        "EACS lower-division survey",
+        "Lower-division Japanese culture course"
+      ],
+      "upper_division_required": [
+        "JAPAN 120+ — Advanced Japanese",
+        "Upper-division literature/culture",
+        "Senior project"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Language proficiency through advanced coursework.",
+      "sample_electives": [
+        "JAPAN 120",
+        "JAPAN 140",
+        "EACS 130",
+        "EACS 150"
+      ],
+      "career_outcomes": [
+        "Translation",
+        "International business",
+        "Teaching",
+        "Graduate study",
+        "Tech industry"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#japanese",
+      "catalog_program_code": "BAJAPN"
+    },
+    {
+      "name": "Language, Culture, and Society",
+      "slug": "language-culture-and-society",
+      "degree_type": "BA",
+      "department": "Department of Linguistics",
+      "department_url": "https://www.linguistics.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BALCS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "LING 20 — Language and Linguistics",
+        "Foreign language study",
+        "ANTH or SOC intro"
+      ],
+      "upper_division_required": [
+        "Upper-division LING courses",
+        "Sociolinguistics/anthropology electives",
+        "Senior project"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Interdisciplinary sociolinguistics and language in society.",
+      "sample_electives": [
+        "LING 130",
+        "LING 150",
+        "ANTH 120",
+        "SOC 130"
+      ],
+      "career_outcomes": [
+        "Education",
+        "Speech pathology (grad)",
+        "UX research",
+        "Translation",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#language-culture-and-society",
+      "catalog_program_code": "BALCS"
+    },
+    {
+      "name": "Latin American and Iberian Studies",
+      "slug": "latin-american-and-iberian-studies",
+      "degree_type": "BA",
+      "department": "Department of Spanish and Portuguese",
+      "department_url": "https://www.spanport.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BALAIS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "SPAN or PORT language sequence",
+        "Lower-division LAIS surveys",
+        "Latin American history or culture survey"
+      ],
+      "upper_division_required": [
+        "Upper-division LAIS courses",
+        "Advanced language/literature",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Latin American and Iberian cultures in Spanish/Portuguese.",
+      "sample_electives": [
+        "LAIS 130",
+        "SPAN 140",
+        "PORT 120",
+        "LAIS 170"
+      ],
+      "career_outcomes": [
+        "International development",
+        "Translation",
+        "Diplomacy",
+        "Teaching",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#latin-american-and-iberian-studies",
+      "catalog_program_code": "BALAIS"
+    },
+    {
+      "name": "Linguistics",
+      "slug": "linguistics",
+      "degree_type": "BA",
+      "department": "Department of Linguistics",
+      "department_url": "https://www.linguistics.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BALING",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "LING 20 — Language and Linguistics",
+        "LING 50 — Phonetics",
+        "MATH or logic course"
+      ],
+      "upper_division_required": [
+        "LING 106 — Syntax",
+        "LING 107 — Semantics",
+        "Upper-division LING electives"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Formal linguistics with phonology, syntax, and semantics.",
+      "sample_electives": [
+        "LING 130",
+        "LING 150",
+        "LING 170",
+        "LING 199"
+      ],
+      "career_outcomes": [
+        "Computational linguistics",
+        "Speech tech",
+        "Teaching",
+        "Graduate study",
+        "UX research"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#linguistics",
+      "catalog_program_code": "BALING"
+    },
+    {
+      "name": "Mathematics",
+      "slug": "mathematics",
+      "degree_type": "BA/BS",
+      "department": "Department of Mathematics",
+      "department_url": "https://www.math.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAMATH",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 2A-B or 3A-B",
+        "MATH 4A-B (linear algebra, differential equations)",
+        "MATH 8 (transition to proofs) or 4A",
+        "PHYS 7A-B (recommended for applied track)"
+      ],
+      "upper_division_required": [
+        "MATH 111A-B (abstract algebra)",
+        "MATH 118A-B-C (real analysis)",
+        "Upper-division MATH electives"
+      ],
+      "departmental_electives_units": 24,
+      "departmental_electives_note": "BA and BS tracks. Selective major for transfers.",
+      "sample_electives": [
+        "MATH 117",
+        "MATH 124",
+        "MATH 132",
+        "MATH 160"
+      ],
+      "career_outcomes": [
+        "Data science",
+        "Actuarial",
+        "Finance",
+        "Teaching",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#mathematics",
+      "catalog_program_code": "BAMATH",
+      "selective": true
+    },
+    {
+      "name": "Medieval Studies",
+      "slug": "medieval-studies",
+      "degree_type": "BA",
+      "department": "Department of History",
+      "department_url": "https://www.history.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAMDS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "HIST 4A-B or medieval surveys",
+        "Latin or relevant language study",
+        "Medieval literature or art survey"
+      ],
+      "upper_division_required": [
+        "Upper-division medieval history/art/literature",
+        "Interdisciplinary electives",
+        "Senior thesis"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Interdisciplinary medieval Europe major.",
+      "sample_electives": [
+        "HIST 130",
+        "HAA 130",
+        "CLAS 110",
+        "ENG 130"
+      ],
+      "career_outcomes": [
+        "Graduate study",
+        "Museum/archives",
+        "Teaching",
+        "Publishing",
+        "Law"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#medieval-studies",
+      "catalog_program_code": "BAMDS"
+    },
+    {
+      "name": "Middle East Studies",
+      "slug": "middle-east-studies",
+      "degree_type": "BA",
+      "department": "Department of Religious Studies",
+      "department_url": "https://www.religion.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAMES",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MES lower-division surveys",
+        "Middle Eastern language study (recommended)",
+        "HIST or RS intro"
+      ],
+      "upper_division_required": [
+        "Upper-division MES courses",
+        "Regional concentration electives",
+        "Senior project"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Interdisciplinary study of Middle East history, politics, and culture.",
+      "sample_electives": [
+        "MES 130",
+        "RS 130",
+        "HIST 140",
+        "MES 170"
+      ],
+      "career_outcomes": [
+        "Diplomacy",
+        "International NGOs",
+        "Journalism",
+        "Graduate study",
+        "Policy"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#middle-east-studies",
+      "catalog_program_code": "BAMES"
+    },
+    {
+      "name": "Molecular and Cellular Biology",
+      "slug": "molecular-and-cellular-biology",
+      "degree_type": "BS",
+      "department": "Department of Molecular, Cellular, and Developmental Biology",
+      "department_url": "https://www.biology.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSMCDB",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 1A-B-C",
+        "MATH 3A-B",
+        "MCDB 1A-B",
+        "PHYS 6A-B-C or 7A-B-C"
+      ],
+      "upper_division_required": [
+        "MCDB upper-division core",
+        "Laboratory requirement",
+        "Upper-division MCDB electives"
+      ],
+      "departmental_electives_units": 36,
+      "departmental_electives_note": "Selective major. Molecular and cellular focus. Pre-med and biotech.",
+      "sample_electives": [
+        "MCDB 108A",
+        "MCDB 131",
+        "MCDB 150",
+        "MCDB 199"
+      ],
+      "career_outcomes": [
+        "Biotech",
+        "Medicine",
+        "Research",
+        "Pharmaceutical",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#molecular-and-cellular-biology",
+      "catalog_program_code": "BSMCDB",
+      "selective": true
+    },
+    {
+      "name": "Music Performance / Music Studies",
+      "slug": "music-performance-music-studies",
+      "degree_type": "BM/BA",
+      "department": "Department of Music",
+      "department_url": "https://www.music.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAMUS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MUS lower-division theory",
+        "Performance ensemble participation",
+        "Music history survey"
+      ],
+      "upper_division_required": [
+        "Advanced theory/composition",
+        "Performance or studies concentration",
+        "Senior recital or project (BM)"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "BM requires audition. BA in music studies also available.",
+      "sample_electives": [
+        "MUS 130",
+        "MUS 150",
+        "MUS 170",
+        "MUS 190"
+      ],
+      "career_outcomes": [
+        "Performance",
+        "Composition",
+        "Music education",
+        "Arts administration",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#music-performance-music-studies",
+      "catalog_program_code": "BAMUS"
     },
     {
       "name": "Philosophy",
@@ -202,7 +1821,7 @@
         "Senior seminar / honors thesis (optional)"
       ],
       "departmental_electives_units": 24,
-      "departmental_electives_note": "Two emphases: Core Philosophy or Ethics and Public Policy. Honors program available. Strong prep for law school.",
+      "departmental_electives_note": "Core Philosophy or Ethics and Public Policy emphasis.",
       "sample_electives": [
         "PHIL 100",
         "PHIL 112",
@@ -214,8 +1833,92 @@
         "Public policy",
         "Ethics consulting",
         "Academia",
-        "Tech ethics roles"
-      ]
+        "Tech ethics"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#philosophy",
+      "catalog_program_code": "BAPHIL"
+    },
+    {
+      "name": "Physics",
+      "slug": "physics",
+      "degree_type": "BA/BS",
+      "department": "Department of Physics",
+      "department_url": "https://www.physics.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSPHY",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "PHYS 7A-B-C-D-L (introductory physics series + lab)",
+        "MATH 3A-B, 4A-B, 6A-B (calculus series)",
+        "PHYS 51 or lower-div physics labs"
+      ],
+      "upper_division_required": [
+        "PHYS 105A-B (analytical mechanics)",
+        "PHYS 110A-B (electromagnetism)",
+        "PHYS 115A-B-C (quantum mechanics)",
+        "PHYS 120 (thermodynamics)",
+        "Upper-division PHYS electives"
+      ],
+      "departmental_electives_units": 12,
+      "departmental_electives_note": "BS for grad school/technical careers. Selective major.",
+      "sample_electives": [
+        "PHYS 130",
+        "PHYS 134",
+        "PHYS 145",
+        "PHYS 199"
+      ],
+      "career_outcomes": [
+        "Graduate study",
+        "Engineering",
+        "Quant finance",
+        "National labs",
+        "Data science"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#physics",
+      "catalog_program_code": "BSPHY",
+      "selective": true
+    },
+    {
+      "name": "Physiology",
+      "slug": "physiology",
+      "degree_type": "BS",
+      "department": "Department of Molecular, Cellular, and Developmental Biology",
+      "department_url": "https://www.biology.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSPSIO",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 1A-B-C",
+        "MATH 3A-B",
+        "MCDB 1A-B",
+        "PHYS 6A-B-C"
+      ],
+      "upper_division_required": [
+        "Physiology core courses",
+        "Laboratory requirement",
+        "Upper-division MCDB/EEMB electives"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Focus on organismal and systems physiology. Pre-med track.",
+      "sample_electives": [
+        "MCDB 108A",
+        "EEMB 120",
+        "MCDB 131",
+        "PHYS 6C"
+      ],
+      "career_outcomes": [
+        "Medicine",
+        "Physiology research",
+        "Pharmaceutical",
+        "Graduate study",
+        "Allied health"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#physiology",
+      "catalog_program_code": "BSPSIO",
+      "selective": true
     },
     {
       "name": "Political Science",
@@ -238,15 +1941,179 @@
         "Senior seminar"
       ],
       "departmental_electives_units": 32,
-      "departmental_electives_note": "Subfields include American politics, IR, comparative, theory, and methods. Internships and DC programs available.",
-      "sample_electives": ["POL S 105", "POL S 120", "POL S 130", "POL S 174"],
+      "departmental_electives_note": "Subfields: American, IR, comparative, theory, methods.",
+      "sample_electives": [
+        "POL S 105",
+        "POL S 120",
+        "POL S 130",
+        "POL S 174"
+      ],
       "career_outcomes": [
         "Law",
-        "Government / public service",
+        "Government",
         "Foreign service",
-        "Campaigns and advocacy",
+        "Campaigns",
         "Journalism"
-      ]
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#political-science",
+      "catalog_program_code": "BAPOL"
+    },
+    {
+      "name": "Portuguese",
+      "slug": "portuguese",
+      "degree_type": "BA",
+      "department": "Department of Spanish and Portuguese",
+      "department_url": "https://www.spanport.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAPORT",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "PORT 1-6 — Portuguese language sequence",
+        "Lower-division Luso-Brazilian culture",
+        "Intermediate Portuguese composition"
+      ],
+      "upper_division_required": [
+        "PORT 100+ — Advanced Portuguese",
+        "Upper-division literature/culture",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Portuguese language and Luso-Brazilian studies.",
+      "sample_electives": [
+        "PORT 120",
+        "PORT 140",
+        "PORT 160",
+        "LAIS 130"
+      ],
+      "career_outcomes": [
+        "Translation",
+        "International development",
+        "Diplomacy",
+        "Teaching",
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#portuguese",
+      "catalog_program_code": "BAPORT"
+    },
+    {
+      "name": "Psychological and Brain Sciences",
+      "slug": "psychological-and-brain-sciences",
+      "degree_type": "BA",
+      "department": "Department of Psychological & Brain Sciences",
+      "department_url": "https://www.psych.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAPSY",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "PSY 1 — Introductory Psychology",
+        "PSTAT 5 or 5LS (or equivalent statistics)",
+        "PSY 10A — Research Methods in Psychology",
+        "PSY 10B — Statistical Methods in Psychology"
+      ],
+      "upper_division_required": [
+        "PSY 102A — Introduction to Social Psychology",
+        "PSY 105 — Introduction to Developmental Psychology",
+        "PSY 110 — Introduction to Cognitive Psychology",
+        "PSY 112 — Introduction to Biopsychology",
+        "Additional upper-division PSY electives per major sheet"
+      ],
+      "departmental_electives_units": 20,
+      "departmental_electives_note": "Selective major. Verify prep GPA on department website.",
+      "sample_electives": [
+        "PSY 130",
+        "PSY 140",
+        "PSY 150",
+        "PSY 170"
+      ],
+      "career_outcomes": [
+        "Clinical (grad)",
+        "UX research",
+        "HR",
+        "Market research",
+        "Neuroscience"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#psychological-and-brain-sciences",
+      "catalog_program_code": "BAPSY",
+      "selective": true
+    },
+    {
+      "name": "Religious Studies",
+      "slug": "religious-studies",
+      "degree_type": "BA",
+      "department": "Department of Religious Studies",
+      "department_url": "https://www.religion.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BARS",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "RS lower-division surveys",
+        "World religions gateway courses",
+        "Related history or philosophy survey"
+      ],
+      "upper_division_required": [
+        "Upper-division RS by tradition/region",
+        "Theory/methods course",
+        "Senior seminar"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Comparative study of world religions and secular traditions.",
+      "sample_electives": [
+        "RS 130",
+        "RS 150",
+        "RS 170",
+        "RS 190"
+      ],
+      "career_outcomes": [
+        "Law",
+        "Nonprofit",
+        "Education",
+        "Graduate study",
+        "International NGOs"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#religious-studies",
+      "catalog_program_code": "BARS"
+    },
+    {
+      "name": "Russian and East European Studies",
+      "slug": "russian-and-east-european-studies",
+      "degree_type": "BA",
+      "department": "Department of Germanic and Slavic Studies",
+      "department_url": "https://www.gss.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BAREES",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "RUSS language sequence",
+        "Lower-division REES surveys",
+        "East European history survey"
+      ],
+      "upper_division_required": [
+        "Advanced Russian language",
+        "Upper-division REES culture/politics",
+        "Senior project"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "Russian and East European languages, history, and culture.",
+      "sample_electives": [
+        "RUSS 120",
+        "GSS 130",
+        "HIST 140",
+        "GSS 170"
+      ],
+      "career_outcomes": [
+        "Diplomacy",
+        "Translation",
+        "Intelligence/analysis",
+        "Graduate study",
+        "International NGOs"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#russian-and-east-european-studies",
+      "catalog_program_code": "BAREES"
     },
     {
       "name": "Sociology",
@@ -268,202 +2135,188 @@
         "Upper-division SOC electives across substantive areas"
       ],
       "departmental_electives_units": 28,
-      "departmental_electives_note": "Strong quantitative and qualitative methods tracks. Courses may double-count some GE areas.",
-      "sample_electives": ["SOC 120", "SOC 130", "SOC 142", "SOC 185"],
+      "departmental_electives_note": "Quantitative and qualitative methods tracks.",
+      "sample_electives": [
+        "SOC 120",
+        "SOC 130",
+        "SOC 142",
+        "SOC 185"
+      ],
       "career_outcomes": [
         "Social work (grad)",
         "Market research",
-        "HR / organizational development",
+        "HR",
         "Public health",
-        "Nonprofit sector"
-      ]
+        "Nonprofit"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#sociology",
+      "catalog_program_code": "BASOC"
     },
     {
-      "name": "Mathematics",
-      "slug": "mathematics",
+      "name": "Spanish",
+      "slug": "spanish",
       "degree_type": "BA",
-      "department": "Department of Mathematics",
-      "department_url": "https://www.math.ucsb.edu/",
-      "curriculum_url": "https://catalog.ucsb.edu/programs/BAMATH",
+      "department": "Department of Spanish and Portuguese",
+      "department_url": "https://www.spanport.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BASPN",
       "graduation_units": 180,
       "roadmap_available": false,
       "preparation_for_major": [
-        "MATH 2A-B or 3A-B",
-        "MATH 4A-B (linear algebra, differential equations)",
-        "MATH 8 (transition to proofs) or 4A",
-        "PHYS 7A-B (recommended for applied track)"
+        "SPAN 1-6 — Spanish language sequence",
+        "Lower-division Spanish literature/culture",
+        "Intermediate Spanish composition"
       ],
       "upper_division_required": [
-        "MATH 111A-B (abstract algebra)",
-        "MATH 118A-B-C (real analysis)",
-        "Upper-division MATH electives"
-      ],
-      "departmental_electives_units": 24,
-      "departmental_electives_note": "BA and BS tracks available in department. Preparation for actuarial, teaching, or grad school in math.",
-      "sample_electives": ["MATH 117", "MATH 124", "MATH 132", "MATH 160"],
-      "career_outcomes": [
-        "Data science",
-        "Actuarial science",
-        "Finance",
-        "Teaching",
-        "Graduate study in math"
-      ]
-    },
-    {
-      "name": "Physics",
-      "slug": "physics",
-      "degree_type": "BS",
-      "department": "Department of Physics",
-      "department_url": "https://www.physics.ucsb.edu/",
-      "curriculum_url": "https://catalog.ucsb.edu/programs/BSPHY",
-      "graduation_units": 180,
-      "roadmap_available": false,
-      "preparation_for_major": [
-        "PHYS 7A-B-C-D-L (introductory physics series + lab)",
-        "MATH 3A-B, 4A-B, 6A-B (calculus series)",
-        "PHYS 51 or lower-div physics labs"
-      ],
-      "upper_division_required": [
-        "PHYS 105A-B (analytical mechanics)",
-        "PHYS 110A-B (electromagnetism)",
-        "PHYS 115A-B-C (quantum mechanics)",
-        "PHYS 120 (thermodynamics)",
-        "Upper-division PHYS electives"
-      ],
-      "departmental_electives_units": 12,
-      "departmental_electives_note": "BS intended for students planning graduate study or technical careers. Highly sequential; start MATH/PHYS early.",
-      "sample_electives": ["PHYS 130", "PHYS 134", "PHYS 145", "PHYS 199"],
-      "career_outcomes": [
-        "Graduate study in physics",
-        "Engineering (grad)",
-        "Quantitative finance",
-        "National labs research",
-        "Data science"
-      ]
-    },
-    {
-      "name": "Communication",
-      "slug": "communication",
-      "degree_type": "BA",
-      "department": "Department of Communication",
-      "department_url": "https://www.comm.ucsb.edu/",
-      "curriculum_url": "https://catalog.ucsb.edu/programs/BACOMM",
-      "graduation_units": 180,
-      "roadmap_available": false,
-      "preparation_for_major": [
-        "COMM 1 — Introduction to Communication",
-        "COMM 88A or statistics course",
-        "Lower-division COMM courses"
-      ],
-      "upper_division_required": [
-        "COMM 100A-B (communication theory/methods)",
-        "Upper-division COMM electives",
-        "Senior capstone / project"
-      ],
-      "departmental_electives_units": 28,
-      "departmental_electives_note": "Selective major with prep GPA requirement—check department for current thresholds. Strong media and organizational communication tracks.",
-      "sample_electives": ["COMM 121", "COMM 130", "COMM 145", "COMM 160"],
-      "career_outcomes": [
-        "Marketing / PR",
-        "Media production",
-        "Corporate communications",
-        "UX / product",
-        "Law"
-      ]
-    },
-    {
-      "name": "English",
-      "slug": "english",
-      "degree_type": "BA",
-      "department": "Department of English",
-      "department_url": "https://www.english.ucsb.edu/",
-      "curriculum_url": "https://catalog.ucsb.edu/programs/BAENG",
-      "graduation_units": 180,
-      "roadmap_available": false,
-      "preparation_for_major": [
-        "Lower-division English literature surveys",
-        "Writing 50 or equivalent (may overlap GE)",
-        "ENG 10 or gateway courses"
-      ],
-      "upper_division_required": [
-        "Upper-division ENG by historical period and genre",
-        "Literary theory / criticism course",
+        "SPAN 100+ — Advanced Spanish",
+        "Upper-division literature/culture",
         "Senior seminar"
       ],
-      "departmental_electives_units": 32,
-      "departmental_electives_note": "Multiple emphases (literature, creative writing where offered). Courses often satisfy GE Area G and WRT.",
-      "sample_electives": ["ENG 101", "ENG 115", "ENG 130", "ENG 150"],
+      "departmental_electives_units": 28,
+      "departmental_electives_note": "Spanish language, literature, and Hispanic cultures.",
+      "sample_electives": [
+        "SPAN 120",
+        "SPAN 140",
+        "SPAN 160",
+        "LAIS 130"
+      ],
       "career_outcomes": [
-        "Publishing / editing",
-        "Teaching",
+        "Translation",
+        "Education",
+        "International business",
         "Law",
-        "Technical writing",
-        "Graduate study in literature"
-      ]
+        "Graduate study"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#spanish",
+      "catalog_program_code": "BASPN"
     },
     {
-      "name": "History",
-      "slug": "history",
-      "degree_type": "BA",
-      "department": "Department of History",
-      "department_url": "https://www.history.ucsb.edu/",
-      "curriculum_url": "https://catalog.ucsb.edu/programs/BAHIS",
+      "name": "Statistics and Data Science",
+      "slug": "statistics-and-data-science",
+      "degree_type": "BA/BS",
+      "department": "Department of Statistics & Applied Probability",
+      "department_url": "https://www.pstat.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSPSTAT",
       "graduation_units": 180,
       "roadmap_available": false,
       "preparation_for_major": [
-        "HIST 4A-B-C or regional survey courses",
-        "Lower-division HIST electives"
+        "MATH 3A-B — Calculus",
+        "MATH 4A — Linear Algebra",
+        "PSTAT 120A — Probability",
+        "CMPSC 16 or programming course"
       ],
       "upper_division_required": [
-        "Upper-division HIST by region and era",
-        "HIST 201 (historiography) or equivalent",
-        "Research seminar / senior thesis option"
+        "PSTAT 160A-B — Mathematical Statistics",
+        "Data science electives",
+        "Upper-division PSTAT courses"
+      ],
+      "departmental_electives_units": 24,
+      "departmental_electives_note": "BA and BS tracks. Selective major for transfers.",
+      "sample_electives": [
+        "PSTAT 175",
+        "PSTAT 176",
+        "CMPSC 130A",
+        "MATH 117"
+      ],
+      "career_outcomes": [
+        "Data science",
+        "Machine learning",
+        "Biostatistics",
+        "Actuarial",
+        "Tech industry"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#statistics-and-data-science",
+      "catalog_program_code": "BSPSTAT",
+      "selective": true
+    },
+    {
+      "name": "Theater",
+      "slug": "theater",
+      "degree_type": "BA/BFA",
+      "department": "Department of Theater and Dance",
+      "department_url": "https://www.theaterdance.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BATHR",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "THTR lower-division acting/directing",
+        "THTR history/theory",
+        "Production participation"
+      ],
+      "upper_division_required": [
+        "Advanced acting/directing/design",
+        "Upper-division THTR electives",
+        "Senior production/project"
+      ],
+      "departmental_electives_units": 32,
+      "departmental_electives_note": "BFA requires audition. Acting, design, and directing tracks.",
+      "sample_electives": [
+        "THTR 130",
+        "THTR 150",
+        "THTR 170",
+        "THTR 190"
+      ],
+      "career_outcomes": [
+        "Performance",
+        "Directing",
+        "Design",
+        "Arts administration",
+        "Film/TV"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#theater",
+      "catalog_program_code": "BATHR"
+    },
+    {
+      "name": "Zoology",
+      "slug": "zoology",
+      "degree_type": "BS",
+      "department": "Department of Ecology, Evolution, and Marine Biology",
+      "department_url": "https://www.biology.ucsb.edu/",
+      "curriculum_url": "https://catalog.ucsb.edu/programs/BSZOO",
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 1A-B-C",
+        "MATH 3A-B",
+        "EEMB 2-3",
+        "PHYS 6A-B-C"
+      ],
+      "upper_division_required": [
+        "EEMB zoology/animal biology core",
+        "Laboratory/field requirement",
+        "Upper-division EEMB electives"
       ],
       "departmental_electives_units": 36,
-      "departmental_electives_note": "Regional concentrations (Americas, Europe, Asia, etc.). Strong preparation for teaching, law, and public history.",
-      "sample_electives": ["HIST 105", "HIST 121", "HIST 140", "HIST 180"],
-      "career_outcomes": [
-        "Law",
-        "Education",
-        "Public history / museums",
-        "Government",
-        "Journalism"
-      ]
-    },
-    {
-      "name": "Anthropology",
-      "slug": "anthropology",
-      "degree_type": "BA",
-      "department": "Department of Anthropology",
-      "department_url": "https://www.anth.ucsb.edu/",
-      "curriculum_url": "https://catalog.ucsb.edu/programs/BAANT",
-      "graduation_units": 180,
-      "roadmap_available": false,
-      "preparation_for_major": [
-        "ANTH 2 — Introductory Cultural Anthropology",
-        "ANTH 3 or 5 (biological archaeology / archaeology intro)",
-        "Statistics or methods prep course"
+      "departmental_electives_note": "Animal biology focus within EEMB. Selective major.",
+      "sample_electives": [
+        "EEMB 120",
+        "EEMB 157",
+        "EEMB 184",
+        "EEMB 199"
       ],
-      "upper_division_required": [
-        "ANTH 102 (theory)",
-        "Methods course (ethnographic or archaeological)",
-        "Upper-division ANTH electives in subdisciplines"
-      ],
-      "departmental_electives_units": 28,
-      "departmental_electives_note": "Subfields: sociocultural, archaeology, biological anthropology. Field school opportunities.",
-      "sample_electives": ["ANTH 120", "ANTH 130", "ANTH 150", "ANTH 170"],
       "career_outcomes": [
-        "UX research",
-        "Museums / cultural resource management",
-        "International development",
-        "Public health",
-        "Academia"
-      ]
+        "Wildlife biology",
+        "Conservation",
+        "Veterinary (grad)",
+        "Research",
+        "Zoo/aquarium"
+      ],
+      "requirements_level": "full",
+      "admissions_url": "https://admissions.sa.ucsb.edu/majors#zoology",
+      "catalog_program_code": "BSZOO",
+      "selective": true
     }
   ],
   "sources": [
     {
       "title": "UCSB Undergraduate Admissions — Majors",
+      "url": "https://admissions.sa.ucsb.edu/majors"
+    },
+    {
+      "title": "UCSB Admissions L&S master list",
       "url": "https://admissions.sa.ucsb.edu/majors"
     },
     {
@@ -475,12 +2328,8 @@
       "url": "https://catalog.ucsb.edu/"
     },
     {
-      "title": "Economics — Major Sheets",
-      "url": "https://econ.ucsb.edu/programs/undergraduate/majors"
-    },
-    {
-      "title": "Department of Philosophy — Undergraduate",
-      "url": "https://www.philosophy.ucsb.edu/undergraduate"
+      "title": "UCSB Selective Majors",
+      "url": "https://admissions.sa.ucsb.edu/selective-majors"
     }
   ],
   "last_updated": "2026-05-23"

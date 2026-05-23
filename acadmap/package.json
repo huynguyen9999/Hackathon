@@ -6,7 +6,9 @@
     "dev": "node ./node_modules/next/dist/bin/next dev",
     "build": "node ./node_modules/next/dist/bin/next build",
     "start": "node ./node_modules/next/dist/bin/next start",
-    "lint": "node ./node_modules/next/dist/bin/next lint"
+    "lint": "node ./node_modules/next/dist/bin/next lint",
+    "fetch:ls": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-ls-requirements.ts",
+    "validate:ls": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ls-catalog.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",
@@ -25,6 +27,7 @@
     "eslint-config-next": "^14.2.21",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   }
 }

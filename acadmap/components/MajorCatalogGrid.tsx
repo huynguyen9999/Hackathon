@@ -7,6 +7,7 @@ export type MajorCatalogGridProps = {
   getMajorHref: (majorSlug: string) => string;
   badgeLabel?: string;
   ctaLabel?: string;
+  showRequirementsLevel?: boolean;
 };
 
 export function MajorCatalogGrid({
@@ -14,6 +15,7 @@ export function MajorCatalogGrid({
   getMajorHref,
   badgeLabel = "Catalog",
   ctaLabel = "View requirements",
+  showRequirementsLevel = false,
 }: MajorCatalogGridProps) {
   return (
     <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -30,6 +32,14 @@ export function MajorCatalogGrid({
               {major.roadmap_available ? (
                 <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase text-emerald-200">
                   Live graph
+                </span>
+              ) : showRequirementsLevel && major.requirements_level === "full" ? (
+                <span className="rounded-full bg-teal-500/15 px-2 py-0.5 text-[10px] font-bold uppercase text-teal-200">
+                  Full requirements
+                </span>
+              ) : showRequirementsLevel && major.requirements_level === "partial" ? (
+                <span className="rounded-full bg-amber-500/15 px-2 py-0.5 text-[10px] font-bold uppercase text-amber-200">
+                  Partial
                 </span>
               ) : (
                 <span className="rounded-full bg-slate-700/50 px-2 py-0.5 text-[10px] font-bold uppercase text-slate-400">

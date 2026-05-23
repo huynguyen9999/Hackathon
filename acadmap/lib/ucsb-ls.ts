@@ -1,6 +1,7 @@
 import { promises as fs } from "fs";
 import path from "path";
 
+import { resolveLsSlug } from "@/lib/ucsb-dept-urls";
 import type { UcsbMajor, UcsbSchoolInfo, UcsbSource } from "@/lib/ucsb-types";
 
 export type LsRequirementsFramework = {
@@ -61,9 +62,8 @@ export async function getUcsbLsMajorBySlug(
 ): Promise<UcsbMajor | null> {
   const catalog = await loadUcsbLsCatalog();
   if (!catalog) return null;
-  return (
-    catalog.majors.find((m) => m.slug === majorSlug.toLowerCase()) ?? null
-  );
+  const slug = resolveLsSlug(majorSlug);
+  return catalog.majors.find((m) => m.slug === slug) ?? null;
 }
 
 export function lsMajorHubHref(

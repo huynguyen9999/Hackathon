@@ -107,7 +107,7 @@ export default function HomePage() {
               L&S · LASAR + DUELS
             </h2>
             <p className="mt-1 text-sm text-slate-400">
-              Biology, Chemistry, Philosophy, Economics, and more
+              58+ L&S majors · LASAR + department requirements
             </p>
             <span className="mt-2 text-sm font-medium text-teal-300">
               Browse →
