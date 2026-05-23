@@ -25,7 +25,25 @@ Use this file when running **multiple Cursor agents** (or subagents) in parallel
 - [x] API: approved list, detail, POST (auth + pending), schools with roadmaps
 - [x] `supabase/schema.sql` aligned to spec (`nodes`, `edges`, `external_id`)
 
-### Phase 2 — Split across agents
+### Phase 2 — UCSB GEAR 2025-26 (primary source)
+
+**GEAR Research agent** (read-only)
+
+> Use https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf. Update `data/ucsb/coe-catalog.json` and `docs/GEAR-25-26.md`. Include prep, upper-div, elective units per major.
+
+**Research agent** (read-only)
+
+> Supplement with department grids (ece.ucsb.edu, ce.ucsb.edu). Update `docs/UCSB-COE-RESEARCH.md`. Cite URLs.
+
+**Product agent**
+
+> School hub at `/schools/ucsb` — see `docs/SITE-LAYOUT.md`. Use `MajorCatalogGrid`, `SchoolHero`, `PageHeader`.
+
+**Data agent** — per major
+
+> Create `data/seeds/ucsb-{slug}.json` from catalog core courses + official prerequisites. Mark `roadmap_available: true` in catalog when done.
+
+### Phase 3 — Split across agents
 
 **Data agent**
 

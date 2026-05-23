@@ -1,0 +1,273 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA",
+    "college": "Robert Mehrabian College of Engineering",
+    "official_url": "https://engineering.ucsb.edu/undergraduate",
+    "majors_url": "https://engineering.ucsb.edu/undergraduate/majors-programs",
+    "gear_publications_url": "https://engineering.ucsb.edu/undergraduate/academic-advising/gear-publications"
+  },
+  "gear": {
+    "catalog_year": "2025-2026",
+    "pdf_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
+    "note": "Official General Engineering Academic Requirements. Students follow the GEAR for their catalog year."
+  },
+  "majors": [
+    {
+      "name": "Electrical Engineering",
+      "slug": "electrical-engineering",
+      "degree_type": "BS",
+      "department": "Electrical & Computer Engineering",
+      "department_url": "https://www.ece.ucsb.edu/undergrad",
+      "curriculum_url": "https://www.ece.ucsb.edu/undergrad/curriculum",
+      "course_grid_url": "https://www.ece.ucsb.edu/undergrad/timeline-advising/grid-table-view",
+      "gear_page": 20,
+      "graduation_units": 189,
+      "roadmap_available": true,
+      "preparation_for_major": [
+        "CHEM 1A or 2A or ECE 6",
+        "CMPSC 9 or CMPSC 16",
+        "ECE 3",
+        "ECE 5",
+        "ECE 10A, 10AL, 10B, 10BL, 10C, 10CL",
+        "ECE 15A",
+        "MATH 2A-B or 3A-B, 4A-B, 6A-B",
+        "PHYS 7A, 7B, 7C, 7D, 7L",
+        "ECE 130A-B",
+        "ECE 139"
+      ],
+      "upper_division_required": [
+        "ECE 134",
+        "ECE 152A",
+        "ECE 153A or ECE 153B",
+        "ECE 188A-B-C",
+        "ENGR 101"
+      ],
+      "departmental_electives_units": 36,
+      "departmental_electives_note": "Must include an approved depth sequence (track). See ECE Department Student Office.",
+      "sample_electives": [
+        "ECE 120A-B",
+        "ECE 122A-B",
+        "ECE 137A-B",
+        "ECE 147A-B-C",
+        "ECE 154A-B",
+        "ECE 157A-B-C",
+        "ECE 162A-B-C"
+      ],
+      "career_outcomes": [
+        "RF / Wireless Engineer",
+        "Hardware Engineer",
+        "Firmware Engineer",
+        "ASIC / VLSI Designer",
+        "Power Electronics Engineer",
+        "Signal Processing Engineer"
+      ]
+    },
+    {
+      "name": "Computer Engineering",
+      "slug": "computer-engineering",
+      "degree_type": "BS",
+      "department": "ECE + Computer Science (joint)",
+      "department_url": "https://www.engineering.ucsb.edu/undergraduate/majors-programs/computer-engineering",
+      "curriculum_url": "https://www.ce.ucsb.edu/undergrad/curriculum/4-year-plan",
+      "course_grid_url": "https://www.ce.ucsb.edu/undergrad/curriculum/4-year-plan",
+      "gear_page": 16,
+      "graduation_units": 191,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CMPSC 16",
+        "CMPSC 24",
+        "CMPSC 32",
+        "CMPSC 40",
+        "ECE 1A-1B",
+        "ECE 5",
+        "ECE 10A, 10AL, 10B, 10BL, 10C, 10CL",
+        "ECE 15A",
+        "MATH 2A-B or 3A-B, 4A-B, 6A",
+        "PHYS 7A, 7B, 7C, 7D, 7L"
+      ],
+      "upper_division_required": [
+        "CMPSC 130A",
+        "ECE 139 or PSTAT 120A",
+        "ECE 152A",
+        "ECE 154A",
+        "ENGR 101",
+        "CMPSC 189A-B or ECE 189A-B-C"
+      ],
+      "departmental_electives_units": 36,
+      "departmental_electives_note": "CMPEN electives (36-40 units). Must include at least 2 approved sequences.",
+      "sample_electives": [
+        "CMPSC 156",
+        "CMPSC 153A / ECE 153A",
+        "ECE 153B",
+        "CMPSC 170",
+        "ECE 130A-B-C",
+        "ECE 152B",
+        "ECE 154B"
+      ],
+      "career_outcomes": [
+        "Computer Systems Engineer",
+        "Embedded Systems Engineer",
+        "VLSI Designer",
+        "Software Engineer"
+      ]
+    },
+    {
+      "name": "Computer Science",
+      "slug": "computer-science",
+      "degree_type": "BS",
+      "department": "Computer Science",
+      "department_url": "https://cs.ucsb.edu/education/undergraduate",
+      "curriculum_url": "https://cs.ucsb.edu/education/undergraduate/major-requirements",
+      "gear_page": 18,
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CMPSC 16",
+        "CMPSC 24",
+        "CMPSC 32",
+        "CMPSC 40",
+        "CMPSC 64",
+        "MATH 3A-B, 4A-B, 6A",
+        "PSTAT 120A"
+      ],
+      "upper_division_required": [
+        "CMPSC 130A-B",
+        "ENGR 101"
+      ],
+      "departmental_electives_units": 56,
+      "departmental_electives_note": "14 Major Field Electives (at least 7 must be CMPSC). Science electives: 8 units List A + 12 units List B.",
+      "sample_electives": [
+        "CMPSC 156",
+        "CMPSC 170",
+        "CMPSC 176A-B-C",
+        "CMPSC/ECE 153A",
+        "CMPSC 189A-B",
+        "ECE 152A",
+        "ECE 160"
+      ],
+      "career_outcomes": [
+        "Software Engineer",
+        "ML Engineer",
+        "Systems Engineer",
+        "Security Engineer"
+      ]
+    },
+    {
+      "name": "Mechanical Engineering",
+      "slug": "mechanical-engineering",
+      "degree_type": "BS",
+      "department": "Mechanical Engineering",
+      "department_url": "https://me.ucsb.edu/undergraduate",
+      "curriculum_url": "https://me.ucsb.edu/undergraduate/curriculum",
+      "gear_page": 22,
+      "graduation_units": 180,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CHEM 1A, 2AL, 1B or 2A, 2AC, 2B",
+        "ENGR 3",
+        "MATH 3A-B, 4A-B, 6A-B",
+        "ME 6",
+        "ME 10",
+        "ME 12S",
+        "ME 14",
+        "ME 15",
+        "ME 16",
+        "ME 17",
+        "PHYS 7A, 7B, 7C, 7D, 7L"
+      ],
+      "upper_division_required": [
+        "MATRL 101 or MATRL 100C",
+        "ME 103",
+        "ME 104",
+        "ME 107",
+        "ME 108",
+        "ME 151A-B",
+        "ME 152A",
+        "ME 153",
+        "Specialization (6 units)",
+        "ME 105",
+        "ME 154 or ME 157 or ME 167",
+        "ME 156A-B",
+        "ME 189A-B-C"
+      ],
+      "departmental_electives_units": 9,
+      "departmental_electives_note": "Engineering electives with faculty approval. Specialization groups L1/L2 or approved groups.",
+      "sample_electives": [
+        "ME 127",
+        "ME 141A-B",
+        "ME 154",
+        "ME 166",
+        "ME 152B"
+      ],
+      "career_outcomes": [
+        "Mechanical Design Engineer",
+        "Aerospace Engineer",
+        "Robotics Engineer",
+        "Thermal Systems Engineer"
+      ]
+    },
+    {
+      "name": "Chemical Engineering",
+      "slug": "chemical-engineering",
+      "degree_type": "BS",
+      "department": "Chemical Engineering",
+      "department_url": "https://www.chemengr.ucsb.edu/undergraduate",
+      "curriculum_url": "https://www.chemengr.ucsb.edu/undergraduate/curriculum",
+      "gear_page": 14,
+      "graduation_units": 187,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "CH E 5",
+        "CHEM 3A/1A, 3B/1B, 3C/1C",
+        "CHEM 2AL, 2BL",
+        "MATH 3A-B, 4A-B, 6A-B",
+        "ENGR 3",
+        "PHYS 7A, 7B, 7C, 7L"
+      ],
+      "upper_division_required": [
+        "CH E 10",
+        "CH E 107",
+        "CH E 110A-B",
+        "CH E 118",
+        "CH E 120A-C",
+        "CH E 128",
+        "CH E 132A-C",
+        "CH E 140A-B",
+        "CH E 152A",
+        "CH E 180A-B",
+        "CH E 184A-B"
+      ],
+      "departmental_electives_units": 12,
+      "departmental_electives_note": "Technical electives (multiple quarters). See ChE department for approved list.",
+      "sample_electives": [
+        "CH E 171",
+        "CH E 173",
+        "CH E 174",
+        "MATRL 101"
+      ],
+      "career_outcomes": [
+        "Process Engineer",
+        "Materials Engineer",
+        "Biotech Engineer",
+        "Energy Engineer"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "GEAR 2025-2026 (PDF)",
+      "url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf"
+    },
+    {
+      "title": "GEAR Publications",
+      "url": "https://engineering.ucsb.edu/undergraduate/academic-advising/gear-publications"
+    },
+    {
+      "title": "Majors & Programs",
+      "url": "https://engineering.ucsb.edu/undergraduate/majors-programs"
+    }
+  ],
+  "last_updated": "2026-05-23"
+}

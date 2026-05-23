@@ -9,87 +9,236 @@
     "slug": "electrical-engineering",
     "degree_type": "BS"
   },
+  "metadata": {
+    "source": "UCSB GEAR 2025-2026",
+    "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
+    "gear_page": 20
+  },
   "nodes": [
     {
-      "id": "ece-10",
+      "id": "ece-3",
       "node_type": "course",
-      "label": "ECE 10",
+      "label": "ECE 3",
       "title": "Introduction to Electrical Engineering",
-      "description": "Foundational concepts in circuits and signals.",
+      "description": "GEAR freshman fall. Intro to EE discipline and tools.",
       "units": 4,
-      "self_learnable": true,
-      "resources": [
-        {
-          "name": "MIT OCW 6.002",
-          "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
-        }
-      ],
-      "position_x": 100,
-      "position_y": 100
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
     },
     {
-      "id": "ece-15",
+      "id": "ece-5",
       "node_type": "course",
-      "label": "ECE 15",
-      "title": "Engineering Computation",
-      "description": "Programming fundamentals for engineers using C.",
+      "label": "ECE 5",
+      "title": "Introduction to ECE",
+      "description": "GEAR freshman. Also offered winter.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 200
+    },
+    {
+      "id": "cmpsc-16",
+      "node_type": "course",
+      "label": "CMPSC 16",
+      "title": "Problem Solving with C++",
+      "description": "GEAR prep: CMPSC 9 or CMPSC 16.",
       "units": 4,
       "self_learnable": true,
-      "resources": [],
-      "position_x": 300,
-      "position_y": 100
+      "position_x": 80,
+      "position_y": 320
+    },
+    {
+      "id": "ece-10a",
+      "node_type": "course",
+      "label": "ECE 10A",
+      "title": "Circuits & Systems I (+ lab)",
+      "description": "Foundations of analog and digital circuits. Includes 10AL lab.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 280,
+      "position_y": 80
+    },
+    {
+      "id": "ece-10b",
+      "node_type": "course",
+      "label": "ECE 10B",
+      "title": "Circuits & Systems II (+ lab)",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 280,
+      "position_y": 200
+    },
+    {
+      "id": "ece-10c",
+      "node_type": "course",
+      "label": "ECE 10C",
+      "title": "Circuits & Systems III (+ lab)",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 280,
+      "position_y": 320
+    },
+    {
+      "id": "ece-130a",
+      "node_type": "course",
+      "label": "ECE 130A",
+      "title": "Signal Analysis & Processing I",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 480,
+      "position_y": 120
+    },
+    {
+      "id": "ece-130b",
+      "node_type": "course",
+      "label": "ECE 130B",
+      "title": "Signal Analysis & Processing II",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 480,
+      "position_y": 240
+    },
+    {
+      "id": "ece-139",
+      "node_type": "course",
+      "label": "ECE 139",
+      "title": "Probability & Statistics",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 480,
+      "position_y": 360
+    },
+    {
+      "id": "ece-134",
+      "node_type": "course",
+      "label": "ECE 134",
+      "title": "Introduction to Fields & Waves",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 120
+    },
+    {
+      "id": "ece-15a",
+      "node_type": "course",
+      "label": "ECE 15A",
+      "title": "Fundamentals of Logic Design",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 280
     },
     {
       "id": "ece-152a",
       "node_type": "course",
       "label": "ECE 152A",
       "title": "Digital Design Principles",
-      "description": "Boolean algebra, combinational and sequential logic.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 880,
+      "position_y": 280
+    },
+    {
+      "id": "ece-153b",
+      "node_type": "course",
+      "label": "ECE 153B",
+      "title": "Sensor & Peripheral Interface Design",
+      "description": "Prerequisite to ECE 188A (GEAR). Alternative: ECE 153A.",
       "units": 4,
       "self_learnable": false,
-      "resources": [],
-      "position_x": 100,
-      "position_y": 300
+      "position_x": 1080,
+      "position_y": 200
+    },
+    {
+      "id": "ece-188a",
+      "node_type": "course",
+      "label": "ECE 188A",
+      "title": "Senior EE Project I",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1080,
+      "position_y": 360
+    },
+    {
+      "id": "ece-188b",
+      "node_type": "course",
+      "label": "ECE 188B",
+      "title": "Senior EE Project II",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 360
+    },
+    {
+      "id": "ece-188c",
+      "node_type": "course",
+      "label": "ECE 188C",
+      "title": "Senior EE Project III",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1480,
+      "position_y": 360
+    },
+    {
+      "id": "engr-101",
+      "node_type": "course",
+      "label": "ENGR 101",
+      "title": "Ethics in Engineering",
+      "units": 3,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 520
     },
     {
       "id": "career-rf",
       "node_type": "career",
       "label": "RF Engineer",
       "title": "RF / Wireless Engineer",
-      "description": "Design and test radio frequency systems, antennas, and wireless communication hardware.",
+      "description": "Fields & waves, communications hardware.",
       "self_learnable": false,
-      "position_x": 600,
-      "position_y": 200
+      "position_x": 1680,
+      "position_y": 120
     },
     {
-      "id": "career-software",
+      "id": "career-hardware",
       "node_type": "career",
-      "label": "Software Engineer",
-      "title": "Software Engineer",
-      "description": "Build software systems — common path for EE students who lean into ECE 15 and higher-level CS.",
-      "self_learnable": true,
-      "position_x": 600,
-      "position_y": 400
+      "label": "Hardware Engineer",
+      "title": "Hardware / Digital Design",
+      "description": "Board design, FPGA, digital systems.",
+      "self_learnable": false,
+      "position_x": 1680,
+      "position_y": 280
+    },
+    {
+      "id": "career-signals",
+      "node_type": "career",
+      "label": "DSP Engineer",
+      "title": "Signal Processing Engineer",
+      "description": "Audio, imaging, communications algorithms.",
+      "self_learnable": false,
+      "position_x": 1680,
+      "position_y": 440
     }
   ],
   "edges": [
-    {
-      "id": "e1",
-      "source_id": "ece-10",
-      "target_id": "ece-152a",
-      "edge_type": "prerequisite"
-    },
-    {
-      "id": "e2",
-      "source_id": "ece-152a",
-      "target_id": "career-rf",
-      "edge_type": "leads_to"
-    },
-    {
-      "id": "e3",
-      "source_id": "ece-15",
-      "target_id": "career-software",
-      "edge_type": "leads_to"
-    }
+    { "id": "e1", "source_id": "ece-10a", "target_id": "ece-10b", "edge_type": "prerequisite" },
+    { "id": "e2", "source_id": "ece-10b", "target_id": "ece-10c", "edge_type": "prerequisite" },
+    { "id": "e3", "source_id": "ece-10c", "target_id": "ece-130a", "edge_type": "prerequisite" },
+    { "id": "e4", "source_id": "ece-130a", "target_id": "ece-130b", "edge_type": "prerequisite" },
+    { "id": "e5", "source_id": "ece-130a", "target_id": "ece-134", "edge_type": "prerequisite" },
+    { "id": "e6", "source_id": "ece-10c", "target_id": "ece-139", "edge_type": "recommended" },
+    { "id": "e7", "source_id": "ece-15a", "target_id": "ece-152a", "edge_type": "prerequisite" },
+    { "id": "e8", "source_id": "ece-10c", "target_id": "ece-15a", "edge_type": "recommended" },
+    { "id": "e9", "source_id": "ece-152a", "target_id": "ece-153b", "edge_type": "recommended" },
+    { "id": "e10", "source_id": "ece-153b", "target_id": "ece-188a", "edge_type": "prerequisite" },
+    { "id": "e11", "source_id": "ece-188a", "target_id": "ece-188b", "edge_type": "prerequisite" },
+    { "id": "e12", "source_id": "ece-188b", "target_id": "ece-188c", "edge_type": "prerequisite" },
+    { "id": "e13", "source_id": "cmpsc-16", "target_id": "ece-15a", "edge_type": "recommended" },
+    { "id": "e14", "source_id": "ece-134", "target_id": "career-rf", "edge_type": "leads_to" },
+    { "id": "e15", "source_id": "ece-152a", "target_id": "career-hardware", "edge_type": "leads_to" },
+    { "id": "e16", "source_id": "ece-130b", "target_id": "career-signals", "edge_type": "leads_to" },
+    { "id": "e17", "source_id": "ece-3", "target_id": "ece-10a", "edge_type": "recommended" },
+    { "id": "e18", "source_id": "ece-5", "target_id": "ece-10a", "edge_type": "recommended" }
   ]
 }

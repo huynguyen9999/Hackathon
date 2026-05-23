@@ -57,12 +57,41 @@ export default function HomePage() {
             Explore roadmaps
           </Link>
           <Link
-            href="/roadmap/ucsb/electrical-engineering"
+            href="/schools/ucsb"
             className="rounded-xl border border-indigo-500/40 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-indigo-100 transition hover:border-violet-400/50 hover:bg-slate-800/80"
           >
-            View UCSB EE sample
+            UCSB College of Engineering
+          </Link>
+          <Link
+            href="/roadmap/ucsb/electrical-engineering"
+            className="rounded-xl border border-slate-600/40 px-6 py-3 text-sm font-semibold text-slate-300 transition hover:border-slate-500/50 hover:bg-slate-800/60"
+          >
+            EE sample graph
           </Link>
         </div>
+      </section>
+
+      <section className="relative mx-auto max-w-6xl px-4 pb-12 sm:px-6">
+        <Link
+          href="/schools/ucsb"
+          className="card-glow flex flex-col gap-3 rounded-2xl border border-indigo-500/25 bg-slate-900/50 p-6 transition hover:border-violet-400/35 sm:flex-row sm:items-center sm:justify-between"
+        >
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-wider text-violet-300">
+              Featured school
+            </p>
+            <h2 className="mt-1 text-lg font-semibold text-slate-50">
+              UCSB · Robert Mehrabian College of Engineering
+            </h2>
+            <p className="mt-1 text-sm text-slate-400">
+              5 BS majors — Chemical, Computer, Computer Science, Electrical,
+              Mechanical Engineering
+            </p>
+          </div>
+          <span className="text-sm font-medium text-indigo-300">
+            Browse majors →
+          </span>
+        </Link>
       </section>
 
       <section className="relative mx-auto max-w-6xl px-4 pb-24 sm:px-6">

@@ -1,4 +1,7 @@
+import Link from "next/link";
+
 import { ExploreCatalog } from "@/components/ExploreCatalog";
+import { PageHeader } from "@/components/layout/PageHeader";
 import { getApprovedRoadmapList } from "@/lib/roadmap";
 
 export const metadata = {
@@ -11,15 +14,19 @@ export default async function ExplorePage() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-      <header className="mb-10 text-center sm:text-left">
-        <h1 className="text-3xl font-bold tracking-tight text-slate-50 sm:text-4xl">
-          Explore roadmaps
-        </h1>
-        <p className="mt-3 max-w-2xl text-slate-400">
-          Search by school or major. Each card opens an interactive graph of
-          courses, prerequisites, and career paths.
-        </p>
-      </header>
+      <PageHeader
+        breadcrumbs={[{ label: "Explore" }]}
+        title="Explore roadmaps"
+        description="Search by school or major. Each card opens an interactive graph of courses, prerequisites, and career paths."
+        actions={
+          <Link
+            href="/schools/ucsb"
+            className="rounded-xl border border-indigo-500/40 bg-indigo-950/40 px-4 py-2 text-sm font-medium text-indigo-200 transition hover:bg-indigo-900/50"
+          >
+            UCSB CoE hub
+          </Link>
+        }
+      />
 
       <ExploreCatalog roadmaps={roadmaps} />
     </div>

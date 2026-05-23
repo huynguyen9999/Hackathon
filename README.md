@@ -11,3 +11,7 @@ npm run dev
 ```
 
 Demo roadmap: [http://localhost:3000/roadmap/ucsb/electrical-engineering](http://localhost:3000/roadmap/ucsb/electrical-engineering)
+
+## Deploy (Vercel)
+
+Set the project **Root Directory** to `acadmap`, then deploy. Live preview: [hackathon-bk5psxk76-huynguyen67.vercel.app](https://hackathon-bk5psxk76-huynguyen67.vercel.app)
