@@ -1,10 +1,7 @@
-import { NextResponse } from "next/server";
-
 import { getAuthenticatedUserId } from "@/lib/auth";
 import { createServerClient } from "@/lib/supabase";
 import { isSupabaseConfigured } from "@/lib/env";
 import {
-  getSchoolConfig,
   isEmailVerifiedForSchool,
 } from "@/lib/schools/registry";
 

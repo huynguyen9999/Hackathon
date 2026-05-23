@@ -3,6 +3,7 @@
 import { useState } from "react";
 
 import { APP_NAME } from "@/lib/brand";
+import { isSupabaseConfigured } from "@/lib/env";
 import { createBrowserClient } from "@/lib/supabase-browser";
 
 function safeNextPathFromLocation(): string {
@@ -15,8 +16,14 @@ function safeNextPathFromLocation(): string {
 export default function SignInPage() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const supabaseReady = isSupabaseConfigured();
 
   async function signInWithGithub() {
+    if (!supabaseReady) {
+      setError("Supabase auth is not configured for this deployment.");
+      return;
+    }
+
     setLoading(true);
     setError(null);
 
@@ -52,6 +59,12 @@ export default function SignInPage() {
           Sign in with GitHub to save plans, share with advisors, and submit roadmap updates.
         </p>
 
+        {!supabaseReady ? (
+          <p className="mt-4 rounded-md border border-amber-500/30 bg-amber-50 px-3 py-2 text-sm text-amber-800 dark:bg-amber-950/20 dark:text-amber-200">
+            Supabase auth is not configured for this deployment. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in Vercel.
+          </p>
+        ) : null}
+
         {error ? (
           <p className="mt-4 rounded-md border border-red-500/30 bg-red-50 px-3 py-2 text-sm text-red-700 dark:bg-red-950/20 dark:text-red-300">
             {error}
@@ -61,7 +74,7 @@ export default function SignInPage() {
         <button
           type="button"
           onClick={signInWithGithub}
-          disabled={loading}
+          disabled={loading || !supabaseReady}
           className="mt-6 w-full rounded-lg bg-gaucho-blue px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-gaucho-blue-light disabled:cursor-not-allowed disabled:opacity-60"
         >
           {loading ? "Redirecting…" : "Continue with GitHub"}

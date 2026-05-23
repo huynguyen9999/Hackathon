@@ -17,7 +17,10 @@ export function SchoolHubCommunity({
 }: SchoolHubCommunityProps) {
   return (
     <div className="space-y-10">
-      <PinnedAnnouncements announcements={data.announcements} />
+      <PinnedAnnouncements
+        schoolShortName={schoolShortName}
+        announcements={data.announcements}
+      />
 
       <div className="grid gap-6 lg:grid-cols-2">
         <AskCommunityBoard
@@ -29,10 +32,16 @@ export function SchoolHubCommunity({
 
       <div className="grid gap-6 lg:grid-cols-2">
         <RecentlyUpdatedRoadmaps roadmaps={data.recent_roadmaps ?? []} />
-        <CourseReviewLeaderboard entries={data.course_reviews} />
+        <CourseReviewLeaderboard
+          schoolShortName={schoolShortName}
+          entries={data.course_reviews}
+        />
       </div>
 
-      <AlumniOutcomesFeed outcomes={data.alumni_outcomes} />
+      <AlumniOutcomesFeed
+        schoolShortName={schoolShortName}
+        outcomes={data.alumni_outcomes}
+      />
     </div>
   );
 }

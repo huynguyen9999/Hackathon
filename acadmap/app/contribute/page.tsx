@@ -69,7 +69,11 @@ export default function ContributePage() {
           <code className="rounded bg-white dark:bg-slate-900 px-1 py-0.5 text-xs">
             NEXT_PUBLIC_SUPABASE_ANON_KEY
           </code>{" "}
-          to enable persistence.
+          to enable persistence. See{" "}
+          <code className="rounded bg-white dark:bg-slate-900 px-1 py-0.5 text-xs">
+            docs/COMMUNITY-SETUP.md
+          </code>{" "}
+          for Supabase project creation, GitHub OAuth, and Vercel env setup.
         </div>
       )}
 

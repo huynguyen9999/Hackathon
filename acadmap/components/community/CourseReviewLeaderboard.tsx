@@ -1,10 +1,20 @@
+"use client";
+
+import { CourseReviewForm } from "@/components/community/CourseReviewForm";
+import { useCommunitySession } from "@/components/community/useCommunitySession";
 import type { CourseReviewLeaderboardEntry } from "@/lib/community/types";
 
 export type CourseReviewLeaderboardProps = {
+  schoolShortName: string;
   entries: CourseReviewLeaderboardEntry[];
 };
 
-export function CourseReviewLeaderboard({ entries }: CourseReviewLeaderboardProps) {
+export function CourseReviewLeaderboard({
+  schoolShortName,
+  entries,
+}: CourseReviewLeaderboardProps) {
+  const session = useCommunitySession();
+
   return (
     <section className="rounded-xl border border-gaucho-blue/15 bg-white p-5 dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark/40">
       <h2 className="text-lg font-semibold text-slate-900 dark:text-white">
@@ -33,6 +43,12 @@ export function CourseReviewLeaderboard({ entries }: CourseReviewLeaderboardProp
           </li>
         ))}
       </ol>
+      {entries.length === 0 ? (
+        <p className="mt-3 text-sm text-slate-500">No reviews yet.</p>
+      ) : null}
+      {session.signedIn ? (
+        <CourseReviewForm schoolShortName={schoolShortName} />
+      ) : null}
     </section>
   );
 }

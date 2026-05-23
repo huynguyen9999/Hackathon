@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
+import { isSupabaseConfigured } from "@/lib/env";
 import { createBrowserClient } from "@/lib/supabase-browser";
 
 type AuthState = {
@@ -15,6 +16,7 @@ export function AuthControls() {
   const router = useRouter();
   const pathname = usePathname();
   const [state, setState] = useState<AuthState>({ loading: true, email: null });
+  const supabaseReady = isSupabaseConfigured();
 
   const signInHref = useMemo(() => {
     const next = pathname || "/";
@@ -22,6 +24,11 @@ export function AuthControls() {
   }, [pathname]);
 
   useEffect(() => {
+    if (!supabaseReady) {
+      setState({ loading: false, email: null });
+      return;
+    }
+
     const supabase = createBrowserClient();
 
     supabase.auth.getUser().then(({ data }) => {
@@ -36,9 +43,10 @@ export function AuthControls() {
     return () => {
       listener.subscription.unsubscribe();
     };
-  }, [router]);
+  }, [router, supabaseReady]);
 
   async function signOut() {
+    if (!supabaseReady) return;
     const supabase = createBrowserClient();
     await supabase.auth.signOut();
     router.refresh();
@@ -49,6 +57,14 @@ export function AuthControls() {
   }
 
   if (!state.email) {
+    if (!supabaseReady) {
+      return (
+        <span className="rounded-md border border-slate-300 px-3 py-2 text-xs font-semibold text-slate-500 dark:border-slate-700 dark:text-slate-400">
+          Auth unavailable
+        </span>
+      );
+    }
+
     return (
       <Link
         href={signInHref}
