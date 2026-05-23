@@ -4,14 +4,15 @@ import { useCallback, useMemo, useState } from "react";
 
 import { MajorCatalogGrid } from "@/components/MajorCatalogGrid";
 import { SearchBar } from "@/components/SearchBar";
+import { lsMajorHubHref } from "@/lib/ucsb-paths";
 import type { UcsbMajor } from "@/lib/ucsb-types";
 
 export type LsMajorCatalogProps = {
   majors: UcsbMajor[];
-  getMajorHref: (majorSlug: string) => string;
+  schoolShortName: string;
 };
 
-export function LsMajorCatalog({ majors, getMajorHref }: LsMajorCatalogProps) {
+export function LsMajorCatalog({ majors, schoolShortName }: LsMajorCatalogProps) {
   const [query, setQuery] = useState("");
 
   const handleSearch = useCallback((value: string) => {
@@ -64,7 +65,7 @@ export function LsMajorCatalog({ majors, getMajorHref }: LsMajorCatalogProps) {
       ) : (
         <MajorCatalogGrid
           majors={filtered}
-          getMajorHref={getMajorHref}
+          getMajorHref={(slug) => lsMajorHubHref(schoolShortName, slug)}
           badgeLabel="Requirements"
           ctaLabel="View major requirements"
           showRequirementsLevel

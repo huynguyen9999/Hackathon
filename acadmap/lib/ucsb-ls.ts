@@ -2,7 +2,14 @@ import { promises as fs } from "fs";
 import path from "path";
 
 import { resolveLsSlug } from "@/lib/ucsb-dept-urls";
+import {
+  LS_COLLEGE_SLUG,
+  lsCollegeHubHref,
+  lsMajorHubHref,
+} from "@/lib/ucsb-paths";
 import type { UcsbMajor, UcsbSchoolInfo, UcsbSource } from "@/lib/ucsb-types";
+
+export { LS_COLLEGE_SLUG, lsCollegeHubHref, lsMajorHubHref };
 
 export type LsRequirementsFramework = {
   total_units: string;
@@ -42,8 +49,6 @@ export type LsCatalog = {
 
 const CATALOG_PATH = path.join(process.cwd(), "data", "ucsb", "ls-catalog.json");
 
-export const LS_COLLEGE_SLUG = "letters-science";
-
 export async function loadUcsbLsCatalog(): Promise<LsCatalog | null> {
   if (typeof window !== "undefined") {
     throw new Error("loadUcsbLsCatalog() is server-only");
@@ -64,15 +69,4 @@ export async function getUcsbLsMajorBySlug(
   if (!catalog) return null;
   const slug = resolveLsSlug(majorSlug);
   return catalog.majors.find((m) => m.slug === slug) ?? null;
-}
-
-export function lsMajorHubHref(
-  schoolShortName: string,
-  majorSlug: string,
-): string {
-  return `/schools/${schoolShortName}/${LS_COLLEGE_SLUG}/${majorSlug}`;
-}
-
-export function lsCollegeHubHref(schoolShortName: string): string {
-  return `/schools/${schoolShortName}/${LS_COLLEGE_SLUG}`;
 }

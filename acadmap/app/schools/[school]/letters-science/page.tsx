@@ -9,7 +9,6 @@ import { SourceList } from "@/components/SourceList";
 import {
   loadUcsbLsCatalog,
   lsCollegeHubHref,
-  lsMajorHubHref,
 } from "@/lib/ucsb-ls";
 import { schoolHubHref } from "@/lib/ucsb-coe";
 
@@ -122,10 +121,7 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
               .
             </p>
           </div>
-          <LsMajorCatalog
-            majors={catalog.majors}
-            getMajorHref={(slug) => lsMajorHubHref(shortName, slug)}
-          />
+          <LsMajorCatalog majors={catalog.majors} schoolShortName={shortName} />
         </section>
 
         <SourceList sources={catalog.sources} />
