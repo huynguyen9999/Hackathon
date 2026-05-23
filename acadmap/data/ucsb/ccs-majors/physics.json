@@ -1,0 +1,178 @@
+{
+  "slug": "physics",
+  "name": "Physics",
+  "catalog_year": "2025-2026",
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "CCS Physics BS major sheet (fall 2025+)",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2025-10/CCSPhysicsBSMajor.pdf"
+    },
+    {
+      "title": "CCS Physics major page",
+      "url": "https://ccs.ucsb.edu/majors/physics"
+    },
+    {
+      "title": "Apply — Physics",
+      "url": "https://ccs.ucsb.edu/apply/physics"
+    },
+    {
+      "title": "PLO — Physics",
+      "url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Physics_BA-BS.pdf"
+    }
+  ],
+  "preparation": {
+    "label": "Math and chemistry requirements",
+    "units": 36,
+    "courses": [
+      { "code": "CHEM 1A", "alternatives": ["CHEM 2A"], "units": 4, "notes": "AP Chemistry 4/5 may cover" },
+      { "code": "CHEM 1B", "alternatives": ["CHEM 2B"], "units": 4 },
+      { "code": "MATH 3A", "units": 4 },
+      { "code": "MATH 3B", "units": 4 },
+      { "code": "MATH 4A", "units": 4 },
+      { "code": "MATH 4B", "units": 4 },
+      { "code": "MATH 6A", "units": 4 },
+      { "code": "MATH 6B", "units": 4 },
+      { "code": "MATH 8", "alternatives": ["Math elective"], "units": 4 },
+      { "code": "PHYS 29", "units": 2, "notes": "May be waived by advisor" }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Introductory physics (CCS)",
+      "units": 32,
+      "courses": [
+        { "code": "PHYS CS 31", "units": 5 },
+        { "code": "PHYS CS 32", "units": 5 },
+        { "code": "PHYS CS 33", "units": 5 },
+        { "code": "PHYS CS 34", "units": 5 },
+        { "code": "PHYS CS 35", "units": 5 },
+        { "code": "PHYS CS 36", "units": 5 },
+        { "code": "PHYS CS 15A", "units": 4 },
+        { "code": "PHYS CS 15B", "units": 4 },
+        { "code": "PHYS CS 15C", "units": 4 }
+      ]
+    },
+    {
+      "label": "Upper-division physics core",
+      "units": 54,
+      "courses": [
+        { "code": "PHYS 100A", "units": 4 },
+        { "code": "PHYS 100B", "units": 4 },
+        { "code": "PHYS 103", "units": 4 },
+        { "code": "PHYS 104", "units": 4 },
+        { "code": "PHYS 110A", "units": 4 },
+        { "code": "PHYS 110B", "units": 4 },
+        { "code": "PHYS 115A", "units": 4 },
+        { "code": "PHYS 115B", "units": 4 },
+        { "code": "PHYS 115C", "units": 4 },
+        { "code": "PHYS 119A", "units": 4 },
+        { "code": "PHYS 119B", "units": 4 },
+        { "code": "PHYS 127AL", "units": 4 },
+        { "code": "PHYS 128AL", "units": 4, "notes": "Advisor approval to substitute with senior thesis" },
+        { "code": "PHYS 128BL", "alternatives": ["PHYS 127BL", "PHYS 129L", "PHYS 134L"], "units": 4 }
+      ]
+    },
+    {
+      "label": "Sophomore physics labs",
+      "units": 12,
+      "courses": [
+        { "code": "PHYS CS 140", "units": 2 },
+        { "code": "PHYS CS 140VA", "units": 2 }
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Upper-division physics electives",
+    "choose_units": 36,
+    "courses": [
+      { "code": "PHYS 131" }, { "code": "PHYS 132" }, { "code": "PHYS 133" },
+      { "code": "PHYS 134L" }, { "code": "PHYS 135" }, { "code": "PHYS 141" }
+    ],
+    "notes": [
+      "Minimum 8 courses required; minimum 2 units per PHYS CS 31-36.",
+      "Research requirement: senior thesis or approved research experience.",
+      "Two non-physics classes (6 units) from Math, Science, or Engineering."
+    ]
+  },
+  "regulations": {
+    "letter_grade_minimum": "C-",
+    "major_gpa": 2.0,
+    "other": [
+      "Minimum 2.0 GPA in upper-division Physics courses.",
+      "180 total units; 24 units GE breadth.",
+      "For students joining CCS Physics fall 2025 or later."
+    ]
+  },
+  "admission_requirements": {
+    "letter_of_intent": true,
+    "letters_of_recommendation": 2,
+    "transcripts": true,
+    "supplemental": true,
+    "notes": [
+      "Letter of intent to CCS Physics faculty describing academic interests and physics background.",
+      "Two letters of recommendation from persons familiar with your physics ability.",
+      "Supplemental materials (research, projects) encouraged."
+    ]
+  },
+  "program_variants": [
+    {
+      "id": "bs",
+      "label": "BS in Creative Studies — Physics",
+      "degree": "BS",
+      "summary": "Full CCS Physics BS curriculum for students entering fall 2025 or later."
+    },
+    {
+      "id": "ba",
+      "label": "BA in Creative Studies — Physics",
+      "degree": "BA",
+      "summary": "BA option available; consult faculty advisor for reduced lab/theory requirements."
+    }
+  ],
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "MATH 3A", "units": 4 }, { "code": "CHEM 1A", "units": 4 }, { "code": "PHYS CS 31", "units": 5 }
+    ]},
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "MATH 3B", "units": 4 }, { "code": "CHEM 1B", "units": 4 }, { "code": "PHYS CS 32", "units": 5 }
+    ]},
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "MATH 4A", "units": 4 }, { "code": "PHYS CS 33", "units": 5 }, { "code": "PHYS CS 15A", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "MATH 4B", "units": 4 }, { "code": "PHYS CS 34", "units": 5 }, { "code": "PHYS CS 15B", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "MATH 6A", "units": 4 }, { "code": "PHYS CS 35", "units": 5 }, { "code": "PHYS 29", "units": 2 }
+    ]},
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "MATH 6B", "units": 4 }, { "code": "PHYS CS 36", "units": 5 }, { "code": "PHYS CS 15C", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "MATH 8", "units": 4 }, { "code": "PHYS 100A", "units": 4 }, { "code": "PHYS 110A", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "PHYS 100B", "units": 4 }, { "code": "PHYS 103", "units": 4 }, { "code": "PHYS 115A", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "PHYS 104", "units": 4 }, { "code": "PHYS 110B", "units": 4 }, { "code": "PHYS 115B", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "PHYS 119A", "units": 4 }, { "code": "PHYS 127AL", "units": 4 }, { "code": "PHYS 115C", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "PHYS 119B", "units": 4 }, { "code": "PHYS 128AL", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "PHYS 128BL", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Physics elective", "units": 4 }, { "slot": "ELECTIVE", "label": "Research/Thesis", "units": 4 }
+    ]}
+  ],
+  "career_outcomes": [
+    "Research physicist",
+    "Graduate school (PhD)",
+    "Engineering and tech",
+    "Physics education"
+  ],
+  "quality_tier": "sheet",
+  "notes": ["Suggested plan based on CCS Physics BS sheet (fall 2025+ entrants). GE and electives distributed across years."]
+}

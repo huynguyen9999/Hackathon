@@ -11,7 +11,7 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
 
 /  LANDING
    ├─ Hero: tagline + primary CTA → Explore
-   ├─ Featured colleges → /schools/ucsb/engineering, /schools/ucsb/letters-science
+   ├─ Featured colleges → /schools/ucsb/engineering, /schools/ucsb/letters-science, /schools/ucsb/creative-studies
    └─ Value props (3 columns)
 
 /explore  CATALOG
@@ -19,7 +19,7 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
    └─ Roadmap cards → /roadmap/[school]/[major]
 
 /schools/[school]  UCSB OVERVIEW
-   └─ College cards → Engineering | Letters & Science
+   └─ College cards → Engineering | Letters & Science | Creative Studies
 
 /schools/[school]/engineering  COE HUB
    ├─ CollegeBanner (GEAR) + SchoolHero
@@ -31,11 +31,16 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
    ├─ MajorCatalogGrid (catalog majors)
    └─ SourceList
 
+/schools/[school]/creative-studies  CCS HUB
+   ├─ CollegeBanner (CCS Handbook) + CcsFrameworkCard
+   ├─ MajorCatalogGrid (9 majors)
+   └─ SourceList
+
 /schools/[school]/[college]/[major]  MAJOR REQUIREMENTS
-   └─ MajorRequirements + department links
+   └─ MajorSheetRequirements + CcsAdmissionCard + CcsQuarterTimeline (CCS)
 
 /schools/[school]/[major]  LEGACY REDIRECT
-   └─ → /engineering/{major} or /letters-science/{major}
+   └─ → /engineering/{major} or /letters-science/{major} or /creative-studies/{major}
 
 /roadmap/[school]/[major]  GRAPH VIEWER
    ├─ Breadcrumb: Explore → School → Major
@@ -64,8 +69,11 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
 | `Navbar` | All pages |
 | `PageHeader` | School hub, Explore, Contribute |
 | `SchoolHero` | `/schools/ucsb/engineering` |
-| `CollegeBanner` | Engineering + L&S hubs |
+| `CollegeBanner` | Engineering + L&S + CCS hubs |
 | `LsFrameworkCard` | `/schools/ucsb/letters-science` |
+| `CcsFrameworkCard` | `/schools/ucsb/creative-studies` |
+| `CcsAdmissionCard` | CCS major detail pages |
+| `CcsQuarterTimeline` | CCS major detail pages |
 | `MajorCatalogGrid` | College hubs |
 | `MajorRequirements` | College major detail pages |
 | `ExploreCatalog` | `/explore` |
@@ -79,6 +87,7 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
 |---------|---------|-----------------|
 | Engineering | `data/ucsb/coe-catalog.json` | GEAR PDF |
 | Letters & Science | `data/ucsb/ls-catalog.json` | LASAR / DUELS + department sites |
+| Creative Studies | `data/ucsb/ccs-catalog.json` | CCS major sheets + Student Handbook |
 
 - **Interactive roadmaps:** `data/seeds/*.json` (React Flow seeds)
 - **Rule:** Catalog = reference; seeds = graph source of truth

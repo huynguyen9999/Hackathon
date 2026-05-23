@@ -69,6 +69,12 @@ export default function HomePage() {
             L&S majors
           </Link>
           <Link
+            href="/schools/ucsb/creative-studies"
+            className="rounded-xl border border-amber-500/40 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-amber-100 transition hover:border-amber-400/50 hover:bg-slate-800/80"
+          >
+            CCS majors
+          </Link>
+          <Link
             href="/roadmap/ucsb/electrical-engineering"
             className="rounded-xl border border-slate-600/40 px-6 py-3 text-sm font-semibold text-slate-300 transition hover:border-slate-500/50 hover:bg-slate-800/60"
           >
@@ -78,7 +84,7 @@ export default function HomePage() {
       </section>
 
       <section className="relative mx-auto max-w-6xl px-4 pb-12 sm:px-6">
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Link
             href="/schools/ucsb/engineering"
             className="card-glow flex flex-col gap-3 rounded-2xl border border-indigo-500/25 bg-slate-900/50 p-6 transition hover:border-violet-400/35"
@@ -110,6 +116,23 @@ export default function HomePage() {
               58+ L&S majors · LASAR + department requirements
             </p>
             <span className="mt-2 text-sm font-medium text-teal-300">
+              Browse →
+            </span>
+          </Link>
+          <Link
+            href="/schools/ucsb/creative-studies"
+            className="card-glow flex flex-col gap-3 rounded-2xl border border-amber-500/25 bg-slate-900/50 p-6 transition hover:border-amber-400/35"
+          >
+            <p className="text-xs font-semibold uppercase tracking-wider text-amber-300">
+              Creative Studies
+            </p>
+            <h2 className="mt-1 text-lg font-semibold text-slate-50">
+              CCS · 9 majors
+            </h2>
+            <p className="mt-1 text-sm text-slate-400">
+              Major sheets, admission reqs, 4-year plans
+            </p>
+            <span className="mt-2 text-sm font-medium text-amber-300">
               Browse →
             </span>
           </Link>

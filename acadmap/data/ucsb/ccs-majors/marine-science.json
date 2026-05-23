@@ -1,0 +1,183 @@
+{
+  "slug": "marine-science",
+  "name": "Marine Science",
+  "catalog_year": "2025-2026",
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "CCS Marine Science major sheet",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2024-07/CCSMarineScienceMajorSheet.pdf"
+    },
+    {
+      "title": "CCS Marine Science major page",
+      "url": "https://ccs.ucsb.edu/majors/marine-science"
+    },
+    {
+      "title": "Apply — Marine Science",
+      "url": "https://ccs.ucsb.edu/apply/marine-science"
+    },
+    {
+      "title": "UCSB Catalog — BAMRNCS",
+      "url": "https://catalog.ucsb.edu/programs/BAMRNCS"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "unit_range": "52-58",
+    "courses": [
+      { "code": "MATH 3A", "units": 4 },
+      { "code": "MATH 3B", "units": 4 },
+      { "code": "MATH 4A", "units": 4 },
+      { "code": "MATH 4B", "units": 4 },
+      { "code": "MCDB 1A", "units": 4 },
+      { "code": "CHEM 1A", "notes": "With 1AL lab", "units": 5 },
+      { "code": "CHEM 1B", "notes": "With 1BL lab", "units": 5 },
+      { "code": "CHEM 1C", "units": 3 },
+      { "code": "PHYS 6A", "alternatives": ["PHYS 6AL"], "units": 4 },
+      { "code": "PHYS 6B", "alternatives": ["PHYS 6BL"], "units": 4 },
+      { "code": "PHYS 6C", "units": 3 },
+      { "code": "PSTAT 5LS", "units": 5 },
+      { "code": "ENGR 3", "units": 4 },
+      { "code": "EARTH 2", "units": 4 },
+      { "code": "Biology CS 10", "alternatives": ["Biology CS 12"], "units": 3 },
+      { "code": "Biology CS 20", "units": 5 },
+      { "code": "Biology CS 30", "units": 5 }
+    ],
+    "notes": [
+      "Transfer students should have completed intro biology, general chemistry with labs, intro physics with labs, calculus, linear algebra, and statistics.",
+      "Courses may be replaced with research experience or other coursework with faculty advisor approval."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Required of all majors",
+      "units": 12,
+      "courses": [
+        { "code": "Marine CS 100A", "title": "Ways of knowing in marine science", "units": 4 },
+        { "code": "Marine CS 100B", "title": "Modern practices in marine science", "units": 4 },
+        { "code": "Marine CS 109", "title": "The Sea off Southern California", "units": 4 },
+        { "code": "Marine CS 160", "title": "Research seminar in marine science", "units": 1, "notes": "Taken multiple quarters" }
+      ]
+    },
+    {
+      "label": "Core courses (choose 2)",
+      "choose_n": 2,
+      "courses": [
+        { "code": "Marine CS 101", "title": "Chemical Oceanography", "units": 4 },
+        { "code": "Marine CS 102", "title": "Biological Oceanography", "units": 3 },
+        { "code": "Marine CS 103", "title": "Introduction to Physical Oceanography", "units": 4 },
+        { "code": "Marine CS 104", "title": "Geological Oceanography", "units": 4 },
+        { "code": "Marine CS 105", "title": "Marine Conservation and Ecology", "units": 4 }
+      ]
+    },
+    {
+      "label": "Upper-division emphasis",
+      "choose_units": 48,
+      "courses": [],
+      "notes": [
+        "Remainder of 48+ UD units selected with faculty mentor across campus departments.",
+        "8 CCS GE courses (2 related to major) plus Ethnicity and university requirements also apply."
+      ]
+    }
+  ],
+  "regulations": {
+    "letter_grade_minimum": "C-",
+    "other": [
+      "180 total units for graduation.",
+      "Quarterly faculty advisor approval required for course schedule.",
+      "Mid-residency review per CCS policy."
+    ]
+  },
+  "admission_requirements": {
+    "letter_of_intent": true,
+    "letters_of_recommendation": 0,
+    "transcripts": true,
+    "supplemental": true,
+    "notes": [
+      "Letter of intent is the most important part of the application — separate from the UC application essay.",
+      "Letters of recommendation are NOT accepted for Marine Science.",
+      "Upload unofficial transcripts from all high schools and colleges attended.",
+      "Supplemental materials (research examples, projects) encouraged but not required."
+    ]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "MATH 3A", "units": 4 }, { "code": "MCDB 1A", "units": 4 }, { "code": "CHEM 1A", "units": 5 }, { "code": "Biology CS 10", "units": 3 }
+    ]},
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "MATH 3B", "units": 4 }, { "code": "PHYS 6A", "units": 4 }, { "code": "CHEM 1B", "units": 5 }, { "code": "Biology CS 20", "units": 5 }
+    ]},
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "MATH 4A", "units": 4 }, { "code": "PHYS 6B", "units": 4 }, { "code": "CHEM 1C", "units": 3 }, { "code": "Biology CS 30", "units": 5 }
+    ]},
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "MATH 4B", "units": 4 }, { "code": "PHYS 6C", "units": 3 }, { "code": "PSTAT 5LS", "units": 5 }, { "code": "Marine CS 100A", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "GE", "label": "CCS GE", "units": 4 }, { "code": "GEOG 3A", "units": 4 }, { "code": "ENGR 3", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "GE", "label": "CCS GE", "units": 4 }, { "code": "EARTH 2", "units": 4 }, { "code": "Marine CS 100B", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [
+      { "slot": "GE", "label": "CCS GE — Ethnicity", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "Research/Elective", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "GE", "label": "CCS GE", "units": 4 }, { "code": "Marine CS 101", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "GE", "label": "CCS GE", "units": 4 }, { "code": "Marine CS 160", "units": 1 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "Research/Elective", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [
+      { "slot": "GE", "label": "CCS GE", "units": 4 }, { "code": "Marine CS 102", "units": 3 }, { "slot": "ELECTIVE", "label": "Research/Elective", "units": 4 }, { "slot": "ELECTIVE", "label": "Research/Elective", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "GE", "label": "CCS GE", "units": 4 }, { "code": "WRIT 109ST", "units": 4 }, { "code": "Marine CS 109", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "GE", "label": "CCS GE", "units": 4 }, { "code": "Marine CS 160", "units": 1 }, { "slot": "ELECTIVE", "label": "Research/Elective", "units": 4 }, { "slot": "ELECTIVE", "label": "Research/Elective", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Fall", "track": "transfer", "entries": [
+      { "code": "Marine CS 100A", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Winter", "track": "transfer", "entries": [
+      { "code": "Marine CS 100B", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Spring", "track": "transfer", "entries": [
+      { "code": "Marine CS 160", "units": 1 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "Research", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Fall", "track": "transfer", "entries": [
+      { "code": "Marine CS 101", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Emphasis", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Winter", "track": "transfer", "entries": [
+      { "code": "Marine CS 109", "units": 4 }, { "code": "Marine CS 102", "units": 3 }, { "slot": "ELECTIVE", "label": "Research", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Spring", "track": "transfer", "entries": [
+      { "code": "Marine CS 160", "units": 1 }, { "slot": "ELECTIVE", "label": "Senior research/portfolio", "units": 4 }, { "slot": "ELECTIVE", "label": "Elective", "units": 4 }
+    ]}
+  ],
+  "quarter_totals": [
+    { "year": 1, "quarter": "Fall", "units": 16 },
+    { "year": 1, "quarter": "Winter", "units": 18 },
+    { "year": 1, "quarter": "Spring", "units": 16 },
+    { "year": 2, "quarter": "Fall", "units": 16 },
+    { "year": 2, "quarter": "Winter", "units": 16 },
+    { "year": 2, "quarter": "Spring", "units": 16 },
+    { "year": 3, "quarter": "Fall", "units": 16 },
+    { "year": 3, "quarter": "Winter", "units": 16 },
+    { "year": 3, "quarter": "Spring", "units": 13 },
+    { "year": 4, "quarter": "Fall", "units": 15 },
+    { "year": 4, "quarter": "Winter", "units": 12 },
+    { "year": 4, "quarter": "Spring", "units": 13 }
+  ],
+  "career_outcomes": [
+    "Marine research scientist",
+    "NOAA / government agencies",
+    "Environmental consulting",
+    "Graduate programs in ocean sciences"
+  ],
+  "quality_tier": "sheet",
+  "notes": [
+    "Example schedule from CCS Marine Science major sheet. UD emphasis courses vary by student specialization."
+  ]
+}

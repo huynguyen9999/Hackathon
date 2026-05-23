@@ -1,0 +1,403 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA",
+    "college": "College of Creative Studies",
+    "official_url": "https://ccs.ucsb.edu/",
+    "majors_url": "https://ccs.ucsb.edu/majors"
+  },
+  "handbook": {
+    "catalog_year": "2025-2026",
+    "pdf_url": "https://ccs.ucsb.edu/sites/default/files/2025-09/StudentHandbook2025-26.pdf",
+    "note": "CCS Student Handbook covers college GE, residency, grading, and advising requirements for all CCS majors."
+  },
+  "college": {
+    "name": "College of Creative Studies",
+    "slug": "creative-studies",
+    "official_url": "https://ccs.ucsb.edu/",
+    "apply_url": "https://ccs.ucsb.edu/apply",
+    "majors_url": "https://ccs.ucsb.edu/majors",
+    "catalog_url": "https://catalog.ucsb.edu/pages/department-CRSTU",
+    "catalog_degrees_url": "https://catalog.ucsb.edu/pages/YPDe1A6ayWXsCTmgi88I"
+  },
+  "requirements_framework": {
+    "total_units": "180 quarter units",
+    "upper_division_units": 60,
+    "ccs_ge_courses": 8,
+    "university_requirements": [
+      "UC Entry-Level Writing Requirement (ELWR)",
+      "American History and Institutions (AMH)",
+      "Academic residence (3 terms minimum)",
+      "Minimum 2.0 GPA at graduation",
+      "CCS college residency (6 quarters minimum in CCS)"
+    ],
+    "ccs_ge_distribution": [
+      "8 courses unrelated to the major, broadly distributed across university disciplines",
+      "Ethnicity requirement (1 course)",
+      "No more than 2 courses from any single department or language instruction without advisor approval",
+      "Minimum 3 units per GE course; AP/IB cannot satisfy CCS GE"
+    ],
+    "ccs_ge_note": "CCS uses its own General Education system (not LASAR or GEAR). IGETC completion fulfills CCS GE requirements. Courses must be approved by faculty advisor or pre-approved program list."
+  },
+  "majors": [
+    {
+      "name": "Art",
+      "slug": "art",
+      "degree_type": "BA",
+      "department": "College of Creative Studies — Art",
+      "department_url": "https://ccs.ucsb.edu/majors/art",
+      "curriculum_url": "https://ccs.ucsb.edu/majors/art",
+      "roadmap_available": false,
+      "detail_available": true,
+      "requirements_level": "summary",
+      "selective": true,
+      "admissions_url": "https://ccs.ucsb.edu/apply/art",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2025-07/Art_major_requirements.pdf",
+      "catalog_program_code": "BAARTCS",
+      "preparation_for_major": [
+        "Studio units: 72 (freshman entry), 54 (sophomore), or 36 (junior)",
+        "Non-studio units: 32, 24, or 16 by entry year",
+        "ART CS 15, ART 1A, ART 1C (letter grade)",
+        "7-series completion, internship, evaluations"
+      ],
+      "upper_division_required": [
+        "Minimum 40 upper-division studio/non-studio units combined"
+      ],
+      "sample_electives": [
+        "ART studio courses",
+        "Art history (ARTH)",
+        "Visual Literacy (ART 1A)"
+      ],
+      "career_outcomes": [
+        "Professional artist",
+        "Gallery and museum work",
+        "Graduate MFA programs",
+        "Arts administration"
+      ],
+      "notes": "Programs negotiated with faculty advisor; painting, sculpture/spatial studies, or book arts focus."
+    },
+    {
+      "name": "Biology",
+      "slug": "biology",
+      "degree_type": "BA",
+      "department": "College of Creative Studies — Biology",
+      "department_url": "https://ccs.ucsb.edu/majors/biology",
+      "curriculum_url": "https://ccs.ucsb.edu/majors/biology",
+      "roadmap_available": false,
+      "detail_available": true,
+      "requirements_level": "summary",
+      "selective": true,
+      "admissions_url": "https://ccs.ucsb.edu/apply/biology",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2023-06/Biology-Major-Sheet.pdf",
+      "catalog_program_code": "BABIOLCS",
+      "preparation_for_major": [
+        "Physics (2 quarters recommended)",
+        "Chemistry/year organic for molecular emphasis",
+        "Calculus, statistics, CS for ecology/evolution emphasis"
+      ],
+      "upper_division_required": [
+        "Flexible biology coursework by emphasis with faculty advisor"
+      ],
+      "sample_electives": [
+        "EEMB",
+        "MCDB",
+        "EARTH",
+        "GEOG courses by emphasis"
+      ],
+      "career_outcomes": [
+        "Research biologist",
+        "Graduate school (PhD, MD/PhD)",
+        "Marine and field biology",
+        "Ecology and conservation"
+      ],
+      "notes": "Not bound by L&S Biological Sciences catalog requirements; advisor-negotiated program."
+    },
+    {
+      "name": "Chemistry & Biochemistry",
+      "slug": "chemistry-biochemistry",
+      "degree_type": "BA/BS",
+      "department": "College of Creative Studies — Chemistry & Biochemistry",
+      "department_url": "https://ccs.ucsb.edu/majors/chemistry-biochemistry",
+      "curriculum_url": "https://ccs.ucsb.edu/majors/chemistry-biochemistry",
+      "roadmap_available": false,
+      "detail_available": true,
+      "requirements_level": "sheet",
+      "selective": true,
+      "admissions_url": "https://ccs.ucsb.edu/apply/chemistry-biochemistry",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2026-02/CHBCSMajorSheets2025-6.pdf",
+      "catalog_program_code": "BSCHEMCS",
+      "preparation_for_major": [
+        "Chem CS 11A/B/C (or Chem 1A/1B/1C or 3A/3B/3C)",
+        "Chem 2AL, 2BL, 3L",
+        "Chem 130A/B/C (or 109A/B/C), 6AL/6BL/6CL",
+        "Math 3A/3B/4A/4B/6A",
+        "Phys 7A/B/C, 7L"
+      ],
+      "upper_division_required": [
+        "Chem 113A/B/C or 112A/B/C",
+        "Lab courses",
+        "Inorganic/biochemistry core"
+      ],
+      "sample_electives": [
+        "Chem 141",
+        "Chem 145",
+        "MCDB 101A/B"
+      ],
+      "career_outcomes": [
+        "Research chemist/biochemist",
+        "Pharmaceutical and biotech industry",
+        "Graduate school (PhD, MD)",
+        "Laboratory research positions"
+      ],
+      "notes": "BS Chemistry and BS Biochemistry tracks with example 4-year schedules."
+    },
+    {
+      "name": "Computing",
+      "slug": "computing",
+      "degree_type": "BS",
+      "department": "College of Creative Studies — Computing",
+      "department_url": "https://ccs.ucsb.edu/majors/computing",
+      "curriculum_url": "https://ccs.ucsb.edu/majors/computing",
+      "roadmap_available": false,
+      "detail_available": true,
+      "requirements_level": "sheet",
+      "selective": true,
+      "admissions_url": "https://ccs.ucsb.edu/apply/computing",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2024-07/Computing_Major_Sheet.pdf",
+      "catalog_program_code": "BSCMPTGCS",
+      "preparation_for_major": [
+        "Math 3A/3B, 4A/4B, 6A",
+        "PSTAT 120A/120B",
+        "CMPTGCS 1A, 1B, 1L, 2",
+        "20 units science (12 from approved list + 8 advisor-approved)"
+      ],
+      "upper_division_required": [
+        "Same as CoE Computer Science BS upper-division requirements"
+      ],
+      "sample_electives": [
+        "CMPSC upper-division specializations"
+      ],
+      "career_outcomes": [
+        "Software engineer",
+        "Computer science research",
+        "Graduate school (PhD)",
+        "Tech industry and startups"
+      ],
+      "notes": "Accelerated lower division; upper division follows CoE CS BS. Optional 5-year BS/MS with CS department."
+    },
+    {
+      "name": "Marine Science",
+      "slug": "marine-science",
+      "degree_type": "BA",
+      "department": "College of Creative Studies — Marine Science",
+      "department_url": "https://ccs.ucsb.edu/majors/marine-science",
+      "curriculum_url": "https://ccs.ucsb.edu/majors/marine-science",
+      "roadmap_available": false,
+      "detail_available": true,
+      "requirements_level": "sheet",
+      "selective": true,
+      "admissions_url": "https://ccs.ucsb.edu/apply/marine-science",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2024-07/CCSMarineScienceMajorSheet.pdf",
+      "catalog_program_code": "BAMRNCS",
+      "preparation_for_major": [
+        "Math 3A/3B/4A/4B",
+        "MCDB 1A, Chem 1A/1AL/1B/1BL/1C",
+        "Phys 6A/AL/6B/BL/6C",
+        "PSTAT 5LS, ENGR 3, EARTH 2"
+      ],
+      "upper_division_required": [
+        "Marine CS 100A/B, 109, 160",
+        "2 core courses from approved list",
+        "48+ UD units with faculty mentor emphasis"
+      ],
+      "sample_electives": [
+        "Marine CS 101-105",
+        "EEMB",
+        "EARTH",
+        "GEOG marine courses"
+      ],
+      "career_outcomes": [
+        "Marine research scientist",
+        "NOAA / government agencies",
+        "Environmental consulting",
+        "Graduate programs in ocean sciences"
+      ],
+      "notes": "Interdisciplinary; example freshman and transfer schedules on major sheet."
+    },
+    {
+      "name": "Mathematics",
+      "slug": "mathematics",
+      "degree_type": "BA/BS",
+      "department": "College of Creative Studies — Mathematics",
+      "department_url": "https://ccs.ucsb.edu/majors/mathematics",
+      "curriculum_url": "https://ccs.ucsb.edu/majors/mathematics",
+      "roadmap_available": false,
+      "detail_available": true,
+      "requirements_level": "sheet",
+      "selective": true,
+      "admissions_url": "https://ccs.ucsb.edu/apply/mathematics",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2024-07/Math_Major_Sheet.pdf",
+      "catalog_program_code": "BAMATHCS",
+      "preparation_for_major": [
+        "Math CS 128, 101A/B by end of sophomore year",
+        "Math CS 108A/B, 117 by end of sophomore year"
+      ],
+      "upper_division_required": [
+        "Math CS 121 + two of: Complex Analysis, Abstract Algebra, Real Analysis sequences",
+        "12 elective math classes in consultation with advisor"
+      ],
+      "sample_electives": [
+        "Math 115AB",
+        "Math 104ABC",
+        "PSTAT 120BC",
+        "Math CS 120"
+      ],
+      "career_outcomes": [
+        "Mathematician / researcher",
+        "Data science and analytics",
+        "Graduate school (PhD)",
+        "Industry and national labs"
+      ],
+      "notes": "Joint program with L&S Mathematics Department; research experience required."
+    },
+    {
+      "name": "Music Composition",
+      "slug": "music-composition",
+      "degree_type": "BA",
+      "department": "College of Creative Studies — Music Composition",
+      "department_url": "https://ccs.ucsb.edu/majors/music-composition",
+      "curriculum_url": "https://ccs.ucsb.edu/majors/music-composition",
+      "roadmap_available": false,
+      "detail_available": true,
+      "requirements_level": "sheet",
+      "selective": true,
+      "admissions_url": "https://ccs.ucsb.edu/apply/music-composition",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2025-11/MUSIC_majorguidelines_v2025.pdf",
+      "catalog_program_code": "BAMUSCS",
+      "preparation_for_major": [
+        "Music CS 101 (4 units/quarter)",
+        "Music 4 ABCDEF (Aural Skills)",
+        "Music 5 ABC (Harmony)"
+      ],
+      "upper_division_required": [
+        "Counterpoint course",
+        "3 Music History courses",
+        "Music 101 ABC, 106 ABC",
+        "Sophomore/Junior Juries, Senior Recital"
+      ],
+      "sample_electives": [
+        "Music CS 110",
+        "Music CS 111"
+      ],
+      "career_outcomes": [
+        "Professional composer",
+        "Graduate composition programs",
+        "Film and media scoring",
+        "Concert music career"
+      ],
+      "notes": "Portfolio required for application; curriculum guidelines updated November 2025."
+    },
+    {
+      "name": "Physics",
+      "slug": "physics",
+      "degree_type": "BA/BS",
+      "department": "College of Creative Studies — Physics",
+      "department_url": "https://ccs.ucsb.edu/majors/physics",
+      "curriculum_url": "https://ccs.ucsb.edu/majors/physics",
+      "roadmap_available": false,
+      "detail_available": true,
+      "requirements_level": "sheet",
+      "selective": true,
+      "admissions_url": "https://ccs.ucsb.edu/apply/physics",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2025-10/CCSPhysicsBSMajor.pdf",
+      "catalog_program_code": "BAPHYSCS",
+      "preparation_for_major": [
+        "Chem 1A/1B or 2A/2B",
+        "Math 3A-B/4A-B/6A-B, Math 8",
+        "PHYS CS 31-36, 15A/B/C",
+        "PHYS 29"
+      ],
+      "upper_division_required": [
+        "PHYS 100A/B, 103, 104, 110A/B, 115A/B/C, 119A/B",
+        "PHYS 127AL, 128AL/BL, labs",
+        "36 UD physics electives + research requirement"
+      ],
+      "sample_electives": [
+        "PHYS 131-141",
+        "PHYS CS 140"
+      ],
+      "career_outcomes": [
+        "Research physicist",
+        "Graduate school (PhD)",
+        "Engineering and tech",
+        "Physics education"
+      ],
+      "notes": "BS requirements for students entering fall 2025 or later; 180 units total."
+    },
+    {
+      "name": "Writing & Literature",
+      "slug": "writing-literature",
+      "degree_type": "BA",
+      "department": "College of Creative Studies — Writing & Literature",
+      "department_url": "https://ccs.ucsb.edu/majors/writing-literature",
+      "curriculum_url": "https://ccs.ucsb.edu/majors/writing-literature",
+      "roadmap_available": false,
+      "detail_available": true,
+      "requirements_level": "sheet",
+      "selective": true,
+      "admissions_url": "https://ccs.ucsb.edu/apply/writing-literature",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2026-01/WaLMajorSheetCCSGEs.pdf",
+      "catalog_program_code": "BAWLCS",
+      "preparation_for_major": [
+        "W&L CS 1 (twice), 2, 3, 4, 10, 20, 30",
+        "WRIT 2",
+        "CLIT 30A/B/C or approved alternatives"
+      ],
+      "upper_division_required": [
+        "W&L CS 190 (6 units), 197 Senior Portfolio",
+        "3 UD Creative Writing, 3 UD Writing Studies, 3 UD Literary Study courses"
+      ],
+      "sample_electives": [
+        "W&L CS 110-169",
+        "ENGL",
+        "CLIT",
+        "WRIT UD"
+      ],
+      "career_outcomes": [
+        "Author and creative writer",
+        "Editor and publishing",
+        "Graduate MFA or PhD programs",
+        "Writing-intensive careers"
+      ],
+      "notes": "Interdisciplinary Creative Writing, Literary Study, and Writing Studies integration."
+    }
+  ],
+  "sources": [
+    {
+      "title": "CCS college site",
+      "url": "https://ccs.ucsb.edu/"
+    },
+    {
+      "title": "CCS majors",
+      "url": "https://ccs.ucsb.edu/majors"
+    },
+    {
+      "title": "How to apply",
+      "url": "https://ccs.ucsb.edu/apply"
+    },
+    {
+      "title": "Student Handbook 2025-26",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2025-09/StudentHandbook2025-26.pdf"
+    },
+    {
+      "title": "Catalog — CCS degrees and majors",
+      "url": "https://catalog.ucsb.edu/pages/YPDe1A6ayWXsCTmgi88I"
+    },
+    {
+      "title": "Catalog — CCS degree requirements",
+      "url": "https://catalog.ucsb.edu/pages/yvOaPEegKjFLarzjiGfZ"
+    }
+  ],
+  "last_updated": "2026-05-23"
+}

@@ -1,0 +1,138 @@
+{
+  "slug": "art",
+  "name": "Art",
+  "catalog_year": "2025-2026",
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "CCS Art major requirements",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2025-07/Art_major_requirements.pdf"
+    },
+    {
+      "title": "Studying art at CCS",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2023-06/studying-art-ccs.pdf"
+    },
+    {
+      "title": "CCS Art major page",
+      "url": "https://ccs.ucsb.edu/majors/art"
+    },
+    {
+      "title": "Apply — Art",
+      "url": "https://ccs.ucsb.edu/apply/art"
+    },
+    {
+      "title": "PLO — Art",
+      "url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Art_BA.pdf"
+    }
+  ],
+  "preparation": {
+    "label": "Required courses",
+    "courses": [
+      { "code": "ART CS 15", "units": 4 },
+      { "code": "ART 1A", "title": "Visual Literacy", "units": 4, "notes": "Letter grade required" },
+      { "code": "ART 1C", "title": "Art Symposium", "units": 4, "notes": "Letter grade; encouraged multiple times" },
+      { "code": "7-series", "notes": "Completion of 7A, 7B, 7C, 7D lecture portions" }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Studio units (freshman entry: 72 total)",
+      "units": 72,
+      "courses": [],
+      "notes": [
+        "Sophomore transfer entry: 54 studio units. Junior transfer: 36 studio units.",
+        "Average ~18 studio units per year; typically 2 studio courses per quarter.",
+        "Studio courses in CCS and L&S Art Department."
+      ]
+    },
+    {
+      "label": "Non-studio units (freshman entry: 32 total)",
+      "units": 32,
+      "courses": [],
+      "notes": [
+        "Sophomore transfer: 24 non-studio. Junior transfer: 16 non-studio.",
+        "At least 8 units art history (ARTH) for letter grade or advisor-approved.",
+        "Includes Art Theory, 7-series lectures, courses informing studio practice."
+      ]
+    },
+    {
+      "label": "Other requirements",
+      "courses": [
+        { "code": "Internship", "units": 1, "notes": "Minimum 1-unit internship or equivalent professional experience" },
+        { "code": "First-Year Evaluation", "notes": "Required milestone" },
+        { "code": "Mid-Residency Review", "notes": "Required milestone" },
+        { "code": "Senior Exhibition", "notes": "Required capstone" }
+      ]
+    }
+  ],
+  "regulations": {
+    "other": [
+      "Minimum 40 upper-division units combined (studio + non-studio).",
+      "Up to 16 Independent Study units may apply.",
+      "Focus areas: Painting/Drawing, Sculpture/Spatial Studies, or Book Arts.",
+      "Quarterly faculty advisor approval required."
+    ]
+  },
+  "admission_requirements": {
+    "letter_of_intent": true,
+    "letters_of_recommendation": 2,
+    "transcripts": true,
+    "supplemental": true,
+    "portfolio": true,
+    "notes": [
+      "Portfolio of artwork required — quality and range of work reviewed by faculty.",
+      "Letter of intent to CCS Art faculty.",
+      "Two recommenders familiar with your artistic ability.",
+      "Supplemental: artist statement, exhibition history, or additional work samples."
+    ]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Studio (2 courses)", "units": 8 }, { "code": "ART 1A", "units": 4 }, { "code": "ART CS 15", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Studio (2 courses)", "units": 8 }, { "slot": "ELECTIVE", "label": "Non-studio/Art history", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Studio (2 courses)", "units": 8 }, { "code": "ART 1C", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Studio (2 courses)", "units": 8 }, { "slot": "ELECTIVE", "label": "7-series", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Studio (2 courses)", "units": 8 }, { "slot": "ELECTIVE", "label": "Non-studio", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Studio (2 courses)", "units": 8 }, { "slot": "ELECTIVE", "label": "First-Year Evaluation", "units": 0 }, { "slot": "GE", "label": "CCS GE — Ethnicity", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Studio (2 courses)", "units": 8 }, { "slot": "ELECTIVE", "label": "Art history (ARTH)", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Studio (2 courses)", "units": 8 }, { "slot": "ELECTIVE", "label": "Non-studio", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Studio (2 courses)", "units": 8 }, { "slot": "ELECTIVE", "label": "Mid-Residency Review", "units": 0 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Studio (2 courses)", "units": 8 }, { "code": "Internship", "units": 1 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Studio (2 courses)", "units": 8 }, { "slot": "ELECTIVE", "label": "Senior Exhibition prep", "units": 4 }, { "slot": "FREE", "label": "Elective", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Senior Exhibition", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Studio", "units": 4 }, { "slot": "FREE", "label": "Elective", "units": 4 }
+    ]}
+  ],
+  "career_outcomes": [
+    "Professional artist",
+    "Gallery and museum work",
+    "Graduate MFA programs",
+    "Arts administration"
+  ],
+  "quality_tier": "flexible",
+  "notes": [
+    "Unit-based requirements vary by entry year. Specific studio courses negotiated with faculty advisor.",
+    "Plan shows unit targets rather than fixed course sequences."
+  ]
+}

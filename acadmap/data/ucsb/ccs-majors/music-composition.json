@@ -1,0 +1,145 @@
+{
+  "slug": "music-composition",
+  "name": "Music Composition",
+  "catalog_year": "2025-2026",
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "Music Composition curriculum guidelines (2025)",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2025-11/MUSIC_majorguidelines_v2025.pdf"
+    },
+    {
+      "title": "Jury and recital guidelines",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2022-08/MUSIC_Jury-and-Recital-Guidelines_2022.pdf"
+    },
+    {
+      "title": "CCS Music Composition major page",
+      "url": "https://ccs.ucsb.edu/majors/music-composition"
+    },
+    {
+      "title": "Apply — Music Composition",
+      "url": "https://ccs.ucsb.edu/apply/music-composition"
+    },
+    {
+      "title": "PLO — Music",
+      "url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Music_BA.pdf"
+    }
+  ],
+  "preparation": {
+    "label": "Core curriculum (heart of the program)",
+    "courses": [
+      { "code": "Music CS 101", "title": "Individual Instruction in Music Composition", "units": 4, "notes": "Every quarter; 4 units unless exceptional" },
+      { "code": "Music 4A", "title": "Aural Skills", "units": 2, "notes": "Complete 4ABCDEF series" },
+      { "code": "Music 4B", "units": 2 },
+      { "code": "Music 4C", "units": 2 },
+      { "code": "Music 4D", "units": 2 },
+      { "code": "Music 4E", "units": 2 },
+      { "code": "Music 4F", "units": 2 },
+      { "code": "Music 5A", "title": "Harmony", "units": 4, "notes": "Complete 5ABC series" },
+      { "code": "Music 5B", "units": 4 },
+      { "code": "Music 5C", "units": 4 }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Required upper-division core",
+      "courses": [
+        { "code": "Counterpoint", "notes": "One course via CCS or Music Department" },
+        { "code": "Music 112A", "title": "Music History", "units": 4, "notes": "3 history courses from 112ABC, Music CS 110, or approved" },
+        { "code": "Music 112B", "units": 4 },
+        { "code": "Music 112C", "units": 4 },
+        { "code": "Music 101A", "title": "Contemporary Techniques", "units": 4, "notes": "101ABC and 106ABC offered alternate years" },
+        { "code": "Music 101B", "units": 4 },
+        { "code": "Music 101C", "units": 4 },
+        { "code": "Music 106A", "title": "Orchestration", "units": 4 },
+        { "code": "Music 106B", "units": 4 },
+        { "code": "Music 106C", "units": 4 },
+        { "code": "Music CS 111", "title": "Readings in New Music", "units": 4, "notes": "When offered; excused only with faculty permission" }
+      ]
+    },
+    {
+      "label": "Performance milestones",
+      "courses": [
+        { "code": "Sophomore Jury", "notes": "End of sophomore year" },
+        { "code": "Junior Jury", "notes": "Junior year" },
+        { "code": "Senior Recital", "notes": "Senior year capstone" }
+      ]
+    }
+  ],
+  "regulations": {
+    "other": [
+      "Meet with faculty advisor every quarter before registration.",
+      "CCS courses have variable units; enroll in 4 units unless noted.",
+      "Music 4 and 5 series should be completed no later than end of junior year for transfers.",
+      "Minimum 1 academic music course per quarter in CCS or L&S Music."
+    ]
+  },
+  "admission_requirements": {
+    "letter_of_intent": true,
+    "letters_of_recommendation": 2,
+    "transcripts": true,
+    "supplemental": true,
+    "portfolio": true,
+    "notes": [
+      "Portfolio of compositions required — minimum ~15 minutes for sophomore-level entry.",
+      "Include notated scores; at least some fully notated works required.",
+      "Letter of intent separate from UC application.",
+      "Two letters of recommendation from persons familiar with your composition ability."
+    ]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 4A", "units": 2 }, { "code": "Music 5A", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 4B", "units": 2 }, { "code": "Music 5B", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 4C", "units": 2 }, { "code": "Music 5C", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 4D", "units": 2 }, { "code": "Music 112A", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 4E", "units": 2 }, { "code": "Music 112B", "units": 4 }, { "code": "Music CS 111", "units": 4, "notes": "If offered" }
+    ]},
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 4F", "units": 2 }, { "code": "Music 112C", "units": 4 }, { "slot": "ELECTIVE", "label": "Sophomore Jury prep", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 101A", "units": 4 }, { "slot": "ELECTIVE", "label": "Counterpoint", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 101B", "units": 4 }, { "slot": "GE", "label": "CCS GE — Ethnicity", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 101C", "units": 4 }, { "slot": "ELECTIVE", "label": "Junior Jury prep", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 106A", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 106B", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 106C", "units": 4 }, { "slot": "ELECTIVE", "label": "Senior Recital", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Fall", "track": "transfer", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 4D", "units": 2 }, { "code": "Music 5A", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Winter", "track": "transfer", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 4E", "units": 2 }, { "code": "Music 112A", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Spring", "track": "transfer", "entries": [
+      { "code": "Music CS 101", "units": 4 }, { "code": "Music 4F", "units": 2 }, { "code": "Music 112B", "units": 4 }, { "slot": "ELECTIVE", "label": "Sophomore Jury", "units": 4 }
+    ]}
+  ],
+  "career_outcomes": [
+    "Professional composer",
+    "Graduate composition programs",
+    "Film and media scoring",
+    "Concert music career"
+  ],
+  "quality_tier": "sheet",
+  "notes": ["Curriculum guidelines updated November 2025. Music 101ABC and 106ABC alternate years — plan with advisor."]
+}

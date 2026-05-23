@@ -9,7 +9,7 @@ export type CourseRef = {
 };
 
 export type PlanSlot = {
-  slot: "GE" | "LASAR" | "ELECTIVE" | "FREE";
+  slot: "GE" | "LASAR" | "CCS_GE" | "ELECTIVE" | "FREE";
   label: string;
   units?: number;
 };

@@ -1,0 +1,155 @@
+{
+  "slug": "computing",
+  "name": "Computing",
+  "catalog_year": "2025-2026",
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "CCS Computing major sheet",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2024-07/Computing_Major_Sheet.pdf"
+    },
+    {
+      "title": "CCS Computing major page",
+      "url": "https://ccs.ucsb.edu/majors/computing"
+    },
+    {
+      "title": "Apply — Computing",
+      "url": "https://ccs.ucsb.edu/apply/computing"
+    },
+    {
+      "title": "PLO — Computing",
+      "url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Computing_BS.Final.pdf"
+    },
+    {
+      "title": "CoE CS BS requirements",
+      "url": "https://cs.ucsb.edu/education/undergraduate/current-students"
+    }
+  ],
+  "preparation": {
+    "label": "Mathematics",
+    "units": 28,
+    "courses": [
+      { "code": "MATH 3A", "units": 4 },
+      { "code": "MATH 3B", "units": 4 },
+      { "code": "MATH 4A", "units": 4 },
+      { "code": "MATH 4B", "units": 4 },
+      { "code": "MATH 6A", "units": 4 },
+      { "code": "PSTAT 120A", "units": 4 },
+      { "code": "PSTAT 120B", "units": 4 }
+    ]
+  },
+  "science_courses": {
+    "label": "Science (20 units)",
+    "units": 20,
+    "courses": [
+      { "code": "PHYS 1", "notes": "12 units from list incl. 1 lab" },
+      { "code": "PHYS 2", "units": 4 },
+      { "code": "PHYS 3", "units": 4 },
+      { "code": "PHYS 3L", "units": 1 },
+      { "code": "CHEM 1A", "alternatives": ["CHEM 1AL", "MCDB 1A"], "units": 4 },
+      { "code": "Science elective", "units": 8, "notes": "8 additional units advisor-approved" }
+    ],
+    "notes": ["12 units from Physics/Chemistry/Biology list including at least 1 lab; 8 units any science with advisor approval."]
+  },
+  "upper_division": [
+    {
+      "label": "Computer Science — CCS lower division",
+      "courses": [
+        { "code": "CMPTGCS 1A", "units": 4 },
+        { "code": "CMPTGCS 1B", "units": 4 },
+        { "code": "CMPTGCS 1L", "units": 2 },
+        { "code": "CMPTGCS 2", "title": "Foundations of Computer Science", "units": 4 }
+      ]
+    },
+    {
+      "label": "Upper division — CoE CS BS requirements",
+      "notes": [
+        "Same as College of Engineering Computer Science BS: major requirements, major electives, and ethics requirement.",
+        "CCS students may take CoE CS courses without formal prereqs if advisor confirms preparation.",
+        "Additional CCS and UCSB courses as faculty advisor requires."
+      ],
+      "courses": [
+        { "code": "CMPSC 130A", "units": 4 },
+        { "code": "CMPSC 130B", "units": 4 },
+        { "code": "CMPSC 111", "units": 4 },
+        { "code": "CMPSC 154", "units": 4 },
+        { "code": "CMPSC 170", "units": 4 }
+      ]
+    }
+  ],
+  "regulations": {
+    "major_gpa": 3.0,
+    "other": [
+      "Minimum 2.75 GPA in major courses; target 3.00 in CS courses.",
+      "Mid-Residency Review during second year.",
+      "Quarterly faculty advisor approval for course schedule.",
+      "Substitutions for advanced coursework require written advisor approval."
+    ]
+  },
+  "admission_requirements": {
+    "letter_of_intent": true,
+    "letters_of_recommendation": 2,
+    "transcripts": true,
+    "supplemental": true,
+    "notes": [
+      "Letter of intent to CCS Computing faculty — separate from UC application essay.",
+      "Two recommenders familiar with your computing background.",
+      "Supplemental materials (research, projects, code samples) encouraged."
+    ]
+  },
+  "program_variants": [
+    {
+      "id": "bs-ms",
+      "label": "BS/MS Computer Science (5-year)",
+      "degree": "BS/MS",
+      "summary": "CCS B.S. in Computing + M.S. in CS (CoE). Apply junior year; plan with faculty and CS graduate advisor.",
+      "url": "https://ccs.ucsb.edu/majors/computing"
+    }
+  ],
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "CMPTGCS 1A", "units": 4 }, { "code": "MATH 3A", "units": 4 }, { "code": "PHYS 1", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "CMPTGCS 1B", "units": 4 }, { "code": "CMPTGCS 1L", "units": 2 }, { "code": "MATH 3B", "units": 4 }, { "code": "PHYS 2", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "CMPTGCS 2", "units": 4 }, { "code": "MATH 4A", "units": 4 }, { "code": "PHYS 3", "units": 4 }, { "code": "PHYS 3L", "units": 1 }
+    ]},
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "MATH 4B", "units": 4 }, { "code": "MATH 6A", "units": 4 }, { "code": "PSTAT 120A", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "PSTAT 120B", "units": 4 }, { "slot": "ELECTIVE", "label": "Science elective", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Science elective", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }, { "slot": "FREE", "label": "Elective", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "CMPSC 130A", "units": 4 }, { "code": "CMPSC 111", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "CMPSC 130B", "units": 4 }, { "code": "CMPSC 154", "units": 4 }, { "slot": "GE", "label": "CCS GE — Ethnicity", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "CMPSC 170", "units": 4 }, { "slot": "ELECTIVE", "label": "CS elective", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "CS UD elective", "units": 4 }, { "slot": "ELECTIVE", "label": "CS UD elective", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "CS UD elective", "units": 4 }, { "slot": "ELECTIVE", "label": "Research/CS 199", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "CS capstone/elective", "units": 4 }, { "slot": "ELECTIVE", "label": "Ethics requirement", "units": 4 }, { "slot": "FREE", "label": "Elective", "units": 4 }
+    ]}
+  ],
+  "career_outcomes": [
+    "Software engineer",
+    "Computer science research",
+    "Graduate school (PhD)",
+    "Tech industry and startups"
+  ],
+  "quality_tier": "sheet",
+  "notes": ["Suggested plan combines CCS accelerated lower division with CoE CS upper division. Verify exact UD requirements on CS department site for catalog year."]
+}

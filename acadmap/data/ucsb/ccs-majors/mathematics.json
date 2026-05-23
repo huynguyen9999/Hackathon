@@ -1,0 +1,131 @@
+{
+  "slug": "mathematics",
+  "name": "Mathematics",
+  "catalog_year": "2025-2026",
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "CCS Mathematics major sheet",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2024-07/Math_Major_Sheet.pdf"
+    },
+    {
+      "title": "CCS Mathematics site",
+      "url": "http://ccs.math.ucsb.edu/"
+    },
+    {
+      "title": "Apply — Mathematics",
+      "url": "https://ccs.ucsb.edu/apply/mathematics"
+    },
+    {
+      "title": "PLO — Mathematics",
+      "url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Mathematics_BA-BS.pdf"
+    }
+  ],
+  "preparation": {
+    "label": "Core mathematics (by end of sophomore year)",
+    "courses": [
+      { "code": "Math CS 128", "title": "Introduction to Higher Mathematics", "units": 4 },
+      { "code": "Math CS 101A", "title": "Problem Solving I", "units": 4 },
+      { "code": "Math CS 101B", "title": "Problem Solving II", "units": 4 },
+      { "code": "Math CS 108A", "title": "Advanced Linear Algebra A", "units": 4 },
+      { "code": "Math CS 108B", "title": "Advanced Linear Algebra B", "units": 4 },
+      { "code": "Math CS 117", "title": "Introduction to Real Analysis", "units": 4 }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "By end of junior year",
+      "courses": [
+        { "code": "Math CS 121", "title": "Probability", "units": 4 },
+        { "code": "Math CS 122A", "title": "Complex Analysis A", "units": 4 },
+        { "code": "Math CS 122B", "title": "Complex Analysis B", "units": 4 },
+        { "code": "MATH 111A", "title": "Abstract Algebra A", "units": 4 },
+        { "code": "MATH 111B", "units": 4 },
+        { "code": "MATH 118A", "title": "Real Analysis A", "units": 4 },
+        { "code": "MATH 118B", "units": 4 }
+      ],
+      "notes": ["Complete Probability plus two of: Complex Analysis, Abstract Algebra, or Real Analysis sequences by junior year; third sequence by senior year."]
+    }
+  ],
+  "electives": {
+    "label": "Elective mathematics (12 classes)",
+    "choose_n": 12,
+    "courses": [
+      { "code": "Math CS 120", "notes": "Two must be Special Topics above freshman level" },
+      { "code": "MATH 115AB" }, { "code": "MATH 104ABC" }, { "code": "PSTAT 120BC" }
+    ],
+    "notes": [
+      "Must take at least one class from three areas: Number Theory/Combinatorics, Geometry/Topology, Differential Equations/Applied, Probability/Statistics.",
+      "Math 199 counts at most twice. Graduate Math classes allowed with sufficient preparation."
+    ]
+  },
+  "regulations": {
+    "other": [
+      "Research experience requirement — substantial mathematical research (SURF, REU, internship, etc.).",
+      "Two non-math classes: one new programming language (CMPSC 8/9/16, PSTAT 10, CMPTGCS 20) and one CS/Physics/ENGR 3.",
+      "Requirement waived for CCS Computing double majors.",
+      "Quarterly faculty advisor meetings required."
+    ]
+  },
+  "admission_requirements": {
+    "letter_of_intent": true,
+    "letters_of_recommendation": 2,
+    "transcripts": true,
+    "supplemental": true,
+    "notes": [
+      "Letter of intent to CCS Mathematics faculty.",
+      "Two recommenders familiar with your mathematics background.",
+      "Math competition results, research, or advanced coursework helpful in supplemental materials."
+    ]
+  },
+  "program_variants": [
+    { "id": "ba", "label": "BA in Creative Studies — Mathematics", "degree": "BA", "summary": "Accelerated CCS mathematics curriculum." },
+    { "id": "bs", "label": "BS in Creative Studies — Mathematics", "degree": "BS", "summary": "Rigorous BS track with additional depth; consult advisor." }
+  ],
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "Math CS 101A", "units": 4 }, { "code": "Math CS 128", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "Math CS 101B", "units": 4 }, { "code": "CMPSC 16", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "Math CS 108A", "units": 4 }, { "code": "PHYS 1", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "Math CS 108B", "units": 4 }, { "code": "Math CS 117", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "Math CS 121", "units": 4 }, { "code": "Math CS 122A", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "Math CS 122B", "units": 4 }, { "code": "MATH 111A", "units": 4 }, { "slot": "GE", "label": "CCS GE — Ethnicity", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "MATH 111B", "units": 4 }, { "code": "MATH 118A", "units": 4 }, { "code": "Math CS 120", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "MATH 118B", "units": 4 }, { "code": "MATH 111C", "units": 4 }, { "slot": "ELECTIVE", "label": "Math elective", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "MATH 118C", "units": 4 }, { "slot": "ELECTIVE", "label": "Math elective", "units": 4 }, { "slot": "ELECTIVE", "label": "Research/Math 199", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "Math CS 120", "units": 4 }, { "slot": "ELECTIVE", "label": "Math elective", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Math elective", "units": 4 }, { "slot": "ELECTIVE", "label": "Math elective", "units": 4 }, { "slot": "ELECTIVE", "label": "Research", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Math elective", "units": 4 }, { "slot": "ELECTIVE", "label": "Math elective", "units": 4 }, { "slot": "FREE", "label": "Elective", "units": 4 }
+    ]}
+  ],
+  "career_outcomes": [
+    "Mathematician / researcher",
+    "Data science and analytics",
+    "Graduate school (PhD)",
+    "Industry and national labs"
+  ],
+  "quality_tier": "sheet",
+  "notes": ["Joint program with L&S Mathematics Department. Core-by-year requirements from CCS Math major sheet."]
+}

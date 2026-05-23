@@ -1,0 +1,98 @@
+{
+  "catalog_year": "2025-2026",
+  "handbook_url": "https://ccs.ucsb.edu/sites/default/files/2025-09/StudentHandbook2025-26.pdf",
+  "catalog_degrees_url": "https://catalog.ucsb.edu/pages/YPDe1A6ayWXsCTmgi88I",
+  "catalog_requirements_url": "https://catalog.ucsb.edu/pages/yvOaPEegKjFLarzjiGfZ",
+  "majors": [
+    {
+      "slug": "art",
+      "name": "Art",
+      "degree_type": "BA",
+      "major_page": "https://ccs.ucsb.edu/majors/art",
+      "apply_url": "https://ccs.ucsb.edu/apply/art",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2025-07/Art_major_requirements.pdf",
+      "catalog_program_code": "BAARTCS",
+      "plo_url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Art_BA.pdf"
+    },
+    {
+      "slug": "biology",
+      "name": "Biology",
+      "degree_type": "BA",
+      "major_page": "https://ccs.ucsb.edu/majors/biology",
+      "apply_url": "https://ccs.ucsb.edu/apply/biology",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2023-06/Biology-Major-Sheet.pdf",
+      "catalog_program_code": "BABIOLCS",
+      "plo_url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Biology_BA.pdf"
+    },
+    {
+      "slug": "chemistry-biochemistry",
+      "name": "Chemistry & Biochemistry",
+      "degree_type": "BA/BS",
+      "major_page": "https://ccs.ucsb.edu/majors/chemistry-biochemistry",
+      "apply_url": "https://ccs.ucsb.edu/apply/chemistry-biochemistry",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2026-02/CHBCSMajorSheets2025-6.pdf",
+      "catalog_program_code": "BSCHEMCS",
+      "plo_url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Chemistry.and.Biochemistry_BS-BA.pdf"
+    },
+    {
+      "slug": "computing",
+      "name": "Computing",
+      "degree_type": "BS",
+      "major_page": "https://ccs.ucsb.edu/majors/computing",
+      "apply_url": "https://ccs.ucsb.edu/apply/computing",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2024-07/Computing_Major_Sheet.pdf",
+      "catalog_program_code": "BSCMPTGCS",
+      "plo_url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Computing_BS.Final.pdf"
+    },
+    {
+      "slug": "marine-science",
+      "name": "Marine Science",
+      "degree_type": "BA",
+      "major_page": "https://ccs.ucsb.edu/majors/marine-science",
+      "apply_url": "https://ccs.ucsb.edu/apply/marine-science",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2024-07/CCSMarineScienceMajorSheet.pdf",
+      "catalog_program_code": "BAMRNCS",
+      "plo_url": "https://catalog.ucsb.edu/programs/BAMRNCS"
+    },
+    {
+      "slug": "mathematics",
+      "name": "Mathematics",
+      "degree_type": "BA/BS",
+      "major_page": "https://ccs.ucsb.edu/majors/mathematics",
+      "apply_url": "https://ccs.ucsb.edu/apply/mathematics",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2024-07/Math_Major_Sheet.pdf",
+      "catalog_program_code": "BAMATHCS",
+      "plo_url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Mathematics_BA-BS.pdf"
+    },
+    {
+      "slug": "music-composition",
+      "name": "Music Composition",
+      "degree_type": "BA",
+      "major_page": "https://ccs.ucsb.edu/majors/music-composition",
+      "apply_url": "https://ccs.ucsb.edu/apply/music-composition",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2025-11/MUSIC_majorguidelines_v2025.pdf",
+      "catalog_program_code": "BAMUSCS",
+      "plo_url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Music_BA.pdf"
+    },
+    {
+      "slug": "physics",
+      "name": "Physics",
+      "degree_type": "BA/BS",
+      "major_page": "https://ccs.ucsb.edu/majors/physics",
+      "apply_url": "https://ccs.ucsb.edu/apply/physics",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2025-10/CCSPhysicsBSMajor.pdf",
+      "catalog_program_code": "BAPHYSCS",
+      "plo_url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Physics_BA-BS.pdf"
+    },
+    {
+      "slug": "writing-literature",
+      "name": "Writing & Literature",
+      "degree_type": "BA",
+      "major_page": "https://ccs.ucsb.edu/majors/writing-literature",
+      "apply_url": "https://ccs.ucsb.edu/apply/writing-literature",
+      "major_sheet_url": "https://ccs.ucsb.edu/sites/default/files/2026-01/WaLMajorSheetCCSGEs.pdf",
+      "catalog_program_code": "BAWLCS",
+      "plo_url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Writing_Literature_BA.pdf"
+    }
+  ]
+}

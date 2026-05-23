@@ -1,0 +1,133 @@
+{
+  "slug": "writing-literature",
+  "name": "Writing & Literature",
+  "catalog_year": "2025-2026",
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "W&L major sheet with CCS GEs (Fall 2025)",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2026-01/WaLMajorSheetCCSGEs.pdf"
+    },
+    {
+      "title": "CCS Writing & Literature major page",
+      "url": "https://ccs.ucsb.edu/majors/writing-literature"
+    },
+    {
+      "title": "Apply — Writing & Literature",
+      "url": "https://ccs.ucsb.edu/apply/writing-literature"
+    },
+    {
+      "title": "PLO — Writing & Literature",
+      "url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Writing_Literature_BA.pdf"
+    }
+  ],
+  "preparation": {
+    "label": "Core requirements",
+    "units": 26,
+    "courses": [
+      { "code": "W&L CS 1", "title": "Writing & Literature Colloquium", "units": 3, "notes": "Taken twice — Fall of 1st and 2nd year" },
+      { "code": "W&L CS 2", "title": "First-Year Colloquium Seminar", "units": 1 },
+      { "code": "W&L CS 3", "title": "Sophomore Colloquium Seminar", "units": 1, "notes": "Prerequisite: W&L CS 2" },
+      { "code": "W&L CS 4", "title": "Mid-Residency Review", "units": 3, "notes": "Prerequisite: W&L CS 3" },
+      { "code": "W&L CS 10", "title": "Introduction to Creative Writing", "units": 3 },
+      { "code": "W&L CS 20", "title": "Introduction to Writing Studies", "units": 3 },
+      { "code": "W&L CS 30", "title": "Introduction to Literary Study", "units": 3 },
+      { "code": "W&L CS 190", "title": "Junior Tutorial", "units": 6, "notes": "Up to 24 units / 4 quarters" },
+      { "code": "W&L CS 197", "title": "Senior Portfolio", "units": 3, "notes": "Prerequisite: min 6 units W&L CS 190" }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Lower division (4 courses, 17 units)",
+      "units": 17,
+      "courses": [
+        { "code": "WRIT 2", "title": "Academic Writing", "units": 5 },
+        { "code": "CLIT 30A", "units": 4 },
+        { "code": "CLIT 30B", "units": 4 },
+        { "code": "CLIT 30C", "units": 4, "notes": "Or choose 3 from CLIT 30 + one from AS AM 5, BL ST 33, ENGL 34NA/39/40/50" }
+      ]
+    },
+    {
+      "label": "Upper-division — Creative Writing (3 courses)",
+      "units": 9,
+      "courses": [],
+      "notes": ["Typically W&L CS 110-149 or advisor-approved equivalents."]
+    },
+    {
+      "label": "Upper-division — Writing Studies (3 courses)",
+      "units": 9,
+      "courses": [],
+      "notes": ["Typically WRIT or W&L CS 160-169."]
+    },
+    {
+      "label": "Upper-division — Literary Study (3 courses)",
+      "units": 9,
+      "courses": [],
+      "notes": ["Typically CLIT, ENGL, or W&L CS 150-159."]
+    }
+  ],
+  "regulations": {
+    "other": [
+      "Senior portfolio submitted last day of instruction quarter before graduation.",
+      "180 total units required.",
+      "8 CCS GE courses (STEM, Social Science, Arts/Humanities distribution) plus Ethnicity."
+    ]
+  },
+  "admission_requirements": {
+    "letter_of_intent": true,
+    "letters_of_recommendation": 2,
+    "transcripts": true,
+    "supplemental": true,
+    "notes": [
+      "Letter of intent to CCS Writing & Literature faculty — separate from UC application.",
+      "Two recommenders familiar with your writing and literary interests.",
+      "Writing samples strongly encouraged as supplemental materials."
+    ]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "W&L CS 1", "units": 3 }, { "code": "W&L CS 2", "units": 1 }, { "code": "W&L CS 10", "units": 3 }, { "code": "WRIT 2", "units": 5 }
+    ]},
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "W&L CS 20", "units": 3 }, { "code": "CLIT 30A", "units": 4 }, { "slot": "GE", "label": "CCS GE — STEM", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "W&L CS 30", "units": 3 }, { "code": "CLIT 30B", "units": 4 }, { "slot": "GE", "label": "CCS GE — Social Science", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "W&L CS 1", "units": 3 }, { "code": "W&L CS 3", "units": 1 }, { "code": "CLIT 30C", "units": 4 }, { "slot": "GE", "label": "CCS GE — Arts/Humanities", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "W&L CS 4", "units": 3 }, { "slot": "ELECTIVE", "label": "UD Creative Writing", "units": 3 }, { "slot": "GE", "label": "CCS GE — STEM", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Writing Studies", "units": 3 }, { "slot": "ELECTIVE", "label": "UD Literary Study", "units": 3 }, { "slot": "GE", "label": "CCS GE — Social Science", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "W&L CS 190", "units": 3 }, { "slot": "ELECTIVE", "label": "UD Creative Writing", "units": 3 }, { "slot": "GE", "label": "CCS GE — Arts/Humanities", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "W&L CS 190", "units": 3 }, { "slot": "ELECTIVE", "label": "UD Writing Studies", "units": 3 }, { "slot": "GE", "label": "CCS GE — Ethnicity", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "W&L CS 190", "units": 3 }, { "slot": "ELECTIVE", "label": "UD Literary Study", "units": 3 }, { "slot": "GE", "label": "CCS GE — STEM", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "W&L CS 190", "units": 3 }, { "slot": "ELECTIVE", "label": "UD elective", "units": 3 }, { "slot": "GE", "label": "CCS GE — Social Science", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD elective", "units": 3 }, { "slot": "ELECTIVE", "label": "UD elective", "units": 3 }, { "slot": "GE", "label": "CCS GE — Arts/Humanities", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "W&L CS 197", "units": 3 }, { "slot": "ELECTIVE", "label": "Senior portfolio prep", "units": 3 }, { "slot": "FREE", "label": "Elective", "units": 4 }
+    ]}
+  ],
+  "career_outcomes": [
+    "Author and creative writer",
+    "Editor and publishing",
+    "Graduate MFA or PhD programs",
+    "Writing-intensive careers"
+  ],
+  "quality_tier": "sheet",
+  "notes": ["Core colloquium sequence and three UD tracks (Creative Writing, Writing Studies, Literary Study) from Fall 2025 major sheet."]
+}

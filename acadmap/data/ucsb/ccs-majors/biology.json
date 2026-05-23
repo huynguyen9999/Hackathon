@@ -1,0 +1,128 @@
+{
+  "slug": "biology",
+  "name": "Biology",
+  "catalog_year": "2025-2026",
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "CCS Biology major sheet",
+      "url": "https://ccs.ucsb.edu/sites/default/files/2023-06/Biology-Major-Sheet.pdf"
+    },
+    {
+      "title": "CCS Biology major page",
+      "url": "https://ccs.ucsb.edu/majors/biology"
+    },
+    {
+      "title": "Apply — Biology",
+      "url": "https://ccs.ucsb.edu/apply/biology"
+    },
+    {
+      "title": "PLO — Biology",
+      "url": "https://coursedog-static-public.s3.us-east-2.amazonaws.com/ucsb/CCS-Biology_BA.pdf"
+    }
+  ],
+  "preparation": {
+    "label": "Recommended foundation (by emphasis)",
+    "courses": [
+      { "code": "PHYS 6A", "notes": "Two quarters physics recommended for all biologists", "units": 4 },
+      { "code": "PHYS 6B", "units": 4 },
+      { "code": "CHEM 1A", "notes": "Year chemistry for molecular/biochemistry emphasis", "units": 4 },
+      { "code": "CHEM 1B", "units": 4 },
+      { "code": "CHEM 109A", "notes": "Organic chemistry for molecular emphasis", "units": 4 },
+      { "code": "MATH 3A", "notes": "Calculus for ecology/evolution emphasis", "units": 4 },
+      { "code": "MATH 3B", "units": 4 },
+      { "code": "PSTAT 5LS", "notes": "Statistics for ecology/evolution", "units": 5 },
+      { "code": "CMPSC 8", "notes": "Computer science for computational biology", "units": 4 }
+    ],
+    "notes": [
+      "CCS Biology is NOT bound by L&S Biological Sciences catalog requirements.",
+      "Program negotiated with faculty advisor based on research emphasis.",
+      "Premed students: year each of math, physics, inorganic and organic chemistry."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division biology (advisor-selected)",
+      "choose_units": 48,
+      "courses": [
+        { "code": "EEMB", "notes": "Ecology, Evolution & Marine Biology courses" },
+        { "code": "MCDB", "notes": "Molecular, Cellular & Developmental Biology" },
+        { "code": "EARTH", "notes": "Earth Science for paleontology/geology emphasis" },
+        { "code": "GEOG", "notes": "Geography for spatial/ecological emphasis" },
+        { "code": "Biology CS", "notes": "CCS biology seminars and labs" }
+      ],
+      "notes": [
+        "CCS students take more UD science courses, earlier, than L&S Biology majors.",
+        "Independent research from first year encouraged; CCS courses augment L&S department offerings."
+      ]
+    }
+  ],
+  "regulations": {
+    "other": [
+      "Mid-academic-career progress check with faculty.",
+      "Quarterly faculty advisor approval for course schedule.",
+      "Summer research fellowships (SURF, TURF) often available."
+    ]
+  },
+  "admission_requirements": {
+    "letter_of_intent": true,
+    "letters_of_recommendation": 2,
+    "transcripts": true,
+    "supplemental": true,
+    "notes": [
+      "Letter of intent to CCS Biology faculty — academic interests, research goals, biology background.",
+      "Two recommenders well-acquainted with your biology ability (required).",
+      "Applicants often have research experience, AP Biology, or demonstrated research focus.",
+      "Supplemental: independent research, scientific reports, or projects (not required but helpful)."
+    ]
+  },
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "CHEM 1A", "units": 4 }, { "code": "MATH 3A", "units": 4 }, { "code": "Biology CS", "units": 4, "notes": "CCS seminar/lab" }
+    ]},
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "CHEM 1B", "units": 4 }, { "code": "MATH 3B", "units": 4 }, { "code": "MCDB 1A", "units": 4 }
+    ]},
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "PHYS 6A", "units": 4 }, { "code": "MCDB 1B", "units": 4 }, { "slot": "ELECTIVE", "label": "Research (199)", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [
+      { "code": "PHYS 6B", "units": 4 }, { "code": "CHEM 109A", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [
+      { "code": "CHEM 109B", "units": 4 }, { "code": "PSTAT 5LS", "units": 5 }, { "slot": "ELECTIVE", "label": "UD Biology", "units": 4 }
+    ]},
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [
+      { "code": "CHEM 109C", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Biology", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Biology emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Biology", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Biology emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "Research", "units": 4 }, { "slot": "GE", "label": "CCS GE — Ethnicity", "units": 4 }
+    ]},
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Biology emphasis", "units": 4 }, { "slot": "ELECTIVE", "label": "Research", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "UD Biology / Research", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Biology", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Senior research thesis", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Biology", "units": 4 }, { "slot": "GE", "label": "CCS GE", "units": 4 }
+    ]},
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [
+      { "slot": "ELECTIVE", "label": "Senior research thesis", "units": 4 }, { "slot": "ELECTIVE", "label": "UD Biology", "units": 4 }, { "slot": "FREE", "label": "Elective", "units": 4 }
+    ]}
+  ],
+  "career_outcomes": [
+    "Research biologist",
+    "Graduate school (PhD, MD/PhD)",
+    "Marine and field biology",
+    "Ecology and conservation"
+  ],
+  "quality_tier": "flexible",
+  "notes": [
+    "Suggested plan for molecular/ecology emphasis — actual courses vary by advisor and research area.",
+    "Contact: John Latto (latto@lifesci.ucsb.edu) for program information."
+  ]
+}
