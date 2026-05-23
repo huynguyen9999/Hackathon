@@ -55,6 +55,8 @@ export function Sidebar({
   const { data } = selectedNode;
   const isCourse = data.nodeType === "course";
   const resources = data.resources ?? [];
+  const isCapstone =
+    isCourse && data.nodeMetadata?.role === "capstone";
   const showPartnerSection =
     isCourse &&
     data.selfLearnable &&
@@ -105,6 +107,18 @@ export function Sidebar({
               Self-learnable
             </span>
           )}
+          {isCapstone && (
+            <>
+              <span className="rounded-full bg-indigo-500/15 px-2.5 py-0.5 text-[10px] font-medium text-indigo-800 dark:text-indigo-200 ring-1 ring-indigo-400/30">
+                Capstone
+              </span>
+              {data.nodeMetadata?.optional ? (
+                <span className="rounded-full bg-slate-500/10 px-2.5 py-0.5 text-[10px] font-medium text-slate-600 dark:text-slate-300 ring-1 ring-slate-400/30">
+                  Optional elective
+                </span>
+              ) : null}
+            </>
+          )}
         </div>
       </header>
 
@@ -126,6 +140,22 @@ export function Sidebar({
             <p className="text-xs leading-relaxed text-emerald-800/90 dark:text-emerald-200/90">
               This topic can be studied independently—useful if you want to
               prepare ahead or fill gaps outside the official sequence.
+            </p>
+          </section>
+        )}
+
+        {isCapstone && (
+          <section className="mb-6 rounded-lg border border-indigo-500/20 bg-indigo-50 dark:bg-indigo-950/20 px-3 py-2.5">
+            <h3 className="mb-1 text-xs font-semibold uppercase tracking-wider text-indigo-800 dark:text-indigo-200">
+              Senior capstone
+            </h3>
+            <p className="text-xs leading-relaxed text-indigo-900/90 dark:text-indigo-100/90">
+              {data.nodeMetadata?.optional
+                ? "Optional capstone elective—not required to graduate. Many CS students finish in three years without this sequence."
+                : "Required senior design sequence. Teams design, build, and present an engineering project, often showcased at the COE Engineering Design Expo."}
+              {data.nodeMetadata?.sequence
+                ? ` Quarter ${data.nodeMetadata.sequence} of the capstone series.`
+                : null}
             </p>
           </section>
         )}

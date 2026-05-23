@@ -12,7 +12,12 @@
   "metadata": {
     "source": "UCSB GEAR 2025-2026",
     "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
-    "gear_page": 20
+    "gear_page": 20,
+    "capstone": {
+      "required": true,
+      "courses": ["ECE 188A", "ECE 188B", "ECE 188C"],
+      "source_url": "https://www.ece.ucsb.edu/undergrad/curriculum/senior-projects"
+    }
   },
   "nodes": [
     {
@@ -162,6 +167,17 @@
       "position_y": 420
     },
     {
+      "id": "ece-153a",
+      "node_type": "course",
+      "label": "ECE 153A",
+      "title": "Fundamentals of Embedded Control Systems",
+      "description": "Embedded control systems design. Alternative prerequisite to ECE 188A (may be taken concurrently per GEAR).",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 120
+    },
+    {
       "id": "ece-153b",
       "node_type": "course",
       "label": "ECE 153B",
@@ -176,10 +192,21 @@
       "id": "ece-188a",
       "node_type": "course",
       "label": "ECE 188A",
-      "title": "Senior EE Project I",
-      "description": "First quarter of capstone team project: proposal, design specification, and initial implementation.",
-      "units": 4,
+      "title": "Senior EE Capstone I",
+      "description": "Fall quarter: choose a faculty- or industry-sponsored project, develop design specifications, budget, and initial prototype. Team presentation of project plan.",
+      "units": 5,
       "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 1 },
+      "resources": [
+        {
+          "name": "ECE Senior Capstone Projects",
+          "url": "https://www.ece.ucsb.edu/undergrad/curriculum/senior-projects"
+        },
+        {
+          "name": "COE Engineering Design Expo",
+          "url": "https://capstone.engineering.ucsb.edu"
+        }
+      ],
       "position_x": 1580,
       "position_y": 520
     },
@@ -187,10 +214,17 @@
       "id": "ece-188b",
       "node_type": "course",
       "label": "ECE 188B",
-      "title": "Senior EE Project II",
-      "description": "Second quarter of capstone: prototype development, testing, and iteration toward final deliverable.",
+      "title": "Senior EE Capstone II",
+      "description": "Winter quarter: mid-project design review with instructors and sponsors; PCB design and second prototype milestone.",
       "units": 4,
       "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 2 },
+      "resources": [
+        {
+          "name": "ECE Senior Capstone Projects",
+          "url": "https://www.ece.ucsb.edu/undergrad/curriculum/senior-projects"
+        }
+      ],
       "position_x": 1880,
       "position_y": 520
     },
@@ -198,10 +232,17 @@
       "id": "ece-188c",
       "node_type": "course",
       "label": "ECE 188C",
-      "title": "Senior EE Project III",
-      "description": "Final capstone quarter: integration, documentation, and presentation of the completed engineering project.",
+      "title": "Senior EE Capstone III",
+      "description": "Spring quarter: finalize design, integrate and debug the product, and present at the COE Engineering Design Expo (EDX).",
       "units": 4,
       "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 3 },
+      "resources": [
+        {
+          "name": "COE Engineering Design Expo",
+          "url": "https://capstone.engineering.ucsb.edu"
+        }
+      ],
       "position_x": 2180,
       "position_y": 520
     },
@@ -257,13 +298,18 @@
     { "id": "e7", "source_id": "ece-15a", "target_id": "ece-152a", "edge_type": "prerequisite" },
     { "id": "e8", "source_id": "ece-10c", "target_id": "ece-15a", "edge_type": "recommended" },
     { "id": "e9", "source_id": "ece-152a", "target_id": "ece-153b", "edge_type": "recommended" },
+    { "id": "e9a", "source_id": "ece-152a", "target_id": "ece-153a", "edge_type": "recommended" },
     { "id": "e10", "source_id": "ece-153b", "target_id": "ece-188a", "edge_type": "prerequisite" },
+    { "id": "e10a", "source_id": "ece-153a", "target_id": "ece-188a", "edge_type": "recommended" },
     { "id": "e11", "source_id": "ece-188a", "target_id": "ece-188b", "edge_type": "prerequisite" },
     { "id": "e12", "source_id": "ece-188b", "target_id": "ece-188c", "edge_type": "prerequisite" },
     { "id": "e13", "source_id": "cmpsc-16", "target_id": "ece-15a", "edge_type": "recommended" },
     { "id": "e14", "source_id": "ece-134", "target_id": "career-rf", "edge_type": "leads_to" },
     { "id": "e15", "source_id": "ece-152a", "target_id": "career-hardware", "edge_type": "leads_to" },
     { "id": "e16", "source_id": "ece-130b", "target_id": "career-signals", "edge_type": "leads_to" },
+    { "id": "e19", "source_id": "ece-188c", "target_id": "career-rf", "edge_type": "leads_to" },
+    { "id": "e20", "source_id": "ece-188c", "target_id": "career-hardware", "edge_type": "leads_to" },
+    { "id": "e21", "source_id": "ece-188c", "target_id": "career-signals", "edge_type": "leads_to" },
     { "id": "e17", "source_id": "ece-3", "target_id": "ece-10a", "edge_type": "recommended" },
     { "id": "e18", "source_id": "ece-5", "target_id": "ece-10a", "edge_type": "recommended" }
   ]

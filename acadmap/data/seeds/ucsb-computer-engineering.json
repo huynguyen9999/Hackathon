@@ -4,7 +4,13 @@
   "metadata": {
     "source": "UCSB GEAR 2025-2026",
     "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
-    "gear_page": 16
+    "gear_page": 16,
+    "capstone": {
+      "required": true,
+      "courses": ["ECE 189A", "ECE 189B", "ECE 189C"],
+      "alternatives": ["CMPSC 189A", "CMPSC 189B"],
+      "source_url": "https://www.ece.ucsb.edu/undergrad/curriculum/senior-projects"
+    }
   },
   "nodes": [
     { "id": "cmpsc-16", "node_type": "course", "label": "CMPSC 16", "units": 4, "self_learnable": true, "position_x": 80, "position_y": 80 },
@@ -18,14 +24,89 @@
     { "id": "ece-152a", "node_type": "course", "label": "ECE 152A", "units": 5, "self_learnable": false, "position_x": 680, "position_y": 200 },
     { "id": "ece-154a", "node_type": "course", "label": "ECE 154A", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 360 },
     { "id": "cmpsc-130a", "node_type": "course", "label": "CMPSC 130A", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 200 },
-    { "id": "ece-153b", "node_type": "course", "label": "ECE 153B", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 360 },
-    { "id": "ece-189a", "node_type": "course", "label": "ECE 189A", "units": 5, "self_learnable": false, "position_x": 1080, "position_y": 280 },
-    { "id": "ece-189b", "node_type": "course", "label": "ECE 189B", "units": 4, "self_learnable": false, "position_x": 1280, "position_y": 280 },
+    { "id": "ece-153b", "node_type": "course", "label": "ECE 153B", "title": "Sensor & Peripheral Interface Design", "description": "Prerequisite to ECE 189A capstone sequence.", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 360 },
+    { "id": "cmpsc-156", "node_type": "course", "label": "CMPSC 156", "title": "Advanced Applications Programming", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 520 },
+    {
+      "id": "ece-189a",
+      "node_type": "course",
+      "label": "ECE 189A",
+      "title": "Senior CmpE Capstone I",
+      "description": "First quarter of required CmpE capstone (ECE track): team hardware/software design project with faculty or industry sponsor.",
+      "units": 5,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 1 },
+      "resources": [
+        { "name": "ECE Senior Capstone Projects", "url": "https://www.ece.ucsb.edu/undergrad/curriculum/senior-projects" },
+        { "name": "COE Engineering Design Expo", "url": "https://capstone.engineering.ucsb.edu" }
+      ],
+      "position_x": 1080,
+      "position_y": 280
+    },
+    {
+      "id": "ece-189b",
+      "node_type": "course",
+      "label": "ECE 189B",
+      "title": "Senior CmpE Capstone II",
+      "description": "Second quarter: prototype refinement, integration testing, and mid-project review.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 2 },
+      "resources": [
+        { "name": "ECE Senior Capstone Projects", "url": "https://www.ece.ucsb.edu/undergrad/curriculum/senior-projects" }
+      ],
+      "position_x": 1280,
+      "position_y": 280
+    },
+    {
+      "id": "ece-189c",
+      "node_type": "course",
+      "label": "ECE 189C",
+      "title": "Senior CmpE Capstone III",
+      "description": "Final quarter: complete system integration and present at the COE Engineering Design Expo.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 3 },
+      "resources": [
+        { "name": "COE Engineering Design Expo", "url": "https://capstone.engineering.ucsb.edu" }
+      ],
+      "position_x": 1480,
+      "position_y": 280
+    },
+    {
+      "id": "cmpsc-189a",
+      "node_type": "course",
+      "label": "CMPSC 189A",
+      "title": "Senior CS Capstone I (alt.)",
+      "description": "Alternative capstone track for CmpE: CMPSC 156 prerequisite. Software-systems team project.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 1, "optional": false },
+      "resources": [
+        { "name": "CS Capstone", "url": "https://capstone.cs.ucsb.edu/" }
+      ],
+      "position_x": 1080,
+      "position_y": 520
+    },
+    {
+      "id": "cmpsc-189b",
+      "node_type": "course",
+      "label": "CMPSC 189B",
+      "title": "Senior CS Capstone II (alt.)",
+      "description": "Second quarter of CMPSC capstone alternative sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 2 },
+      "resources": [
+        { "name": "CS Capstone", "url": "https://capstone.cs.ucsb.edu/" }
+      ],
+      "position_x": 1280,
+      "position_y": 520
+    },
     { "id": "engr-101", "node_type": "course", "label": "ENGR 101", "units": 3, "self_learnable": false, "position_x": 1280, "position_y": 420 },
-    { "id": "career-embedded", "node_type": "career", "label": "Embedded systems", "self_learnable": false, "position_x": 1480, "position_y": 80 },
-    { "id": "career-vlsi", "node_type": "career", "label": "VLSI designer", "self_learnable": false, "position_x": 1480, "position_y": 200 },
-    { "id": "career-systems", "node_type": "career", "label": "Systems engineer", "self_learnable": false, "position_x": 1480, "position_y": 320 },
-    { "id": "career-swe", "node_type": "career", "label": "Software engineer", "self_learnable": false, "position_x": 1480, "position_y": 440 }
+    { "id": "career-embedded", "node_type": "career", "label": "Embedded systems", "self_learnable": false, "position_x": 1680, "position_y": 80 },
+    { "id": "career-vlsi", "node_type": "career", "label": "VLSI designer", "self_learnable": false, "position_x": 1680, "position_y": 200 },
+    { "id": "career-systems", "node_type": "career", "label": "Systems engineer", "self_learnable": false, "position_x": 1680, "position_y": 320 },
+    { "id": "career-swe", "node_type": "career", "label": "Software engineer", "self_learnable": false, "position_x": 1680, "position_y": 440 }
   ],
   "edges": [
     { "id": "e1", "source_id": "cmpsc-16", "target_id": "cmpsc-24", "edge_type": "prerequisite" },
@@ -36,12 +117,18 @@
     { "id": "e6", "source_id": "ece-10c", "target_id": "ece-152a", "edge_type": "prerequisite" },
     { "id": "e7", "source_id": "ece-152a", "target_id": "ece-154a", "edge_type": "prerequisite" },
     { "id": "e8", "source_id": "cmpsc-40", "target_id": "cmpsc-130a", "edge_type": "prerequisite" },
+    { "id": "e8b", "source_id": "cmpsc-40", "target_id": "cmpsc-156", "edge_type": "prerequisite" },
     { "id": "e9", "source_id": "ece-152a", "target_id": "ece-153b", "edge_type": "prerequisite" },
     { "id": "e10", "source_id": "ece-153b", "target_id": "ece-189a", "edge_type": "prerequisite" },
     { "id": "e11", "source_id": "ece-189a", "target_id": "ece-189b", "edge_type": "prerequisite" },
-    { "id": "e12", "source_id": "ece-154a", "target_id": "career-vlsi", "edge_type": "leads_to" },
-    { "id": "e13", "source_id": "ece-153b", "target_id": "career-embedded", "edge_type": "leads_to" },
-    { "id": "e14", "source_id": "cmpsc-130a", "target_id": "career-swe", "edge_type": "leads_to" },
-    { "id": "e15", "source_id": "ece-189b", "target_id": "career-systems", "edge_type": "leads_to" }
+    { "id": "e11c", "source_id": "ece-189b", "target_id": "ece-189c", "edge_type": "prerequisite" },
+    { "id": "e12", "source_id": "cmpsc-156", "target_id": "cmpsc-189a", "edge_type": "recommended" },
+    { "id": "e12b", "source_id": "cmpsc-189a", "target_id": "cmpsc-189b", "edge_type": "prerequisite" },
+    { "id": "e13", "source_id": "ece-154a", "target_id": "career-vlsi", "edge_type": "leads_to" },
+    { "id": "e14", "source_id": "ece-153b", "target_id": "career-embedded", "edge_type": "leads_to" },
+    { "id": "e15", "source_id": "cmpsc-130a", "target_id": "career-swe", "edge_type": "leads_to" },
+    { "id": "e16", "source_id": "ece-189c", "target_id": "career-systems", "edge_type": "leads_to" },
+    { "id": "e17", "source_id": "ece-189c", "target_id": "career-embedded", "edge_type": "leads_to" },
+    { "id": "e18", "source_id": "cmpsc-189b", "target_id": "career-swe", "edge_type": "leads_to" }
   ]
 }

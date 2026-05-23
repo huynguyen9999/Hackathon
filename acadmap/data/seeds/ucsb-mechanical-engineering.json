@@ -4,26 +4,75 @@
   "metadata": {
     "source": "UCSB GEAR 2025-2026",
     "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
-    "gear_page": 22
+    "gear_page": 22,
+    "capstone": {
+      "required": true,
+      "courses": ["ME 189A", "ME 189B", "ME 189C"],
+      "source_url": "https://me.ucsb.edu/undergraduate/academics/capstone-projects"
+    }
   },
   "nodes": [
-    { "id": "me-10", "node_type": "course", "label": "ME 10", "units": 4, "self_learnable": false, "position_x": 80, "position_y": 120 },
-    { "id": "me-12s", "node_type": "course", "label": "ME 12S", "units": 1, "self_learnable": false, "position_x": 80, "position_y": 280 },
-    { "id": "me-14", "node_type": "course", "label": "ME 14", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 120 },
-    { "id": "me-15", "node_type": "course", "label": "ME 15", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 280 },
-    { "id": "me-16", "node_type": "course", "label": "ME 16", "units": 4, "self_learnable": false, "position_x": 480, "position_y": 200 },
-    { "id": "me-103", "node_type": "course", "label": "ME 103", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 120 },
-    { "id": "me-104", "node_type": "course", "label": "ME 104", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 280 },
-    { "id": "me-151a", "node_type": "course", "label": "ME 151A", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 120 },
-    { "id": "me-151b", "node_type": "course", "label": "ME 151B", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 280 },
-    { "id": "me-152a", "node_type": "course", "label": "ME 152A", "units": 4, "self_learnable": false, "position_x": 1080, "position_y": 200 },
-    { "id": "me-156a", "node_type": "course", "label": "ME 156A", "units": 3, "self_learnable": false, "position_x": 1280, "position_y": 120 },
-    { "id": "me-189a", "node_type": "course", "label": "ME 189A", "units": 3, "self_learnable": false, "position_x": 1280, "position_y": 280 },
-    { "id": "me-189c", "node_type": "course", "label": "ME 189C", "units": 3, "self_learnable": false, "position_x": 1480, "position_y": 200 },
-    { "id": "career-design", "node_type": "career", "label": "Design engineer", "self_learnable": false, "position_x": 1680, "position_y": 80 },
-    { "id": "career-aero", "node_type": "career", "label": "Aerospace", "self_learnable": false, "position_x": 1680, "position_y": 200 },
-    { "id": "career-robotics", "node_type": "career", "label": "Robotics", "self_learnable": false, "position_x": 1680, "position_y": 320 },
-    { "id": "career-energy", "node_type": "career", "label": "Thermal / energy", "self_learnable": false, "position_x": 1680, "position_y": 440 }
+    { "id": "me-10", "node_type": "course", "label": "ME 10", "title": "Introduction to Mechanical Engineering", "units": 4, "self_learnable": false, "position_x": 80, "position_y": 120 },
+    { "id": "me-12s", "node_type": "course", "label": "ME 12S", "title": "Machine Shop Skills", "units": 1, "self_learnable": false, "position_x": 80, "position_y": 280 },
+    { "id": "me-14", "node_type": "course", "label": "ME 14", "title": "Statics", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 120 },
+    { "id": "me-15", "node_type": "course", "label": "ME 15", "title": "Dynamics", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 280 },
+    { "id": "me-16", "node_type": "course", "label": "ME 16", "title": "Strength of Materials", "units": 4, "self_learnable": false, "position_x": 480, "position_y": 200 },
+    { "id": "me-103", "node_type": "course", "label": "ME 103", "title": "Thermodynamics", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 120 },
+    { "id": "me-104", "node_type": "course", "label": "ME 104", "title": "Heat Transfer", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 280 },
+    { "id": "me-151a", "node_type": "course", "label": "ME 151A", "title": "Mechanical Engineering Design I", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 120 },
+    { "id": "me-151b", "node_type": "course", "label": "ME 151B", "title": "Mechanical Engineering Design II", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 280 },
+    { "id": "me-152a", "node_type": "course", "label": "ME 152A", "title": "Dynamic Systems and Control", "units": 4, "self_learnable": false, "position_x": 1080, "position_y": 200 },
+    { "id": "me-156a", "node_type": "course", "label": "ME 156A", "title": "Mechanical Engineering Design III", "units": 3, "self_learnable": false, "position_x": 1280, "position_y": 120 },
+    {
+      "id": "me-189a",
+      "node_type": "course",
+      "label": "ME 189A",
+      "title": "ME Capstone Design Project I",
+      "description": "First quarter of senior capstone: team selects an engineering design challenge, develops project plan and preliminary design under faculty advisor.",
+      "units": 3,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 1 },
+      "resources": [
+        { "name": "ME Capstone Projects", "url": "https://me.ucsb.edu/undergraduate/academics/capstone-projects" },
+        { "name": "COE Engineering Design Expo", "url": "https://capstone.engineering.ucsb.edu" }
+      ],
+      "position_x": 1280,
+      "position_y": 280
+    },
+    {
+      "id": "me-189b",
+      "node_type": "course",
+      "label": "ME 189B",
+      "title": "ME Capstone Design Project II",
+      "description": "Second quarter: hands-on prototyping, design iteration, and engineering communication through reports and presentations.",
+      "units": 3,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 2 },
+      "resources": [
+        { "name": "ME Capstone Projects", "url": "https://me.ucsb.edu/undergraduate/academics/capstone-projects" }
+      ],
+      "position_x": 1480,
+      "position_y": 280
+    },
+    {
+      "id": "me-189c",
+      "node_type": "course",
+      "label": "ME 189C",
+      "title": "ME Capstone Design Project III",
+      "description": "Final quarter: complete build, testing, and public presentation of the capstone design at the COE Engineering Design Expo.",
+      "units": 3,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 3 },
+      "resources": [
+        { "name": "COE Engineering Design Expo", "url": "https://capstone.engineering.ucsb.edu" }
+      ],
+      "position_x": 1680,
+      "position_y": 280
+    },
+    { "id": "career-design", "node_type": "career", "label": "Design engineer", "title": "Mechanical design engineer", "self_learnable": false, "position_x": 1880, "position_y": 80 },
+    { "id": "career-aero", "node_type": "career", "label": "Aerospace", "title": "Aerospace engineering", "self_learnable": false, "position_x": 1880, "position_y": 200 },
+    { "id": "career-robotics", "node_type": "career", "label": "Robotics", "title": "Robotics & automation", "self_learnable": false, "position_x": 1880, "position_y": 320 },
+    { "id": "career-energy", "node_type": "career", "label": "Thermal / energy", "title": "Thermal & energy systems", "self_learnable": false, "position_x": 1880, "position_y": 440 }
   ],
   "edges": [
     { "id": "e1", "source_id": "me-10", "target_id": "me-14", "edge_type": "prerequisite" },
@@ -36,10 +85,13 @@
     { "id": "e8", "source_id": "me-151b", "target_id": "me-152a", "edge_type": "prerequisite" },
     { "id": "e9", "source_id": "me-152a", "target_id": "me-156a", "edge_type": "prerequisite" },
     { "id": "e10", "source_id": "me-156a", "target_id": "me-189a", "edge_type": "prerequisite" },
-    { "id": "e11", "source_id": "me-189a", "target_id": "me-189c", "edge_type": "prerequisite" },
-    { "id": "e12", "source_id": "me-189c", "target_id": "career-design", "edge_type": "leads_to" },
-    { "id": "e13", "source_id": "me-151b", "target_id": "career-aero", "edge_type": "leads_to" },
-    { "id": "e14", "source_id": "me-152a", "target_id": "career-robotics", "edge_type": "leads_to" },
-    { "id": "e15", "source_id": "me-104", "target_id": "career-energy", "edge_type": "leads_to" }
+    { "id": "e11", "source_id": "me-189a", "target_id": "me-189b", "edge_type": "prerequisite" },
+    { "id": "e12", "source_id": "me-189b", "target_id": "me-189c", "edge_type": "prerequisite" },
+    { "id": "e13", "source_id": "me-189c", "target_id": "career-design", "edge_type": "leads_to" },
+    { "id": "e14", "source_id": "me-151b", "target_id": "career-aero", "edge_type": "leads_to" },
+    { "id": "e15", "source_id": "me-152a", "target_id": "career-robotics", "edge_type": "leads_to" },
+    { "id": "e16", "source_id": "me-104", "target_id": "career-energy", "edge_type": "leads_to" },
+    { "id": "e17", "source_id": "me-189c", "target_id": "career-aero", "edge_type": "leads_to" },
+    { "id": "e18", "source_id": "me-189c", "target_id": "career-robotics", "edge_type": "leads_to" }
   ]
 }

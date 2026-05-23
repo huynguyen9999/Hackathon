@@ -4,22 +4,55 @@
   "metadata": {
     "source": "UCSB GEAR 2025-2026",
     "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
-    "gear_page": 14
+    "gear_page": 14,
+    "capstone": {
+      "required": true,
+      "courses": ["CH E 184A", "CH E 184B"],
+      "source_url": "https://capstone.engineering.ucsb.edu"
+    }
   },
   "nodes": [
-    { "id": "che-5", "node_type": "course", "label": "CH E 5", "units": 3, "self_learnable": false, "position_x": 80, "position_y": 80 },
-    { "id": "chem-3a", "node_type": "course", "label": "CHEM 3A", "units": 4, "self_learnable": false, "position_x": 80, "position_y": 200 },
-    { "id": "math-3a", "node_type": "course", "label": "MATH 3A", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 80 },
-    { "id": "che-10", "node_type": "course", "label": "CH E 10", "units": 3, "self_learnable": false, "position_x": 280, "position_y": 200 },
-    { "id": "che-107", "node_type": "course", "label": "CH E 107", "units": 3, "self_learnable": false, "position_x": 480, "position_y": 120 },
-    { "id": "che-110a", "node_type": "course", "label": "CH E 110A", "units": 3, "self_learnable": false, "position_x": 480, "position_y": 240 },
-    { "id": "che-110b", "node_type": "course", "label": "CH E 110B", "units": 3, "self_learnable": false, "position_x": 680, "position_y": 120 },
-    { "id": "che-120a", "node_type": "course", "label": "CH E 120A", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 240 },
-    { "id": "che-132a", "node_type": "course", "label": "CH E 132A", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 120 },
-    { "id": "che-140a", "node_type": "course", "label": "CH E 140A", "units": 3, "self_learnable": false, "position_x": 880, "position_y": 240 },
-    { "id": "che-180a", "node_type": "course", "label": "CH E 180A", "units": 3, "self_learnable": false, "position_x": 1080, "position_y": 120 },
-    { "id": "che-184a", "node_type": "course", "label": "CH E 184A", "units": 3, "self_learnable": false, "position_x": 1080, "position_y": 240 },
-    { "id": "che-184b", "node_type": "course", "label": "CH E 184B", "units": 3, "self_learnable": false, "position_x": 1280, "position_y": 180 },
+    { "id": "che-5", "node_type": "course", "label": "CH E 5", "title": "Introduction to Chemical Engineering", "units": 3, "self_learnable": false, "position_x": 80, "position_y": 80 },
+    { "id": "chem-3a", "node_type": "course", "label": "CHEM 3A", "title": "General Chemistry", "units": 4, "self_learnable": false, "position_x": 80, "position_y": 200 },
+    { "id": "math-3a", "node_type": "course", "label": "MATH 3A", "title": "Calculus I", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 80 },
+    { "id": "che-10", "node_type": "course", "label": "CH E 10", "title": "Chemical Process Calculations", "units": 3, "self_learnable": false, "position_x": 280, "position_y": 200 },
+    { "id": "che-107", "node_type": "course", "label": "CH E 107", "title": "Transport Phenomena I", "units": 3, "self_learnable": false, "position_x": 480, "position_y": 120 },
+    { "id": "che-110a", "node_type": "course", "label": "CH E 110A", "title": "Chemical Engineering Thermodynamics I", "units": 3, "self_learnable": false, "position_x": 480, "position_y": 240 },
+    { "id": "che-110b", "node_type": "course", "label": "CH E 110B", "title": "Chemical Engineering Thermodynamics II", "units": 3, "self_learnable": false, "position_x": 680, "position_y": 120 },
+    { "id": "che-120a", "node_type": "course", "label": "CH E 120A", "title": "Chemical Reaction Engineering", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 240 },
+    { "id": "che-132a", "node_type": "course", "label": "CH E 132A", "title": "Separation Processes", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 120 },
+    { "id": "che-140a", "node_type": "course", "label": "CH E 140A", "title": "Process Dynamics and Control", "units": 3, "self_learnable": false, "position_x": 880, "position_y": 240 },
+    { "id": "che-180a", "node_type": "course", "label": "CH E 180A", "title": "Chemical Engineering Laboratory I", "units": 3, "self_learnable": false, "position_x": 1080, "position_y": 120 },
+    {
+      "id": "che-184a",
+      "node_type": "course",
+      "label": "CH E 184A",
+      "title": "Senior Chemical Engineering Design I",
+      "description": "First quarter of senior design capstone: team selects a process design problem, develops feasibility analysis and preliminary design.",
+      "units": 3,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 1 },
+      "resources": [
+        { "name": "COE Engineering Design Expo", "url": "https://capstone.engineering.ucsb.edu" }
+      ],
+      "position_x": 1080,
+      "position_y": 240
+    },
+    {
+      "id": "che-184b",
+      "node_type": "course",
+      "label": "CH E 184B",
+      "title": "Senior Chemical Engineering Design II",
+      "description": "Second quarter: complete detailed process design, economic analysis, safety review, and capstone presentation.",
+      "units": 3,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 2 },
+      "resources": [
+        { "name": "COE Engineering Design Expo", "url": "https://capstone.engineering.ucsb.edu" }
+      ],
+      "position_x": 1280,
+      "position_y": 180
+    },
     { "id": "career-process", "node_type": "career", "label": "Process engineer", "title": "Process / plant engineering", "self_learnable": false, "position_x": 1480, "position_y": 80 },
     { "id": "career-pharma", "node_type": "career", "label": "Pharma / biotech", "title": "Biotech & pharmaceuticals", "self_learnable": false, "position_x": 1480, "position_y": 200 },
     { "id": "career-energy", "node_type": "career", "label": "Energy engineer", "title": "Energy & sustainability", "self_learnable": false, "position_x": 1480, "position_y": 320 },

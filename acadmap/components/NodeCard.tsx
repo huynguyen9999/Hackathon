@@ -77,6 +77,19 @@ export function NodeCard({ data, selected }: NodeProps<CourseNode>) {
         </p>
       )}
 
+      {data.nodeMetadata?.role === "capstone" && (
+        <div className="mb-2 flex flex-wrap items-center gap-1.5">
+          <span className="rounded-full bg-indigo-500/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-indigo-800 ring-1 ring-indigo-400/30 dark:text-indigo-200">
+            Capstone
+          </span>
+          {data.nodeMetadata.optional ? (
+            <span className="rounded-full bg-slate-500/10 px-2 py-0.5 text-[10px] font-medium text-slate-600 ring-1 ring-slate-400/30 dark:text-slate-300">
+              Optional
+            </span>
+          ) : null}
+        </div>
+      )}
+
       {data.selfLearnable && (
         <div
           className="flex items-center gap-1.5 text-[11px] text-emerald-700 dark:text-emerald-300/90"

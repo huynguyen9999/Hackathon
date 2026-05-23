@@ -1,5 +1,6 @@
 import { layoutRoadmapNodes } from "@/lib/roadmap-layout";
 import type {
+  CourseNodeMetadata,
   EdgeType,
   FlowEdge,
   FlowNode,
@@ -7,6 +8,17 @@ import type {
   RoadmapNode,
   Resource,
 } from "@/lib/types";
+
+function parseCourseNodeMetadata(
+  metadata: Record<string, unknown> | undefined,
+): CourseNodeMetadata | undefined {
+  if (!metadata || metadata.role !== "capstone") return undefined;
+  return {
+    role: "capstone",
+    optional: metadata.optional === true,
+    sequence: typeof metadata.sequence === "number" ? metadata.sequence : undefined,
+  };
+}
 
 const EDGE_TYPE_LABELS: Record<EdgeType, string> = {
   prerequisite: "Prerequisite",
@@ -49,6 +61,7 @@ export function roadmapNodeToFlowNode(node: RoadmapNode): FlowNode | null {
       units: node.units ?? 0,
       selfLearnable: node.self_learnable,
       resources,
+      nodeMetadata: parseCourseNodeMetadata(node.metadata),
     },
   };
 }

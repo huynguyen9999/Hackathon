@@ -12,7 +12,13 @@
   "metadata": {
     "source": "UCSB GEAR 2025-2026",
     "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
-    "gear_page": 18
+    "gear_page": 18,
+    "graduation_notes": "BS Computer Science can be completed in as few as 9 quarters (3 years). CMPSC 189A-B is an optional major-field elective—not required to graduate.",
+    "capstone": {
+      "required": false,
+      "courses": ["CMPSC 189A", "CMPSC 189B"],
+      "source_url": "https://capstone.cs.ucsb.edu/"
+    }
   },
   "nodes": [
     {
@@ -129,12 +135,31 @@
       "id": "cmpsc-189a",
       "node_type": "course",
       "label": "CMPSC 189A",
-      "title": "Senior Computer Systems Project",
-      "description": "Capstone team project in computer systems: specification, design, and initial implementation of a substantial software system.",
+      "title": "Senior CS Capstone I",
+      "description": "Optional 2-quarter industry capstone elective (Fall): team software project with industry sponsor—not required to graduate.",
       "units": 4,
       "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 1, "optional": true },
+      "resources": [
+        { "name": "UCSB CS Capstone", "url": "https://capstone.cs.ucsb.edu/" }
+      ],
       "position_x": 1880,
-      "position_y": 180
+      "position_y": 480
+    },
+    {
+      "id": "cmpsc-189b",
+      "node_type": "course",
+      "label": "CMPSC 189B",
+      "title": "Senior CS Capstone II",
+      "description": "Optional capstone elective (Winter): complete and present the team project at CS Capstone Day.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "role": "capstone", "sequence": 2, "optional": true },
+      "resources": [
+        { "name": "UCSB CS Capstone", "url": "https://capstone.cs.ucsb.edu/" }
+      ],
+      "position_x": 2180,
+      "position_y": 480
     },
     {
       "id": "engr-101",
@@ -145,7 +170,7 @@
       "units": 3,
       "self_learnable": false,
       "position_x": 1880,
-      "position_y": 420
+      "position_y": 180
     },
     {
       "id": "career-swe",
@@ -197,11 +222,14 @@
     { "id": "e6", "source_id": "cmpsc-130a", "target_id": "cmpsc-130b", "edge_type": "prerequisite" },
     { "id": "e7", "source_id": "cmpsc-130a", "target_id": "cmpsc-156", "edge_type": "prerequisite" },
     { "id": "e8", "source_id": "cmpsc-130b", "target_id": "cmpsc-170", "edge_type": "prerequisite" },
-    { "id": "e9", "source_id": "cmpsc-156", "target_id": "cmpsc-189a", "edge_type": "prerequisite" },
+    { "id": "e9", "source_id": "cmpsc-156", "target_id": "cmpsc-189a", "edge_type": "recommended" },
+    { "id": "e9b", "source_id": "cmpsc-189a", "target_id": "cmpsc-189b", "edge_type": "prerequisite" },
     { "id": "e10", "source_id": "cmpsc-170", "target_id": "career-swe", "edge_type": "leads_to" },
     { "id": "e11", "source_id": "pstat-120a", "target_id": "career-ml", "edge_type": "leads_to" },
     { "id": "e12", "source_id": "cmpsc-156", "target_id": "career-security", "edge_type": "leads_to" },
-    { "id": "e13", "source_id": "cmpsc-189a", "target_id": "career-grad", "edge_type": "leads_to" },
-    { "id": "e14", "source_id": "cmpsc-64", "target_id": "cmpsc-130a", "edge_type": "recommended" }
+    { "id": "e13", "source_id": "cmpsc-130b", "target_id": "career-grad", "edge_type": "leads_to" },
+    { "id": "e14", "source_id": "cmpsc-64", "target_id": "cmpsc-130a", "edge_type": "recommended" },
+    { "id": "e15", "source_id": "cmpsc-189b", "target_id": "career-swe", "edge_type": "leads_to" },
+    { "id": "e16", "source_id": "cmpsc-156", "target_id": "career-swe", "edge_type": "leads_to" }
   ]
 }

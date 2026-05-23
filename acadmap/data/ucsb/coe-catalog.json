@@ -83,6 +83,8 @@
         "Power Electronics Engineer",
         "Signal Processing Engineer"
       ],
+      "senior_capstone": "ECE 188A-B-C (required)",
+      "capstone_url": "https://www.ece.ucsb.edu/undergrad/curriculum/senior-projects",
       "detail_available": true,
       "requirements_level": "roadmap"
     },
@@ -161,7 +163,7 @@
         "ENGR 101"
       ],
       "departmental_electives_units": 56,
-      "departmental_electives_note": "14 Major Field Electives (at least 7 must be CMPSC). Science electives: 8 units List A + 12 units List B.",
+      "departmental_electives_note": "14 Major Field Electives (at least 7 must be CMPSC). Science electives: 8 units List A + 12 units List B. CMPSC 189A-B is an optional capstone elective—not required; many students graduate in 3 years.",
       "sample_electives": [
         "CMPSC 156",
         "CMPSC 170",

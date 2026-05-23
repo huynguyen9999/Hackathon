@@ -28,7 +28,7 @@ From the ECE typical GRID (2024–2025):
 3. **Year 3:** ECE 15A · ECE 152A · ECE 134 · ECE 139 · electives
 4. **Year 4:** ECE 153A · ECE 188A/B/C (senior project) · ENGR 101
 
-**Example catalog prerequisite:** ECE 154A requires ECE 152A (min C-) — [catalog.ucsb.edu](https://catalog.ucsb.edu/courses/ECE%20154A)
+See **[COE-CAPSTONES.md](./COE-CAPSTONES.md)** for per-major capstone sequences, prerequisites, and the CS optional-capstone exception.
 
 ## Agent next steps
 
