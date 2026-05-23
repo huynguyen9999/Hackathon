@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { CollegeBanner } from "@/components/CollegeBanner";
 import { MajorCatalogGrid } from "@/components/MajorCatalogGrid";
+import { GradProgramCard } from "@/components/graduate/GradProgramCard";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { SchoolHero } from "@/components/SchoolHero";
 import { SourceList } from "@/components/SourceList";
@@ -15,6 +16,10 @@ import {
   getSchoolConfig,
   schoolHasCollege,
 } from "@/lib/schools/registry";
+import {
+  getGradProgram,
+  listGradPrograms,
+} from "@/lib/ucsb-grad-programs";
 
 type PageProps = {
   params: { school: string };
@@ -50,6 +55,17 @@ export default async function EngineeringHubPage({ params }: PageProps) {
   const badgeLabel = isUcla ? "Announcement" : "GEAR";
   const ctaLabel = isUcla ? "View requirements" : "View GEAR plan";
   const dataPath = `data/${shortName}/coe-catalog.json`;
+  const gradPrograms =
+    shortName === "ucsb" ? await listGradPrograms() : [];
+  const gradProgramDetails =
+    shortName === "ucsb"
+      ? await Promise.all(
+          gradPrograms.map(async (program) => ({
+            program,
+            detail: await getGradProgram(program.slug),
+          })),
+        )
+      : [];
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
@@ -104,6 +120,37 @@ export default async function EngineeringHubPage({ params }: PageProps) {
             showRequirementsLevel
           />
         </section>
+
+        {gradProgramDetails.length > 0 && (
+          <section>
+            <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
+                  Graduate engineering (MS & PhD)
+                </h2>
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+                  Interactive roadmaps for CoE graduate programs.
+                </p>
+              </div>
+              <Link
+                href="/schools/ucsb/graduate"
+                className="text-sm font-medium text-violet-700 transition hover:text-violet-900 dark:text-violet-200"
+              >
+                Full graduate hub →
+              </Link>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              {gradProgramDetails.map(({ program, detail }) => (
+                <GradProgramCard
+                  key={program.slug}
+                  program={program}
+                  detail={detail}
+                  compact
+                />
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="grid gap-6 lg:grid-cols-2">
           <SourceList sources={catalog.sources} />

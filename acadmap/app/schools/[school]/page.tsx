@@ -12,6 +12,7 @@ import {
 } from "@/lib/ucsb-paths";
 import { loadUcsbCcsCatalog } from "@/lib/ucsb-ccs";
 import { loadUcsbLsCatalog } from "@/lib/ucsb-ls";
+import { getGradHubStats } from "@/lib/ucsb-grad-programs";
 import {
   getSchoolConfig,
   listActiveSchools,
@@ -59,6 +60,8 @@ export default async function SchoolHubPage({ params }: PageProps) {
   }
 
   const communityData = await loadCommunityHubData(school);
+  const gradStats =
+    school === "ucsb" ? await getGradHubStats() : null;
 
   const collegeStats = await Promise.all(
     config.colleges.map(async (college) => {
@@ -94,9 +97,33 @@ export default async function SchoolHubPage({ params }: PageProps) {
 
       <SchoolHubCommunity schoolShortName={school} data={communityData} />
 
+      {gradStats && (
+        <section className="mt-14">
+          <Link
+            href="/schools/ucsb/graduate"
+            className="card-glow group flex flex-col rounded-xl border-2 border-violet-500/30 bg-gradient-to-br from-violet-50/80 to-white p-8 transition hover:border-violet-500/50 dark:from-violet-950/25 dark:to-gaucho-blue-dark/40"
+          >
+            <p className="text-xs font-bold uppercase tracking-wider text-violet-700 dark:text-violet-200">
+              Graduate Division · MS & PhD
+            </p>
+            <h2 className="mt-2 text-2xl font-bold text-gaucho-blue group-hover:text-violet-700 dark:text-white dark:group-hover:text-violet-200">
+              Graduate programs
+            </h2>
+            <p className="mt-3 max-w-2xl flex-1 text-sm text-slate-600 dark:text-slate-400">
+              {gradStats.departmentCount} departments from the official Graduate
+              Division index, {gradStats.roadmapCount} interactive CoE roadmaps,
+              and a graduate-level course catalog.
+            </p>
+            <p className="mt-4 text-sm font-medium text-violet-700 dark:text-violet-200">
+              Open graduate hub →
+            </p>
+          </Link>
+        </section>
+      )}
+
       <section className="mt-14">
         <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
-          Choose your college
+          Undergraduate colleges
         </h2>
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
           Browse official requirements and interactive roadmaps by college.
@@ -127,23 +154,6 @@ export default async function SchoolHubPage({ params }: PageProps) {
           ))}
         </div>
       </section>
-
-      {school === "ucsb" && (
-        <section className="mt-14">
-          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
-            Graduate programs
-          </h2>
-          <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-            MS and PhD roadmaps for key engineering departments.
-          </p>
-          <Link
-            href="/schools/ucsb/graduate"
-            className="mt-4 inline-flex rounded-lg border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-800 transition hover:bg-violet-500/20 dark:text-violet-200"
-          >
-            View graduate hub →
-          </Link>
-        </section>
-      )}
     </div>
   );
 }

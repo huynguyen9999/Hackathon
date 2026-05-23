@@ -7,6 +7,7 @@ export const COLLEGE_LABELS: Record<
   engineering: "College of Engineering",
   "letters-science": "Letters & Science",
   "creative-studies": "Creative Studies",
+  graduate: "Graduate Division",
 };
 
 export function getUniqueDepartments(majors: ExploreMajor[]): string[] {

@@ -23,6 +23,11 @@ const LANES: {
     title: "Selective programs",
     description: "CCS and competitive majors with separate admission requirements.",
   },
+  {
+    id: "grad-school",
+    title: "Grad school at UCSB",
+    description: "MS and PhD programs with interactive CoE roadmaps and grad catalog links.",
+  },
 ];
 
 export type ExploreGoalLanesProps = {
@@ -35,7 +40,7 @@ export function ExploreGoalLanes({
   onSelectLane,
 }: ExploreGoalLanesProps) {
   return (
-    <section className="mb-8 grid gap-3 sm:grid-cols-3">
+    <section className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
       {LANES.map((lane) => {
         const active = activeLane === lane.id;
         return (

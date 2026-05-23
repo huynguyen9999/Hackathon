@@ -11,6 +11,7 @@ const COLLEGE_OPTIONS: { value: ExploreCollege; label: string }[] = [
   { value: "engineering", label: "Engineering" },
   { value: "letters-science", label: "L&S" },
   { value: "creative-studies", label: "CCS" },
+  { value: "graduate", label: "Graduate" },
 ];
 
 const EXPERIENCE_OPTIONS: { value: ExperienceType; label: string }[] = [

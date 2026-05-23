@@ -53,6 +53,11 @@ export function ExploreMajorCard({
         <span className="rounded bg-gaucho-blue/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold-light">
           {major.collegeLabel}
         </span>
+        {major.programLevel === "graduate" && (
+          <span className="rounded bg-violet-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-violet-700 dark:text-violet-200">
+            Graduate
+          </span>
+        )}
         <span className="rounded bg-slate-100 px-2 py-0.5 text-[10px] font-semibold text-slate-600 dark:bg-gaucho-blue/30 dark:text-slate-300">
           {major.degreeType}
         </span>

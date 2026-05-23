@@ -72,6 +72,21 @@ export default async function UcsbCoursesPage({ searchParams }: PageProps) {
         }
       />
 
+      {level === "G" && (
+        <div className="mb-6 rounded-lg border border-violet-500/30 bg-violet-50 px-4 py-3 dark:bg-violet-950/30">
+          <p className="text-sm text-violet-900 dark:text-violet-100">
+            Exploring graduate-level courses?{" "}
+            <Link
+              href="/schools/ucsb/graduate"
+              className="font-semibold underline underline-offset-2"
+            >
+              View MS/PhD program roadmaps and the full department index
+            </Link>
+            .
+          </p>
+        </div>
+      )}
+
       <Suspense
         fallback={
           <p className="text-sm text-slate-600 dark:text-slate-400">

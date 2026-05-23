@@ -60,6 +60,36 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <section className="border-b border-violet-500/20 bg-gradient-to-r from-violet-50 to-white dark:from-violet-950/30 dark:to-gaucho-blue-dark/40">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-violet-700 dark:text-violet-200">
+              UCSB Graduate
+            </p>
+            <h2 className="mt-1 text-xl font-semibold text-gaucho-blue dark:text-white">
+              Planning MS or PhD at UCSB?
+            </h2>
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+              50+ departments · 5 interactive CoE roadmaps · grad course catalog
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/schools/ucsb/graduate"
+              className="rounded-lg bg-violet-600 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-violet-700"
+            >
+              Graduate hub
+            </Link>
+            <Link
+              href="/schools/ucsb/courses?level=G"
+              className="rounded-lg border border-violet-500/30 px-4 py-2.5 text-sm font-medium text-violet-800 transition hover:bg-violet-500/10 dark:text-violet-200"
+            >
+              Browse grad courses
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">
           School hubs

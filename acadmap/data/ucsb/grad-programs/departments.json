@@ -1,0 +1,448 @@
+{
+  "divisions": [
+    { "id": "engineering", "label": "College of Engineering" },
+    { "id": "letters-science", "label": "Letters & Science" },
+    { "id": "creative-studies", "label": "College of Creative Studies" },
+    { "id": "education", "label": "Gevirtz Graduate School of Education" },
+    { "id": "bren", "label": "Bren School of Environmental Science & Management" },
+    { "id": "interdisciplinary", "label": "Interdisciplinary & Joint Programs" }
+  ],
+  "departments": [
+    {
+      "name": "Electrical & Computer Engineering",
+      "subjectCode": "ECE",
+      "division": "engineering",
+      "official_url": "https://www.ece.ucsb.edu/grad",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/electrical-computer-engineering",
+      "degrees": ["MS", "PhD"],
+      "roadmap_slug": "electrical-engineering-ms"
+    },
+    {
+      "name": "Computer Science",
+      "subjectCode": "CMPSC",
+      "division": "engineering",
+      "official_url": "https://www.cs.ucsb.edu/education/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/computer-science",
+      "degrees": ["MS", "PhD"],
+      "roadmap_slugs": ["computer-science-ms", "computer-science-phd"]
+    },
+    {
+      "name": "Mechanical Engineering",
+      "subjectCode": "ME",
+      "division": "engineering",
+      "official_url": "https://www.me.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/mechanical-engineering",
+      "degrees": ["MS", "PhD"],
+      "roadmap_slug": "mechanical-engineering-ms"
+    },
+    {
+      "name": "Chemical Engineering",
+      "subjectCode": "CH E",
+      "division": "engineering",
+      "official_url": "https://www.che.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/chemical-engineering",
+      "degrees": ["MS", "PhD"],
+      "roadmap_slug": "chemical-engineering-ms"
+    },
+    {
+      "name": "Materials",
+      "subjectCode": "MATRL",
+      "division": "engineering",
+      "official_url": "https://www.materials.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/materials",
+      "degrees": ["MS", "PhD"]
+    },
+    {
+      "name": "Anthropology",
+      "subjectCode": "ANTH",
+      "division": "letters-science",
+      "official_url": "https://www.anth.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/anthropology",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Applied Psychology",
+      "subjectCode": "AP",
+      "division": "letters-science",
+      "official_url": "https://www.psych.ucsb.edu/graduate/applied-psychology",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/applied-psychology",
+      "degrees": ["PhD"]
+    },
+    {
+      "name": "Art",
+      "subjectCode": "ART",
+      "division": "letters-science",
+      "official_url": "https://www.arts.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/art",
+      "degrees": ["MFA", "MA", "PhD"]
+    },
+    {
+      "name": "Asian American Studies",
+      "subjectCode": "AS AM",
+      "division": "letters-science",
+      "official_url": "https://www.asam.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/asian-american-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Biochemistry & Molecular Biology",
+      "subjectCode": "BMSE",
+      "division": "letters-science",
+      "official_url": "https://www.bmse.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/biochemistry-molecular-biology",
+      "degrees": ["MS", "PhD"]
+    },
+    {
+      "name": "Black Studies",
+      "subjectCode": "BL ST",
+      "division": "letters-science",
+      "official_url": "https://www.blackstudies.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/black-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Chemistry",
+      "subjectCode": "CHEM",
+      "division": "letters-science",
+      "official_url": "https://www.chem.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/chemistry",
+      "degrees": ["MS", "PhD"]
+    },
+    {
+      "name": "Chicana and Chicano Studies",
+      "subjectCode": "CH ST",
+      "division": "letters-science",
+      "official_url": "https://www.chicst.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/chicana-and-chicano-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Classics",
+      "subjectCode": "CLASS",
+      "division": "letters-science",
+      "official_url": "https://www.classics.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/classics",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Communication",
+      "subjectCode": "COMM",
+      "division": "letters-science",
+      "official_url": "https://www.comm.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/communication",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Comparative Literature",
+      "subjectCode": "C LIT",
+      "division": "letters-science",
+      "official_url": "https://www.complit.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/comparative-literature",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Counseling, Clinical & School Psychology",
+      "subjectCode": "ED",
+      "division": "education",
+      "official_url": "https://education.ucsb.edu/academic-programs/dept-of-counseling-clinical-school-psychology/grad-programs/overview",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/counseling-clinical-school-psychology",
+      "degrees": ["PhD", "MEd"]
+    },
+    {
+      "name": "Dynamical Neuroscience",
+      "subjectCode": "DYN",
+      "division": "interdisciplinary",
+      "official_url": "https://www.dynamicalneuroscience.ucsb.edu/",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/dynamical-neuroscience",
+      "degrees": ["PhD"]
+    },
+    {
+      "name": "Earth Science",
+      "subjectCode": "EARTH",
+      "division": "letters-science",
+      "official_url": "https://www.earth.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/earth-science",
+      "degrees": ["MS", "PhD"]
+    },
+    {
+      "name": "East Asian Languages and Cultural Studies",
+      "subjectCode": "EACS",
+      "division": "letters-science",
+      "official_url": "https://www.eastasian.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/east-asian-languages-and-cultural-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Ecology, Evolution & Marine Biology",
+      "subjectCode": "EEMB",
+      "division": "letters-science",
+      "official_url": "https://www.eemb.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/ecology-evolution-marine-biology",
+      "degrees": ["MS", "PhD"]
+    },
+    {
+      "name": "Economics",
+      "subjectCode": "ECON",
+      "division": "letters-science",
+      "official_url": "https://www.econ.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/economics",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Education — Teacher Education Program",
+      "subjectCode": "ED",
+      "division": "education",
+      "official_url": "https://education.ucsb.edu/academic-programs/teacher-education-program",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/education-teacher-education-program",
+      "degrees": ["MEd", "Credential"]
+    },
+    {
+      "name": "English",
+      "subjectCode": "ENGL",
+      "division": "letters-science",
+      "official_url": "https://www.english.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/english",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Environmental Science & Management (Bren School)",
+      "subjectCode": "ESM",
+      "division": "bren",
+      "official_url": "https://bren.ucsb.edu/academics",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/environmental-science-management-bren-school",
+      "degrees": ["MESM", "PhD"]
+    },
+    {
+      "name": "Feminist Studies",
+      "subjectCode": "FEMST",
+      "division": "letters-science",
+      "official_url": "https://www.femst.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/feminist-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Film and Media Studies",
+      "subjectCode": "FILM",
+      "division": "letters-science",
+      "official_url": "https://www.filmandmedia.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/film-and-media-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "French and Francophone Studies",
+      "subjectCode": "FR",
+      "division": "letters-science",
+      "official_url": "https://www.french.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/french-and-francophone-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Geography",
+      "subjectCode": "GEOG",
+      "division": "letters-science",
+      "official_url": "https://www.geog.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/geography",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Geography, Joint Program SDSU",
+      "subjectCode": "GEOG",
+      "division": "interdisciplinary",
+      "official_url": "https://www.geog.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/geography-joint-program-sdsu",
+      "degrees": ["PhD"]
+    },
+    {
+      "name": "Germanic and Slavic Studies",
+      "subjectCode": "GER",
+      "division": "letters-science",
+      "official_url": "https://www.german.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/germanic-and-slavic-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Global Studies",
+      "subjectCode": "GLOBL",
+      "division": "letters-science",
+      "official_url": "https://www.global.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/global-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Hispanic Languages and Literatures",
+      "subjectCode": "SPAN",
+      "division": "letters-science",
+      "official_url": "https://www.spanport.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/hispanic-languages-and-literatures",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "History",
+      "subjectCode": "HIST",
+      "division": "letters-science",
+      "official_url": "https://www.history.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/history",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "History of Art and Architecture",
+      "subjectCode": "HIST",
+      "division": "letters-science",
+      "official_url": "https://www.arthistory.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/history-art-and-architecture",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "History, Joint Program CSUS",
+      "subjectCode": "HIST",
+      "division": "interdisciplinary",
+      "official_url": "https://www.history.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/history-joint-program-csus",
+      "degrees": ["PhD"]
+    },
+    {
+      "name": "Interdisciplinary Program in Quantitative Biosciences",
+      "subjectCode": "BMSE",
+      "division": "interdisciplinary",
+      "official_url": "https://www.bmse.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/interdisciplinary-program-quantitative-biosciences",
+      "degrees": ["PhD"]
+    },
+    {
+      "name": "Latin American and Iberian Studies",
+      "subjectCode": "LAIS",
+      "division": "letters-science",
+      "official_url": "https://www.lais.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/latin-american-and-iberian-studies",
+      "degrees": ["MA"]
+    },
+    {
+      "name": "Linguistics",
+      "subjectCode": "LING",
+      "division": "letters-science",
+      "official_url": "https://www.linguistics.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/linguistics",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Marine Science",
+      "subjectCode": "MS",
+      "division": "letters-science",
+      "official_url": "https://www.msi.ucsb.edu/education/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/marine-science",
+      "degrees": ["MS", "PhD"]
+    },
+    {
+      "name": "Mathematics",
+      "subjectCode": "MATH",
+      "division": "letters-science",
+      "official_url": "https://www.math.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/mathematics",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Media Arts and Technology",
+      "subjectCode": "MAT",
+      "division": "interdisciplinary",
+      "official_url": "https://www.mat.ucsb.edu/",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/media-arts-and-technology",
+      "degrees": ["MS", "PhD"]
+    },
+    {
+      "name": "Molecular, Cellular & Developmental Biology",
+      "subjectCode": "MCDB",
+      "division": "letters-science",
+      "official_url": "https://www.mcdb.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/molecular-cellular-developmental-biology",
+      "degrees": ["MS", "PhD"]
+    },
+    {
+      "name": "Music",
+      "subjectCode": "MUS",
+      "division": "letters-science",
+      "official_url": "https://www.music.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/music",
+      "degrees": ["MA", "MM", "PhD"]
+    },
+    {
+      "name": "Philosophy",
+      "subjectCode": "PHIL",
+      "division": "letters-science",
+      "official_url": "https://www.philosophy.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/philosophy",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Physics",
+      "subjectCode": "PHYS",
+      "division": "letters-science",
+      "official_url": "https://www.physics.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/physics",
+      "degrees": ["MS", "PhD"]
+    },
+    {
+      "name": "Political Science",
+      "subjectCode": "POL S",
+      "division": "letters-science",
+      "official_url": "https://www.polsci.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/political-science",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Psychological & Brain Sciences",
+      "subjectCode": "PSY",
+      "division": "letters-science",
+      "official_url": "https://www.psych.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/psychological-brain-sciences",
+      "degrees": ["PhD"]
+    },
+    {
+      "name": "Religious Studies",
+      "subjectCode": "RG ST",
+      "division": "letters-science",
+      "official_url": "https://www.religion.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/religious-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Sociology",
+      "subjectCode": "SOC",
+      "division": "letters-science",
+      "official_url": "https://www.soc.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/sociology",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Statistics and Applied Probability",
+      "subjectCode": "PSTAT",
+      "division": "letters-science",
+      "official_url": "https://www.pstat.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/statistics-and-applied-probability",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Technology Management",
+      "subjectCode": "TMP",
+      "division": "interdisciplinary",
+      "official_url": "https://tmp.ucsb.edu/academics",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/technology-management",
+      "degrees": ["MTM", "PhD"]
+    },
+    {
+      "name": "Theater, Dance, and Performance Studies",
+      "subjectCode": "THTR",
+      "division": "letters-science",
+      "official_url": "https://www.theaterdance.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/theater-dance-and-performance-studies",
+      "degrees": ["MA", "PhD"]
+    },
+    {
+      "name": "Writing Studies",
+      "subjectCode": "WRIT",
+      "division": "letters-science",
+      "official_url": "https://www.writing.ucsb.edu/graduate",
+      "graddiv_url": "https://www.graddiv.ucsb.edu/graduate-programs/departments/writing-studies",
+      "degrees": ["MA", "PhD"]
+    }
+  ]
+}

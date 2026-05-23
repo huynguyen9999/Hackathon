@@ -13,6 +13,10 @@ import { getApprovedRoadmapList } from "@/lib/roadmap";
 import { listActiveSchools } from "@/lib/schools/registry";
 import { loadUcsbCcsCatalog } from "@/lib/ucsb-ccs";
 import { loadUcsbLsCatalog } from "@/lib/ucsb-ls";
+import {
+  gradProgramToExploreMajor,
+  listGradPrograms,
+} from "@/lib/ucsb-grad-programs";
 import type {
   CoeCatalog,
   CoeMajor,
@@ -276,6 +280,11 @@ export async function loadExploreIndex(): Promise<ExploreMajor[]> {
         );
       }
     }
+  }
+
+  const gradPrograms = await listGradPrograms();
+  for (const program of gradPrograms) {
+    entries.push(gradProgramToExploreMajor(program, graphSlugs));
   }
 
   return entries.sort((a, b) => {

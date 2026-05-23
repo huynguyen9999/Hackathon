@@ -53,9 +53,30 @@ The curriculum client (`lib/ucsb-curriculum.ts`) is the second official UCSB pro
 
 Roadmap sidebar nodes link to the catalog via **View in course catalog** (pre-filled subject + course number).
 
-## Graduate programs (Phase 2)
+## Graduate programs
+
+### Discovery paths
+
+- **Navbar:** Graduate → `/schools/ucsb/graduate`
+- **Home:** UCSB Graduate featured strip
+- **School hub:** Graduate pillar card above undergraduate colleges
+- **Explore:** Filter by **Graduate** college or **Grad school at UCSB** goal lane
+- **Engineering hub:** Graduate engineering section with CoE MS/PhD cards
+- **Courses:** Callout when `level=G` linking to graduate hub
+
+### Data files
+
+| File | Purpose |
+|------|---------|
+| `data/ucsb/grad-programs/index.json` | Interactive roadmap pilots (5 CoE programs) |
+| `data/ucsb/grad-programs/departments.json` | Full Graduate Division department index |
+| `data/ucsb/grad-programs/sources.json` | Official ucsb.edu + graddiv.ucsb.edu links |
+| `data/ucsb/grad-bridges.json` | Undergrad course → grad program sidebar callouts |
+
+Full degree requirements live in department handbooks and on [Graduate Division](https://www.graddiv.ucsb.edu/graduate-programs/departments). The department index is the authoritative outbound link; iGauchoBack adds interactive roadmaps only where seeded.
+
+### Routes
 
 - Hub: `/schools/ucsb/graduate`
-- Program catalog: `data/ucsb/grad-programs/`
 - Roadmap seeds: `data/seeds/ucsb-*-ms.json`, `ucsb-computer-science-phd.json`
 - Undergrad ↔ grad bridges: `data/ucsb/grad-bridges.json`

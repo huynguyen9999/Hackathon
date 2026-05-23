@@ -11,9 +11,19 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/schools", label: "Schools" },
   { href: "/schools/ucsb/courses", label: "Courses" },
+  { href: "/schools/ucsb/graduate", label: "Graduate", accent: "graduate" as const },
   { href: "/explore", label: "Explore" },
   { href: "/contribute", label: "Contribute" },
 ] as const;
+
+function isGraduateNavActive(pathname: string, href: string): boolean {
+  if (href !== "/schools/ucsb/graduate") return false;
+  if (pathname.startsWith("/schools/ucsb/graduate")) return true;
+  if (pathname.startsWith("/roadmap/ucsb/") && /-(ms|phd)$/.test(pathname)) {
+    return true;
+  }
+  return false;
+}
 
 export type NavbarProps = {
   className?: string;
@@ -49,11 +59,14 @@ export function Navbar({ className = "" }: NavbarProps) {
             className="flex items-center gap-0.5 rounded-lg border border-gaucho-blue/15 bg-slate-50 p-0.5 dark:border-gaucho-gold/20 dark:bg-gaucho-blue/30"
             aria-label="Main"
           >
-            {NAV_LINKS.map(({ href, label }) => {
+            {NAV_LINKS.map(({ href, label, ...rest }) => {
+              const accent = "accent" in rest ? rest.accent : undefined;
               const active =
-                href === "/"
-                  ? pathname === "/"
-                  : pathname.startsWith(href);
+                accent === "graduate"
+                  ? isGraduateNavActive(pathname, href)
+                  : href === "/"
+                    ? pathname === "/"
+                    : pathname.startsWith(href);
 
               return (
                 <Link
@@ -62,8 +75,12 @@ export function Navbar({ className = "" }: NavbarProps) {
                   className={[
                     "rounded-md px-3.5 py-2 text-sm font-medium transition",
                     active
-                      ? "bg-gaucho-blue text-white dark:bg-gaucho-gold dark:text-gaucho-blue-dark"
-                      : "text-slate-600 hover:text-gaucho-blue dark:text-slate-300 dark:hover:text-gaucho-gold-light",
+                      ? accent === "graduate"
+                        ? "bg-violet-600 text-white"
+                        : "bg-gaucho-blue text-white dark:bg-gaucho-gold dark:text-gaucho-blue-dark"
+                      : accent === "graduate"
+                        ? "text-violet-700 hover:text-violet-900 dark:text-violet-300 dark:hover:text-violet-100"
+                        : "text-slate-600 hover:text-gaucho-blue dark:text-slate-300 dark:hover:text-gaucho-gold-light",
                   ].join(" ")}
                 >
                   {label}

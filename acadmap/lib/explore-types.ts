@@ -1,7 +1,8 @@
 export type ExploreCollege =
   | "engineering"
   | "letters-science"
-  | "creative-studies";
+  | "creative-studies"
+  | "graduate";
 
 export type InterestTag =
   | "stem"
@@ -37,6 +38,7 @@ export type ExploreMajor = {
   hrefMajor: string;
   experienceType: ExperienceType;
   hook: string;
+  programLevel?: "undergraduate" | "graduate";
 };
 
 export type ExploreFiltersState = {
@@ -67,7 +69,7 @@ export const DEFAULT_EXPLORE_FILTERS: ExploreFiltersState = {
   view: "grid",
 };
 
-export type GoalLaneId = "switching" | "undecided" | "selective";
+export type GoalLaneId = "switching" | "undecided" | "selective" | "grad-school";
 
 export const GOAL_LANE_PRESETS: Record<
   GoalLaneId,
@@ -90,6 +92,13 @@ export const GOAL_LANE_PRESETS: Record<
     selective: "selective",
     colleges: [],
     graphOnly: false,
+    undecidedFriendly: false,
+  },
+  "grad-school": {
+    colleges: ["graduate"],
+    degreeTypes: ["MS", "PhD"],
+    graphOnly: false,
+    selective: "all",
     undecidedFriendly: false,
   },
 };

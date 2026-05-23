@@ -43,6 +43,7 @@ function groupByCollege(
     engineering: majors.filter((m) => m.college === "engineering"),
     "letters-science": majors.filter((m) => m.college === "letters-science"),
     "creative-studies": majors.filter((m) => m.college === "creative-studies"),
+    graduate: majors.filter((m) => m.college === "graduate"),
   };
 }
 
