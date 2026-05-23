@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --acad-indigo: #6366f1;
+  --acad-violet: #8b5cf6;
+  --acad-purple: #a855f7;
+  --acad-surface: #020617;
+  --acad-surface-elevated: #0f172a;
+  --acad-border: rgba(99, 102, 241, 0.25);
+  --acad-glow: rgba(139, 92, 246, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-slate-950 text-slate-100 antialiased;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, var(--acad-glow), transparent),
+    radial-gradient(
+      ellipse 60% 40% at 100% 0%,
+      rgba(79, 70, 229, 0.08),
+      transparent
+    ),
+    linear-gradient(to bottom, var(--acad-surface), #030712);
+}
+
+/* React Flow — AcadMap theme */
+.acadmap-flow .react-flow__edge-path {
+  stroke: var(--acad-indigo);
+  stroke-width: 2;
+}
+
+.acadmap-flow .react-flow__edge.selected .react-flow__edge-path {
+  stroke: var(--acad-violet);
+}
+
+.acadmap-flow .react-flow__attribution {
+  display: none;
+}
+
+.acadmap-flow .react-flow__pane {
+  cursor: grab;
+}
+
+.acadmap-flow .react-flow__pane:active {
+  cursor: grabbing;
+}
+
+@layer utilities {
+  .text-gradient-brand {
+    @apply bg-gradient-to-r from-indigo-300 via-violet-200 to-purple-300 bg-clip-text text-transparent;
+  }
+
+  .card-glow {
+    box-shadow:
+      0 0 0 1px var(--acad-border),
+      0 8px 32px -8px rgba(99, 102, 241, 0.2);
+  }
+}

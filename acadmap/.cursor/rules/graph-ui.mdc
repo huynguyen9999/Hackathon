@@ -1,0 +1,12 @@
+---
+description: React Flow graph components and roadmap viewer
+globs: components/RoadmapGraph.tsx,components/NodeCard.tsx,components/CareerNode.tsx,components/RoadmapView.tsx,components/Sidebar.tsx,lib/flow.ts
+alwaysApply: false
+---
+
+# Graph UI agent
+
+- Use `@xyflow/react` v12; import `@xyflow/react/dist/style.css` only in graph entry components.
+- Custom nodes: `course` → NodeCard, `career` → CareerNode.
+- Convert seed/DB nodes via `lib/flow.ts`; do not duplicate mapping logic in pages.
+- Keep canvas positions from seed JSON unless adding an explicit auto-layout feature.

@@ -1,0 +1,104 @@
+# AcadMap — Agent delegation guide
+
+Use this file when running **multiple Cursor agents** (or subagents) in parallel. Each role owns a slice of the repo; avoid overlapping edits without coordination.
+
+## Project north star
+
+**AcadMap** — school-specific, major-specific degree roadmaps with real course codes and career outcome nodes. MVP runs on JSON seeds; production graduates to Supabase.
+
+## Agent roles
+
+| Agent | Owns | Do not touch |
+|-------|------|----------------|
+| **Platform** | `package.json`, `next.config.js`, `tailwind.config.ts`, `app/layout.tsx`, `app/globals.css`, `README.md`, deploy/Vercel | Graph node UI, seed JSON content |
+| **Data & API** | `lib/types.ts`, `lib/roadmap.ts`, `lib/env.ts`, `data/seeds/**`, `app/api/**`, `supabase/schema.sql` | React Flow components |
+| **Graph UI** | `components/RoadmapGraph.tsx`, `NodeCard.tsx`, `CareerNode.tsx`, `RoadmapView.tsx`, `Sidebar.tsx`, `lib/flow.ts` | API routes, SQL |
+| **Product pages** | `app/page.tsx`, `app/explore/**`, `app/contribute/**`, `SearchBar.tsx`, `ExploreCatalog.tsx`, `ContributeForm.tsx`, `Navbar.tsx` | `schema.sql`, seed data |
+| **Auth & DB** | `lib/supabase.ts`, Supabase RLS, GitHub OAuth, wiring `POST /api/roadmaps` to DB, votes | Landing copy, graph layout |
+
+## Parallel workstreams (suggested order)
+
+### Phase 1 — Done
+
+- [x] Canonical types (`NodeType`, `EdgeType`, `RoadmapStatus`, snake_case fields)
+- [x] Seed JSON format + UCSB EE sample
+- [x] API: approved list, detail, POST (auth + pending), schools with roadmaps
+- [x] `supabase/schema.sql` aligned to spec (`nodes`, `edges`, `external_id`)
+
+### Phase 2 — Split across agents
+
+**Data agent**
+
+1. Apply `supabase/schema.sql` in Supabase SQL editor.
+2. Implement `lib/roadmap.ts` Supabase paths (approved roadmaps only).
+3. Seed `schools` / `majors` from JSON or migration script.
+4. Harden `POST /api/roadmaps` with validation + `pending` status.
+
+**Graph agent**
+
+1. Edge styling by `edge_type` (prerequisite vs recommended vs leads_to).
+2. Layout helper (dagre) optional — keep manual positions in seeds for MVP.
+3. Mobile: collapsible sidebar, pinch-zoom notes in README.
+
+**Product agent**
+
+1. Explore: group by school, empty states, loading skeletons.
+2. Contribute: wire Supabase Auth GitHub button.
+3. Landing: screenshots / demo GIF.
+
+**Auth agent**
+
+1. `middleware.ts` session refresh (`@supabase/ssr`).
+2. Protect `/contribute` and POST routes.
+3. Contributor attribution on `roadmaps.contributor_id`.
+
+## Conventions
+
+- **Imports**: `@/` alias only.
+- **Client components**: `'use client'` on anything using React Flow or browser APIs.
+- **Server-only**: `lib/roadmap.ts` seed loading uses `fs` — never import from client components.
+- **Slugs**: URL `/roadmap/[school]/[major]` maps to `school.shortName` + `major.slug` (e.g. `ucsb` + `electrical-engineering`).
+- **Node types**: `course` | `career` | `skill` in DB; React Flow `type` is `course` or `career`.
+- **Styling**: CSS vars in `app/globals.css`; indigo/violet palette; no new UI libraries without discussion.
+
+## Commands
+
+```bash
+cd acadmap
+npm install
+cp .env.example .env.local   # optional until Supabase is live
+npm run dev                  # http://localhost:3000
+```
+
+If the parent folder path contains `:`, prefer:
+
+```bash
+./node_modules/.bin/next dev
+```
+
+## Handoff checklist
+
+Before merging agent work:
+
+1. `npm run build` passes.
+2. `/roadmap/ucsb/electrical-engineering` renders graph + sidebar.
+3. `GET /api/roadmaps` and `GET /api/schools` return seed data without env vars.
+4. No secrets in git (only `.env.example`).
+
+## Prompt templates for subagents
+
+**Data agent**
+
+> Extend `lib/roadmap.ts` to fetch approved roadmaps from Supabase when `isSupabaseConfigured()`. Map DB rows to existing `Roadmap` type. Keep JSON seeds as fallback.
+
+**Graph agent**
+
+> In `RoadmapGraph.tsx`, style edges by `data.edgeType`. Add legend component. Do not change API or seed file format.
+
+**Product agent**
+
+> Improve `/explore` with school grouping and responsive cards. Use existing `getAllRoadmaps()` and `SearchBar`.
+
+**Auth agent**
+
+> Add Supabase GitHub OAuth to `/contribute` and protect `POST /api/roadmaps`. Follow `supabase/schema.sql` RLS policies.

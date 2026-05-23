@@ -1,0 +1,95 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Electrical Engineering",
+    "slug": "electrical-engineering",
+    "degree_type": "BS"
+  },
+  "nodes": [
+    {
+      "id": "ece-10",
+      "node_type": "course",
+      "label": "ECE 10",
+      "title": "Introduction to Electrical Engineering",
+      "description": "Foundational concepts in circuits and signals.",
+      "units": 4,
+      "self_learnable": true,
+      "resources": [
+        {
+          "name": "MIT OCW 6.002",
+          "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+        }
+      ],
+      "position_x": 100,
+      "position_y": 100
+    },
+    {
+      "id": "ece-15",
+      "node_type": "course",
+      "label": "ECE 15",
+      "title": "Engineering Computation",
+      "description": "Programming fundamentals for engineers using C.",
+      "units": 4,
+      "self_learnable": true,
+      "resources": [],
+      "position_x": 300,
+      "position_y": 100
+    },
+    {
+      "id": "ece-152a",
+      "node_type": "course",
+      "label": "ECE 152A",
+      "title": "Digital Design Principles",
+      "description": "Boolean algebra, combinational and sequential logic.",
+      "units": 4,
+      "self_learnable": false,
+      "resources": [],
+      "position_x": 100,
+      "position_y": 300
+    },
+    {
+      "id": "career-rf",
+      "node_type": "career",
+      "label": "RF Engineer",
+      "title": "RF / Wireless Engineer",
+      "description": "Design and test radio frequency systems, antennas, and wireless communication hardware.",
+      "self_learnable": false,
+      "position_x": 600,
+      "position_y": 200
+    },
+    {
+      "id": "career-software",
+      "node_type": "career",
+      "label": "Software Engineer",
+      "title": "Software Engineer",
+      "description": "Build software systems — common path for EE students who lean into ECE 15 and higher-level CS.",
+      "self_learnable": true,
+      "position_x": 600,
+      "position_y": 400
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "ece-10",
+      "target_id": "ece-152a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "ece-152a",
+      "target_id": "career-rf",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "e3",
+      "source_id": "ece-15",
+      "target_id": "career-software",
+      "edge_type": "leads_to"
+    }
+  ]
+}

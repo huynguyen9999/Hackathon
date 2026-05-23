@@ -1,0 +1,12 @@
+---
+description: Roadmap data layer, seeds, API routes, Supabase schema
+globs: lib/**/*.ts,data/**/*,app/api/**/*,supabase/**/*
+alwaysApply: false
+---
+
+# Data & API agent
+
+- JSON seeds in `data/seeds/` are the source of truth until Supabase is configured.
+- `loadSeedRoadmaps()` is server-only (uses `fs`).
+- API routes return seed data without env vars; Supabase is optional enhancement.
+- Schema changes go in `supabase/schema.sql` with matching updates to `lib/types.ts`.
