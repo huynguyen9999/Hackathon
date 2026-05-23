@@ -1,7 +1,10 @@
-import type { CoeMajor } from "@/lib/ucsb-coe";
+import type { UcsbMajor } from "@/lib/ucsb-types";
 
 export type MajorRequirementsProps = {
-  major: CoeMajor;
+  major: UcsbMajor;
+  /** GEAR (engineering) vs LASAR (L&S) label */
+  requirementsLabel?: string;
+  pageRefLabel?: string;
 };
 
 function RequirementList({
@@ -31,18 +34,26 @@ function RequirementList({
   );
 }
 
-export function MajorRequirements({ major }: MajorRequirementsProps) {
+export function MajorRequirements({
+  major,
+  requirementsLabel = "Major requirements",
+  pageRefLabel,
+}: MajorRequirementsProps) {
+  const ref =
+    pageRefLabel ??
+    (major.gear_page != null ? ` · ref. p.${major.gear_page}` : "");
+
   return (
     <div className="card-glow rounded-2xl border border-indigo-500/20 bg-slate-900/50 p-6">
       <div className="mb-6 flex flex-wrap items-start justify-between gap-3">
         <div>
           <h2 className="text-lg font-semibold text-slate-50">
-            GEAR requirements
+            {requirementsLabel}
           </h2>
           <p className="mt-1 text-sm text-slate-400">
-            {major.degree_type} · {major.graduation_units ?? "—"} units to
+            {major.degree_type} · {major.graduation_units ?? "180"} units to
             graduate
-            {major.gear_page != null && ` · GEAR p.${major.gear_page}`}
+            {ref}
           </p>
         </div>
         <a
@@ -51,9 +62,15 @@ export function MajorRequirements({ major }: MajorRequirementsProps) {
           rel="noopener noreferrer"
           className="text-sm font-medium text-indigo-300 hover:text-violet-200"
         >
-          Department page ↗
+          Department / catalog ↗
         </a>
       </div>
+
+      {major.notes && (
+        <p className="mb-6 rounded-lg border border-amber-500/20 bg-amber-950/20 px-3 py-2 text-sm text-amber-100/90">
+          {major.notes}
+        </p>
+      )}
 
       <div className="grid gap-8 md:grid-cols-2">
         <RequirementList
@@ -69,7 +86,7 @@ export function MajorRequirements({ major }: MajorRequirementsProps) {
       {major.departmental_electives_note && (
         <div className="mt-8 rounded-lg border border-indigo-500/15 bg-slate-950/50 p-4">
           <h3 className="text-xs font-semibold uppercase tracking-wider text-indigo-300/80">
-            Departmental electives
+            Electives
             {major.departmental_electives_units != null &&
               ` (${major.departmental_electives_units} units)`}
           </h3>

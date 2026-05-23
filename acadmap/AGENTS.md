@@ -37,7 +37,11 @@ Use this file when running **multiple Cursor agents** (or subagents) in parallel
 
 **Product agent**
 
-> School hub at `/schools/ucsb` — see `docs/SITE-LAYOUT.md`. Use `MajorCatalogGrid`, `SchoolHero`, `PageHeader`.
+> UCSB overview at `/schools/ucsb`; CoE at `/schools/ucsb/engineering`; L&S at `/schools/ucsb/letters-science`. See `docs/SITE-LAYOUT.md`. Use `CollegeBanner`, `MajorCatalogGrid`, `SchoolHero`, `LsFrameworkCard`, `PageHeader`.
+
+**L&S research agent** (read-only)
+
+> Use https://admissions.sa.ucsb.edu/majors and https://duels.ucsb.edu/degree-planning/degree-requirements. Department URLs: `https://{dept}.ucsb.edu/` or `https://www.{dept}.ucsb.edu/`. Update `data/ucsb/ls-catalog.json` and `docs/UCSB-LS-RESEARCH.md`.
 
 **Data agent** — per major
 

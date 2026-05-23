@@ -1,38 +1,19 @@
 import { promises as fs } from "fs";
 import path from "path";
 
+import type { UcsbMajor, UcsbSchoolInfo, UcsbSource } from "@/lib/ucsb-types";
+
+export type CoeMajor = UcsbMajor;
 export type CoeCourseRef = {
   code: string;
   title: string;
   units: number;
 };
 
-export type CoeMajor = {
-  name: string;
-  slug: string;
-  degree_type: string;
-  department: string;
-  department_url: string;
-  curriculum_url: string;
-  course_grid_url?: string;
-  gear_page?: number;
-  graduation_units?: number;
-  roadmap_available: boolean;
-  preparation_for_major: string[];
-  upper_division_required: string[];
-  departmental_electives_units?: number;
-  departmental_electives_note?: string;
-  sample_electives: string[];
-  career_outcomes: string[];
-  /** @deprecated use preparation_for_major */
-  core_courses?: CoeCourseRef[];
-};
+export const COE_COLLEGE_SLUG = "engineering";
 
 export type CoeCatalog = {
-  school: {
-    name: string;
-    short_name: string;
-    location: string;
+  school: UcsbSchoolInfo & {
     college: string;
     official_url: string;
     majors_url: string;
@@ -44,7 +25,7 @@ export type CoeCatalog = {
     note: string;
   };
   majors: CoeMajor[];
-  sources: { title: string; url: string }[];
+  sources: UcsbSource[];
   last_updated: string;
 };
 
@@ -80,8 +61,20 @@ export function majorRoadmapHref(
   return `/roadmap/${schoolShortName}/${majorSlug}`;
 }
 
+export function coeMajorHubHref(
+  schoolShortName: string,
+  majorSlug: string,
+): string {
+  return `/schools/${schoolShortName}/${COE_COLLEGE_SLUG}/${majorSlug}`;
+}
+
+/** @deprecated Use coeMajorHubHref */
 export function majorHubHref(schoolShortName: string, majorSlug: string): string {
-  return `/schools/${schoolShortName}/${majorSlug}`;
+  return coeMajorHubHref(schoolShortName, majorSlug);
+}
+
+export function coeCollegeHubHref(schoolShortName: string): string {
+  return `/schools/${schoolShortName}/${COE_COLLEGE_SLUG}`;
 }
 
 export function schoolHubHref(schoolShortName: string): string {

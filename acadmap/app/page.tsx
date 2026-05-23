@@ -60,7 +60,13 @@ export default function HomePage() {
             href="/schools/ucsb"
             className="rounded-xl border border-indigo-500/40 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-indigo-100 transition hover:border-violet-400/50 hover:bg-slate-800/80"
           >
-            UCSB College of Engineering
+            UCSB colleges
+          </Link>
+          <Link
+            href="/schools/ucsb/letters-science"
+            className="rounded-xl border border-teal-500/40 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-teal-100 transition hover:border-teal-400/50 hover:bg-slate-800/80"
+          >
+            L&S majors
           </Link>
           <Link
             href="/roadmap/ucsb/electrical-engineering"
@@ -72,26 +78,42 @@ export default function HomePage() {
       </section>
 
       <section className="relative mx-auto max-w-6xl px-4 pb-12 sm:px-6">
-        <Link
-          href="/schools/ucsb"
-          className="card-glow flex flex-col gap-3 rounded-2xl border border-indigo-500/25 bg-slate-900/50 p-6 transition hover:border-violet-400/35 sm:flex-row sm:items-center sm:justify-between"
-        >
-          <div>
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Link
+            href="/schools/ucsb/engineering"
+            className="card-glow flex flex-col gap-3 rounded-2xl border border-indigo-500/25 bg-slate-900/50 p-6 transition hover:border-violet-400/35"
+          >
             <p className="text-xs font-semibold uppercase tracking-wider text-violet-300">
-              Featured school
+              Engineering
             </p>
             <h2 className="mt-1 text-lg font-semibold text-slate-50">
-              UCSB · Robert Mehrabian College of Engineering
+              CoE · GEAR 2025-26
             </h2>
             <p className="mt-1 text-sm text-slate-400">
-              5 BS majors — Chemical, Computer, Computer Science, Electrical,
-              Mechanical Engineering
+              5 BS majors · EE interactive roadmap
             </p>
-          </div>
-          <span className="text-sm font-medium text-indigo-300">
-            Browse majors →
-          </span>
-        </Link>
+            <span className="mt-2 text-sm font-medium text-indigo-300">
+              Browse →
+            </span>
+          </Link>
+          <Link
+            href="/schools/ucsb/letters-science"
+            className="card-glow flex flex-col gap-3 rounded-2xl border border-teal-500/25 bg-slate-900/50 p-6 transition hover:border-teal-400/35"
+          >
+            <p className="text-xs font-semibold uppercase tracking-wider text-teal-300">
+              Letters & Science
+            </p>
+            <h2 className="mt-1 text-lg font-semibold text-slate-50">
+              L&S · LASAR + DUELS
+            </h2>
+            <p className="mt-1 text-sm text-slate-400">
+              Biology, Chemistry, Philosophy, Economics, and more
+            </p>
+            <span className="mt-2 text-sm font-medium text-teal-300">
+              Browse →
+            </span>
+          </Link>
+        </div>
       </section>
 
       <section className="relative mx-auto max-w-6xl px-4 pb-24 sm:px-6">

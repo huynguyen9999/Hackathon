@@ -6,8 +6,10 @@ Interactive degree roadmaps—courses, prerequisites, and career paths—built w
 
 ## Features
 
-- **Landing** — Hero, feature highlights, links to explore and UCSB CoE hub
-- **School hub** — `/schools/ucsb` with GEAR 2025-26 requirements for all 5 CoE majors
+- **Landing** — Hero, feature highlights, links to explore and UCSB colleges
+- **UCSB overview** — `/schools/ucsb` picks Engineering or Letters & Science
+- **CoE hub** — `/schools/ucsb/engineering` with GEAR 2025-26 for 5 BS majors
+- **L&S hub** — `/schools/ucsb/letters-science` with LASAR/DUELS + department requirements
 - **Roadmap viewer** — React Flow graph with course/career nodes and detail sidebar
 - **Explore** — Browse and search approved roadmaps
 - **Contribute** — Submit roadmaps (Supabase auth when configured)
@@ -41,8 +43,11 @@ Official curriculum source: [UCSB GEAR 2025-26 PDF](https://engineering.ucsb.edu
 ## Sample routes
 
 - Home: `/`
-- UCSB CoE: `/schools/ucsb`
-- EE requirements: `/schools/ucsb/electrical-engineering`
+- UCSB overview: `/schools/ucsb`
+- CoE hub: `/schools/ucsb/engineering`
+- L&S hub: `/schools/ucsb/letters-science`
+- EE requirements: `/schools/ucsb/engineering/electrical-engineering`
+- Biology (BS): `/schools/ucsb/letters-science/biology`
 - EE graph: `/roadmap/ucsb/electrical-engineering`
 - Explore: `/explore`
 

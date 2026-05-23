@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { RoadmapView } from "@/components/RoadmapView";
 import { getRoadmapBySlug } from "@/lib/roadmap";
-import { schoolHubHref } from "@/lib/ucsb-coe";
+import { coeCollegeHubHref, schoolHubHref } from "@/lib/ucsb-coe";
 
 type PageProps = {
   params: { school: string; major: string };
@@ -31,25 +31,29 @@ export default async function RoadmapPage({ params }: PageProps) {
     notFound();
   }
 
-  const schoolHub =
-    roadmap.school.short_name === "ucsb"
-      ? schoolHubHref("ucsb")
-      : undefined;
+  const isUcsb = roadmap.school.short_name === "ucsb";
 
   return (
     <div className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6 sm:py-8">
       <PageHeader
         breadcrumbs={[
           { label: "Explore", href: "/explore" },
-          ...(schoolHub
+          ...(isUcsb
             ? [
                 {
-                  label: roadmap.school.short_name.toUpperCase(),
-                  href: schoolHub,
+                  label: "UCSB",
+                  href: schoolHubHref("ucsb"),
                 },
+                {
+                  label: "Engineering",
+                  href: coeCollegeHubHref("ucsb"),
+                },
+                { label: roadmap.major.name },
               ]
-            : [{ label: roadmap.school.short_name.toUpperCase() }]),
-          { label: roadmap.major.name },
+            : [
+                { label: roadmap.school.short_name.toUpperCase() },
+                { label: roadmap.major.name },
+              ]),
         ]}
         eyebrow={`${roadmap.school.short_name} · ${roadmap.major.degree_type}`}
         title={roadmap.major.name}
