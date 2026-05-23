@@ -14,9 +14,14 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
    ├─ Featured colleges → /schools/ucsb/engineering, /schools/ucsb/letters-science, /schools/ucsb/creative-studies
    └─ Value props (3 columns)
 
-/explore  CATALOG
-   ├─ Search (school / major)
-   └─ Roadmap cards → /roadmap/[school]/[major]
+/explore  DISCOVERY HUB (all 72 UCSB majors)
+   ├─ Goal lanes: switching majors | undecided | selective programs
+   ├─ Search + filter sidebar (college, experience, interest, degree, admission, department)
+   ├─ View modes: grid | by college | by department
+   ├─ URL shareable filters (?college=letters-science&tags=stem&graph=1)
+   ├─ ExploreMajorCard → graph (if live) or major guide or official source
+   ├─ Compare modal (2 majors: shared prep + careers)
+   └─ Empty / no-graph states → major guide + /contribute
 
 /schools/[school]  UCSB OVERVIEW
    └─ College cards → Engineering | Letters & Science | Creative Studies
@@ -60,7 +65,7 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
 | Horizontal padding | `px-4 sm:px-6` |
 | Section spacing | `py-10 sm:py-14` |
 | Card radius | `rounded-2xl` |
-| Primary accent | indigo → violet gradient |
+| Primary accent | Gaucho blue `#003660` + gold `#FEBC11` |
 
 ## Component map
 
@@ -77,6 +82,10 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
 | `MajorCatalogGrid` | College hubs |
 | `MajorRequirements` | College major detail pages |
 | `ExploreCatalog` | `/explore` |
+| `ExploreFilters` | `/explore` |
+| `ExploreMajorCard` | `/explore` |
+| `ExploreGoalLanes` | `/explore` |
+| `ExploreCompareModal` | `/explore` |
 | `RoadmapView` | Roadmap page |
 | `SourceList` | School hub footer |
 | `SearchBar` | Explore |
@@ -90,7 +99,26 @@ Defined layout for the UCSB College of Engineering expansion and all future scho
 | Creative Studies | `data/ucsb/ccs-catalog.json` | CCS major sheets + Student Handbook |
 
 - **Interactive roadmaps:** `data/seeds/*.json` (React Flow seeds)
+- **Explore index:** `lib/ucsb-explore-index.ts` merges all three catalogs + seed graph flags
+- **Interest tags:** `data/ucsb/major-tags.json` (STEM, social-sciences, arts-humanities, pre-professional)
 - **Rule:** Catalog = reference; seeds = graph source of truth
+
+### Explore filter query params
+
+| Param | Values | Meaning |
+|-------|--------|---------|
+| `q` | string | Text search |
+| `college` | `engineering,letters-science,creative-studies` | College filter (comma-separated) |
+| `experience` | `graph,guide,catalog` | Content depth |
+| `degree` | `BA,BS,...` | Degree type |
+| `selective` | `all` \| `open` \| `selective` | Admission selectivity |
+| `dept` | department names | Multi department |
+| `tags` | `stem,social-sciences,...` | Interest clusters |
+| `graph` | `1` | Has live interactive graph |
+| `undecided` | `1` | Undecided-friendly majors |
+| `view` | `grid` \| `college` \| `department` | Layout mode |
+
+Major identity uses `{college}:{slug}` (e.g. `creative-studies:art` vs `letters-science:art`).
 
 ## Agent delegation (UCSB data)
 

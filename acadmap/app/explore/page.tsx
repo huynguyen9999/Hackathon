@@ -1,34 +1,42 @@
 import Link from "next/link";
+import { Suspense } from "react";
 
 import { ExploreCatalog } from "@/components/ExploreCatalog";
 import { PageHeader } from "@/components/layout/PageHeader";
-import { getApprovedRoadmapList } from "@/lib/roadmap";
+import { loadUcsbExploreIndex } from "@/lib/ucsb-explore-index";
 
 export const metadata = {
   title: "Explore | AcadMap",
-  description: "Browse degree roadmaps by school and major.",
+  description:
+    "Discover all UCSB majors—filter by college, interest, and interactive graph availability.",
 };
 
+function ExploreCatalogFallback() {
+  return (
+    <p className="text-sm text-slate-500">Loading majors catalog…</p>
+  );
+}
+
 export default async function ExplorePage() {
-  const roadmaps = await getApprovedRoadmapList();
+  const majors = await loadUcsbExploreIndex();
+  const graphCount = majors.filter((m) => m.hasInteractiveGraph).length;
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
       <PageHeader
         breadcrumbs={[{ label: "Explore" }]}
-        title="Explore roadmaps"
-        description="Search by school or major. Each card opens an interactive graph of courses, prerequisites, and career paths."
+        title="Explore majors"
+        description={`All ${majors.length} UCSB catalog majors across Engineering, L&S, and CCS. ${graphCount} have interactive graphs—use filters to discover by interest, college, or career path.`}
         actions={
-          <Link
-            href="/schools/ucsb"
-            className="rounded-xl border border-gaucho-blue-light/40 bg-gaucho-blue/5 dark:bg-gaucho-blue-dark/40 px-4 py-2 text-sm font-medium text-gaucho-blue dark:text-gaucho-gold-light transition hover:bg-gaucho-blue-dark/50"
-          >
+          <Link href="/schools/ucsb" className="btn-secondary text-sm">
             UCSB colleges
           </Link>
         }
       />
 
-      <ExploreCatalog roadmaps={roadmaps} />
+      <Suspense fallback={<ExploreCatalogFallback />}>
+        <ExploreCatalog majors={majors} />
+      </Suspense>
     </div>
   );
 }

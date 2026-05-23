@@ -1,0 +1,498 @@
+{
+  "engineering:electrical-engineering": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "engineering:computer-engineering": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "engineering:computer-science": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "engineering:mechanical-engineering": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "engineering:chemical-engineering": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:actuarial-science": {
+    "interestTags": [
+      "stem",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:anthropology": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:applied-mathematics": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:aquatic-biology": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:art": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:asian-american-studies": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:asian-studies": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:biochemistry": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:biological-sciences": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:biopsychology": {
+    "interestTags": [
+      "stem",
+      "social-sciences",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:black-studies": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:chemistry": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:chicano-and-chicano-studies": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:chinese": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:classics": {
+    "interestTags": [
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:communication": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:comparative-literature": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:dance": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:earth-science": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:ecology-and-evolution": {
+    "interestTags": [
+      "stem",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:economics": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:economics-and-accounting": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:english": {
+    "interestTags": [
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:environmental-studies": {
+    "interestTags": [
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:feminist-studies": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:film-and-media-studies": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:financial-mathematics-and-statistics": {
+    "interestTags": [
+      "stem",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:french": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:geography": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:german": {
+    "interestTags": [
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:global-studies": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:history": {
+    "interestTags": [
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:history-of-art-and-architecture": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:history-of-policy-law-and-governance": {
+    "interestTags": [
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:hydrologic-sciences-and-policy": {
+    "interestTags": [
+      "stem",
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:italian-studies": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:japanese": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:language-culture-and-society": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:latin-american-and-iberian-studies": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:linguistics": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:mathematics": {
+    "interestTags": [
+      "stem",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:medieval-studies": {
+    "interestTags": [
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:middle-east-studies": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:molecular-and-cellular-biology": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:music-performance-music-studies": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:philosophy": {
+    "interestTags": [
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:physics": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:physiology": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:political-science": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:portuguese": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:psychological-and-brain-sciences": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:religious-studies": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:russian-and-east-european-studies": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:sociology": {
+    "interestTags": [
+      "social-sciences",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:spanish": {
+    "interestTags": [
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:statistics-and-data-science": {
+    "interestTags": [
+      "stem",
+      "arts-humanities",
+      "pre-professional"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:theater": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "letters-science:zoology": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "creative-studies:art": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "creative-studies:biology": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "creative-studies:chemistry-biochemistry": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "creative-studies:computing": {
+    "interestTags": [
+      "stem",
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "creative-studies:marine-science": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "creative-studies:mathematics": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "creative-studies:music-composition": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  },
+  "creative-studies:physics": {
+    "interestTags": [
+      "stem"
+    ],
+    "undecidedFriendly": true
+  },
+  "creative-studies:writing-literature": {
+    "interestTags": [
+      "arts-humanities"
+    ],
+    "undecidedFriendly": true
+  }
+}
