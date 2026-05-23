@@ -1,0 +1,122 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Electrical Engineering",
+    "slug": "electrical-engineering-ms",
+    "degree_type": "MS"
+  },
+  "metadata": {
+    "source": "UCSB ECE Graduate Handbook",
+    "source_url": "https://www.ece.ucsb.edu/grad/ms-program",
+    "program_level": "graduate"
+  },
+  "nodes": [
+    {
+      "id": "ece-291",
+      "node_type": "course",
+      "label": "ECE 291",
+      "title": "Seminar in Electrical Engineering",
+      "description": "Graduate seminar on current topics in ECE research.",
+      "units": 2,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "core" },
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "ece-230a",
+      "node_type": "course",
+      "label": "ECE 230A",
+      "title": "Solid State Electronics I",
+      "description": "Graduate-level semiconductor device physics.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "elective" },
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "ece-596",
+      "node_type": "course",
+      "label": "ECE 596",
+      "title": "Individual Study for Master's Students",
+      "description": "Directed reading and research under faculty supervision.",
+      "units": 1,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "core" },
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "ece-597",
+      "node_type": "course",
+      "label": "ECE 597",
+      "title": "Individual Study for Master's Students",
+      "description": "Thesis research units for MS students.",
+      "units": 1,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "core" },
+      "position_x": 680,
+      "position_y": 280
+    },
+    {
+      "id": "ece-598",
+      "node_type": "course",
+      "label": "ECE 598",
+      "title": "Master's Thesis Research",
+      "description": "Thesis research and writing for MS degree completion.",
+      "units": 1,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "core" },
+      "position_x": 980,
+      "position_y": 180
+    },
+    {
+      "id": "ms-exam",
+      "node_type": "career",
+      "label": "MS Exam",
+      "title": "Comprehensive Exam or Thesis Defense",
+      "description": "Complete thesis defense or comprehensive exam per department requirements.",
+      "self_learnable": false,
+      "metadata": { "role": "exam" },
+      "position_x": 1280,
+      "position_y": 180
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "ece-291",
+      "target_id": "ece-230a",
+      "edge_type": "recommended"
+    },
+    {
+      "id": "e2",
+      "source_id": "ece-230a",
+      "target_id": "ece-596",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "ece-596",
+      "target_id": "ece-597",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "ece-597",
+      "target_id": "ece-598",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "ece-598",
+      "target_id": "ms-exam",
+      "edge_type": "leads_to"
+    }
+  ]
+}

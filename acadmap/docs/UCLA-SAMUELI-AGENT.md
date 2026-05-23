@@ -14,15 +14,20 @@
 | Samueli home | https://samueli.ucla.edu/ |
 | 2025-26 Announcement PDF | https://www.seasoasa.ucla.edu/wp-content/uploads/seasoasa/UCLASamueli-Anncmt-25-26.pdf |
 | SEASOASA | https://www.seasoasa.ucla.edu/ |
+| EE 4-year plan | https://www.seasoasa.ucla.edu/ee-4-year-plan/ |
+| UCLA Catalog (ECE) | https://catalog.registrar.ucla.edu/browse/Departments/ElectricalandComputerEngineering |
+| EE BS major (catalog) | https://catalog.registrar.ucla.edu/major/2023/electricalengineeringbs?siteYear=2023 |
 
 ## Data files
 
 ```
-data/ucla/coe-catalog.json       # 10 BS majors
-data/ucla/coe-majors/{slug}.json # Detail pages (CS, EE, ME)
+data/ucla/coe-catalog.json              # 10 BS majors
+data/ucla/coe-majors/{slug}.json        # Detail pages (CS, EE, ME)
+data/ucla/samueli-sources.json          # Per-major source URLs
 data/ucla/major-tags.json
-data/seeds/ucla-computer-science.json  # Pilot interactive roadmap
-data/demo/community/ucla.json    # Demo hub content (no Supabase)
+data/seeds/ucla-computer-science.json   # Interactive CS roadmap
+data/seeds/ucla-electrical-engineering.json  # Interactive EE roadmap
+data/demo/community/ucla.json           # Demo hub content (no Supabase)
 ```
 
 ## 10 BS programs (Announcement p.5)
@@ -54,8 +59,17 @@ data/demo/community/ucla.json    # Demo hub content (no Supabase)
 
 ```bash
 npm run parse:ucla-announcement   # Draft parser metadata
-npm run validate:ucla-details     # Validate coe-majors vs catalog
+npm run sync:ucla-details         # Sync catalog flags from detail + seeds
+npm run validate:ucla-details     # Validate coe-majors schema + slug alignment
 ```
+
+## Interactive roadmaps
+
+| Major | Detail | Live map |
+|-------|--------|----------|
+| Computer Science | gear | `/roadmap/ucla/computer-science` |
+| Electrical Engineering | gear + 12-qtr plan | `/roadmap/ucla/electrical-engineering` |
+| Mechanical Engineering | gear | (no seed yet) |
 
 ## Community hub
 

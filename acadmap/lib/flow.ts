@@ -12,12 +12,37 @@ import type {
 function parseCourseNodeMetadata(
   metadata: Record<string, unknown> | undefined,
 ): CourseNodeMetadata | undefined {
-  if (!metadata || metadata.role !== "capstone") return undefined;
-  return {
-    role: "capstone",
-    optional: metadata.optional === true,
-    sequence: typeof metadata.sequence === "number" ? metadata.sequence : undefined,
-  };
+  if (!metadata) return undefined;
+
+  const courseLevel =
+    metadata.course_level === "graduate" ||
+    metadata.course_level === "undergraduate"
+      ? metadata.course_level
+      : undefined;
+
+  if (metadata.role === "capstone") {
+    return {
+      role: "capstone",
+      optional: metadata.optional === true,
+      sequence:
+        typeof metadata.sequence === "number" ? metadata.sequence : undefined,
+      course_level: courseLevel,
+    };
+  }
+
+  if (
+    courseLevel ||
+    metadata.role === "core" ||
+    metadata.role === "elective" ||
+    metadata.role === "exam"
+  ) {
+    return {
+      role: typeof metadata.role === "string" ? metadata.role : undefined,
+      course_level: courseLevel,
+    };
+  }
+
+  return undefined;
 }
 
 const EDGE_TYPE_LABELS: Record<EdgeType, string> = {

@@ -1,0 +1,10 @@
+{
+  "slug": "chemical-engineering-ms",
+  "name": "MS Chemical Engineering",
+  "department": "CH E",
+  "degree": "MS",
+  "description": "The MS in Chemical Engineering prepares students for research in transport, reaction engineering, and materials.",
+  "source_url": "https://www.che.ucsb.edu/graduate/ms-program",
+  "required_courses": ["CH E 596", "CH E 597", "CH E 598"],
+  "milestones": ["Thesis or comprehensive exam"]
+}

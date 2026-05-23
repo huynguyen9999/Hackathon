@@ -6,6 +6,8 @@ Current production needs planner, credit injection, and audit overlays now, whil
 
 The integration boundary isolates provider-specific code behind one connector interface.
 
+Curriculum search (undergrad + graduate courses) is documented in [UCSB-CURRICULUM.md](./UCSB-CURRICULUM.md) and implemented in `lib/ucsb-curriculum.ts`.
+
 ## Connector interface
 
 Defined in `lib/integrations/ucsb/connector.ts`:

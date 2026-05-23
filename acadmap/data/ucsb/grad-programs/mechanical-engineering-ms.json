@@ -1,0 +1,10 @@
+{
+  "slug": "mechanical-engineering-ms",
+  "name": "MS Mechanical Engineering",
+  "department": "ME",
+  "degree": "MS",
+  "description": "The MS in Mechanical Engineering covers dynamics, thermodynamics, materials, and design at the graduate level.",
+  "source_url": "https://www.me.ucsb.edu/graduate/ms-program",
+  "required_courses": ["ME 596", "ME 597", "ME 598"],
+  "milestones": ["Thesis or comprehensive exam"]
+}

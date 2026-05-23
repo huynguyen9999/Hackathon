@@ -1,0 +1,48 @@
+{
+  "subjects": [
+    {
+      "subjectCode": "ECE",
+      "subjectTranslation": "Electrical Computer Engineering"
+    },
+    {
+      "subjectCode": "CMPSC",
+      "subjectTranslation": "Computer Science"
+    },
+    {
+      "subjectCode": "ME",
+      "subjectTranslation": "Mechanical Engineering"
+    },
+    {
+      "subjectCode": "CH E",
+      "subjectTranslation": "Chemical Engineering"
+    },
+    {
+      "subjectCode": "MATH",
+      "subjectTranslation": "Mathematics"
+    },
+    {
+      "subjectCode": "PSTAT",
+      "subjectTranslation": "Statistics & Applied Probability"
+    },
+    {
+      "subjectCode": "PHYS",
+      "subjectTranslation": "Physics"
+    },
+    {
+      "subjectCode": "ECON",
+      "subjectTranslation": "Economics"
+    },
+    {
+      "subjectCode": "PSY",
+      "subjectTranslation": "Psychology"
+    },
+    {
+      "subjectCode": "COMM",
+      "subjectTranslation": "Communication"
+    },
+    {
+      "subjectCode": "GRAD",
+      "subjectTranslation": "Graduate Division"
+    }
+  ]
+}

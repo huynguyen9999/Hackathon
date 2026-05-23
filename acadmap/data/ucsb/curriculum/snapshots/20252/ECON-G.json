@@ -1,0 +1,40 @@
+{
+  "quarter": "20252",
+  "subjectCode": "ECON",
+  "level": "G",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "ECON 200A",
+      "title": "Microeconomic Theory I",
+      "description": "First quarter of graduate micro theory.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "ECON",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "ECON 201A",
+      "title": "Macroeconomic Theory I",
+      "description": "Graduate macroeconomics.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "ECON",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

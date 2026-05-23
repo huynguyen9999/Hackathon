@@ -1,0 +1,40 @@
+{
+  "quarter": "20252",
+  "subjectCode": "GRAD",
+  "level": "G",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "GRAD 200",
+      "title": "Professional Development for Graduate Students",
+      "description": "Graduate Division professional development seminar.",
+      "units": 2,
+      "objLevelCode": "G",
+      "subjectCode": "GRAD",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "GRAD 596",
+      "title": "Individual Study for Master's Students",
+      "description": "Graduate Division individual study.",
+      "units": 1,
+      "objLevelCode": "G",
+      "subjectCode": "GRAD",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

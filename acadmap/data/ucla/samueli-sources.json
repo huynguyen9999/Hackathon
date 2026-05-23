@@ -1,0 +1,24 @@
+{
+  "catalog_year": "2025-2026",
+  "announcement_pdf": "https://www.seasoasa.ucla.edu/wp-content/uploads/seasoasa/UCLASamueli-Anncmt-25-26.pdf",
+  "catalog_base": "https://catalog.registrar.ucla.edu/",
+  "sources": {
+    "computer-science": {
+      "announcement_page": 78,
+      "dept_page": "https://www.cs.ucla.edu/",
+      "four_year_plan_url": "https://www.seasoasa.ucla.edu/"
+    },
+    "electrical-engineering": {
+      "announcement_page": 74,
+      "dept_page": "https://www.ee.ucla.edu/",
+      "four_year_plan_url": "https://www.seasoasa.ucla.edu/ee-4-year-plan/",
+      "catalog_major_url": "https://catalog.registrar.ucla.edu/major/2023/electricalengineeringbs?siteYear=2023",
+      "catalog_dept_url": "https://catalog.registrar.ucla.edu/browse/Departments/ElectricalandComputerEngineering"
+    },
+    "mechanical-engineering": {
+      "announcement_page": 142,
+      "dept_page": "https://www.mae.ucla.edu/",
+      "four_year_plan_url": "https://www.seasoasa.ucla.edu/"
+    }
+  }
+}

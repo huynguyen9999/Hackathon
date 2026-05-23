@@ -200,12 +200,10 @@
       "graduation_units": 180,
       "roadmap_available": true,
       "preparation_for_major": [
-        "COM SCI 1",
         "COM SCI 31",
         "COM SCI 32",
         "MATH 31A-B",
         "MATH 32A-B",
-        "MATH 61",
         "PHYSICS 1A-B"
       ],
       "upper_division_required": [
@@ -225,7 +223,9 @@
         "Security Engineer"
       ],
       "detail_available": true,
-      "requirements_level": "roadmap"
+      "requirements_level": "roadmap",
+      "plan_of_study_url": "https://www.seasoasa.ucla.edu/",
+      "gear_page": 78
     },
     {
       "name": "Computer Science and Engineering",
@@ -268,32 +268,49 @@
       "department_url": "https://www.ee.ucla.edu/",
       "curriculum_url": "https://www.ee.ucla.edu/",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
+        "CHEM 20A",
+        "COM SCI 31",
+        "COM SCI 32",
         "MATH 31A-B",
         "MATH 32A-B",
         "MATH 33A-B",
-        "PHYSICS 1A-B-C",
-        "EC ENGR 3A",
-        "EC ENGR 10"
+        "PHYSICS 1A-B",
+        "EC ENGR 3",
+        "EC ENGR M16",
+        "EC ENGR 1",
+        "EC ENGR 2",
+        "EC ENGR 10",
+        "EC ENGR 102",
+        "EC ENGR 103"
       ],
       "upper_division_required": [
-        "EC ENGR 100",
-        "EC ENGR 101A",
-        "EC ENGR 102",
+        "EC ENGR 110",
+        "EC ENGR 113",
         "EC ENGR 131A",
-        "EC ENGR 133A",
-        "EC ENGR 152A",
-        "EC ENGR 152B"
+        "EC ENGR 101",
+        "EC ENGR 110L",
+        "EC ENGR 115A",
+        "EC ENGR 115AL",
+        "EC ENGR 121B",
+        "EC ENGR 132A",
+        "EC ENGR 161",
+        "EC ENGR 141",
+        "MATH 132",
+        "STATS 105"
       ],
       "career_outcomes": [
         "Hardware Engineer",
-        "RF Engineer",
+        "RF / Wireless Engineer",
         "Signal Processing Engineer",
-        "Chip Designer"
+        "Controls Engineer",
+        "Semiconductor / Chip Designer"
       ],
       "detail_available": true,
-      "requirements_level": "gear"
+      "requirements_level": "roadmap",
+      "plan_of_study_url": "https://www.seasoasa.ucla.edu/ee-4-year-plan/",
+      "gear_page": 74
     },
     {
       "name": "Materials Engineering",
@@ -331,23 +348,23 @@
       "degree_type": "BS",
       "department": "Mechanical & Aerospace Engineering",
       "department_url": "https://mae.ucla.edu/",
-      "curriculum_url": "https://mae.ucla.edu/",
+      "curriculum_url": "https://www.mae.ucla.edu/",
       "graduation_units": 180,
       "roadmap_available": false,
       "preparation_for_major": [
         "MATH 31A-B",
         "MATH 32A-B",
         "MATH 33A-B",
-        "PHYSICS 1A-B-C",
-        "MECH&AE 82",
-        "MECH&AE 94"
+        "PHYSICS 1A-B"
       ],
       "upper_division_required": [
         "MECH&AE 103",
         "MECH&AE 104",
         "MECH&AE 105A",
-        "MECH&AE 106A-B",
-        "MECH&AE 156A-B"
+        "MECH&AE 106A",
+        "MECH&AE 106B",
+        "MECH&AE 156A",
+        "MECH&AE 156B"
       ],
       "career_outcomes": [
         "Mechanical Design Engineer",
@@ -355,7 +372,9 @@
         "Thermal Systems Engineer"
       ],
       "detail_available": true,
-      "requirements_level": "gear"
+      "requirements_level": "gear",
+      "plan_of_study_url": "https://www.seasoasa.ucla.edu/",
+      "gear_page": 142
     }
   ],
   "sources": [

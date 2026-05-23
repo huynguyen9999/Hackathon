@@ -1,0 +1,34 @@
+{
+  "programs": [
+    {
+      "slug": "electrical-engineering-ms",
+      "name": "MS Electrical Engineering",
+      "department": "ECE",
+      "degree": "MS"
+    },
+    {
+      "slug": "computer-science-ms",
+      "name": "MS Computer Science",
+      "department": "CMPSC",
+      "degree": "MS"
+    },
+    {
+      "slug": "computer-science-phd",
+      "name": "PhD Computer Science",
+      "department": "CMPSC",
+      "degree": "PhD"
+    },
+    {
+      "slug": "mechanical-engineering-ms",
+      "name": "MS Mechanical Engineering",
+      "department": "ME",
+      "degree": "MS"
+    },
+    {
+      "slug": "chemical-engineering-ms",
+      "name": "MS Chemical Engineering",
+      "department": "CH E",
+      "degree": "MS"
+    }
+  ]
+}

@@ -6,6 +6,10 @@ import { isPlannerCollabEnabled } from "@/lib/env";
 import { getUcsbConnector } from "@/lib/integrations/ucsb/connector";
 import { getRoadmapBySlug } from "@/lib/roadmap";
 import {
+  getDefaultQuarter,
+  listQuarters,
+} from "@/lib/ucsb-curriculum";
+import {
   coeCollegeHubHref,
   coeMajorHubHref,
   isCoeMajorSlug,
@@ -41,9 +45,18 @@ export default async function RoadmapPage({ params }: PageProps) {
   }
 
   const isUcsb = roadmap.school.short_name === "ucsb";
-  const isCoe = isUcsb ? await isCoeMajorSlug(major) : false;
+  const isUcla = roadmap.school.short_name === "ucla";
+  const isGrad = ["MS", "PhD", "MA"].includes(roadmap.major.degree_type);
+  const isCoe =
+    !isGrad && (await isCoeMajorSlug(major, roadmap.school.short_name));
   const departmentFaculty =
-    isUcsb && !isCoe ? await loadDepartmentFacultyForMajor(major) : null;
+    isUcsb && !isCoe && !isGrad
+      ? await loadDepartmentFacultyForMajor(major)
+      : null;
+
+  const defaultCatalogQuarter = isUcsb
+    ? getDefaultQuarter(await listQuarters())
+    : undefined;
 
   const plannerCollabEnabled = isPlannerCollabEnabled();
   const connector = getUcsbConnector();
@@ -58,29 +71,58 @@ export default async function RoadmapPage({ params }: PageProps) {
         breadcrumbs={[
           { label: "Explore", href: "/explore" },
           ...(isUcsb
-            ? [
-                {
-                  label: "UCSB",
-                  href: schoolHubHref("ucsb"),
-                },
-                {
-                  label: isCoe ? "Engineering" : "Letters & Science",
-                  href: isCoe
-                    ? coeCollegeHubHref("ucsb")
-                    : lsCollegeHubHref("ucsb"),
-                },
-                {
-                  label: roadmap.major.name,
-                  href: isCoe
-                    ? coeMajorHubHref("ucsb", major)
-                    : lsMajorHubHref("ucsb", major),
-                },
-                { label: "Roadmap" },
-              ]
-            : [
-                { label: roadmap.school.short_name.toUpperCase() },
-                { label: roadmap.major.name },
-              ]),
+            ? isGrad
+              ? [
+                  {
+                    label: "UCSB",
+                    href: schoolHubHref("ucsb"),
+                  },
+                  {
+                    label: "Graduate",
+                    href: "/schools/ucsb/graduate",
+                  },
+                  { label: roadmap.major.name },
+                  { label: "Roadmap" },
+                ]
+              : [
+                  {
+                    label: "UCSB",
+                    href: schoolHubHref("ucsb"),
+                  },
+                  {
+                    label: isCoe ? "Engineering" : "Letters & Science",
+                    href: isCoe
+                      ? coeCollegeHubHref("ucsb")
+                      : lsCollegeHubHref("ucsb"),
+                  },
+                  {
+                    label: roadmap.major.name,
+                    href: isCoe
+                      ? coeMajorHubHref("ucsb", major)
+                      : lsMajorHubHref("ucsb", major),
+                  },
+                  { label: "Roadmap" },
+                ]
+            : isUcla && isCoe
+              ? [
+                  {
+                    label: "UCLA",
+                    href: schoolHubHref("ucla"),
+                  },
+                  {
+                    label: "Engineering",
+                    href: coeCollegeHubHref("ucla"),
+                  },
+                  {
+                    label: roadmap.major.name,
+                    href: coeMajorHubHref("ucla", major),
+                  },
+                  { label: "Roadmap" },
+                ]
+              : [
+                  { label: roadmap.school.short_name.toUpperCase() },
+                  { label: roadmap.major.name },
+                ]),
         ]}
         eyebrow={`${roadmap.school.short_name} · ${roadmap.major.degree_type}`}
         title={roadmap.major.name}
@@ -103,6 +145,7 @@ export default async function RoadmapPage({ params }: PageProps) {
       <RoadmapView
         roadmap={roadmap}
         departmentFaculty={departmentFaculty}
+        defaultCatalogQuarter={defaultCatalogQuarter}
         auditRules={auditRules}
         apRules={creditRules.apRules}
         transferRules={creditRules.transferRules}

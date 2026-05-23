@@ -1,0 +1,340 @@
+{
+  "school": {
+    "name": "UC Los Angeles",
+    "short_name": "ucla",
+    "location": "Los Angeles, CA"
+  },
+  "major": {
+    "name": "Electrical Engineering",
+    "slug": "electrical-engineering",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCLA EE 4-Year Plan + Samueli Announcement 2025-2026",
+    "source_url": "https://www.seasoasa.ucla.edu/ee-4-year-plan/",
+    "announcement_page": 74,
+    "capstone": {
+      "required": true,
+      "label": "Pathway Design Course",
+      "notes": "Senior pathway design course from approved specialization list (Announcement p.74).",
+      "source_url": "https://www.seasoasa.ucla.edu/ee-4-year-plan/"
+    }
+  },
+  "nodes": [
+    {
+      "id": "com-sci-31",
+      "node_type": "course",
+      "label": "COM SCI 31",
+      "title": "Introduction to Computer Science I",
+      "description": "Introductory programming in C++: control structures, functions, arrays, and problem decomposition for engineering applications.",
+      "units": 4,
+      "self_learnable": true,
+      "resources": [
+        {
+          "name": "UCLA Catalog — COM SCI 31",
+          "url": "https://catalog.registrar.ucla.edu/CourseDetail?SubjectAreaName=COM%20SCI&CatalogNumber=0031"
+        }
+      ],
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "com-sci-32",
+      "node_type": "course",
+      "label": "COM SCI 32",
+      "title": "Introduction to Computer Science II",
+      "description": "Object-oriented programming, recursion, and introductory data structures. Second course in the EE programming sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "resources": [
+        {
+          "name": "UCLA Catalog — COM SCI 32",
+          "url": "https://catalog.registrar.ucla.edu/CourseDetail?SubjectAreaName=COM%20SCI&CatalogNumber=0032"
+        }
+      ],
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "ec-engr-3",
+      "node_type": "course",
+      "label": "EC ENGR 3",
+      "title": "Introduction to Electrical Engineering",
+      "description": "Survey of electrical engineering fields, tools, and career paths for freshmen in the major.",
+      "units": 2,
+      "self_learnable": true,
+      "resources": [
+        {
+          "name": "UCLA ECE Department",
+          "url": "https://www.ee.ucla.edu/"
+        }
+      ],
+      "position_x": 80,
+      "position_y": 300
+    },
+    {
+      "id": "ec-engr-m16",
+      "node_type": "course",
+      "label": "EC ENGR M16",
+      "title": "Logic Design of Digital Systems",
+      "description": "Boolean algebra, combinational and sequential logic, and digital system design. Equivalent to COM SCI M51A for EE majors.",
+      "units": 4,
+      "self_learnable": false,
+      "resources": [
+        {
+          "name": "UCLA Catalog — EC ENGR M16",
+          "url": "https://catalog.registrar.ucla.edu/CourseDetail?SubjectAreaName=EC%20ENGR&CatalogNumber=M016"
+        }
+      ],
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "ec-engr-1",
+      "node_type": "course",
+      "label": "EC ENGR 1",
+      "title": "Electrical Engineering Physics I",
+      "description": "Electromagnetism and wave phenomena tailored for electrical engineering students.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 300
+    },
+    {
+      "id": "ec-engr-2",
+      "node_type": "course",
+      "label": "EC ENGR 2",
+      "title": "Physics for Electrical Engineers",
+      "description": "Applied physics topics supporting circuits, fields, and device courses in the EE core.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 300
+    },
+    {
+      "id": "ec-engr-10",
+      "node_type": "course",
+      "label": "EC ENGR 10",
+      "title": "Circuit Analysis I",
+      "description": "Kirchhoff laws, nodal and mesh analysis, Thevenin/Norton equivalents, and first-order circuits.",
+      "units": 4,
+      "self_learnable": false,
+      "resources": [
+        {
+          "name": "UCLA Catalog — EC ENGR 10",
+          "url": "https://catalog.registrar.ucla.edu/CourseDetail?SubjectAreaName=EC%20ENGR&CatalogNumber=0010"
+        }
+      ],
+      "position_x": 980,
+      "position_y": 520
+    },
+    {
+      "id": "ec-engr-102",
+      "node_type": "course",
+      "label": "EC ENGR 102",
+      "title": "Systems and Signals",
+      "description": "Continuous and discrete-time signals, linear systems, convolution, and Fourier analysis foundations.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 520
+    },
+    {
+      "id": "ec-engr-103",
+      "node_type": "course",
+      "label": "EC ENGR 103",
+      "title": "Applied Numerical Computing",
+      "description": "Numerical methods and computing tools for solving engineering problems in MATLAB or similar environments.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 740
+    },
+    {
+      "id": "ec-engr-110",
+      "node_type": "course",
+      "label": "EC ENGR 110",
+      "title": "Circuit Analysis II",
+      "description": "Advanced circuit analysis: Laplace transforms, frequency response, two-port networks, and filter design.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 520
+    },
+    {
+      "id": "ec-engr-113",
+      "node_type": "course",
+      "label": "EC ENGR 113",
+      "title": "Digital Signal Processing",
+      "description": "Discrete-time signals and systems, z-transforms, DFT/FFT, and digital filter design.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "ec-engr-131a",
+      "node_type": "course",
+      "label": "EC ENGR 131A",
+      "title": "Probability",
+      "description": "Probability theory, random variables, and distributions for communications and signal processing.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "ec-engr-101",
+      "node_type": "course",
+      "label": "EC ENGR 101",
+      "title": "Engineering Electromagnetics",
+      "description": "Maxwell equations, plane waves, transmission lines, and wave propagation in engineering media.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "ec-engr-115a",
+      "node_type": "course",
+      "label": "EC ENGR 115A",
+      "title": "Analog Electronic Circuits I",
+      "description": "Diodes, MOSFETs, biasing, small-signal models, and analog amplifier design.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "ec-engr-121b",
+      "node_type": "course",
+      "label": "EC ENGR 121B",
+      "title": "Principles of Semiconductor Device Design",
+      "description": "Semiconductor physics, PN junctions, MOSFET operation, and device-level design principles.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 520
+    },
+    {
+      "id": "ec-engr-132a",
+      "node_type": "course",
+      "label": "EC ENGR 132A",
+      "title": "Introduction to Communication Systems",
+      "description": "Analog and digital modulation, channel models, and communication system architecture.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 300
+    },
+    {
+      "id": "ec-engr-161",
+      "node_type": "course",
+      "label": "EC ENGR 161",
+      "title": "Electromagnetic Waves",
+      "description": "Waveguides, antennas, radiation, and electromagnetic wave applications in engineering systems.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "ec-engr-141",
+      "node_type": "course",
+      "label": "EC ENGR 141",
+      "title": "Principles of Feedback Control",
+      "description": "Feedback control system modeling, stability, root locus, frequency response, and controller design.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 520
+    },
+    {
+      "id": "pathway-design",
+      "node_type": "course",
+      "label": "Pathway Design",
+      "title": "Pathway Design Course",
+      "description": "Senior design course within an approved EE pathway specialization. Culminating project integrating pathway coursework.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "role": "capstone" },
+      "resources": [
+        {
+          "name": "EE 4-Year Plan — pathway requirements",
+          "url": "https://www.seasoasa.ucla.edu/ee-4-year-plan/"
+        }
+      ],
+      "position_x": 2480,
+      "position_y": 520
+    },
+    {
+      "id": "career-rf",
+      "node_type": "career",
+      "label": "RF Engineer",
+      "title": "RF / Wireless Engineer",
+      "description": "Design antennas, RF circuits, and wireless communication systems for telecom and aerospace.",
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 80
+    },
+    {
+      "id": "career-hardware",
+      "node_type": "career",
+      "label": "Hardware Engineer",
+      "title": "Hardware / Digital Design Engineer",
+      "description": "Board-level design, FPGA/ASIC development, and embedded hardware for consumer and industrial products.",
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 300
+    },
+    {
+      "id": "career-signals",
+      "node_type": "career",
+      "label": "DSP Engineer",
+      "title": "Signal Processing Engineer",
+      "description": "Develop algorithms for audio, imaging, radar, and communications in software and hardware.",
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 520
+    },
+    {
+      "id": "career-controls",
+      "node_type": "career",
+      "label": "Controls Engineer",
+      "title": "Controls / Robotics Engineer",
+      "description": "Design feedback control systems for robotics, aerospace, automotive, and industrial automation.",
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    { "id": "e1", "source_id": "com-sci-31", "target_id": "com-sci-32", "edge_type": "prerequisite" },
+    { "id": "e2", "source_id": "com-sci-32", "target_id": "ec-engr-m16", "edge_type": "prerequisite" },
+    { "id": "e3", "source_id": "ec-engr-3", "target_id": "ec-engr-10", "edge_type": "recommended" },
+    { "id": "e4", "source_id": "ec-engr-1", "target_id": "ec-engr-2", "edge_type": "prerequisite" },
+    { "id": "e5", "source_id": "ec-engr-2", "target_id": "ec-engr-10", "edge_type": "prerequisite" },
+    { "id": "e6", "source_id": "ec-engr-10", "target_id": "ec-engr-102", "edge_type": "prerequisite" },
+    { "id": "e7", "source_id": "ec-engr-102", "target_id": "ec-engr-110", "edge_type": "prerequisite" },
+    { "id": "e8", "source_id": "ec-engr-102", "target_id": "ec-engr-113", "edge_type": "prerequisite" },
+    { "id": "e9", "source_id": "ec-engr-102", "target_id": "ec-engr-141", "edge_type": "prerequisite" },
+    { "id": "e10", "source_id": "ec-engr-110", "target_id": "ec-engr-115a", "edge_type": "prerequisite" },
+    { "id": "e11", "source_id": "ec-engr-110", "target_id": "ec-engr-101", "edge_type": "recommended" },
+    { "id": "e12", "source_id": "ec-engr-101", "target_id": "ec-engr-161", "edge_type": "prerequisite" },
+    { "id": "e13", "source_id": "ec-engr-115a", "target_id": "ec-engr-121b", "edge_type": "prerequisite" },
+    { "id": "e14", "source_id": "ec-engr-113", "target_id": "ec-engr-132a", "edge_type": "prerequisite" },
+    { "id": "e15", "source_id": "ec-engr-131a", "target_id": "ec-engr-132a", "edge_type": "prerequisite" },
+    { "id": "e16", "source_id": "ec-engr-m16", "target_id": "career-hardware", "edge_type": "leads_to" },
+    { "id": "e17", "source_id": "ec-engr-161", "target_id": "career-rf", "edge_type": "leads_to" },
+    { "id": "e18", "source_id": "ec-engr-113", "target_id": "career-signals", "edge_type": "leads_to" },
+    { "id": "e19", "source_id": "ec-engr-141", "target_id": "career-controls", "edge_type": "leads_to" },
+    { "id": "e20", "source_id": "ec-engr-115a", "target_id": "pathway-design", "edge_type": "recommended" },
+    { "id": "e21", "source_id": "ec-engr-132a", "target_id": "pathway-design", "edge_type": "recommended" },
+    { "id": "e22", "source_id": "pathway-design", "target_id": "career-rf", "edge_type": "leads_to" },
+    { "id": "e23", "source_id": "pathway-design", "target_id": "career-hardware", "edge_type": "leads_to" },
+    { "id": "e24", "source_id": "pathway-design", "target_id": "career-signals", "edge_type": "leads_to" },
+    { "id": "e25", "source_id": "pathway-design", "target_id": "career-controls", "edge_type": "leads_to" },
+    { "id": "e26", "source_id": "com-sci-32", "target_id": "ec-engr-103", "edge_type": "recommended" },
+    { "id": "e27", "source_id": "ec-engr-131a", "target_id": "ec-engr-113", "edge_type": "recommended" }
+  ]
+}

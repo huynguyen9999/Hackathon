@@ -1,0 +1,10 @@
+{
+  "slug": "computer-science-ms",
+  "name": "MS Computer Science",
+  "department": "CMPSC",
+  "degree": "MS",
+  "description": "The MS in Computer Science offers thesis and project tracks with graduate coursework in algorithms, systems, and AI.",
+  "source_url": "https://www.cs.ucsb.edu/education/graduate/ms-program",
+  "required_courses": ["CMPSC 596", "CMPSC 597", "CMPSC 598", "CMPSC 599"],
+  "milestones": ["Committee formation", "Thesis or project defense"]
+}

@@ -1,0 +1,40 @@
+{
+  "quarter": "20252",
+  "subjectCode": "COMM",
+  "level": "G",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "COMM 200A",
+      "title": "Proseminar in Communication",
+      "description": "Graduate proseminar in communication.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "COMM",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "COMM 596",
+      "title": "Individual Study for Master's Students",
+      "description": "MS individual study.",
+      "units": 1,
+      "objLevelCode": "G",
+      "subjectCode": "COMM",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

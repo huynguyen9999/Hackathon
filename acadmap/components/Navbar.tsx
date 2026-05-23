@@ -10,6 +10,7 @@ import { APP_LOGO_INITIALS, APP_NAME } from "@/lib/brand";
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/schools", label: "Schools" },
+  { href: "/schools/ucsb/courses", label: "Courses" },
   { href: "/explore", label: "Explore" },
   { href: "/contribute", label: "Contribute" },
 ] as const;

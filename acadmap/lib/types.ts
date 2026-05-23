@@ -127,11 +127,12 @@ export interface RoadmapListItem {
 
 // ——— React Flow UI types (camelCase) ———
 
-/** Per-node metadata from seed JSON (e.g. senior capstone sequence). */
+/** Per-node metadata from seed JSON (e.g. senior capstone sequence, grad courses). */
 export type CourseNodeMetadata = {
   role?: string;
   optional?: boolean;
   sequence?: number;
+  course_level?: "graduate" | "undergraduate";
 };
 
 export type RoadmapNodeData = {

@@ -127,6 +127,23 @@ export default async function SchoolHubPage({ params }: PageProps) {
           ))}
         </div>
       </section>
+
+      {school === "ucsb" && (
+        <section className="mt-14">
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
+            Graduate programs
+          </h2>
+          <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+            MS and PhD roadmaps for key engineering departments.
+          </p>
+          <Link
+            href="/schools/ucsb/graduate"
+            className="mt-4 inline-flex rounded-lg border border-violet-500/30 bg-violet-500/10 px-4 py-2 text-sm font-medium text-violet-800 transition hover:bg-violet-500/20 dark:text-violet-200"
+          >
+            View graduate hub →
+          </Link>
+        </section>
+      )}
     </div>
   );
 }

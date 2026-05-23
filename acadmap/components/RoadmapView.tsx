@@ -36,6 +36,7 @@ type ExternalRule = {
 export type RoadmapViewProps = {
   roadmap: RoadmapDetail;
   departmentFaculty?: DepartmentFacultyFile | null;
+  defaultCatalogQuarter?: string;
   auditRules: DegreeAuditRules | null;
   apRules: ExternalRule[];
   transferRules: ExternalRule[];
@@ -59,6 +60,7 @@ function statusMapFromSchedule(
 export function RoadmapView({
   roadmap,
   departmentFaculty,
+  defaultCatalogQuarter,
   auditRules,
   apRules,
   transferRules,
@@ -273,6 +275,7 @@ export function RoadmapView({
           <Sidebar
             selectedNode={sidebarNode as Node<iGauchoBackNodeData> | null}
             departmentFaculty={departmentFaculty}
+            defaultCatalogQuarter={defaultCatalogQuarter}
             onToggleCompleted={schedule.toggleCompleted}
             onTogglePlanned={schedule.togglePlanned}
             onRunWhatIf={onRunWhatIf}

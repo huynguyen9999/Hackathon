@@ -1,0 +1,40 @@
+{
+  "quarter": "20252",
+  "subjectCode": "PSY",
+  "level": "G",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "PSY 211A",
+      "title": "Proseminar in Cognitive Psychology",
+      "description": "Graduate proseminar in cognition.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "PSY",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "PSY 296",
+      "title": "Advanced Special Topics in Psychology",
+      "description": "Graduate special topics.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "PSY",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

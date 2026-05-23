@@ -34,7 +34,7 @@ function parseStoredState(value: string | null): RoadmapScheduleState {
   if (!value) return DEFAULT_STATE;
   try {
     const parsed = JSON.parse(value) as Partial<RoadmapScheduleState>;
-    return {
+    return sanitizeScheduleState({
       completedCourseIds: Array.isArray(parsed.completedCourseIds)
         ? parsed.completedCourseIds
         : [],
@@ -43,10 +43,21 @@ function parseStoredState(value: string | null): RoadmapScheduleState {
         : [],
       whatIfRemovedId: parsed.whatIfRemovedId ?? null,
       activeAnalysisMode: parsed.activeAnalysisMode ?? "conflicts",
-    };
+    });
   } catch {
     return DEFAULT_STATE;
   }
+}
+
+/** Drop schedule marks on the what-if node (legacy localStorage may have both). */
+function sanitizeScheduleState(state: RoadmapScheduleState): RoadmapScheduleState {
+  if (!state.whatIfRemovedId) return state;
+  const { whatIfRemovedId } = state;
+  return {
+    ...state,
+    completedCourseIds: state.completedCourseIds.filter((id) => id !== whatIfRemovedId),
+    plannedCourseIds: state.plannedCourseIds.filter((id) => id !== whatIfRemovedId),
+  };
 }
 
 export function useRoadmapSchedule(roadmapId: string) {
@@ -67,14 +78,19 @@ export function useRoadmapSchedule(roadmapId: string) {
   const toggleCompleted = useCallback((nodeId: string) => {
     setState((prev) => {
       const isCompleted = prev.completedCourseIds.includes(nodeId);
+      if (isCompleted) {
+        return {
+          ...prev,
+          completedCourseIds: prev.completedCourseIds.filter((id) => id !== nodeId),
+        };
+      }
       return {
         ...prev,
-        completedCourseIds: isCompleted
-          ? prev.completedCourseIds.filter((id) => id !== nodeId)
-          : unique([...prev.completedCourseIds, nodeId]),
-        plannedCourseIds: isCompleted
-          ? prev.plannedCourseIds
-          : prev.plannedCourseIds.filter((id) => id !== nodeId),
+        completedCourseIds: unique([...prev.completedCourseIds, nodeId]),
+        plannedCourseIds: prev.plannedCourseIds.filter((id) => id !== nodeId),
+        ...(prev.whatIfRemovedId === nodeId
+          ? { whatIfRemovedId: null as string | null, activeAnalysisMode: "conflicts" as const }
+          : {}),
       };
     });
   }, []);
@@ -82,24 +98,36 @@ export function useRoadmapSchedule(roadmapId: string) {
   const togglePlanned = useCallback((nodeId: string) => {
     setState((prev) => {
       const isPlanned = prev.plannedCourseIds.includes(nodeId);
+      if (isPlanned) {
+        return {
+          ...prev,
+          plannedCourseIds: prev.plannedCourseIds.filter((id) => id !== nodeId),
+        };
+      }
       return {
         ...prev,
-        plannedCourseIds: isPlanned
-          ? prev.plannedCourseIds.filter((id) => id !== nodeId)
-          : unique([...prev.plannedCourseIds, nodeId]),
-        completedCourseIds: isPlanned
-          ? prev.completedCourseIds
-          : prev.completedCourseIds.filter((id) => id !== nodeId),
+        plannedCourseIds: unique([...prev.plannedCourseIds, nodeId]),
+        completedCourseIds: prev.completedCourseIds.filter((id) => id !== nodeId),
+        ...(prev.whatIfRemovedId === nodeId
+          ? { whatIfRemovedId: null as string | null, activeAnalysisMode: "conflicts" as const }
+          : {}),
       };
     });
   }, []);
 
   const setWhatIfRemoved = useCallback((nodeId: string | null) => {
-    setState((prev) => ({
-      ...prev,
-      whatIfRemovedId: nodeId,
-      activeAnalysisMode: nodeId ? "whatIf" : prev.activeAnalysisMode,
-    }));
+    setState((prev) => {
+      if (!nodeId) {
+        return { ...prev, whatIfRemovedId: null };
+      }
+      return {
+        ...prev,
+        whatIfRemovedId: nodeId,
+        activeAnalysisMode: "whatIf",
+        completedCourseIds: prev.completedCourseIds.filter((id) => id !== nodeId),
+        plannedCourseIds: prev.plannedCourseIds.filter((id) => id !== nodeId),
+      };
+    });
   }, []);
 
   const setActiveAnalysisMode = useCallback((mode: AnalysisMode) => {

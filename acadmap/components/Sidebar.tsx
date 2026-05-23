@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo } from "react";
 import type { Node } from "@xyflow/react";
 import type { iGauchoBackNodeData } from "@/lib/types";
@@ -7,10 +8,16 @@ import type { DepartmentFacultyFile } from "@/lib/ucsb-faculty-types";
 import { FacultySidebarSection } from "@/components/FacultySidebarSection";
 import { PartnerResourcesSection } from "@/components/PartnerResourcesSection";
 import { getPartnerOffersForNode } from "@/lib/partners";
+import { buildCatalogUrlFromCourseLabel } from "@/lib/ucsb-curriculum-urls";
+import {
+  getGradBridgeForCourse,
+  GRAD_PROGRAM_LABELS,
+} from "@/lib/ucsb-grad-bridges";
 
 export type SidebarProps = {
   selectedNode: Node<iGauchoBackNodeData> | null;
   departmentFaculty?: DepartmentFacultyFile | null;
+  defaultCatalogQuarter?: string;
   onToggleCompleted?: (nodeId: string) => void;
   onTogglePlanned?: (nodeId: string) => void;
   onRunWhatIf?: (nodeId: string) => void;
@@ -22,6 +29,7 @@ export type SidebarProps = {
 export function Sidebar({
   selectedNode,
   departmentFaculty,
+  defaultCatalogQuarter,
   onToggleCompleted,
   onTogglePlanned,
   onRunWhatIf,
@@ -57,10 +65,22 @@ export function Sidebar({
   const resources = data.resources ?? [];
   const isCapstone =
     isCourse && data.nodeMetadata?.role === "capstone";
+  const isGradCourse =
+    isCourse && data.nodeMetadata?.course_level === "graduate";
+  const catalogHref = isCourse
+    ? buildCatalogUrlFromCourseLabel(data.label, defaultCatalogQuarter)
+    : null;
+  const gradBridge = isCourse ? getGradBridgeForCourse(data.label) : undefined;
   const showPartnerSection =
     isCourse &&
     data.selfLearnable &&
     (partnerOffers.affiliates.length > 0 || partnerOffers.sponsored !== undefined);
+  const hasScheduleMark = Boolean(data.scheduleStatus);
+  const isWhatIfRemoved = data.analysisState === "removed";
+  const scheduleMarksDisabled = isWhatIfRemoved;
+  const whatIfDisabled = hasScheduleMark;
+  const disabledScheduleBtnClass =
+    "cursor-not-allowed opacity-50 hover:bg-transparent dark:hover:bg-transparent";
 
   return (
     <aside
@@ -119,6 +139,11 @@ export function Sidebar({
               ) : null}
             </>
           )}
+          {isGradCourse && (
+            <span className="rounded-full bg-violet-500/15 px-2.5 py-0.5 text-[10px] font-medium text-violet-800 dark:text-violet-200 ring-1 ring-violet-400/30">
+              Graduate
+            </span>
+          )}
         </div>
       </header>
 
@@ -160,6 +185,43 @@ export function Sidebar({
           </section>
         )}
 
+        {catalogHref && (
+          <section className="mb-6">
+            <Link
+              href={catalogHref}
+              className="flex items-center gap-2 rounded-lg border border-gaucho-blue/20 bg-gaucho-blue/5 px-3 py-2.5 text-sm font-medium text-gaucho-blue transition hover:border-gaucho-gold/40 dark:text-gaucho-gold"
+            >
+              <span aria-hidden>→</span>
+              View in course catalog
+            </Link>
+          </section>
+        )}
+
+        {gradBridge && gradBridge.programSlugs.length > 0 && (
+          <section className="mb-6 rounded-lg border border-violet-500/20 bg-violet-50 dark:bg-violet-950/20 px-3 py-2.5">
+            <h3 className="mb-1 text-xs font-semibold uppercase tracking-wider text-violet-800 dark:text-violet-200">
+              Relevant for MS/PhD prep
+            </h3>
+            {gradBridge.note && (
+              <p className="mb-2 text-xs leading-relaxed text-violet-900/90 dark:text-violet-100/90">
+                {gradBridge.note}
+              </p>
+            )}
+            <ul className="space-y-1">
+              {gradBridge.programSlugs.map((slug) => (
+                <li key={slug}>
+                  <Link
+                    href={`/roadmap/ucsb/${slug}`}
+                    className="text-xs font-medium text-violet-700 underline dark:text-violet-200"
+                  >
+                    {GRAD_PROGRAM_LABELS[slug] ?? slug}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {isCourse && (onToggleCompleted || onTogglePlanned || onRunWhatIf || onClearWhatIf) ? (
           <section className="mb-6 rounded-lg border border-gaucho-blue/15 bg-gaucho-blue/5 px-3 py-3 dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark/40">
             <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold/80">
@@ -168,8 +230,12 @@ export function Sidebar({
             <div className="grid gap-2">
               <button
                 type="button"
+                disabled={scheduleMarksDisabled}
                 onClick={() => onToggleCompleted?.(selectedNode.id)}
-                className="rounded-lg border border-emerald-500/30 px-3 py-2 text-left text-xs font-semibold text-emerald-700 transition hover:bg-emerald-500/10 dark:text-emerald-300"
+                className={[
+                  "rounded-lg border border-emerald-500/30 px-3 py-2 text-left text-xs font-semibold text-emerald-700 transition hover:bg-emerald-500/10 dark:text-emerald-300",
+                  scheduleMarksDisabled ? disabledScheduleBtnClass : "",
+                ].join(" ")}
               >
                 {data.scheduleStatus === "completed"
                   ? "Undo completed"
@@ -177,8 +243,12 @@ export function Sidebar({
               </button>
               <button
                 type="button"
+                disabled={scheduleMarksDisabled}
                 onClick={() => onTogglePlanned?.(selectedNode.id)}
-                className="rounded-lg border border-gaucho-gold/40 px-3 py-2 text-left text-xs font-semibold text-gaucho-blue transition hover:bg-gaucho-gold/10 dark:text-gaucho-gold-light"
+                className={[
+                  "rounded-lg border border-gaucho-gold/40 px-3 py-2 text-left text-xs font-semibold text-gaucho-blue transition hover:bg-gaucho-gold/10 dark:text-gaucho-gold-light",
+                  scheduleMarksDisabled ? disabledScheduleBtnClass : "",
+                ].join(" ")}
               >
                 {data.scheduleStatus === "planned"
                   ? "Undo planned"
@@ -186,12 +256,16 @@ export function Sidebar({
               </button>
               <button
                 type="button"
+                disabled={whatIfDisabled}
                 onClick={() => onRunWhatIf?.(selectedNode.id)}
-                className="rounded-lg border border-orange-500/30 px-3 py-2 text-left text-xs font-semibold text-orange-700 transition hover:bg-orange-500/10 dark:text-orange-300"
+                className={[
+                  "rounded-lg border border-orange-500/30 px-3 py-2 text-left text-xs font-semibold text-orange-700 transition hover:bg-orange-500/10 dark:text-orange-300",
+                  whatIfDisabled ? disabledScheduleBtnClass : "",
+                ].join(" ")}
               >
                 What if I drop this?
               </button>
-              {data.analysisState === "removed" ? (
+              {isWhatIfRemoved ? (
                 <button
                   type="button"
                   onClick={onClearWhatIf}
@@ -201,6 +275,16 @@ export function Sidebar({
                 </button>
               ) : null}
             </div>
+            {scheduleMarksDisabled ? (
+              <p className="mt-2 text-[11px] text-slate-500 dark:text-slate-400">
+                Clear what-if first to mark completed or planned.
+              </p>
+            ) : null}
+            {whatIfDisabled && !isWhatIfRemoved ? (
+              <p className="mt-2 text-[11px] text-slate-500 dark:text-slate-400">
+                Clear completed/planned mark first to run what-if.
+              </p>
+            ) : null}
             {data.analysisNote ? (
               <p className="mt-3 rounded-lg bg-white px-3 py-2 text-xs leading-relaxed text-slate-700 dark:bg-slate-900/60 dark:text-slate-300">
                 {data.analysisNote}

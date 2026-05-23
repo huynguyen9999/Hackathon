@@ -1,0 +1,88 @@
+{
+  "quarter": "20252",
+  "subjectCode": "ECE",
+  "level": "G",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "ECE 291",
+      "title": "Seminar in Electrical Engineering",
+      "description": "Graduate seminar on current topics in electrical and computer engineering.",
+      "units": 2,
+      "objLevelCode": "G",
+      "subjectCode": "ECE",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "ECE 294",
+      "title": "Advanced Topics in Electrical Engineering",
+      "description": "Special topics at the graduate level; content varies by quarter.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "ECE",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "ECE 296",
+      "title": "Advanced Special Topics in Electrical Engineering",
+      "description": "Advanced graduate topics in ECE research areas.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "ECE",
+      "sections": [
+        {
+          "enrollCode": "10002",
+          "section": "300",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "ECE 596",
+      "title": "Individual Study for Master's Students",
+      "description": "Directed reading and research for MS students under faculty supervision.",
+      "units": 1,
+      "objLevelCode": "G",
+      "subjectCode": "ECE",
+      "sections": [
+        {
+          "enrollCode": "10003",
+          "section": "400",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "ECE 599",
+      "title": "PhD Dissertation Research",
+      "description": "Dissertation research for doctoral candidates.",
+      "units": 1,
+      "objLevelCode": "G",
+      "subjectCode": "ECE",
+      "sections": [
+        {
+          "enrollCode": "10004",
+          "section": "500",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

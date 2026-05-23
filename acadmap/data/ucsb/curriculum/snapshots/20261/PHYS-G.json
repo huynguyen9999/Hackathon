@@ -1,0 +1,40 @@
+{
+  "quarter": "20261",
+  "subjectCode": "PHYS",
+  "level": "G",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "PHYS 200A",
+      "title": "Classical Mechanics",
+      "description": "Graduate classical mechanics.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "PHYS",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "PHYS 210A",
+      "title": "Quantum Mechanics I",
+      "description": "Graduate quantum mechanics.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "PHYS",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

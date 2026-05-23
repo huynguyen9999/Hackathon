@@ -1,0 +1,20 @@
+{
+  "quarters": [
+    {
+      "code": "20261",
+      "label": "Fall 2026"
+    },
+    {
+      "code": "20252",
+      "label": "Spring 2026"
+    },
+    {
+      "code": "20251",
+      "label": "Winter 2026"
+    },
+    {
+      "code": "20244",
+      "label": "Fall 2025"
+    }
+  ]
+}

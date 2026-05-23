@@ -1,0 +1,10 @@
+{
+  "slug": "electrical-engineering-ms",
+  "name": "MS Electrical Engineering",
+  "department": "ECE",
+  "degree": "MS",
+  "description": "The MS in Electrical Engineering prepares students for research and industry roles in circuits, communications, control, and computer engineering.",
+  "source_url": "https://www.ece.ucsb.edu/grad/ms-program",
+  "required_courses": ["ECE 291", "ECE 596", "ECE 597", "ECE 598"],
+  "milestones": ["Advancement to candidacy", "Thesis or comprehensive exam"]
+}

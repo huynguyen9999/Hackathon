@@ -1,0 +1,40 @@
+{
+  "quarter": "20252",
+  "subjectCode": "MATH",
+  "level": "G",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "MATH 201A",
+      "title": "Algebra I",
+      "description": "First quarter of graduate algebra sequence.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "MATH",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "MATH 202A",
+      "title": "Real Analysis I",
+      "description": "Graduate real analysis.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "MATH",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

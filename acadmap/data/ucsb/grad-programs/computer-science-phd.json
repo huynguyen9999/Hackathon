@@ -1,0 +1,10 @@
+{
+  "slug": "computer-science-phd",
+  "name": "PhD Computer Science",
+  "department": "CMPSC",
+  "degree": "PhD",
+  "description": "The PhD in Computer Science emphasizes original research, qualifying exams, and dissertation defense.",
+  "source_url": "https://www.cs.ucsb.edu/education/graduate/phd-program",
+  "required_courses": ["CMPSC 596", "CMPSC 594"],
+  "milestones": ["Qualifying exam", "Advancement to candidacy", "Dissertation defense"]
+}

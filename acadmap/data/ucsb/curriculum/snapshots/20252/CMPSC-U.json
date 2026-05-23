@@ -1,0 +1,53 @@
+{
+  "quarter": "20252",
+  "subjectCode": "CMPSC",
+  "level": "U",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "CMPSC 16",
+      "title": "Problem Solving with Computers I",
+      "units": 4,
+      "objLevelCode": "U",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "CMPSC 130A",
+      "title": "Data Structures & Algorithms I",
+      "units": 4,
+      "objLevelCode": "U",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "CMPSC 170",
+      "title": "Operating Systems",
+      "units": 4,
+      "objLevelCode": "U",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10002",
+          "section": "300",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

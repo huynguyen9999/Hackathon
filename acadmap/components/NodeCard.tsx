@@ -90,6 +90,14 @@ export function NodeCard({ data, selected }: NodeProps<CourseNode>) {
         </div>
       )}
 
+      {data.nodeMetadata?.course_level === "graduate" && (
+        <div className="mb-2">
+          <span className="rounded-full bg-violet-500/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-violet-800 ring-1 ring-violet-400/30 dark:text-violet-200">
+            Graduate
+          </span>
+        </div>
+      )}
+
       {data.selfLearnable && (
         <div
           className="flex items-center gap-1.5 text-[11px] text-emerald-700 dark:text-emerald-300/90"

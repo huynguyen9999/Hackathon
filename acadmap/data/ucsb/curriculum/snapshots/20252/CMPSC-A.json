@@ -1,0 +1,117 @@
+{
+  "quarter": "20252",
+  "subjectCode": "CMPSC",
+  "level": "A",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "CMPSC 16",
+      "title": "Problem Solving with Computers I",
+      "units": 4,
+      "objLevelCode": "U",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "CMPSC 130A",
+      "title": "Data Structures & Algorithms I",
+      "units": 4,
+      "objLevelCode": "U",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "CMPSC 170",
+      "title": "Operating Systems",
+      "units": 4,
+      "objLevelCode": "U",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10002",
+          "section": "300",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "CMPSC 290A",
+      "title": "Topics in Computer Science",
+      "description": "Graduate seminar on advanced CS topics.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "CMPSC 596",
+      "title": "Individual Study for Master's Students",
+      "description": "Individual study or research for MS students.",
+      "units": 1,
+      "objLevelCode": "G",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "CMPSC 598",
+      "title": "Master's Thesis Research",
+      "description": "Thesis research for MS students.",
+      "units": 1,
+      "objLevelCode": "G",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10002",
+          "section": "300",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "CMPSC 599",
+      "title": "PhD Dissertation Research",
+      "description": "Dissertation research for PhD students.",
+      "units": 1,
+      "objLevelCode": "G",
+      "subjectCode": "CMPSC",
+      "sections": [
+        {
+          "enrollCode": "10003",
+          "section": "400",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "bridges": [
+    {
+      "courseLabel": "ECE 130A",
+      "programSlugs": ["electrical-engineering-ms"],
+      "note": "Core analog circuits preparation for graduate study in ECE."
+    },
+    {
+      "courseLabel": "ECE 130B",
+      "programSlugs": ["electrical-engineering-ms"],
+      "note": "Signals and systems foundation for MS/PhD research tracks."
+    },
+    {
+      "courseLabel": "CMPSC 130A",
+      "programSlugs": ["computer-science-ms", "computer-science-phd"],
+      "note": "Data structures and algorithms — essential for CS graduate coursework."
+    },
+    {
+      "courseLabel": "CMPSC 16",
+      "programSlugs": ["computer-science-ms", "computer-science-phd"],
+      "note": "Programming fundamentals for CS grad prep."
+    },
+    {
+      "courseLabel": "CMPSC 111",
+      "programSlugs": ["computer-science-ms", "computer-science-phd"],
+      "note": "Operating systems background for systems research."
+    },
+    {
+      "courseLabel": "ME 104",
+      "programSlugs": ["mechanical-engineering-ms"],
+      "note": "Engineering mechanics foundation for ME graduate study."
+    },
+    {
+      "courseLabel": "CH E 132C",
+      "programSlugs": ["chemical-engineering-ms"],
+      "note": "Transport phenomena core for ChemE MS research."
+    }
+  ]
+}

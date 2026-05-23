@@ -1,0 +1,40 @@
+{
+  "quarter": "20252",
+  "subjectCode": "PSTAT",
+  "level": "G",
+  "fetchedAt": "2026-05-23T00:00:00.000Z",
+  "courses": [
+    {
+      "courseId": "PSTAT 213A",
+      "title": "Introduction to Probability Theory",
+      "description": "Graduate probability theory.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "PSTAT",
+      "sections": [
+        {
+          "enrollCode": "10000",
+          "section": "100",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    },
+    {
+      "courseId": "PSTAT 215A",
+      "title": "Statistical Theory I",
+      "description": "Graduate statistical theory sequence.",
+      "units": 4,
+      "objLevelCode": "G",
+      "subjectCode": "PSTAT",
+      "sections": [
+        {
+          "enrollCode": "10001",
+          "section": "200",
+          "instructor": "Staff",
+          "timeLocations": "TBA"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Computer Science",
+    "slug": "computer-science-phd",
+    "degree_type": "PhD"
+  },
+  "metadata": {
+    "source": "UCSB CS Graduate Handbook",
+    "source_url": "https://www.cs.ucsb.edu/education/graduate/phd-program",
+    "program_level": "graduate"
+  },
+  "nodes": [
+    {
+      "id": "cmpsc-596-phd",
+      "node_type": "course",
+      "label": "CMPSC 596",
+      "title": "Individual Study for Master's Students",
+      "description": "Graduate research units during PhD coursework phase.",
+      "units": 1,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "core" },
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "cmpsc-594",
+      "node_type": "course",
+      "label": "CMPSC 594",
+      "title": "Individual Study for Doctoral Students",
+      "description": "Doctoral research and dissertation preparation.",
+      "units": 1,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "core" },
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "qual-exam",
+      "node_type": "career",
+      "label": "Qualifying Exam",
+      "title": "PhD Qualifying Examination",
+      "description": "Written and oral qualifying exam before advancement to candidacy.",
+      "self_learnable": false,
+      "metadata": { "role": "exam" },
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "dissertation",
+      "node_type": "career",
+      "label": "Dissertation",
+      "title": "Dissertation Research & Defense",
+      "description": "Original research contribution and public dissertation defense.",
+      "self_learnable": false,
+      "metadata": { "role": "exam" },
+      "position_x": 980,
+      "position_y": 80
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "cmpsc-596-phd",
+      "target_id": "cmpsc-594",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "cmpsc-594",
+      "target_id": "qual-exam",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "qual-exam",
+      "target_id": "dissertation",
+      "edge_type": "leads_to"
+    }
+  ]
+}

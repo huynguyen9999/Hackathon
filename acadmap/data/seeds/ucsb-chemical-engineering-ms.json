@@ -1,0 +1,86 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Chemical Engineering",
+    "slug": "chemical-engineering-ms",
+    "degree_type": "MS"
+  },
+  "metadata": {
+    "source": "UCSB ChemE Graduate Handbook",
+    "source_url": "https://www.che.ucsb.edu/graduate/ms-program",
+    "program_level": "graduate"
+  },
+  "nodes": [
+    {
+      "id": "che-596",
+      "node_type": "course",
+      "label": "CH E 596",
+      "title": "Individual Study for Master's Students",
+      "description": "Directed graduate study in chemical engineering.",
+      "units": 1,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "core" },
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "che-597",
+      "node_type": "course",
+      "label": "CH E 597",
+      "title": "Individual Study for Master's Students",
+      "description": "Thesis research units.",
+      "units": 1,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "core" },
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "che-598",
+      "node_type": "course",
+      "label": "CH E 598",
+      "title": "Master's Thesis Research",
+      "description": "Thesis research and writing for MS degree.",
+      "units": 1,
+      "self_learnable": false,
+      "metadata": { "course_level": "graduate", "role": "core" },
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "che-ms-exam",
+      "node_type": "career",
+      "label": "MS Exam",
+      "title": "Thesis or Comprehensive Exam",
+      "description": "Complete MS degree requirements.",
+      "self_learnable": false,
+      "metadata": { "role": "exam" },
+      "position_x": 980,
+      "position_y": 80
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "che-596",
+      "target_id": "che-597",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "che-597",
+      "target_id": "che-598",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "che-598",
+      "target_id": "che-ms-exam",
+      "edge_type": "leads_to"
+    }
+  ]
+}

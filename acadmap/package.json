@@ -17,6 +17,7 @@
     "sync:coe-details": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-coe-details.ts",
     "validate:coe-details": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-coe-details.ts",
     "parse:ucla-announcement": "node ./node_modules/tsx/dist/cli.mjs scripts/parse-ucla-announcement.ts",
+    "sync:ucla-details": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-ucla-details.ts",
     "validate:ucla-details": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ucla-details.ts",
     "check:community-setup": "node ./node_modules/tsx/dist/cli.mjs scripts/check-community-setup.ts",
     "relayout:seeds": "node ./node_modules/tsx/dist/cli.mjs scripts/relayout-seed-positions.ts",
@@ -27,6 +28,9 @@
     "fetch:faculty:pstat": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-pstat-faculty.ts",
     "validate:faculty": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-faculty.ts",
     "sync:ucsb-rules": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-ucsb-rules.ts",
+    "seed:ucsb-curriculum": "node ./node_modules/tsx/dist/cli.mjs scripts/seed-ucsb-curriculum-snapshots.ts",
+    "fetch:ucsb-curriculum": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-ucsb-curriculum.ts",
+    "validate:ucsb-curriculum": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ucsb-curriculum.ts",
     "test:planner": "node --import tsx --test tests/planner/*.test.ts"
   },
   "dependencies": {

@@ -2,9 +2,25 @@
   "slug": "electrical-engineering",
   "name": "Electrical Engineering",
   "catalog_year": "2025-2026",
-  "gear_page": 107,
+  "gear_page": 74,
   "graduation_units": 180,
   "sources": [
+    {
+      "title": "EE 4-Year Plan (SEASOASA)",
+      "url": "https://www.seasoasa.ucla.edu/ee-4-year-plan/"
+    },
+    {
+      "title": "Electrical Engineering BS (UCLA Catalog)",
+      "url": "https://catalog.registrar.ucla.edu/major/2023/electricalengineeringbs?siteYear=2023"
+    },
+    {
+      "title": "ECE Department Courses (UCLA Catalog)",
+      "url": "https://catalog.registrar.ucla.edu/browse/Departments/ElectricalandComputerEngineering"
+    },
+    {
+      "title": "UCLA ECE Department",
+      "url": "https://www.ee.ucla.edu/"
+    },
     {
       "title": "Samueli Announcement 2025-2026",
       "url": "https://www.seasoasa.ucla.edu/wp-content/uploads/seasoasa/UCLASamueli-Anncmt-25-26.pdf"
@@ -12,93 +28,79 @@
   ],
   "preparation": {
     "label": "Preparation for the major",
-    "units": 40,
+    "units": 72,
     "courses": [
-      {
-        "code": "MATH 31A",
-        "units": 4
-      },
-      {
-        "code": "MATH 31B",
-        "units": 4
-      },
-      {
-        "code": "MATH 32A",
-        "units": 4
-      },
-      {
-        "code": "MATH 32B",
-        "units": 4
-      },
-      {
-        "code": "MATH 33A",
-        "units": 4
-      },
-      {
-        "code": "PHYSICS 1A",
-        "units": 4
-      },
-      {
-        "code": "PHYSICS 1B",
-        "units": 4
-      },
-      {
-        "code": "PHYSICS 1C",
-        "units": 4
-      },
-      {
-        "code": "EC ENGR 3A",
-        "units": 4
-      },
-      {
-        "code": "EC ENGR 10",
-        "units": 4
-      }
+      { "code": "CHEM 20A", "units": 4 },
+      { "code": "COM SCI 31", "units": 4 },
+      { "code": "COM SCI 32", "units": 4 },
+      { "code": "MATH 31A", "units": 4 },
+      { "code": "MATH 31B", "units": 4 },
+      { "code": "MATH 32A", "units": 4 },
+      { "code": "MATH 32B", "units": 4 },
+      { "code": "MATH 33A", "units": 4 },
+      { "code": "MATH 33B", "units": 4 },
+      { "code": "PHYSICS 1A", "units": 5 },
+      { "code": "PHYSICS 1B", "units": 5 },
+      { "code": "PHYSICS 4AL", "units": 2 },
+      { "code": "PHYSICS 4BL", "units": 2 },
+      { "code": "EC ENGR 3", "units": 2 },
+      { "code": "EC ENGR M16", "alternatives": ["COM SCI M51A"], "units": 4 },
+      { "code": "EC ENGR 1", "units": 4 },
+      { "code": "EC ENGR 2", "units": 4 },
+      { "code": "EC ENGR 10", "units": 4 },
+      { "code": "EC ENGR 102", "units": 4 },
+      { "code": "EC ENGR 103", "units": 4 }
+    ],
+    "notes": [
+      "ENGL COMP 3 satisfies Area A-1 writing requirement in the freshman year.",
+      "EC ENGR M16 and COM SCI M51A are equivalent for logic design."
     ]
   },
   "upper_division": [
     {
       "label": "Upper-division required",
-      "units": 32,
+      "units": 52,
       "courses": [
-        {
-          "code": "EC ENGR 100",
-          "units": 4
-        },
-        {
-          "code": "EC ENGR 101A",
-          "units": 4
-        },
-        {
-          "code": "EC ENGR 102",
-          "units": 4
-        },
-        {
-          "code": "EC ENGR 131A",
-          "units": 4
-        },
-        {
-          "code": "EC ENGR 133A",
-          "units": 4
-        },
-        {
-          "code": "EC ENGR 152A",
-          "units": 4
-        },
-        {
-          "code": "EC ENGR 152B",
-          "units": 4
-        }
+        { "code": "EC ENGR 110", "units": 4 },
+        { "code": "EC ENGR 113", "units": 4 },
+        { "code": "EC ENGR 131A", "units": 4 },
+        { "code": "EC ENGR 101", "units": 4 },
+        { "code": "EC ENGR 110L", "units": 2 },
+        { "code": "EC ENGR 115A", "units": 4 },
+        { "code": "EC ENGR 115AL", "units": 2 },
+        { "code": "EC ENGR 121B", "units": 4 },
+        { "code": "EC ENGR 132A", "units": 4 },
+        { "code": "EC ENGR 161", "units": 4 },
+        { "code": "EC ENGR 141", "units": 4 },
+        { "code": "MATH 132", "units": 4 },
+        { "code": "STATS 105", "units": 4 }
       ]
     }
   ],
+  "electives": {
+    "label": "Pathway, breadth, and HSSEAS requirements",
+    "choose_units": 38,
+    "courses": [
+      { "code": "Pathway Elective", "notes": "Three pathway electives from approved list (Announcement p.74)" },
+      { "code": "Pathway Laboratory", "notes": "One approved pathway laboratory course (2 units)" },
+      { "code": "Pathway Design Course", "notes": "Senior pathway design course (4 units)" },
+      { "code": "Technical Breadth", "notes": "Three technical breadth courses from approved HSSEAS list" },
+      { "code": "HSSEAS GE", "notes": "Four HSSEAS GE electives plus one HSSEAS ethics course" }
+    ],
+    "notes": [
+      "Contact SEASOASA for current approved technical breadth and HSSEAS GE course lists.",
+      "Pathway courses must form a coherent specialization approved by a faculty adviser."
+    ]
+  },
   "regulations": {
     "letter_grade_only": true,
     "letter_grade_minimum": "C",
     "pnp_allowed": false,
     "other": [
-      "Minimum 180 units for BS degree.",
-      "See Samueli Announcement for full policies."
+      "Minimum 180 units required for the BS degree; the EE curriculum plan totals 187 units.",
+      "Major courses must be taken for a letter grade unless otherwise specified.",
+      "Pathway electives and technical breadth require adviser approval.",
+      "See Samueli Announcement for minimum progress and repeat policies."
     ]
   },
   "recommended_plans": [
@@ -107,19 +109,9 @@
       "quarter": "Fall",
       "track": "freshman",
       "entries": [
-        {
-          "code": "EC ENGR 1",
-          "units": 1
-        },
-        {
-          "code": "MATH 31A",
-          "units": 4
-        },
-        {
-          "slot": "GE",
-          "label": "GE",
-          "units": 4
-        }
+        { "code": "CHEM 20A", "units": 4 },
+        { "code": "COM SCI 31", "units": 4 },
+        { "code": "MATH 31A", "units": 4 }
       ]
     },
     {
@@ -127,19 +119,10 @@
       "quarter": "Winter",
       "track": "freshman",
       "entries": [
-        {
-          "code": "EC ENGR 31",
-          "units": 4
-        },
-        {
-          "code": "MATH 31B",
-          "units": 4
-        },
-        {
-          "slot": "GE",
-          "label": "GE",
-          "units": 4
-        }
+        { "code": "COM SCI 32", "units": 4 },
+        { "code": "ENGL COMP 3", "units": 5, "notes": "Area A-1" },
+        { "code": "MATH 31B", "units": 4 },
+        { "code": "PHYSICS 1A", "units": 5 }
       ]
     },
     {
@@ -147,18 +130,10 @@
       "quarter": "Spring",
       "track": "freshman",
       "entries": [
-        {
-          "code": "EC ENGR 32",
-          "units": 4
-        },
-        {
-          "code": "MATH 32A",
-          "units": 4
-        },
-        {
-          "code": "PHYSICS 1A",
-          "units": 5
-        }
+        { "code": "EC ENGR 3", "units": 2 },
+        { "code": "MATH 32A", "units": 4 },
+        { "code": "PHYSICS 1B", "units": 5 },
+        { "code": "PHYSICS 4AL", "units": 2 }
       ]
     },
     {
@@ -166,18 +141,10 @@
       "quarter": "Fall",
       "track": "freshman",
       "entries": [
-        {
-          "code": "EC ENGR 33",
-          "units": 4
-        },
-        {
-          "code": "EC ENGR M51A",
-          "units": 4
-        },
-        {
-          "code": "MATH 32B",
-          "units": 4
-        }
+        { "code": "EC ENGR M16", "alternatives": ["COM SCI M51A"], "units": 4 },
+        { "code": "MATH 32B", "units": 4 },
+        { "code": "MATH 33A", "units": 4 },
+        { "slot": "GE", "label": "HSSEAS GE Elective", "units": 5 }
       ]
     },
     {
@@ -185,19 +152,10 @@
       "quarter": "Winter",
       "track": "freshman",
       "entries": [
-        {
-          "code": "EC ENGR 35L",
-          "units": 4
-        },
-        {
-          "code": "MATH 33A",
-          "units": 4
-        },
-        {
-          "slot": "GE",
-          "label": "GE",
-          "units": 4
-        }
+        { "code": "EC ENGR 1", "units": 4 },
+        { "code": "MATH 33B", "units": 4 },
+        { "code": "PHYSICS 4BL", "units": 2 },
+        { "slot": "GE", "label": "HSSEAS GE Elective", "units": 5 }
       ]
     },
     {
@@ -205,29 +163,104 @@
       "quarter": "Spring",
       "track": "freshman",
       "entries": [
-        {
-          "code": "EC ENGR 111",
-          "units": 4
-        },
-        {
-          "code": "MATH 61",
-          "units": 4
-        },
-        {
-          "slot": "GE",
-          "label": "GE",
-          "units": 4
-        }
+        { "code": "EC ENGR 2", "units": 4 },
+        { "code": "EC ENGR 10", "units": 4 },
+        { "code": "EC ENGR 102", "units": 4 },
+        { "code": "EC ENGR 103", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "EC ENGR 110", "units": 4 },
+        { "code": "EC ENGR 113", "units": 4 },
+        { "code": "EC ENGR 131A", "units": 4 },
+        { "slot": "GE", "label": "HSSEAS GE Elective", "units": 5 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "EC ENGR 101", "units": 4 },
+        { "code": "EC ENGR 110L", "units": 2 },
+        { "code": "EC ENGR 115A", "units": 4 },
+        { "code": "MATH 132", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "EC ENGR 115AL", "units": 2 },
+        { "code": "EC ENGR 121B", "units": 4 },
+        { "code": "EC ENGR 132A", "units": 4 },
+        { "code": "EC ENGR 161", "units": 4 },
+        { "slot": "ETHICS", "label": "HSSEAS Ethics Course", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "EC ENGR 141", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Pathway Elective", "units": 4 },
+        { "slot": "LAB", "label": "Pathway Laboratory Course", "units": 2 },
+        { "slot": "TB", "label": "Technical Breadth Course", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "STATS 105", "units": 4 },
+        { "slot": "GE", "label": "HSSEAS GE Elective", "units": 5 },
+        { "slot": "ELECTIVE", "label": "Pathway Elective", "units": 4 },
+        { "slot": "TB", "label": "Technical Breadth Course", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "slot": "CAPSTONE", "label": "Pathway Design Course", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Pathway Elective", "units": 4 },
+        { "slot": "TB", "label": "Technical Breadth / HSSEAS GE", "units": 8 }
       ]
     }
   ],
+  "quarter_totals": [
+    { "year": 1, "quarter": "Fall", "units": 12 },
+    { "year": 1, "quarter": "Winter", "units": 18 },
+    { "year": 1, "quarter": "Spring", "units": 13 },
+    { "year": 2, "quarter": "Fall", "units": 17 },
+    { "year": 2, "quarter": "Winter", "units": 15 },
+    { "year": 2, "quarter": "Spring", "units": 16 },
+    { "year": 3, "quarter": "Fall", "units": 17 },
+    { "year": 3, "quarter": "Winter", "units": 14 },
+    { "year": 3, "quarter": "Spring", "units": 18 },
+    { "year": 4, "quarter": "Fall", "units": 14 },
+    { "year": 4, "quarter": "Winter", "units": 17 },
+    { "year": 4, "quarter": "Spring", "units": 16 }
+  ],
   "career_outcomes": [
     "Hardware Engineer",
-    "RF Engineer",
-    "Signal Processing Engineer"
+    "RF / Wireless Engineer",
+    "Signal Processing Engineer",
+    "Controls Engineer",
+    "Semiconductor / Chip Designer"
   ],
   "quality_tier": "gear",
   "notes": [
-    "Quarter plan derived from Samueli Announcement curriculum tables."
+    "Quarter plan follows the official SEASOASA EE 4-year plan.",
+    "The curriculum plan totals 187 units; 180 units are required for the BS degree.",
+    "Pathway electives, technical breadth, and HSSEAS GE lists are in the Samueli Announcement (see p.74 for pathways)."
   ]
 }

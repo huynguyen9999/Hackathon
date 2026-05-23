@@ -6,6 +6,7 @@
       "location": "Santa Barbara, CA",
       "email_domains": ["ucsb.edu"],
       "official_url": "https://www.ucsb.edu/",
+      "graduate_hub": true,
       "theme": { "primary": "#003660", "accent": "#FEBC11" },
       "colleges": [
         {
