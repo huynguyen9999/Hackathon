@@ -1,0 +1,256 @@
+{
+  "slug": "computer-engineering",
+  "name": "Computer Engineering",
+  "catalog_year": "2025-2026",
+  "gear_page": 16,
+  "graduation_units": 191,
+  "sources": [
+    {
+      "title": "GEAR 2025-2026 (PDF)",
+      "url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf"
+    },
+    {
+      "title": "Computer Engineering 4-Year Plan",
+      "url": "https://www.ce.ucsb.edu/undergrad/curriculum/4-year-plan"
+    },
+    {
+      "title": "ECE Undergraduate Advising",
+      "url": "https://www.ece.ucsb.edu/undergrad"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "units": 78,
+    "courses": [
+      { "code": "CMPSC 16", "units": 4 },
+      { "code": "CMPSC 24", "units": 4 },
+      { "code": "CMPSC 32", "units": 4 },
+      { "code": "CMPSC 40", "units": 5 },
+      { "code": "ECE 1A", "units": 1, "notes": "ECE 1A-1B sequence (2 units total)" },
+      { "code": "ECE 1B", "units": 1 },
+      { "code": "ECE 5", "units": 4 },
+      { "code": "ECE 10A", "units": 3, "notes": "Includes ECE 10AL lab (2 units)" },
+      { "code": "ECE 10B", "units": 3, "notes": "Includes ECE 10BL lab (2 units)" },
+      { "code": "ECE 10C", "units": 3, "notes": "Includes ECE 10CL lab (2 units)" },
+      { "code": "ECE 15A", "units": 4 },
+      { "code": "MATH 3A", "alternatives": ["MATH 2A"], "units": 4, "notes": "MATH 2A-B or 3A-B, 4A-B, 6A" },
+      { "code": "MATH 3B", "alternatives": ["MATH 2B"], "units": 4 },
+      { "code": "MATH 4A", "units": 4 },
+      { "code": "MATH 4B", "units": 4 },
+      { "code": "MATH 6A", "units": 4 },
+      { "code": "PHYS 7A", "units": 4 },
+      { "code": "PHYS 7B", "units": 4 },
+      { "code": "PHYS 7C", "units": 4 },
+      { "code": "PHYS 7D", "units": 3 },
+      { "code": "PHYS 7L", "units": 1 }
+    ],
+    "notes": [
+      "ECE 3 or CMPSC 8 may substitute in freshman fall per GEAR grid.",
+      "ECE 10A/10AL, 10B/10BL, and 10C/10CL each count as one course for change-of-major GPA."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "units": 32,
+      "courses": [
+        { "code": "CMPSC 130A", "units": 4 },
+        { "code": "ECE 139", "alternatives": ["PSTAT 120A"], "units": 4, "notes": "ECE 139 offered spring only; better for future CMPEN electives" },
+        { "code": "ECE 152A", "units": 5 },
+        { "code": "ECE 154A", "units": 4 },
+        { "code": "ENGR 101", "units": 3 },
+        { "code": "CMPSC 189A", "alternatives": ["ECE 189A"], "units": 4, "notes": "CMPSC 156 prereq for CMPSC 189A; ECE 153B prereq for ECE 189A" },
+        { "code": "CMPSC 189B", "alternatives": ["ECE 189B"], "units": 4 },
+        { "code": "ECE 189C", "units": 4, "notes": "Or CMPEN elective if taking CMPSC 189 sequence" }
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Computer Engineering electives",
+    "choose_units": 36,
+    "unit_range": "36-40",
+    "courses": [
+      { "code": "CMPSC 130B" },
+      { "code": "CMPSC 156" },
+      { "code": "CMPSC 170" },
+      { "code": "CMPSC 153A", "alternatives": ["ECE 153A"] },
+      { "code": "ECE 153B" },
+      { "code": "ECE 130A-B-C" },
+      { "code": "ECE 154B" },
+      { "code": "ECE 157A-B-C" }
+    ],
+    "notes": [
+      "Must include at least 2 approved sequences. Prior faculty adviser approval required.",
+      "See ECE Department student office for list of approved sequences."
+    ]
+  },
+  "regulations": {
+    "letter_grade_only": true,
+    "letter_grade_minimum": "letter grade",
+    "pnp_allowed": false,
+    "other": [
+      "Minimum 12 units each Fall, Winter, and Spring quarter (GEAR minimum progress).",
+      "Maximum 215 units and 12 regular quarters for students admitted as freshmen.",
+      "Major courses must be taken for a letter grade.",
+      "GE courses may be taken P/NP when the course offers that grading option."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "ECE 3", "alternatives": ["CMPSC 8"], "units": 4 },
+        { "code": "ECE 5", "units": 4 },
+        { "code": "MATH 3A", "units": 4 },
+        { "code": "WRIT 2E", "alternatives": ["WRIT 1E"], "units": 4 }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "CMPSC 16", "units": 4 },
+        { "code": "ECE 1A", "units": 1 },
+        { "code": "MATH 3B", "units": 4 },
+        { "code": "PHYS 7A", "units": 4 },
+        { "code": "WRIT 50E", "alternatives": ["WRIT 2E"], "units": 4 }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "CMPSC 24", "units": 4 },
+        { "code": "ECE 1B", "units": 1 },
+        { "code": "MATH 4A", "units": 4 },
+        { "code": "PHYS 7B", "units": 4 },
+        { "slot": "GE", "label": "WRIT 50E or G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "ECE 10A", "units": 3 },
+        { "code": "ECE 10AL", "units": 2 },
+        { "code": "CMPSC 32", "units": 4 },
+        { "code": "PHYS 7C", "units": 4 },
+        { "code": "PHYS 7L", "units": 1 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "ECE 10B", "units": 3 },
+        { "code": "ECE 10BL", "units": 2 },
+        { "code": "ECE 15A", "units": 4 },
+        { "code": "PHYS 7D", "units": 3 },
+        { "code": "MATH 6A", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "ECE 10C", "units": 3 },
+        { "code": "ECE 10CL", "units": 2 },
+        { "code": "ECE 139", "alternatives": ["PSTAT 120A"], "units": 4 },
+        { "code": "ECE 152A", "units": 5 },
+        { "code": "CMPSC 40", "units": 5 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "ECE 154A", "units": 4 },
+        { "slot": "ELECTIVE", "label": "CMPEN electives", "units": 8 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "CMPSC 130A", "units": 4 },
+        { "slot": "ELECTIVE", "label": "CMPEN electives", "units": 8 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "slot": "ELECTIVE", "label": "CMPEN electives", "units": 8 },
+        { "slot": "GE", "label": "G.E.", "units": 8 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "ECE 189A", "alternatives": ["CMPSC 189A"], "units": 5 },
+        { "slot": "ELECTIVE", "label": "CMPEN electives", "units": 8 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "ENGR 101", "units": 3, "notes": "May be taken any senior quarter" },
+        { "slot": "ELECTIVE", "label": "CMPEN electives", "units": 8 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "ECE 189B", "alternatives": ["CMPSC 189B", "CMPEN elective"], "units": 4 },
+        { "code": "ECE 189C", "alternatives": ["CMPEN elective"], "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    }
+  ],
+  "quarter_totals": [
+    { "year": 1, "quarter": "Fall", "units": 16 },
+    { "year": 1, "quarter": "Winter", "units": 17 },
+    { "year": 1, "quarter": "Spring", "units": 17 },
+    { "year": 2, "quarter": "Fall", "units": 17 },
+    { "year": 2, "quarter": "Winter", "units": 17 },
+    { "year": 2, "quarter": "Spring", "units": 19 },
+    { "year": 3, "quarter": "Fall", "units": 16 },
+    { "year": 3, "quarter": "Winter", "units": 16 },
+    { "year": 3, "quarter": "Spring", "units": 16 },
+    { "year": 4, "quarter": "Fall", "units": 16 },
+    { "year": 4, "quarter": "Winter", "units": 15 },
+    { "year": 4, "quarter": "Spring", "units": 12 }
+  ],
+  "career_outcomes": [
+    "Computer Systems Engineer",
+    "Embedded Systems Engineer",
+    "VLSI Designer",
+    "Software Engineer"
+  ],
+  "quality_tier": "gear",
+  "notes": [
+    "GEAR 4-year grid is a guide; adjust with CE/ECE advisors.",
+    "PSTAT 120A is offered each quarter; ECE 139 is spring only.",
+    "PHYS 7L may be taken concurrently with PHYS 7C or after PHYS 7C."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "school": { "name": "UC Santa Barbara", "short_name": "ucsb", "location": "Santa Barbara, CA" },
+  "major": { "name": "Chemical Engineering", "slug": "chemical-engineering", "degree_type": "BS" },
+  "metadata": {
+    "source": "UCSB GEAR 2025-2026",
+    "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
+    "gear_page": 14
+  },
+  "nodes": [
+    { "id": "che-5", "node_type": "course", "label": "CH E 5", "units": 3, "self_learnable": false, "position_x": 80, "position_y": 80 },
+    { "id": "chem-3a", "node_type": "course", "label": "CHEM 3A", "units": 4, "self_learnable": false, "position_x": 80, "position_y": 200 },
+    { "id": "math-3a", "node_type": "course", "label": "MATH 3A", "units": 4, "self_learnable": false, "position_x": 280, "position_y": 80 },
+    { "id": "che-10", "node_type": "course", "label": "CH E 10", "units": 3, "self_learnable": false, "position_x": 280, "position_y": 200 },
+    { "id": "che-107", "node_type": "course", "label": "CH E 107", "units": 3, "self_learnable": false, "position_x": 480, "position_y": 120 },
+    { "id": "che-110a", "node_type": "course", "label": "CH E 110A", "units": 3, "self_learnable": false, "position_x": 480, "position_y": 240 },
+    { "id": "che-110b", "node_type": "course", "label": "CH E 110B", "units": 3, "self_learnable": false, "position_x": 680, "position_y": 120 },
+    { "id": "che-120a", "node_type": "course", "label": "CH E 120A", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 240 },
+    { "id": "che-132a", "node_type": "course", "label": "CH E 132A", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 120 },
+    { "id": "che-140a", "node_type": "course", "label": "CH E 140A", "units": 3, "self_learnable": false, "position_x": 880, "position_y": 240 },
+    { "id": "che-180a", "node_type": "course", "label": "CH E 180A", "units": 3, "self_learnable": false, "position_x": 1080, "position_y": 120 },
+    { "id": "che-184a", "node_type": "course", "label": "CH E 184A", "units": 3, "self_learnable": false, "position_x": 1080, "position_y": 240 },
+    { "id": "che-184b", "node_type": "course", "label": "CH E 184B", "units": 3, "self_learnable": false, "position_x": 1280, "position_y": 180 },
+    { "id": "career-process", "node_type": "career", "label": "Process engineer", "title": "Process / plant engineering", "self_learnable": false, "position_x": 1480, "position_y": 80 },
+    { "id": "career-pharma", "node_type": "career", "label": "Pharma / biotech", "title": "Biotech & pharmaceuticals", "self_learnable": false, "position_x": 1480, "position_y": 200 },
+    { "id": "career-energy", "node_type": "career", "label": "Energy engineer", "title": "Energy & sustainability", "self_learnable": false, "position_x": 1480, "position_y": 320 },
+    { "id": "career-grad", "node_type": "career", "label": "Grad school", "title": "MS/PhD in chemical engineering", "self_learnable": false, "position_x": 1480, "position_y": 440 }
+  ],
+  "edges": [
+    { "id": "e1", "source_id": "chem-3a", "target_id": "che-10", "edge_type": "prerequisite" },
+    { "id": "e2", "source_id": "che-10", "target_id": "che-107", "edge_type": "prerequisite" },
+    { "id": "e3", "source_id": "che-107", "target_id": "che-110a", "edge_type": "prerequisite" },
+    { "id": "e4", "source_id": "che-110a", "target_id": "che-110b", "edge_type": "prerequisite" },
+    { "id": "e5", "source_id": "che-110b", "target_id": "che-120a", "edge_type": "prerequisite" },
+    { "id": "e6", "source_id": "che-120a", "target_id": "che-132a", "edge_type": "prerequisite" },
+    { "id": "e7", "source_id": "che-132a", "target_id": "che-140a", "edge_type": "prerequisite" },
+    { "id": "e8", "source_id": "che-140a", "target_id": "che-180a", "edge_type": "prerequisite" },
+    { "id": "e9", "source_id": "che-180a", "target_id": "che-184a", "edge_type": "prerequisite" },
+    { "id": "e10", "source_id": "che-184a", "target_id": "che-184b", "edge_type": "prerequisite" },
+    { "id": "e11", "source_id": "che-184b", "target_id": "career-process", "edge_type": "leads_to" },
+    { "id": "e12", "source_id": "che-132a", "target_id": "career-pharma", "edge_type": "leads_to" },
+    { "id": "e13", "source_id": "che-180a", "target_id": "career-energy", "edge_type": "leads_to" },
+    { "id": "e14", "source_id": "che-184b", "target_id": "career-grad", "edge_type": "leads_to" }
+  ]
+}

@@ -3,7 +3,13 @@ import { notFound } from "next/navigation";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { RoadmapView } from "@/components/RoadmapView";
 import { getRoadmapBySlug } from "@/lib/roadmap";
-import { coeCollegeHubHref, schoolHubHref } from "@/lib/ucsb-coe";
+import {
+  coeCollegeHubHref,
+  coeMajorHubHref,
+  isCoeMajorSlug,
+  schoolHubHref,
+} from "@/lib/ucsb-coe";
+import { lsCollegeHubHref, lsMajorHubHref } from "@/lib/ucsb-ls";
 
 type PageProps = {
   params: { school: string; major: string };
@@ -32,6 +38,7 @@ export default async function RoadmapPage({ params }: PageProps) {
   }
 
   const isUcsb = roadmap.school.short_name === "ucsb";
+  const isCoe = isUcsb ? await isCoeMajorSlug(major) : false;
 
   return (
     <div className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6 sm:py-8">
@@ -45,10 +52,18 @@ export default async function RoadmapPage({ params }: PageProps) {
                   href: schoolHubHref("ucsb"),
                 },
                 {
-                  label: "Engineering",
-                  href: coeCollegeHubHref("ucsb"),
+                  label: isCoe ? "Engineering" : "Letters & Science",
+                  href: isCoe
+                    ? coeCollegeHubHref("ucsb")
+                    : lsCollegeHubHref("ucsb"),
                 },
-                { label: roadmap.major.name },
+                {
+                  label: roadmap.major.name,
+                  href: isCoe
+                    ? coeMajorHubHref("ucsb", major)
+                    : lsMajorHubHref("ucsb", major),
+                },
+                { label: "Roadmap" },
               ]
             : [
                 { label: roadmap.school.short_name.toUpperCase() },

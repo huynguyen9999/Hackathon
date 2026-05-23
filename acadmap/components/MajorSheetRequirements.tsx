@@ -1,5 +1,4 @@
 import type {
-  LsMajorDetail,
   RequirementBlock,
   CourseRef,
 } from "@/lib/ucsb-major-detail-types";
@@ -65,7 +64,15 @@ function BlockSection({ block }: { block: RequirementBlock }) {
 }
 
 export type MajorSheetRequirementsProps = {
-  detail: LsMajorDetail;
+  detail: {
+    catalog_year: string;
+    pre_major?: RequirementBlock;
+    preparation: RequirementBlock;
+    upper_division: RequirementBlock[];
+    electives?: RequirementBlock;
+    science_courses?: RequirementBlock;
+    notes?: string[];
+  };
 };
 
 export function MajorSheetRequirements({ detail }: MajorSheetRequirementsProps) {
@@ -90,6 +97,9 @@ export function MajorSheetRequirements({ detail }: MajorSheetRequirementsProps) 
           <BlockSection key={block.label} block={block} />
         ))}
         {detail.electives && <BlockSection block={detail.electives} />}
+        {"science_courses" in detail && detail.science_courses && (
+          <BlockSection block={detail.science_courses} />
+        )}
       </div>
 
       {detail.notes?.length ? (

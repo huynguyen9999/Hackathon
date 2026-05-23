@@ -81,8 +81,9 @@ export default async function EngineeringHubPage({ params }: PageProps) {
           <MajorCatalogGrid
             majors={catalog.majors}
             getMajorHref={(slug) => coeMajorHubHref(shortName, slug)}
-            badgeLabel="GEAR only"
-            ctaLabel="View GEAR requirements"
+            badgeLabel="GEAR"
+            ctaLabel="View GEAR plan"
+            showRequirementsLevel
           />
         </section>
 

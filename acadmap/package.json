@@ -12,7 +12,10 @@
     "fetch:sheets": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-major-sheets.ts",
     "generate:details": "node ./node_modules/tsx/dist/cli.mjs scripts/generate-ls-major-details.ts",
     "sync:details": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-ls-details.ts",
-    "validate:details": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ls-major-details.ts"
+    "validate:details": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ls-major-details.ts",
+    "parse:gear": "node ./node_modules/tsx/dist/cli.mjs scripts/parse-gear-grids.ts",
+    "sync:coe-details": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-coe-details.ts",
+    "validate:coe-details": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-coe-details.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",

@@ -1,0 +1,253 @@
+{
+  "slug": "computer-science",
+  "name": "Computer Science",
+  "catalog_year": "2025-2026",
+  "gear_page": 18,
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "GEAR 2025-2026 (PDF)",
+      "url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf"
+    },
+    {
+      "title": "CS Major Requirements",
+      "url": "https://cs.ucsb.edu/education/undergraduate/major-requirements"
+    },
+    {
+      "title": "CS Undergraduate Education",
+      "url": "https://cs.ucsb.edu/education/undergraduate"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "units": 45,
+    "courses": [
+      { "code": "CMPSC 16", "units": 4 },
+      { "code": "CMPSC 24", "units": 4 },
+      { "code": "CMPSC 32", "units": 4 },
+      { "code": "CMPSC 40", "units": 5 },
+      { "code": "CMPSC 64", "units": 4 },
+      { "code": "MATH 3A", "units": 4, "notes": "MATH 3A-B, 4A-B, 6A" },
+      { "code": "MATH 3B", "units": 4 },
+      { "code": "MATH 4A", "units": 4 },
+      { "code": "MATH 4B", "units": 4 },
+      { "code": "MATH 6A", "units": 4 },
+      { "code": "PSTAT 120A", "units": 4 }
+    ],
+    "notes": [
+      "CMPSC 8 may substitute for CMPSC 16 in freshman fall per GEAR grid; consult CS advisor for placement."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "units": 11,
+      "courses": [
+        { "code": "CMPSC 130A", "units": 4 },
+        { "code": "CMPSC 130B", "units": 4 },
+        { "code": "ENGR 101", "units": 3, "notes": "May be taken any senior quarter" }
+      ]
+    },
+    {
+      "label": "Major field electives",
+      "choose_units": 56,
+      "courses": [
+        { "code": "CMPSC 110" },
+        { "code": "CMPSC 156" },
+        { "code": "CMPSC 170" },
+        { "code": "CMPSC 176A-B-C" },
+        { "code": "CMPSC 153A", "alternatives": ["ECE 153A"] },
+        { "code": "CMPSC 189A-B" },
+        { "code": "ECE 152A" },
+        { "code": "ECE 160" }
+      ],
+      "notes": [
+        "14 courses selected from approved list; at least 7 must be CMPSC courses.",
+        "Four units maximum from CMPSC 192 and 196 combined (GPA 3.0+ required)."
+      ]
+    }
+  ],
+  "science_courses": {
+    "label": "Science electives",
+    "units": 20,
+    "courses": [
+      { "code": "Science List A", "units": 8, "notes": "8 units from department-approved List A" },
+      { "code": "Science List B", "units": 12, "notes": "12 units from department-approved List B" }
+    ],
+    "notes": [
+      "See CS department for approved science elective lists.",
+      "Science electives are in addition to major field electives."
+    ]
+  },
+  "regulations": {
+    "letter_grade_only": true,
+    "letter_grade_minimum": "letter grade",
+    "pnp_allowed": false,
+    "other": [
+      "Minimum 12 units each Fall, Winter, and Spring quarter (GEAR minimum progress).",
+      "Maximum 215 units and 12 regular quarters for students admitted as freshmen.",
+      "Major courses must be taken for a letter grade.",
+      "GE courses may be taken P/NP when the course offers that grading option."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "CMPSC 16", "alternatives": ["CMPSC 8", "G.E."], "units": 4 },
+        { "code": "MATH 3A", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Science elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "CMPSC 24", "units": 4 },
+        { "code": "MATH 3B", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Science elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "MATH 4A", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Science or free elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "CMPSC 32", "units": 4 },
+        { "code": "CMPSC 40", "units": 5 },
+        { "code": "PSTAT 120A", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "CMPSC 64", "units": 4 },
+        { "code": "MATH 4B", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Science elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "CMPSC 130A", "units": 4 },
+        { "code": "MATH 6A", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Science or free elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Science or free elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "CMPSC 130B", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "FREE", "label": "Free elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "code": "ENGR 101", "units": 3 },
+        { "slot": "GE", "label": "G.E. or free elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Major field elective", "units": 4 },
+        { "slot": "GE", "label": "G.E. or free elective", "units": 4 }
+      ]
+    }
+  ],
+  "quarter_totals": [
+    { "year": 1, "quarter": "Fall", "units": 16 },
+    { "year": 1, "quarter": "Winter", "units": 16 },
+    { "year": 1, "quarter": "Spring", "units": 16 },
+    { "year": 2, "quarter": "Fall", "units": 17 },
+    { "year": 2, "quarter": "Winter", "units": 16 },
+    { "year": 2, "quarter": "Spring", "units": 16 },
+    { "year": 3, "quarter": "Fall", "units": 16 },
+    { "year": 3, "quarter": "Winter", "units": 16 },
+    { "year": 3, "quarter": "Spring", "units": 12 },
+    { "year": 4, "quarter": "Fall", "units": 12 },
+    { "year": 4, "quarter": "Winter", "units": 15 },
+    { "year": 4, "quarter": "Spring", "units": 12 }
+  ],
+  "career_outcomes": [
+    "Software Engineer",
+    "ML Engineer",
+    "Systems Engineer",
+    "Security Engineer"
+  ],
+  "quality_tier": "gear",
+  "notes": [
+    "GEAR 4-year grid is a guide; adjust with CS advisors.",
+    "Consult CS academic advisor for CMPSC 8 vs CMPSC 16 placement.",
+    "Science electives: 8 units List A + 12 units List B (see department for approved lists)."
+  ]
+}

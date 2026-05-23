@@ -1,0 +1,274 @@
+{
+  "slug": "mechanical-engineering",
+  "name": "Mechanical Engineering",
+  "catalog_year": "2025-2026",
+  "gear_page": 22,
+  "graduation_units": 180,
+  "sources": [
+    {
+      "title": "GEAR 2025-2026 (PDF)",
+      "url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf"
+    },
+    {
+      "title": "ME Undergraduate Curriculum",
+      "url": "https://me.ucsb.edu/undergraduate/curriculum"
+    },
+    {
+      "title": "ME Undergraduate",
+      "url": "https://me.ucsb.edu/undergraduate"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "units": 76.5,
+    "courses": [
+      { "code": "CHEM 1A", "alternatives": ["CHEM 2A"], "units": 4 },
+      { "code": "CHEM 1B", "alternatives": ["CHEM 2B"], "units": 3 },
+      { "code": "CHEM 2AL", "units": 2.5 },
+      { "code": "ENGR 3", "units": 3 },
+      { "code": "MATH 3A", "units": 4, "notes": "MATH 3A-B, 4A-B, 6A-B" },
+      { "code": "MATH 3B", "units": 4 },
+      { "code": "MATH 4A", "units": 4 },
+      { "code": "MATH 4B", "units": 4 },
+      { "code": "MATH 6A", "units": 4 },
+      { "code": "MATH 6B", "units": 4 },
+      { "code": "ME 6", "units": 4 },
+      { "code": "ME 10", "units": 4 },
+      { "code": "ME 12S", "units": 1, "notes": "Must be finished before start of third year" },
+      { "code": "ME 14", "units": 4 },
+      { "code": "ME 15", "units": 4 },
+      { "code": "ME 16", "units": 4 },
+      { "code": "ME 17", "units": 3 },
+      { "code": "PHYS 7A", "units": 4 },
+      { "code": "PHYS 7B", "units": 4 },
+      { "code": "PHYS 7C", "units": 4 },
+      { "code": "PHYS 7D", "units": 3 },
+      { "code": "PHYS 7L", "units": 1 }
+    ],
+    "notes": [
+      "CHEM sequence: CHEM 1A, 2AL, 1B or 2A, 2AC, 2B per GEAR requirement sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Third year — upper-division required",
+      "units": 33,
+      "courses": [
+        { "code": "MATRL 101", "alternatives": ["MATRL 100C"], "units": 3, "notes": "Only one of MATRL 101 or MATRL 100C counts toward major" },
+        { "code": "ME 103", "units": 4 },
+        { "code": "ME 104", "units": 4 },
+        { "code": "ME 107", "units": 3 },
+        { "code": "ME 108", "units": 3 },
+        { "code": "ME 151A", "units": 4 },
+        { "code": "ME 151B", "units": 4 },
+        { "code": "ME 152A", "units": 4 },
+        { "code": "ME 153", "units": 3 },
+        { "code": "Specialization course", "units": 3, "notes": "Two courses (6 units) from approved specialization groups" }
+      ]
+    },
+    {
+      "label": "Fourth year — upper-division required",
+      "units": 25,
+      "courses": [
+        { "code": "ME 105", "units": 4 },
+        { "code": "ME 154", "alternatives": ["ME 157", "ME 167"], "units": 3, "notes": "If used to satisfy requirement, may not also count as engineering elective" },
+        { "code": "ME 156A", "units": 3 },
+        { "code": "ME 156B", "units": 3 },
+        { "code": "ME 189A", "units": 3 },
+        { "code": "ME 189B", "units": 3 },
+        { "code": "ME 189C", "units": 3 }
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Engineering electives",
+    "choose_units": 9,
+    "courses": [
+      { "code": "ME 127" },
+      { "code": "ME 141A-B" },
+      { "code": "ME 154" },
+      { "code": "ME 166" },
+      { "code": "ME 152B" },
+      { "code": "ME 167" }
+    ],
+    "notes": [
+      "Prior faculty adviser approval required. Approved list may change year to year.",
+      "Four units maximum from ME 197 and ME 199 combined.",
+      "Specialization: two courses from approved groups, or 1 from L1 and 1 from L2."
+    ]
+  },
+  "regulations": {
+    "letter_grade_only": true,
+    "letter_grade_minimum": "letter grade",
+    "pnp_allowed": false,
+    "other": [
+      "Minimum 12 units each Fall, Winter, and Spring quarter (GEAR minimum progress).",
+      "Maximum 215 units and 12 regular quarters for students admitted as freshmen.",
+      "Major courses must be taken for a letter grade.",
+      "GE courses may be taken P/NP when the course offers that grading option."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "CHEM 1A", "alternatives": ["CHEM 2A"], "units": 4 },
+        { "code": "MATH 3A", "units": 4 },
+        { "code": "ME 12S", "units": 1 },
+        { "code": "WRIT 2E", "alternatives": ["WRIT 1E"], "units": 4 }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "CHEM 1B", "alternatives": ["CHEM 2B"], "units": 3 },
+        { "code": "CHEM 2AL", "units": 2.5 },
+        { "code": "ME 10", "units": 4 },
+        { "code": "MATH 3B", "units": 4 },
+        { "code": "ENGR 3", "units": 3 },
+        { "code": "WRIT 50E", "alternatives": ["WRIT 2E"], "units": 4 }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "MATH 4A", "units": 4 },
+        { "code": "PHYS 7A", "units": 4 },
+        { "code": "PHYS 7B", "units": 4 },
+        { "slot": "GE", "label": "WRIT 50E or G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "MATH 4B", "units": 4 },
+        { "code": "ME 14", "units": 4 },
+        { "code": "ME 17", "units": 3 },
+        { "code": "PHYS 7C", "units": 4 },
+        { "code": "PHYS 7L", "units": 1 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "MATH 6A", "units": 4 },
+        { "code": "ME 6", "units": 4 },
+        { "code": "ME 15", "units": 4 },
+        { "code": "PHYS 7D", "units": 3 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "MATH 6B", "units": 4 },
+        { "code": "ME 16", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "ME 103", "units": 4 },
+        { "code": "ME 104", "units": 4 },
+        { "code": "ME 151A", "units": 4 },
+        { "code": "ME 152A", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "MATRL 101", "alternatives": ["MATRL 100C"], "units": 3 },
+        { "code": "ME 107", "units": 3 },
+        { "code": "ME 151B", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Specialization course", "units": 3 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "ME 108", "units": 3 },
+        { "code": "ME 153", "units": 3 },
+        { "slot": "ELECTIVE", "label": "Specialization course", "units": 3 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "ME 154", "alternatives": ["ME 157", "ME 167"], "units": 4 },
+        { "code": "ME 105", "units": 4 },
+        { "code": "ME 156A", "units": 3 },
+        { "code": "ME 189A", "units": 3 },
+        { "slot": "ELECTIVE", "label": "Departmental elective", "units": 3 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "ME 156B", "units": 3 },
+        { "code": "ME 189B", "units": 3 },
+        { "slot": "ELECTIVE", "label": "Departmental elective", "units": 3 },
+        { "slot": "GE", "label": "G.E. or free elective", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "ME 189C", "units": 3 },
+        { "slot": "ELECTIVE", "label": "Departmental elective", "units": 3 },
+        { "slot": "GE", "label": "G.E. or free electives", "units": 8 }
+      ]
+    }
+  ],
+  "quarter_totals": [
+    { "year": 1, "quarter": "Fall", "units": 13 },
+    { "year": 1, "quarter": "Winter", "units": 17.5 },
+    { "year": 1, "quarter": "Spring", "units": 19 },
+    { "year": 2, "quarter": "Fall", "units": 15 },
+    { "year": 2, "quarter": "Winter", "units": 16 },
+    { "year": 2, "quarter": "Spring", "units": 16 },
+    { "year": 3, "quarter": "Fall", "units": 15 },
+    { "year": 3, "quarter": "Winter", "units": 13 },
+    { "year": 3, "quarter": "Spring", "units": 14 },
+    { "year": 4, "quarter": "Fall", "units": 16 },
+    { "year": 4, "quarter": "Winter", "units": 13 },
+    { "year": 4, "quarter": "Spring", "units": 14 }
+  ],
+  "career_outcomes": [
+    "Mechanical Design Engineer",
+    "Aerospace Engineer",
+    "Robotics Engineer",
+    "Thermal Systems Engineer"
+  ],
+  "quality_tier": "gear",
+  "notes": [
+    "GEAR 4-year grid is a guide; adjust with ME advisors.",
+    "ME 12S is offered every quarter; must be completed before third year.",
+    "BS/MS Materials applicants take MATRL 100A-B-C in junior year instead of MATRL 101."
+  ]
+}

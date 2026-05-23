@@ -1,6 +1,12 @@
 /** Shared UCSB college catalog shapes (CoE + L&S). */
 
-export type RequirementsLevel = "full" | "partial" | "summary" | "sheet" | "roadmap";
+export type RequirementsLevel =
+  | "full"
+  | "partial"
+  | "summary"
+  | "sheet"
+  | "gear"
+  | "roadmap";
 
 export type UcsbMajor = {
   name: string;

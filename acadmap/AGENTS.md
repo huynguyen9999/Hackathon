@@ -51,6 +51,10 @@ Use this file when running **multiple Cursor agents** (or subagents) in parallel
 
 > Parse department major sheet PDF → write `data/ucsb/ls-majors/{slug}.json` following `lib/ucsb-major-detail-types.ts`. Add URLs to `data/ucsb/major-sheet-sources.json`. Run `npm run validate:details` + `npm run sync:details`. Use FMS or **Actuarial Science** as reference (BS/MS tracks). Parallel cluster assignments: `docs/LS-MAJOR-AGENT-CLUSTERS.md`. Batch scaffold: `npm run generate:details`.
 
+**CoE GEAR agent** (Wave 2 — one per major)
+
+> Parse GEAR p.{N} GRID → `data/ucsb/coe-majors/{slug}.json` + `data/seeds/ucsb-{slug}.json`. Run `npm run validate:coe-details` + `npm run sync:coe-details`. See `docs/COE-GEAR-AGENT-CLUSTERS.md`. Reference: `coe-majors/electrical-engineering.json`.
+
 **Data agent** — per major
 
 > Create `data/seeds/ucsb-{slug}.json` from catalog core courses + official prerequisites. Mark `roadmap_available: true` in catalog when done (or run `npm run sync:details` after seed exists). FMS pilot: `data/seeds/ucsb-financial-mathematics-and-statistics.json`.
@@ -102,7 +106,8 @@ npm run fetch:ls             # merge 58 L&S majors into ls-catalog.json
 npm run validate:ls          # assert catalog integrity
 npm run generate:details     # auto-generate catalog-tier ls-majors for all 58 majors
 npm run validate:details     # validate ls-majors/*.json schema
-npm run sync:details         # sync detail_available, sheet URLs into ls-catalog.json
+npm run validate:coe-details  # validate coe-majors/*.json
+npm run sync:coe-details      # sync detail + roadmap flags into coe-catalog.json
 ```
 
 If the parent folder path contains `:`, prefer:

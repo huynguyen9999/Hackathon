@@ -1,0 +1,42 @@
+{
+  "school": { "name": "UC Santa Barbara", "short_name": "ucsb", "location": "Santa Barbara, CA" },
+  "major": { "name": "Computer Science", "slug": "computer-science", "degree_type": "BS" },
+  "metadata": {
+    "source": "UCSB GEAR 2025-2026",
+    "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
+    "gear_page": 18
+  },
+  "nodes": [
+    { "id": "cmpsc-16", "node_type": "course", "label": "CMPSC 16", "units": 4, "self_learnable": true, "position_x": 80, "position_y": 120 },
+    { "id": "cmpsc-24", "node_type": "course", "label": "CMPSC 24", "units": 4, "self_learnable": true, "position_x": 280, "position_y": 120 },
+    { "id": "cmpsc-32", "node_type": "course", "label": "CMPSC 32", "units": 4, "self_learnable": false, "position_x": 480, "position_y": 120 },
+    { "id": "cmpsc-40", "node_type": "course", "label": "CMPSC 40", "units": 5, "self_learnable": false, "position_x": 480, "position_y": 280 },
+    { "id": "cmpsc-64", "node_type": "course", "label": "CMPSC 64", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 120 },
+    { "id": "pstat-120a", "node_type": "course", "label": "PSTAT 120A", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 280 },
+    { "id": "cmpsc-130a", "node_type": "course", "label": "CMPSC 130A", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 120 },
+    { "id": "cmpsc-130b", "node_type": "course", "label": "CMPSC 130B", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 280 },
+    { "id": "cmpsc-156", "node_type": "course", "label": "CMPSC 156", "units": 4, "self_learnable": false, "position_x": 1080, "position_y": 120 },
+    { "id": "cmpsc-170", "node_type": "course", "label": "CMPSC 170", "units": 4, "self_learnable": false, "position_x": 1080, "position_y": 280 },
+    { "id": "cmpsc-189a", "node_type": "course", "label": "CMPSC 189A", "units": 4, "self_learnable": false, "position_x": 1280, "position_y": 200 },
+    { "id": "engr-101", "node_type": "course", "label": "ENGR 101", "units": 3, "self_learnable": false, "position_x": 1280, "position_y": 360 },
+    { "id": "career-swe", "node_type": "career", "label": "Software engineer", "self_learnable": false, "position_x": 1480, "position_y": 80 },
+    { "id": "career-ml", "node_type": "career", "label": "ML engineer", "self_learnable": false, "position_x": 1480, "position_y": 200 },
+    { "id": "career-security", "node_type": "career", "label": "Security engineer", "self_learnable": false, "position_x": 1480, "position_y": 320 },
+    { "id": "career-grad", "node_type": "career", "label": "Grad school", "self_learnable": false, "position_x": 1480, "position_y": 440 }
+  ],
+  "edges": [
+    { "id": "e1", "source_id": "cmpsc-16", "target_id": "cmpsc-24", "edge_type": "prerequisite" },
+    { "id": "e2", "source_id": "cmpsc-24", "target_id": "cmpsc-32", "edge_type": "prerequisite" },
+    { "id": "e3", "source_id": "cmpsc-32", "target_id": "cmpsc-40", "edge_type": "prerequisite" },
+    { "id": "e4", "source_id": "cmpsc-32", "target_id": "cmpsc-64", "edge_type": "prerequisite" },
+    { "id": "e5", "source_id": "cmpsc-40", "target_id": "cmpsc-130a", "edge_type": "prerequisite" },
+    { "id": "e6", "source_id": "cmpsc-130a", "target_id": "cmpsc-130b", "edge_type": "prerequisite" },
+    { "id": "e7", "source_id": "cmpsc-130a", "target_id": "cmpsc-156", "edge_type": "prerequisite" },
+    { "id": "e8", "source_id": "cmpsc-130b", "target_id": "cmpsc-170", "edge_type": "prerequisite" },
+    { "id": "e9", "source_id": "cmpsc-156", "target_id": "cmpsc-189a", "edge_type": "prerequisite" },
+    { "id": "e10", "source_id": "cmpsc-170", "target_id": "career-swe", "edge_type": "leads_to" },
+    { "id": "e11", "source_id": "pstat-120a", "target_id": "career-ml", "edge_type": "leads_to" },
+    { "id": "e12", "source_id": "cmpsc-156", "target_id": "career-security", "edge_type": "leads_to" },
+    { "id": "e13", "source_id": "cmpsc-189a", "target_id": "career-grad", "edge_type": "leads_to" }
+  ]
+}

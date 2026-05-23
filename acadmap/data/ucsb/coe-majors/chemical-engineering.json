@@ -1,0 +1,275 @@
+{
+  "slug": "chemical-engineering",
+  "name": "Chemical Engineering",
+  "catalog_year": "2025-2026",
+  "gear_page": 14,
+  "graduation_units": 187,
+  "sources": [
+    {
+      "title": "GEAR 2025-2026 (PDF)",
+      "url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf"
+    },
+    {
+      "title": "ChE Undergraduate Curriculum",
+      "url": "https://www.chemengr.ucsb.edu/undergraduate/curriculum"
+    },
+    {
+      "title": "ChE Undergraduate",
+      "url": "https://www.chemengr.ucsb.edu/undergraduate"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "units": 75,
+    "courses": [
+      { "code": "CH E 5", "units": 3 },
+      { "code": "CH E 10", "units": 3 },
+      { "code": "CHEM 3A", "alternatives": ["CHEM 1A"], "units": 4, "notes": "CHEM 3A-B-C or 1A-B-C (10 units)" },
+      { "code": "CHEM 3B", "alternatives": ["CHEM 1B"], "units": 4 },
+      { "code": "CHEM 3C", "alternatives": ["CHEM 1C"], "units": 4 },
+      { "code": "CHEM 2AL", "units": 2.5 },
+      { "code": "CHEM 2BL", "units": 2.5 },
+      { "code": "CHEM 6AL", "units": 3, "notes": "CHEM 6AL-BL (6 units)" },
+      { "code": "CHEM 6BL", "units": 3 },
+      { "code": "CHEM 109A", "alternatives": ["CHEM 130A"], "units": 4, "notes": "CHEM 109A-B or 130A-B (8 units)" },
+      { "code": "CHEM 109B", "alternatives": ["CHEM 130B"], "units": 4 },
+      { "code": "ENGR 3", "units": 3 },
+      { "code": "MATH 3A", "units": 4, "notes": "MATH 3A-B, 4A or 4AI, 4B or 4BI, 6A or 6AI, 6B" },
+      { "code": "MATH 3B", "units": 4 },
+      { "code": "MATH 4A", "alternatives": ["MATH 4AI"], "units": 4 },
+      { "code": "MATH 4B", "alternatives": ["MATH 4BI"], "units": 4 },
+      { "code": "MATH 6A", "alternatives": ["MATH 6AI"], "units": 4 },
+      { "code": "MATH 6B", "units": 4 },
+      { "code": "PHYS 7A", "units": 4 },
+      { "code": "PHYS 7B", "units": 4 },
+      { "code": "PHYS 7C", "units": 4 },
+      { "code": "PHYS 7L", "units": 1 }
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "units": 66,
+      "courses": [
+        { "code": "CH E 107", "units": 3 },
+        { "code": "CH E 110A", "units": 3 },
+        { "code": "CH E 110B", "units": 3 },
+        { "code": "CH E 118", "units": 1 },
+        { "code": "CH E 120A", "units": 4 },
+        { "code": "CH E 120B", "units": 3 },
+        { "code": "CH E 120C", "units": 3 },
+        { "code": "CH E 128", "units": 3 },
+        { "code": "CH E 132A", "units": 4 },
+        { "code": "CH E 132B", "units": 3 },
+        { "code": "CH E 132C", "units": 3 },
+        { "code": "CH E 140A", "units": 3 },
+        { "code": "CH E 140B", "units": 3 },
+        { "code": "CH E 152A", "units": 4 },
+        { "code": "CH E 180A", "units": 3 },
+        { "code": "CH E 180B", "units": 3 },
+        { "code": "CH E 184A", "units": 3 },
+        { "code": "CH E 184B", "units": 3 },
+        { "code": "CHEM 113B", "units": 4 },
+        { "code": "CHEM 113C", "units": 4 },
+        { "code": "MATRL 101", "alternatives": ["MATRL 100C"], "units": 3, "notes": "Only one of MATRL 101 or MATRL 100C counts toward major" }
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Technical electives",
+    "choose_units": 15,
+    "courses": [
+      { "code": "CH E 171" },
+      { "code": "CH E 173" },
+      { "code": "CH E 174" },
+      { "code": "CH E 152B" },
+      { "code": "CH E 154" },
+      { "code": "MATRL 101" },
+      { "code": "ECE 130A-B-C" },
+      { "code": "ME 110" }
+    ],
+    "notes": [
+      "Prior approval from undergraduate adviser required.",
+      "At least 9 of 15 units must be in CH E, ECE, MATRL, or ME.",
+      "Three units maximum from CH E 196 and CH E 198 combined (GPA 3.0+)."
+    ]
+  },
+  "regulations": {
+    "letter_grade_only": true,
+    "letter_grade_minimum": "letter grade",
+    "pnp_allowed": false,
+    "other": [
+      "Minimum 12 units each Fall, Winter, and Spring quarter (GEAR minimum progress).",
+      "Maximum 215 units and 12 regular quarters for students admitted as freshmen.",
+      "Major courses must be taken for a letter grade.",
+      "GE courses may be taken P/NP when the course offers that grading option."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 5", "units": 3 },
+        { "code": "CHEM 3A", "alternatives": ["CHEM 1A"], "units": 4 },
+        { "code": "MATH 3A", "units": 4 },
+        { "code": "WRIT 2E", "alternatives": ["WRIT 1E"], "units": 4 }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "CHEM 3B", "alternatives": ["CHEM 1B"], "units": 3 },
+        { "code": "CHEM 2AL", "units": 2.5 },
+        { "code": "MATH 3B", "units": 4 },
+        { "code": "ENGR 3", "units": 3 },
+        { "code": "WRIT 50E", "alternatives": ["WRIT 2E"], "units": 4 }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "CHEM 3C", "alternatives": ["CHEM 1C"], "units": 3 },
+        { "code": "CHEM 2BL", "units": 2.5 },
+        { "code": "MATH 4A", "alternatives": ["MATH 4AI"], "units": 4 },
+        { "code": "PHYS 7A", "units": 4 },
+        { "code": "PHYS 7B", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 10", "units": 3 },
+        { "code": "CHEM 109A", "alternatives": ["CHEM 130A"], "units": 4 },
+        { "code": "MATH 4B", "alternatives": ["MATH 4BI"], "units": 4 },
+        { "code": "PHYS 7L", "units": 1 },
+        { "code": "PHYS 7C", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 107", "units": 3 },
+        { "code": "CH E 110A", "units": 3 },
+        { "code": "CHEM 6AL", "units": 3 },
+        { "code": "CHEM 109B", "alternatives": ["CHEM 130B"], "units": 4 },
+        { "code": "MATH 6A", "alternatives": ["MATH 6AI"], "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 110B", "units": 3 },
+        { "code": "CH E 132A", "units": 4 },
+        { "code": "CHEM 6BL", "units": 3 },
+        { "code": "MATH 6B", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 120A", "units": 4 },
+        { "code": "CH E 128", "units": 3 },
+        { "code": "CH E 132B", "units": 3 },
+        { "slot": "GE", "label": "G.E.", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 120B", "units": 3 },
+        { "code": "CH E 132C", "units": 3 },
+        { "code": "CHEM 113B", "units": 4 },
+        { "code": "MATRL 101", "alternatives": ["MATRL 100C"], "units": 3 },
+        { "slot": "ELECTIVE", "label": "Technical elective", "units": 3 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 118", "units": 1 },
+        { "code": "CH E 120C", "units": 3 },
+        { "code": "CH E 140A", "units": 3 },
+        { "code": "CH E 180A", "units": 3 },
+        { "code": "CHEM 113C", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Technical elective", "units": 3 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 140B", "units": 3 },
+        { "code": "CH E 152A", "units": 4 },
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Technical elective", "units": 3 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 180B", "units": 3 },
+        { "code": "CH E 184A", "units": 3 },
+        { "slot": "GE", "label": "G.E.", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Technical elective", "units": 3 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "CH E 184B", "units": 3 },
+        { "slot": "GE", "label": "G.E.", "units": 8 },
+        { "slot": "ELECTIVE", "label": "Technical elective", "units": 3 }
+      ]
+    }
+  ],
+  "quarter_totals": [
+    { "year": 1, "quarter": "Fall", "units": 15 },
+    { "year": 1, "quarter": "Winter", "units": 17.5 },
+    { "year": 1, "quarter": "Spring", "units": 16.5 },
+    { "year": 2, "quarter": "Fall", "units": 16 },
+    { "year": 2, "quarter": "Winter", "units": 17 },
+    { "year": 2, "quarter": "Spring", "units": 18 },
+    { "year": 3, "quarter": "Fall", "units": 14 },
+    { "year": 3, "quarter": "Winter", "units": 16 },
+    { "year": 3, "quarter": "Spring", "units": 17 },
+    { "year": 4, "quarter": "Fall", "units": 14 },
+    { "year": 4, "quarter": "Winter", "units": 13 },
+    { "year": 4, "quarter": "Spring", "units": 14 }
+  ],
+  "career_outcomes": [
+    "Process Engineer",
+    "Materials Engineer",
+    "Biotech Engineer",
+    "Energy Engineer"
+  ],
+  "quality_tier": "gear",
+  "notes": [
+    "GEAR 4-year grid is a guide; adjust with ChE advisors.",
+    "BS/MS Materials applicants take MATRL 100A-B-C in junior year instead of MATRL 101.",
+    "Only one of MATRL 101 or MATRL 100C may count toward the major."
+  ]
+}

@@ -13,6 +13,26 @@
     "pdf_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
     "note": "Official General Engineering Academic Requirements. Students follow the GEAR for their catalog year."
   },
+  "gear_framework": {
+    "total_units": "180–191 (varies by major)",
+    "university_requirements": [
+      "UC Entry Level Writing (WRIT 1/2 or exam within 3 quarters)",
+      "American History and Institutions (4 units, may overlap GE)"
+    ],
+    "ge_general_subject_areas": [
+      "Area A: English Reading & Composition (WRIT 2 + A2 course)",
+      "Area D: Social Sciences (2 courses minimum)",
+      "Area E: Culture and Thought (2 courses minimum)",
+      "Area F: The Arts (1 course minimum)",
+      "Area G: Literature (1 course minimum)"
+    ],
+    "ge_special_subject_areas": [
+      "Writing: 4 designated GE courses (ENGR 101 may count)",
+      "Ethnicity: 1 course",
+      "European Traditions or World Cultures: 1 course"
+    ],
+    "gear_note": "CoE students complete GE per GEAR pp. 11–13. Minimum 12 units per Fall/Winter/Spring quarter."
+  },
   "majors": [
     {
       "name": "Electrical Engineering",
@@ -62,7 +82,9 @@
         "ASIC / VLSI Designer",
         "Power Electronics Engineer",
         "Signal Processing Engineer"
-      ]
+      ],
+      "detail_available": true,
+      "requirements_level": "roadmap"
     },
     {
       "name": "Computer Engineering",
@@ -74,7 +96,7 @@
       "course_grid_url": "https://www.ce.ucsb.edu/undergrad/curriculum/4-year-plan",
       "gear_page": 16,
       "graduation_units": 191,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CMPSC 16",
         "CMPSC 24",
@@ -111,7 +133,9 @@
         "Embedded Systems Engineer",
         "VLSI Designer",
         "Software Engineer"
-      ]
+      ],
+      "detail_available": true,
+      "requirements_level": "roadmap"
     },
     {
       "name": "Computer Science",
@@ -122,7 +146,7 @@
       "curriculum_url": "https://cs.ucsb.edu/education/undergraduate/major-requirements",
       "gear_page": 18,
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CMPSC 16",
         "CMPSC 24",
@@ -152,7 +176,9 @@
         "ML Engineer",
         "Systems Engineer",
         "Security Engineer"
-      ]
+      ],
+      "detail_available": true,
+      "requirements_level": "roadmap"
     },
     {
       "name": "Mechanical Engineering",
@@ -163,7 +189,7 @@
       "curriculum_url": "https://me.ucsb.edu/undergraduate/curriculum",
       "gear_page": 22,
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A, 2AL, 1B or 2A, 2AC, 2B",
         "ENGR 3",
@@ -206,7 +232,9 @@
         "Aerospace Engineer",
         "Robotics Engineer",
         "Thermal Systems Engineer"
-      ]
+      ],
+      "detail_available": true,
+      "requirements_level": "roadmap"
     },
     {
       "name": "Chemical Engineering",
@@ -217,7 +245,7 @@
       "curriculum_url": "https://www.chemengr.ucsb.edu/undergraduate/curriculum",
       "gear_page": 14,
       "graduation_units": 187,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CH E 5",
         "CHEM 3A/1A, 3B/1B, 3C/1C",
@@ -252,7 +280,9 @@
         "Materials Engineer",
         "Biotech Engineer",
         "Energy Engineer"
-      ]
+      ],
+      "detail_available": true,
+      "requirements_level": "roadmap"
     }
   ],
   "sources": [

@@ -1,0 +1,31 @@
+{
+  "catalog_year": "2025-2026",
+  "gear_pdf": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
+  "sources": {
+    "chemical-engineering": {
+      "gear_page": 14,
+      "dept_page": "https://www.chemengr.ucsb.edu/undergraduate",
+      "course_grid_url": "https://www.chemengr.ucsb.edu/undergraduate/curriculum"
+    },
+    "computer-engineering": {
+      "gear_page": 16,
+      "dept_page": "https://www.ce.ucsb.edu/undergrad/curriculum/4-year-plan",
+      "course_grid_url": "https://www.ce.ucsb.edu/undergrad/curriculum/4-year-plan"
+    },
+    "computer-science": {
+      "gear_page": 18,
+      "dept_page": "https://cs.ucsb.edu/education/undergraduate",
+      "course_grid_url": "https://cs.ucsb.edu/education/undergraduate/major-requirements"
+    },
+    "electrical-engineering": {
+      "gear_page": 20,
+      "dept_page": "https://www.ece.ucsb.edu/undergrad/curriculum",
+      "course_grid_url": "https://www.ece.ucsb.edu/undergrad/timeline-advising/grid-table-view"
+    },
+    "mechanical-engineering": {
+      "gear_page": 22,
+      "dept_page": "https://me.ucsb.edu/undergraduate/curriculum",
+      "course_grid_url": "https://me.ucsb.edu/undergraduate/curriculum"
+    }
+  }
+}
