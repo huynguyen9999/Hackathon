@@ -2,79 +2,56 @@
 
 Interactive degree roadmaps—courses, prerequisites, and career paths—built with Next.js 14, React Flow, and optional Supabase.
 
+**Live:** [hackathon-huynguyen67.vercel.app](https://hackathon-huynguyen67.vercel.app)
+
 ## Features
 
-- **Landing** — Hero, feature highlights, links to explore and sample UCSB EE roadmap
-- **Explore** — Browse and search seed (and Supabase) roadmaps
+- **Landing** — Hero, feature highlights, links to explore and UCSB CoE hub
+- **School hub** — `/schools/ucsb` with GEAR 2025-26 requirements for all 5 CoE majors
 - **Roadmap viewer** — React Flow graph with course/career nodes and detail sidebar
-- **Contribute** — Submit new school/major proposals (API stub until Supabase auth)
+- **Explore** — Browse and search approved roadmaps
+- **Contribute** — Submit roadmaps (Supabase auth when configured)
 - **REST API** — `GET/POST /api/roadmaps`, `GET /api/roadmaps/[id]`, `GET /api/schools`
 
 ## Prerequisites
 
 - Node.js 18+
-- npm (or pnpm/yarn)
+- npm
 
 ## Setup
 
 ```bash
-cd acadmap
 npm install
-cp .env.example .env.local
+cp .env.example .env.local   # optional until Supabase
+npm run dev                  # http://localhost:3000
 ```
 
-### Environment variables
+## Deploy (Vercel)
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `NEXT_PUBLIC_SUPABASE_URL` | No* | Supabase project URL |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | No* | Supabase anon key for client/server reads |
-| `SUPABASE_SERVICE_ROLE_KEY` | No | Service role for admin writes (future) |
+This app deploys from the **monorepo** at [github.com/huynguyen9999/Hackathon](https://github.com/huynguyen9999/Hackathon).
 
-\*Local development works with JSON seeds in `data/seeds/` only. Without Supabase env vars, the app serves seed roadmaps and skips remote fetches.
+1. Import the GitHub repo in Vercel.
+2. Set **Root Directory** to `acadmap`.
+3. Framework: **Next.js** (auto-detected).
 
-## Supabase migration
+Production URL: https://hackathon-huynguyen67.vercel.app
 
-1. Create a project at [supabase.com](https://supabase.com).
-2. Open the SQL editor and run the schema in [`supabase/schema.sql`](./supabase/schema.sql).
-3. Copy your project URL and anon key into `.env.local`.
-4. (Optional) Enable GitHub auth in Supabase Authentication for contributor sign-in.
+Official curriculum source: [UCSB GEAR 2025-26 PDF](https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf)
 
-## Development
-
-```bash
-npm run dev      # http://localhost:3000
-npm run build    # production build
-npm run start    # serve production build
-npm run lint     # ESLint (Next.js config)
-```
-
-### Sample routes
+## Sample routes
 
 - Home: `/`
+- UCSB CoE: `/schools/ucsb`
+- EE requirements: `/schools/ucsb/electrical-engineering`
+- EE graph: `/roadmap/ucsb/electrical-engineering`
 - Explore: `/explore`
-- UCSB Electrical Engineering: `/roadmap/ucsb/electrical-engineering`
-- Contribute: `/contribute`
-
-## Project structure
-
-```
-acadmap/
-├── app/                 # App Router pages & API routes
-├── components/          # UI, RoadmapGraph, RoadmapView, forms
-├── data/seeds/          # JSON roadmaps (server-loaded)
-├── lib/                 # types, roadmap loader, flow adapters, Supabase
-└── supabase/schema.sql  # Postgres schema + RLS
-```
 
 ## API
 
-- `GET /api/roadmaps` — Approved roadmaps with `school` + `major` (no nodes/edges)
-- `GET /api/roadmaps/:id` — Full roadmap including nodes and edges (approved only)
-- `POST /api/roadmaps` — **Auth required.** Body = seed JSON (`school`, `major`, `nodes`, `edges`). Inserts into Supabase with `status: "pending"`.
-- `GET /api/schools` — Schools that have at least one approved roadmap
-
-Example POST body: see `data/seeds/ucsb-electrical-engineering.json`.
+- `GET /api/roadmaps` — Approved roadmaps with school + major
+- `GET /api/roadmaps/:id` — Full roadmap (nodes + edges)
+- `POST /api/roadmaps` — Auth required; seed JSON body
+- `GET /api/schools` — Schools with approved roadmaps
 
 ## License
 
