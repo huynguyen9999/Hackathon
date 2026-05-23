@@ -1,0 +1,142 @@
+{
+  "slug": "black-studies",
+  "name": "Black Studies",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BABLS",
+      "url": "https://catalog.ucsb.edu/programs/BABLS"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.blackstudies.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BABLS"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "ST 1",
+        "title": "Introduction to Black Studies"
+      },
+      {
+        "code": "Lower-division BL ST courses",
+        "notes": "Lower-division BL ST courses"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division BL ST electives",
+          "notes": "Upper-division BL ST electives"
+        }
+      ],
+      "notes": [
+        "Interdisciplinary study of African diaspora history, culture, and politics."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "ST 110"
+      },
+      {
+        "code": "ST 130"
+      },
+      {
+        "code": "ST 150"
+      },
+      {
+        "code": "ST 170"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "ST 1",
+          "title": "Introduction to Black Studies",
+          "units": 4
+        },
+        {
+          "code": "Lower-division BL ST courses",
+          "units": 4,
+          "notes": "Lower-division BL ST courses"
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division BL ST electives",
+          "units": 4,
+          "notes": "Upper-division BL ST electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "ST 1",
+          "title": "Introduction to Black Studies",
+          "units": 4
+        },
+        {
+          "code": "Lower-division BL ST courses",
+          "units": 4,
+          "notes": "Lower-division BL ST courses"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division BL ST electives",
+          "units": 4,
+          "notes": "Upper-division BL ST electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Law",
+    "Education",
+    "Social work",
+    "Public policy",
+    "Community leadership"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

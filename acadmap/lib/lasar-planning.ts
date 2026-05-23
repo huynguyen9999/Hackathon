@@ -1,5 +1,5 @@
 import type { LsRequirementsFramework } from "@/lib/ucsb-ls";
-import type { PlanEntry, QuarterPlan, QuarterName } from "@/lib/ucsb-major-detail-types";
+import type { PlanEntry, PlanTrack, PlanYear, QuarterPlan, QuarterName } from "@/lib/ucsb-major-detail-types";
 import { isPlanSlot } from "@/lib/ucsb-major-detail-types";
 
 export type GeSlotTemplate = {
@@ -33,7 +33,7 @@ export const DEFAULT_GE_SLOTS: GeSlotTemplate[] = [
 const QUARTERS: QuarterName[] = ["Fall", "Winter", "Spring"];
 
 export type TimelineQuarter = {
-  year: 1 | 2 | 3 | 4;
+  year: PlanYear;
   quarter: QuarterName;
   majorEntries: PlanEntry[];
   geSlots: GeSlotTemplate[];
@@ -50,22 +50,28 @@ function majorUnits(entries: PlanEntry[]): number {
   }, 0);
 }
 
-/** Merge major plan with GE/LASAR slots in quarters with fewer than 16 major units. */
+/** Merge major plan with GE/LASAR slots in quarters with fewer than target major units. */
 export function buildTimelineWithGe(
   plans: QuarterPlan[],
-  track: "freshman" | "transfer",
+  track: PlanTrack,
   geSlots: GeSlotTemplate[] = DEFAULT_GE_SLOTS,
   targetUnitsPerQuarter = 12,
 ): TimelineQuarter[] {
+  const trackPlans = plans.filter((x) => x.track === track);
   const byKey = new Map<string, PlanEntry[]>();
-  for (const p of plans.filter((x) => x.track === track)) {
+  for (const p of trackPlans) {
     byKey.set(quarterKey(p.year, p.quarter), p.entries);
   }
+
+  const maxYear = Math.min(
+    5,
+    trackPlans.reduce((max, p) => Math.max(max, p.year), 4),
+  ) as PlanYear;
 
   const timeline: TimelineQuarter[] = [];
   let geIndex = 0;
 
-  for (let year = 1; year <= 4; year += 1) {
+  for (let year = 1; year <= maxYear; year += 1) {
     for (const quarter of QUARTERS) {
       const majorEntries = byKey.get(quarterKey(year, quarter)) ?? [];
       const filled: GeSlotTemplate[] = [];
@@ -79,7 +85,7 @@ export function buildTimelineWithGe(
       }
 
       timeline.push({
-        year: year as 1 | 2 | 3 | 4,
+        year: year as PlanYear,
         quarter,
         majorEntries,
         geSlots: filled,

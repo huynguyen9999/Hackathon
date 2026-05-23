@@ -1,0 +1,184 @@
+{
+  "slug": "linguistics",
+  "name": "Linguistics",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BALING",
+      "url": "https://catalog.ucsb.edu/programs/BALING"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.linguistics.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BALING"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "LING 20",
+        "title": "Language and Linguistics"
+      },
+      {
+        "code": "LING 50",
+        "title": "Phonetics"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "LING 106",
+          "title": "Syntax"
+        },
+        {
+          "code": "LING 107",
+          "title": "Semantics"
+        },
+        {
+          "code": "Upper-division LING electives",
+          "notes": "Upper-division LING electives"
+        }
+      ],
+      "notes": [
+        "Formal linguistics with phonology, syntax, and semantics."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "LING 130"
+      },
+      {
+        "code": "LING 150"
+      },
+      {
+        "code": "LING 170"
+      },
+      {
+        "code": "LING 199"
+      }
+    ],
+    "choose_units": 28
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "LING 20",
+          "title": "Language and Linguistics",
+          "units": 4
+        },
+        {
+          "code": "LING 50",
+          "title": "Phonetics",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "LING 106",
+          "title": "Syntax",
+          "units": 4
+        },
+        {
+          "code": "LING 107",
+          "title": "Semantics",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division LING electives",
+          "units": 4,
+          "notes": "Upper-division LING electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "LING 20",
+          "title": "Language and Linguistics",
+          "units": 4
+        },
+        {
+          "code": "LING 50",
+          "title": "Phonetics",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "LING 106",
+          "title": "Syntax",
+          "units": 4
+        },
+        {
+          "code": "LING 107",
+          "title": "Semantics",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division LING electives",
+          "units": 4,
+          "notes": "Upper-division LING electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Computational linguistics",
+    "Speech tech",
+    "Teaching",
+    "Graduate study",
+    "UX research"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

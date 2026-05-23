@@ -1,0 +1,222 @@
+{
+  "slug": "physics",
+  "name": "Physics",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BSPHY",
+      "url": "https://catalog.ucsb.edu/programs/BSPHY"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.physics.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BSPHY"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "PHYS 7A"
+      },
+      {
+        "code": "MATH 3A"
+      },
+      {
+        "code": "PHYS 51"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "PHYS 105A"
+        },
+        {
+          "code": "PHYS 110A"
+        },
+        {
+          "code": "PHYS 115A"
+        },
+        {
+          "code": "PHYS 120"
+        },
+        {
+          "code": "Upper-division PHYS electives",
+          "notes": "Upper-division PHYS electives"
+        }
+      ],
+      "notes": [
+        "BS for grad school/technical careers. Selective major."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "PHYS 130"
+      },
+      {
+        "code": "PHYS 134"
+      },
+      {
+        "code": "PHYS 145"
+      },
+      {
+        "code": "PHYS 199"
+      }
+    ],
+    "choose_units": 12
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false,
+    "other": [
+      "Selective major — verify admission requirements on admissions site."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PHYS 51",
+          "units": 4
+        },
+        {
+          "code": "PHYS 105A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PHYS 110A",
+          "units": 4
+        },
+        {
+          "code": "PHYS 115A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PHYS 120",
+          "units": 4
+        },
+        {
+          "code": "Upper-division PHYS electives",
+          "units": 4,
+          "notes": "Upper-division PHYS electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PHYS 51",
+          "units": 4
+        },
+        {
+          "code": "PHYS 105A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PHYS 110A",
+          "units": 4
+        },
+        {
+          "code": "PHYS 115A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PHYS 120",
+          "units": 4
+        },
+        {
+          "code": "Upper-division PHYS electives",
+          "units": 4,
+          "notes": "Upper-division PHYS electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Graduate study",
+    "Engineering",
+    "Quant finance",
+    "National labs",
+    "Data science"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

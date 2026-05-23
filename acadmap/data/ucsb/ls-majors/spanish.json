@@ -1,0 +1,145 @@
+{
+  "slug": "spanish",
+  "name": "Spanish",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BASPN",
+      "url": "https://catalog.ucsb.edu/programs/BASPN"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.spanport.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BASPN"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "SPAN 1",
+        "title": "Spanish language sequence",
+        "notes": "Series through SPAN 6"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "SPAN 100",
+          "title": "Advanced Spanish"
+        },
+        {
+          "code": "Upper-division literature/culture",
+          "notes": "Upper-division literature/culture"
+        }
+      ],
+      "notes": [
+        "Spanish language, literature, and Hispanic cultures."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "SPAN 120"
+      },
+      {
+        "code": "SPAN 140"
+      },
+      {
+        "code": "SPAN 160"
+      },
+      {
+        "code": "LAIS 130"
+      }
+    ],
+    "choose_units": 28
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "SPAN 1",
+          "title": "Spanish language sequence",
+          "units": 4,
+          "notes": "Series through SPAN 6"
+        },
+        {
+          "code": "SPAN 100",
+          "title": "Advanced Spanish",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division literature/culture",
+          "units": 4,
+          "notes": "Upper-division literature/culture"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "SPAN 1",
+          "title": "Spanish language sequence",
+          "units": 4,
+          "notes": "Series through SPAN 6"
+        },
+        {
+          "code": "SPAN 100",
+          "title": "Advanced Spanish",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division literature/culture",
+          "units": 4,
+          "notes": "Upper-division literature/culture"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Translation",
+    "Education",
+    "International business",
+    "Law",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

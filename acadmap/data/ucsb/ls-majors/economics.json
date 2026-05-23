@@ -100,5 +100,6 @@
     { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "UD ECON elective" }] },
     { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "UD ECON elective" }] }
   ],
-  "career_outcomes": ["Financial analyst", "Consulting", "Data analytics", "Public policy", "Graduate study"]
+  "career_outcomes": ["Financial analyst", "Consulting", "Data analytics", "Public policy", "Graduate study"],
+  "quality_tier": "sheet"
 }

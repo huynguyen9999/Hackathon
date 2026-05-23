@@ -4,106 +4,222 @@
   "catalog_year": "2025-2026",
   "sources": [
     {
-      "title": "Actuarial Science BS major sheet",
+      "title": "Actuarial Science BS major sheet (2025-26)",
       "url": "https://www.pstat.ucsb.edu/media/161"
     },
     {
-      "title": "Recommended plan of study",
+      "title": "Recommended plan of study — BS",
       "url": "https://www.pstat.ucsb.edu/media/69"
     },
     {
-      "title": "Department page",
-      "url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/actuarial-science-major"
+      "title": "Recommended plan — BS/MS (VEE & exam track)",
+      "url": "https://www.pstat.ucsb.edu/sites/default/files/2025-10/Recommended%20Plan%20of%20Study%20Template%20%2825-26%20FINAL%29%20-%20Actuarial%20Science%20BS_MS%20Program.pdf"
+    },
+    {
+      "title": "Combined BS/MS program",
+      "url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/actuarial-science-major/combined-bs-ms-program"
+    },
+    {
+      "title": "VEE and actuarial exams",
+      "url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/actuarial-science-major/vee-and-actuarial-exams"
+    },
+    {
+      "title": "UCSB Catalog — BSACT",
+      "url": "https://catalog.ucsb.edu/programs/BSACT"
     }
   ],
   "pre_major": {
     "label": "Pre-major",
-    "unit_range": "30-32",
+    "unit_range": "34-36",
     "courses": [
-      { "code": "MATH 2A", "alternatives": ["MATH 3A"], "units": 4 },
-      { "code": "MATH 2B", "alternatives": ["MATH 3B"], "units": 4 },
-      { "code": "MATH 4A", "units": 4 },
-      { "code": "MATH 4B", "units": 4 },
-      { "code": "MATH 6A", "units": 4 },
-      { "code": "MATH 8", "alternatives": ["PSTAT 8"], "units": 5 },
-      { "code": "PSTAT 10", "units": 5 }
+      { "code": "MATH 2A", "alternatives": ["MATH 3A"], "units": 4, "notes": "Calculus I" },
+      { "code": "MATH 2B", "alternatives": ["MATH 3B"], "units": 4, "notes": "Calculus II" },
+      { "code": "MATH 4A", "title": "Linear Algebra", "units": 4 },
+      { "code": "MATH 4B", "title": "Differential Equations", "units": 4 },
+      { "code": "MATH 6A", "title": "Vector Calculus I", "units": 4 },
+      { "code": "MATH 6B", "title": "Vector Calculus II", "units": 4 },
+      {
+        "code": "MATH 8",
+        "alternatives": ["PSTAT 8"],
+        "units": 5,
+        "notes": "Grade B or better in MATH 4A, 4B, 6A, or 6B required. MATH 8 required for UD MATH beyond 117 and 104A-B-C."
+      },
+      { "code": "PSTAT 10", "title": "Probability and Statistics", "units": 5 }
     ],
     "notes": [
-      "2.5+ UC GPA. Max two pre-major repeats (one per course). C or better required.",
-      "Grade B or better in MATH 4A/4B/6A/6B for MATH/PSTAT 8."
+      "Complete all pre-major courses with 2.5+ UC GPA to enter full major.",
+      "All pre-major courses require grade C or better. Max two pre-major repeats (one per course).",
+      "Preparation courses are excluded from pre-major GPA but count toward overall major GPA."
     ]
   },
   "preparation": {
     "label": "Preparation for the major",
-    "units": 8,
+    "units": 12,
     "courses": [
-      { "code": "CMPSC 8", "units": 4, "notes": "Required" },
-      { "code": "CMPSC 9", "alternatives": ["CMPSC 16"], "units": 4, "notes": "Required with C or better" }
+      { "code": "CMPSC 8", "alternatives": ["CMPSC W 8"], "units": 4, "notes": "Required" },
+      {
+        "code": "CMPSC 9",
+        "alternatives": ["CMPSC 16"],
+        "units": 4,
+        "notes": "CMPSC 9 recommended over CMPSC 16; C or better required"
+      },
+      {
+        "code": "WRIT 107A",
+        "alternatives": ["WRIT 107B"],
+        "units": 4,
+        "notes": "Listed on major sheet; not required before declaring full major"
+      }
+    ],
+    "notes": [
+      "Only one repeat allowed in each CMPSC preparation course.",
+      "Recommended (not required): ECON 1, 2, 3A, 10A (VEE); PHIL 3 or 4."
     ]
   },
   "upper_division": [
     {
-      "label": "Statistics core",
-      "units": 16,
+      "label": "Area A — Probability & statistics foundation",
+      "units": 8,
       "courses": [
         { "code": "PSTAT 120A", "alternatives": ["PSTAT W 120A"], "units": 4 },
-        { "code": "PSTAT 120B", "units": 4 },
-        { "code": "PSTAT 160A", "alternatives": ["PSTAT W 160A"], "units": 4 },
-        { "code": "PSTAT 160B", "units": 4 }
+        { "code": "PSTAT 120B", "units": 4 }
       ]
     },
     {
-      "label": "Actuarial / financial mathematics",
+      "label": "Area B — Regression, statistics, financial math",
+      "units": 12,
+      "courses": [
+        { "code": "PSTAT 126", "units": 4 },
+        { "code": "PSTAT 160A", "alternatives": ["PSTAT W 160A"], "units": 4 },
+        { "code": "PSTAT 174", "alternatives": ["PSTAT W 174"], "units": 4 }
+      ]
+    },
+    {
+      "label": "Area C — Actuarial core",
       "units": 16,
       "courses": [
-        { "code": "PSTAT 171", "units": 4 },
-        { "code": "PSTAT 172A", "units": 4 },
-        { "code": "PSTAT 172B", "units": 4 },
-        { "code": "PSTAT 173", "units": 4 }
+        { "code": "PSTAT 170", "title": "Mathematical Finance", "units": 4 },
+        { "code": "PSTAT 171", "title": "Stochastic Calculus", "units": 4 },
+        { "code": "PSTAT 172A", "units": 4, "notes": "Winter quarter only" },
+        {
+          "code": "PSTAT 160B",
+          "alternatives": ["PSTAT 172B"],
+          "units": 4,
+          "notes": "Choose 160B or 172B (172B: Spring only)"
+        }
       ]
-    },
-    {
-      "label": "Upper-division electives",
-      "choose_units": 16,
-      "courses": [
-        { "code": "PSTAT 170" },
-        { "code": "PSTAT 174" },
-        { "code": "PSTAT 176" },
-        { "code": "ECON 100B" },
-        { "code": "ECON 130" },
-        { "code": "MATH 104A" }
-      ],
-      "notes": ["See major sheet for full elective pool. VEE courses encouraged for SOA exams."]
     }
   ],
+  "electives": {
+    "label": "Upper-division electives",
+    "courses": [
+      {
+        "code": "Area D",
+        "notes": "8 units from: PSTAT 105, 120C, 127, 130, 131, 160B or 172B (if not used in Area C), 173, 175, 176, 183"
+      },
+      {
+        "code": "Area E",
+        "notes": "4 units from: other PSTAT not used above; MATH 104A-B-C, 108A-B, 117, 118A-B-C, 124A-B, 132A-B; ECON 100B, 101, 134A-B, 141, 155, 170, 171"
+      }
+    ],
+    "choose_units": 12,
+    "notes": [
+      "48 total upper-division units in PSTAT and Mathematics required.",
+      "SOA track: PSTAT 172B, 173, 175, 131. CAS track: PSTAT 127, 131, 160B, 173, 183.",
+      "Recommended: ECON 134A (VEE), ECON 130 (SAS)."
+    ]
+  },
   "regulations": {
     "pre_major_gpa": 2.5,
     "major_gpa": 2.0,
     "letter_grade_minimum": "C",
     "pnp_allowed": false,
+    "excluded_courses": [
+      "MATH 100A-B, 101A-B, 102A-B, 193",
+      "PSTAT 109, 182T, W 182T, 188, 190, 193"
+    ],
     "transfer_admission_rules": [
-      "Two+ pre-major courses at UCSB: complete with 2.5 GPA.",
+      "Two+ pre-major courses remaining at UCSB: complete with 2.5 GPA.",
       "One pre-major course remaining: 2.5 GPA on remaining course + PSTAT 120A.",
       "All pre-major complete: meet GPA with PSTAT 120A."
     ],
     "other": [
       "UCSB Center of Actuarial Excellence. VEE-approved courses available.",
-      "Writing 107A/B not required before declaring full major."
+      "All upper-division PSTAT courses (except 120A) restricted to full PSTAT majors during Pass 1 and 2.",
+      "Double majors: up to 8 UD units may apply to both majors with chair approval."
     ]
   },
-  "recommended_plans": [
-    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 3A", "units": 4 }] },
-    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 3B", "units": 4 }] },
-    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 4A", "units": 4 }] },
-    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 4B", "units": 4 }, { "code": "CMPSC 8", "units": 4 }] },
-    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 6A", "units": 4 }, { "code": "CMPSC 9", "units": 4 }] },
-    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 8", "units": 5 }, { "code": "PSTAT 10", "units": 5 }] },
-    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "PSTAT 120A", "units": 4 }] },
-    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 120B", "units": 4 }, { "code": "PSTAT 160A", "units": 4 }] },
-    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "PSTAT 160B", "units": 4 }] },
-    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "PSTAT 171", "units": 4 }, { "code": "PSTAT 172A", "units": 4 }] },
-    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 172B", "units": 4 }, { "code": "PSTAT 173", "units": 4 }] },
-    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "Actuarial elective" }] }
+  "program_variants": [
+    {
+      "id": "bs_ms",
+      "label": "Combined BS/MS (5-year)",
+      "degree": "B.S. + M.S. in Actuarial Science",
+      "url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/actuarial-science-major/combined-bs-ms-program",
+      "summary": "Earn both degrees in five years (as little as four for strong students). Includes PSTAT 296AB research thesis with industry partners via CFMAR. Pre-apply junior year (3.2+ GPA, deadline March 31).",
+      "notes": [
+        "BS: 52 units (44 core + 8 electives). MS: 39 units (12 core + 12 electives + thesis).",
+        "GRE not required. MS only available to enrolled Actuarial Science undergraduates.",
+        "BS/MS plan recommends VEE credit and actuarial exams alongside major coursework."
+      ]
+    }
   ],
-  "career_outcomes": ["Actuary", "Risk analyst", "Insurance", "Quantitative finance", "Data science"]
+  "recommended_plans": [
+    { "year": 1, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 3A", "alternatives": ["MATH 2A"], "units": 4 }, { "code": "WRIT 2", "units": 4 }] },
+    { "year": 1, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 3B", "alternatives": ["MATH 2B"], "units": 4 }, { "code": "CMPSC 8", "units": 4 }] },
+    { "year": 1, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "MATH 4A", "units": 4 }, { "code": "CMPSC 9", "alternatives": ["CMPSC 16"], "units": 4 }] },
+    { "year": 2, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "MATH 6A", "units": 4 }, { "code": "PSTAT 10", "units": 5 }, { "code": "MATH 4B", "units": 4 }] },
+    { "year": 2, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 8", "alternatives": ["MATH 8"], "units": 5 }, { "code": "MATH 6B", "units": 4 }] },
+    { "year": 2, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "PSTAT 120A", "units": 4 }] },
+    { "year": 3, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "PSTAT 120B", "units": 4 }, { "code": "PSTAT 171", "units": 4 }] },
+    { "year": 3, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 160A", "units": 4 }, { "code": "PSTAT 126", "units": 4 }] },
+    { "year": 3, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "WRIT 107B", "units": 4 }, { "code": "PSTAT 170", "units": 4 }] },
+    { "year": 4, "quarter": "Fall", "track": "freshman", "entries": [{ "code": "PSTAT 174", "units": 4 }, { "slot": "ELECTIVE", "label": "PSTAT elective — Area D", "units": 4 }] },
+    { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "PSTAT 172A", "units": 4 }, { "slot": "ELECTIVE", "label": "PSTAT elective — Area D", "units": 4 }] },
+    { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "code": "PSTAT 172B", "alternatives": ["PSTAT 160B"], "units": 4 }, { "slot": "ELECTIVE", "label": "PSTAT elective — Area E", "units": 4 }] },
+
+    { "year": 1, "quarter": "Fall", "track": "transfer", "entries": [{ "code": "PSTAT 120A", "units": 4 }, { "code": "PSTAT 8", "alternatives": ["MATH 8"], "units": 5 }, { "code": "PSTAT 10", "units": 5 }] },
+    { "year": 1, "quarter": "Winter", "track": "transfer", "entries": [{ "code": "PSTAT 171", "units": 4 }, { "code": "PSTAT 120B", "units": 4 }] },
+    { "year": 1, "quarter": "Spring", "track": "transfer", "entries": [{ "code": "PSTAT 126", "units": 4 }, { "code": "PSTAT 160A", "units": 4 }, { "slot": "ELECTIVE", "label": "PSTAT elective — Area D", "units": 4 }] },
+    { "year": 2, "quarter": "Fall", "track": "transfer", "entries": [{ "code": "WRIT 107B", "units": 4 }, { "code": "PSTAT 174", "units": 4 }, { "slot": "ELECTIVE", "label": "PSTAT elective — Area D", "units": 4 }] },
+    { "year": 2, "quarter": "Winter", "track": "transfer", "entries": [{ "code": "PSTAT 172A", "units": 4 }, { "code": "PSTAT 170", "units": 4 }] },
+    { "year": 2, "quarter": "Spring", "track": "transfer", "entries": [{ "code": "PSTAT 172B", "alternatives": ["PSTAT 160B"], "units": 4 }, { "slot": "ELECTIVE", "label": "PSTAT elective — Area E", "units": 4 }] },
+
+    { "year": 1, "quarter": "Fall", "track": "bs_ms", "entries": [{ "code": "MATH 3A", "alternatives": ["MATH 2A"], "units": 4 }, { "code": "WRIT 2", "units": 4 }, { "code": "ECON 1", "units": 4, "notes": "Microeconomics VEE" }] },
+    { "year": 1, "quarter": "Winter", "track": "bs_ms", "entries": [{ "code": "MATH 3B", "alternatives": ["MATH 2B"], "units": 4 }, { "code": "CMPSC 8", "units": 4 }, { "code": "ECON 2", "units": 4, "notes": "Macroeconomics VEE" }] },
+    { "year": 1, "quarter": "Spring", "track": "bs_ms", "entries": [{ "code": "MATH 4A", "units": 4 }, { "code": "CMPSC 9", "alternatives": ["CMPSC 16"], "units": 4 }, { "code": "ECON 3A", "units": 4, "notes": "Accounting VEE" }] },
+    { "year": 2, "quarter": "Fall", "track": "bs_ms", "entries": [{ "code": "MATH 6A", "units": 4 }, { "code": "PSTAT 10", "units": 5 }, { "code": "MATH 4B", "units": 4 }] },
+    { "year": 2, "quarter": "Winter", "track": "bs_ms", "entries": [{ "code": "PSTAT 8", "alternatives": ["MATH 8"], "units": 5 }, { "code": "MATH 6B", "units": 4 }, { "code": "ECON 10A", "units": 5, "notes": "Prerequisite for ECON 134A" }] },
+    { "year": 2, "quarter": "Spring", "track": "bs_ms", "entries": [{ "code": "PSTAT 120A", "units": 4, "notes": "Exam P" }] },
+    { "year": 3, "quarter": "Fall", "track": "bs_ms", "entries": [{ "code": "PSTAT 120B", "units": 4, "notes": "Exam P, ASTAM; Math Stats VEE" }, { "code": "PSTAT 171", "units": 4, "notes": "Exam FM" }] },
+    { "year": 3, "quarter": "Winter", "track": "bs_ms", "entries": [{ "code": "PSTAT 126", "units": 4, "notes": "Exams SRM, MAS I" }, { "code": "PSTAT 160A", "units": 4, "notes": "Exams MAS I, MAS II" }, { "code": "PSTAT 120C", "units": 4, "notes": "Exams ASTAM, MAS I" }] },
+    { "year": 3, "quarter": "Spring", "track": "bs_ms", "entries": [{ "code": "WRIT 107B", "units": 4 }, { "code": "PSTAT 160B", "units": 4, "notes": "Exams SRM, MAS I" }, { "code": "PSTAT 130", "units": 4 }] },
+    { "year": 4, "quarter": "Fall", "track": "bs_ms", "entries": [{ "code": "PSTAT 274", "units": 4, "notes": "Exams SRM, MAS I" }, { "code": "PSTAT 170", "units": 4, "notes": "Exam FAM" }] },
+    { "year": 4, "quarter": "Winter", "track": "bs_ms", "entries": [{ "code": "PSTAT 172A", "units": 4, "notes": "Exam FAM" }, { "code": "PSTAT 231", "units": 4, "notes": "Exams SRM, MAS I, MAS II" }] },
+    { "year": 4, "quarter": "Spring", "track": "bs_ms", "entries": [{ "code": "PSTAT 172B", "units": 4, "notes": "Exams FAM, ALTAM" }, { "slot": "ELECTIVE", "label": "BS elective (4u)", "units": 4 }, { "code": "ECON 134A", "units": 4, "notes": "Finance VEE" }] },
+    { "year": 5, "quarter": "Fall", "track": "bs_ms", "entries": [{ "code": "PSTAT 296A", "units": 4 }, { "code": "PSTAT 213A", "units": 4 }, { "code": "PSTAT 263", "units": 1, "notes": "Seminar" }] },
+    { "year": 5, "quarter": "Winter", "track": "bs_ms", "entries": [{ "code": "PSTAT 296B", "units": 4 }, { "slot": "ELECTIVE", "label": "MS elective (4u)", "units": 4 }, { "code": "PSTAT 263", "units": 1, "notes": "Seminar" }] },
+    { "year": 5, "quarter": "Spring", "track": "bs_ms", "entries": [{ "code": "PSTAT 276", "units": 4 }, { "slot": "ELECTIVE", "label": "MS elective (4u)", "units": 4 }, { "code": "PSTAT 263", "units": 1, "notes": "Seminar" }] },
+
+    { "year": 1, "quarter": "Fall", "track": "bs_ms_transfer", "entries": [{ "code": "PSTAT 120A", "units": 4, "notes": "Exam P" }, { "code": "PSTAT 8", "alternatives": ["MATH 8"], "units": 5 }, { "code": "PSTAT 10", "units": 5 }] },
+    { "year": 1, "quarter": "Winter", "track": "bs_ms_transfer", "entries": [{ "code": "PSTAT 120B", "units": 4, "notes": "Exam P, ASTAM; Math Stats VEE" }, { "code": "PSTAT 171", "units": 4, "notes": "Exam FM" }, { "code": "ECON 10A", "units": 5 }] },
+    { "year": 1, "quarter": "Spring", "track": "bs_ms_transfer", "entries": [{ "code": "PSTAT 126", "units": 4 }, { "code": "PSTAT 160A", "units": 4 }, { "code": "PSTAT 120C", "units": 4 }] },
+    { "year": 2, "quarter": "Fall", "track": "bs_ms_transfer", "entries": [{ "code": "WRIT 107B", "units": 4 }, { "code": "PSTAT 274", "units": 4 }, { "code": "PSTAT 160B", "units": 4 }, { "code": "PSTAT 130", "units": 4 }] },
+    { "year": 2, "quarter": "Winter", "track": "bs_ms_transfer", "entries": [{ "code": "PSTAT 172A", "units": 4 }, { "code": "PSTAT 170", "units": 4 }] },
+    { "year": 2, "quarter": "Spring", "track": "bs_ms_transfer", "entries": [{ "code": "PSTAT 172B", "units": 4 }, { "slot": "ELECTIVE", "label": "BS elective + ECON 134A (VEE)", "units": 8 }] },
+    { "year": 3, "quarter": "Fall", "track": "bs_ms_transfer", "entries": [{ "code": "PSTAT 296A", "units": 4 }, { "code": "PSTAT 213A", "units": 4 }] },
+    { "year": 3, "quarter": "Winter", "track": "bs_ms_transfer", "entries": [{ "code": "PSTAT 296B", "units": 4 }, { "slot": "ELECTIVE", "label": "MS elective", "units": 4 }] },
+    { "year": 3, "quarter": "Spring", "track": "bs_ms_transfer", "entries": [{ "code": "PSTAT 276", "units": 4 }, { "slot": "ELECTIVE", "label": "MS elective", "units": 4 }] }
+  ],
+  "career_outcomes": [
+    "Actuary (SOA / CAS)",
+    "Risk analyst",
+    "Insurance & pensions",
+    "Quantitative finance",
+    "Data science",
+    "Graduate study (BS/MS pathway)"
+  ],
+  "quality_tier": "sheet",
+  "notes": [
+    "For VEE credit and actuarial exams while at UCSB, use the BS/MS recommended plan or the VEE/Exam Track plan (media/70).",
+    "VEE courses require B- or higher. ECON 134A prerequisites for actuarial majors: ECON 10A and PSTAT 126 (or PSTAT 174)."
+  ]
 }

@@ -1,0 +1,189 @@
+{
+  "slug": "aquatic-biology",
+  "name": "Aquatic Biology",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BSAQB",
+      "url": "https://catalog.ucsb.edu/programs/BSAQB"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.biology.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BSAQB"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "CHEM 1A"
+      },
+      {
+        "code": "MATH 3A"
+      },
+      {
+        "code": "EEMB 2",
+        "notes": "Series through EEMB 3"
+      },
+      {
+        "code": "MCDB 1A"
+      },
+      {
+        "code": "PHYS 6A"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "EEMB upper-division marine/aquatic courses",
+          "notes": "EEMB upper-division marine/aquatic courses"
+        }
+      ],
+      "notes": [
+        "Focus on marine and freshwater systems. Field and lab intensive."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "EEMB 120"
+      },
+      {
+        "code": "EEMB 157"
+      },
+      {
+        "code": "EEMB 184"
+      },
+      {
+        "code": "EEMB 199"
+      }
+    ],
+    "choose_units": 36
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false,
+    "other": [
+      "Selective major — verify admission requirements on admissions site."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "EEMB 2",
+          "units": 4,
+          "notes": "Series through EEMB 3"
+        },
+        {
+          "code": "MCDB 1A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PHYS 6A",
+          "units": 4
+        },
+        {
+          "code": "EEMB upper-division marine/aquatic courses",
+          "units": 4,
+          "notes": "EEMB upper-division marine/aquatic courses"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "EEMB 2",
+          "units": 4,
+          "notes": "Series through EEMB 3"
+        },
+        {
+          "code": "MCDB 1A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PHYS 6A",
+          "units": 4
+        },
+        {
+          "code": "EEMB upper-division marine/aquatic courses",
+          "units": 4,
+          "notes": "EEMB upper-division marine/aquatic courses"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Marine biology",
+    "Conservation",
+    "Fisheries",
+    "Environmental consulting",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

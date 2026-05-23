@@ -1,0 +1,150 @@
+{
+  "slug": "history",
+  "name": "History",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAHIS",
+      "url": "https://catalog.ucsb.edu/programs/BAHIS"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.history.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAHIS"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "HIST 4A"
+      },
+      {
+        "code": "Lower-division HIST electives",
+        "notes": "Lower-division HIST electives"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division HIST by region and era",
+          "notes": "Upper-division HIST by region and era"
+        },
+        {
+          "code": "HIST 201"
+        }
+      ],
+      "notes": [
+        "Regional concentrations available."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "HIST 105"
+      },
+      {
+        "code": "HIST 121"
+      },
+      {
+        "code": "HIST 140"
+      },
+      {
+        "code": "HIST 180"
+      }
+    ],
+    "choose_units": 36
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "HIST 4A",
+          "units": 4
+        },
+        {
+          "code": "Lower-division HIST electives",
+          "units": 4,
+          "notes": "Lower-division HIST electives"
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division HIST by region and era",
+          "units": 4,
+          "notes": "Upper-division HIST by region and era"
+        },
+        {
+          "code": "HIST 201",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "HIST 4A",
+          "units": 4
+        },
+        {
+          "code": "Lower-division HIST electives",
+          "units": 4,
+          "notes": "Lower-division HIST electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division HIST by region and era",
+          "units": 4,
+          "notes": "Upper-division HIST by region and era"
+        },
+        {
+          "code": "HIST 201",
+          "units": 4
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Law",
+    "Education",
+    "Public history",
+    "Government",
+    "Journalism"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

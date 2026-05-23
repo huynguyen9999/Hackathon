@@ -1,0 +1,231 @@
+{
+  "slug": "biopsychology",
+  "name": "Biopsychology",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BSBPSY",
+      "url": "https://catalog.ucsb.edu/programs/BSBPSY"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.psych.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BSBPSY"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "PSY 1",
+        "title": "Introductory Psychology"
+      },
+      {
+        "code": "CHEM 1A"
+      },
+      {
+        "code": "MATH 3A"
+      },
+      {
+        "code": "MCDB 1A"
+      },
+      {
+        "code": "EEMB 2"
+      },
+      {
+        "code": "PSY 10A",
+        "title": "Methods and Statistics"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "PSY 112",
+          "title": "Biopsychology"
+        },
+        {
+          "code": "Upper-division neuroscience/psych electives",
+          "notes": "Upper-division neuroscience/psych electives"
+        }
+      ],
+      "notes": [
+        "BS track with heavier biology and neuroscience than BA Psychology."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "PSY 112"
+      },
+      {
+        "code": "PSY 114"
+      },
+      {
+        "code": "MCDB 108A"
+      },
+      {
+        "code": "PSY 199"
+      }
+    ],
+    "choose_units": 24
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false,
+    "other": [
+      "Selective major — verify admission requirements on admissions site."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PSY 1",
+          "title": "Introductory Psychology",
+          "units": 4
+        },
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "MATH 3A",
+          "units": 4
+        },
+        {
+          "code": "MCDB 1A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "EEMB 2",
+          "units": 4
+        },
+        {
+          "code": "PSY 10A",
+          "title": "Methods and Statistics",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PSY 112",
+          "title": "Biopsychology",
+          "units": 4
+        },
+        {
+          "code": "Upper-division neuroscience/psych electives",
+          "units": 4,
+          "notes": "Upper-division neuroscience/psych electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PSY 1",
+          "title": "Introductory Psychology",
+          "units": 4
+        },
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "MATH 3A",
+          "units": 4
+        },
+        {
+          "code": "MCDB 1A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "EEMB 2",
+          "units": 4
+        },
+        {
+          "code": "PSY 10A",
+          "title": "Methods and Statistics",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PSY 112",
+          "title": "Biopsychology",
+          "units": 4
+        },
+        {
+          "code": "Upper-division neuroscience/psych electives",
+          "units": 4,
+          "notes": "Upper-division neuroscience/psych electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Neuroscience research",
+    "Medicine",
+    "Pharmaceutical",
+    "Graduate study",
+    "Clinical psychology"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

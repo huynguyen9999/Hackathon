@@ -1,0 +1,178 @@
+{
+  "slug": "communication",
+  "name": "Communication",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BACOMM",
+      "url": "https://catalog.ucsb.edu/programs/BACOMM"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.comm.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BACOMM"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "COMM 1",
+        "title": "Introduction to Communication"
+      },
+      {
+        "code": "COMM 88A"
+      },
+      {
+        "code": "Lower-division COMM courses",
+        "notes": "Lower-division COMM courses"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "COMM 100A"
+        },
+        {
+          "code": "Upper-division COMM electives",
+          "notes": "Upper-division COMM electives"
+        }
+      ],
+      "notes": [
+        "Selective major with prep GPA requirement."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "COMM 121"
+      },
+      {
+        "code": "COMM 130"
+      },
+      {
+        "code": "COMM 145"
+      },
+      {
+        "code": "COMM 160"
+      }
+    ],
+    "choose_units": 28
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "COMM 1",
+          "title": "Introduction to Communication",
+          "units": 4
+        },
+        {
+          "code": "COMM 88A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Lower-division COMM courses",
+          "units": 4,
+          "notes": "Lower-division COMM courses"
+        },
+        {
+          "code": "COMM 100A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division COMM electives",
+          "units": 4,
+          "notes": "Upper-division COMM electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "COMM 1",
+          "title": "Introduction to Communication",
+          "units": 4
+        },
+        {
+          "code": "COMM 88A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Lower-division COMM courses",
+          "units": 4,
+          "notes": "Lower-division COMM courses"
+        },
+        {
+          "code": "COMM 100A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division COMM electives",
+          "units": 4,
+          "notes": "Upper-division COMM electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Marketing",
+    "Media",
+    "Corporate comms",
+    "UX",
+    "Law"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

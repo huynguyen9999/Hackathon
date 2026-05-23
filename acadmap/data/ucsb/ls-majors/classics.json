@@ -1,0 +1,103 @@
+{
+  "slug": "classics",
+  "name": "Classics",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BACLAS",
+      "url": "https://catalog.ucsb.edu/programs/BACLAS"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.classics.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BACLAS"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "See catalog"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division classical civilization",
+          "notes": "Upper-division classical civilization"
+        }
+      ],
+      "notes": [
+        "Emphasis on ancient Greek and Roman languages, literature, and history."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "CLAS 110"
+      },
+      {
+        "code": "CLAS 130"
+      },
+      {
+        "code": "GREEK 100"
+      },
+      {
+        "code": "LATIN 100"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division classical civilization",
+          "units": 4,
+          "notes": "Upper-division classical civilization"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division classical civilization",
+          "units": 4,
+          "notes": "Upper-division classical civilization"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Law",
+    "Teaching",
+    "Museum/archives",
+    "Graduate study",
+    "Publishing"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

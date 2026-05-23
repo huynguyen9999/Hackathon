@@ -1,0 +1,150 @@
+{
+  "slug": "anthropology",
+  "name": "Anthropology",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAANT",
+      "url": "https://catalog.ucsb.edu/programs/BAANT"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.anth.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAANT"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "ANTH 2",
+        "title": "Introductory Cultural Anthropology"
+      },
+      {
+        "code": "ANTH 3"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "ANTH 102"
+        },
+        {
+          "code": "Upper-division ANTH electives in subdisciplines",
+          "notes": "Upper-division ANTH electives in subdisciplines"
+        }
+      ],
+      "notes": [
+        "Subfields: sociocultural, archaeology, biological anthropology."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "ANTH 120"
+      },
+      {
+        "code": "ANTH 130"
+      },
+      {
+        "code": "ANTH 150"
+      },
+      {
+        "code": "ANTH 170"
+      }
+    ],
+    "choose_units": 28
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "ANTH 2",
+          "title": "Introductory Cultural Anthropology",
+          "units": 4
+        },
+        {
+          "code": "ANTH 3",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "ANTH 102",
+          "units": 4
+        },
+        {
+          "code": "Upper-division ANTH electives in subdisciplines",
+          "units": 4,
+          "notes": "Upper-division ANTH electives in subdisciplines"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "ANTH 2",
+          "title": "Introductory Cultural Anthropology",
+          "units": 4
+        },
+        {
+          "code": "ANTH 3",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "ANTH 102",
+          "units": 4
+        },
+        {
+          "code": "Upper-division ANTH electives in subdisciplines",
+          "units": 4,
+          "notes": "Upper-division ANTH electives in subdisciplines"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "UX research",
+    "Museums",
+    "International development",
+    "Public health",
+    "Academia"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

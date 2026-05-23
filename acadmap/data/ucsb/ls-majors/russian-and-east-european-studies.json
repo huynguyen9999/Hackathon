@@ -1,0 +1,103 @@
+{
+  "slug": "russian-and-east-european-studies",
+  "name": "Russian and East European Studies",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAREES",
+      "url": "https://catalog.ucsb.edu/programs/BAREES"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.gss.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAREES"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "See catalog"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division REES culture/politics",
+          "notes": "Upper-division REES culture/politics"
+        }
+      ],
+      "notes": [
+        "Russian and East European languages, history, and culture."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "RUSS 120"
+      },
+      {
+        "code": "GSS 130"
+      },
+      {
+        "code": "HIST 140"
+      },
+      {
+        "code": "GSS 170"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division REES culture/politics",
+          "units": 4,
+          "notes": "Upper-division REES culture/politics"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division REES culture/politics",
+          "units": 4,
+          "notes": "Upper-division REES culture/politics"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Diplomacy",
+    "Translation",
+    "Intelligence/analysis",
+    "Graduate study",
+    "International NGOs"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

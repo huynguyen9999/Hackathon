@@ -41,13 +41,26 @@ export type MajorRegulations = {
   other?: string[];
 };
 
+export type PlanTrack = "freshman" | "transfer" | "bs_ms" | "bs_ms_transfer";
+
+export type PlanYear = 1 | 2 | 3 | 4 | 5;
+
 export type QuarterName = "Fall" | "Winter" | "Spring" | "Summer";
 
 export type QuarterPlan = {
-  year: 1 | 2 | 3 | 4;
+  year: PlanYear;
   quarter: QuarterName;
-  track: "freshman" | "transfer";
+  track: PlanTrack;
   entries: PlanEntry[];
+};
+
+export type ProgramVariant = {
+  id: string;
+  label: string;
+  degree: string;
+  url?: string;
+  summary: string;
+  notes?: string[];
 };
 
 export type LsMajorDetail = {
@@ -62,5 +75,8 @@ export type LsMajorDetail = {
   regulations: MajorRegulations;
   recommended_plans: QuarterPlan[];
   career_outcomes: string[];
+  program_variants?: ProgramVariant[];
   notes?: string[];
+  /** catalog = auto-generated from ls-catalog; sheet = department PDF QA */
+  quality_tier?: "catalog" | "sheet";
 };

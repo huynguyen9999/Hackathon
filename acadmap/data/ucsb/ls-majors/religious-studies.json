@@ -1,0 +1,114 @@
+{
+  "slug": "religious-studies",
+  "name": "Religious Studies",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BARS",
+      "url": "https://catalog.ucsb.edu/programs/BARS"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.religion.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BARS"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "World religions gateway courses",
+        "notes": "World religions gateway courses"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division RS by tradition/region",
+          "notes": "Upper-division RS by tradition/region"
+        }
+      ],
+      "notes": [
+        "Comparative study of world religions and secular traditions."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "RS 130"
+      },
+      {
+        "code": "RS 150"
+      },
+      {
+        "code": "RS 170"
+      },
+      {
+        "code": "RS 190"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "World religions gateway courses",
+          "units": 4,
+          "notes": "World religions gateway courses"
+        },
+        {
+          "code": "Upper-division RS by tradition/region",
+          "units": 4,
+          "notes": "Upper-division RS by tradition/region"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "World religions gateway courses",
+          "units": 4,
+          "notes": "World religions gateway courses"
+        },
+        {
+          "code": "Upper-division RS by tradition/region",
+          "units": 4,
+          "notes": "Upper-division RS by tradition/region"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Law",
+    "Nonprofit",
+    "Education",
+    "Graduate study",
+    "International NGOs"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

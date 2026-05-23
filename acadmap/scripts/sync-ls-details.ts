@@ -43,13 +43,23 @@ function main() {
     const src = registry.sources[major.slug];
 
     major.detail_available = hasDetail;
-    if (hasDetail) {
-      major.requirements_level = major.roadmap_available ? "roadmap" : "sheet";
-    }
 
     if (existsSync(seedPathForSlug(major.slug))) {
       major.roadmap_available = true;
-      major.requirements_level = "roadmap";
+    }
+
+    if (hasDetail) {
+      const detail = JSON.parse(
+        readFileSync(path.join(DETAIL_DIR, `${major.slug}.json`), "utf-8"),
+      ) as LsMajorDetail;
+      major.career_outcomes = detail.career_outcomes;
+      if (major.roadmap_available) {
+        major.requirements_level = "roadmap";
+      } else if (detail.quality_tier === "sheet") {
+        major.requirements_level = "sheet";
+      } else {
+        major.requirements_level = "summary";
+      }
     }
 
     if (src?.major_sheet_pdf) {
@@ -60,13 +70,6 @@ function main() {
     }
     if (src?.dept_page && hasDetail) {
       major.curriculum_url = src.dept_page;
-    }
-
-    if (hasDetail) {
-      const detail = JSON.parse(
-        readFileSync(path.join(DETAIL_DIR, `${major.slug}.json`), "utf-8"),
-      ) as LsMajorDetail;
-      major.career_outcomes = detail.career_outcomes;
     }
   }
 

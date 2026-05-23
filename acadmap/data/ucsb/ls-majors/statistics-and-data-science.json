@@ -100,5 +100,6 @@
     { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "PSTAT / MATH elective" }] }
   ],
   "career_outcomes": ["Data science", "Machine learning", "Biostatistics", "Actuarial", "Tech industry"],
+  "quality_tier": "sheet",
   "notes": ["BS track (48 UD units). BA track requires 36 UD units — see department."]
 }

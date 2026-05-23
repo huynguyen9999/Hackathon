@@ -56,7 +56,7 @@
       "department_url": "https://www.pstat.ucsb.edu/",
       "curriculum_url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/actuarial-science-major",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "MATH 3A — Calculus I",
         "MATH 3B — Calculus II",
@@ -80,13 +80,14 @@
         "ECON 1"
       ],
       "career_outcomes": [
-        "Actuary",
+        "Actuary (SOA / CAS)",
         "Risk analyst",
-        "Insurance",
+        "Insurance & pensions",
         "Quantitative finance",
-        "Data science"
+        "Data science",
+        "Graduate study (BS/MS pathway)"
       ],
-      "requirements_level": "sheet",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#actuarial-science",
       "catalog_program_code": "BSACT",
       "selective": true,
@@ -128,10 +129,10 @@
         "Public health",
         "Academia"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#anthropology",
       "catalog_program_code": "BAANT",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Applied Mathematics",
@@ -168,11 +169,11 @@
         "Research",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#applied-mathematics",
       "catalog_program_code": "BSAPM",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Aquatic Biology",
@@ -209,11 +210,11 @@
         "Environmental consulting",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#aquatic-biology",
       "catalog_program_code": "BSAQB",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Art",
@@ -249,10 +250,10 @@
         "Teaching",
         "Creative direction"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#art",
       "catalog_program_code": "BAART",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Asian American Studies",
@@ -288,10 +289,10 @@
         "Public policy",
         "Community organizing"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#asian-american-studies",
       "catalog_program_code": "BAASAM",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Asian Studies",
@@ -327,10 +328,10 @@
         "Teaching",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#asian-studies",
       "catalog_program_code": "BAASST",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Biochemistry",
@@ -368,11 +369,11 @@
         "Research",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#biochemistry",
       "catalog_program_code": "BSBCH",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Biological Sciences",
@@ -411,11 +412,11 @@
         "Marine biology",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#biological-sciences",
       "catalog_program_code": "BSBIO",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Biopsychology",
@@ -453,11 +454,11 @@
         "Graduate study",
         "Clinical psychology"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#biopsychology",
       "catalog_program_code": "BSBPSY",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Black Studies",
@@ -493,10 +494,10 @@
         "Public policy",
         "Community leadership"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#black-studies",
       "catalog_program_code": "BABLS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Chemistry",
@@ -535,11 +536,11 @@
         "Graduate study",
         "Analytical chemistry"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#chemistry",
       "catalog_program_code": "BSCHEM",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Chicano and Chicana Studies",
@@ -575,10 +576,10 @@
         "Public policy",
         "Community organizing"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#chicano-and-chicano-studies",
       "catalog_program_code": "BACHST",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Chinese",
@@ -614,10 +615,10 @@
         "Teaching",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#chinese",
       "catalog_program_code": "BACHIN",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Classics",
@@ -653,10 +654,10 @@
         "Graduate study",
         "Publishing"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#classics",
       "catalog_program_code": "BACLAS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Communication",
@@ -692,10 +693,10 @@
         "UX",
         "Law"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#communication",
       "catalog_program_code": "BACOMM",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Comparative Literature",
@@ -731,10 +732,10 @@
         "Graduate study",
         "International NGOs"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#comparative-literature",
       "catalog_program_code": "BACMLT",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Dance",
@@ -770,10 +771,10 @@
         "Arts administration",
         "Physical therapy"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#dance",
       "catalog_program_code": "BADAN",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Earth Science",
@@ -810,10 +811,10 @@
         "Energy",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#earth-science",
       "catalog_program_code": "BSEAR",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Ecology and Evolution",
@@ -850,11 +851,11 @@
         "Graduate study",
         "Wildlife biology"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#ecology-and-evolution",
       "catalog_program_code": "BSEEMB",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Economics",
@@ -980,10 +981,10 @@
         "Technical writing",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#english",
       "catalog_program_code": "BAENG",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Environmental Studies",
@@ -1020,10 +1021,10 @@
         "Law",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#environmental-studies",
       "catalog_program_code": "BAES",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Feminist Studies",
@@ -1059,10 +1060,10 @@
         "Nonprofit",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#feminist-studies",
       "catalog_program_code": "BAFEM",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Film and Media Studies",
@@ -1098,10 +1099,10 @@
         "Journalism",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#film-and-media-studies",
       "catalog_program_code": "BAFMS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Financial Mathematics and Statistics",
@@ -1182,10 +1183,10 @@
         "Publishing",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#french",
       "catalog_program_code": "BAFR",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Geography",
@@ -1221,10 +1222,10 @@
         "Remote sensing",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#geography",
       "catalog_program_code": "BAGEO",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "German",
@@ -1260,10 +1261,10 @@
         "Graduate study",
         "EU policy"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#german",
       "catalog_program_code": "BAGERM",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Global Studies",
@@ -1299,10 +1300,10 @@
         "Law",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#global-studies",
       "catalog_program_code": "BAGS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "History",
@@ -1338,10 +1339,10 @@
         "Government",
         "Journalism"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#history",
       "catalog_program_code": "BAHIS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "History of Art and Architecture",
@@ -1377,10 +1378,10 @@
         "Graduate study",
         "Publishing"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#history-of-art-and-architecture",
       "catalog_program_code": "BAHAA",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "History of Policy, Law, and Governance",
@@ -1416,10 +1417,10 @@
         "Nonprofit",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#history-of-policy-law-and-governance",
       "catalog_program_code": "BAHPLG",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Hydrologic Sciences and Policy",
@@ -1456,10 +1457,10 @@
         "Consulting",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#hydrologic-sciences-and-policy",
       "catalog_program_code": "BSHSP",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Italian Studies",
@@ -1495,10 +1496,10 @@
         "Arts",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#italian-studies",
       "catalog_program_code": "BAITST",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Japanese",
@@ -1534,10 +1535,10 @@
         "Graduate study",
         "Tech industry"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#japanese",
       "catalog_program_code": "BAJAPN",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Language, Culture, and Society",
@@ -1573,10 +1574,10 @@
         "Translation",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#language-culture-and-society",
       "catalog_program_code": "BALCS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Latin American and Iberian Studies",
@@ -1612,10 +1613,10 @@
         "Teaching",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#latin-american-and-iberian-studies",
       "catalog_program_code": "BALAIS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Linguistics",
@@ -1651,10 +1652,10 @@
         "Graduate study",
         "UX research"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#linguistics",
       "catalog_program_code": "BALING",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Mathematics",
@@ -1732,10 +1733,10 @@
         "Publishing",
         "Law"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#medieval-studies",
       "catalog_program_code": "BAMDS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Middle East Studies",
@@ -1771,10 +1772,10 @@
         "Graduate study",
         "Policy"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#middle-east-studies",
       "catalog_program_code": "BAMES",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Molecular and Cellular Biology",
@@ -1811,11 +1812,11 @@
         "Pharmaceutical",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#molecular-and-cellular-biology",
       "catalog_program_code": "BSMCDB",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Music Performance / Music Studies",
@@ -1851,10 +1852,10 @@
         "Arts administration",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#music-performance-music-studies",
       "catalog_program_code": "BAMUS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Philosophy",
@@ -1890,10 +1891,10 @@
         "Academia",
         "Tech ethics"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#philosophy",
       "catalog_program_code": "BAPHIL",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Physics",
@@ -1931,11 +1932,11 @@
         "National labs",
         "Data science"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#physics",
       "catalog_program_code": "BSPHY",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Physiology",
@@ -1972,11 +1973,11 @@
         "Graduate study",
         "Allied health"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#physiology",
       "catalog_program_code": "BSPSIO",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Political Science",
@@ -2013,10 +2014,10 @@
         "Campaigns",
         "Journalism"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#political-science",
       "catalog_program_code": "BAPOL",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Portuguese",
@@ -2052,10 +2053,10 @@
         "Teaching",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#portuguese",
       "catalog_program_code": "BAPORT",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Psychological and Brain Sciences",
@@ -2094,11 +2095,11 @@
         "Market research",
         "Neuroscience"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#psychological-and-brain-sciences",
       "catalog_program_code": "BAPSY",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Religious Studies",
@@ -2134,10 +2135,10 @@
         "Graduate study",
         "International NGOs"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#religious-studies",
       "catalog_program_code": "BARS",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Russian and East European Studies",
@@ -2173,10 +2174,10 @@
         "Graduate study",
         "International NGOs"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#russian-and-east-european-studies",
       "catalog_program_code": "BAREES",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Sociology",
@@ -2212,10 +2213,10 @@
         "Public health",
         "Nonprofit"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#sociology",
       "catalog_program_code": "BASOC",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Spanish",
@@ -2251,10 +2252,10 @@
         "Law",
         "Graduate study"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#spanish",
       "catalog_program_code": "BASPN",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Statistics and Data Science",
@@ -2333,10 +2334,10 @@
         "Arts administration",
         "Film/TV"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#theater",
       "catalog_program_code": "BATHR",
-      "detail_available": false
+      "detail_available": true
     },
     {
       "name": "Zoology",
@@ -2373,11 +2374,11 @@
         "Research",
         "Zoo/aquarium"
       ],
-      "requirements_level": "full",
+      "requirements_level": "summary",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#zoology",
       "catalog_program_code": "BSZOO",
       "selective": true,
-      "detail_available": false
+      "detail_available": true
     }
   ],
   "sources": [

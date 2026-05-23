@@ -77,5 +77,6 @@
     { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "MATH 118C", "units": 4 }] },
     { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "MATH elective" }] }
   ],
-  "career_outcomes": ["Data science", "Actuarial", "Finance", "Teaching", "Graduate study"]
+  "career_outcomes": ["Data science", "Actuarial", "Finance", "Teaching", "Graduate study"],
+  "quality_tier": "sheet"
 }

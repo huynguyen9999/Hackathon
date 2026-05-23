@@ -1,0 +1,173 @@
+{
+  "slug": "environmental-studies",
+  "name": "Environmental Studies",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAES",
+      "url": "https://catalog.ucsb.edu/programs/BAES"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.es.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAES"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "CHEM 1A"
+      },
+      {
+        "code": "EARTH 2"
+      },
+      {
+        "code": "ECON 1"
+      },
+      {
+        "code": "GEOG 5"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "ENV S core upper-division",
+          "notes": "ENV S core upper-division"
+        },
+        {
+          "code": "Concentration electives (policy, science, etc.)",
+          "notes": "Concentration electives (policy, science, etc.)"
+        }
+      ],
+      "notes": [
+        "Interdisciplinary BA/BS with science and policy tracks."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "EARTH 2",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "ECON 1",
+          "units": 4
+        },
+        {
+          "code": "GEOG 5",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "ENV S core upper-division",
+          "units": 4,
+          "notes": "ENV S core upper-division"
+        },
+        {
+          "code": "Concentration electives (policy, science, etc.)",
+          "units": 4,
+          "notes": "Concentration electives (policy, science, etc.)"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "EARTH 2",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "ECON 1",
+          "units": 4
+        },
+        {
+          "code": "GEOG 5",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "ENV S core upper-division",
+          "units": 4,
+          "notes": "ENV S core upper-division"
+        },
+        {
+          "code": "Concentration electives (policy, science, etc.)",
+          "units": 4,
+          "notes": "Concentration electives (policy, science, etc.)"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Environmental policy",
+    "Conservation",
+    "Sustainability",
+    "Law",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

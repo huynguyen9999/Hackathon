@@ -29,18 +29,19 @@ export const LS_DEPT_META: Record<string, DeptMeta> = {
     graduation_units: 180,
     selective: true,
     preparation_for_major: [
-      "MATH 3A — Calculus I",
-      "MATH 3B — Calculus II",
-      "MATH 4A — Linear Algebra",
-      "MATH 6A — Vector Calculus",
-      "CMPSC 8, 9, or 16 — Programming",
-      "PSTAT 120A — Probability (recommended)"
+      "MATH 2A-B or 3A-B — Calculus",
+      "MATH 4A-B — Linear algebra & differential equations",
+      "MATH 6A-B — Vector calculus",
+      "MATH 8 or PSTAT 8 — Proofs / probability theory",
+      "PSTAT 10 — Probability and statistics",
+      "CMPSC 8 — Programming",
+      "CMPSC 9 or 16 — Intermediate programming"
     ],
     upper_division_required: [
-      "PSTAT 160A-B — Mathematical Statistics",
-      "PSTAT 173 — Actuarial Statistics",
-      "PSTAT 174 — Financial Mathematics",
-      "Upper-division PSTAT/MATH electives"
+      "PSTAT 120A-B — Probability & statistics",
+      "PSTAT 126, 160A-B, 174 — Statistics & financial math core",
+      "PSTAT 170, 171, 172A-B — Actuarial core",
+      "12 units upper-division PSTAT/MATH/ECON electives (Areas D & E)"
     ],
     departmental_electives_units: 24,
     departmental_electives_note: "Selective major. Transfer prep: Calc I–II, linear algebra, multivariable calc, intro programming (C or better, GPA 2.75+). SOA exam prep encouraged.",

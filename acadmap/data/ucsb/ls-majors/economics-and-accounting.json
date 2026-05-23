@@ -91,5 +91,6 @@
     { "year": 4, "quarter": "Winter", "track": "freshman", "entries": [{ "code": "ECON 137A", "units": 4 }] },
     { "year": 4, "quarter": "Spring", "track": "freshman", "entries": [{ "slot": "ELECTIVE", "label": "UD ECON elective" }] }
   ],
-  "career_outcomes": ["Accounting", "Finance", "CPA track (grad)", "Corporate finance", "Consulting"]
+  "career_outcomes": ["Accounting", "Finance", "CPA track (grad)", "Corporate finance", "Consulting"],
+  "quality_tier": "sheet"
 }

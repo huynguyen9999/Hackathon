@@ -1,0 +1,114 @@
+{
+  "slug": "history-of-art-and-architecture",
+  "name": "History of Art and Architecture",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAHAA",
+      "url": "https://catalog.ucsb.edu/programs/BAHAA"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.haa.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAHAA"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "Art history gateway courses",
+        "notes": "Art history gateway courses"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division HAA by period/region",
+          "notes": "Upper-division HAA by period/region"
+        }
+      ],
+      "notes": [
+        "Visual culture from antiquity to contemporary."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "HAA 130"
+      },
+      {
+        "code": "HAA 150"
+      },
+      {
+        "code": "HAA 170"
+      },
+      {
+        "code": "HAA 190"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Art history gateway courses",
+          "units": 4,
+          "notes": "Art history gateway courses"
+        },
+        {
+          "code": "Upper-division HAA by period/region",
+          "units": 4,
+          "notes": "Upper-division HAA by period/region"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Art history gateway courses",
+          "units": 4,
+          "notes": "Art history gateway courses"
+        },
+        {
+          "code": "Upper-division HAA by period/region",
+          "units": 4,
+          "notes": "Upper-division HAA by period/region"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Museum/gallery",
+    "Architecture",
+    "Conservation",
+    "Graduate study",
+    "Publishing"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

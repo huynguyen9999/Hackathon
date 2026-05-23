@@ -1,0 +1,103 @@
+{
+  "slug": "latin-american-and-iberian-studies",
+  "name": "Latin American and Iberian Studies",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BALAIS",
+      "url": "https://catalog.ucsb.edu/programs/BALAIS"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.spanport.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BALAIS"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "See catalog"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division LAIS courses",
+          "notes": "Upper-division LAIS courses"
+        }
+      ],
+      "notes": [
+        "Latin American and Iberian cultures in Spanish/Portuguese."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "LAIS 130"
+      },
+      {
+        "code": "SPAN 140"
+      },
+      {
+        "code": "PORT 120"
+      },
+      {
+        "code": "LAIS 170"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division LAIS courses",
+          "units": 4,
+          "notes": "Upper-division LAIS courses"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division LAIS courses",
+          "units": 4,
+          "notes": "Upper-division LAIS courses"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "International development",
+    "Translation",
+    "Diplomacy",
+    "Teaching",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

@@ -10,7 +10,9 @@
     "actuarial-science": {
       "dept_page": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/actuarial-science-major",
       "major_sheet_pdf": "https://www.pstat.ucsb.edu/media/161",
-      "plan_of_study_pdf": "https://www.pstat.ucsb.edu/media/69"
+      "plan_of_study_pdf": "https://www.pstat.ucsb.edu/media/69",
+      "plan_bs_ms_pdf": "https://www.pstat.ucsb.edu/sites/default/files/2025-10/Recommended%20Plan%20of%20Study%20Template%20%2825-26%20FINAL%29%20-%20Actuarial%20Science%20BS_MS%20Program.pdf",
+      "combined_bs_ms_url": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/actuarial-science-major/combined-bs-ms-program"
     },
     "statistics-and-data-science": {
       "dept_page": "https://www.pstat.ucsb.edu/undergraduate/majors-minors/stats-and-data-science-major",

@@ -1,0 +1,217 @@
+{
+  "slug": "biochemistry",
+  "name": "Biochemistry",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BSBCH",
+      "url": "https://catalog.ucsb.edu/programs/BSBCH"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.chem.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BSBCH"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "CHEM 1A"
+      },
+      {
+        "code": "MATH 3A"
+      },
+      {
+        "code": "PHYS 7A"
+      },
+      {
+        "code": "CHEM 109A"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "CHEM 113A",
+          "title": "Physical Chemistry"
+        },
+        {
+          "code": "BCHM/MCDB biochemistry courses",
+          "notes": "BCHM/MCDB biochemistry courses"
+        },
+        {
+          "code": "Upper-division lab or research",
+          "notes": "Upper-division lab or research"
+        }
+      ],
+      "notes": [
+        "Selective major. Heavy chemistry and biology integration. Pre-med and biotech paths."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "CHEM 171"
+      },
+      {
+        "code": "MCDB 108A"
+      },
+      {
+        "code": "CHEM 173"
+      },
+      {
+        "code": "BCHM 142"
+      }
+    ],
+    "choose_units": 12
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false,
+    "other": [
+      "Selective major — verify admission requirements on admissions site."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        },
+        {
+          "code": "CHEM 109A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "CHEM 113A",
+          "title": "Physical Chemistry",
+          "units": 4
+        },
+        {
+          "code": "BCHM/MCDB biochemistry courses",
+          "units": 4,
+          "notes": "BCHM/MCDB biochemistry courses"
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division lab or research",
+          "units": 4,
+          "notes": "Upper-division lab or research"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        },
+        {
+          "code": "CHEM 109A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "CHEM 113A",
+          "title": "Physical Chemistry",
+          "units": 4
+        },
+        {
+          "code": "BCHM/MCDB biochemistry courses",
+          "units": 4,
+          "notes": "BCHM/MCDB biochemistry courses"
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division lab or research",
+          "units": 4,
+          "notes": "Upper-division lab or research"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Biotech",
+    "Pharmaceutical R&D",
+    "Medicine",
+    "Research",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

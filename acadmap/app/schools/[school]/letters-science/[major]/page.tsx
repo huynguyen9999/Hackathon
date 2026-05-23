@@ -5,6 +5,7 @@ import { CollegeBanner } from "@/components/CollegeBanner";
 import { MajorRegulationsCard } from "@/components/MajorRegulationsCard";
 import { MajorRequirements } from "@/components/MajorRequirements";
 import { MajorSheetRequirements } from "@/components/MajorSheetRequirements";
+import { ProgramVariantsCard } from "@/components/ProgramVariantsCard";
 import { QuarterTimeline } from "@/components/QuarterTimeline";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { catalogProgramUrl } from "@/lib/ucsb-dept-urls";
@@ -133,6 +134,9 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
           <>
             <MajorSheetRequirements detail={detail} />
             <MajorRegulationsCard regulations={detail.regulations} />
+            {detail.program_variants?.length ? (
+              <ProgramVariantsCard variants={detail.program_variants} />
+            ) : null}
             <QuarterTimeline
               detail={detail}
               lasarFramework={catalog.requirements_framework}

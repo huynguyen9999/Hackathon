@@ -1,0 +1,142 @@
+{
+  "slug": "feminist-studies",
+  "name": "Feminist Studies",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAFEM",
+      "url": "https://catalog.ucsb.edu/programs/BAFEM"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.femst.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAFEM"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "FEMST 1",
+        "title": "Introduction to Feminist Studies"
+      },
+      {
+        "code": "Lower-division FEMST courses",
+        "notes": "Lower-division FEMST courses"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division FEMST electives",
+          "notes": "Upper-division FEMST electives"
+        }
+      ],
+      "notes": [
+        "Interdisciplinary focus on gender, sexuality, and social justice."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "FEMST 110"
+      },
+      {
+        "code": "FEMST 130"
+      },
+      {
+        "code": "FEMST 150"
+      },
+      {
+        "code": "FEMST 170"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "FEMST 1",
+          "title": "Introduction to Feminist Studies",
+          "units": 4
+        },
+        {
+          "code": "Lower-division FEMST courses",
+          "units": 4,
+          "notes": "Lower-division FEMST courses"
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division FEMST electives",
+          "units": 4,
+          "notes": "Upper-division FEMST electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "FEMST 1",
+          "title": "Introduction to Feminist Studies",
+          "units": 4
+        },
+        {
+          "code": "Lower-division FEMST courses",
+          "units": 4,
+          "notes": "Lower-division FEMST courses"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division FEMST electives",
+          "units": 4,
+          "notes": "Upper-division FEMST electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Law",
+    "Social work",
+    "Public health",
+    "Nonprofit",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

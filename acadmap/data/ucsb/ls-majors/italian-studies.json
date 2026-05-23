@@ -1,0 +1,145 @@
+{
+  "slug": "italian-studies",
+  "name": "Italian Studies",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAITST",
+      "url": "https://catalog.ucsb.edu/programs/BAITST"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.frit.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAITST"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "ITAL 1",
+        "title": "Italian language sequence",
+        "notes": "Series through ITAL 6"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "ITAL 100",
+          "title": "Advanced Italian"
+        },
+        {
+          "code": "Upper-division literature/culture",
+          "notes": "Upper-division literature/culture"
+        }
+      ],
+      "notes": [
+        "Italian language, literature, and cultural studies."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "ITAL 120"
+      },
+      {
+        "code": "ITAL 140"
+      },
+      {
+        "code": "ITAL 160"
+      },
+      {
+        "code": "ITAL 180"
+      }
+    ],
+    "choose_units": 28
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "ITAL 1",
+          "title": "Italian language sequence",
+          "units": 4,
+          "notes": "Series through ITAL 6"
+        },
+        {
+          "code": "ITAL 100",
+          "title": "Advanced Italian",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division literature/culture",
+          "units": 4,
+          "notes": "Upper-division literature/culture"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "ITAL 1",
+          "title": "Italian language sequence",
+          "units": 4,
+          "notes": "Series through ITAL 6"
+        },
+        {
+          "code": "ITAL 100",
+          "title": "Advanced Italian",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division literature/culture",
+          "units": 4,
+          "notes": "Upper-division literature/culture"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Translation",
+    "International relations",
+    "Teaching",
+    "Arts",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

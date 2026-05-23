@@ -1,0 +1,178 @@
+{
+  "slug": "ecology-and-evolution",
+  "name": "Ecology and Evolution",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BSEEMB",
+      "url": "https://catalog.ucsb.edu/programs/BSEEMB"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.biology.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BSEEMB"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "CHEM 1A"
+      },
+      {
+        "code": "MATH 3A"
+      },
+      {
+        "code": "EEMB 2",
+        "notes": "Series through EEMB 3"
+      },
+      {
+        "code": "PHYS 6A"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division EEMB electives",
+          "notes": "Upper-division EEMB electives"
+        }
+      ],
+      "notes": [
+        "Selective major. Focus on population, community, and evolutionary biology."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "EEMB 120"
+      },
+      {
+        "code": "EEMB 157"
+      },
+      {
+        "code": "EEMB 184"
+      },
+      {
+        "code": "EEMB 199"
+      }
+    ],
+    "choose_units": 36
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false,
+    "other": [
+      "Selective major — verify admission requirements on admissions site."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "EEMB 2",
+          "units": 4,
+          "notes": "Series through EEMB 3"
+        },
+        {
+          "code": "PHYS 6A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division EEMB electives",
+          "units": 4,
+          "notes": "Upper-division EEMB electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "EEMB 2",
+          "units": 4,
+          "notes": "Series through EEMB 3"
+        },
+        {
+          "code": "PHYS 6A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division EEMB electives",
+          "units": 4,
+          "notes": "Upper-division EEMB electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Conservation",
+    "Research",
+    "Environmental policy",
+    "Graduate study",
+    "Wildlife biology"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

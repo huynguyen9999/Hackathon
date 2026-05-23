@@ -1,0 +1,220 @@
+{
+  "slug": "sociology",
+  "name": "Sociology",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BASOC",
+      "url": "https://catalog.ucsb.edu/programs/BASOC"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.soc.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BASOC"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "SOC 1",
+        "title": "Introduction to Sociology"
+      },
+      {
+        "code": "SOC 2",
+        "title": "Social Problems"
+      },
+      {
+        "code": "PSTAT 5"
+      },
+      {
+        "code": "SOC 3"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "SOC 100",
+          "title": "Sociological Theory"
+        },
+        {
+          "code": "SOC 101",
+          "title": "Research Methods"
+        },
+        {
+          "code": "Upper-division SOC electives across substantive areas",
+          "notes": "Upper-division SOC electives across substantive areas"
+        }
+      ],
+      "notes": [
+        "Quantitative and qualitative methods tracks."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "SOC 120"
+      },
+      {
+        "code": "SOC 130"
+      },
+      {
+        "code": "SOC 142"
+      },
+      {
+        "code": "SOC 185"
+      }
+    ],
+    "choose_units": 28
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "SOC 1",
+          "title": "Introduction to Sociology",
+          "units": 4
+        },
+        {
+          "code": "SOC 2",
+          "title": "Social Problems",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PSTAT 5",
+          "units": 4
+        },
+        {
+          "code": "SOC 3",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "SOC 100",
+          "title": "Sociological Theory",
+          "units": 4
+        },
+        {
+          "code": "SOC 101",
+          "title": "Research Methods",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division SOC electives across substantive areas",
+          "units": 4,
+          "notes": "Upper-division SOC electives across substantive areas"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "SOC 1",
+          "title": "Introduction to Sociology",
+          "units": 4
+        },
+        {
+          "code": "SOC 2",
+          "title": "Social Problems",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PSTAT 5",
+          "units": 4
+        },
+        {
+          "code": "SOC 3",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "SOC 100",
+          "title": "Sociological Theory",
+          "units": 4
+        },
+        {
+          "code": "SOC 101",
+          "title": "Research Methods",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division SOC electives across substantive areas",
+          "units": 4,
+          "notes": "Upper-division SOC electives across substantive areas"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Social work (grad)",
+    "Market research",
+    "HR",
+    "Public health",
+    "Nonprofit"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

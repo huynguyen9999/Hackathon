@@ -4,12 +4,19 @@ import { useMemo, useState } from "react";
 
 import type { LsRequirementsFramework } from "@/lib/ucsb-ls";
 import { buildTimelineWithGe, lasarFrameworkSummary } from "@/lib/lasar-planning";
-import type { LsMajorDetail, PlanEntry } from "@/lib/ucsb-major-detail-types";
+import type { LsMajorDetail, PlanEntry, PlanTrack } from "@/lib/ucsb-major-detail-types";
 import { isPlanSlot } from "@/lib/ucsb-major-detail-types";
 
 export type QuarterTimelineProps = {
   detail: LsMajorDetail;
   lasarFramework: LsRequirementsFramework;
+};
+
+const TRACK_LABELS: Record<PlanTrack, string> = {
+  freshman: "Freshman start",
+  transfer: "Transfer",
+  bs_ms: "BS/MS (5-year)",
+  bs_ms_transfer: "BS/MS transfer",
 };
 
 function EntryBadge({ entry }: { entry: PlanEntry }) {
@@ -35,69 +42,79 @@ function EntryBadge({ entry }: { entry: PlanEntry }) {
       {entry.units != null && (
         <span className="text-slate-500"> · {entry.units}u</span>
       )}
+      {entry.notes ? (
+        <span className="mt-0.5 block text-[10px] text-slate-500">{entry.notes}</span>
+      ) : null}
     </span>
   );
 }
 
 export function QuarterTimeline({ detail, lasarFramework }: QuarterTimelineProps) {
-  const [track, setTrack] = useState<"freshman" | "transfer">("freshman");
+  const availableTracks = useMemo(() => {
+    const set = new Set<PlanTrack>();
+    for (const p of detail.recommended_plans) {
+      set.add(p.track);
+    }
+    return (["freshman", "transfer", "bs_ms", "bs_ms_transfer"] as PlanTrack[]).filter(
+      (t) => set.has(t),
+    );
+  }, [detail.recommended_plans]);
+
+  const [track, setTrack] = useState<PlanTrack>(availableTracks[0] ?? "freshman");
 
   const timeline = useMemo(
     () => buildTimelineWithGe(detail.recommended_plans, track),
     [detail.recommended_plans, track],
   );
 
-  const hasTransfer = detail.recommended_plans.some((p) => p.track === "transfer");
+  const years = useMemo(() => {
+    const set = new Set<number>();
+    for (const q of timeline) set.add(q.year);
+    return Array.from(set).sort((a, b) => a - b);
+  }, [timeline]);
+
+  const isExtended = track === "bs_ms" || track === "bs_ms_transfer";
 
   return (
     <div className="card-glow rounded-2xl border border-teal-500/20 bg-slate-900/50 p-6">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <h2 className="text-lg font-semibold text-slate-50">
-            Recommended 4-year plan
+            Recommended {isExtended ? "5-year" : "4-year"} plan
           </h2>
           <p className="mt-1 text-sm text-slate-400">
-            {lasarFrameworkSummary(lasarFramework)}. GE/LASAR slots fill quarters
-            below ~12 major units — verify on GOLD.
+            {lasarFrameworkSummary(lasarFramework)}. GE/LASAR slots fill quarters below ~
+            {isExtended ? "12" : "12"} major units — verify on GOLD.
           </p>
         </div>
-        {hasTransfer && (
-          <div className="flex rounded-lg border border-slate-600/40 p-0.5">
-            <button
-              type="button"
-              onClick={() => setTrack("freshman")}
-              className={`rounded-md px-3 py-1.5 text-xs font-medium transition ${
-                track === "freshman"
-                  ? "bg-teal-700 text-white"
-                  : "text-slate-400 hover:text-slate-200"
-              }`}
-            >
-              Freshman start
-            </button>
-            <button
-              type="button"
-              onClick={() => setTrack("transfer")}
-              className={`rounded-md px-3 py-1.5 text-xs font-medium transition ${
-                track === "transfer"
-                  ? "bg-teal-700 text-white"
-                  : "text-slate-400 hover:text-slate-200"
-              }`}
-            >
-              Transfer
-            </button>
+        {availableTracks.length > 1 && (
+          <div className="flex flex-wrap gap-1 rounded-lg border border-slate-600/40 p-0.5">
+            {availableTracks.map((t) => (
+              <button
+                key={t}
+                type="button"
+                onClick={() => setTrack(t)}
+                className={`rounded-md px-2.5 py-1.5 text-[11px] font-medium transition ${
+                  track === t
+                    ? "bg-teal-700 text-white"
+                    : "text-slate-400 hover:text-slate-200"
+                }`}
+              >
+                {TRACK_LABELS[t]}
+              </button>
+            ))}
           </div>
         )}
       </div>
 
       <div className="overflow-x-auto">
         <div className="min-w-[640px]">
-          <div className="grid grid-cols-4 gap-2 border-b border-slate-700/50 pb-2 text-center text-xs font-semibold uppercase tracking-wider text-slate-500">
+          <div className="grid grid-cols-3 gap-2 border-b border-slate-700/50 pb-2 text-center text-xs font-semibold uppercase tracking-wider text-slate-500">
             <span>Fall</span>
             <span>Winter</span>
             <span>Spring</span>
-            <span className="text-slate-600">—</span>
           </div>
-          {[1, 2, 3, 4].map((year) => (
+          {years.map((year) => (
             <div key={year} className="mt-3">
               <p className="mb-2 text-xs font-bold uppercase tracking-wider text-teal-300/90">
                 Year {year}
@@ -135,7 +152,7 @@ export function QuarterTimeline({ detail, lasarFramework }: QuarterTimelineProps
                               key={
                                 isPlanSlot(entry)
                                   ? `${entry.label}-${i}`
-                                  : entry.code
+                                  : `${entry.code}-${i}`
                               }
                               entry={entry}
                             />

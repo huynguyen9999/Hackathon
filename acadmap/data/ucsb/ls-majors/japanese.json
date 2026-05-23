@@ -1,0 +1,145 @@
+{
+  "slug": "japanese",
+  "name": "Japanese",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAJAPN",
+      "url": "https://catalog.ucsb.edu/programs/BAJAPN"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.ealc.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAJAPN"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "JAPAN 1",
+        "title": "Japanese language sequence",
+        "notes": "Series through JAPAN 6"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "JAPAN 120",
+          "title": "Advanced Japanese"
+        },
+        {
+          "code": "Upper-division literature/culture",
+          "notes": "Upper-division literature/culture"
+        }
+      ],
+      "notes": [
+        "Language proficiency through advanced coursework."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "JAPAN 120"
+      },
+      {
+        "code": "JAPAN 140"
+      },
+      {
+        "code": "EACS 130"
+      },
+      {
+        "code": "EACS 150"
+      }
+    ],
+    "choose_units": 28
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "JAPAN 1",
+          "title": "Japanese language sequence",
+          "units": 4,
+          "notes": "Series through JAPAN 6"
+        },
+        {
+          "code": "JAPAN 120",
+          "title": "Advanced Japanese",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division literature/culture",
+          "units": 4,
+          "notes": "Upper-division literature/culture"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "JAPAN 1",
+          "title": "Japanese language sequence",
+          "units": 4,
+          "notes": "Series through JAPAN 6"
+        },
+        {
+          "code": "JAPAN 120",
+          "title": "Advanced Japanese",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division literature/culture",
+          "units": 4,
+          "notes": "Upper-division literature/culture"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Translation",
+    "International business",
+    "Teaching",
+    "Graduate study",
+    "Tech industry"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

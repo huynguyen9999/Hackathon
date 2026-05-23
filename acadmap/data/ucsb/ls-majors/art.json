@@ -1,0 +1,184 @@
+{
+  "slug": "art",
+  "name": "Art",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAART",
+      "url": "https://catalog.ucsb.edu/programs/BAART"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.art.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAART"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "ART 1A",
+        "title": "Foundation studio sequence"
+      },
+      {
+        "code": "ART 12",
+        "title": "Art history survey"
+      },
+      {
+        "code": "Lower-division studio electives",
+        "notes": "Lower-division studio electives"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division studio concentration",
+          "notes": "Upper-division studio concentration"
+        },
+        {
+          "code": "ART history/theory courses",
+          "notes": "ART history/theory courses"
+        }
+      ],
+      "notes": [
+        "Studio areas include painting, sculpture, print, digital media, and photography."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "ART 130"
+      },
+      {
+        "code": "ART 140"
+      },
+      {
+        "code": "ART 150"
+      },
+      {
+        "code": "ART 190"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "ART 1A",
+          "title": "Foundation studio sequence",
+          "units": 4
+        },
+        {
+          "code": "ART 12",
+          "title": "Art history survey",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Lower-division studio electives",
+          "units": 4,
+          "notes": "Lower-division studio electives"
+        },
+        {
+          "code": "Upper-division studio concentration",
+          "units": 4,
+          "notes": "Upper-division studio concentration"
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "ART history/theory courses",
+          "units": 4,
+          "notes": "ART history/theory courses"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "ART 1A",
+          "title": "Foundation studio sequence",
+          "units": 4
+        },
+        {
+          "code": "ART 12",
+          "title": "Art history survey",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Lower-division studio electives",
+          "units": 4,
+          "notes": "Lower-division studio electives"
+        },
+        {
+          "code": "Upper-division studio concentration",
+          "units": 4,
+          "notes": "Upper-division studio concentration"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "ART history/theory courses",
+          "units": 4,
+          "notes": "ART history/theory courses"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Fine arts",
+    "Graphic design",
+    "Museum/gallery",
+    "Teaching",
+    "Creative direction"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

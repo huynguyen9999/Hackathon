@@ -1,0 +1,142 @@
+{
+  "slug": "global-studies",
+  "name": "Global Studies",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAGS",
+      "url": "https://catalog.ucsb.edu/programs/BAGS"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.global.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAGS"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "GLOBL 1",
+        "title": "Introduction to Global Studies"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division GLOBL core",
+          "notes": "Upper-division GLOBL core"
+        },
+        {
+          "code": "Concentration electives",
+          "notes": "Concentration electives"
+        }
+      ],
+      "notes": [
+        "Interdisciplinary international affairs major. Study abroad encouraged."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "GLOBL 130"
+      },
+      {
+        "code": "GLOBL 150"
+      },
+      {
+        "code": "GLOBL 170"
+      },
+      {
+        "code": "GLOBL 190"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "GLOBL 1",
+          "title": "Introduction to Global Studies",
+          "units": 4
+        },
+        {
+          "code": "Upper-division GLOBL core",
+          "units": 4,
+          "notes": "Upper-division GLOBL core"
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Concentration electives",
+          "units": 4,
+          "notes": "Concentration electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "GLOBL 1",
+          "title": "Introduction to Global Studies",
+          "units": 4
+        },
+        {
+          "code": "Upper-division GLOBL core",
+          "units": 4,
+          "notes": "Upper-division GLOBL core"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Concentration electives",
+          "units": 4,
+          "notes": "Concentration electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "International NGOs",
+    "Diplomacy",
+    "Development",
+    "Law",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

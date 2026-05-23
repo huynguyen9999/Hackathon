@@ -49,7 +49,7 @@ Use this file when running **multiple Cursor agents** (or subagents) in parallel
 
 **L&S major sheet agent** (Wave 1+)
 
-> Parse department major sheet PDF → write `data/ucsb/ls-majors/{slug}.json` following `lib/ucsb-major-detail-types.ts`. Add URLs to `data/ucsb/major-sheet-sources.json`. Run `npm run validate:details` + `npm run sync:details`. Use FMS (`financial-mathematics-and-statistics.json`) as the reference. QA checklist in `docs/UCSB-LS-RESEARCH.md`.
+> Parse department major sheet PDF → write `data/ucsb/ls-majors/{slug}.json` following `lib/ucsb-major-detail-types.ts`. Add URLs to `data/ucsb/major-sheet-sources.json`. Run `npm run validate:details` + `npm run sync:details`. Use FMS or **Actuarial Science** as reference (BS/MS tracks). Parallel cluster assignments: `docs/LS-MAJOR-AGENT-CLUSTERS.md`. Batch scaffold: `npm run generate:details`.
 
 **Data agent** — per major
 
@@ -100,7 +100,7 @@ cp .env.example .env.local   # optional until Supabase is live
 npm run dev                  # http://localhost:3000
 npm run fetch:ls             # merge 58 L&S majors into ls-catalog.json
 npm run validate:ls          # assert catalog integrity
-npm run fetch:sheets         # scaffold ls-majors from major-sheet-sources.json
+npm run generate:details     # auto-generate catalog-tier ls-majors for all 58 majors
 npm run validate:details     # validate ls-majors/*.json schema
 npm run sync:details         # sync detail_available, sheet URLs into ls-catalog.json
 ```

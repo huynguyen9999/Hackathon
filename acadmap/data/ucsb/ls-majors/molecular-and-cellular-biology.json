@@ -1,0 +1,189 @@
+{
+  "slug": "molecular-and-cellular-biology",
+  "name": "Molecular and Cellular Biology",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BSMCDB",
+      "url": "https://catalog.ucsb.edu/programs/BSMCDB"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.biology.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BSMCDB"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "CHEM 1A"
+      },
+      {
+        "code": "MATH 3A"
+      },
+      {
+        "code": "MCDB 1A"
+      },
+      {
+        "code": "PHYS 6A"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "MCDB upper-division core",
+          "notes": "MCDB upper-division core"
+        },
+        {
+          "code": "Upper-division MCDB electives",
+          "notes": "Upper-division MCDB electives"
+        }
+      ],
+      "notes": [
+        "Selective major. Molecular and cellular focus. Pre-med and biotech."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "MCDB 108A"
+      },
+      {
+        "code": "MCDB 131"
+      },
+      {
+        "code": "MCDB 150"
+      },
+      {
+        "code": "MCDB 199"
+      }
+    ],
+    "choose_units": 36
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false,
+    "other": [
+      "Selective major — verify admission requirements on admissions site."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "MCDB 1A",
+          "units": 4
+        },
+        {
+          "code": "PHYS 6A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "MCDB upper-division core",
+          "units": 4,
+          "notes": "MCDB upper-division core"
+        },
+        {
+          "code": "Upper-division MCDB electives",
+          "units": 4,
+          "notes": "Upper-division MCDB electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "MCDB 1A",
+          "units": 4
+        },
+        {
+          "code": "PHYS 6A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "MCDB upper-division core",
+          "units": 4,
+          "notes": "MCDB upper-division core"
+        },
+        {
+          "code": "Upper-division MCDB electives",
+          "units": 4,
+          "notes": "Upper-division MCDB electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Biotech",
+    "Medicine",
+    "Research",
+    "Pharmaceutical",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

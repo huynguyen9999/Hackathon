@@ -1,0 +1,153 @@
+{
+  "slug": "philosophy",
+  "name": "Philosophy",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAPHIL",
+      "url": "https://catalog.ucsb.edu/programs/BAPHIL"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.philosophy.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://www.philosophy.ucsb.edu/undergraduate"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "PHIL 20A",
+        "title": "History of Philosophy sequence (or equivalent)"
+      },
+      {
+        "code": "Lower-division PHIL electives",
+        "notes": "Lower-division PHIL electives"
+      },
+      {
+        "code": "PHIL 3"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division PHIL courses distributed across areas",
+          "notes": "Upper-division PHIL courses distributed across areas"
+        }
+      ],
+      "notes": [
+        "Core Philosophy or Ethics and Public Policy emphasis."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "PHIL 100"
+      },
+      {
+        "code": "PHIL 112"
+      },
+      {
+        "code": "PHIL 115"
+      },
+      {
+        "code": "PHIL 124"
+      }
+    ],
+    "choose_units": 24
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PHIL 20A",
+          "title": "History of Philosophy sequence (or equivalent)",
+          "units": 4
+        },
+        {
+          "code": "Lower-division PHIL electives",
+          "units": 4,
+          "notes": "Lower-division PHIL electives"
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PHIL 3",
+          "units": 4
+        },
+        {
+          "code": "Upper-division PHIL courses distributed across areas",
+          "units": 4,
+          "notes": "Upper-division PHIL courses distributed across areas"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PHIL 20A",
+          "title": "History of Philosophy sequence (or equivalent)",
+          "units": 4
+        },
+        {
+          "code": "Lower-division PHIL electives",
+          "units": 4,
+          "notes": "Lower-division PHIL electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PHIL 3",
+          "units": 4
+        },
+        {
+          "code": "Upper-division PHIL courses distributed across areas",
+          "units": 4,
+          "notes": "Upper-division PHIL courses distributed across areas"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Law",
+    "Public policy",
+    "Ethics consulting",
+    "Academia",
+    "Tech ethics"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

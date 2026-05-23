@@ -1,0 +1,192 @@
+{
+  "slug": "earth-science",
+  "name": "Earth Science",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BSEAR",
+      "url": "https://catalog.ucsb.edu/programs/BSEAR"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.earth.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BSEAR"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "CHEM 1A"
+      },
+      {
+        "code": "MATH 3A"
+      },
+      {
+        "code": "EARTH 2",
+        "title": "Intro geology sequence",
+        "notes": "Series through EARTH 4"
+      },
+      {
+        "code": "PHYS 7A"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "EARTH upper-division core",
+          "notes": "EARTH upper-division core"
+        },
+        {
+          "code": "Emphasis area electives (geology, geophysics, etc.)",
+          "notes": "Emphasis area electives (geology, geophysics, etc.)"
+        }
+      ],
+      "notes": [
+        "BA and BS tracks with emphases in climate, geology, geobiology, geophysics."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "EARTH 120"
+      },
+      {
+        "code": "EARTH 130"
+      },
+      {
+        "code": "EARTH 150"
+      },
+      {
+        "code": "EARTH 170"
+      }
+    ],
+    "choose_units": 28
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "EARTH 2",
+          "title": "Intro geology sequence",
+          "units": 4,
+          "notes": "Series through EARTH 4"
+        },
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "EARTH upper-division core",
+          "units": 4,
+          "notes": "EARTH upper-division core"
+        },
+        {
+          "code": "Emphasis area electives (geology, geophysics, etc.)",
+          "units": 4,
+          "notes": "Emphasis area electives (geology, geophysics, etc.)"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "EARTH 2",
+          "title": "Intro geology sequence",
+          "units": 4,
+          "notes": "Series through EARTH 4"
+        },
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "EARTH upper-division core",
+          "units": 4,
+          "notes": "EARTH upper-division core"
+        },
+        {
+          "code": "Emphasis area electives (geology, geophysics, etc.)",
+          "units": 4,
+          "notes": "Emphasis area electives (geology, geophysics, etc.)"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Environmental consulting",
+    "Geology",
+    "Climate science",
+    "Energy",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "slug": "geography",
+  "name": "Geography",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAGEO",
+      "url": "https://catalog.ucsb.edu/programs/BAGEO"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.geog.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAGEO"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "GEOG 5",
+        "title": "Human Geography"
+      },
+      {
+        "code": "GEOG 12",
+        "title": "Maps and Spatial Reasoning"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division GEOG electives",
+          "notes": "Upper-division GEOG electives"
+        }
+      ],
+      "notes": [
+        "BA human geography and BS physical geography/GIS emphases."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "GEOG 130"
+      },
+      {
+        "code": "GEOG 150"
+      },
+      {
+        "code": "GEOG 170"
+      },
+      {
+        "code": "GEOG 190"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "GEOG 5",
+          "title": "Human Geography",
+          "units": 4
+        },
+        {
+          "code": "GEOG 12",
+          "title": "Maps and Spatial Reasoning",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division GEOG electives",
+          "units": 4,
+          "notes": "Upper-division GEOG electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "GEOG 5",
+          "title": "Human Geography",
+          "units": 4
+        },
+        {
+          "code": "GEOG 12",
+          "title": "Maps and Spatial Reasoning",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division GEOG electives",
+          "units": 4,
+          "notes": "Upper-division GEOG electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "GIS analyst",
+    "Urban planning",
+    "Environmental consulting",
+    "Remote sensing",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

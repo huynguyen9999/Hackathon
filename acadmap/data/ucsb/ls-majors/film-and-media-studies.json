@@ -1,0 +1,142 @@
+{
+  "slug": "film-and-media-studies",
+  "name": "Film and Media Studies",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAFMS",
+      "url": "https://catalog.ucsb.edu/programs/BAFMS"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.filmandmedia.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAFMS"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "FAMST 1",
+        "title": "Introduction to Film Studies"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "Upper-division FAMST theory/history",
+          "notes": "Upper-division FAMST theory/history"
+        },
+        {
+          "code": "Production or analysis electives",
+          "notes": "Production or analysis electives"
+        }
+      ],
+      "notes": [
+        "Critical studies and production tracks."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "FAMST 110"
+      },
+      {
+        "code": "FAMST 130"
+      },
+      {
+        "code": "FAMST 150"
+      },
+      {
+        "code": "FAMST 170"
+      }
+    ],
+    "choose_units": 32
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "FAMST 1",
+          "title": "Introduction to Film Studies",
+          "units": 4
+        },
+        {
+          "code": "Upper-division FAMST theory/history",
+          "units": 4,
+          "notes": "Upper-division FAMST theory/history"
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Production or analysis electives",
+          "units": 4,
+          "notes": "Production or analysis electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "FAMST 1",
+          "title": "Introduction to Film Studies",
+          "units": 4
+        },
+        {
+          "code": "Upper-division FAMST theory/history",
+          "units": 4,
+          "notes": "Upper-division FAMST theory/history"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Production or analysis electives",
+          "units": 4,
+          "notes": "Production or analysis electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Film/TV production",
+    "Media analysis",
+    "Marketing",
+    "Journalism",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

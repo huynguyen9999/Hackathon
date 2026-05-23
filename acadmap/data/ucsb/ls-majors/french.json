@@ -1,0 +1,145 @@
+{
+  "slug": "french",
+  "name": "French",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAFR",
+      "url": "https://catalog.ucsb.edu/programs/BAFR"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.frit.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAFR"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "FR 1",
+        "title": "French language sequence",
+        "notes": "Series through FR 6"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "FR 100",
+          "title": "Advanced French"
+        },
+        {
+          "code": "Upper-division literature/culture",
+          "notes": "Upper-division literature/culture"
+        }
+      ],
+      "notes": [
+        "Language proficiency through advanced coursework."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "FR 120"
+      },
+      {
+        "code": "FR 140"
+      },
+      {
+        "code": "FR 160"
+      },
+      {
+        "code": "FR 180"
+      }
+    ],
+    "choose_units": 28
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "FR 1",
+          "title": "French language sequence",
+          "units": 4,
+          "notes": "Series through FR 6"
+        },
+        {
+          "code": "FR 100",
+          "title": "Advanced French",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division literature/culture",
+          "units": 4,
+          "notes": "Upper-division literature/culture"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "FR 1",
+          "title": "French language sequence",
+          "units": 4,
+          "notes": "Series through FR 6"
+        },
+        {
+          "code": "FR 100",
+          "title": "Advanced French",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division literature/culture",
+          "units": 4,
+          "notes": "Upper-division literature/culture"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Translation",
+    "International relations",
+    "Teaching",
+    "Publishing",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

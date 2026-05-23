@@ -1,0 +1,226 @@
+{
+  "slug": "applied-mathematics",
+  "name": "Applied Mathematics",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BSAPM",
+      "url": "https://catalog.ucsb.edu/programs/BSAPM"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.math.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BSAPM"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "MATH 3A",
+        "title": "Calculus"
+      },
+      {
+        "code": "MATH 4A",
+        "title": "Linear Algebra & Differential Equations"
+      },
+      {
+        "code": "MATH 8",
+        "title": "Transition to Proofs"
+      },
+      {
+        "code": "PHYS 7A"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "MATH 118A",
+          "title": "Real Analysis"
+        },
+        {
+          "code": "MATH 111A",
+          "title": "Abstract Algebra"
+        },
+        {
+          "code": "Applied math cluster electives (numerical, ODE/PDE, modeling)",
+          "notes": "Applied math cluster electives (numerical, ODE/PDE, modeling)"
+        }
+      ],
+      "notes": [
+        "BS Applied Mathematics emphasizes modeling and computation. Selective major with strong math GPA."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "MATH 124"
+      },
+      {
+        "code": "MATH 132"
+      },
+      {
+        "code": "MATH 160"
+      },
+      {
+        "code": "MATH 170"
+      }
+    ],
+    "choose_units": 24
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false,
+    "other": [
+      "Selective major — verify admission requirements on admissions site."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "MATH 3A",
+          "title": "Calculus",
+          "units": 4
+        },
+        {
+          "code": "MATH 4A",
+          "title": "Linear Algebra & Differential Equations",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "MATH 8",
+          "title": "Transition to Proofs",
+          "units": 4
+        },
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "MATH 118A",
+          "title": "Real Analysis",
+          "units": 4
+        },
+        {
+          "code": "MATH 111A",
+          "title": "Abstract Algebra",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Applied math cluster electives (numerical, ODE/PDE, modeling)",
+          "units": 4,
+          "notes": "Applied math cluster electives (numerical, ODE/PDE, modeling)"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "MATH 3A",
+          "title": "Calculus",
+          "units": 4
+        },
+        {
+          "code": "MATH 4A",
+          "title": "Linear Algebra & Differential Equations",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "MATH 8",
+          "title": "Transition to Proofs",
+          "units": 4
+        },
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "MATH 118A",
+          "title": "Real Analysis",
+          "units": 4
+        },
+        {
+          "code": "MATH 111A",
+          "title": "Abstract Algebra",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Applied math cluster electives (numerical, ODE/PDE, modeling)",
+          "units": 4,
+          "notes": "Applied math cluster electives (numerical, ODE/PDE, modeling)"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Data science",
+    "Engineering",
+    "Finance",
+    "Research",
+    "Graduate study"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

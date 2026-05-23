@@ -1,0 +1,268 @@
+{
+  "slug": "psychological-and-brain-sciences",
+  "name": "Psychological and Brain Sciences",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BAPSY",
+      "url": "https://catalog.ucsb.edu/programs/BAPSY"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.psych.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BAPSY"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "PSY 1",
+        "title": "Introductory Psychology"
+      },
+      {
+        "code": "PSTAT 5"
+      },
+      {
+        "code": "PSY 10A",
+        "title": "Research Methods in Psychology"
+      },
+      {
+        "code": "PSY 10B",
+        "title": "Statistical Methods in Psychology"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "PSY 102A",
+          "title": "Introduction to Social Psychology"
+        },
+        {
+          "code": "PSY 105",
+          "title": "Introduction to Developmental Psychology"
+        },
+        {
+          "code": "PSY 110",
+          "title": "Introduction to Cognitive Psychology"
+        },
+        {
+          "code": "PSY 112",
+          "title": "Introduction to Biopsychology"
+        },
+        {
+          "code": "Additional upper-division PSY electives per major sheet",
+          "notes": "Additional upper-division PSY electives per major sheet"
+        }
+      ],
+      "notes": [
+        "Selective major. Verify prep GPA on department website."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "PSY 130"
+      },
+      {
+        "code": "PSY 140"
+      },
+      {
+        "code": "PSY 150"
+      },
+      {
+        "code": "PSY 170"
+      }
+    ],
+    "choose_units": 20
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false,
+    "other": [
+      "Selective major — verify admission requirements on admissions site."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PSY 1",
+          "title": "Introductory Psychology",
+          "units": 4
+        },
+        {
+          "code": "PSTAT 5",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PSY 10A",
+          "title": "Research Methods in Psychology",
+          "units": 4
+        },
+        {
+          "code": "PSY 10B",
+          "title": "Statistical Methods in Psychology",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PSY 102A",
+          "title": "Introduction to Social Psychology",
+          "units": 4
+        },
+        {
+          "code": "PSY 105",
+          "title": "Introduction to Developmental Psychology",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PSY 110",
+          "title": "Introduction to Cognitive Psychology",
+          "units": 4
+        },
+        {
+          "code": "PSY 112",
+          "title": "Introduction to Biopsychology",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Additional upper-division PSY electives per major sheet",
+          "units": 4,
+          "notes": "Additional upper-division PSY electives per major sheet"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PSY 1",
+          "title": "Introductory Psychology",
+          "units": 4
+        },
+        {
+          "code": "PSTAT 5",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PSY 10A",
+          "title": "Research Methods in Psychology",
+          "units": 4
+        },
+        {
+          "code": "PSY 10B",
+          "title": "Statistical Methods in Psychology",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PSY 102A",
+          "title": "Introduction to Social Psychology",
+          "units": 4
+        },
+        {
+          "code": "PSY 105",
+          "title": "Introduction to Developmental Psychology",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PSY 110",
+          "title": "Introduction to Cognitive Psychology",
+          "units": 4
+        },
+        {
+          "code": "PSY 112",
+          "title": "Introduction to Biopsychology",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Additional upper-division PSY electives per major sheet",
+          "units": 4,
+          "notes": "Additional upper-division PSY electives per major sheet"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Clinical (grad)",
+    "UX research",
+    "HR",
+    "Market research",
+    "Neuroscience"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}

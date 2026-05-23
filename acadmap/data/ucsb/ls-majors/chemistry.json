@@ -1,0 +1,211 @@
+{
+  "slug": "chemistry",
+  "name": "Chemistry",
+  "catalog_year": "2025-2026",
+  "sources": [
+    {
+      "title": "UCSB Catalog — BSCHEM",
+      "url": "https://catalog.ucsb.edu/programs/BSCHEM"
+    },
+    {
+      "title": "Department",
+      "url": "https://www.chem.ucsb.edu/"
+    },
+    {
+      "title": "Program page",
+      "url": "https://catalog.ucsb.edu/programs/BSCHEM"
+    }
+  ],
+  "preparation": {
+    "label": "Preparation for the major",
+    "courses": [
+      {
+        "code": "CHEM 1A"
+      },
+      {
+        "code": "MATH 3A"
+      },
+      {
+        "code": "PHYS 7A"
+      },
+      {
+        "code": "CHEM 109A"
+      }
+    ],
+    "notes": [
+      "Auto-generated from ls-catalog summary — verify on official major sheet."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division required",
+      "courses": [
+        {
+          "code": "CHEM 113A"
+        },
+        {
+          "code": "CHEM 142A"
+        },
+        {
+          "code": "Upper-division chemistry electives",
+          "notes": "Upper-division chemistry electives"
+        }
+      ],
+      "notes": [
+        "ACS-certified track available. Selective major."
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Sample electives",
+    "courses": [
+      {
+        "code": "CHEM 171"
+      },
+      {
+        "code": "CHEM 173"
+      },
+      {
+        "code": "CHEM 174"
+      },
+      {
+        "code": "CHEM 180"
+      }
+    ],
+    "choose_units": 12
+  },
+  "regulations": {
+    "major_gpa": 2,
+    "pnp_allowed": false,
+    "other": [
+      "Selective major — verify admission requirements on admissions site."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Winter",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        },
+        {
+          "code": "CHEM 109A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "CHEM 113A",
+          "units": 4
+        },
+        {
+          "code": "CHEM 142A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        {
+          "code": "Upper-division chemistry electives",
+          "units": 4,
+          "notes": "Upper-division chemistry electives"
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "CHEM 1A",
+          "units": 4
+        },
+        {
+          "code": "MATH 3A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Winter",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "PHYS 7A",
+          "units": 4
+        },
+        {
+          "code": "CHEM 109A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "CHEM 113A",
+          "units": 4
+        },
+        {
+          "code": "CHEM 142A",
+          "units": 4
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "transfer",
+      "entries": [
+        {
+          "code": "Upper-division chemistry electives",
+          "units": 4,
+          "notes": "Upper-division chemistry electives"
+        }
+      ]
+    }
+  ],
+  "career_outcomes": [
+    "Pharmaceutical R&D",
+    "Materials science",
+    "Teaching",
+    "Graduate study",
+    "Analytical chemistry"
+  ],
+  "quality_tier": "catalog",
+  "notes": [
+    "Auto-generated from ls-catalog.json. Upgrade to sheet fidelity by parsing department major sheet PDF."
+  ]
+}
