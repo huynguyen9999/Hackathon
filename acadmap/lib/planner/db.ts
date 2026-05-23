@@ -2,6 +2,7 @@ import { createServerClient } from "@/lib/supabase";
 import type {
   Plan,
   PlanComment,
+  PlanMember,
   PlannerRole,
   PlanVersion,
   PlannedCourseState,
@@ -493,4 +494,82 @@ export async function acceptPlanShareToken(
   if (!planId) return null;
 
   return getPlanForUser(planId, userId);
+}
+
+
+export async function getPlanMembers(planId: string, userId: string): Promise<{ members: PlanMember[]; myRole: PlannerRole } | null> {
+  const supabase = await createServerClient();
+
+  const { data: membership, error: membershipError } = await supabase
+    .from("planner_plan_members")
+    .select("role")
+    .eq("plan_id", planId)
+    .eq("user_id", userId)
+    .maybeSingle();
+
+  if (membershipError) throw membershipError;
+  if (!membership) return null;
+
+  const { data, error } = await supabase
+    .from("planner_plan_members")
+    .select("plan_id, user_id, role, created_at")
+    .eq("plan_id", planId)
+    .order("created_at", { ascending: true });
+
+  if (error) throw error;
+
+  return {
+    myRole: membership.role as PlannerRole,
+    members: (data ?? []).map((row) => ({
+      planId: row.plan_id as string,
+      userId: row.user_id as string,
+      role: row.role as PlannerRole,
+      createdAt: row.created_at as string,
+    })),
+  };
+}
+
+export async function managePlanMember(input: {
+  planId: string;
+  actorUserId: string;
+  targetUserId: string;
+  role?: "advisor" | "viewer";
+  remove?: boolean;
+}): Promise<{ members: PlanMember[]; myRole: PlannerRole } | null> {
+  const supabase = await createServerClient();
+
+  const { data: actorMembership, error: actorError } = await supabase
+    .from("planner_plan_members")
+    .select("role")
+    .eq("plan_id", input.planId)
+    .eq("user_id", input.actorUserId)
+    .maybeSingle();
+
+  if (actorError) throw actorError;
+  if (!actorMembership) return null;
+  if (actorMembership.role !== "owner") {
+    throw new Error("Only owners can manage collaborators.");
+  }
+
+  if (input.targetUserId === input.actorUserId) {
+    throw new Error("Owners cannot modify their own owner membership.");
+  }
+
+  if (input.remove) {
+    const { error: removeError } = await supabase
+      .from("planner_plan_members")
+      .delete()
+      .eq("plan_id", input.planId)
+      .eq("user_id", input.targetUserId);
+    if (removeError) throw removeError;
+  } else if (input.role) {
+    const { error: updateError } = await supabase
+      .from("planner_plan_members")
+      .update({ role: input.role })
+      .eq("plan_id", input.planId)
+      .eq("user_id", input.targetUserId);
+    if (updateError) throw updateError;
+  }
+
+  return getPlanMembers(input.planId, input.actorUserId);
 }

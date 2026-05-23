@@ -107,3 +107,11 @@ export type UpdatePlanInput = {
   auditSnapshot?: AuditSnapshot;
   validationIssues?: ValidationIssue[];
 };
+
+
+export type PlanMember = {
+  planId: string;
+  userId: string;
+  role: PlannerRole;
+  createdAt: string;
+};

@@ -47,3 +47,12 @@ Planner tables and RLS policies are in `supabase/schema.sql`.
 1. Internal advising + developer users
 2. Beta cohort (invite-only)
 3. Campus-wide release after audit quality baseline is met
+
+
+## Collaboration UI
+
+Planner workspace includes:
+
+- share-link generation (advisor/viewer)
+- comment thread panel
+- collaborator management panel (owner can change advisor/viewer roles and remove members)

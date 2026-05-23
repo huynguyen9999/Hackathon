@@ -7,6 +7,7 @@ import { exportPlanAsPdf } from "@/lib/planner/export-plan-pdf";
 import { quarterKey, type QuarterKey } from "@/lib/planner/plan-types";
 import { usePlanState } from "@/lib/planner/use-plan-state";
 import type { RoadmapDetail } from "@/lib/types";
+import { CollaboratorsPanel } from "@/components/planner/CollaboratorsPanel";
 import { CommentsPanel } from "@/components/planner/CommentsPanel";
 import { CreditInjector } from "@/components/planner/CreditInjector";
 import { CourseDrawer } from "@/components/planner/CourseDrawer";
@@ -216,7 +217,7 @@ export function PlannerWorkspace({
         />
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-3">
+      <div className="grid gap-4 lg:grid-cols-4">
         <CreditInjector
           apRules={apRules}
           transferRules={transferRules}
@@ -230,6 +231,7 @@ export function PlannerWorkspace({
           auditSnapshot={planner.auditSnapshot}
         />
         <CommentsPanel planId={planner.planId} />
+        <CollaboratorsPanel planId={planner.planId} />
       </div>
     </section>
   );
