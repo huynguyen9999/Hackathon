@@ -1,7 +1,4 @@
-import {
-  createBrowserClient as createSupabaseBrowserClient,
-  createServerClient as createSupabaseServerClient,
-} from "@supabase/ssr";
+import { createServerClient as createSupabaseServerClient } from "@supabase/ssr";
 import type { CookieOptions } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
@@ -21,10 +18,6 @@ function getSupabaseAnonKey(): string {
   return key;
 }
 
-/** Browser / Client Components */
-export function createBrowserClient() {
-  return createSupabaseBrowserClient(getSupabaseUrl(), getSupabaseAnonKey());
-}
 
 /** Server Components, Route Handlers, Server Actions */
 export async function createServerClient() {

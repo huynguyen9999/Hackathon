@@ -7,6 +7,37 @@ export interface Resource {
   url: string;
 }
 
+export type PartnerKind = "affiliate" | "sponsored";
+
+export type PartnerId =
+  | "coursera"
+  | "aws"
+  | "google-career-certificates"
+  | "codecraft-bootcamp";
+
+export interface PartnerCatalogEntry {
+  id: string;
+  partner: PartnerId;
+  partner_display_name: string;
+  name: string;
+  /** Destination URL (placeholder for demo). */
+  url: string;
+  kind: PartnerKind;
+  description?: string;
+  price_hint?: string;
+}
+
+export interface PartnerPlacement {
+  node_labels: string[];
+  affiliate_ids: string[];
+  sponsored_id?: string;
+}
+
+export interface PartnerOffers {
+  affiliates: PartnerCatalogEntry[];
+  sponsored?: PartnerCatalogEntry;
+}
+
 export interface RoadmapNode {
   id: string;
   roadmap_id: string;
@@ -30,6 +61,14 @@ export interface RoadmapEdge {
   edge_type: EdgeType;
   label?: string;
 }
+
+export type ScheduleStatus = "completed" | "planned";
+export type NodeAnalysisState =
+  | "conflict"
+  | "critical"
+  | "blocked"
+  | "bottleneck"
+  | "removed";
 
 export interface Roadmap {
   id: string;
@@ -96,6 +135,9 @@ export type RoadmapNodeData = {
   units: number;
   selfLearnable: boolean;
   resources: Resource[];
+  scheduleStatus?: ScheduleStatus;
+  analysisState?: NodeAnalysisState;
+  analysisNote?: string;
   /** Set by RoadmapGraph when another node is focused. */
   dimmed?: boolean;
   /** Set by RoadmapGraph on the actively selected node. */
@@ -110,6 +152,9 @@ export type CareerNodeData = {
   units?: number;
   selfLearnable?: boolean;
   resources?: Resource[];
+  scheduleStatus?: ScheduleStatus;
+  analysisState?: NodeAnalysisState;
+  analysisNote?: string;
   dimmed?: boolean;
   focused?: boolean;
 };
@@ -128,7 +173,10 @@ export type FlowEdge = {
   source: string;
   target: string;
   label?: string;
-  data?: { edgeType: EdgeType };
+  data?: {
+    edgeType: EdgeType;
+    analysisState?: "conflict" | "critical" | "blocked";
+  };
 };
 
 // ——— Supabase row shapes ———

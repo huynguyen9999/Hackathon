@@ -167,3 +167,315 @@ create policy "votes_insert_own"
 create policy "votes_delete_own"
   on public.votes for delete to authenticated
   using (auth.uid() = user_id);
+
+-- ——— Planner collaboration tables ———
+
+create table if not exists public.planner_profiles (
+  user_id uuid primary key references auth.users (id) on delete cascade,
+  display_name text,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table if not exists public.planner_plans (
+  id uuid primary key default gen_random_uuid(),
+  owner_id uuid not null references auth.users (id) on delete cascade,
+  title text not null,
+  school_short_name text not null,
+  major_slug text not null,
+  roadmap_id text,
+  archived boolean not null default false,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table if not exists public.planner_plan_members (
+  plan_id uuid not null references public.planner_plans (id) on delete cascade,
+  user_id uuid not null references auth.users (id) on delete cascade,
+  role text not null check (role in ('owner', 'advisor', 'viewer')),
+  created_at timestamptz not null default now(),
+  primary key (plan_id, user_id)
+);
+
+create table if not exists public.planner_plan_versions (
+  id uuid primary key default gen_random_uuid(),
+  plan_id uuid not null references public.planner_plans (id) on delete cascade,
+  version integer not null,
+  notes text,
+  created_by uuid not null references auth.users (id) on delete cascade,
+  audit_snapshot jsonb default '{}'::jsonb,
+  validation_issues jsonb default '[]'::jsonb,
+  created_at timestamptz not null default now(),
+  unique (plan_id, version)
+);
+
+create table if not exists public.planner_course_states (
+  id uuid primary key default gen_random_uuid(),
+  version_id uuid not null references public.planner_plan_versions (id) on delete cascade,
+  node_id text not null,
+  status text not null check (status in ('planned', 'completed')),
+  year smallint,
+  quarter text check (quarter in ('Fall', 'Winter')),
+  source text check (source in ('manual', 'ap', 'transfer')),
+  created_at timestamptz not null default now()
+);
+
+create table if not exists public.planner_external_credits (
+  id uuid primary key default gen_random_uuid(),
+  version_id uuid not null references public.planner_plan_versions (id) on delete cascade,
+  credit_id text not null,
+  type text not null check (type in ('ap', 'transfer')),
+  exam_or_course text not null,
+  score_or_grade text,
+  mapped_node_ids text[] not null default '{}',
+  notes text,
+  created_at timestamptz not null default now(),
+  unique (version_id, credit_id)
+);
+
+create table if not exists public.planner_share_tokens (
+  id uuid primary key default gen_random_uuid(),
+  plan_id uuid not null references public.planner_plans (id) on delete cascade,
+  token text not null unique,
+  role text not null check (role in ('advisor', 'viewer')),
+  created_by uuid not null references auth.users (id) on delete cascade,
+  expires_at timestamptz,
+  created_at timestamptz not null default now()
+);
+
+create table if not exists public.planner_comments (
+  id uuid primary key default gen_random_uuid(),
+  plan_id uuid not null references public.planner_plans (id) on delete cascade,
+  author_id uuid not null references auth.users (id) on delete cascade,
+  body text not null,
+  created_at timestamptz not null default now()
+);
+
+create index if not exists idx_planner_plans_owner on public.planner_plans (owner_id);
+create index if not exists idx_planner_versions_plan on public.planner_plan_versions (plan_id, version desc);
+create index if not exists idx_planner_members_user on public.planner_plan_members (user_id);
+create index if not exists idx_planner_comments_plan on public.planner_comments (plan_id, created_at);
+
+alter table public.planner_profiles enable row level security;
+alter table public.planner_plans enable row level security;
+alter table public.planner_plan_members enable row level security;
+alter table public.planner_plan_versions enable row level security;
+alter table public.planner_course_states enable row level security;
+alter table public.planner_external_credits enable row level security;
+alter table public.planner_share_tokens enable row level security;
+alter table public.planner_comments enable row level security;
+
+create policy "planner_profiles_self_select"
+  on public.planner_profiles for select to authenticated
+  using (user_id = auth.uid());
+
+create policy "planner_profiles_self_upsert"
+  on public.planner_profiles for all to authenticated
+  using (user_id = auth.uid())
+  with check (user_id = auth.uid());
+
+create policy "planner_plans_member_select"
+  on public.planner_plans for select to authenticated
+  using (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_plans.id
+        and m.user_id = auth.uid()
+    )
+  );
+
+create policy "planner_plans_owner_insert"
+  on public.planner_plans for insert to authenticated
+  with check (owner_id = auth.uid());
+
+create policy "planner_plans_member_update"
+  on public.planner_plans for update to authenticated
+  using (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_plans.id
+        and m.user_id = auth.uid()
+        and m.role in ('owner', 'advisor')
+    )
+  );
+
+create policy "planner_members_member_select"
+  on public.planner_plan_members for select to authenticated
+  using (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_plan_members.plan_id
+        and m.user_id = auth.uid()
+    )
+  );
+
+create policy "planner_members_owner_manage"
+  on public.planner_plan_members for all to authenticated
+  using (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_plan_members.plan_id
+        and m.user_id = auth.uid()
+        and m.role = 'owner'
+    )
+  )
+  with check (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_plan_members.plan_id
+        and m.user_id = auth.uid()
+        and m.role = 'owner'
+    )
+  );
+
+create policy "planner_versions_member_select"
+  on public.planner_plan_versions for select to authenticated
+  using (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_plan_versions.plan_id
+        and m.user_id = auth.uid()
+    )
+  );
+
+create policy "planner_versions_editor_insert"
+  on public.planner_plan_versions for insert to authenticated
+  with check (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_plan_versions.plan_id
+        and m.user_id = auth.uid()
+        and m.role in ('owner', 'advisor')
+    )
+  );
+
+create policy "planner_course_states_member_select"
+  on public.planner_course_states for select to authenticated
+  using (
+    exists (
+      select 1
+      from public.planner_plan_versions v
+      join public.planner_plan_members m on m.plan_id = v.plan_id
+      where v.id = planner_course_states.version_id
+        and m.user_id = auth.uid()
+    )
+  );
+
+create policy "planner_course_states_editor_insert"
+  on public.planner_course_states for insert to authenticated
+  with check (
+    exists (
+      select 1
+      from public.planner_plan_versions v
+      join public.planner_plan_members m on m.plan_id = v.plan_id
+      where v.id = planner_course_states.version_id
+        and m.user_id = auth.uid()
+        and m.role in ('owner', 'advisor')
+    )
+  );
+
+create policy "planner_external_credits_member_select"
+  on public.planner_external_credits for select to authenticated
+  using (
+    exists (
+      select 1
+      from public.planner_plan_versions v
+      join public.planner_plan_members m on m.plan_id = v.plan_id
+      where v.id = planner_external_credits.version_id
+        and m.user_id = auth.uid()
+    )
+  );
+
+create policy "planner_external_credits_editor_insert"
+  on public.planner_external_credits for insert to authenticated
+  with check (
+    exists (
+      select 1
+      from public.planner_plan_versions v
+      join public.planner_plan_members m on m.plan_id = v.plan_id
+      where v.id = planner_external_credits.version_id
+        and m.user_id = auth.uid()
+        and m.role in ('owner', 'advisor')
+    )
+  );
+
+create policy "planner_share_tokens_member_select"
+  on public.planner_share_tokens for select to authenticated
+  using (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_share_tokens.plan_id
+        and m.user_id = auth.uid()
+    )
+  );
+
+create policy "planner_share_tokens_owner_insert"
+  on public.planner_share_tokens for insert to authenticated
+  with check (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_share_tokens.plan_id
+        and m.user_id = auth.uid()
+        and m.role = 'owner'
+    )
+  );
+
+create policy "planner_comments_member_select"
+  on public.planner_comments for select to authenticated
+  using (
+    exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_comments.plan_id
+        and m.user_id = auth.uid()
+    )
+  );
+
+create policy "planner_comments_member_insert"
+  on public.planner_comments for insert to authenticated
+  with check (
+    author_id = auth.uid()
+    and exists (
+      select 1 from public.planner_plan_members m
+      where m.plan_id = planner_comments.plan_id
+        and m.user_id = auth.uid()
+    )
+  );
+
+create or replace function public.accept_planner_share_token(p_token text)
+returns uuid
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_plan_id uuid;
+  v_role text;
+  v_user_id uuid;
+begin
+  v_user_id := auth.uid();
+
+  if v_user_id is null then
+    return null;
+  end if;
+
+  select plan_id, role
+  into v_plan_id, v_role
+  from public.planner_share_tokens
+  where token = p_token
+    and (expires_at is null or expires_at > now())
+  limit 1;
+
+  if v_plan_id is null then
+    return null;
+  end if;
+
+  insert into public.planner_plan_members (plan_id, user_id, role)
+  values (v_plan_id, v_user_id, v_role)
+  on conflict (plan_id, user_id)
+  do update set role = excluded.role;
+
+  return v_plan_id;
+end;
+$$;
+
+grant execute on function public.accept_planner_share_token(text) to authenticated;

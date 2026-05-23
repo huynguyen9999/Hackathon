@@ -22,7 +22,9 @@
     "sync:ccs-details": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-ccs-details.ts",
     "validate:ccs-details": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ccs-details.ts",
     "fetch:faculty:pstat": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-pstat-faculty.ts",
-    "validate:faculty": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-faculty.ts"
+    "validate:faculty": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-faculty.ts",
+    "sync:ucsb-rules": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-ucsb-rules.ts",
+    "test:planner": "node --import tsx --test tests/planner/*.test.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.5.2",

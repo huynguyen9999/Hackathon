@@ -71,3 +71,17 @@ export function roadmapEdgesToFlowEdges(edges: RoadmapEdge[]): FlowEdge[] {
     data: { edgeType: edge.edge_type },
   }));
 }
+
+
+export function applyPlannerNodeStatuses(
+  nodes: FlowNode[],
+  statusByNodeId: Record<string, "planned" | "completed">,
+): FlowNode[] {
+  return nodes.map((node) => ({
+    ...node,
+    data: {
+      ...node.data,
+      scheduleStatus: statusByNodeId[node.id],
+    },
+  }));
+}

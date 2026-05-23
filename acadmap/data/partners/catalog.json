@@ -1,0 +1,64 @@
+{
+  "entries": [
+    {
+      "id": "coursera-cpp-specialization",
+      "partner": "coursera",
+      "partner_display_name": "Coursera",
+      "name": "C++ Programming Specialization",
+      "url": "https://example.coursera.org/specializations/cpp-programming",
+      "kind": "affiliate",
+      "description": "Structured C++ track covering fundamentals through object-oriented design—aligned with intro programming courses.",
+      "price_hint": "Free audit · ~$49/mo with Coursera Plus"
+    },
+    {
+      "id": "aws-cloud-practitioner",
+      "partner": "aws",
+      "partner_display_name": "AWS",
+      "name": "AWS Cloud Practitioner Essentials",
+      "url": "https://example.aws.training/cloud-practitioner",
+      "kind": "affiliate",
+      "description": "Foundational cloud concepts and AWS services—useful for engineers building scalable systems.",
+      "price_hint": "Free digital training · exam ~$100"
+    },
+    {
+      "id": "google-it-automation",
+      "partner": "google-career-certificates",
+      "partner_display_name": "Google Career Certificates",
+      "name": "Google IT Automation with Python",
+      "url": "https://example.grow.google/certificates/it-automation",
+      "kind": "affiliate",
+      "description": "Python scripting and automation skills that complement C++ programming foundations.",
+      "price_hint": "~$49/mo via Coursera · financial aid available"
+    },
+    {
+      "id": "coursera-python-everybody",
+      "partner": "coursera",
+      "partner_display_name": "Coursera",
+      "name": "Python for Everybody Specialization",
+      "url": "https://example.coursera.org/specializations/python",
+      "kind": "affiliate",
+      "description": "Beginner-friendly Python sequence for students preparing for data-oriented or scripting-heavy courses.",
+      "price_hint": "Free audit · ~$49/mo with Coursera Plus"
+    },
+    {
+      "id": "google-data-analytics",
+      "partner": "google-career-certificates",
+      "partner_display_name": "Google Career Certificates",
+      "name": "Google Data Analytics Certificate",
+      "url": "https://example.grow.google/certificates/data-analytics",
+      "kind": "affiliate",
+      "description": "Spreadsheets, SQL, and visualization—helpful prep for probability and statistics coursework.",
+      "price_hint": "~$49/mo via Coursera · financial aid available"
+    },
+    {
+      "id": "codecraft-bootcamp-intro",
+      "partner": "codecraft-bootcamp",
+      "partner_display_name": "CodeCraft Academy",
+      "name": "Intro to Programming Bootcamp (12 weeks)",
+      "url": "https://example.codecraft.academy/bootcamp/intro-programming",
+      "kind": "sponsored",
+      "description": "Live cohort with mentor support, portfolio projects, and career coaching for CMPSC-style intro sequences.",
+      "price_hint": "From $299/mo · demo pricing"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "exam": "AP Calculus AB",
+    "min_score": 3,
+    "mapped_course_codes": ["MATH 3A"],
+    "notes": "Equivalent credit may vary by major policy."
+  },
+  {
+    "exam": "AP Calculus BC",
+    "min_score": 3,
+    "mapped_course_codes": ["MATH 3A", "MATH 3B"],
+    "notes": "Equivalent credit may vary by major policy."
+  },
+  {
+    "exam": "AP Computer Science A",
+    "min_score": 4,
+    "mapped_course_codes": ["CMPSC 8"],
+    "notes": "Department placement may still apply."
+  },
+  {
+    "exam": "AP Physics C: Mechanics",
+    "min_score": 4,
+    "mapped_course_codes": ["PHYS 1", "PHYS 1L"],
+    "notes": "Lab equivalency depends on UCSB articulation."
+  }
+]

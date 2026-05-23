@@ -45,6 +45,20 @@
       "description": "Programming fundamentals in C++: control flow, functions, arrays, and object-oriented design for engineering applications.",
       "units": 4,
       "self_learnable": true,
+      "resources": [
+        {
+          "name": "LearnCpp.com — free C++ tutorial",
+          "url": "https://www.learncpp.com/"
+        },
+        {
+          "name": "UCSB CMPSC 16 course page",
+          "url": "https://www.cs.ucsb.edu/education/courses/cmpsc-16"
+        },
+        {
+          "name": "cppreference.com — C++ reference",
+          "url": "https://en.cppreference.com/w/"
+        }
+      ],
       "position_x": 80,
       "position_y": 520
     },

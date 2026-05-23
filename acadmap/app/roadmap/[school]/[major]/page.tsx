@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 
 import { PageHeader } from "@/components/layout/PageHeader";
 import { RoadmapView } from "@/components/RoadmapView";
+import { isPlannerCollabEnabled } from "@/lib/env";
+import { getUcsbConnector } from "@/lib/integrations/ucsb/connector";
 import { getRoadmapBySlug } from "@/lib/roadmap";
 import {
   coeCollegeHubHref,
@@ -42,6 +44,13 @@ export default async function RoadmapPage({ params }: PageProps) {
   const isCoe = isUcsb ? await isCoeMajorSlug(major) : false;
   const departmentFaculty =
     isUcsb && !isCoe ? await loadDepartmentFacultyForMajor(major) : null;
+
+  const plannerCollabEnabled = isPlannerCollabEnabled();
+  const connector = getUcsbConnector();
+  const [auditRules, creditRules] = await Promise.all([
+    connector.getDegreeAuditRules(roadmap.school.short_name, roadmap.major.slug),
+    connector.getCreditRules(),
+  ]);
 
   return (
     <div className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6 sm:py-8">
@@ -91,7 +100,14 @@ export default async function RoadmapPage({ params }: PageProps) {
         }
       />
 
-      <RoadmapView roadmap={roadmap} departmentFaculty={departmentFaculty} />
+      <RoadmapView
+        roadmap={roadmap}
+        departmentFaculty={departmentFaculty}
+        auditRules={auditRules}
+        apRules={creditRules.apRules}
+        transferRules={creditRules.transferRules}
+        plannerCollabEnabled={plannerCollabEnabled}
+      />
     </div>
   );
 }

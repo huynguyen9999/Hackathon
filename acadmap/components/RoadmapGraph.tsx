@@ -29,6 +29,12 @@ const EDGE_STYLES: Record<EdgeType, { stroke: string; strokeDasharray?: string }
   leads_to: { stroke: "#FEBC11" },
 };
 
+const ANALYSIS_EDGE_STYLES = {
+  conflict: { stroke: "#dc2626" },
+  critical: { stroke: "#f59e0b" },
+  blocked: { stroke: "#ea580c", strokeDasharray: "8 4" },
+} as const;
+
 function mapFlowToReactFlow(
   flowNodes: FlowNode[],
   flowEdges: FlowEdge[],
@@ -37,7 +43,7 @@ function mapFlowToReactFlow(
 ) {
   const nodes: Node[] = flowNodes.map((n) => {
     const focused = focusedNodeId === n.id;
-    const dimmed = focusedNodeId !== null && !focused;
+    const dimmed = focusedNodeId !== null && !focused && !n.data.analysisState;
 
     return {
       id: n.id,
@@ -50,11 +56,14 @@ function mapFlowToReactFlow(
 
   const edges: Edge[] = flowEdges.map((e) => {
     const edgeType = e.data?.edgeType ?? "prerequisite";
-    const style = EDGE_STYLES[edgeType];
+    const analysisState = e.data?.analysisState;
+    const style = analysisState
+      ? ANALYSIS_EDGE_STYLES[analysisState]
+      : EDGE_STYLES[edgeType];
     const connectedToFocus =
       focusedNodeId !== null &&
       (e.source === focusedNodeId || e.target === focusedNodeId);
-    const dimmed = focusedNodeId !== null && !connectedToFocus;
+    const dimmed = focusedNodeId !== null && !connectedToFocus && !analysisState;
 
     return {
       id: e.id,
@@ -63,7 +72,7 @@ function mapFlowToReactFlow(
       label: e.label,
       animated: edgeType === "leads_to" && !dimmed,
       style: {
-        strokeWidth: connectedToFocus ? 2.5 : 2,
+        strokeWidth: analysisState ? 3 : connectedToFocus ? 2.5 : 2,
         opacity: dimmed ? 0.12 : 1,
         ...style,
       },

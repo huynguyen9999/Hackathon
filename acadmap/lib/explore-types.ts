@@ -17,6 +17,8 @@ export type ExploreMajor = {
   id: string;
   slug: string;
   name: string;
+  schoolShortName: string;
+  schoolName: string;
   college: ExploreCollege;
   collegeLabel: string;
   department: string;
@@ -39,6 +41,7 @@ export type ExploreMajor = {
 
 export type ExploreFiltersState = {
   query: string;
+  schools: string[];
   colleges: ExploreCollege[];
   experience: ExperienceType[];
   degreeTypes: string[];
@@ -52,6 +55,7 @@ export type ExploreFiltersState = {
 
 export const DEFAULT_EXPLORE_FILTERS: ExploreFiltersState = {
   query: "",
+  schools: [],
   colleges: [],
   experience: [],
   degreeTypes: [],

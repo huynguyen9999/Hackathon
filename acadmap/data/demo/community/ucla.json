@@ -1,0 +1,72 @@
+{
+  "announcements": [
+    {
+      "id": "demo-ucla-1",
+      "title": "Spring 2026 curriculum update",
+      "body": "EC ENGR 131A is now a prerequisite for EC ENGR 152B. Check the Samueli Announcement PDF for the latest curriculum tables.",
+      "pinned": true,
+      "created_at": "2026-01-15T00:00:00Z"
+    },
+    {
+      "id": "demo-ucla-2",
+      "title": "CS 35L enrollment tips",
+      "body": "COM SCI 35L fills quickly — have backup sections ready and watch the waitlist during pass 1.",
+      "pinned": true,
+      "created_at": "2026-01-10T00:00:00Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "demo-q1",
+      "title": "Is COM SCI 35L really that hard?",
+      "body": "Heard mixed things about the projects and time commitment. Worth taking sophomore year?",
+      "course_code": "COM SCI 35L",
+      "major_slug": "computer-science",
+      "author_name": "bruin_cs26",
+      "created_at": "2026-02-01T00:00:00Z",
+      "answers": [
+        {
+          "id": "demo-a1",
+          "body": "Yes — start projects early. The autograder is strict but fair if you read the spec carefully.",
+          "author_name": "verified_bruin",
+          "is_verified_student": true,
+          "vote_count": 12
+        }
+      ]
+    },
+    {
+      "id": "demo-q2",
+      "title": "EC ENGR 152A vs 152B order?",
+      "body": "Can I take 152B before 152A if I have the new prereqs?",
+      "course_code": "EC ENGR 152A",
+      "author_name": "ece_junior",
+      "created_at": "2026-01-28T00:00:00Z",
+      "answers": [
+        {
+          "id": "demo-a2",
+          "body": "Stick to the sequence in the Announcement — 152A before 152B unless your counselor approves an exception.",
+          "author_name": "samueli_peer",
+          "is_verified_student": true,
+          "vote_count": 8
+        }
+      ]
+    }
+  ],
+  "course_reviews": [
+    { "course_code": "COM SCI 32", "rating": 4.5, "difficulty": 3.5, "review_count": 24 },
+    { "course_code": "COM SCI 33", "rating": 4.2, "difficulty": 4.0, "review_count": 19 },
+    { "course_code": "EC ENGR 131A", "rating": 4.0, "difficulty": 4.5, "review_count": 15 },
+    { "course_code": "MECH&AE 103", "rating": 4.3, "difficulty": 3.8, "review_count": 11 }
+  ],
+  "alumni_outcomes": [
+    { "role": "Software Engineer", "company": "Google", "major_slug": "computer-science", "grad_year": 2024 },
+    { "role": "Hardware Engineer", "company": "Apple", "major_slug": "electrical-engineering", "grad_year": 2023 },
+    { "role": "Aerospace Engineer", "company": "SpaceX", "major_slug": "aerospace-engineering", "grad_year": 2025 }
+  ],
+  "contributor_spotlight": {
+    "display_name": "samueli_mapper",
+    "bio": "Built the UCLA CS interactive roadmap and verified 40+ course descriptions from the Samueli Announcement.",
+    "contribution_count": 3,
+    "school_short_name": "ucla"
+  }
+}

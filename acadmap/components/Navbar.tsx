@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { AuthControls } from "@/components/AuthControls";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { APP_LOGO_INITIALS, APP_NAME } from "@/lib/brand";
 
@@ -68,6 +69,7 @@ export function Navbar({ className = "" }: NavbarProps) {
               );
             })}
           </nav>
+          <AuthControls />
           <ThemeToggle />
         </div>
       </div>

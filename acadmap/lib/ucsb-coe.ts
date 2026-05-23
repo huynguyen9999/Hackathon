@@ -1,8 +1,11 @@
-import { promises as fs } from "fs";
-import path from "path";
-
-import type { CoeMajorDetail } from "@/lib/coe-major-detail-types";
+import {
+  getCoeMajorBySlug as getCoeMajorBySlugForSchool,
+  loadCoeCatalog as loadCoeCatalogForSchool,
+  loadCoeMajorDetail as loadCoeMajorDetailForSchool,
+} from "@/lib/school-catalog";
 import type { UcsbMajor, UcsbSchoolInfo, UcsbSource } from "@/lib/ucsb-types";
+
+export type { CoeMajorDetail } from "@/lib/coe-major-detail-types";
 
 export type CoeMajor = UcsbMajor;
 export type CoeCourseRef = {
@@ -39,54 +42,44 @@ export type CoeCatalog = {
   last_updated: string;
 };
 
-const CATALOG_PATH = path.join(process.cwd(), "data", "ucsb", "coe-catalog.json");
-const MAJOR_DETAIL_DIR = path.join(process.cwd(), "data", "ucsb", "coe-majors");
-
-export function coeMajorDetailPath(slug: string): string {
-  return path.join(MAJOR_DETAIL_DIR, `${slug}.json`);
-}
+const UCSB = "ucsb";
 
 export async function loadCoeMajorDetail(
   majorSlug: string,
-): Promise<CoeMajorDetail | null> {
-  if (typeof window !== "undefined") {
-    throw new Error("loadCoeMajorDetail() is server-only");
-  }
-
-  try {
-    const raw = await fs.readFile(coeMajorDetailPath(majorSlug.toLowerCase()), "utf-8");
-    return JSON.parse(raw) as CoeMajorDetail;
-  } catch {
-    return null;
-  }
+  schoolShortName = UCSB,
+): Promise<import("@/lib/coe-major-detail-types").CoeMajorDetail | null> {
+  return loadCoeMajorDetailForSchool(schoolShortName, majorSlug);
 }
 
-export async function isCoeMajorSlug(majorSlug: string): Promise<boolean> {
-  const major = await getUcsbMajorBySlug(majorSlug);
+export async function isCoeMajorSlug(
+  majorSlug: string,
+  schoolShortName = UCSB,
+): Promise<boolean> {
+  const major = await getCoeMajorBySlugForSchool(schoolShortName, majorSlug);
   return major != null;
 }
 
 export async function loadUcsbCoeCatalog(): Promise<CoeCatalog | null> {
-  if (typeof window !== "undefined") {
-    throw new Error("loadUcsbCoeCatalog() is server-only");
-  }
+  return loadCoeCatalogForSchool(UCSB);
+}
 
-  try {
-    const raw = await fs.readFile(CATALOG_PATH, "utf-8");
-    return JSON.parse(raw) as CoeCatalog;
-  } catch {
-    return null;
-  }
+export async function loadCoeCatalog(
+  schoolShortName: string,
+): Promise<CoeCatalog | null> {
+  return loadCoeCatalogForSchool(schoolShortName);
 }
 
 export async function getUcsbMajorBySlug(
   majorSlug: string,
 ): Promise<CoeMajor | null> {
-  const catalog = await loadUcsbCoeCatalog();
-  if (!catalog) return null;
-  return (
-    catalog.majors.find((m) => m.slug === majorSlug.toLowerCase()) ?? null
-  );
+  return getCoeMajorBySlugForSchool(UCSB, majorSlug);
+}
+
+export async function getCoeMajorBySlug(
+  schoolShortName: string,
+  majorSlug: string,
+): Promise<CoeMajor | null> {
+  return getCoeMajorBySlugForSchool(schoolShortName, majorSlug);
 }
 
 export function majorRoadmapHref(

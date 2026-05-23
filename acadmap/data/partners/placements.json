@@ -1,0 +1,20 @@
+{
+  "placements": [
+    {
+      "node_labels": ["CMPSC 16", "CMPSC 24"],
+      "affiliate_ids": [
+        "coursera-cpp-specialization",
+        "aws-cloud-practitioner",
+        "google-it-automation"
+      ],
+      "sponsored_id": "codecraft-bootcamp-intro"
+    },
+    {
+      "node_labels": ["CMPSC 8", "PSTAT 120A", "ECE 139"],
+      "affiliate_ids": [
+        "coursera-python-everybody",
+        "google-data-analytics"
+      ]
+    }
+  ]
+}

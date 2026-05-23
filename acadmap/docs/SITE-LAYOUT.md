@@ -147,3 +147,15 @@ Major identity uses `{college}:{slug}` (e.g. `creative-studies:art` vs `letters-
 - **Desktop:** graph + sidebar side-by-side
 - **Mobile:** graph full width; sidebar below (280px min height)
 - **Explore / School hub:** 1 → 2 → 3 column card grids
+
+
+## Personalization Layer (Roadmap Page)
+
+Roadmap pages now include a planner workspace behind `ENABLE_PLANNER_COLLAB`:
+
+- 4-year / 8-quarter drag-and-drop planner grid
+- AP / transfer credit injector
+- Degree-audit overlay with bucket percentages and units remaining
+- Collaborative save APIs (`/api/plans*`) and advisor comments/share tokens
+
+Until official UCSB connector rollout, planner outputs are advisory and not a replacement for official degree audit systems.

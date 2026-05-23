@@ -1,0 +1,20 @@
+[
+  {
+    "source": "California CC articulation",
+    "external_course": "MATH sequence equivalent",
+    "mapped_course_codes": ["MATH 3A", "MATH 3B"],
+    "notes": "Use ASSIST.org and advisor verification for official credit."
+  },
+  {
+    "source": "California CC articulation",
+    "external_course": "General Chemistry sequence",
+    "mapped_course_codes": ["CHEM 1A", "CHEM 1AL", "CHEM 1B", "CHEM 1BL"],
+    "notes": "Equivalent units vary by sending institution."
+  },
+  {
+    "source": "California CC articulation",
+    "external_course": "Intro programming",
+    "mapped_course_codes": ["CMPSC 8"],
+    "notes": "Placement exam or advisor approval may still be required."
+  }
+]

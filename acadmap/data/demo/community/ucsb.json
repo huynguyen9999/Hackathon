@@ -1,0 +1,64 @@
+{
+  "announcements": [
+    {
+      "id": "demo-ucsb-1",
+      "title": "Spring 2026 curriculum change",
+      "body": "ECE 130 is now a prerequisite for ECE 153 per the 25-26 GEAR update. Update your plan if you are on the old grid.",
+      "pinned": true,
+      "created_at": "2026-01-12T00:00:00Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "demo-q1",
+      "title": "Is ECE 152A really that hard?",
+      "body": "Junior here — how much time should I budget for labs and homework?",
+      "course_code": "ECE 152A",
+      "major_slug": "electrical-engineering",
+      "author_name": "gaucho_ee",
+      "created_at": "2026-02-03T00:00:00Z",
+      "answers": [
+        {
+          "id": "demo-a1",
+          "body": "Plan 10-12 hrs/week. The filter design project is the heaviest part — start early.",
+          "author_name": "verified_gaucho",
+          "is_verified_student": true,
+          "vote_count": 15
+        }
+      ]
+    },
+    {
+      "id": "demo-q2",
+      "title": "CMPSC 130A before 64?",
+      "body": "Is it okay to take 130A the same quarter as 64?",
+      "course_code": "CMPSC 130A",
+      "author_name": "cs_transfer",
+      "created_at": "2026-01-20T00:00:00Z",
+      "answers": [
+        {
+          "id": "demo-a2",
+          "body": "Not recommended — 64 content shows up in 130A assignments. Finish 64 first if possible.",
+          "author_name": "cs_peer",
+          "is_verified_student": true,
+          "vote_count": 9
+        }
+      ]
+    }
+  ],
+  "course_reviews": [
+    { "course_code": "ECE 152A", "rating": 4.1, "difficulty": 4.6, "review_count": 22 },
+    { "course_code": "CMPSC 130A", "rating": 4.4, "difficulty": 4.2, "review_count": 31 },
+    { "course_code": "CMPSC 32", "rating": 4.3, "difficulty": 3.5, "review_count": 28 },
+    { "course_code": "PSTAT 120A", "rating": 3.9, "difficulty": 3.8, "review_count": 18 }
+  ],
+  "alumni_outcomes": [
+    { "role": "RF Engineer", "company": "Qualcomm", "major_slug": "electrical-engineering", "grad_year": 2024 },
+    { "role": "ML Engineer", "company": "Meta", "major_slug": "computer-science", "grad_year": 2023 }
+  ],
+  "contributor_spotlight": {
+    "display_name": "gear_mapper",
+    "bio": "Maintains EE and CS roadmaps from GEAR 25-26 and UCSBPlat course descriptions.",
+    "contribution_count": 5,
+    "school_short_name": "ucsb"
+  }
+}

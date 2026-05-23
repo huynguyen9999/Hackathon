@@ -35,6 +35,12 @@ export function filterExploreMajors(
     result = result.filter((m) => filters.colleges.includes(m.college));
   }
 
+  if (filters.schools.length > 0) {
+    result = result.filter((m) =>
+      filters.schools.includes(m.schoolShortName),
+    );
+  }
+
   if (filters.experience.length > 0) {
     result = result.filter((m) => filters.experience.includes(m.experienceType));
   }
@@ -120,8 +126,11 @@ export function filtersFromSearchParams(
       ? viewParam
       : "grid";
 
+  const schools = parseListParam(params.get("school"));
+
   return {
     query: params.get("q") ?? "",
+    schools,
     colleges,
     experience,
     degreeTypes,
@@ -140,6 +149,9 @@ export function filtersToSearchParams(
   const params = new URLSearchParams();
 
   if (filters.query.trim()) params.set("q", filters.query.trim());
+  if (filters.schools.length > 0) {
+    params.set("school", filters.schools.join(","));
+  }
   if (filters.colleges.length > 0) {
     params.set("college", filters.colleges.join(","));
   }
@@ -167,6 +179,7 @@ export function filtersToSearchParams(
 
 export function countActiveFilters(filters: ExploreFiltersState): number {
   let n = 0;
+  if (filters.schools.length > 0) n++;
   if (filters.colleges.length > 0) n++;
   if (filters.experience.length > 0) n++;
   if (filters.degreeTypes.length > 0) n++;

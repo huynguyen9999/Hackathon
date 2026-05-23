@@ -1,13 +1,20 @@
 "use client";
 
+import { useMemo } from "react";
 import type { Node } from "@xyflow/react";
 import type { iGauchoBackNodeData } from "@/lib/types";
 import type { DepartmentFacultyFile } from "@/lib/ucsb-faculty-types";
 import { FacultySidebarSection } from "@/components/FacultySidebarSection";
+import { PartnerResourcesSection } from "@/components/PartnerResourcesSection";
+import { getPartnerOffersForNode } from "@/lib/partners";
 
 export type SidebarProps = {
   selectedNode: Node<iGauchoBackNodeData> | null;
   departmentFaculty?: DepartmentFacultyFile | null;
+  onToggleCompleted?: (nodeId: string) => void;
+  onTogglePlanned?: (nodeId: string) => void;
+  onRunWhatIf?: (nodeId: string) => void;
+  onClearWhatIf?: () => void;
   onClose?: () => void;
   className?: string;
 };
@@ -15,9 +22,24 @@ export type SidebarProps = {
 export function Sidebar({
   selectedNode,
   departmentFaculty,
+  onToggleCompleted,
+  onTogglePlanned,
+  onRunWhatIf,
+  onClearWhatIf,
   onClose,
   className = "",
 }: SidebarProps) {
+  const partnerOffers = useMemo(() => {
+    if (!selectedNode) {
+      return { affiliates: [], sponsored: undefined };
+    }
+    const { data } = selectedNode;
+    if (data.nodeType !== "course" || !data.selfLearnable) {
+      return { affiliates: [], sponsored: undefined };
+    }
+    return getPartnerOffersForNode(data.label);
+  }, [selectedNode]);
+
   if (!selectedNode) {
     return (
       <aside
@@ -33,6 +55,10 @@ export function Sidebar({
   const { data } = selectedNode;
   const isCourse = data.nodeType === "course";
   const resources = data.resources ?? [];
+  const showPartnerSection =
+    isCourse &&
+    data.selfLearnable &&
+    (partnerOffers.affiliates.length > 0 || partnerOffers.sponsored !== undefined);
 
   return (
     <aside
@@ -104,6 +130,55 @@ export function Sidebar({
           </section>
         )}
 
+        {isCourse && (onToggleCompleted || onTogglePlanned || onRunWhatIf || onClearWhatIf) ? (
+          <section className="mb-6 rounded-lg border border-gaucho-blue/15 bg-gaucho-blue/5 px-3 py-3 dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark/40">
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold/80">
+              Schedule tools
+            </h3>
+            <div className="grid gap-2">
+              <button
+                type="button"
+                onClick={() => onToggleCompleted?.(selectedNode.id)}
+                className="rounded-lg border border-emerald-500/30 px-3 py-2 text-left text-xs font-semibold text-emerald-700 transition hover:bg-emerald-500/10 dark:text-emerald-300"
+              >
+                {data.scheduleStatus === "completed"
+                  ? "Undo completed"
+                  : "Mark completed"}
+              </button>
+              <button
+                type="button"
+                onClick={() => onTogglePlanned?.(selectedNode.id)}
+                className="rounded-lg border border-gaucho-gold/40 px-3 py-2 text-left text-xs font-semibold text-gaucho-blue transition hover:bg-gaucho-gold/10 dark:text-gaucho-gold-light"
+              >
+                {data.scheduleStatus === "planned"
+                  ? "Undo planned"
+                  : "Mark planned next quarter"}
+              </button>
+              <button
+                type="button"
+                onClick={() => onRunWhatIf?.(selectedNode.id)}
+                className="rounded-lg border border-orange-500/30 px-3 py-2 text-left text-xs font-semibold text-orange-700 transition hover:bg-orange-500/10 dark:text-orange-300"
+              >
+                What if I drop this?
+              </button>
+              {data.analysisState === "removed" ? (
+                <button
+                  type="button"
+                  onClick={onClearWhatIf}
+                  className="rounded-lg border border-slate-300 px-3 py-2 text-left text-xs font-semibold text-slate-600 transition hover:bg-slate-100 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
+                >
+                  Clear what-if
+                </button>
+              ) : null}
+            </div>
+            {data.analysisNote ? (
+              <p className="mt-3 rounded-lg bg-white px-3 py-2 text-xs leading-relaxed text-slate-700 dark:bg-slate-900/60 dark:text-slate-300">
+                {data.analysisNote}
+              </p>
+            ) : null}
+          </section>
+        ) : null}
+
         {departmentFaculty ? (
           <FacultySidebarSection
             faculty={departmentFaculty}
@@ -140,7 +215,14 @@ export function Sidebar({
           </section>
         )}
 
-        {resources.length === 0 && (
+        {showPartnerSection ? (
+          <PartnerResourcesSection
+            nodeLabel={data.label}
+            offers={partnerOffers}
+          />
+        ) : null}
+
+        {resources.length === 0 && !showPartnerSection && (
           <p className="text-xs text-slate-900 dark:text-slate-500">No resources listed yet.</p>
         )}
       </div>

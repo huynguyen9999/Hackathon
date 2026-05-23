@@ -1,0 +1,52 @@
+{
+  "schools": [
+    {
+      "short_name": "ucsb",
+      "name": "UC Santa Barbara",
+      "location": "Santa Barbara, CA",
+      "email_domains": ["ucsb.edu"],
+      "official_url": "https://www.ucsb.edu/",
+      "theme": { "primary": "#003660", "accent": "#FEBC11" },
+      "colleges": [
+        {
+          "slug": "engineering",
+          "label": "College of Engineering",
+          "subtitle": "Robert Mehrabian College of Engineering",
+          "catalogType": "coe",
+          "description": "5 BS majors · GEAR 2025-26 PDF · Interactive roadmaps"
+        },
+        {
+          "slug": "letters-science",
+          "label": "College of Letters & Science",
+          "subtitle": "80+ majors across 45+ departments",
+          "catalogType": "ls",
+          "description": "LASAR + DUELS · Prep, upper-division, electives for popular majors"
+        },
+        {
+          "slug": "creative-studies",
+          "label": "College of Creative Studies",
+          "subtitle": "9 selective majors · research from day one",
+          "catalogType": "ccs",
+          "description": "Major sheets, admission requirements, and 4-year plans for all CCS majors"
+        }
+      ]
+    },
+    {
+      "short_name": "ucla",
+      "name": "UC Los Angeles",
+      "location": "Los Angeles, CA",
+      "email_domains": ["ucla.edu"],
+      "official_url": "https://samueli.ucla.edu/",
+      "theme": { "primary": "#2774AE", "accent": "#FFD100" },
+      "colleges": [
+        {
+          "slug": "engineering",
+          "label": "Henry Samueli School of Engineering",
+          "subtitle": "7 departments · 10 BS programs",
+          "catalogType": "coe",
+          "description": "Samueli Announcement 2025-26 · Interactive CS roadmap"
+        }
+      ]
+    }
+  ]
+}

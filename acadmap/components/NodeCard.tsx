@@ -6,14 +6,27 @@ import type { RoadmapNodeData } from "@/lib/types";
 
 export type CourseNode = Node<RoadmapNodeData, "course">;
 
+const ANALYSIS_CLASSES: Record<string, string> = {
+  conflict: "border-red-500 shadow-red-500/30 ring-2 ring-red-500/40",
+  critical: "border-gaucho-gold shadow-gaucho-gold/40 ring-2 ring-gaucho-gold/50",
+  blocked: "border-orange-500 shadow-orange-500/25 ring-2 ring-orange-500/30",
+  bottleneck: "border-purple-500 shadow-purple-500/25 ring-2 ring-purple-500/30",
+  removed: "border-red-700 bg-red-50 dark:bg-red-950/40 shadow-red-500/30 ring-2 ring-red-700/40",
+};
+
 export function NodeCard({ data, selected }: NodeProps<CourseNode>) {
   const isFocused = data.focused || selected;
+  const analysisClass = data.analysisState
+    ? ANALYSIS_CLASSES[data.analysisState]
+    : null;
 
   return (
     <div
       className={[
         "relative min-w-[220px] max-w-[280px] rounded-xl border-2 bg-white dark:bg-slate-900/95 px-4 py-3 shadow-lg backdrop-blur-sm transition-all duration-200",
-        data.dimmed
+        analysisClass
+          ? analysisClass
+          : data.dimmed
           ? "border-slate-300/60 dark:border-slate-700/40 opacity-30 shadow-none grayscale"
           : isFocused
             ? "z-10 scale-[1.02] border-gaucho-gold shadow-2xl shadow-gaucho-gold/40 ring-2 ring-gaucho-gold/50"
@@ -30,9 +43,23 @@ export function NodeCard({ data, selected }: NodeProps<CourseNode>) {
         <span className="font-mono text-xs font-semibold tracking-wide text-gaucho-blue dark:text-gaucho-gold">
           {data.label}
         </span>
-        <span className="shrink-0 rounded-full bg-gaucho-blue-light/20 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold-light ring-1 ring-gaucho-blue-light/30">
-          {data.units} {data.units === 1 ? "unit" : "units"}
-        </span>
+        <div className="flex shrink-0 flex-col items-end gap-1">
+          <span className="rounded-full bg-gaucho-blue-light/20 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold-light ring-1 ring-gaucho-blue-light/30">
+            {data.units} {data.units === 1 ? "unit" : "units"}
+          </span>
+          {data.scheduleStatus ? (
+            <span
+              className={[
+                "rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider ring-1",
+                data.scheduleStatus === "completed"
+                  ? "bg-emerald-500/15 text-emerald-700 ring-emerald-500/30 dark:text-emerald-300"
+                  : "bg-gaucho-gold/20 text-gaucho-blue ring-gaucho-gold/30 dark:text-gaucho-gold-light",
+              ].join(" ")}
+            >
+              {data.scheduleStatus}
+            </span>
+          ) : null}
+        </div>
       </div>
 
       <h3 className="mb-2 text-sm font-semibold leading-snug text-slate-900 dark:text-slate-50">
@@ -64,6 +91,12 @@ export function NodeCard({ data, selected }: NodeProps<CourseNode>) {
           <span className="font-medium">Self-learnable</span>
         </div>
       )}
+
+      {data.analysisNote ? (
+        <p className="mt-2 rounded-lg bg-slate-100 px-2 py-1.5 text-[11px] leading-snug text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+          {data.analysisNote}
+        </p>
+      ) : null}
 
       <Handle
         type="source"
