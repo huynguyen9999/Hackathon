@@ -166,8 +166,10 @@ function buildSeed(
 
 function main() {
   const limitArg = process.argv.find((a) => a.startsWith("--limit="));
+  const offsetArg = process.argv.find((a) => a.startsWith("--offset="));
   const slugArg = process.argv.find((a) => a.startsWith("--slug="));
   const limit = limitArg ? Number(limitArg.split("=")[1]) : 20;
+  const offset = offsetArg ? Number(offsetArg.split("=")[1]) : 0;
   const onlySlug = slugArg?.split("=")[1];
   const force = process.argv.includes("--force");
 
@@ -177,7 +179,7 @@ function main() {
 
   const targets = onlySlug
     ? catalog.majors.filter((m) => m.slug === onlySlug)
-    : catalog.majors.slice(0, limit);
+    : catalog.majors.slice(offset, offset + limit);
 
   let written = 0;
   let skipped = 0;

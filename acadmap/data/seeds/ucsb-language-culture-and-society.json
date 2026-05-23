@@ -1,0 +1,163 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Language, Culture, and Society",
+    "slug": "language-culture-and-society",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Language, Culture, and Society (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BALCS"
+  },
+  "nodes": [
+    {
+      "id": "ling-20",
+      "node_type": "course",
+      "label": "LING 20",
+      "title": "Language and Linguistics",
+      "description": "Language and Linguistics — part of the Language, Culture, and Society prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "ling-130",
+      "node_type": "course",
+      "label": "LING 130",
+      "title": "LING 130",
+      "description": "Required or recommended course for the Language, Culture, and Society major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "ling-150",
+      "node_type": "course",
+      "label": "LING 150",
+      "title": "LING 150",
+      "description": "Required or recommended course for the Language, Culture, and Society major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "anth-120",
+      "node_type": "course",
+      "label": "ANTH 120",
+      "title": "ANTH 120",
+      "description": "Required or recommended course for the Language, Culture, and Society major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "soc-130",
+      "node_type": "course",
+      "label": "SOC 130",
+      "title": "SOC 130",
+      "description": "Required or recommended course for the Language, Culture, and Society major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-education",
+      "node_type": "career",
+      "label": "Education",
+      "title": "Education",
+      "description": "Career path for Language, Culture, and Society graduates: Education.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-speech-pathology-grad",
+      "node_type": "career",
+      "label": "Speech pathology",
+      "title": "Speech pathology (grad)",
+      "description": "Career path for Language, Culture, and Society graduates: Speech pathology (grad).",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "career-ux-research",
+      "node_type": "career",
+      "label": "UX research",
+      "title": "UX research",
+      "description": "Career path for Language, Culture, and Society graduates: UX research.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 520
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for Language, Culture, and Society graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "ling-20",
+      "target_id": "ling-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "ling-130",
+      "target_id": "ling-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "ling-150",
+      "target_id": "anth-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "anth-120",
+      "target_id": "soc-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "soc-130",
+      "target_id": "career-education",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "ling-150",
+      "target_id": "career-speech-pathology-grad",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "soc-130",
+      "target_id": "career-ux-research",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "ling-150",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    }
+  ]
+}

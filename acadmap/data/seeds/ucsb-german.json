@@ -1,0 +1,180 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "German",
+    "slug": "german",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S German (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAGERM"
+  },
+  "nodes": [
+    {
+      "id": "ger-1",
+      "node_type": "course",
+      "label": "GER 1",
+      "title": "German language sequence",
+      "description": "Series through GER 6",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "ger-100",
+      "node_type": "course",
+      "label": "GER 100",
+      "title": "Advanced German",
+      "description": "Advanced German — part of the German prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "ger-120",
+      "node_type": "course",
+      "label": "GER 120",
+      "title": "GER 120",
+      "description": "Required or recommended course for the German major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "ger-140",
+      "node_type": "course",
+      "label": "GER 140",
+      "title": "GER 140",
+      "description": "Required or recommended course for the German major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "ger-160",
+      "node_type": "course",
+      "label": "GER 160",
+      "title": "GER 160",
+      "description": "Required or recommended course for the German major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "ger-180",
+      "node_type": "course",
+      "label": "GER 180",
+      "title": "GER 180",
+      "description": "Required or recommended course for the German major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for German graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "career-international-business",
+      "node_type": "career",
+      "label": "International business",
+      "title": "International business",
+      "description": "Career path for German graduates: International business.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for German graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 520
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for German graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "ger-1",
+      "target_id": "ger-100",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "ger-100",
+      "target_id": "ger-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "ger-120",
+      "target_id": "ger-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "ger-140",
+      "target_id": "ger-160",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "ger-160",
+      "target_id": "ger-180",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "ger-180",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "ger-140",
+      "target_id": "career-international-business",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "ger-180",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "ger-140",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    }
+  ]
+}

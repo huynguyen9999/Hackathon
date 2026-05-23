@@ -1,0 +1,180 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "French",
+    "slug": "french",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S French (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAFR"
+  },
+  "nodes": [
+    {
+      "id": "fr-1",
+      "node_type": "course",
+      "label": "FR 1",
+      "title": "French language sequence",
+      "description": "Series through FR 6",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "fr-100",
+      "node_type": "course",
+      "label": "FR 100",
+      "title": "Advanced French",
+      "description": "Advanced French — part of the French prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "fr-120",
+      "node_type": "course",
+      "label": "FR 120",
+      "title": "FR 120",
+      "description": "Required or recommended course for the French major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "fr-140",
+      "node_type": "course",
+      "label": "FR 140",
+      "title": "FR 140",
+      "description": "Required or recommended course for the French major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "fr-160",
+      "node_type": "course",
+      "label": "FR 160",
+      "title": "FR 160",
+      "description": "Required or recommended course for the French major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "fr-180",
+      "node_type": "course",
+      "label": "FR 180",
+      "title": "FR 180",
+      "description": "Required or recommended course for the French major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for French graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "career-international-relations",
+      "node_type": "career",
+      "label": "International relations",
+      "title": "International relations",
+      "description": "Career path for French graduates: International relations.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for French graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 520
+    },
+    {
+      "id": "career-publishing",
+      "node_type": "career",
+      "label": "Publishing",
+      "title": "Publishing",
+      "description": "Career path for French graduates: Publishing.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "fr-1",
+      "target_id": "fr-100",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "fr-100",
+      "target_id": "fr-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "fr-120",
+      "target_id": "fr-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "fr-140",
+      "target_id": "fr-160",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "fr-160",
+      "target_id": "fr-180",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "fr-180",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "fr-140",
+      "target_id": "career-international-relations",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "fr-180",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "fr-140",
+      "target_id": "career-publishing",
+      "edge_type": "leads_to"
+    }
+  ]
+}

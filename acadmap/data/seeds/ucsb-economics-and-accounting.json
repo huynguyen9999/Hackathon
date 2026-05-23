@@ -1,0 +1,316 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Economics and Accounting",
+    "slug": "economics-and-accounting",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Economics and Accounting (2025-2026)",
+    "source_url": "https://econ.ucsb.edu/sites/default/files/2025-10/Economics%20%26%20Accounting%20Major%20%282025%29.pdf"
+  },
+  "nodes": [
+    {
+      "id": "econ-1",
+      "node_type": "course",
+      "label": "ECON 1",
+      "title": "ECON 1",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "econ-2",
+      "node_type": "course",
+      "label": "ECON 2",
+      "title": "ECON 2",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "econ-3a",
+      "node_type": "course",
+      "label": "ECON 3A",
+      "title": "ECON 3A",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "econ-3b",
+      "node_type": "course",
+      "label": "ECON 3B",
+      "title": "ECON 3B",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "econ-10a",
+      "node_type": "course",
+      "label": "ECON 10A",
+      "title": "ECON 10A",
+      "description": "Must be taken at UCSB",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "econ-5",
+      "node_type": "course",
+      "label": "ECON 5",
+      "title": "ECON 5",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "math-2a",
+      "node_type": "course",
+      "label": "MATH 2A",
+      "title": "MATH 2A",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "math-2b",
+      "node_type": "course",
+      "label": "MATH 2B",
+      "title": "MATH 2B",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "econ-100b",
+      "node_type": "course",
+      "label": "ECON 100B",
+      "title": "ECON 100B",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "econ-101",
+      "node_type": "course",
+      "label": "ECON 101",
+      "title": "ECON 101",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 80
+    },
+    {
+      "id": "econ-134a",
+      "node_type": "course",
+      "label": "ECON 134A",
+      "title": "ECON 134A",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 80
+    },
+    {
+      "id": "econ-140a",
+      "node_type": "course",
+      "label": "ECON 140A",
+      "title": "ECON 140A",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 3380,
+      "position_y": 80
+    },
+    {
+      "id": "econ-118",
+      "node_type": "course",
+      "label": "ECON 118",
+      "title": "ECON 118",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 3680,
+      "position_y": 80
+    },
+    {
+      "id": "econ-136a",
+      "node_type": "course",
+      "label": "ECON 136A",
+      "title": "ECON 136A",
+      "description": "Required or recommended course for the Economics and Accounting major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 3980,
+      "position_y": 80
+    },
+    {
+      "id": "career-accounting",
+      "node_type": "career",
+      "label": "Accounting",
+      "title": "Accounting",
+      "description": "Career path for Economics and Accounting graduates: Accounting.",
+      "self_learnable": false,
+      "position_x": 4280,
+      "position_y": 80
+    },
+    {
+      "id": "career-finance",
+      "node_type": "career",
+      "label": "Finance",
+      "title": "Finance",
+      "description": "Career path for Economics and Accounting graduates: Finance.",
+      "self_learnable": false,
+      "position_x": 4280,
+      "position_y": 300
+    },
+    {
+      "id": "career-cpa-track-grad",
+      "node_type": "career",
+      "label": "CPA track",
+      "title": "CPA track (grad)",
+      "description": "Career path for Economics and Accounting graduates: CPA track (grad).",
+      "self_learnable": false,
+      "position_x": 4280,
+      "position_y": 520
+    },
+    {
+      "id": "career-corporate-finance",
+      "node_type": "career",
+      "label": "Corporate finance",
+      "title": "Corporate finance",
+      "description": "Career path for Economics and Accounting graduates: Corporate finance.",
+      "self_learnable": false,
+      "position_x": 4280,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "econ-1",
+      "target_id": "econ-2",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "econ-2",
+      "target_id": "econ-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "econ-3a",
+      "target_id": "econ-3b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "econ-3b",
+      "target_id": "econ-10a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "econ-10a",
+      "target_id": "econ-5",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "econ-5",
+      "target_id": "math-2a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "math-2a",
+      "target_id": "math-2b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "math-2b",
+      "target_id": "econ-100b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "econ-100b",
+      "target_id": "econ-101",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e10",
+      "source_id": "econ-101",
+      "target_id": "econ-134a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e11",
+      "source_id": "econ-134a",
+      "target_id": "econ-140a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e12",
+      "source_id": "econ-140a",
+      "target_id": "econ-118",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e13",
+      "source_id": "econ-118",
+      "target_id": "econ-136a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "econ-136a",
+      "target_id": "career-accounting",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "econ-140a",
+      "target_id": "career-finance",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "econ-136a",
+      "target_id": "career-cpa-track-grad",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "econ-140a",
+      "target_id": "career-corporate-finance",
+      "edge_type": "leads_to"
+    }
+  ]
+}

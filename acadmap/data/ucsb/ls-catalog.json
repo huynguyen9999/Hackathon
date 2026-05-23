@@ -865,7 +865,7 @@
       "department_url": "https://www.econ.ucsb.edu/",
       "curriculum_url": "https://econ.ucsb.edu/programs/undergraduate/majors",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "ECON 1 — Principles of Microeconomics",
         "ECON 2 — Principles of Macroeconomics",
@@ -896,7 +896,7 @@
         "Graduate study"
       ],
       "notes": "ECON 5 and ECON 10A must be taken at UCSB.",
-      "requirements_level": "sheet",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#economics",
       "catalog_program_code": "BAECON",
       "selective": true,
@@ -912,7 +912,7 @@
       "department_url": "https://www.econ.ucsb.edu/",
       "curriculum_url": "https://econ.ucsb.edu/programs/undergraduate/majors",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "ECON 1 — Microeconomics",
         "ECON 2 — Macroeconomics",
@@ -939,7 +939,7 @@
         "Corporate finance",
         "Consulting"
       ],
-      "requirements_level": "sheet",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#economics-and-accounting",
       "catalog_program_code": "BAECAC",
       "selective": true,
@@ -955,7 +955,7 @@
       "department_url": "https://www.english.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAENG",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "Lower-division English literature surveys",
         "Writing 50 or equivalent (may overlap GE)",
@@ -981,7 +981,7 @@
         "Technical writing",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#english",
       "catalog_program_code": "BAENG",
       "detail_available": true
@@ -994,7 +994,7 @@
       "department_url": "https://www.es.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAES",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "ENV S 1 — Introduction to Environmental Studies",
         "CHEM 1A or EARTH 2",
@@ -1021,7 +1021,7 @@
         "Law",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#environmental-studies",
       "catalog_program_code": "BAES",
       "detail_available": true
@@ -1034,7 +1034,7 @@
       "department_url": "https://www.femst.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAFEM",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "FEMST 1 — Introduction to Feminist Studies",
         "Lower-division FEMST courses",
@@ -1060,7 +1060,7 @@
         "Nonprofit",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#feminist-studies",
       "catalog_program_code": "BAFEM",
       "detail_available": true
@@ -1073,7 +1073,7 @@
       "department_url": "https://www.filmandmedia.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAFMS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "FAMST 1 — Introduction to Film Studies",
         "FAMST lower-division surveys",
@@ -1099,7 +1099,7 @@
         "Journalism",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#film-and-media-studies",
       "catalog_program_code": "BAFMS",
       "detail_available": true
@@ -1157,7 +1157,7 @@
       "department_url": "https://www.frit.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAFR",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "FR 1-6 — French language sequence",
         "Lower-division French literature/culture",
@@ -1183,7 +1183,7 @@
         "Publishing",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#french",
       "catalog_program_code": "BAFR",
       "detail_available": true
@@ -1196,7 +1196,7 @@
       "department_url": "https://www.geog.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAGEO",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "GEOG 5 — Human Geography",
         "GEOG 12 — Maps and Spatial Reasoning",
@@ -1222,7 +1222,7 @@
         "Remote sensing",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#geography",
       "catalog_program_code": "BAGEO",
       "detail_available": true
@@ -1235,7 +1235,7 @@
       "department_url": "https://www.gss.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAGERM",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "GER 1-6 — German language sequence",
         "Lower-division German culture/literature",
@@ -1261,7 +1261,7 @@
         "Graduate study",
         "EU policy"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#german",
       "catalog_program_code": "BAGERM",
       "detail_available": true
@@ -1274,7 +1274,7 @@
       "department_url": "https://www.global.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAGS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "GLOBL 1 — Introduction to Global Studies",
         "Foreign language study",
@@ -1300,7 +1300,7 @@
         "Law",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#global-studies",
       "catalog_program_code": "BAGS",
       "detail_available": true
@@ -1313,7 +1313,7 @@
       "department_url": "https://www.history.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAHIS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "HIST 4A-B-C or regional surveys",
         "Lower-division HIST electives",
@@ -1339,7 +1339,7 @@
         "Government",
         "Journalism"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#history",
       "catalog_program_code": "BAHIS",
       "detail_available": true
@@ -1352,7 +1352,7 @@
       "department_url": "https://www.haa.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAHAA",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "HAA lower-division surveys",
         "Art history gateway courses",
@@ -1378,7 +1378,7 @@
         "Graduate study",
         "Publishing"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#history-of-art-and-architecture",
       "catalog_program_code": "BAHAA",
       "detail_available": true
@@ -1391,7 +1391,7 @@
       "department_url": "https://www.history.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAHPLG",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "HIST lower-division surveys",
         "POL S 1 or introductory policy course",
@@ -1417,7 +1417,7 @@
         "Nonprofit",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#history-of-policy-law-and-governance",
       "catalog_program_code": "BAHPLG",
       "detail_available": true
@@ -1430,7 +1430,7 @@
       "department_url": "https://www.geog.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSHSP",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B",
         "MATH 3A-B",
@@ -1457,7 +1457,7 @@
         "Consulting",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#hydrologic-sciences-and-policy",
       "catalog_program_code": "BSHSP",
       "detail_available": true
@@ -1470,7 +1470,7 @@
       "department_url": "https://www.frit.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAITST",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "ITAL 1-6 — Italian language sequence",
         "Lower-division Italian culture",
@@ -1496,7 +1496,7 @@
         "Arts",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#italian-studies",
       "catalog_program_code": "BAITST",
       "detail_available": true
@@ -1509,7 +1509,7 @@
       "department_url": "https://www.ealc.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAJAPN",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "JAPAN 1-6 — Japanese language sequence",
         "EACS lower-division survey",
@@ -1535,7 +1535,7 @@
         "Graduate study",
         "Tech industry"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#japanese",
       "catalog_program_code": "BAJAPN",
       "detail_available": true
@@ -1548,7 +1548,7 @@
       "department_url": "https://www.linguistics.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BALCS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "LING 20 — Language and Linguistics",
         "Foreign language study",
@@ -1574,7 +1574,7 @@
         "Translation",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#language-culture-and-society",
       "catalog_program_code": "BALCS",
       "detail_available": true
@@ -1587,7 +1587,7 @@
       "department_url": "https://www.spanport.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BALAIS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "SPAN or PORT language sequence",
         "Lower-division LAIS surveys",
@@ -1613,7 +1613,7 @@
         "Teaching",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#latin-american-and-iberian-studies",
       "catalog_program_code": "BALAIS",
       "detail_available": true
@@ -1626,7 +1626,7 @@
       "department_url": "https://www.linguistics.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BALING",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "LING 20 — Language and Linguistics",
         "LING 50 — Phonetics",
@@ -1652,7 +1652,7 @@
         "Graduate study",
         "UX research"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#linguistics",
       "catalog_program_code": "BALING",
       "detail_available": true

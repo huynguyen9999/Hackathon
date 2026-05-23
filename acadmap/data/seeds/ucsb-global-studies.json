@@ -1,0 +1,163 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Global Studies",
+    "slug": "global-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Global Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAGS"
+  },
+  "nodes": [
+    {
+      "id": "globl-1",
+      "node_type": "course",
+      "label": "GLOBL 1",
+      "title": "Introduction to Global Studies",
+      "description": "Introduction to Global Studies — part of the Global Studies prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "globl-130",
+      "node_type": "course",
+      "label": "GLOBL 130",
+      "title": "GLOBL 130",
+      "description": "Required or recommended course for the Global Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "globl-150",
+      "node_type": "course",
+      "label": "GLOBL 150",
+      "title": "GLOBL 150",
+      "description": "Required or recommended course for the Global Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "globl-170",
+      "node_type": "course",
+      "label": "GLOBL 170",
+      "title": "GLOBL 170",
+      "description": "Required or recommended course for the Global Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "globl-190",
+      "node_type": "course",
+      "label": "GLOBL 190",
+      "title": "GLOBL 190",
+      "description": "Required or recommended course for the Global Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-international-ngos",
+      "node_type": "career",
+      "label": "International NGOs",
+      "title": "International NGOs",
+      "description": "Career path for Global Studies graduates: International NGOs.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-diplomacy",
+      "node_type": "career",
+      "label": "Diplomacy",
+      "title": "Diplomacy",
+      "description": "Career path for Global Studies graduates: Diplomacy.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "career-development",
+      "node_type": "career",
+      "label": "Development",
+      "title": "Development",
+      "description": "Career path for Global Studies graduates: Development.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 520
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for Global Studies graduates: Law.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "globl-1",
+      "target_id": "globl-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "globl-130",
+      "target_id": "globl-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "globl-150",
+      "target_id": "globl-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "globl-170",
+      "target_id": "globl-190",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "globl-190",
+      "target_id": "career-international-ngos",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "globl-150",
+      "target_id": "career-diplomacy",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "globl-190",
+      "target_id": "career-development",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "globl-150",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Economics",
+    "slug": "economics",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Economics (2025-2026)",
+    "source_url": "https://econ.ucsb.edu/sites/default/files/2025-10/Economics%20Major%20%282025%29.pdf"
+  },
+  "nodes": [
+    {
+      "id": "econ-1",
+      "node_type": "course",
+      "label": "ECON 1",
+      "title": "ECON 1",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "econ-2",
+      "node_type": "course",
+      "label": "ECON 2",
+      "title": "ECON 2",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "econ-10a",
+      "node_type": "course",
+      "label": "ECON 10A",
+      "title": "ECON 10A",
+      "description": "Must be taken at UCSB",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "econ-5",
+      "node_type": "course",
+      "label": "ECON 5",
+      "title": "ECON 5",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "math-2a",
+      "node_type": "course",
+      "label": "MATH 2A",
+      "title": "MATH 2A",
+      "description": "Full calc sequence 2A-B, 3A-B, or 34A-B",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "math-2b",
+      "node_type": "course",
+      "label": "MATH 2B",
+      "title": "MATH 2B",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "econ-100b",
+      "node_type": "course",
+      "label": "ECON 100B",
+      "title": "ECON 100B",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "econ-101",
+      "node_type": "course",
+      "label": "ECON 101",
+      "title": "ECON 101",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "econ-140a",
+      "node_type": "course",
+      "label": "ECON 140A",
+      "title": "ECON 140A",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "econ-100c",
+      "node_type": "course",
+      "label": "ECON 100C",
+      "title": "ECON 100C",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 80
+    },
+    {
+      "id": "econ-106",
+      "node_type": "course",
+      "label": "ECON 106",
+      "title": "ECON 106",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 80
+    },
+    {
+      "id": "econ-115",
+      "node_type": "course",
+      "label": "ECON 115",
+      "title": "ECON 115",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 3380,
+      "position_y": 80
+    },
+    {
+      "id": "econ-130",
+      "node_type": "course",
+      "label": "ECON 130",
+      "title": "ECON 130",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 3680,
+      "position_y": 80
+    },
+    {
+      "id": "econ-140b",
+      "node_type": "course",
+      "label": "ECON 140B",
+      "title": "ECON 140B",
+      "description": "Required or recommended course for the Economics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 3980,
+      "position_y": 80
+    },
+    {
+      "id": "career-financial-analyst",
+      "node_type": "career",
+      "label": "Financial analyst",
+      "title": "Financial analyst",
+      "description": "Career path for Economics graduates: Financial analyst.",
+      "self_learnable": false,
+      "position_x": 4280,
+      "position_y": 80
+    },
+    {
+      "id": "career-consulting",
+      "node_type": "career",
+      "label": "Consulting",
+      "title": "Consulting",
+      "description": "Career path for Economics graduates: Consulting.",
+      "self_learnable": false,
+      "position_x": 4280,
+      "position_y": 300
+    },
+    {
+      "id": "career-data-analytics",
+      "node_type": "career",
+      "label": "Data analytics",
+      "title": "Data analytics",
+      "description": "Career path for Economics graduates: Data analytics.",
+      "self_learnable": false,
+      "position_x": 4280,
+      "position_y": 520
+    },
+    {
+      "id": "career-public-policy",
+      "node_type": "career",
+      "label": "Public policy",
+      "title": "Public policy",
+      "description": "Career path for Economics graduates: Public policy.",
+      "self_learnable": false,
+      "position_x": 4280,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "econ-1",
+      "target_id": "econ-2",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "econ-2",
+      "target_id": "econ-10a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "econ-10a",
+      "target_id": "econ-5",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "econ-5",
+      "target_id": "math-2a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "math-2a",
+      "target_id": "math-2b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "math-2b",
+      "target_id": "econ-100b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "econ-100b",
+      "target_id": "econ-101",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "econ-101",
+      "target_id": "econ-140a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "econ-140a",
+      "target_id": "econ-100c",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e10",
+      "source_id": "econ-100c",
+      "target_id": "econ-106",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e11",
+      "source_id": "econ-106",
+      "target_id": "econ-115",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e12",
+      "source_id": "econ-115",
+      "target_id": "econ-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e13",
+      "source_id": "econ-130",
+      "target_id": "econ-140b",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "econ-140b",
+      "target_id": "career-financial-analyst",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "econ-115",
+      "target_id": "career-consulting",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "econ-140b",
+      "target_id": "career-data-analytics",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "econ-115",
+      "target_id": "career-public-policy",
+      "edge_type": "leads_to"
+    }
+  ]
+}

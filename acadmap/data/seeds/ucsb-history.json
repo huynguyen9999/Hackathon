@@ -1,0 +1,180 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "History",
+    "slug": "history",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S History (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAHIS"
+  },
+  "nodes": [
+    {
+      "id": "hist-4a",
+      "node_type": "course",
+      "label": "HIST 4A",
+      "title": "HIST 4A",
+      "description": "Required or recommended course for the History major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "hist-201",
+      "node_type": "course",
+      "label": "HIST 201",
+      "title": "HIST 201",
+      "description": "Required or recommended course for the History major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "hist-105",
+      "node_type": "course",
+      "label": "HIST 105",
+      "title": "HIST 105",
+      "description": "Required or recommended course for the History major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "hist-121",
+      "node_type": "course",
+      "label": "HIST 121",
+      "title": "HIST 121",
+      "description": "Required or recommended course for the History major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "hist-140",
+      "node_type": "course",
+      "label": "HIST 140",
+      "title": "HIST 140",
+      "description": "Required or recommended course for the History major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "hist-180",
+      "node_type": "course",
+      "label": "HIST 180",
+      "title": "HIST 180",
+      "description": "Required or recommended course for the History major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for History graduates: Law.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "career-education",
+      "node_type": "career",
+      "label": "Education",
+      "title": "Education",
+      "description": "Career path for History graduates: Education.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "career-public-history",
+      "node_type": "career",
+      "label": "Public history",
+      "title": "Public history",
+      "description": "Career path for History graduates: Public history.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 520
+    },
+    {
+      "id": "career-government",
+      "node_type": "career",
+      "label": "Government",
+      "title": "Government",
+      "description": "Career path for History graduates: Government.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "hist-4a",
+      "target_id": "hist-201",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "hist-201",
+      "target_id": "hist-105",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "hist-105",
+      "target_id": "hist-121",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "hist-121",
+      "target_id": "hist-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "hist-140",
+      "target_id": "hist-180",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "hist-180",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "hist-121",
+      "target_id": "career-education",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "hist-180",
+      "target_id": "career-public-history",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "hist-121",
+      "target_id": "career-government",
+      "edge_type": "leads_to"
+    }
+  ]
+}

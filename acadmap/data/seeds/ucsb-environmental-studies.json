@@ -1,0 +1,146 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Environmental Studies",
+    "slug": "environmental-studies",
+    "degree_type": "BA/BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Environmental Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAES"
+  },
+  "nodes": [
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Environmental Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "earth-2",
+      "node_type": "course",
+      "label": "EARTH 2",
+      "title": "EARTH 2",
+      "description": "Required or recommended course for the Environmental Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "econ-1",
+      "node_type": "course",
+      "label": "ECON 1",
+      "title": "ECON 1",
+      "description": "Required or recommended course for the Environmental Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "geog-5",
+      "node_type": "course",
+      "label": "GEOG 5",
+      "title": "GEOG 5",
+      "description": "Required or recommended course for the Environmental Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "career-environmental-policy",
+      "node_type": "career",
+      "label": "Environmental policy",
+      "title": "Environmental policy",
+      "description": "Career path for Environmental Studies graduates: Environmental policy.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-conservation",
+      "node_type": "career",
+      "label": "Conservation",
+      "title": "Conservation",
+      "description": "Career path for Environmental Studies graduates: Conservation.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 300
+    },
+    {
+      "id": "career-sustainability",
+      "node_type": "career",
+      "label": "Sustainability",
+      "title": "Sustainability",
+      "description": "Career path for Environmental Studies graduates: Sustainability.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 520
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for Environmental Studies graduates: Law.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chem-1a",
+      "target_id": "earth-2",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "earth-2",
+      "target_id": "econ-1",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "econ-1",
+      "target_id": "geog-5",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "geog-5",
+      "target_id": "career-environmental-policy",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "earth-2",
+      "target_id": "career-conservation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "geog-5",
+      "target_id": "career-sustainability",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "earth-2",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    }
+  ]
+}

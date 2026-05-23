@@ -1,0 +1,163 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Film and Media Studies",
+    "slug": "film-and-media-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Film and Media Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAFMS"
+  },
+  "nodes": [
+    {
+      "id": "famst-1",
+      "node_type": "course",
+      "label": "FAMST 1",
+      "title": "Introduction to Film Studies",
+      "description": "Introduction to Film Studies — part of the Film and Media Studies prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "famst-110",
+      "node_type": "course",
+      "label": "FAMST 110",
+      "title": "FAMST 110",
+      "description": "Required or recommended course for the Film and Media Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "famst-130",
+      "node_type": "course",
+      "label": "FAMST 130",
+      "title": "FAMST 130",
+      "description": "Required or recommended course for the Film and Media Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "famst-150",
+      "node_type": "course",
+      "label": "FAMST 150",
+      "title": "FAMST 150",
+      "description": "Required or recommended course for the Film and Media Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "famst-170",
+      "node_type": "course",
+      "label": "FAMST 170",
+      "title": "FAMST 170",
+      "description": "Required or recommended course for the Film and Media Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-film-tv-production",
+      "node_type": "career",
+      "label": "Film/TV production",
+      "title": "Film/TV production",
+      "description": "Career path for Film and Media Studies graduates: Film/TV production.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-media-analysis",
+      "node_type": "career",
+      "label": "Media analysis",
+      "title": "Media analysis",
+      "description": "Career path for Film and Media Studies graduates: Media analysis.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "career-marketing",
+      "node_type": "career",
+      "label": "Marketing",
+      "title": "Marketing",
+      "description": "Career path for Film and Media Studies graduates: Marketing.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 520
+    },
+    {
+      "id": "career-journalism",
+      "node_type": "career",
+      "label": "Journalism",
+      "title": "Journalism",
+      "description": "Career path for Film and Media Studies graduates: Journalism.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "famst-1",
+      "target_id": "famst-110",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "famst-110",
+      "target_id": "famst-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "famst-130",
+      "target_id": "famst-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "famst-150",
+      "target_id": "famst-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "famst-170",
+      "target_id": "career-film-tv-production",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "famst-130",
+      "target_id": "career-media-analysis",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "famst-170",
+      "target_id": "career-marketing",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "famst-130",
+      "target_id": "career-journalism",
+      "edge_type": "leads_to"
+    }
+  ]
+}

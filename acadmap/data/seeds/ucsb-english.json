@@ -1,0 +1,163 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "English",
+    "slug": "english",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S English (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAENG"
+  },
+  "nodes": [
+    {
+      "id": "eng-10",
+      "node_type": "course",
+      "label": "ENG 10",
+      "title": "ENG 10",
+      "description": "Required or recommended course for the English major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "eng-101",
+      "node_type": "course",
+      "label": "ENG 101",
+      "title": "ENG 101",
+      "description": "Required or recommended course for the English major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "eng-115",
+      "node_type": "course",
+      "label": "ENG 115",
+      "title": "ENG 115",
+      "description": "Required or recommended course for the English major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "eng-130",
+      "node_type": "course",
+      "label": "ENG 130",
+      "title": "ENG 130",
+      "description": "Required or recommended course for the English major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "eng-150",
+      "node_type": "course",
+      "label": "ENG 150",
+      "title": "ENG 150",
+      "description": "Required or recommended course for the English major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-publishing",
+      "node_type": "career",
+      "label": "Publishing",
+      "title": "Publishing",
+      "description": "Career path for English graduates: Publishing.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for English graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for English graduates: Law.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 520
+    },
+    {
+      "id": "career-technical-writing",
+      "node_type": "career",
+      "label": "Technical writing",
+      "title": "Technical writing",
+      "description": "Career path for English graduates: Technical writing.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "eng-10",
+      "target_id": "eng-101",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "eng-101",
+      "target_id": "eng-115",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "eng-115",
+      "target_id": "eng-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "eng-130",
+      "target_id": "eng-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "eng-150",
+      "target_id": "career-publishing",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "eng-115",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "eng-150",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "eng-115",
+      "target_id": "career-technical-writing",
+      "edge_type": "leads_to"
+    }
+  ]
+}

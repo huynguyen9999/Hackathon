@@ -1,0 +1,180 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Geography",
+    "slug": "geography",
+    "degree_type": "BA/BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Geography (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAGEO"
+  },
+  "nodes": [
+    {
+      "id": "geog-5",
+      "node_type": "course",
+      "label": "GEOG 5",
+      "title": "Human Geography",
+      "description": "Human Geography — part of the Geography prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "geog-12",
+      "node_type": "course",
+      "label": "GEOG 12",
+      "title": "Maps and Spatial Reasoning",
+      "description": "Maps and Spatial Reasoning — part of the Geography prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "geog-130",
+      "node_type": "course",
+      "label": "GEOG 130",
+      "title": "GEOG 130",
+      "description": "Required or recommended course for the Geography major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "geog-150",
+      "node_type": "course",
+      "label": "GEOG 150",
+      "title": "GEOG 150",
+      "description": "Required or recommended course for the Geography major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "geog-170",
+      "node_type": "course",
+      "label": "GEOG 170",
+      "title": "GEOG 170",
+      "description": "Required or recommended course for the Geography major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "geog-190",
+      "node_type": "course",
+      "label": "GEOG 190",
+      "title": "GEOG 190",
+      "description": "Required or recommended course for the Geography major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-gis-analyst",
+      "node_type": "career",
+      "label": "GIS analyst",
+      "title": "GIS analyst",
+      "description": "Career path for Geography graduates: GIS analyst.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "career-urban-planning",
+      "node_type": "career",
+      "label": "Urban planning",
+      "title": "Urban planning",
+      "description": "Career path for Geography graduates: Urban planning.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "career-environmental-consulting",
+      "node_type": "career",
+      "label": "Environmental consulting",
+      "title": "Environmental consulting",
+      "description": "Career path for Geography graduates: Environmental consulting.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 520
+    },
+    {
+      "id": "career-remote-sensing",
+      "node_type": "career",
+      "label": "Remote sensing",
+      "title": "Remote sensing",
+      "description": "Career path for Geography graduates: Remote sensing.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "geog-5",
+      "target_id": "geog-12",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "geog-12",
+      "target_id": "geog-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "geog-130",
+      "target_id": "geog-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "geog-150",
+      "target_id": "geog-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "geog-170",
+      "target_id": "geog-190",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "geog-190",
+      "target_id": "career-gis-analyst",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "geog-150",
+      "target_id": "career-urban-planning",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "geog-190",
+      "target_id": "career-environmental-consulting",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "geog-150",
+      "target_id": "career-remote-sensing",
+      "edge_type": "leads_to"
+    }
+  ]
+}

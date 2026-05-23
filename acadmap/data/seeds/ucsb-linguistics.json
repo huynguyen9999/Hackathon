@@ -1,0 +1,214 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Linguistics",
+    "slug": "linguistics",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Linguistics (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BALING"
+  },
+  "nodes": [
+    {
+      "id": "ling-20",
+      "node_type": "course",
+      "label": "LING 20",
+      "title": "Language and Linguistics",
+      "description": "Language and Linguistics — part of the Linguistics prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "ling-50",
+      "node_type": "course",
+      "label": "LING 50",
+      "title": "Phonetics",
+      "description": "Phonetics — part of the Linguistics prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "ling-106",
+      "node_type": "course",
+      "label": "LING 106",
+      "title": "Syntax",
+      "description": "Syntax — part of the Linguistics prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "ling-107",
+      "node_type": "course",
+      "label": "LING 107",
+      "title": "Semantics",
+      "description": "Semantics — part of the Linguistics prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "ling-130",
+      "node_type": "course",
+      "label": "LING 130",
+      "title": "LING 130",
+      "description": "Required or recommended course for the Linguistics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "ling-150",
+      "node_type": "course",
+      "label": "LING 150",
+      "title": "LING 150",
+      "description": "Required or recommended course for the Linguistics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "ling-170",
+      "node_type": "course",
+      "label": "LING 170",
+      "title": "LING 170",
+      "description": "Required or recommended course for the Linguistics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "ling-199",
+      "node_type": "course",
+      "label": "LING 199",
+      "title": "LING 199",
+      "description": "Required or recommended course for the Linguistics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "career-computational-linguistics",
+      "node_type": "career",
+      "label": "Computational linguistics",
+      "title": "Computational linguistics",
+      "description": "Career path for Linguistics graduates: Computational linguistics.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "career-speech-tech",
+      "node_type": "career",
+      "label": "Speech tech",
+      "title": "Speech tech",
+      "description": "Career path for Linguistics graduates: Speech tech.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 300
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for Linguistics graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 520
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Linguistics graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "ling-20",
+      "target_id": "ling-50",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "ling-50",
+      "target_id": "ling-106",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "ling-106",
+      "target_id": "ling-107",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "ling-107",
+      "target_id": "ling-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "ling-130",
+      "target_id": "ling-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "ling-150",
+      "target_id": "ling-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "ling-170",
+      "target_id": "ling-199",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "ling-199",
+      "target_id": "career-computational-linguistics",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "ling-150",
+      "target_id": "career-speech-tech",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "ling-199",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "ling-150",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    }
+  ]
+}

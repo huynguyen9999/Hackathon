@@ -1,0 +1,163 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Hydrologic Sciences and Policy",
+    "slug": "hydrologic-sciences-and-policy",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Hydrologic Sciences and Policy (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSHSP"
+  },
+  "nodes": [
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Hydrologic Sciences and Policy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Hydrologic Sciences and Policy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "geog-130",
+      "node_type": "course",
+      "label": "GEOG 130",
+      "title": "GEOG 130",
+      "description": "Required or recommended course for the Hydrologic Sciences and Policy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "earth-130",
+      "node_type": "course",
+      "label": "EARTH 130",
+      "title": "EARTH 130",
+      "description": "Required or recommended course for the Hydrologic Sciences and Policy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "geog-170",
+      "node_type": "course",
+      "label": "GEOG 170",
+      "title": "GEOG 170",
+      "description": "Required or recommended course for the Hydrologic Sciences and Policy major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-water-resources",
+      "node_type": "career",
+      "label": "Water resources",
+      "title": "Water resources",
+      "description": "Career path for Hydrologic Sciences and Policy graduates: Water resources.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-environmental-policy",
+      "node_type": "career",
+      "label": "Environmental policy",
+      "title": "Environmental policy",
+      "description": "Career path for Hydrologic Sciences and Policy graduates: Environmental policy.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "career-hydrology",
+      "node_type": "career",
+      "label": "Hydrology",
+      "title": "Hydrology",
+      "description": "Career path for Hydrologic Sciences and Policy graduates: Hydrology.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 520
+    },
+    {
+      "id": "career-consulting",
+      "node_type": "career",
+      "label": "Consulting",
+      "title": "Consulting",
+      "description": "Career path for Hydrologic Sciences and Policy graduates: Consulting.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chem-1a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3a",
+      "target_id": "geog-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "geog-130",
+      "target_id": "earth-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "earth-130",
+      "target_id": "geog-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "geog-170",
+      "target_id": "career-water-resources",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "geog-130",
+      "target_id": "career-environmental-policy",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "geog-170",
+      "target_id": "career-hydrology",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "geog-130",
+      "target_id": "career-consulting",
+      "edge_type": "leads_to"
+    }
+  ]
+}

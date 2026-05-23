@@ -1,0 +1,180 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Italian Studies",
+    "slug": "italian-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Italian Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAITST"
+  },
+  "nodes": [
+    {
+      "id": "ital-1",
+      "node_type": "course",
+      "label": "ITAL 1",
+      "title": "Italian language sequence",
+      "description": "Series through ITAL 6",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "ital-100",
+      "node_type": "course",
+      "label": "ITAL 100",
+      "title": "Advanced Italian",
+      "description": "Advanced Italian — part of the Italian Studies prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "ital-120",
+      "node_type": "course",
+      "label": "ITAL 120",
+      "title": "ITAL 120",
+      "description": "Required or recommended course for the Italian Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "ital-140",
+      "node_type": "course",
+      "label": "ITAL 140",
+      "title": "ITAL 140",
+      "description": "Required or recommended course for the Italian Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "ital-160",
+      "node_type": "course",
+      "label": "ITAL 160",
+      "title": "ITAL 160",
+      "description": "Required or recommended course for the Italian Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "ital-180",
+      "node_type": "course",
+      "label": "ITAL 180",
+      "title": "ITAL 180",
+      "description": "Required or recommended course for the Italian Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for Italian Studies graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "career-international-relations",
+      "node_type": "career",
+      "label": "International relations",
+      "title": "International relations",
+      "description": "Career path for Italian Studies graduates: International relations.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for Italian Studies graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 520
+    },
+    {
+      "id": "career-arts",
+      "node_type": "career",
+      "label": "Arts",
+      "title": "Arts",
+      "description": "Career path for Italian Studies graduates: Arts.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "ital-1",
+      "target_id": "ital-100",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "ital-100",
+      "target_id": "ital-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "ital-120",
+      "target_id": "ital-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "ital-140",
+      "target_id": "ital-160",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "ital-160",
+      "target_id": "ital-180",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "ital-180",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "ital-140",
+      "target_id": "career-international-relations",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "ital-180",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "ital-140",
+      "target_id": "career-arts",
+      "edge_type": "leads_to"
+    }
+  ]
+}
