@@ -8,17 +8,17 @@ export type GearBannerProps = {
 export function GearBanner({ gear, className = "" }: GearBannerProps) {
   return (
     <div
-      className={`rounded-xl border border-violet-500/30 bg-gradient-to-r from-indigo-950/80 to-violet-950/50 p-5 sm:p-6 ${className}`}
+      className={`rounded-xl border border-violet-500/30 bg-gradient-to-r from-indigo-100 dark:from-indigo-950/80 to-violet-950/50 p-5 sm:p-6 ${className}`}
     >
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-xs font-bold uppercase tracking-wider text-violet-300">
+          <p className="text-xs font-bold uppercase tracking-wider text-violet-700 dark:text-violet-300">
             Official source · {gear.catalog_year}
           </p>
-          <h2 className="mt-1 text-lg font-semibold text-slate-50">
+          <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
             General Engineering Academic Requirements (GEAR)
           </h2>
-          <p className="mt-2 max-w-xl text-sm text-slate-400">{gear.note}</p>
+          <p className="mt-2 max-w-xl text-sm text-slate-600 dark:text-slate-400">{gear.note}</p>
         </div>
         <a
           href={gear.pdf_url}

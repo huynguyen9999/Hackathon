@@ -46,23 +46,23 @@ export function ContributeForm({
   };
 
   const inputClass =
-    "w-full rounded-lg border border-indigo-500/25 bg-slate-900/80 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-violet-400/50 focus:ring-2 focus:ring-violet-500/20";
+    "w-full rounded-lg border border-indigo-500/25 bg-white dark:bg-slate-900/80 px-3 py-2 text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-500 outline-none transition focus:border-violet-400/50 focus:ring-2 focus:ring-violet-500/20";
 
   return (
     <form
       onSubmit={handleSubmit}
-      className={`space-y-5 rounded-xl border border-indigo-500/25 bg-slate-900/60 p-6 shadow-lg ${className}`}
+      className={`space-y-5 rounded-xl border border-indigo-500/25 bg-white dark:bg-slate-900/60 p-6 shadow-lg ${className}`}
     >
       <div>
-        <h2 className="text-lg font-semibold text-slate-50">Contribute a roadmap</h2>
-        <p className="mt-1 text-sm text-slate-400">
+        <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">Contribute a roadmap</h2>
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
           Help the community by submitting your program&apos;s curriculum structure.
         </p>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block sm:col-span-2">
-          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-300/90">
+          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-700 dark:text-indigo-300/90">
             School name
           </span>
           <input
@@ -76,7 +76,7 @@ export function ContributeForm({
         </label>
 
         <label className="block">
-          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-300/90">
+          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-700 dark:text-indigo-300/90">
             Short name
           </span>
           <input
@@ -90,7 +90,7 @@ export function ContributeForm({
         </label>
 
         <label className="block">
-          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-300/90">
+          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-700 dark:text-indigo-300/90">
             Major
           </span>
           <input
@@ -104,7 +104,7 @@ export function ContributeForm({
         </label>
 
         <label className="block sm:col-span-2">
-          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-300/90">
+          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-700 dark:text-indigo-300/90">
             Degree type
           </span>
           <select
@@ -122,7 +122,7 @@ export function ContributeForm({
         </label>
 
         <label className="block sm:col-span-2">
-          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-300/90">
+          <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-indigo-700 dark:text-indigo-300/90">
             Contributor notes
           </span>
           <textarea
@@ -135,7 +135,7 @@ export function ContributeForm({
         </label>
       </div>
 
-      <p className="rounded-lg border border-slate-700/60 bg-slate-950/50 px-3 py-2.5 text-xs leading-relaxed text-slate-400">
+      <p className="rounded-lg border border-slate-300 dark:border-slate-700/60 bg-slate-50 dark:bg-slate-950/50 px-3 py-2.5 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
         Submissions are tied to your GitHub account for attribution and review.
         Sign in with GitHub before submitting so we can credit you and follow up
         on questions.

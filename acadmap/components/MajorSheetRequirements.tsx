@@ -8,19 +8,19 @@ function CourseRow({ course }: { course: CourseRef }) {
     course.alternatives?.length &&
     ` (or ${course.alternatives.join(", ")})`;
   return (
-    <li className="flex flex-col gap-0.5 text-sm text-slate-300">
+    <li className="flex flex-col gap-0.5 text-sm text-slate-700 dark:text-slate-300">
       <span>
-        <span className="font-mono text-indigo-200">{course.code}</span>
+        <span className="font-mono text-indigo-800 dark:text-indigo-200">{course.code}</span>
         {course.title && (
-          <span className="text-slate-400"> — {course.title}</span>
+          <span className="text-slate-600 dark:text-slate-400"> — {course.title}</span>
         )}
         {course.units != null && (
-          <span className="text-slate-500"> · {course.units} units</span>
+          <span className="text-slate-900 dark:text-slate-500"> · {course.units} units</span>
         )}
-        {alt ? <span className="text-slate-500">{alt}</span> : null}
+        {alt ? <span className="text-slate-900 dark:text-slate-500">{alt}</span> : null}
       </span>
       {course.notes && (
-        <span className="text-xs text-slate-500">{course.notes}</span>
+        <span className="text-xs text-slate-900 dark:text-slate-500">{course.notes}</span>
       )}
     </li>
   );
@@ -37,15 +37,15 @@ function BlockSection({ block }: { block: RequirementBlock }) {
           : null;
 
   return (
-    <div className="rounded-xl border border-indigo-500/20 bg-slate-950/40 p-5">
+    <div className="rounded-xl border border-indigo-500/20 bg-slate-50 dark:bg-slate-950/40 p-5">
       <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="text-sm font-semibold text-slate-100">{block.label}</h3>
+        <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">{block.label}</h3>
         {unitLabel && (
-          <span className="text-xs text-indigo-300/80">{unitLabel}</span>
+          <span className="text-xs text-indigo-700 dark:text-indigo-700/80 dark:text-indigo-300/80">{unitLabel}</span>
         )}
       </div>
       {block.choose_n != null && (
-        <p className="mb-2 text-xs text-slate-500">
+        <p className="mb-2 text-xs text-slate-900 dark:text-slate-500">
           Choose {block.choose_n} from:
         </p>
       )}
@@ -55,7 +55,7 @@ function BlockSection({ block }: { block: RequirementBlock }) {
         ))}
       </ul>
       {block.notes?.map((note) => (
-        <p key={note} className="mt-3 text-xs text-amber-100/80">
+        <p key={note} className="mt-3 text-xs text-amber-900 dark:text-amber-100/80">
           {note}
         </p>
       ))}
@@ -77,12 +77,12 @@ export type MajorSheetRequirementsProps = {
 
 export function MajorSheetRequirements({ detail }: MajorSheetRequirementsProps) {
   return (
-    <div className="card-glow rounded-2xl border border-teal-500/20 bg-slate-900/50 p-6">
+    <div className="card-glow rounded-2xl border border-teal-500/20 bg-slate-50 dark:bg-slate-900/50 p-6">
       <div className="mb-6">
-        <h2 className="text-lg font-semibold text-slate-50">
+        <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
           Official major sheet — {detail.catalog_year}
         </h2>
-        <p className="mt-1 text-sm text-slate-400">
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
           Parsed from department major sheet. Verify on GOLD progress check.
         </p>
       </div>
@@ -103,7 +103,7 @@ export function MajorSheetRequirements({ detail }: MajorSheetRequirementsProps) 
       </div>
 
       {detail.notes?.length ? (
-        <ul className="mt-5 space-y-1 text-xs text-slate-500">
+        <ul className="mt-5 space-y-1 text-xs text-slate-900 dark:text-slate-500">
           {detail.notes.map((n) => (
             <li key={n}>• {n}</li>
           ))}

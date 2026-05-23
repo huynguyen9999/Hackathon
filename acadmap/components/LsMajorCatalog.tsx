@@ -39,12 +39,12 @@ export function LsMajorCatalog({ majors, schoolShortName }: LsMajorCatalogProps)
     <div className="space-y-6">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-sm text-slate-400">
+          <p className="text-sm text-slate-600 dark:text-slate-400">
             {filtered.length === majors.length
               ? `${majors.length} majors · sorted A–Z`
               : `${filtered.length} of ${majors.length} majors`}
             {fullCount > 0 && (
-              <span className="text-slate-500">
+              <span className="text-slate-900 dark:text-slate-500">
                 {" "}
                 · {fullCount} with full requirements
               </span>
@@ -59,7 +59,7 @@ export function LsMajorCatalog({ majors, schoolShortName }: LsMajorCatalogProps)
       </div>
 
       {filtered.length === 0 ? (
-        <p className="rounded-xl border border-slate-700/50 bg-slate-900/50 px-4 py-8 text-center text-sm text-slate-400">
+        <p className="rounded-xl border border-slate-300 dark:border-slate-700/50 bg-slate-50 dark:bg-slate-900/50 px-4 py-8 text-center text-sm text-slate-600 dark:text-slate-400">
           No majors match &ldquo;{query}&rdquo;. Try a different search term.
         </p>
       ) : (

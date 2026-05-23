@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 import { Navbar } from "@/components/Navbar";
+import { themeInitScript } from "@/lib/theme";
 
 import "./globals.css";
 
@@ -23,11 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} dark`} suppressHydrationWarning>
+      <head>
+        <Script id="theme-init" strategy="beforeInteractive">
+          {themeInitScript}
+        </Script>
+      </head>
       <body className={`${inter.className} flex min-h-screen flex-col`}>
         <Navbar />
         <main className="flex-1">{children}</main>
-        <footer className="border-t border-indigo-500/15 bg-slate-950/80 py-6 text-center text-xs text-slate-500">
+        <footer className="border-t border-indigo-500/15 bg-white/80 py-6 text-center text-xs text-slate-500 dark:bg-slate-950/80">
           AcadMap — community-built degree roadmaps
         </footer>
       </body>

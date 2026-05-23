@@ -61,18 +61,18 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
         <CollegeBanner variant="letters-science" lsCatalog={catalog} />
 
         <section className="card-glow rounded-2xl border border-teal-500/25 bg-gradient-to-br from-slate-900/90 via-teal-950/30 to-slate-900/80 p-6 sm:p-8">
-          <p className="text-xs font-medium uppercase tracking-wider text-teal-300/90">
+          <p className="text-xs font-medium uppercase tracking-wider text-teal-700 dark:text-teal-300/90">
             {catalog.school.name}
           </p>
-          <h2 className="mt-1 text-2xl font-bold text-slate-50 sm:text-3xl">
+          <h2 className="mt-1 text-2xl font-bold text-slate-900 dark:text-slate-50 sm:text-3xl">
             {catalog.school.college}
           </h2>
-          <p className="mt-2 text-sm text-slate-400">{catalog.school.location}</p>
+          <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{catalog.school.location}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <span className="rounded-lg border border-teal-500/30 bg-slate-950/50 px-3 py-1.5 text-xs text-teal-200">
+            <span className="rounded-lg border border-teal-500/30 bg-slate-50 dark:bg-slate-950/50 px-3 py-1.5 text-xs text-teal-800 dark:text-teal-200">
               {catalog.majors.length} majors in catalog
             </span>
-            <span className="rounded-lg border border-slate-600/40 bg-slate-900/50 px-3 py-1.5 text-xs text-slate-400">
+            <span className="rounded-lg border border-slate-300 dark:border-slate-600/40 bg-slate-50 dark:bg-slate-900/50 px-3 py-1.5 text-xs text-slate-600 dark:text-slate-400">
               Updated {catalog.last_updated}
             </span>
           </div>
@@ -81,7 +81,7 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
               href={catalog.college.official_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-teal-500/40 px-4 py-2 text-sm font-medium text-teal-200 transition hover:bg-teal-950/50"
+              className="rounded-lg border border-teal-500/40 px-4 py-2 text-sm font-medium text-teal-800 dark:text-teal-200 transition hover:bg-teal-950/50"
             >
               L&S college site ↗
             </Link>
@@ -89,7 +89,7 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
               href={catalog.college.admissions_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-slate-600/40 px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-slate-800/60"
+              className="rounded-lg border border-slate-300 dark:border-slate-600/40 px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 transition hover:bg-slate-100 dark:hover:bg-slate-800/60"
             >
               Admissions majors ↗
             </Link>
@@ -97,7 +97,7 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
               href={catalog.lasar.pdf_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-teal-500/40 bg-teal-950/40 px-4 py-2 text-sm font-medium text-teal-200 transition hover:bg-teal-900/40"
+              className="rounded-lg border border-teal-500/40 bg-teal-950/40 px-4 py-2 text-sm font-medium text-teal-800 dark:text-teal-200 transition hover:bg-teal-900/40"
             >
               {catalog.lasar.catalog_year} LASAR ↗
             </Link>
@@ -108,14 +108,14 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
 
         <section>
           <div className="mb-6">
-            <h2 className="text-xl font-semibold text-slate-50">L&S majors</h2>
-            <p className="mt-1 text-sm text-slate-400">
+            <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">L&S majors</h2>
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
               Department URLs follow{" "}
-              <code className="text-xs text-teal-300">
+              <code className="text-xs text-teal-700 dark:text-teal-300">
                 https://&#123;dept&#125;.ucsb.edu/
               </code>{" "}
               or{" "}
-              <code className="text-xs text-teal-300">
+              <code className="text-xs text-teal-700 dark:text-teal-300">
                 https://www.&#123;dept&#125;.ucsb.edu/
               </code>
               .

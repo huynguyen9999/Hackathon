@@ -76,7 +76,7 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
               href={catalog.gear.pdf_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-indigo-500/40 px-5 py-2.5 text-sm font-semibold text-indigo-200 transition hover:bg-indigo-950/50"
+              className="rounded-xl border border-indigo-500/40 px-5 py-2.5 text-sm font-semibold text-indigo-800 dark:text-indigo-200 transition hover:bg-indigo-950/50"
             >
               GEAR PDF ↗
             </a>
@@ -85,7 +85,7 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
                 href={major.curriculum_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-slate-600/40 px-5 py-2.5 text-sm font-semibold text-slate-300 transition hover:bg-slate-800/60"
+                className="rounded-xl border border-slate-300 dark:border-slate-600/40 px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:bg-slate-100 dark:hover:bg-slate-800/60"
               >
                 Department curriculum ↗
               </a>
@@ -106,13 +106,13 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
               coeGeFramework={catalog.gear_framework}
             />
             {major.roadmap_available ? (
-              <section className="rounded-xl border border-dashed border-indigo-500/30 bg-slate-900/30 p-6 text-center">
-                <p className="text-sm text-slate-400">
+              <section className="rounded-xl border border-dashed border-indigo-500/30 bg-slate-100 dark:bg-slate-900/30 p-6 text-center">
+                <p className="text-sm text-slate-600 dark:text-slate-400">
                   Interactive graph shows prerequisite chains from GEAR.
                 </p>
                 <Link
                   href={roadmapHref}
-                  className="mt-4 inline-flex text-sm font-medium text-indigo-300 hover:text-violet-200"
+                  className="mt-4 inline-flex text-sm font-medium text-indigo-700 dark:text-indigo-300 hover:text-violet-800 dark:text-violet-200"
                 >
                   View roadmap graph →
                 </Link>
@@ -128,7 +128,7 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
                 major.gear_page != null ? ` · GEAR p.${major.gear_page}` : undefined
               }
             />
-            <p className="rounded-xl border border-amber-500/25 bg-amber-950/20 px-4 py-3 text-sm text-amber-100/90">
+            <p className="rounded-xl border border-amber-500/25 bg-amber-950/20 px-4 py-3 text-sm text-amber-900 dark:text-amber-100/90">
               Interactive roadmap coming soon. Requirements above are from GEAR
               2025-26.
             </p>

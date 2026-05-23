@@ -36,7 +36,7 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
       />
       <div
         className={[
-          "absolute inset-[2px] bg-slate-950/90",
+          "absolute inset-[2px] bg-white/90 dark:bg-slate-950/90",
           isFocused ? "ring-2 ring-violet-300/60" : "",
         ].join(" ")}
         style={{
@@ -49,7 +49,7 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
         <span className="rounded-full bg-white/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-violet-100 ring-1 ring-white/20">
           Career
         </span>
-        <span className="font-mono text-[10px] font-medium text-indigo-200/90">
+        <span className="font-mono text-[10px] font-medium text-indigo-800 dark:text-indigo-200/90">
           {data.label}
         </span>
         <h3 className="text-sm font-semibold leading-tight text-white">
@@ -65,12 +65,12 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
       <Handle
         type="target"
         position={Position.Top}
-        className="!h-2 !w-2 !border-2 !border-violet-200 !bg-slate-900"
+        className="!h-2 !w-2 !border-2 !border-violet-200 !bg-white dark:bg-slate-900"
       />
       <Handle
         type="source"
         position={Position.Bottom}
-        className="!h-2 !w-2 !border-2 !border-violet-200 !bg-slate-900"
+        className="!h-2 !w-2 !border-2 !border-violet-200 !bg-white dark:bg-slate-900"
       />
     </div>
   );

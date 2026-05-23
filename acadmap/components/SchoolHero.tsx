@@ -16,22 +16,22 @@ export function SchoolHero({ catalog }: SchoolHeroProps) {
         aria-hidden
       />
       <div className="relative">
-        <p className="text-xs font-medium uppercase tracking-wider text-violet-300/90">
+        <p className="text-xs font-medium uppercase tracking-wider text-violet-700 dark:text-violet-300/90">
           {school.college}
         </p>
-        <h2 className="mt-1 text-2xl font-bold text-slate-50 sm:text-3xl">
+        <h2 className="mt-1 text-2xl font-bold text-slate-900 dark:text-slate-50 sm:text-3xl">
           {school.name}
         </h2>
-        <p className="mt-2 text-sm text-slate-400">{school.location}</p>
+        <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{school.location}</p>
 
         <div className="mt-6 flex flex-wrap gap-3">
-          <span className="rounded-lg border border-indigo-500/30 bg-slate-950/50 px-3 py-1.5 text-xs text-indigo-200">
+          <span className="rounded-lg border border-indigo-500/30 bg-slate-50 dark:bg-slate-950/50 px-3 py-1.5 text-xs text-indigo-800 dark:text-indigo-200">
             {majors.length} BS majors
           </span>
           <span className="rounded-lg border border-emerald-500/30 bg-emerald-950/30 px-3 py-1.5 text-xs text-emerald-200">
             {available} interactive roadmap{available !== 1 ? "s" : ""}
           </span>
-          <span className="rounded-lg border border-slate-600/40 bg-slate-900/50 px-3 py-1.5 text-xs text-slate-400">
+          <span className="rounded-lg border border-slate-300 dark:border-slate-600/40 bg-slate-50 dark:bg-slate-900/50 px-3 py-1.5 text-xs text-slate-600 dark:text-slate-400">
             Updated {catalog.last_updated}
           </span>
         </div>
@@ -41,7 +41,7 @@ export function SchoolHero({ catalog }: SchoolHeroProps) {
             href={school.official_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg border border-indigo-500/40 px-4 py-2 text-sm font-medium text-indigo-200 transition hover:bg-indigo-950/50"
+            className="rounded-lg border border-indigo-500/40 px-4 py-2 text-sm font-medium text-indigo-800 dark:text-indigo-200 transition hover:bg-indigo-950/50"
           >
             Official CoE site ↗
           </Link>
@@ -49,7 +49,7 @@ export function SchoolHero({ catalog }: SchoolHeroProps) {
             href={school.majors_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg border border-slate-600/40 px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-slate-800/60"
+            className="rounded-lg border border-slate-300 dark:border-slate-600/40 px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 transition hover:bg-slate-100 dark:hover:bg-slate-800/60"
           >
             Majors & programs ↗
           </Link>
@@ -57,7 +57,7 @@ export function SchoolHero({ catalog }: SchoolHeroProps) {
             href={gear.pdf_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg border border-violet-500/40 bg-violet-950/40 px-4 py-2 text-sm font-medium text-violet-200 transition hover:bg-violet-900/40"
+            className="rounded-lg border border-violet-500/40 bg-violet-950/40 px-4 py-2 text-sm font-medium text-violet-800 dark:text-violet-200 transition hover:bg-violet-900/40"
           >
             {gear.catalog_year} GEAR PDF ↗
           </a>

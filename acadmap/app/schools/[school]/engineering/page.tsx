@@ -64,16 +64,16 @@ export default async function EngineeringHubPage({ params }: PageProps) {
         <section>
           <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
             <div>
-              <h2 className="text-xl font-semibold text-slate-50">
+              <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
                 Engineering majors
               </h2>
-              <p className="mt-1 text-sm text-slate-400">
+              <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
                 Select a major for GEAR requirements or an interactive graph.
               </p>
             </div>
             <Link
               href="/contribute"
-              className="text-sm font-medium text-indigo-300 transition hover:text-violet-200"
+              className="text-sm font-medium text-indigo-700 dark:text-indigo-300 transition hover:text-violet-800 dark:text-violet-200"
             >
               Contribute a roadmap →
             </Link>
@@ -89,16 +89,16 @@ export default async function EngineeringHubPage({ params }: PageProps) {
 
         <section className="grid gap-6 lg:grid-cols-2">
           <SourceList sources={catalog.sources} />
-          <div className="rounded-xl border border-indigo-500/20 bg-indigo-950/20 p-5">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-indigo-300/80">
+          <div className="rounded-xl border border-indigo-500/20 bg-indigo-50 dark:bg-indigo-950/20 p-5">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-700/80 dark:text-indigo-300/80">
               Data files
             </h2>
-            <p className="mt-2 text-sm text-slate-400">
-              <code className="rounded bg-slate-900 px-1 text-xs">
+            <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+              <code className="rounded bg-white dark:bg-slate-900 px-1 text-xs">
                 data/ucsb/coe-catalog.json
               </code>
               {" · "}
-              <code className="rounded bg-slate-900 px-1 text-xs">
+              <code className="rounded bg-white dark:bg-slate-900 px-1 text-xs">
                 data/seeds/
               </code>
             </p>

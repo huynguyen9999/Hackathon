@@ -23,10 +23,10 @@ function EntryBadge({ entry }: { entry: PlanEntry }) {
   if (isPlanSlot(entry)) {
     const colors =
       entry.slot === "GE"
-        ? "border-violet-500/30 bg-violet-950/40 text-violet-200"
+        ? "border-violet-500/30 bg-violet-950/40 text-violet-800 dark:text-violet-200"
         : entry.slot === "ELECTIVE"
-          ? "border-teal-500/30 bg-teal-950/40 text-teal-200"
-          : "border-indigo-500/30 bg-indigo-950/40 text-indigo-200";
+          ? "border-teal-500/30 bg-teal-950/40 text-teal-800 dark:text-teal-200"
+          : "border-indigo-500/30 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-800 dark:text-indigo-200";
     return (
       <span
         className={`block rounded-lg border px-2 py-1.5 text-[11px] leading-tight ${colors}`}
@@ -37,13 +37,13 @@ function EntryBadge({ entry }: { entry: PlanEntry }) {
   }
 
   return (
-    <span className="block rounded-lg border border-slate-600/40 bg-slate-900/80 px-2 py-1.5 text-[11px] leading-tight text-slate-200">
-      <span className="font-mono text-teal-200">{entry.code}</span>
+    <span className="block rounded-lg border border-slate-300 dark:border-slate-600/40 bg-white dark:bg-slate-900/80 px-2 py-1.5 text-[11px] leading-tight text-slate-800 dark:text-slate-200">
+      <span className="font-mono text-teal-800 dark:text-teal-200">{entry.code}</span>
       {entry.units != null && (
-        <span className="text-slate-500"> · {entry.units}u</span>
+        <span className="text-slate-900 dark:text-slate-500"> · {entry.units}u</span>
       )}
       {entry.notes ? (
-        <span className="mt-0.5 block text-[10px] text-slate-500">{entry.notes}</span>
+        <span className="mt-0.5 block text-[10px] text-slate-900 dark:text-slate-500">{entry.notes}</span>
       ) : null}
     </span>
   );
@@ -76,19 +76,19 @@ export function QuarterTimeline({ detail, lasarFramework }: QuarterTimelineProps
   const isExtended = track === "bs_ms" || track === "bs_ms_transfer";
 
   return (
-    <div className="card-glow rounded-2xl border border-teal-500/20 bg-slate-900/50 p-6">
+    <div className="card-glow rounded-2xl border border-teal-500/20 bg-slate-50 dark:bg-slate-900/50 p-6">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h2 className="text-lg font-semibold text-slate-50">
+          <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
             Recommended {isExtended ? "5-year" : "4-year"} plan
           </h2>
-          <p className="mt-1 text-sm text-slate-400">
+          <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
             {lasarFrameworkSummary(lasarFramework)}. GE/LASAR slots fill quarters below ~
             {isExtended ? "12" : "12"} major units — verify on GOLD.
           </p>
         </div>
         {availableTracks.length > 1 && (
-          <div className="flex flex-wrap gap-1 rounded-lg border border-slate-600/40 p-0.5">
+          <div className="flex flex-wrap gap-1 rounded-lg border border-slate-300 dark:border-slate-600/40 p-0.5">
             {availableTracks.map((t) => (
               <button
                 key={t}
@@ -97,7 +97,7 @@ export function QuarterTimeline({ detail, lasarFramework }: QuarterTimelineProps
                 className={`rounded-md px-2.5 py-1.5 text-[11px] font-medium transition ${
                   track === t
                     ? "bg-teal-700 text-white"
-                    : "text-slate-400 hover:text-slate-200"
+                    : "text-slate-600 dark:text-slate-400 hover:text-slate-800 dark:text-slate-200"
                 }`}
               >
                 {TRACK_LABELS[t]}
@@ -109,14 +109,14 @@ export function QuarterTimeline({ detail, lasarFramework }: QuarterTimelineProps
 
       <div className="overflow-x-auto">
         <div className="min-w-[640px]">
-          <div className="grid grid-cols-3 gap-2 border-b border-slate-700/50 pb-2 text-center text-xs font-semibold uppercase tracking-wider text-slate-500">
+          <div className="grid grid-cols-3 gap-2 border-b border-slate-300 dark:border-slate-700/50 pb-2 text-center text-xs font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-500">
             <span>Fall</span>
             <span>Winter</span>
             <span>Spring</span>
           </div>
           {years.map((year) => (
             <div key={year} className="mt-3">
-              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-teal-300/90">
+              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-teal-700 dark:text-teal-300/90">
                 Year {year}
               </p>
               <div className="grid grid-cols-3 gap-2">
@@ -136,9 +136,9 @@ export function QuarterTimeline({ detail, lasarFramework }: QuarterTimelineProps
                   return (
                     <div
                       key={quarter}
-                      className="min-h-[120px] rounded-xl border border-slate-700/40 bg-slate-950/30 p-2"
+                      className="min-h-[120px] rounded-xl border border-slate-300/60 dark:border-slate-300 dark:border-slate-700/40 bg-slate-100 dark:bg-slate-950/30 p-2"
                     >
-                      <p className="mb-2 text-[10px] font-medium uppercase text-slate-500">
+                      <p className="mb-2 text-[10px] font-medium uppercase text-slate-900 dark:text-slate-500">
                         {quarter}
                       </p>
                       <div className="flex flex-col gap-1.5">

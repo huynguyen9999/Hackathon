@@ -75,10 +75,10 @@ export default async function RoadmapPage({ params }: PageProps) {
         description={roadmap.school.name}
         actions={
           <>
-            <span className="rounded-lg border border-indigo-500/25 bg-slate-900/60 px-2.5 py-1 text-xs text-slate-400">
+            <span className="rounded-lg border border-indigo-500/25 bg-white dark:bg-slate-900/60 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-400">
               {roadmap.nodes.length} nodes
             </span>
-            <span className="rounded-lg border border-indigo-500/25 bg-slate-900/60 px-2.5 py-1 text-xs text-slate-400">
+            <span className="rounded-lg border border-indigo-500/25 bg-white dark:bg-slate-900/60 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-400">
               {roadmap.edges.length} edges
             </span>
             <span className="rounded-lg border border-emerald-500/30 bg-emerald-950/30 px-2.5 py-1 text-xs text-emerald-200">

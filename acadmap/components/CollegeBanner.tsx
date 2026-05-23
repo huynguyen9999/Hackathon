@@ -30,14 +30,14 @@ export function CollegeBanner({
       >
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-xs font-bold uppercase tracking-wider text-teal-300">
+            <p className="text-xs font-bold uppercase tracking-wider text-teal-700 dark:text-teal-300">
               Official sources · L&S
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-50">
+            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
               Letters & Science Academic Requirements (LASAR)
             </h2>
-            <p className="mt-2 max-w-xl text-sm text-slate-400">{rf.lasar_note}</p>
-            <p className="mt-2 text-xs text-slate-500">
+            <p className="mt-2 max-w-xl text-sm text-slate-600 dark:text-slate-400">{rf.lasar_note}</p>
+            <p className="mt-2 text-xs text-slate-900 dark:text-slate-500">
               {rf.total_units} · {rf.upper_division_units} upper-division units ·
               GE Areas A–G + special subjects (WRT, EUR, NWC, QNT, ETH)
             </p>
@@ -55,7 +55,7 @@ export function CollegeBanner({
               href={college.admissions_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-teal-500/40 px-5 py-2.5 text-center text-sm font-medium text-teal-200 transition hover:bg-teal-950/50"
+              className="rounded-xl border border-teal-500/40 px-5 py-2.5 text-center text-sm font-medium text-teal-800 dark:text-teal-200 transition hover:bg-teal-950/50"
             >
               Admissions majors ↗
             </a>
@@ -73,14 +73,14 @@ export function CollegeBanner({
       >
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-xs font-bold uppercase tracking-wider text-amber-300">
+            <p className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300">
               Official sources · CCS
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-50">
+            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
               College of Creative Studies requirements
             </h2>
-            <p className="mt-2 max-w-xl text-sm text-slate-400">{rf.ccs_ge_note}</p>
-            <p className="mt-2 text-xs text-slate-500">
+            <p className="mt-2 max-w-xl text-sm text-slate-600 dark:text-slate-400">{rf.ccs_ge_note}</p>
+            <p className="mt-2 text-xs text-slate-900 dark:text-slate-500">
               {rf.total_units} · {rf.ccs_ge_courses} CCS GE courses · Ethnicity
               required · 6-quarter CCS residency
             </p>
@@ -98,7 +98,7 @@ export function CollegeBanner({
               href={college.apply_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-amber-500/40 px-5 py-2.5 text-center text-sm font-medium text-amber-200 transition hover:bg-amber-950/50"
+              className="rounded-xl border border-amber-500/40 px-5 py-2.5 text-center text-sm font-medium text-amber-800 dark:text-amber-200 transition hover:bg-amber-950/50"
             >
               How to apply ↗
             </a>

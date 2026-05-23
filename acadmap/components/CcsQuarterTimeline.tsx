@@ -27,10 +27,10 @@ function EntryBadge({ entry }: { entry: PlanEntry }) {
   if (isPlanSlot(entry)) {
     const colors =
       entry.slot === "CCS_GE" || entry.slot === "GE"
-        ? "border-amber-500/30 bg-amber-950/40 text-amber-200"
+        ? "border-amber-500/30 bg-amber-950/40 text-amber-800 dark:text-amber-200"
         : entry.slot === "ELECTIVE"
           ? "border-orange-500/30 bg-orange-950/40 text-orange-200"
-          : "border-slate-500/30 bg-slate-900/60 text-slate-200";
+          : "border-slate-500/30 bg-white dark:bg-slate-900/60 text-slate-800 dark:text-slate-200";
     return (
       <span
         className={`block rounded-lg border px-2 py-1.5 text-[11px] leading-tight ${colors}`}
@@ -41,13 +41,13 @@ function EntryBadge({ entry }: { entry: PlanEntry }) {
   }
 
   return (
-    <span className="block rounded-lg border border-slate-600/40 bg-slate-900/80 px-2 py-1.5 text-[11px] leading-tight text-slate-200">
-      <span className="font-mono text-amber-200">{entry.code}</span>
+    <span className="block rounded-lg border border-slate-300 dark:border-slate-600/40 bg-white dark:bg-slate-900/80 px-2 py-1.5 text-[11px] leading-tight text-slate-800 dark:text-slate-200">
+      <span className="font-mono text-amber-800 dark:text-amber-200">{entry.code}</span>
       {entry.units != null && (
-        <span className="text-slate-500"> · {entry.units}u</span>
+        <span className="text-slate-900 dark:text-slate-500"> · {entry.units}u</span>
       )}
       {entry.notes ? (
-        <span className="mt-0.5 block text-[10px] text-slate-500">{entry.notes}</span>
+        <span className="mt-0.5 block text-[10px] text-slate-900 dark:text-slate-500">{entry.notes}</span>
       ) : null}
     </span>
   );
@@ -88,13 +88,13 @@ export function CcsQuarterTimeline({
   }, [timeline]);
 
   return (
-    <div className="card-glow rounded-2xl border border-amber-500/25 bg-slate-900/50 p-6">
+    <div className="card-glow rounded-2xl border border-amber-500/25 bg-slate-50 dark:bg-slate-900/50 p-6">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <h2 className="text-lg font-semibold text-slate-50">
+          <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
             4-year plan — {detail.graduation_units} units
           </h2>
-          <p className="mt-1 text-sm text-slate-400">
+          <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
             {ccsFrameworkSummary(ccsFramework)}.{" "}
             {detail.quality_tier === "flexible"
               ? "Suggested plan — finalize with faculty advisor."
@@ -111,7 +111,7 @@ export function CcsQuarterTimeline({
                 className={`rounded-lg px-3 py-1.5 text-xs font-medium transition ${
                   track === t
                     ? "bg-amber-700 text-white"
-                    : "border border-slate-600/50 text-slate-400 hover:border-amber-500/40"
+                    : "border border-slate-300 dark:border-slate-600/50 text-slate-600 dark:text-slate-400 hover:border-amber-500/40"
                 }`}
               >
                 {TRACK_LABELS[t]}
@@ -123,14 +123,14 @@ export function CcsQuarterTimeline({
 
       <div className="overflow-x-auto">
         <div className="min-w-[640px]">
-          <div className="grid grid-cols-3 gap-2 border-b border-slate-700/50 pb-2 text-center text-xs font-semibold uppercase tracking-wider text-slate-500">
+          <div className="grid grid-cols-3 gap-2 border-b border-slate-300 dark:border-slate-700/50 pb-2 text-center text-xs font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-500">
             <span>Fall</span>
             <span>Winter</span>
             <span>Spring</span>
           </div>
           {years.map((year) => (
             <div key={year} className="mt-3">
-              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-amber-300/90">
+              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300/90">
                 Year {year}
               </p>
               <div className="grid grid-cols-3 gap-2">
@@ -154,9 +154,9 @@ export function CcsQuarterTimeline({
                   return (
                     <div
                       key={quarter}
-                      className="min-h-[120px] rounded-xl border border-slate-700/40 bg-slate-950/30 p-2"
+                      className="min-h-[120px] rounded-xl border border-slate-300/60 dark:border-slate-300 dark:border-slate-700/40 bg-slate-100 dark:bg-slate-950/30 p-2"
                     >
-                      <p className="mb-2 text-[10px] font-medium uppercase text-slate-500">
+                      <p className="mb-2 text-[10px] font-medium uppercase text-slate-900 dark:text-slate-500">
                         {quarter}
                         {headerExtra}
                       </p>

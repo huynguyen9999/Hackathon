@@ -102,32 +102,32 @@ export default async function UcsbOverviewPage({ params }: PageProps) {
             <Link
               key={card.slug}
               href={card.href(shortName)}
-              className={`card-glow group flex flex-col rounded-2xl border bg-slate-900/60 p-8 transition ${border}`}
+              className={`card-glow group flex flex-col rounded-2xl border bg-white dark:bg-slate-900/60 p-8 transition ${border}`}
             >
               <p
                 className={`text-xs font-bold uppercase tracking-wider ${
                   card.accent === "teal"
-                    ? "text-teal-300"
+                    ? "text-teal-700 dark:text-teal-300"
                     : card.accent === "amber"
-                      ? "text-amber-300"
-                      : "text-violet-300"
+                      ? "text-amber-700 dark:text-amber-300"
+                      : "text-violet-700 dark:text-violet-300"
                 }`}
               >
                 {card.subtitle}
               </p>
-              <h2 className="mt-2 text-2xl font-bold text-slate-50 group-hover:text-indigo-100">
+              <h2 className="mt-2 text-2xl font-bold text-slate-900 dark:text-slate-50 group-hover:text-indigo-900 dark:text-indigo-100">
                 {card.title}
               </h2>
-              <p className="mt-3 flex-1 text-sm text-slate-400">
+              <p className="mt-3 flex-1 text-sm text-slate-600 dark:text-slate-400">
                 {card.description}
               </p>
               <p
                 className={`mt-4 text-sm font-medium ${
                   card.accent === "teal"
-                    ? "text-teal-300"
+                    ? "text-teal-700 dark:text-teal-300"
                     : card.accent === "amber"
-                      ? "text-amber-300"
-                      : "text-indigo-300"
+                      ? "text-amber-700 dark:text-amber-300"
+                      : "text-indigo-700 dark:text-indigo-300"
                 }`}
               >
                 {stat} →
@@ -137,7 +137,7 @@ export default async function UcsbOverviewPage({ params }: PageProps) {
         })}
       </div>
 
-      <p className="mt-10 text-center text-xs text-slate-500">
+      <p className="mt-10 text-center text-xs text-slate-900 dark:text-slate-500">
         Sources:{" "}
         <a
           href="https://admissions.sa.ucsb.edu/majors"

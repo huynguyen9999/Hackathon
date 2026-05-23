@@ -33,7 +33,7 @@ export default function HomePage() {
       </div>
 
       <section className="relative mx-auto max-w-6xl px-4 pb-20 pt-16 sm:px-6 sm:pt-24">
-        <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-950/40 px-3 py-1 text-xs font-medium text-indigo-200">
+        <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-50 dark:bg-indigo-950/40 px-3 py-1 text-xs font-medium text-indigo-800 dark:text-indigo-200">
           <span className="h-1.5 w-1.5 rounded-full bg-violet-400" />
           Hackathon-ready · JSON seeds + Supabase
         </p>
@@ -41,10 +41,10 @@ export default function HomePage() {
         <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
           <span className="text-gradient-brand">Your degree,</span>
           <br />
-          <span className="text-slate-100">mapped.</span>
+          <span className="text-slate-900 dark:text-slate-100">mapped.</span>
         </h1>
 
-        <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-400">
+        <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-400">
           AcadMap turns sprawling catalogs into interactive graphs—courses,
           prerequisites, and where they can take you.
         </p>
@@ -58,25 +58,25 @@ export default function HomePage() {
           </Link>
           <Link
             href="/schools/ucsb"
-            className="rounded-xl border border-indigo-500/40 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-indigo-100 transition hover:border-violet-400/50 hover:bg-slate-800/80"
+            className="rounded-xl border border-indigo-500/40 bg-white dark:bg-slate-900/60 px-6 py-3 text-sm font-semibold text-indigo-900 dark:text-indigo-100 transition hover:border-violet-400/50 hover:bg-slate-100 dark:hover:bg-slate-800/80"
           >
             UCSB colleges
           </Link>
           <Link
             href="/schools/ucsb/letters-science"
-            className="rounded-xl border border-teal-500/40 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-teal-100 transition hover:border-teal-400/50 hover:bg-slate-800/80"
+            className="rounded-xl border border-teal-500/40 bg-white dark:bg-slate-900/60 px-6 py-3 text-sm font-semibold text-teal-900 dark:text-teal-100 transition hover:border-teal-400/50 hover:bg-slate-100 dark:hover:bg-slate-800/80"
           >
             L&S majors
           </Link>
           <Link
             href="/schools/ucsb/creative-studies"
-            className="rounded-xl border border-amber-500/40 bg-slate-900/60 px-6 py-3 text-sm font-semibold text-amber-100 transition hover:border-amber-400/50 hover:bg-slate-800/80"
+            className="rounded-xl border border-amber-500/40 bg-white dark:bg-slate-900/60 px-6 py-3 text-sm font-semibold text-amber-900 dark:text-amber-100 transition hover:border-amber-400/50 hover:bg-slate-100 dark:hover:bg-slate-800/80"
           >
             CCS majors
           </Link>
           <Link
             href="/roadmap/ucsb/electrical-engineering"
-            className="rounded-xl border border-slate-600/40 px-6 py-3 text-sm font-semibold text-slate-300 transition hover:border-slate-500/50 hover:bg-slate-800/60"
+            className="rounded-xl border border-slate-300 dark:border-slate-600/40 px-6 py-3 text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:border-slate-500/50 hover:bg-slate-100 dark:hover:bg-slate-800/60"
           >
             EE sample graph
           </Link>
@@ -87,52 +87,52 @@ export default function HomePage() {
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <Link
             href="/schools/ucsb/engineering"
-            className="card-glow flex flex-col gap-3 rounded-2xl border border-indigo-500/25 bg-slate-900/50 p-6 transition hover:border-violet-400/35"
+            className="card-glow flex flex-col gap-3 rounded-2xl border border-indigo-500/25 bg-slate-50 dark:bg-slate-900/50 p-6 transition hover:border-violet-400/35"
           >
-            <p className="text-xs font-semibold uppercase tracking-wider text-violet-300">
+            <p className="text-xs font-semibold uppercase tracking-wider text-violet-700 dark:text-violet-300">
               Engineering
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-50">
+            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
               CoE · GEAR 2025-26
             </h2>
-            <p className="mt-1 text-sm text-slate-400">
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
               5 BS majors · EE interactive roadmap
             </p>
-            <span className="mt-2 text-sm font-medium text-indigo-300">
+            <span className="mt-2 text-sm font-medium text-indigo-700 dark:text-indigo-300">
               Browse →
             </span>
           </Link>
           <Link
             href="/schools/ucsb/letters-science"
-            className="card-glow flex flex-col gap-3 rounded-2xl border border-teal-500/25 bg-slate-900/50 p-6 transition hover:border-teal-400/35"
+            className="card-glow flex flex-col gap-3 rounded-2xl border border-teal-500/25 bg-slate-50 dark:bg-slate-900/50 p-6 transition hover:border-teal-400/35"
           >
-            <p className="text-xs font-semibold uppercase tracking-wider text-teal-300">
+            <p className="text-xs font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300">
               Letters & Science
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-50">
+            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
               L&S · LASAR + DUELS
             </h2>
-            <p className="mt-1 text-sm text-slate-400">
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
               58+ L&S majors · LASAR + department requirements
             </p>
-            <span className="mt-2 text-sm font-medium text-teal-300">
+            <span className="mt-2 text-sm font-medium text-teal-700 dark:text-teal-300">
               Browse →
             </span>
           </Link>
           <Link
             href="/schools/ucsb/creative-studies"
-            className="card-glow flex flex-col gap-3 rounded-2xl border border-amber-500/25 bg-slate-900/50 p-6 transition hover:border-amber-400/35"
+            className="card-glow flex flex-col gap-3 rounded-2xl border border-amber-500/25 bg-slate-50 dark:bg-slate-900/50 p-6 transition hover:border-amber-400/35"
           >
-            <p className="text-xs font-semibold uppercase tracking-wider text-amber-300">
+            <p className="text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-300">
               Creative Studies
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-50">
+            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
               CCS · 9 majors
             </h2>
-            <p className="mt-1 text-sm text-slate-400">
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
               Major sheets, admission reqs, 4-year plans
             </p>
-            <span className="mt-2 text-sm font-medium text-amber-300">
+            <span className="mt-2 text-sm font-medium text-amber-700 dark:text-amber-300">
               Browse →
             </span>
           </Link>
@@ -140,25 +140,25 @@ export default function HomePage() {
       </section>
 
       <section className="relative mx-auto max-w-6xl px-4 pb-24 sm:px-6">
-        <h2 className="mb-8 text-sm font-semibold uppercase tracking-wider text-indigo-300/80">
+        <h2 className="mb-8 text-sm font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-700/80 dark:text-indigo-300/80">
           Why AcadMap
         </h2>
         <ul className="grid gap-6 sm:grid-cols-3">
           {FEATURES.map((feature) => (
             <li
               key={feature.title}
-              className="card-glow rounded-2xl border border-indigo-500/20 bg-slate-900/50 p-6 transition hover:border-violet-400/30 hover:bg-slate-900/70"
+              className="card-glow rounded-2xl border border-indigo-500/20 bg-slate-50 dark:bg-slate-900/50 p-6 transition hover:border-violet-400/30 hover:bg-white dark:bg-slate-900/70"
             >
               <span
-                className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500/20 text-lg text-violet-300 ring-1 ring-indigo-400/30"
+                className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500/20 text-lg text-violet-700 dark:text-violet-300 ring-1 ring-indigo-400/30"
                 aria-hidden
               >
                 {feature.icon}
               </span>
-              <h3 className="text-lg font-semibold text-slate-50">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-400">
+              <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
                 {feature.description}
               </p>
             </li>

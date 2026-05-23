@@ -47,7 +47,7 @@ export function ExploreCatalog({ roadmaps }: ExploreCatalogProps) {
       />
 
       {filtered.length === 0 ? (
-        <p className="rounded-xl border border-dashed border-indigo-500/30 bg-slate-900/40 py-16 text-center text-sm text-slate-400">
+        <p className="rounded-xl border border-dashed border-indigo-500/30 bg-slate-100 dark:bg-slate-900/40 py-16 text-center text-sm text-slate-600 dark:text-slate-400">
           No roadmaps match &ldquo;{query}&rdquo;. Try another school or major.
         </p>
       ) : (
@@ -56,24 +56,24 @@ export function ExploreCatalog({ roadmaps }: ExploreCatalogProps) {
             <li key={item.id}>
               <Link
                 href={roadmapHref(item)}
-                className="card-glow group flex h-full flex-col rounded-2xl border border-indigo-500/25 bg-slate-900/60 p-5 transition hover:border-violet-400/40 hover:bg-slate-900/90"
+                className="card-glow group flex h-full flex-col rounded-2xl border border-indigo-500/25 bg-white dark:bg-slate-900/60 p-5 transition hover:border-violet-400/40 hover:bg-white/95 dark:bg-slate-900/90"
               >
                 <div className="mb-3 flex items-start justify-between gap-2">
-                  <span className="rounded-lg bg-indigo-500/20 px-2.5 py-1 font-mono text-xs font-semibold uppercase text-indigo-200 ring-1 ring-indigo-400/25">
+                  <span className="rounded-lg bg-indigo-500/20 px-2.5 py-1 font-mono text-xs font-semibold uppercase text-indigo-800 dark:text-indigo-200 ring-1 ring-indigo-400/25">
                     {item.school.short_name}
                   </span>
                   <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-emerald-200">
                     {item.status}
                   </span>
                 </div>
-                <h2 className="text-lg font-semibold text-slate-50 group-hover:text-indigo-100">
+                <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50 group-hover:text-indigo-900 dark:text-indigo-100">
                   {item.major.name}
                 </h2>
-                <p className="mt-1 text-sm text-slate-400">
+                <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
                   {item.major.degree_type}
                   {item.school.location ? ` · ${item.school.location}` : ""}
                 </p>
-                <span className="mt-auto pt-4 inline-flex items-center gap-1 text-sm font-medium text-indigo-300 transition group-hover:gap-2 group-hover:text-violet-200">
+                <span className="mt-auto pt-4 inline-flex items-center gap-1 text-sm font-medium text-indigo-700 dark:text-indigo-300 transition group-hover:gap-2 group-hover:text-violet-800 dark:text-violet-200">
                   Open roadmap
                   <span aria-hidden>→</span>
                 </span>

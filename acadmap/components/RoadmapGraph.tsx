@@ -15,6 +15,7 @@ import "@xyflow/react/dist/style.css";
 
 import { CareerNode } from "@/components/CareerNode";
 import { NodeCard } from "@/components/NodeCard";
+import { useIsDarkMode } from "@/lib/use-is-dark-mode";
 import type { EdgeType, FlowEdge, FlowNode } from "@/lib/types";
 
 const nodeTypes = {
@@ -32,6 +33,7 @@ function mapFlowToReactFlow(
   flowNodes: FlowNode[],
   flowEdges: FlowEdge[],
   focusedNodeId: string | null,
+  isDark: boolean,
 ) {
   const nodes: Node[] = flowNodes.map((n) => {
     const focused = focusedNodeId === n.id;
@@ -66,11 +68,20 @@ function mapFlowToReactFlow(
         ...style,
       },
       labelStyle: {
-        fill: dimmed ? "#475569" : "#c7d2fe",
+        fill: dimmed
+          ? isDark
+            ? "#475569"
+            : "#94a3b8"
+          : isDark
+            ? "#c7d2fe"
+            : "#4338ca",
         fontSize: 11,
         opacity: dimmed ? 0.4 : 1,
       },
-      labelBgStyle: { fill: "#0f172a", fillOpacity: dimmed ? 0.5 : 0.85 },
+      labelBgStyle: {
+        fill: isDark ? "#0f172a" : "#ffffff",
+        fillOpacity: dimmed ? 0.5 : 0.85,
+      },
       zIndex: connectedToFocus ? 15 : dimmed ? 0 : 5,
     };
   });
@@ -95,9 +106,11 @@ export function RoadmapGraph({
   onPaneClick,
   className = "",
 }: RoadmapGraphProps) {
+  const isDark = useIsDarkMode();
+
   const { nodes, edges } = useMemo(
-    () => mapFlowToReactFlow(flowNodes, flowEdges, focusedNodeId),
-    [flowNodes, flowEdges, focusedNodeId],
+    () => mapFlowToReactFlow(flowNodes, flowEdges, focusedNodeId, isDark),
+    [flowNodes, flowEdges, focusedNodeId, isDark],
   );
 
   const handleInit = useCallback(
@@ -111,7 +124,7 @@ export function RoadmapGraph({
 
   return (
     <div
-      className={`h-full w-full rounded-xl border border-indigo-500/20 bg-slate-950/80 ${className}`}
+      className={`h-full w-full rounded-xl border border-indigo-500/20 bg-white/80 dark:bg-slate-950/80 ${className}`}
     >
       <ReactFlow
         nodes={nodes}
@@ -134,20 +147,22 @@ export function RoadmapGraph({
       >
         <Background
           variant={BackgroundVariant.Dots}
-          color="#312e81"
+          color={isDark ? "#312e81" : "#c7d2fe"}
           gap={20}
           size={1}
         />
         <Controls
           showInteractive={false}
-          className="!rounded-lg !border-indigo-500/30 !bg-slate-900/90 !shadow-lg [&>button]:!border-slate-700 [&>button]:!bg-slate-800 [&>button]:!text-indigo-100 [&>button:hover]:!bg-indigo-900/60"
+          className="!rounded-lg !border-indigo-500/30 !bg-white/95 !shadow-lg dark:!bg-slate-900/90 [&>button]:!border-slate-300 [&>button]:!bg-slate-100 [&>button]:!text-indigo-800 dark:[&>button]:!border-slate-700 dark:[&>button]:!bg-slate-800 dark:[&>button]:!text-indigo-100 [&>button:hover]:!bg-indigo-100 dark:[&>button:hover]:!bg-indigo-900/60"
         />
         <MiniMap
           nodeColor={(node) =>
             node.type === "career" ? "#7c3aed" : "#4f46e5"
           }
-          maskColor="rgba(15, 23, 42, 0.75)"
-          className="!rounded-lg !border !border-indigo-500/30 !bg-slate-900/90"
+          maskColor={
+            isDark ? "rgba(15, 23, 42, 0.75)" : "rgba(248, 250, 252, 0.75)"
+          }
+          className="!rounded-lg !border !border-indigo-500/30 !bg-white/95 dark:!bg-slate-900/90"
         />
       </ReactFlow>
     </div>

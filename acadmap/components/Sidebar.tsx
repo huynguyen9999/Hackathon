@@ -17,9 +17,9 @@ export function Sidebar({
   if (!selectedNode) {
     return (
       <aside
-        className={`flex h-full flex-col items-center justify-center rounded-xl border border-dashed border-indigo-500/25 bg-slate-900/50 px-6 py-10 text-center ${className}`}
+        className={`flex h-full flex-col items-center justify-center rounded-xl border border-dashed border-indigo-500/25 bg-slate-50 dark:bg-slate-900/50 px-6 py-10 text-center ${className}`}
       >
-        <p className="text-sm font-medium text-slate-400">
+        <p className="text-sm font-medium text-slate-600 dark:text-slate-400">
           Select a course or career node to view details
         </p>
       </aside>
@@ -32,15 +32,15 @@ export function Sidebar({
 
   return (
     <aside
-      className={`flex h-full flex-col overflow-hidden rounded-xl border border-indigo-500/30 bg-slate-900/95 shadow-xl ${className}`}
+      className={`flex h-full flex-col overflow-hidden rounded-xl border border-indigo-500/30 bg-white dark:bg-slate-900/95 shadow-xl ${className}`}
     >
-      <header className="border-b border-indigo-500/20 bg-gradient-to-r from-indigo-950/80 to-violet-950/60 px-5 py-4">
+      <header className="border-b border-indigo-500/20 bg-gradient-to-r from-indigo-100 dark:from-indigo-950/80 to-violet-100 dark:to-violet-950/60 px-5 py-4">
         <div className="mb-2 flex items-start justify-between gap-3">
           <div>
-            <span className="font-mono text-xs font-semibold text-indigo-300">
+            <span className="font-mono text-xs font-semibold text-indigo-700 dark:text-indigo-300">
               {data.label}
             </span>
-            <h2 className="mt-1 text-lg font-semibold text-slate-50">
+            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
               {data.title}
             </h2>
           </div>
@@ -48,7 +48,7 @@ export function Sidebar({
             <button
               type="button"
               onClick={onClose}
-              className="rounded-lg p-1.5 text-slate-400 transition hover:bg-slate-800 hover:text-slate-100"
+              className="rounded-lg p-1.5 text-slate-600 dark:text-slate-400 transition hover:bg-slate-100 dark:bg-slate-800 hover:text-slate-900 dark:text-slate-100"
               aria-label="Close panel"
             >
               ×
@@ -59,19 +59,19 @@ export function Sidebar({
           <span
             className={`rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${
               isCourse
-                ? "bg-indigo-500/20 text-indigo-200 ring-1 ring-indigo-400/30"
-                : "bg-violet-500/20 text-violet-200 ring-1 ring-violet-400/30"
+                ? "bg-indigo-500/20 text-indigo-800 dark:text-indigo-200 ring-1 ring-indigo-400/30"
+                : "bg-violet-500/20 text-violet-800 dark:text-violet-200 ring-1 ring-violet-400/30"
             }`}
           >
             {isCourse ? "Course" : "Career"}
           </span>
           {isCourse && (
-            <span className="rounded-full bg-slate-800 px-2.5 py-0.5 text-[10px] font-medium text-slate-300 ring-1 ring-slate-600/50">
+            <span className="rounded-full bg-slate-100 dark:bg-slate-800 px-2.5 py-0.5 text-[10px] font-medium text-slate-700 dark:text-slate-300 ring-1 ring-slate-600/50">
               {data.units} units
             </span>
           )}
           {isCourse && data.selfLearnable && (
-            <span className="rounded-full bg-emerald-500/15 px-2.5 py-0.5 text-[10px] font-medium text-emerald-300 ring-1 ring-emerald-400/30">
+            <span className="rounded-full bg-emerald-500/15 px-2.5 py-0.5 text-[10px] font-medium text-emerald-700 dark:text-emerald-300 ring-1 ring-emerald-400/30">
               Self-learnable
             </span>
           )}
@@ -80,20 +80,20 @@ export function Sidebar({
 
       <div className="flex-1 overflow-y-auto px-5 py-4">
         <section className="mb-6">
-          <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-indigo-300/80">
+          <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-700/80 dark:text-indigo-300/80">
             Description
           </h3>
-          <p className="text-sm leading-relaxed text-slate-300">
+          <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
             {data.description || "No description available yet."}
           </p>
-          <p className="mt-3 text-xs text-slate-500">
+          <p className="mt-3 text-xs text-slate-900 dark:text-slate-500">
             Click the canvas or another node to change focus.
           </p>
         </section>
 
         {isCourse && data.selfLearnable && (
-          <section className="mb-6 rounded-lg border border-emerald-500/20 bg-emerald-950/20 px-3 py-2.5">
-            <p className="text-xs leading-relaxed text-emerald-200/90">
+          <section className="mb-6 rounded-lg border border-emerald-500/20 bg-emerald-50 dark:bg-emerald-950/20 px-3 py-2.5">
+            <p className="text-xs leading-relaxed text-emerald-800/90 dark:text-emerald-200/90">
               This topic can be studied independently—useful if you want to
               prepare ahead or fill gaps outside the official sequence.
             </p>
@@ -102,7 +102,7 @@ export function Sidebar({
 
         {resources.length > 0 && (
           <section>
-            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-indigo-300/80">
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-700/80 dark:text-indigo-300/80">
               Resources
             </h3>
             <ul className="space-y-2">
@@ -112,7 +112,7 @@ export function Sidebar({
                     href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 rounded-lg border border-indigo-500/20 bg-slate-800/50 px-3 py-2 text-sm text-indigo-200 transition hover:border-indigo-400/40 hover:bg-indigo-950/40 hover:text-indigo-100"
+                    className="group flex items-center gap-2 rounded-lg border border-indigo-500/20 bg-slate-100 dark:bg-slate-100 dark:bg-slate-800/50 px-3 py-2 text-sm text-indigo-800 dark:text-indigo-200 transition hover:border-indigo-400/40 hover:bg-indigo-50 dark:bg-indigo-950/40 hover:text-indigo-900 dark:text-indigo-100"
                   >
                     <span
                       className="text-indigo-400 transition group-hover:translate-x-0.5"
@@ -129,7 +129,7 @@ export function Sidebar({
         )}
 
         {resources.length === 0 && (
-          <p className="text-xs text-slate-500">No resources listed yet.</p>
+          <p className="text-xs text-slate-900 dark:text-slate-500">No resources listed yet.</p>
         )}
       </div>
     </aside>
