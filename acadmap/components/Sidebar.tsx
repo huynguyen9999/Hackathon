@@ -2,22 +2,26 @@
 
 import type { Node } from "@xyflow/react";
 import type { AcadMapNodeData } from "@/lib/types";
+import type { DepartmentFacultyFile } from "@/lib/ucsb-faculty-types";
+import { FacultySidebarSection } from "@/components/FacultySidebarSection";
 
 export type SidebarProps = {
   selectedNode: Node<AcadMapNodeData> | null;
+  departmentFaculty?: DepartmentFacultyFile | null;
   onClose?: () => void;
   className?: string;
 };
 
 export function Sidebar({
   selectedNode,
+  departmentFaculty,
   onClose,
   className = "",
 }: SidebarProps) {
   if (!selectedNode) {
     return (
       <aside
-        className={`flex h-full flex-col items-center justify-center rounded-xl border border-dashed border-indigo-500/25 bg-slate-50 dark:bg-slate-900/50 px-6 py-10 text-center ${className}`}
+        className={`flex h-full flex-col items-center justify-center rounded-xl border border-dashed border-gaucho-blue-light/25 bg-slate-50 dark:bg-slate-900/50 px-6 py-10 text-center ${className}`}
       >
         <p className="text-sm font-medium text-slate-600 dark:text-slate-400">
           Select a course or career node to view details
@@ -32,12 +36,12 @@ export function Sidebar({
 
   return (
     <aside
-      className={`flex h-full flex-col overflow-hidden rounded-xl border border-indigo-500/30 bg-white dark:bg-slate-900/95 shadow-xl ${className}`}
+      className={`flex h-full flex-col overflow-hidden rounded-xl border border-gaucho-blue-light/30 bg-white dark:bg-slate-900/95 shadow-xl ${className}`}
     >
-      <header className="border-b border-indigo-500/20 bg-gradient-to-r from-indigo-100 dark:from-indigo-950/80 to-violet-100 dark:to-violet-950/60 px-5 py-4">
+      <header className="border-b border-gaucho-blue-light/20 bg-gradient-to-r from-gaucho-gold-light dark:from-gaucho-blue-dark/80 to-gaucho-gold-light dark:to-gaucho-blue-dark/60 px-5 py-4">
         <div className="mb-2 flex items-start justify-between gap-3">
           <div>
-            <span className="font-mono text-xs font-semibold text-indigo-700 dark:text-indigo-300">
+            <span className="font-mono text-xs font-semibold text-gaucho-blue dark:text-gaucho-gold">
               {data.label}
             </span>
             <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
@@ -59,8 +63,8 @@ export function Sidebar({
           <span
             className={`rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${
               isCourse
-                ? "bg-indigo-500/20 text-indigo-800 dark:text-indigo-200 ring-1 ring-indigo-400/30"
-                : "bg-violet-500/20 text-violet-800 dark:text-violet-200 ring-1 ring-violet-400/30"
+                ? "bg-gaucho-blue-light/20 text-gaucho-blue dark:text-gaucho-gold-light ring-1 ring-gaucho-blue-light/30"
+                : "bg-gaucho-gold/20 text-gaucho-blue dark:text-gaucho-gold-light ring-1 ring-gaucho-gold/30"
             }`}
           >
             {isCourse ? "Course" : "Career"}
@@ -80,7 +84,7 @@ export function Sidebar({
 
       <div className="flex-1 overflow-y-auto px-5 py-4">
         <section className="mb-6">
-          <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-700/80 dark:text-indigo-300/80">
+          <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-blue/80 dark:text-gaucho-gold/80">
             Description
           </h3>
           <p className="text-sm leading-relaxed text-slate-700 dark:text-slate-300">
@@ -100,9 +104,17 @@ export function Sidebar({
           </section>
         )}
 
+        {departmentFaculty ? (
+          <FacultySidebarSection
+            faculty={departmentFaculty}
+            nodeType={isCourse ? "course" : "career"}
+            label={data.label}
+          />
+        ) : null}
+
         {resources.length > 0 && (
           <section>
-            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-700/80 dark:text-indigo-300/80">
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-blue/80 dark:text-gaucho-gold/80">
               Resources
             </h3>
             <ul className="space-y-2">
@@ -112,10 +124,10 @@ export function Sidebar({
                     href={resource.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-2 rounded-lg border border-indigo-500/20 bg-slate-100 dark:bg-slate-100 dark:bg-slate-800/50 px-3 py-2 text-sm text-indigo-800 dark:text-indigo-200 transition hover:border-indigo-400/40 hover:bg-indigo-50 dark:bg-indigo-950/40 hover:text-indigo-900 dark:text-indigo-100"
+                    className="group flex items-center gap-2 rounded-lg border border-gaucho-blue-light/20 bg-slate-100 dark:bg-slate-100 dark:bg-slate-800/50 px-3 py-2 text-sm text-gaucho-blue dark:text-gaucho-gold-light transition hover:border-gaucho-blue-light/40 hover:bg-gaucho-blue/5 dark:bg-gaucho-blue-dark/40 hover:text-gaucho-blue-dark dark:text-gaucho-gold-light"
                   >
                     <span
-                      className="text-indigo-400 transition group-hover:translate-x-0.5"
+                      className="text-gaucho-blue-light transition group-hover:translate-x-0.5"
                       aria-hidden
                     >
                       →

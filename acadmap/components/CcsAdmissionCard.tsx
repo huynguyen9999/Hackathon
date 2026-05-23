@@ -7,7 +7,7 @@ export type CcsAdmissionCardProps = {
 
 export function CcsAdmissionCard({ admission, applyUrl }: CcsAdmissionCardProps) {
   return (
-    <section className="rounded-2xl border border-amber-500/25 bg-gradient-to-br from-amber-950/30 to-slate-900/60 p-6">
+    <section className="rounded-2xl border border-gaucho-blue/25 bg-gradient-to-br from-gaucho-blue/5 to-slate-900/60 p-6">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
@@ -22,7 +22,7 @@ export function CcsAdmissionCard({ admission, applyUrl }: CcsAdmissionCardProps)
           href={applyUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 rounded-xl bg-amber-700 px-5 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-amber-600"
+          className="shrink-0 rounded-xl bg-gaucho-blue px-5 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-gaucho-blue-light"
         >
           Apply to this major ↗
         </a>
@@ -30,16 +30,16 @@ export function CcsAdmissionCard({ admission, applyUrl }: CcsAdmissionCardProps)
 
       <ul className="mt-5 grid gap-3 sm:grid-cols-2">
         {admission.letter_of_intent ? (
-          <li className="rounded-lg border border-amber-500/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
-            <span className="font-medium text-amber-800 dark:text-amber-200">Letter of intent</span>
+          <li className="rounded-lg border border-gaucho-blue/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
+            <span className="font-medium text-gaucho-gold-dark dark:text-gaucho-gold-light">Letter of intent</span>
             <span className="mt-1 block text-xs text-slate-600 dark:text-slate-400">
               Required — separate from UC application essay
             </span>
           </li>
         ) : null}
         {admission.letters_of_recommendation != null ? (
-          <li className="rounded-lg border border-amber-500/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
-            <span className="font-medium text-amber-800 dark:text-amber-200">
+          <li className="rounded-lg border border-gaucho-blue/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
+            <span className="font-medium text-gaucho-gold-dark dark:text-gaucho-gold-light">
               Letters of recommendation
             </span>
             <span className="mt-1 block text-xs text-slate-600 dark:text-slate-400">
@@ -50,24 +50,24 @@ export function CcsAdmissionCard({ admission, applyUrl }: CcsAdmissionCardProps)
           </li>
         ) : null}
         {admission.transcripts ? (
-          <li className="rounded-lg border border-amber-500/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
-            <span className="font-medium text-amber-800 dark:text-amber-200">Transcripts</span>
+          <li className="rounded-lg border border-gaucho-blue/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
+            <span className="font-medium text-gaucho-gold-dark dark:text-gaucho-gold-light">Transcripts</span>
             <span className="mt-1 block text-xs text-slate-600 dark:text-slate-400">
               Unofficial scans from all institutions
             </span>
           </li>
         ) : null}
         {admission.portfolio ? (
-          <li className="rounded-lg border border-amber-500/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
-            <span className="font-medium text-amber-800 dark:text-amber-200">Portfolio</span>
+          <li className="rounded-lg border border-gaucho-blue/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
+            <span className="font-medium text-gaucho-gold-dark dark:text-gaucho-gold-light">Portfolio</span>
             <span className="mt-1 block text-xs text-slate-600 dark:text-slate-400">
               Work samples required — see apply page for format
             </span>
           </li>
         ) : null}
         {admission.supplemental ? (
-          <li className="rounded-lg border border-amber-500/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
-            <span className="font-medium text-amber-800 dark:text-amber-200">
+          <li className="rounded-lg border border-gaucho-blue/20 bg-slate-50 dark:bg-slate-950/40 px-4 py-3 text-sm text-slate-800 dark:text-slate-200">
+            <span className="font-medium text-gaucho-gold-dark dark:text-gaucho-gold-light">
               Supplemental materials
             </span>
             <span className="mt-1 block text-xs text-slate-600 dark:text-slate-400">

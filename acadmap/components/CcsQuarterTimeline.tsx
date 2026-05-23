@@ -27,9 +27,9 @@ function EntryBadge({ entry }: { entry: PlanEntry }) {
   if (isPlanSlot(entry)) {
     const colors =
       entry.slot === "CCS_GE" || entry.slot === "GE"
-        ? "border-amber-500/30 bg-amber-950/40 text-amber-800 dark:text-amber-200"
+        ? "border-gaucho-blue/30 bg-gaucho-gold/10 dark:bg-gaucho-blue/40 text-gaucho-gold-dark dark:text-gaucho-gold-light"
         : entry.slot === "ELECTIVE"
-          ? "border-orange-500/30 bg-orange-950/40 text-orange-200"
+          ? "border-gaucho-gold/30 bg-gaucho-gold/10 text-gaucho-blue-dark dark:text-gaucho-gold-light"
           : "border-slate-500/30 bg-white dark:bg-slate-900/60 text-slate-800 dark:text-slate-200";
     return (
       <span
@@ -42,7 +42,7 @@ function EntryBadge({ entry }: { entry: PlanEntry }) {
 
   return (
     <span className="block rounded-lg border border-slate-300 dark:border-slate-600/40 bg-white dark:bg-slate-900/80 px-2 py-1.5 text-[11px] leading-tight text-slate-800 dark:text-slate-200">
-      <span className="font-mono text-amber-800 dark:text-amber-200">{entry.code}</span>
+      <span className="font-mono text-gaucho-gold-dark dark:text-gaucho-gold-light">{entry.code}</span>
       {entry.units != null && (
         <span className="text-slate-900 dark:text-slate-500"> · {entry.units}u</span>
       )}
@@ -88,7 +88,7 @@ export function CcsQuarterTimeline({
   }, [timeline]);
 
   return (
-    <div className="card-glow rounded-2xl border border-amber-500/25 bg-slate-50 dark:bg-slate-900/50 p-6">
+    <div className="card-glow rounded-2xl border border-gaucho-blue/25 bg-slate-50 dark:bg-slate-900/50 p-6">
       <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
@@ -110,8 +110,8 @@ export function CcsQuarterTimeline({
                 onClick={() => setTrack(t)}
                 className={`rounded-lg px-3 py-1.5 text-xs font-medium transition ${
                   track === t
-                    ? "bg-amber-700 text-white"
-                    : "border border-slate-300 dark:border-slate-600/50 text-slate-600 dark:text-slate-400 hover:border-amber-500/40"
+                    ? "bg-gaucho-blue text-white"
+                    : "border border-slate-300 dark:border-slate-600/50 text-slate-600 dark:text-slate-400 hover:border-gaucho-blue/40"
                 }`}
               >
                 {TRACK_LABELS[t]}
@@ -130,7 +130,7 @@ export function CcsQuarterTimeline({
           </div>
           {years.map((year) => (
             <div key={year} className="mt-3">
-              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300/90">
+              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold/90">
                 Year {year}
               </p>
               <div className="grid grid-cols-3 gap-2">

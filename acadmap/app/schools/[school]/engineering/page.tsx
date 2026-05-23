@@ -73,7 +73,7 @@ export default async function EngineeringHubPage({ params }: PageProps) {
             </div>
             <Link
               href="/contribute"
-              className="text-sm font-medium text-indigo-700 dark:text-indigo-300 transition hover:text-violet-800 dark:text-violet-200"
+              className="text-sm font-medium text-gaucho-blue dark:text-gaucho-gold transition hover:text-gaucho-blue dark:text-gaucho-gold-light"
             >
               Contribute a roadmap →
             </Link>
@@ -89,8 +89,8 @@ export default async function EngineeringHubPage({ params }: PageProps) {
 
         <section className="grid gap-6 lg:grid-cols-2">
           <SourceList sources={catalog.sources} />
-          <div className="rounded-xl border border-indigo-500/20 bg-indigo-50 dark:bg-indigo-950/20 p-5">
-            <h2 className="text-xs font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-700/80 dark:text-indigo-300/80">
+          <div className="rounded-xl border border-gaucho-blue-light/20 bg-gaucho-blue/5 dark:bg-gaucho-blue-dark/20 p-5">
+            <h2 className="text-xs font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-blue/80 dark:text-gaucho-gold/80">
               Data files
             </h2>
             <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">

@@ -26,18 +26,8 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
     >
       <div
         className={[
-          "absolute inset-0 bg-gradient-to-br from-violet-600 via-indigo-600 to-purple-700",
-          isFocused ? "opacity-100" : "opacity-95",
-        ].join(" ")}
-        style={{
-          clipPath:
-            "polygon(8% 0%, 92% 0%, 100% 50%, 92% 100%, 8% 100%, 0% 50%)",
-        }}
-      />
-      <div
-        className={[
-          "absolute inset-[2px] bg-white/90 dark:bg-slate-950/90",
-          isFocused ? "ring-2 ring-violet-300/60" : "",
+          "absolute inset-0 bg-gaucho-blue",
+          isFocused ? "ring-2 ring-gaucho-gold" : "",
         ].join(" ")}
         style={{
           clipPath:
@@ -46,17 +36,17 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
       />
 
       <div className="relative z-10 flex flex-col items-center gap-1.5">
-        <span className="rounded-full bg-white/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-widest text-violet-100 ring-1 ring-white/20">
+        <span className="rounded-sm bg-gaucho-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-gaucho-blue-dark">
           Career
         </span>
-        <span className="font-mono text-[10px] font-medium text-indigo-800 dark:text-indigo-200/90">
+        <span className="font-mono text-[10px] font-medium text-gaucho-gold-light">
           {data.label}
         </span>
         <h3 className="text-sm font-semibold leading-tight text-white">
           {data.title}
         </h3>
         {data.description && (
-          <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-violet-100/80">
+          <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-slate-200">
             {data.description}
           </p>
         )}
@@ -65,12 +55,12 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
       <Handle
         type="target"
         position={Position.Top}
-        className="!h-2 !w-2 !border-2 !border-violet-200 !bg-white dark:bg-slate-900"
+        className="!h-2 !w-2 !border-2 !border-gaucho-gold !bg-gaucho-blue"
       />
       <Handle
         type="source"
         position={Position.Bottom}
-        className="!h-2 !w-2 !border-2 !border-violet-200 !bg-white dark:bg-slate-900"
+        className="!h-2 !w-2 !border-2 !border-gaucho-gold !bg-gaucho-blue"
       />
     </div>
   );

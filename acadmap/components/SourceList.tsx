@@ -18,7 +18,7 @@ export function SourceList({ sources, className = "" }: SourceListProps) {
           href="https://catalog.ucsb.edu/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-indigo-400 underline-offset-2 hover:underline"
+          className="text-gaucho-blue-light underline-offset-2 hover:underline"
         >
           UCSB General Catalog
         </a>
@@ -31,7 +31,7 @@ export function SourceList({ sources, className = "" }: SourceListProps) {
               href={source.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-indigo-700 dark:text-indigo-300/90 transition hover:text-indigo-800 dark:text-indigo-200"
+              className="text-sm text-gaucho-blue dark:text-gaucho-gold/90 transition hover:text-gaucho-blue dark:text-gaucho-gold-light"
             >
               {source.title} ↗
             </a>

@@ -80,7 +80,7 @@ export default async function CreativeStudiesMajorPage({ params }: PageProps) {
                 href={major.major_sheet_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl bg-gradient-to-r from-amber-600 to-orange-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-amber-900/30 transition hover:from-amber-500 hover:to-orange-500"
+                className="rounded-xl bg-gradient-to-r bg-gaucho-blue px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-gaucho-blue-light"
               >
                 Major sheet PDF ↗
               </a>
@@ -90,7 +90,7 @@ export default async function CreativeStudiesMajorPage({ params }: PageProps) {
                 href={major.admissions_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-amber-500/40 px-5 py-2.5 text-sm font-semibold text-amber-800 dark:text-amber-200 transition hover:bg-amber-950/50"
+                className="rounded-xl border border-gaucho-blue/40 px-5 py-2.5 text-sm font-semibold text-gaucho-gold-dark dark:text-gaucho-gold-light transition hover:bg-gaucho-blue/5"
               >
                 Apply to CCS ↗
               </a>
@@ -119,7 +119,7 @@ export default async function CreativeStudiesMajorPage({ params }: PageProps) {
               href={major.department_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-amber-500/40 px-5 py-2.5 text-sm font-semibold text-amber-800 dark:text-amber-200 transition hover:bg-amber-950/50"
+              className="rounded-xl border border-gaucho-blue/40 px-5 py-2.5 text-sm font-semibold text-gaucho-gold-dark dark:text-gaucho-gold-light transition hover:bg-gaucho-blue/5"
             >
               CCS major page ↗
             </a>
@@ -145,7 +145,7 @@ export default async function CreativeStudiesMajorPage({ params }: PageProps) {
 
       <div className="space-y-8">
         {detail?.quality_tier === "flexible" ? (
-          <p className="rounded-xl border border-amber-500/30 bg-amber-950/25 px-4 py-3 text-sm text-amber-900 dark:text-amber-100/90">
+          <p className="rounded-xl border border-gaucho-blue/30 bg-gaucho-gold/10 dark:bg-gaucho-blue/25 px-4 py-3 text-sm text-gaucho-blue dark:text-gaucho-gold-light/90">
             This CCS major uses an advisor-negotiated curriculum. The plan below is
             suggested — finalize every quarter with your faculty advisor.
           </p>
@@ -178,7 +178,7 @@ export default async function CreativeStudiesMajorPage({ params }: PageProps) {
           />
         )}
 
-        <p className="rounded-xl border border-amber-500/25 bg-amber-950/20 px-4 py-3 text-sm text-amber-900 dark:text-amber-100/90">
+        <p className="rounded-xl border border-gaucho-blue/25 bg-gaucho-gold/10 dark:bg-gaucho-blue/20 px-4 py-3 text-sm text-gaucho-blue dark:text-gaucho-gold-light/90">
           College-wide CCS rules (8 GE courses unrelated to major, Ethnicity, 180
           units, quarterly faculty advising) apply in addition to major
           requirements. See{" "}
@@ -186,7 +186,7 @@ export default async function CreativeStudiesMajorPage({ params }: PageProps) {
             href={catalog.handbook.pdf_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-700 dark:text-amber-300 underline"
+            className="text-gaucho-gold-dark dark:text-gaucho-gold underline"
           >
             Student Handbook
           </a>{" "}
@@ -195,7 +195,7 @@ export default async function CreativeStudiesMajorPage({ params }: PageProps) {
             href={catalog.college.catalog_degrees_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-700 dark:text-amber-300 underline"
+            className="text-gaucho-gold-dark dark:text-gaucho-gold underline"
           >
             UCSB Catalog — CCS degrees
           </a>

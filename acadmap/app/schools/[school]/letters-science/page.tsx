@@ -60,8 +60,8 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
       <div className="space-y-12">
         <CollegeBanner variant="letters-science" lsCatalog={catalog} />
 
-        <section className="card-glow rounded-2xl border border-teal-500/25 bg-gradient-to-br from-slate-900/90 via-teal-950/30 to-slate-900/80 p-6 sm:p-8">
-          <p className="text-xs font-medium uppercase tracking-wider text-teal-700 dark:text-teal-300/90">
+        <section className="card-glow rounded-2xl border border-gaucho-blue/25 bg-gradient-to-br from-slate-900/90 via-gaucho-blue-dark/30 to-slate-900/80 p-6 sm:p-8">
+          <p className="text-xs font-medium uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold/90">
             {catalog.school.name}
           </p>
           <h2 className="mt-1 text-2xl font-bold text-slate-900 dark:text-slate-50 sm:text-3xl">
@@ -69,7 +69,7 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
           </h2>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{catalog.school.location}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <span className="rounded-lg border border-teal-500/30 bg-slate-50 dark:bg-slate-950/50 px-3 py-1.5 text-xs text-teal-800 dark:text-teal-200">
+            <span className="rounded-lg border border-gaucho-blue/30 bg-slate-50 dark:bg-slate-950/50 px-3 py-1.5 text-xs text-gaucho-blue dark:text-gaucho-gold-light">
               {catalog.majors.length} majors in catalog
             </span>
             <span className="rounded-lg border border-slate-300 dark:border-slate-600/40 bg-slate-50 dark:bg-slate-900/50 px-3 py-1.5 text-xs text-slate-600 dark:text-slate-400">
@@ -81,7 +81,7 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
               href={catalog.college.official_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-teal-500/40 px-4 py-2 text-sm font-medium text-teal-800 dark:text-teal-200 transition hover:bg-teal-950/50"
+              className="rounded-lg border border-gaucho-blue/40 px-4 py-2 text-sm font-medium text-gaucho-blue dark:text-gaucho-gold-light transition hover:bg-gaucho-blue/5"
             >
               L&S college site ↗
             </Link>
@@ -97,7 +97,7 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
               href={catalog.lasar.pdf_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-teal-500/40 bg-teal-950/40 px-4 py-2 text-sm font-medium text-teal-800 dark:text-teal-200 transition hover:bg-teal-900/40"
+              className="rounded-lg border border-gaucho-blue/40 bg-gaucho-blue/5 dark:bg-gaucho-blue/40 px-4 py-2 text-sm font-medium text-gaucho-blue dark:text-gaucho-gold-light transition hover:bg-gaucho-blue/40"
             >
               {catalog.lasar.catalog_year} LASAR ↗
             </Link>
@@ -111,11 +111,11 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
             <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">L&S majors</h2>
             <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
               Department URLs follow{" "}
-              <code className="text-xs text-teal-700 dark:text-teal-300">
+              <code className="text-xs text-gaucho-blue dark:text-gaucho-gold">
                 https://&#123;dept&#125;.ucsb.edu/
               </code>{" "}
               or{" "}
-              <code className="text-xs text-teal-700 dark:text-teal-300">
+              <code className="text-xs text-gaucho-blue dark:text-gaucho-gold">
                 https://www.&#123;dept&#125;.ucsb.edu/
               </code>
               .

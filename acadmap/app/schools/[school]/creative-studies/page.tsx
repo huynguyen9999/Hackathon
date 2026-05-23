@@ -58,8 +58,8 @@ export default async function CreativeStudiesHubPage({ params }: PageProps) {
       <div className="space-y-12">
         <CollegeBanner variant="creative-studies" ccsCatalog={catalog} />
 
-        <section className="card-glow rounded-2xl border border-amber-500/25 bg-gradient-to-br from-slate-900/90 via-amber-950/20 to-slate-900/80 p-6 sm:p-8">
-          <p className="text-xs font-medium uppercase tracking-wider text-amber-700 dark:text-amber-300/90">
+        <section className="card-glow rounded-2xl border border-gaucho-blue/25 bg-gradient-to-br from-slate-900/90 via-gaucho-blue-dark/20 to-slate-900/80 p-6 sm:p-8">
+          <p className="text-xs font-medium uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold/90">
             {catalog.school.name}
           </p>
           <h2 className="mt-1 text-2xl font-bold text-slate-900 dark:text-slate-50 sm:text-3xl">
@@ -67,7 +67,7 @@ export default async function CreativeStudiesHubPage({ params }: PageProps) {
           </h2>
           <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{catalog.school.location}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <span className="rounded-lg border border-amber-500/30 bg-slate-50 dark:bg-slate-950/50 px-3 py-1.5 text-xs text-amber-800 dark:text-amber-200">
+            <span className="rounded-lg border border-gaucho-blue/30 bg-slate-50 dark:bg-slate-950/50 px-3 py-1.5 text-xs text-gaucho-gold-dark dark:text-gaucho-gold-light">
               {catalog.majors.length} majors in catalog
             </span>
             <span className="rounded-lg border border-slate-300 dark:border-slate-600/40 bg-slate-50 dark:bg-slate-900/50 px-3 py-1.5 text-xs text-slate-600 dark:text-slate-400">
@@ -79,7 +79,7 @@ export default async function CreativeStudiesHubPage({ params }: PageProps) {
               href={catalog.college.official_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-amber-500/40 px-4 py-2 text-sm font-medium text-amber-800 dark:text-amber-200 transition hover:bg-amber-950/50"
+              className="rounded-lg border border-gaucho-blue/40 px-4 py-2 text-sm font-medium text-gaucho-gold-dark dark:text-gaucho-gold-light transition hover:bg-gaucho-blue/5"
             >
               CCS college site ↗
             </Link>
@@ -87,7 +87,7 @@ export default async function CreativeStudiesHubPage({ params }: PageProps) {
               href={catalog.college.apply_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-lg border border-amber-500/40 bg-amber-950/40 px-4 py-2 text-sm font-medium text-amber-800 dark:text-amber-200 transition hover:bg-amber-900/40"
+              className="rounded-lg border border-gaucho-blue/40 bg-gaucho-gold/10 dark:bg-gaucho-blue/40 px-4 py-2 text-sm font-medium text-gaucho-gold-dark dark:text-gaucho-gold-light transition hover:bg-gaucho-blue/40"
             >
               How to apply ↗
             </Link>

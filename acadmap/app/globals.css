@@ -3,26 +3,29 @@
 @tailwind utilities;
 
 :root {
-  --acad-indigo: #6366f1;
-  --acad-violet: #8b5cf6;
-  --acad-purple: #a855f7;
-  --acad-surface: #f8fafc;
+  --gaucho-blue: #003660;
+  --gaucho-blue-light: #004d9f;
+  --gaucho-blue-dark: #002847;
+  --gaucho-gold: #febc11;
+  --gaucho-gold-light: #ffd966;
+  --gaucho-gold-dark: #d99a00;
+  --acad-primary: var(--gaucho-blue);
+  --acad-accent: var(--gaucho-gold);
+  --acad-surface: #f7f9fb;
   --acad-surface-elevated: #ffffff;
-  --acad-border: rgba(99, 102, 241, 0.2);
-  --acad-glow: rgba(139, 92, 246, 0.08);
-  --acad-flow-dot: #c7d2fe;
-  --acad-flow-label: #4338ca;
+  --acad-border: rgba(0, 54, 96, 0.14);
+  --acad-flow-dot: #cbd5e1;
+  --acad-flow-label: #003660;
   --acad-flow-label-bg: #ffffff;
 }
 
 .dark {
-  --acad-surface: #020617;
-  --acad-surface-elevated: #0f172a;
-  --acad-border: rgba(99, 102, 241, 0.25);
-  --acad-glow: rgba(139, 92, 246, 0.15);
-  --acad-flow-dot: #312e81;
-  --acad-flow-label: #c7d2fe;
-  --acad-flow-label-bg: #0f172a;
+  --acad-surface: #001824;
+  --acad-surface-elevated: #002847;
+  --acad-border: rgba(254, 188, 17, 0.18);
+  --acad-flow-dot: #1a4d73;
+  --acad-flow-label: #ffd966;
+  --acad-flow-label-bg: #002847;
 }
 
 html {
@@ -30,36 +33,17 @@ html {
 }
 
 body {
-  @apply min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
-  background-image:
-    radial-gradient(ellipse 80% 50% at 50% -20%, var(--acad-glow), transparent),
-    radial-gradient(
-      ellipse 60% 40% at 100% 0%,
-      rgba(79, 70, 229, 0.06),
-      transparent
-    ),
-    linear-gradient(to bottom, var(--acad-surface), #f1f5f9);
+  @apply min-h-screen bg-[var(--acad-surface)] text-slate-900 antialiased dark:bg-[var(--acad-surface)] dark:text-slate-100;
 }
 
-.dark body {
-  background-image:
-    radial-gradient(ellipse 80% 50% at 50% -20%, var(--acad-glow), transparent),
-    radial-gradient(
-      ellipse 60% 40% at 100% 0%,
-      rgba(79, 70, 229, 0.08),
-      transparent
-    ),
-    linear-gradient(to bottom, var(--acad-surface), #030712);
-}
-
-/* React Flow — AcadMap theme */
+/* React Flow */
 .acadmap-flow .react-flow__edge-path {
-  stroke: var(--acad-indigo);
+  stroke: var(--acad-primary);
   stroke-width: 2;
 }
 
 .acadmap-flow .react-flow__edge.selected .react-flow__edge-path {
-  stroke: var(--acad-violet);
+  stroke: var(--acad-accent);
 }
 
 .acadmap-flow .react-flow__attribution {
@@ -79,24 +63,41 @@ body {
 }
 
 .acadmap-flow--focused .react-flow__background {
-  opacity: 0.35;
+  opacity: 0.4;
   transition: opacity 0.2s ease;
 }
 
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-gaucho-blue px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-gaucho-blue-light;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg border border-gaucho-blue/25 bg-white px-5 py-2.5 text-sm font-semibold text-gaucho-blue transition hover:border-gaucho-blue/40 hover:bg-gaucho-blue/5 dark:border-gaucho-gold/25 dark:bg-gaucho-blue-dark/40 dark:text-gaucho-gold-light dark:hover:bg-gaucho-blue-dark/60;
+  }
+}
+
 @layer utilities {
+  .text-brand {
+    @apply text-gaucho-blue dark:text-gaucho-gold;
+  }
+
   .text-gradient-brand {
-    @apply bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 bg-clip-text text-transparent dark:from-indigo-300 dark:via-violet-200 dark:to-purple-300;
+    @apply text-gaucho-blue dark:text-gaucho-gold;
   }
 
   .card-glow {
+    @apply shadow-card dark:shadow-card-dark;
     box-shadow:
       0 0 0 1px var(--acad-border),
-      0 8px 32px -8px rgba(99, 102, 241, 0.12);
+      0 1px 2px rgba(0, 54, 96, 0.06),
+      0 1px 3px rgba(0, 54, 96, 0.08);
   }
 
   .dark .card-glow {
     box-shadow:
       0 0 0 1px var(--acad-border),
-      0 8px 32px -8px rgba(99, 102, 241, 0.2);
+      0 1px 2px rgba(0, 0, 0, 0.2),
+      0 1px 3px rgba(0, 0, 0, 0.15);
   }
 }

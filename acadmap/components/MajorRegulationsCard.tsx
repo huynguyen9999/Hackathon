@@ -6,12 +6,12 @@ export type MajorRegulationsCardProps = {
 
 export function MajorRegulationsCard({ regulations }: MajorRegulationsCardProps) {
   return (
-    <div className="rounded-2xl border border-amber-500/20 bg-amber-950/15 p-6">
+    <div className="rounded-2xl border border-gaucho-blue/20 bg-gaucho-gold/10 dark:bg-gaucho-blue/15 p-6">
       <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">Major regulations</h2>
       <dl className="mt-4 grid gap-3 sm:grid-cols-2">
         {regulations.pre_major_gpa != null && (
           <>
-            <dt className="text-xs font-semibold uppercase tracking-wider text-amber-800 dark:text-amber-200/80">
+            <dt className="text-xs font-semibold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold-light/80">
               Pre-major GPA
             </dt>
             <dd className="text-sm text-slate-700 dark:text-slate-300">
@@ -21,7 +21,7 @@ export function MajorRegulationsCard({ regulations }: MajorRegulationsCardProps)
         )}
         {regulations.major_gpa != null && (
           <>
-            <dt className="text-xs font-semibold uppercase tracking-wider text-amber-800 dark:text-amber-200/80">
+            <dt className="text-xs font-semibold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold-light/80">
               Major GPA
             </dt>
             <dd className="text-sm text-slate-700 dark:text-slate-300">
@@ -31,7 +31,7 @@ export function MajorRegulationsCard({ regulations }: MajorRegulationsCardProps)
         )}
         {regulations.letter_grade_minimum && (
           <>
-            <dt className="text-xs font-semibold uppercase tracking-wider text-amber-800 dark:text-amber-200/80">
+            <dt className="text-xs font-semibold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold-light/80">
               Minimum grade
             </dt>
             <dd className="text-sm text-slate-700 dark:text-slate-300">
@@ -41,7 +41,7 @@ export function MajorRegulationsCard({ regulations }: MajorRegulationsCardProps)
         )}
         {regulations.pnp_allowed === false && (
           <>
-            <dt className="text-xs font-semibold uppercase tracking-wider text-amber-800 dark:text-amber-200/80">
+            <dt className="text-xs font-semibold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold-light/80">
               P/NP grading
             </dt>
             <dd className="text-sm text-slate-700 dark:text-slate-300">Not allowed for major courses</dd>
@@ -51,14 +51,14 @@ export function MajorRegulationsCard({ regulations }: MajorRegulationsCardProps)
 
       {regulations.transfer_admission_rules?.length ? (
         <div className="mt-5">
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-amber-800 dark:text-amber-200/80">
+          <h3 className="text-xs font-semibold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold-light/80">
             Transfer admission
           </h3>
           <ul className="mt-2 space-y-1.5">
             {regulations.transfer_admission_rules.map((rule) => (
               <li
                 key={rule}
-                className="text-sm text-slate-700 dark:text-slate-300 before:mr-2 before:text-amber-400 before:content-['•']"
+                className="text-sm text-slate-700 dark:text-slate-300 before:mr-2 before:text-gaucho-gold before:content-['•']"
               >
                 {rule}
               </li>
@@ -69,7 +69,7 @@ export function MajorRegulationsCard({ regulations }: MajorRegulationsCardProps)
 
       {regulations.excluded_courses?.length ? (
         <div className="mt-5">
-          <h3 className="text-xs font-semibold uppercase tracking-wider text-amber-800 dark:text-amber-200/80">
+          <h3 className="text-xs font-semibold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold-light/80">
             Courses that do not count
           </h3>
           <div className="mt-2 flex flex-wrap gap-1.5">

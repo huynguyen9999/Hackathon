@@ -5,157 +5,127 @@ const FEATURES = [
     title: "Visual prerequisites",
     description:
       "See how courses connect—prerequisites, recommendations, and parallel paths at a glance.",
-    icon: "◇",
   },
   {
     title: "Career outcomes",
     description:
       "Trace from capstone courses to roles like hardware, firmware, and ASIC design.",
-    icon: "◆",
   },
   {
     title: "Community driven",
     description:
       "Browse seed roadmaps today; contribute your program and vote on the best maps.",
-    icon: "○",
   },
 ] as const;
 
 export default function HomePage() {
   return (
-    <div className="relative overflow-hidden">
-      <div
-        className="pointer-events-none absolute inset-0 opacity-40"
-        aria-hidden
-      >
-        <div className="absolute -left-32 top-20 h-96 w-96 rounded-full bg-indigo-600/20 blur-3xl" />
-        <div className="absolute -right-24 top-40 h-80 w-80 rounded-full bg-violet-600/15 blur-3xl" />
-      </div>
+    <div>
+      <section className="border-b border-gaucho-blue/10 bg-white dark:border-gaucho-gold/10 dark:bg-gaucho-blue-dark/40">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-widest text-gaucho-gold-dark dark:text-gaucho-gold">
+            UC Santa Barbara
+          </p>
 
-      <section className="relative mx-auto max-w-6xl px-4 pb-20 pt-16 sm:px-6 sm:pt-24">
-        <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-indigo-500/30 bg-indigo-50 dark:bg-indigo-950/40 px-3 py-1 text-xs font-medium text-indigo-800 dark:text-indigo-200">
-          <span className="h-1.5 w-1.5 rounded-full bg-violet-400" />
-          Hackathon-ready · JSON seeds + Supabase
-        </p>
+          <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gaucho-blue sm:text-5xl dark:text-white">
+            Your degree,{" "}
+            <span className="text-gaucho-gold-dark dark:text-gaucho-gold">
+              mapped.
+            </span>
+          </h1>
 
-        <h1 className="max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-          <span className="text-gradient-brand">Your degree,</span>
-          <br />
-          <span className="text-slate-900 dark:text-slate-100">mapped.</span>
-        </h1>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-600 dark:text-slate-300">
+            Course requirements, prerequisites, and graduation plans from official
+            UCSB sources—Engineering GEAR, L&S LASAR, and CCS major sheets.
+          </p>
 
-        <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-400">
-          AcadMap turns sprawling catalogs into interactive graphs—courses,
-          prerequisites, and where they can take you.
-        </p>
-
-        <div className="mt-10 flex flex-wrap gap-4">
-          <Link
-            href="/explore"
-            className="rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-900/40 transition hover:from-indigo-500 hover:to-violet-500"
-          >
-            Explore roadmaps
-          </Link>
-          <Link
-            href="/schools/ucsb"
-            className="rounded-xl border border-indigo-500/40 bg-white dark:bg-slate-900/60 px-6 py-3 text-sm font-semibold text-indigo-900 dark:text-indigo-100 transition hover:border-violet-400/50 hover:bg-slate-100 dark:hover:bg-slate-800/80"
-          >
-            UCSB colleges
-          </Link>
-          <Link
-            href="/schools/ucsb/letters-science"
-            className="rounded-xl border border-teal-500/40 bg-white dark:bg-slate-900/60 px-6 py-3 text-sm font-semibold text-teal-900 dark:text-teal-100 transition hover:border-teal-400/50 hover:bg-slate-100 dark:hover:bg-slate-800/80"
-          >
-            L&S majors
-          </Link>
-          <Link
-            href="/schools/ucsb/creative-studies"
-            className="rounded-xl border border-amber-500/40 bg-white dark:bg-slate-900/60 px-6 py-3 text-sm font-semibold text-amber-900 dark:text-amber-100 transition hover:border-amber-400/50 hover:bg-slate-100 dark:hover:bg-slate-800/80"
-          >
-            CCS majors
-          </Link>
-          <Link
-            href="/roadmap/ucsb/electrical-engineering"
-            className="rounded-xl border border-slate-300 dark:border-slate-600/40 px-6 py-3 text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:border-slate-500/50 hover:bg-slate-100 dark:hover:bg-slate-800/60"
-          >
-            EE sample graph
-          </Link>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Link href="/explore" className="btn-primary">
+              Explore roadmaps
+            </Link>
+            <Link href="/schools/ucsb" className="btn-secondary">
+              UCSB colleges
+            </Link>
+            <Link
+              href="/roadmap/ucsb/electrical-engineering"
+              className="inline-flex items-center rounded-lg px-5 py-2.5 text-sm font-medium text-slate-600 underline-offset-4 hover:text-gaucho-blue hover:underline dark:text-slate-400 dark:hover:text-gaucho-gold"
+            >
+              EE sample graph
+            </Link>
+          </div>
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-6xl px-4 pb-12 sm:px-6">
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+        <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">
+          Colleges
+        </h2>
+        <div className="grid gap-4 sm:grid-cols-3">
           <Link
             href="/schools/ucsb/engineering"
-            className="card-glow flex flex-col gap-3 rounded-2xl border border-indigo-500/25 bg-slate-50 dark:bg-slate-900/50 p-6 transition hover:border-violet-400/35"
+            className="card-glow group flex flex-col rounded-lg border border-gaucho-blue/15 bg-white p-5 transition hover:border-gaucho-blue/30 dark:bg-gaucho-blue-dark/50"
           >
-            <p className="text-xs font-semibold uppercase tracking-wider text-violet-700 dark:text-violet-300">
+            <p className="text-xs font-semibold uppercase tracking-wider text-gaucho-blue-light">
               Engineering
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
+            <h3 className="mt-2 text-lg font-semibold text-slate-900 dark:text-white">
               CoE · GEAR 2025-26
-            </h2>
-            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+            </h3>
+            <p className="mt-1 flex-1 text-sm text-slate-600 dark:text-slate-400">
               5 BS majors · EE interactive roadmap
             </p>
-            <span className="mt-2 text-sm font-medium text-indigo-700 dark:text-indigo-300">
-              Browse →
+            <span className="mt-3 text-sm font-medium text-gaucho-blue group-hover:text-gaucho-blue-light dark:text-gaucho-gold">
+              View majors →
             </span>
           </Link>
           <Link
             href="/schools/ucsb/letters-science"
-            className="card-glow flex flex-col gap-3 rounded-2xl border border-teal-500/25 bg-slate-50 dark:bg-slate-900/50 p-6 transition hover:border-teal-400/35"
+            className="card-glow group flex flex-col rounded-lg border border-gaucho-blue/15 bg-white p-5 transition hover:border-gaucho-blue/30 dark:bg-gaucho-blue-dark/50"
           >
-            <p className="text-xs font-semibold uppercase tracking-wider text-teal-700 dark:text-teal-300">
+            <p className="text-xs font-semibold uppercase tracking-wider text-gaucho-blue-light">
               Letters & Science
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
+            <h3 className="mt-2 text-lg font-semibold text-slate-900 dark:text-white">
               L&S · LASAR + DUELS
-            </h2>
-            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-              58+ L&S majors · LASAR + department requirements
+            </h3>
+            <p className="mt-1 flex-1 text-sm text-slate-600 dark:text-slate-400">
+              58+ majors · department requirements
             </p>
-            <span className="mt-2 text-sm font-medium text-teal-700 dark:text-teal-300">
-              Browse →
+            <span className="mt-3 text-sm font-medium text-gaucho-blue group-hover:text-gaucho-blue-light dark:text-gaucho-gold">
+              View majors →
             </span>
           </Link>
           <Link
             href="/schools/ucsb/creative-studies"
-            className="card-glow flex flex-col gap-3 rounded-2xl border border-amber-500/25 bg-slate-50 dark:bg-slate-900/50 p-6 transition hover:border-amber-400/35"
+            className="card-glow group flex flex-col rounded-lg border border-gaucho-blue/15 bg-white p-5 transition hover:border-gaucho-blue/30 dark:bg-gaucho-blue-dark/50"
           >
-            <p className="text-xs font-semibold uppercase tracking-wider text-amber-700 dark:text-amber-300">
+            <p className="text-xs font-semibold uppercase tracking-wider text-gaucho-blue-light">
               Creative Studies
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
+            <h3 className="mt-2 text-lg font-semibold text-slate-900 dark:text-white">
               CCS · 9 majors
-            </h2>
-            <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+            </h3>
+            <p className="mt-1 flex-1 text-sm text-slate-600 dark:text-slate-400">
               Major sheets, admission reqs, 4-year plans
             </p>
-            <span className="mt-2 text-sm font-medium text-amber-700 dark:text-amber-300">
-              Browse →
+            <span className="mt-3 text-sm font-medium text-gaucho-blue group-hover:text-gaucho-blue-light dark:text-gaucho-gold">
+              View majors →
             </span>
           </Link>
         </div>
       </section>
 
-      <section className="relative mx-auto max-w-6xl px-4 pb-24 sm:px-6">
-        <h2 className="mb-8 text-sm font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-700/80 dark:text-indigo-300/80">
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+        <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">
           Why AcadMap
         </h2>
-        <ul className="grid gap-6 sm:grid-cols-3">
+        <ul className="grid gap-4 sm:grid-cols-3">
           {FEATURES.map((feature) => (
             <li
               key={feature.title}
-              className="card-glow rounded-2xl border border-indigo-500/20 bg-slate-50 dark:bg-slate-900/50 p-6 transition hover:border-violet-400/30 hover:bg-white dark:bg-slate-900/70"
+              className="rounded-lg border border-gaucho-blue/10 bg-white p-5 dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark/30"
             >
-              <span
-                className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500/20 text-lg text-violet-700 dark:text-violet-300 ring-1 ring-indigo-400/30"
-                aria-hidden
-              >
-                {feature.icon}
-              </span>
-              <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
+              <h3 className="text-base font-semibold text-gaucho-blue dark:text-white">
                 {feature.title}
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-400">

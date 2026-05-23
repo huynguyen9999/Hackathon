@@ -19,10 +19,10 @@ function EntryBadge({ entry }: { entry: PlanEntry }) {
   if (isPlanSlot(entry)) {
     const colors =
       entry.slot === "GE"
-        ? "border-violet-500/30 bg-violet-950/40 text-violet-800 dark:text-violet-200"
+        ? "border-gaucho-gold/30 bg-gaucho-blue-dark/40 text-gaucho-blue dark:text-gaucho-gold-light"
         : entry.slot === "ELECTIVE"
-          ? "border-teal-500/30 bg-teal-950/40 text-teal-800 dark:text-teal-200"
-          : "border-indigo-500/30 bg-indigo-50 dark:bg-indigo-950/40 text-indigo-800 dark:text-indigo-200";
+          ? "border-gaucho-blue/30 bg-gaucho-blue/5 dark:bg-gaucho-blue/40 text-gaucho-blue dark:text-gaucho-gold-light"
+          : "border-gaucho-blue-light/30 bg-gaucho-blue/5 dark:bg-gaucho-blue-dark/40 text-gaucho-blue dark:text-gaucho-gold-light";
     return (
       <span
         className={`block rounded-lg border px-2 py-1.5 text-[11px] leading-tight ${colors}`}
@@ -34,7 +34,7 @@ function EntryBadge({ entry }: { entry: PlanEntry }) {
 
   return (
     <span className="block rounded-lg border border-slate-300 dark:border-slate-600/40 bg-white dark:bg-slate-900/80 px-2 py-1.5 text-[11px] leading-tight text-slate-800 dark:text-slate-200">
-      <span className="font-mono text-indigo-800 dark:text-indigo-200">{entry.code}</span>
+      <span className="font-mono text-gaucho-blue dark:text-gaucho-gold-light">{entry.code}</span>
       {entry.units != null && (
         <span className="text-slate-900 dark:text-slate-500"> · {entry.units}u</span>
       )}
@@ -66,7 +66,7 @@ export function CoeQuarterTimeline({
   }, [timeline]);
 
   return (
-    <div className="card-glow rounded-2xl border border-indigo-500/25 bg-slate-50 dark:bg-slate-900/50 p-6">
+    <div className="card-glow rounded-2xl border border-gaucho-blue-light/25 bg-slate-50 dark:bg-slate-900/50 p-6">
       <div className="mb-6">
         <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
           GEAR 4-year plan — {detail.graduation_units} units
@@ -86,7 +86,7 @@ export function CoeQuarterTimeline({
           </div>
           {years.map((year) => (
             <div key={year} className="mt-3">
-              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-indigo-700 dark:text-indigo-300/90">
+              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold/90">
                 Year {year}
               </p>
               <div className="grid grid-cols-3 gap-2">

@@ -16,21 +16,21 @@ export function NodeCard({ data, selected }: NodeProps<CourseNode>) {
         data.dimmed
           ? "border-slate-300/60 dark:border-slate-700/40 opacity-30 shadow-none grayscale"
           : isFocused
-            ? "z-10 scale-[1.02] border-violet-300 shadow-2xl shadow-violet-500/40 ring-2 ring-violet-400/50"
-            : "border-indigo-500/60 shadow-indigo-950/40 hover:border-indigo-400/80",
+            ? "z-10 scale-[1.02] border-gaucho-gold shadow-2xl shadow-gaucho-gold/40 ring-2 ring-gaucho-gold/50"
+            : "border-gaucho-blue-light/60 shadow-gaucho-blue-dark/40 hover:border-gaucho-blue-light/80",
       ].join(" ")}
     >
       <Handle
         type="target"
         position={Position.Top}
-        className="!h-2.5 !w-2.5 !border-2 !border-indigo-300 !bg-white dark:bg-slate-900"
+        className="!h-2.5 !w-2.5 !border-2 !border-gaucho-gold !bg-white dark:bg-slate-900"
       />
 
       <div className="mb-2 flex items-start justify-between gap-2">
-        <span className="font-mono text-xs font-semibold tracking-wide text-indigo-700 dark:text-indigo-300">
+        <span className="font-mono text-xs font-semibold tracking-wide text-gaucho-blue dark:text-gaucho-gold">
           {data.label}
         </span>
-        <span className="shrink-0 rounded-full bg-indigo-500/20 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-indigo-800 dark:text-indigo-200 ring-1 ring-indigo-400/30">
+        <span className="shrink-0 rounded-full bg-gaucho-blue-light/20 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold-light ring-1 ring-gaucho-blue-light/30">
           {data.units} {data.units === 1 ? "unit" : "units"}
         </span>
       </div>
@@ -68,7 +68,7 @@ export function NodeCard({ data, selected }: NodeProps<CourseNode>) {
       <Handle
         type="source"
         position={Position.Bottom}
-        className="!h-2.5 !w-2.5 !border-2 !border-violet-300 !bg-white dark:bg-slate-900"
+        className="!h-2.5 !w-2.5 !border-2 !border-gaucho-gold !bg-white dark:bg-slate-900"
       />
     </div>
   );

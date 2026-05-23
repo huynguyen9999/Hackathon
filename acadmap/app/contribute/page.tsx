@@ -56,7 +56,7 @@ export default function ContributePage() {
 
       {!supabaseReady && (
         <div
-          className="mb-6 rounded-xl border border-amber-500/30 bg-amber-950/30 px-4 py-3 text-sm text-amber-900 dark:text-amber-100/90"
+          className="mb-6 rounded-xl border border-gaucho-blue/30 bg-gaucho-gold/10 dark:bg-gaucho-blue/30 px-4 py-3 text-sm text-gaucho-blue dark:text-gaucho-gold-light/90"
           role="status"
         >
           <strong className="font-semibold">Auth required:</strong> Sign in
@@ -75,7 +75,7 @@ export default function ContributePage() {
 
       {message && (
         <p
-          className="mb-6 rounded-xl border border-indigo-500/30 bg-indigo-50 dark:bg-indigo-950/40 px-4 py-3 text-sm text-indigo-900 dark:text-indigo-100"
+          className="mb-6 rounded-xl border border-gaucho-blue-light/30 bg-gaucho-blue/5 dark:bg-gaucho-blue-dark/40 px-4 py-3 text-sm text-gaucho-blue-dark dark:text-gaucho-gold-light"
           role="status"
         >
           {message}

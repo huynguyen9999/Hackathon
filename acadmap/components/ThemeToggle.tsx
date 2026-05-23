@@ -62,7 +62,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggle}
-      className="rounded-lg border border-indigo-500/25 bg-white/80 p-2 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:border-indigo-500/20 dark:bg-slate-800/80 dark:text-indigo-200 dark:hover:bg-slate-700/80 dark:hover:text-indigo-100"
+      className="rounded-md border border-gaucho-blue/20 p-2 text-gaucho-blue transition hover:bg-gaucho-blue/5 dark:border-gaucho-gold/30 dark:text-gaucho-gold dark:hover:bg-gaucho-blue/40"
       aria-label={mounted ? `Switch to ${theme === "dark" ? "light" : "dark"} mode` : "Toggle theme"}
       title={mounted ? `Switch to ${theme === "dark" ? "light" : "dark"} mode` : "Toggle theme"}
     >

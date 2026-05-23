@@ -20,21 +20,29 @@ export function Navbar({ className = "" }: NavbarProps) {
 
   return (
     <header
-      className={`border-b border-indigo-500/20 bg-white/90 backdrop-blur-md dark:bg-slate-950/90 ${className}`}
+      className={`border-b-2 border-gaucho-gold/80 bg-white dark:border-gaucho-gold/40 dark:bg-gaucho-blue-dark ${className}`}
     >
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <Link href="/" className="group flex flex-col gap-0.5">
-          <span className="bg-gradient-to-r from-indigo-600 via-violet-600 to-purple-600 bg-clip-text text-xl font-bold tracking-tight text-transparent dark:from-indigo-300 dark:via-violet-200 dark:to-purple-300">
-            AcadMap
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-3.5 sm:px-6">
+        <Link href="/" className="group flex items-center gap-3">
+          <span
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-gaucho-blue text-sm font-bold text-gaucho-gold"
+            aria-hidden
+          >
+            AM
           </span>
-          <span className="text-xs font-medium text-slate-500 transition group-hover:text-slate-600 dark:group-hover:text-slate-400">
-            Navigate your degree with clarity
+          <span className="flex flex-col gap-0.5">
+            <span className="text-lg font-bold tracking-tight text-gaucho-blue dark:text-white">
+              AcadMap
+            </span>
+            <span className="text-xs text-slate-500 dark:text-slate-400">
+              UCSB degree planning
+            </span>
           </span>
         </Link>
 
         <div className="flex items-center gap-2">
           <nav
-            className="flex items-center gap-1 rounded-xl border border-indigo-500/20 bg-white p-1 dark:bg-slate-900/60"
+            className="flex items-center gap-0.5 rounded-lg border border-gaucho-blue/15 bg-slate-50 p-0.5 dark:border-gaucho-gold/20 dark:bg-gaucho-blue/30"
             aria-label="Main"
           >
             {NAV_LINKS.map(({ href, label }) => {
@@ -48,10 +56,10 @@ export function Navbar({ className = "" }: NavbarProps) {
                   key={href}
                   href={href}
                   className={[
-                    "rounded-lg px-3.5 py-2 text-sm font-medium transition",
+                    "rounded-md px-3.5 py-2 text-sm font-medium transition",
                     active
-                      ? "bg-indigo-600/20 text-indigo-800 ring-1 ring-indigo-400/30 dark:bg-indigo-600/30 dark:text-indigo-100"
-                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800/80 dark:hover:text-slate-100",
+                      ? "bg-gaucho-blue text-white dark:bg-gaucho-gold dark:text-gaucho-blue-dark"
+                      : "text-slate-600 hover:text-gaucho-blue dark:text-slate-300 dark:hover:text-gaucho-gold-light",
                   ].join(" ")}
                 >
                   {label}

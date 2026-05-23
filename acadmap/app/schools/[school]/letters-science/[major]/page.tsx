@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { CollegeBanner } from "@/components/CollegeBanner";
+import { DepartmentFacultyCard } from "@/components/DepartmentFacultyCard";
 import { MajorRegulationsCard } from "@/components/MajorRegulationsCard";
 import { MajorRequirements } from "@/components/MajorRequirements";
 import { MajorSheetRequirements } from "@/components/MajorSheetRequirements";
@@ -17,6 +18,7 @@ import {
 } from "@/lib/ucsb-ls";
 import { majorRoadmapHref } from "@/lib/ucsb-paths";
 import { schoolHubHref } from "@/lib/ucsb-coe";
+import { loadDepartmentFacultyForMajor } from "@/lib/ucsb-faculty";
 
 type PageProps = {
   params: { school: string; major: string };
@@ -44,6 +46,7 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
   const catalog = await loadUcsbLsCatalog();
   const major = await getUcsbLsMajorBySlug(majorSlug);
   const detail = await loadLsMajorDetail(majorSlug);
+  const departmentFaculty = await loadDepartmentFacultyForMajor(majorSlug);
 
   if (!catalog || !major) {
     notFound();
@@ -69,7 +72,7 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
             {major.roadmap_available ? (
               <Link
                 href={roadmapHref}
-                className="rounded-xl bg-gradient-to-r from-teal-600 to-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-teal-900/30 transition hover:from-teal-500 hover:to-indigo-500"
+                className="rounded-xl bg-gradient-to-r bg-gaucho-blue px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-gaucho-blue-light"
               >
                 Open interactive roadmap
               </Link>
@@ -79,7 +82,7 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
                 href={major.major_sheet_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-teal-500/40 px-5 py-2.5 text-sm font-semibold text-teal-800 dark:text-teal-200 transition hover:bg-teal-950/50"
+                className="rounded-xl border border-gaucho-blue/40 px-5 py-2.5 text-sm font-semibold text-gaucho-blue dark:text-gaucho-gold-light transition hover:bg-gaucho-blue/5"
               >
                 Major sheet PDF ↗
               </a>
@@ -94,12 +97,22 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
                 Plan of study ↗
               </a>
             ) : null}
+            {departmentFaculty?.faculty_url ? (
+              <a
+                href={departmentFaculty.faculty_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl border border-slate-300 dark:border-slate-600/40 px-5 py-2.5 text-sm font-semibold text-slate-700 dark:text-slate-300 transition hover:bg-slate-100 dark:hover:bg-slate-800/60"
+              >
+                Department faculty ↗
+              </a>
+            ) : null}
             {major.admissions_url ? (
               <a
                 href={major.admissions_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-teal-500/40 px-5 py-2.5 text-sm font-semibold text-teal-800 dark:text-teal-200 transition hover:bg-teal-950/50"
+                className="rounded-xl border border-gaucho-blue/40 px-5 py-2.5 text-sm font-semibold text-gaucho-blue dark:text-gaucho-gold-light transition hover:bg-gaucho-blue/5"
               >
                 Admissions ↗
               </a>
@@ -122,7 +135,7 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
 
       <div className="space-y-8">
         {!detail && major.requirements_level === "partial" ? (
-          <p className="rounded-xl border border-amber-500/30 bg-amber-950/25 px-4 py-3 text-sm text-amber-900 dark:text-amber-100/90">
+          <p className="rounded-xl border border-gaucho-blue/30 bg-gaucho-gold/10 dark:bg-gaucho-blue/25 px-4 py-3 text-sm text-gaucho-blue dark:text-gaucho-gold-light/90">
             Requirements below are summarized. Verify on the official catalog before
             planning.
           </p>
@@ -134,6 +147,12 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
           <>
             <MajorSheetRequirements detail={detail} />
             <MajorRegulationsCard regulations={detail.regulations} />
+            {departmentFaculty ? (
+              <DepartmentFacultyCard
+                faculty={departmentFaculty}
+                careerOutcomes={major.career_outcomes ?? []}
+              />
+            ) : null}
             {detail.program_variants?.length ? (
               <ProgramVariantsCard variants={detail.program_variants} />
             ) : null}
@@ -142,13 +161,13 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
               lasarFramework={catalog.requirements_framework}
             />
             {major.roadmap_available ? (
-              <section className="rounded-xl border border-dashed border-teal-500/30 bg-slate-100 dark:bg-slate-900/30 p-6 text-center">
+              <section className="rounded-xl border border-dashed border-gaucho-blue/30 bg-slate-100 dark:bg-slate-900/30 p-6 text-center">
                 <p className="text-sm text-slate-600 dark:text-slate-400">
                   Interactive graph shows prerequisite chains from the major sheet.
                 </p>
                 <Link
                   href={roadmapHref}
-                  className="mt-4 inline-flex text-sm font-medium text-teal-700 dark:text-teal-300 hover:text-indigo-800 dark:text-indigo-200"
+                  className="mt-4 inline-flex text-sm font-medium text-gaucho-blue dark:text-gaucho-gold hover:text-gaucho-blue dark:text-gaucho-gold-light"
                 >
                   View roadmap graph →
                 </Link>
@@ -163,14 +182,14 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
           />
         )}
 
-        <p className="rounded-xl border border-amber-500/25 bg-amber-950/20 px-4 py-3 text-sm text-amber-900 dark:text-amber-100/90">
+        <p className="rounded-xl border border-gaucho-blue/25 bg-gaucho-gold/10 dark:bg-gaucho-blue/20 px-4 py-3 text-sm text-gaucho-blue dark:text-gaucho-gold-light/90">
           College-wide LASAR rules (GE, writing, 180+ units) apply in addition to
           the major requirements above. See{" "}
           <a
             href={catalog.lasar.pdf_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-700 dark:text-teal-300 underline"
+            className="text-gaucho-blue dark:text-gaucho-gold underline"
           >
             LASAR
           </a>{" "}
@@ -179,7 +198,7 @@ export default async function LettersScienceMajorPage({ params }: PageProps) {
             href="https://duels.ucsb.edu/degree-planning/degree-requirements"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-teal-700 dark:text-teal-300 underline"
+            className="text-gaucho-blue dark:text-gaucho-gold underline"
           >
             DUELS degree requirements
           </a>

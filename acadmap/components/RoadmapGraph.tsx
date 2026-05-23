@@ -24,9 +24,9 @@ const nodeTypes = {
 };
 
 const EDGE_STYLES: Record<EdgeType, { stroke: string; strokeDasharray?: string }> = {
-  prerequisite: { stroke: "#6366f1" },
-  recommended: { stroke: "#a78bfa", strokeDasharray: "6 4" },
-  leads_to: { stroke: "#22d3ee" },
+  prerequisite: { stroke: "#003660" },
+  recommended: { stroke: "#004D9F", strokeDasharray: "6 4" },
+  leads_to: { stroke: "#FEBC11" },
 };
 
 function mapFlowToReactFlow(
@@ -70,16 +70,16 @@ function mapFlowToReactFlow(
       labelStyle: {
         fill: dimmed
           ? isDark
-            ? "#475569"
+            ? "#64748b"
             : "#94a3b8"
           : isDark
-            ? "#c7d2fe"
-            : "#4338ca",
+            ? "#FFD966"
+            : "#003660",
         fontSize: 11,
         opacity: dimmed ? 0.4 : 1,
       },
       labelBgStyle: {
-        fill: isDark ? "#0f172a" : "#ffffff",
+        fill: isDark ? "#002847" : "#ffffff",
         fillOpacity: dimmed ? 0.5 : 0.85,
       },
       zIndex: connectedToFocus ? 15 : dimmed ? 0 : 5,
@@ -124,7 +124,7 @@ export function RoadmapGraph({
 
   return (
     <div
-      className={`h-full w-full rounded-xl border border-indigo-500/20 bg-white/80 dark:bg-slate-950/80 ${className}`}
+      className={`h-full w-full rounded-lg border border-gaucho-blue/15 bg-white dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark/60 ${className}`}
     >
       <ReactFlow
         nodes={nodes}
@@ -147,22 +147,22 @@ export function RoadmapGraph({
       >
         <Background
           variant={BackgroundVariant.Dots}
-          color={isDark ? "#312e81" : "#c7d2fe"}
+          color={isDark ? "#1a4d73" : "#cbd5e1"}
           gap={20}
           size={1}
         />
         <Controls
           showInteractive={false}
-          className="!rounded-lg !border-indigo-500/30 !bg-white/95 !shadow-lg dark:!bg-slate-900/90 [&>button]:!border-slate-300 [&>button]:!bg-slate-100 [&>button]:!text-indigo-800 dark:[&>button]:!border-slate-700 dark:[&>button]:!bg-slate-800 dark:[&>button]:!text-indigo-100 [&>button:hover]:!bg-indigo-100 dark:[&>button:hover]:!bg-indigo-900/60"
+          className="!rounded-lg !border-gaucho-blue/20 !bg-white !shadow-card dark:!border-gaucho-gold/20 dark:!bg-gaucho-blue-dark [&>button]:!border-slate-200 [&>button]:!bg-white [&>button]:!text-gaucho-blue dark:[&>button]:!border-gaucho-blue/40 dark:[&>button]:!bg-gaucho-blue-dark dark:[&>button]:!text-gaucho-gold [&>button:hover]:!bg-gaucho-blue/5 dark:[&>button:hover]:!bg-gaucho-blue/60"
         />
         <MiniMap
           nodeColor={(node) =>
-            node.type === "career" ? "#7c3aed" : "#4f46e5"
+            node.type === "career" ? "#FEBC11" : "#003660"
           }
           maskColor={
-            isDark ? "rgba(15, 23, 42, 0.75)" : "rgba(248, 250, 252, 0.75)"
+            isDark ? "rgba(0, 40, 71, 0.75)" : "rgba(247, 249, 251, 0.85)"
           }
-          className="!rounded-lg !border !border-indigo-500/30 !bg-white/95 dark:!bg-slate-900/90"
+          className="!rounded-lg !border !border-gaucho-blue/20 !bg-white/95 dark:!border-gaucho-gold/20 dark:!bg-gaucho-blue-dark/90"
         />
       </ReactFlow>
     </div>

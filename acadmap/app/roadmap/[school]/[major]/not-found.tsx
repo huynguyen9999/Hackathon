@@ -11,13 +11,13 @@ export default function RoadmapNotFound() {
       <div className="mt-8 flex gap-4">
         <Link
           href="/explore"
-          className="rounded-xl bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-500"
+          className="rounded-xl bg-gaucho-blue px-4 py-2 text-sm font-semibold text-white hover:bg-gaucho-blue-light"
         >
           Explore
         </Link>
         <Link
           href="/contribute"
-          className="rounded-xl border border-indigo-500/40 px-4 py-2 text-sm font-semibold text-indigo-900 dark:text-indigo-100 hover:bg-white dark:bg-slate-900"
+          className="rounded-xl border border-gaucho-blue-light/40 px-4 py-2 text-sm font-semibold text-gaucho-blue-dark dark:text-gaucho-gold-light hover:bg-white dark:bg-slate-900"
         >
           Contribute
         </Link>

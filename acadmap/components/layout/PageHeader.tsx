@@ -33,7 +33,7 @@ export function PageHeader({
               {crumb.href ? (
                 <Link
                   href={crumb.href}
-                  className="transition hover:text-indigo-700 dark:text-indigo-300"
+                  className="transition hover:text-gaucho-blue dark:text-gaucho-gold"
                 >
                   {crumb.label}
                 </Link>
@@ -48,11 +48,11 @@ export function PageHeader({
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           {eyebrow && (
-            <p className="mb-2 font-mono text-xs font-semibold uppercase tracking-wider text-indigo-700 dark:text-indigo-300">
+            <p className="mb-2 font-mono text-xs font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">
               {eyebrow}
             </p>
           )}
-          <h1 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-50 sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-gaucho-blue sm:text-4xl dark:text-white">
             {title}
           </h1>
           {description && (

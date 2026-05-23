@@ -26,18 +26,20 @@ export function CollegeBanner({
     const { requirements_framework: rf, college } = lsCatalog;
     return (
       <div
-        className={`rounded-xl border border-teal-500/30 bg-gradient-to-r from-teal-950/80 to-indigo-950/50 p-5 sm:p-6 ${className}`}
+        className={`rounded-lg border border-gaucho-blue/20 bg-gaucho-blue/5 p-5 dark:border-gaucho-gold/20 dark:bg-gaucho-blue-dark/60 sm:p-6 ${className}`}
       >
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-xs font-bold uppercase tracking-wider text-teal-700 dark:text-teal-300">
+            <p className="text-xs font-bold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">
               Official sources · L&S
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
+            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">
               Letters & Science Academic Requirements (LASAR)
             </h2>
-            <p className="mt-2 max-w-xl text-sm text-slate-600 dark:text-slate-400">{rf.lasar_note}</p>
-            <p className="mt-2 text-xs text-slate-900 dark:text-slate-500">
+            <p className="mt-2 max-w-xl text-sm text-slate-600 dark:text-slate-300">
+              {rf.lasar_note}
+            </p>
+            <p className="mt-2 text-xs text-slate-500">
               {rf.total_units} · {rf.upper_division_units} upper-division units ·
               GE Areas A–G + special subjects (WRT, EUR, NWC, QNT, ETH)
             </p>
@@ -47,7 +49,7 @@ export function CollegeBanner({
               href={college.duels_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-teal-700 px-5 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-teal-600"
+              className="rounded-lg bg-gaucho-blue px-5 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-gaucho-blue-light"
             >
               DUELS degree requirements ↗
             </a>
@@ -55,7 +57,7 @@ export function CollegeBanner({
               href={college.admissions_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-teal-500/40 px-5 py-2.5 text-center text-sm font-medium text-teal-800 dark:text-teal-200 transition hover:bg-teal-950/50"
+              className="rounded-lg border border-gaucho-blue/25 px-5 py-2.5 text-center text-sm font-medium text-gaucho-blue transition hover:bg-gaucho-blue/5 dark:border-gaucho-gold/25 dark:text-gaucho-gold-light dark:hover:bg-gaucho-blue/40"
             >
               Admissions majors ↗
             </a>
@@ -69,18 +71,20 @@ export function CollegeBanner({
     const { requirements_framework: rf, college, handbook } = ccsCatalog;
     return (
       <div
-        className={`rounded-xl border border-amber-500/30 bg-gradient-to-r from-amber-950/80 to-orange-950/50 p-5 sm:p-6 ${className}`}
+        className={`rounded-lg border border-gaucho-blue/20 bg-gaucho-blue/5 p-5 dark:border-gaucho-gold/20 dark:bg-gaucho-blue-dark/60 sm:p-6 ${className}`}
       >
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-xs font-bold uppercase tracking-wider text-amber-700 dark:text-amber-300">
+            <p className="text-xs font-bold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">
               Official sources · CCS
             </p>
-            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-slate-50">
+            <h2 className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">
               College of Creative Studies requirements
             </h2>
-            <p className="mt-2 max-w-xl text-sm text-slate-600 dark:text-slate-400">{rf.ccs_ge_note}</p>
-            <p className="mt-2 text-xs text-slate-900 dark:text-slate-500">
+            <p className="mt-2 max-w-xl text-sm text-slate-600 dark:text-slate-300">
+              {rf.ccs_ge_note}
+            </p>
+            <p className="mt-2 text-xs text-slate-500">
               {rf.total_units} · {rf.ccs_ge_courses} CCS GE courses · Ethnicity
               required · 6-quarter CCS residency
             </p>
@@ -90,7 +94,7 @@ export function CollegeBanner({
               href={handbook.pdf_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-amber-700 px-5 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-amber-600"
+              className="rounded-lg bg-gaucho-blue px-5 py-2.5 text-center text-sm font-semibold text-white transition hover:bg-gaucho-blue-light"
             >
               {handbook.catalog_year} Student Handbook ↗
             </a>
@@ -98,7 +102,7 @@ export function CollegeBanner({
               href={college.apply_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-amber-500/40 px-5 py-2.5 text-center text-sm font-medium text-amber-800 dark:text-amber-200 transition hover:bg-amber-950/50"
+              className="rounded-lg border border-gaucho-blue/25 px-5 py-2.5 text-center text-sm font-medium text-gaucho-blue transition hover:bg-gaucho-blue/5 dark:border-gaucho-gold/25 dark:text-gaucho-gold-light dark:hover:bg-gaucho-blue/40"
             >
               How to apply ↗
             </a>

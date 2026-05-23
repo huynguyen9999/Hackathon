@@ -25,7 +25,6 @@ const COLLEGE_CARDS = [
   {
     slug: "engineering",
     href: (s: string) => coeCollegeHubHref(s),
-    accent: "indigo",
     title: "College of Engineering",
     subtitle: "Robert Mehrabian College of Engineering",
     description:
@@ -36,7 +35,6 @@ const COLLEGE_CARDS = [
   {
     slug: "letters-science",
     href: (s: string) => lsCollegeHubHref(s),
-    accent: "teal",
     title: "College of Letters & Science",
     subtitle: "80+ majors across 45+ departments",
     description:
@@ -46,7 +44,6 @@ const COLLEGE_CARDS = [
   {
     slug: "creative-studies",
     href: (s: string) => ccsCollegeHubHref(s),
-    accent: "amber",
     title: "College of Creative Studies",
     subtitle: "9 selective majors · research from day one",
     description:
@@ -87,11 +84,7 @@ export default async function UcsbOverviewPage({ params }: PageProps) {
           const isEng = card.slug === "engineering";
           const isCcs = card.slug === "creative-studies";
           const border =
-            card.accent === "teal"
-              ? "border-teal-500/25 hover:border-teal-400/40"
-              : card.accent === "amber"
-                ? "border-amber-500/25 hover:border-amber-400/40"
-                : "border-indigo-500/25 hover:border-violet-400/40";
+            "border-gaucho-blue/20 hover:border-gaucho-gold/40";
           const stat = isEng
             ? card.stats(coe.majors.length, coeLive)
             : isCcs
@@ -102,34 +95,18 @@ export default async function UcsbOverviewPage({ params }: PageProps) {
             <Link
               key={card.slug}
               href={card.href(shortName)}
-              className={`card-glow group flex flex-col rounded-2xl border bg-white dark:bg-slate-900/60 p-8 transition ${border}`}
+              className={`card-glow group flex flex-col rounded-lg border bg-white p-8 transition dark:bg-gaucho-blue-dark/40 ${border}`}
             >
-              <p
-                className={`text-xs font-bold uppercase tracking-wider ${
-                  card.accent === "teal"
-                    ? "text-teal-700 dark:text-teal-300"
-                    : card.accent === "amber"
-                      ? "text-amber-700 dark:text-amber-300"
-                      : "text-violet-700 dark:text-violet-300"
-                }`}
-              >
+              <p className="text-xs font-bold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold">
                 {card.subtitle}
               </p>
-              <h2 className="mt-2 text-2xl font-bold text-slate-900 dark:text-slate-50 group-hover:text-indigo-900 dark:text-indigo-100">
+              <h2 className="mt-2 text-2xl font-bold text-gaucho-blue group-hover:text-gaucho-blue-light dark:text-white dark:group-hover:text-gaucho-gold">
                 {card.title}
               </h2>
               <p className="mt-3 flex-1 text-sm text-slate-600 dark:text-slate-400">
                 {card.description}
               </p>
-              <p
-                className={`mt-4 text-sm font-medium ${
-                  card.accent === "teal"
-                    ? "text-teal-700 dark:text-teal-300"
-                    : card.accent === "amber"
-                      ? "text-amber-700 dark:text-amber-300"
-                      : "text-indigo-700 dark:text-indigo-300"
-                }`}
-              >
+              <p className="mt-4 text-sm font-medium text-gaucho-blue dark:text-gaucho-gold">
                 {stat} →
               </p>
             </Link>
@@ -141,7 +118,7 @@ export default async function UcsbOverviewPage({ params }: PageProps) {
         Sources:{" "}
         <a
           href="https://admissions.sa.ucsb.edu/majors"
-          className="text-indigo-400 hover:underline"
+          className="text-gaucho-blue hover:underline dark:text-gaucho-gold"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -150,7 +127,7 @@ export default async function UcsbOverviewPage({ params }: PageProps) {
         {" · "}
         <a
           href={schoolHubHref(shortName)}
-          className="text-indigo-400 hover:underline"
+          className="text-gaucho-blue hover:underline dark:text-gaucho-gold"
         >
           AcadMap UCSB hub
         </a>

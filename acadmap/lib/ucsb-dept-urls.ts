@@ -2,7 +2,9 @@
 
 export type DeptMeta = {
   department: string;
+  department_slug?: string;
   department_url: string;
+  faculty_url?: string;
   curriculum_url: string;
   catalog_program_code: string;
   graduation_units?: number;
@@ -23,7 +25,9 @@ function catalog(code: string): string {
 export const LS_DEPT_META: Record<string, DeptMeta> = {
   "actuarial-science": {
     department: "Department of Statistics & Applied Probability",
+    department_slug: "pstat",
     department_url: "https://www.pstat.ucsb.edu/",
+    faculty_url: "https://www.pstat.ucsb.edu/people/faculty",
     curriculum_url: catalog("BSACT"),
     catalog_program_code: "BSACT",
     graduation_units: 180,
@@ -604,7 +608,9 @@ export const LS_DEPT_META: Record<string, DeptMeta> = {
   },
   "financial-mathematics-and-statistics": {
     department: "Department of Statistics & Applied Probability",
+    department_slug: "pstat",
     department_url: "https://www.pstat.ucsb.edu/",
+    faculty_url: "https://www.pstat.ucsb.edu/people/faculty",
     curriculum_url: catalog("BSFMS"),
     catalog_program_code: "BSFMS",
     graduation_units: 180,
@@ -1228,7 +1234,9 @@ export const LS_DEPT_META: Record<string, DeptMeta> = {
   },
   "statistics-and-data-science": {
     department: "Department of Statistics & Applied Probability",
+    department_slug: "pstat",
     department_url: "https://www.pstat.ucsb.edu/",
+    faculty_url: "https://www.pstat.ucsb.edu/people/faculty",
     curriculum_url: catalog("BSPSTAT"),
     catalog_program_code: "BSPSTAT",
     graduation_units: 180,

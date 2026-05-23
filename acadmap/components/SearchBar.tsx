@@ -31,7 +31,7 @@ export function SearchBar({
         Search schools or majors
       </label>
       <span
-        className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-indigo-400/70"
+        className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-gaucho-blue-light/70"
         aria-hidden
       >
         <svg
@@ -53,7 +53,7 @@ export function SearchBar({
         value={value}
         onChange={(e) => setValue(e.target.value)}
         placeholder="Search schools or majors..."
-        className="w-full rounded-xl border border-indigo-500/30 bg-white dark:bg-slate-900/80 py-2.5 pl-10 pr-4 text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-500 shadow-inner shadow-indigo-950/20 outline-none ring-0 transition focus:border-violet-400/60 focus:ring-2 focus:ring-violet-500/25"
+        className="w-full rounded-xl border border-gaucho-blue-light/30 bg-white dark:bg-slate-900/80 py-2.5 pl-10 pr-4 text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-500 shadow-inner shadow-gaucho-blue-dark/20 outline-none ring-0 transition focus:border-gaucho-gold/60 focus:ring-2 focus:ring-gaucho-gold/25"
         autoComplete="off"
       />
     </div>

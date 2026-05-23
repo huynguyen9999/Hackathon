@@ -10,6 +10,7 @@ import {
   schoolHubHref,
 } from "@/lib/ucsb-coe";
 import { lsCollegeHubHref, lsMajorHubHref } from "@/lib/ucsb-ls";
+import { loadDepartmentFacultyForMajor } from "@/lib/ucsb-faculty";
 
 type PageProps = {
   params: { school: string; major: string };
@@ -39,6 +40,8 @@ export default async function RoadmapPage({ params }: PageProps) {
 
   const isUcsb = roadmap.school.short_name === "ucsb";
   const isCoe = isUcsb ? await isCoeMajorSlug(major) : false;
+  const departmentFaculty =
+    isUcsb && !isCoe ? await loadDepartmentFacultyForMajor(major) : null;
 
   return (
     <div className="mx-auto max-w-[1600px] px-4 py-6 sm:px-6 sm:py-8">
@@ -75,10 +78,10 @@ export default async function RoadmapPage({ params }: PageProps) {
         description={roadmap.school.name}
         actions={
           <>
-            <span className="rounded-lg border border-indigo-500/25 bg-white dark:bg-slate-900/60 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-400">
+            <span className="rounded-lg border border-gaucho-blue-light/25 bg-white dark:bg-slate-900/60 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-400">
               {roadmap.nodes.length} nodes
             </span>
-            <span className="rounded-lg border border-indigo-500/25 bg-white dark:bg-slate-900/60 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-400">
+            <span className="rounded-lg border border-gaucho-blue-light/25 bg-white dark:bg-slate-900/60 px-2.5 py-1 text-xs text-slate-600 dark:text-slate-400">
               {roadmap.edges.length} edges
             </span>
             <span className="rounded-lg border border-emerald-500/30 bg-emerald-950/30 px-2.5 py-1 text-xs text-emerald-200">
@@ -88,7 +91,7 @@ export default async function RoadmapPage({ params }: PageProps) {
         }
       />
 
-      <RoadmapView roadmap={roadmap} />
+      <RoadmapView roadmap={roadmap} departmentFaculty={departmentFaculty} />
     </div>
   );
 }

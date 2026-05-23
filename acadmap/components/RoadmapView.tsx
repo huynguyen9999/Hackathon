@@ -10,12 +10,14 @@ import {
   roadmapNodesToFlowNodes,
 } from "@/lib/flow";
 import type { AcadMapNodeData, RoadmapDetail } from "@/lib/types";
+import type { DepartmentFacultyFile } from "@/lib/ucsb-faculty-types";
 
 export type RoadmapViewProps = {
   roadmap: RoadmapDetail;
+  departmentFaculty?: DepartmentFacultyFile | null;
 };
 
-export function RoadmapView({ roadmap }: RoadmapViewProps) {
+export function RoadmapView({ roadmap, departmentFaculty }: RoadmapViewProps) {
   const [selectedNode, setSelectedNode] = useState<Node<AcadMapNodeData> | null>(
     null,
   );
@@ -59,6 +61,7 @@ export function RoadmapView({ roadmap }: RoadmapViewProps) {
       <div className="h-[280px] shrink-0 lg:h-auto lg:w-[340px]">
         <Sidebar
           selectedNode={selectedNode}
+          departmentFaculty={departmentFaculty}
           onClose={selectedNode ? onClose : undefined}
           className="h-full"
         />

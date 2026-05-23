@@ -1,0 +1,309 @@
+{
+  "department_slug": "pstat",
+  "department": "Department of Statistics & Applied Probability",
+  "faculty_url": "https://www.pstat.ucsb.edu/people/faculty",
+  "source_url": "https://www.pstat.ucsb.edu/people/faculty",
+  "last_updated": "2026-05-23",
+  "members": [
+    {
+      "id": "andrew-carter",
+      "name": "Andrew Carter",
+      "title": "Associate Professor and Graduate Vice Chair",
+      "roles": [
+        "graduate_vice_chair"
+      ],
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "carter@pstat.ucsb.edu",
+      "office": "South Hall 5507",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/andrew-carter",
+      "research_areas": [
+        "Asymptotic statistical inference",
+        "nonparametric models."
+      ],
+      "career_tags": ["Graduate study", "Data science"]
+    },
+    {
+      "id": "raya-feldman",
+      "name": "Raya Feldman",
+      "title": "Associate Professor",
+      "category": "faculty",
+      "pronouns": "she/her/hers",
+      "email": "feldman@pstat.ucsb.edu",
+      "office": "South Hall 5516",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/raya-feldman",
+      "research_areas": [
+        "Probability theory",
+        "stochastic processes",
+        "time series",
+        "signal processing"
+      ]
+    },
+    {
+      "id": "jean-pierre-fouque",
+      "name": "Jean-Pierre Fouque",
+      "title": "Distinguished Professor",
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "fouque@pstat.ucsb.edu",
+      "office": "South Hall 5504",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/jean-pierre-fouque",
+      "career_tags": ["Quantitative finance"],
+      "teaches": ["PSTAT 170"]
+    },
+    {
+      "id": "alexander-franks",
+      "name": "Alexander Franks",
+      "title": "Associate Professor",
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "amfranks@ucsb.edu",
+      "office": "South Hall 5522",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/alexander-franks",
+      "research_areas": [
+        "causal inference",
+        "Bayesian statistics",
+        "covariance estimation",
+        "missing data",
+        "measurement error",
+        "high throughput applications in biology (“omics”)",
+        "sports."
+      ],
+      "career_tags": ["Data science", "Graduate study"]
+    },
+    {
+      "id": "kathryn-grace",
+      "name": "Kathryn Grace",
+      "title": "Professor",
+      "category": "faculty",
+      "pronouns": "She/Her/Hers",
+      "email": "kgrace@ucsb.edu",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/kathryn-grace"
+    },
+    {
+      "id": "mengyang-gu",
+      "name": "Mengyang Gu",
+      "title": "Associate Professor",
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "mengyang@pstat.ucsb.edu",
+      "office": "South Hall 5511",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/mengyang-gu"
+    },
+    {
+      "id": "dawn-holmes",
+      "name": "Dawn Holmes",
+      "title": "Teaching Professor",
+      "category": "faculty",
+      "email": "holmes@pstat.ucsb.edu",
+      "office": "South Hall 5506",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/dawn-holmes"
+    },
+    {
+      "id": "ruimeng-hu",
+      "name": "Ruimeng Hu",
+      "title": "Associate Professor",
+      "category": "faculty",
+      "pronouns": "she/her/hers",
+      "email": "hu@pstat.ucsb.edu",
+      "office": "South Hall 6521",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/ruimeng-hu"
+    },
+    {
+      "id": "tomoyuki-ichiba",
+      "name": "Tomoyuki Ichiba",
+      "title": "Professor and Department Chair",
+      "roles": [
+        "department_chair"
+      ],
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "ichiba@pstat.ucsb.edu",
+      "office": "South Hall 5508",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/tomoyuki-ichiba",
+      "research_areas": [
+        "Probability",
+        "stochastic processes",
+        "stochastic differential equations",
+        "collisions of Brownian particles",
+        "local time of semimartingales",
+        "mathematical economics & finance (stochastic portfolio theory)",
+        "statistics in finance",
+        "molecular biology",
+        "sports."
+      ],
+      "career_tags": ["Quantitative finance", "Risk analyst"]
+    },
+    {
+      "id": "s-rao-jammalamadaka",
+      "name": "S. Rao Jammalamadaka",
+      "title": "Distinguished Professor",
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "rao@pstat.ucsb.edu",
+      "office": "South Hall 5515",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/s-rao-jammalamadaka",
+      "research_areas": [
+        "Mathematical statistics",
+        "probability"
+      ],
+      "career_tags": ["Graduate study", "Data science"]
+    },
+    {
+      "id": "michael-ludkovski",
+      "name": "Michael Ludkovski",
+      "title": "Professor",
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "ludkovski@pstat.ucsb.edu",
+      "office": "South Hall 5520",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/michael-ludkovski",
+      "research_areas": [
+        "Financial mathematics",
+        "applied probability: energy markets",
+        "computational finance",
+        "longevity analysis",
+        "optimal stopping"
+      ],
+      "career_tags": [
+        "Actuary",
+        "Quantitative finance",
+        "Risk analyst",
+        "Insurance & pensions"
+      ],
+      "teaches": ["PSTAT 173", "PSTAT 174"]
+    },
+    {
+      "id": "wendy-meiring",
+      "name": "Wendy Meiring",
+      "title": "Professor",
+      "category": "faculty",
+      "pronouns": "she/her/hers",
+      "email": "meiring@pstat.ucsb.edu",
+      "office": "South Hall 5510",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/wendy-meiring",
+      "research_areas": [
+        "Statistics of space-time processes",
+        "evaluation of geophysical models",
+        "environmental statistics"
+      ],
+      "career_tags": ["Data science", "Graduate study"]
+    },
+    {
+      "id": "jack-miller",
+      "name": "Jack Miller",
+      "title": "Teaching Professor and Undergraduate Vice Chair",
+      "roles": [
+        "undergraduate_vice_chair"
+      ],
+      "category": "faculty",
+      "pronouns": "they/them/theirs",
+      "email": "jbmiller@ucsb.edu",
+      "office": "South Hall 5517",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/jack-miller",
+      "career_tags": ["Data science", "Graduate study"],
+      "teaches": ["PSTAT 10", "PSTAT 120A"]
+    },
+    {
+      "id": "sang-yun-oh",
+      "name": "Sang-Yun Oh",
+      "title": "Associate Professor",
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "syoh@ucsb.edu",
+      "office": "South Hall 5514",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/sang-yun-oh"
+    },
+    {
+      "id": "hal-pedersen",
+      "name": "Hal Pedersen",
+      "title": "Senior Lecturer SOE",
+      "category": "faculty",
+      "pronouns": "He/Him/His",
+      "email": "hpedersen@pstat.ucsb.edu",
+      "office": "South Hall 5513",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/hal-pedersen",
+      "teaches": ["PSTAT 10", "PSTAT 120A"]
+    },
+    {
+      "id": "gareth-w-peters",
+      "name": "Gareth W. Peters",
+      "title": "Endowed Chair Professor",
+      "category": "faculty",
+      "pronouns": "He/Him/His",
+      "email": "garethpeters@ucsb.edu",
+      "office": "South Hall 5521",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/gareth-w-peters",
+      "career_tags": ["Actuary", "Risk analyst", "Insurance & pensions"]
+    },
+    {
+      "id": "annie-qu",
+      "name": "Annie Qu",
+      "title": "Professor",
+      "category": "faculty",
+      "pronouns": "She/Her/Hers",
+      "email": "aqu2@ucsb.edu",
+      "office": "South Hall 5512",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/annie-qu",
+      "career_tags": ["Data science", "Graduate study"]
+    },
+    {
+      "id": "uma-ravat",
+      "name": "Uma Ravat",
+      "title": "Assistant Teaching Professor",
+      "category": "faculty",
+      "pronouns": "she/her/hers",
+      "email": "umaravat@pstat.ucsb.edu",
+      "office": "South Hall 5503",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/uma-ravat"
+    },
+    {
+      "id": "alexander-shkolnik",
+      "name": "Alexander Shkolnik",
+      "title": "Assistant Professor",
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "shkolnik@ucsb.edu",
+      "office": "South Hall 5501",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/alexander-shkolnik",
+      "research_areas": [
+        "Monte Carlo simulation of stochastic processes",
+        "importance sampling for complex stochastic systems",
+        "quantitative financial risk management",
+        "high-dimensional covariance estimation."
+      ],
+      "career_tags": ["Quantitative finance", "Risk analyst"],
+      "teaches": ["PSTAT 160A"]
+    },
+    {
+      "id": "yuedong-wang",
+      "name": "Yuedong Wang",
+      "title": "Distinguished Professor",
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "yuedong@pstat.ucsb.edu",
+      "office": "South Hall 5509",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/yuedong-wang"
+    },
+    {
+      "id": "guo-yu",
+      "name": "Guo Yu",
+      "title": "Assistant Professor",
+      "category": "faculty",
+      "pronouns": "he/him/his",
+      "email": "guoyu@pstat.ucsb.edu",
+      "office": "South Hall 5519",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/guo-yu"
+    },
+    {
+      "id": "tianyu-zhang",
+      "name": "Tianyu Zhang",
+      "title": "Assistant Professor",
+      "category": "faculty",
+      "pronouns": "He/Him/His",
+      "email": "tyz@ucsb.edu",
+      "office": "South Hall 5505",
+      "profile_url": "https://www.pstat.ucsb.edu/people/faculty/tianyu-zhang"
+    }
+  ]
+}
