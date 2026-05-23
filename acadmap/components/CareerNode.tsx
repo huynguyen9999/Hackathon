@@ -7,11 +7,17 @@ import type { CareerNodeData } from "@/lib/types";
 export type CareerFlowNode = Node<CareerNodeData, "career">;
 
 export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
+  const isFocused = data.focused || selected;
+
   return (
     <div
       className={[
-        "relative flex min-w-[180px] max-w-[240px] flex-col items-center px-5 py-4 text-center transition-transform",
-        selected ? "scale-105" : "hover:scale-[1.02]",
+        "relative flex min-w-[180px] max-w-[240px] flex-col items-center px-5 py-4 text-center transition-all duration-200",
+        data.dimmed
+          ? "scale-95 opacity-30 grayscale"
+          : isFocused
+            ? "z-10 scale-105"
+            : "hover:scale-[1.02]",
       ].join(" ")}
       style={{
         clipPath:
@@ -21,7 +27,7 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
       <div
         className={[
           "absolute inset-0 bg-gradient-to-br from-violet-600 via-indigo-600 to-purple-700",
-          selected ? "opacity-100" : "opacity-95",
+          isFocused ? "opacity-100" : "opacity-95",
         ].join(" ")}
         style={{
           clipPath:
@@ -31,7 +37,7 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
       <div
         className={[
           "absolute inset-[2px] bg-slate-950/90",
-          selected ? "ring-2 ring-violet-300/60" : "",
+          isFocused ? "ring-2 ring-violet-300/60" : "",
         ].join(" ")}
         style={{
           clipPath:
@@ -49,6 +55,11 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
         <h3 className="text-sm font-semibold leading-tight text-white">
           {data.title}
         </h3>
+        {data.description && (
+          <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-violet-100/80">
+            {data.description}
+          </p>
+        )}
       </div>
 
       <Handle

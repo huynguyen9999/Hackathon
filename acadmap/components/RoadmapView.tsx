@@ -31,7 +31,13 @@ export function RoadmapView({ roadmap }: RoadmapViewProps) {
   );
 
   const onNodeClick: NodeMouseHandler = useCallback((_event, node) => {
-    setSelectedNode(node as Node<AcadMapNodeData>);
+    setSelectedNode((prev) =>
+      prev?.id === node.id ? null : (node as Node<AcadMapNodeData>),
+    );
+  }, []);
+
+  const onPaneClick = useCallback(() => {
+    setSelectedNode(null);
   }, []);
 
   const onClose = useCallback(() => {
@@ -44,7 +50,9 @@ export function RoadmapView({ roadmap }: RoadmapViewProps) {
         <RoadmapGraph
           flowNodes={flowNodes}
           flowEdges={flowEdges}
+          focusedNodeId={selectedNode?.id ?? null}
           onNodeClick={onNodeClick}
+          onPaneClick={onPaneClick}
           className="h-full min-h-[360px]"
         />
       </div>

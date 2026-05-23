@@ -20,7 +20,7 @@
       "node_type": "course",
       "label": "ECE 3",
       "title": "Introduction to Electrical Engineering",
-      "description": "GEAR freshman fall. Intro to EE discipline and tools.",
+      "description": "Survey of electrical engineering disciplines, tools, and career paths. Open to EE and Computer Engineering majors.",
       "units": 4,
       "self_learnable": false,
       "position_x": 80,
@@ -31,32 +31,32 @@
       "node_type": "course",
       "label": "ECE 5",
       "title": "Introduction to ECE",
-      "description": "GEAR freshman. Also offered winter.",
+      "description": "Exposes freshmen to ECE sub-fields through faculty lectures and weekly Arduino-based project labs.",
       "units": 4,
       "self_learnable": false,
       "position_x": 80,
-      "position_y": 200
+      "position_y": 300
     },
     {
       "id": "cmpsc-16",
       "node_type": "course",
       "label": "CMPSC 16",
       "title": "Problem Solving with C++",
-      "description": "GEAR prep: CMPSC 9 or CMPSC 16.",
+      "description": "Programming fundamentals in C++: control flow, functions, arrays, and object-oriented design for engineering applications.",
       "units": 4,
       "self_learnable": true,
       "position_x": 80,
-      "position_y": 320
+      "position_y": 520
     },
     {
       "id": "ece-10a",
       "node_type": "course",
       "label": "ECE 10A",
       "title": "Circuits & Systems I (+ lab)",
-      "description": "Foundations of analog and digital circuits. Includes 10AL lab.",
+      "description": "Foundations of analog and digital circuits and systems. Core prep for signals, electronics, and logic design tracks.",
       "units": 5,
       "self_learnable": false,
-      "position_x": 280,
+      "position_x": 380,
       "position_y": 80
     },
     {
@@ -64,161 +64,173 @@
       "node_type": "course",
       "label": "ECE 10B",
       "title": "Circuits & Systems II (+ lab)",
+      "description": "Continuation of circuit analysis: AC circuits, frequency response, and system-level analog/digital concepts.",
       "units": 5,
       "self_learnable": false,
-      "position_x": 280,
-      "position_y": 200
+      "position_x": 380,
+      "position_y": 300
     },
     {
       "id": "ece-10c",
       "node_type": "course",
       "label": "ECE 10C",
       "title": "Circuits & Systems III (+ lab)",
+      "description": "Advanced circuits topics bridging to upper-division EE: transforms, feedback, and design-oriented analysis.",
       "units": 5,
       "self_learnable": false,
-      "position_x": 280,
-      "position_y": 320
+      "position_x": 380,
+      "position_y": 520
     },
     {
       "id": "ece-130a",
       "node_type": "course",
       "label": "ECE 130A",
       "title": "Signal Analysis & Processing I",
+      "description": "Continuous-time signals and systems: Fourier analysis, filtering, and introduction to signal processing methods.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 480,
-      "position_y": 120
+      "position_x": 680,
+      "position_y": 180
     },
     {
       "id": "ece-130b",
       "node_type": "course",
       "label": "ECE 130B",
       "title": "Signal Analysis & Processing II",
+      "description": "Discrete-time signals and systems: sampling, Z-transforms, and digital filter design fundamentals.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 480,
-      "position_y": 240
+      "position_x": 680,
+      "position_y": 400
     },
     {
       "id": "ece-139",
       "node_type": "course",
       "label": "ECE 139",
       "title": "Probability & Statistics",
+      "description": "Probability models, random variables, and statistical methods for communications, signal processing, and ML.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 480,
-      "position_y": 360
+      "position_x": 680,
+      "position_y": 620
     },
     {
       "id": "ece-134",
       "node_type": "course",
       "label": "ECE 134",
       "title": "Introduction to Fields & Waves",
+      "description": "Electromagnetic fields, Maxwell's equations, transmission lines, and wave propagation for RF and wireless.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 680,
-      "position_y": 120
+      "position_x": 980,
+      "position_y": 180
     },
     {
       "id": "ece-15a",
       "node_type": "course",
       "label": "ECE 15A",
       "title": "Fundamentals of Logic Design",
+      "description": "Boolean algebra, combinational and sequential logic, and hardware description for digital system design.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 680,
-      "position_y": 280
+      "position_x": 980,
+      "position_y": 420
     },
     {
       "id": "ece-152a",
       "node_type": "course",
       "label": "ECE 152A",
       "title": "Digital Design Principles",
+      "description": "Advanced digital design: finite state machines, timing, and implementation strategies for modern hardware.",
       "units": 5,
       "self_learnable": false,
-      "position_x": 880,
-      "position_y": 280
+      "position_x": 1280,
+      "position_y": 420
     },
     {
       "id": "ece-153b",
       "node_type": "course",
       "label": "ECE 153B",
       "title": "Sensor & Peripheral Interface Design",
-      "description": "Prerequisite to ECE 188A (GEAR). Alternative: ECE 153A.",
+      "description": "Embedded interfaces, sensors, and peripherals. Prerequisite to senior project (ECE 188A); ECE 153A is an alternative.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 1080,
-      "position_y": 200
+      "position_x": 1580,
+      "position_y": 300
     },
     {
       "id": "ece-188a",
       "node_type": "course",
       "label": "ECE 188A",
       "title": "Senior EE Project I",
+      "description": "First quarter of capstone team project: proposal, design specification, and initial implementation.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 1080,
-      "position_y": 360
+      "position_x": 1580,
+      "position_y": 520
     },
     {
       "id": "ece-188b",
       "node_type": "course",
       "label": "ECE 188B",
       "title": "Senior EE Project II",
+      "description": "Second quarter of capstone: prototype development, testing, and iteration toward final deliverable.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 1280,
-      "position_y": 360
+      "position_x": 1880,
+      "position_y": 520
     },
     {
       "id": "ece-188c",
       "node_type": "course",
       "label": "ECE 188C",
       "title": "Senior EE Project III",
+      "description": "Final capstone quarter: integration, documentation, and presentation of the completed engineering project.",
       "units": 4,
       "self_learnable": false,
-      "position_x": 1480,
-      "position_y": 360
+      "position_x": 2180,
+      "position_y": 520
     },
     {
       "id": "engr-101",
       "node_type": "course",
       "label": "ENGR 101",
       "title": "Ethics in Engineering",
+      "description": "Professional ethics, social responsibility, and case studies in engineering decision-making.",
       "units": 3,
       "self_learnable": false,
-      "position_x": 1280,
-      "position_y": 520
+      "position_x": 1880,
+      "position_y": 740
     },
     {
       "id": "career-rf",
       "node_type": "career",
       "label": "RF Engineer",
       "title": "RF / Wireless Engineer",
-      "description": "Fields & waves, communications hardware.",
+      "description": "Design antennas, RF circuits, and wireless communication systems for telecom and aerospace.",
       "self_learnable": false,
-      "position_x": 1680,
-      "position_y": 120
+      "position_x": 2480,
+      "position_y": 180
     },
     {
       "id": "career-hardware",
       "node_type": "career",
       "label": "Hardware Engineer",
       "title": "Hardware / Digital Design",
-      "description": "Board design, FPGA, digital systems.",
+      "description": "Board-level design, FPGA/ASIC development, and embedded hardware for consumer and industrial products.",
       "self_learnable": false,
-      "position_x": 1680,
-      "position_y": 280
+      "position_x": 2480,
+      "position_y": 420
     },
     {
       "id": "career-signals",
       "node_type": "career",
       "label": "DSP Engineer",
       "title": "Signal Processing Engineer",
-      "description": "Audio, imaging, communications algorithms.",
+      "description": "Develop algorithms for audio, imaging, radar, and communications in software and hardware.",
       "self_learnable": false,
-      "position_x": 1680,
-      "position_y": 440
+      "position_x": 2480,
+      "position_y": 660
     }
   ],
   "edges": [

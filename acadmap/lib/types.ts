@@ -89,6 +89,10 @@ export type RoadmapNodeData = {
   units: number;
   selfLearnable: boolean;
   resources: Resource[];
+  /** Set by RoadmapGraph when another node is focused. */
+  dimmed?: boolean;
+  /** Set by RoadmapGraph on the actively selected node. */
+  focused?: boolean;
 };
 
 export type CareerNodeData = {
@@ -99,6 +103,8 @@ export type CareerNodeData = {
   units?: number;
   selfLearnable?: boolean;
   resources?: Resource[];
+  dimmed?: boolean;
+  focused?: boolean;
 };
 
 export type AcadMapNodeData = RoadmapNodeData | CareerNodeData;

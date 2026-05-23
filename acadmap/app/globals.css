@@ -50,6 +50,15 @@ body {
   cursor: grabbing;
 }
 
+.acadmap-flow--focused .react-flow__pane {
+  cursor: default;
+}
+
+.acadmap-flow--focused .react-flow__background {
+  opacity: 0.35;
+  transition: opacity 0.2s ease;
+}
+
 @layer utilities {
   .text-gradient-brand {
     @apply bg-gradient-to-r from-indigo-300 via-violet-200 to-purple-300 bg-clip-text text-transparent;

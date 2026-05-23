@@ -7,13 +7,17 @@ import type { RoadmapNodeData } from "@/lib/types";
 export type CourseNode = Node<RoadmapNodeData, "course">;
 
 export function NodeCard({ data, selected }: NodeProps<CourseNode>) {
+  const isFocused = data.focused || selected;
+
   return (
     <div
       className={[
-        "relative min-w-[200px] max-w-[260px] rounded-xl border-2 bg-slate-900/95 px-4 py-3 shadow-lg backdrop-blur-sm transition-shadow",
-        selected
-          ? "border-violet-400 shadow-violet-500/25"
-          : "border-indigo-500/60 shadow-indigo-950/40 hover:border-indigo-400/80",
+        "relative min-w-[220px] max-w-[280px] rounded-xl border-2 bg-slate-900/95 px-4 py-3 shadow-lg backdrop-blur-sm transition-all duration-200",
+        data.dimmed
+          ? "border-slate-700/40 opacity-30 shadow-none grayscale"
+          : isFocused
+            ? "z-10 scale-[1.02] border-violet-300 shadow-2xl shadow-violet-500/40 ring-2 ring-violet-400/50"
+            : "border-indigo-500/60 shadow-indigo-950/40 hover:border-indigo-400/80",
       ].join(" ")}
     >
       <Handle
@@ -34,6 +38,17 @@ export function NodeCard({ data, selected }: NodeProps<CourseNode>) {
       <h3 className="mb-2 text-sm font-semibold leading-snug text-slate-50">
         {data.title}
       </h3>
+
+      {data.description && (
+        <p
+          className={[
+            "mb-2 text-xs leading-relaxed text-slate-400",
+            data.dimmed ? "line-clamp-2" : "line-clamp-3",
+          ].join(" ")}
+        >
+          {data.description}
+        </p>
+      )}
 
       {data.selfLearnable && (
         <div

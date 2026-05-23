@@ -84,7 +84,10 @@ export function Sidebar({
             Description
           </h3>
           <p className="text-sm leading-relaxed text-slate-300">
-            {data.description}
+            {data.description || "No description available yet."}
+          </p>
+          <p className="mt-3 text-xs text-slate-500">
+            Click the canvas or another node to change focus.
           </p>
         </section>
 
