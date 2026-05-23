@@ -1,28 +1,192 @@
 {
-  "school": { "name": "UC Santa Barbara", "short_name": "ucsb", "location": "Santa Barbara, CA" },
-  "major": { "name": "Computer Science", "slug": "computer-science", "degree_type": "BS" },
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Computer Science",
+    "slug": "computer-science",
+    "degree_type": "BS"
+  },
   "metadata": {
     "source": "UCSB GEAR 2025-2026",
     "source_url": "https://engineering.ucsb.edu/sites/default/files/docs/25-26_GEAR.pdf",
     "gear_page": 18
   },
   "nodes": [
-    { "id": "cmpsc-16", "node_type": "course", "label": "CMPSC 16", "units": 4, "self_learnable": true, "position_x": 80, "position_y": 120 },
-    { "id": "cmpsc-24", "node_type": "course", "label": "CMPSC 24", "units": 4, "self_learnable": true, "position_x": 280, "position_y": 120 },
-    { "id": "cmpsc-32", "node_type": "course", "label": "CMPSC 32", "units": 4, "self_learnable": false, "position_x": 480, "position_y": 120 },
-    { "id": "cmpsc-40", "node_type": "course", "label": "CMPSC 40", "units": 5, "self_learnable": false, "position_x": 480, "position_y": 280 },
-    { "id": "cmpsc-64", "node_type": "course", "label": "CMPSC 64", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 120 },
-    { "id": "pstat-120a", "node_type": "course", "label": "PSTAT 120A", "units": 4, "self_learnable": false, "position_x": 680, "position_y": 280 },
-    { "id": "cmpsc-130a", "node_type": "course", "label": "CMPSC 130A", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 120 },
-    { "id": "cmpsc-130b", "node_type": "course", "label": "CMPSC 130B", "units": 4, "self_learnable": false, "position_x": 880, "position_y": 280 },
-    { "id": "cmpsc-156", "node_type": "course", "label": "CMPSC 156", "units": 4, "self_learnable": false, "position_x": 1080, "position_y": 120 },
-    { "id": "cmpsc-170", "node_type": "course", "label": "CMPSC 170", "units": 4, "self_learnable": false, "position_x": 1080, "position_y": 280 },
-    { "id": "cmpsc-189a", "node_type": "course", "label": "CMPSC 189A", "units": 4, "self_learnable": false, "position_x": 1280, "position_y": 200 },
-    { "id": "engr-101", "node_type": "course", "label": "ENGR 101", "units": 3, "self_learnable": false, "position_x": 1280, "position_y": 360 },
-    { "id": "career-swe", "node_type": "career", "label": "Software engineer", "self_learnable": false, "position_x": 1480, "position_y": 80 },
-    { "id": "career-ml", "node_type": "career", "label": "ML engineer", "self_learnable": false, "position_x": 1480, "position_y": 200 },
-    { "id": "career-security", "node_type": "career", "label": "Security engineer", "self_learnable": false, "position_x": 1480, "position_y": 320 },
-    { "id": "career-grad", "node_type": "career", "label": "Grad school", "self_learnable": false, "position_x": 1480, "position_y": 440 }
+    {
+      "id": "cmpsc-16",
+      "node_type": "course",
+      "label": "CMPSC 16",
+      "title": "Problem Solving with Computers I",
+      "description": "Introductory programming in Python: variables, control flow, functions, and problem decomposition for CS majors.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "cmpsc-24",
+      "node_type": "course",
+      "label": "CMPSC 24",
+      "title": "Problem Solving with Computers II",
+      "description": "Intermediate Python: data structures, file I/O, testing, and software development practices building on CMPSC 16.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "cmpsc-32",
+      "node_type": "course",
+      "label": "CMPSC 32",
+      "title": "Object-Oriented Design & Implementation",
+      "description": "Object-oriented programming in Java: classes, inheritance, polymorphism, and design patterns for scalable software.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "cmpsc-40",
+      "node_type": "course",
+      "label": "CMPSC 40",
+      "title": "Foundations of Computer Science",
+      "description": "Discrete mathematics for CS: logic, proofs, sets, relations, combinatorics, and graph theory foundations.",
+      "units": 5,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 300
+    },
+    {
+      "id": "cmpsc-64",
+      "node_type": "course",
+      "label": "CMPSC 64",
+      "title": "Computer Organization & Logic Design",
+      "description": "Digital logic, assembly language, memory hierarchy, and how hardware executes programs at the machine level.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "pstat-120a",
+      "node_type": "course",
+      "label": "PSTAT 120A",
+      "title": "Probability & Statistics",
+      "description": "Probability models, random variables, and statistical inference—prep for ML, algorithms, and data science tracks.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 300
+    },
+    {
+      "id": "cmpsc-130a",
+      "node_type": "course",
+      "label": "CMPSC 130A",
+      "title": "Data Structures & Algorithms I",
+      "description": "Core data structures (lists, trees, heaps, hash tables) and algorithm analysis with Big-O complexity.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "cmpsc-130b",
+      "node_type": "course",
+      "label": "CMPSC 130B",
+      "title": "Data Structures & Algorithms II",
+      "description": "Advanced algorithms: graph algorithms, dynamic programming, NP-completeness, and algorithm design techniques.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 300
+    },
+    {
+      "id": "cmpsc-156",
+      "node_type": "course",
+      "label": "CMPSC 156",
+      "title": "Advanced Applications Programming",
+      "description": "Large-scale application development: web frameworks, databases, APIs, and team-based software engineering.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "cmpsc-170",
+      "node_type": "course",
+      "label": "CMPSC 170",
+      "title": "Operating Systems",
+      "description": "Processes, threads, memory management, file systems, and concurrency in modern operating system design.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "cmpsc-189a",
+      "node_type": "course",
+      "label": "CMPSC 189A",
+      "title": "Senior Computer Systems Project",
+      "description": "Capstone team project in computer systems: specification, design, and initial implementation of a substantial software system.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 180
+    },
+    {
+      "id": "engr-101",
+      "node_type": "course",
+      "label": "ENGR 101",
+      "title": "Ethics in Engineering",
+      "description": "Professional ethics, social responsibility, and case studies in engineering and technology decision-making.",
+      "units": 3,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 420
+    },
+    {
+      "id": "career-swe",
+      "node_type": "career",
+      "label": "Software Engineer",
+      "title": "Software Engineer",
+      "description": "Build and ship production systems at startups and big tech—backend, frontend, and full-stack roles.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "career-ml",
+      "node_type": "career",
+      "label": "ML Engineer",
+      "title": "Machine Learning Engineer",
+      "description": "Develop models and ML pipelines for recommendation, NLP, computer vision, and data-driven products.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 300
+    },
+    {
+      "id": "career-security",
+      "node_type": "career",
+      "label": "Security Engineer",
+      "title": "Security Engineer",
+      "description": "Protect systems through secure coding, penetration testing, and security architecture in industry or research.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 520
+    },
+    {
+      "id": "career-grad",
+      "node_type": "career",
+      "label": "Grad School",
+      "title": "Graduate School (CS PhD / MS)",
+      "description": "Research-focused path in algorithms, systems, AI, or theory via MS/PhD programs and faculty-led projects.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 740
+    }
   ],
   "edges": [
     { "id": "e1", "source_id": "cmpsc-16", "target_id": "cmpsc-24", "edge_type": "prerequisite" },
@@ -37,6 +201,7 @@
     { "id": "e10", "source_id": "cmpsc-170", "target_id": "career-swe", "edge_type": "leads_to" },
     { "id": "e11", "source_id": "pstat-120a", "target_id": "career-ml", "edge_type": "leads_to" },
     { "id": "e12", "source_id": "cmpsc-156", "target_id": "career-security", "edge_type": "leads_to" },
-    { "id": "e13", "source_id": "cmpsc-189a", "target_id": "career-grad", "edge_type": "leads_to" }
+    { "id": "e13", "source_id": "cmpsc-189a", "target_id": "career-grad", "edge_type": "leads_to" },
+    { "id": "e14", "source_id": "cmpsc-64", "target_id": "cmpsc-130a", "edge_type": "recommended" }
   ]
 }
