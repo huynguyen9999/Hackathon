@@ -1,0 +1,248 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Applied Mathematics",
+    "slug": "applied-mathematics",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Applied Mathematics (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSAPM"
+  },
+  "nodes": [
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "Calculus",
+      "description": "Calculus — part of the Applied Mathematics prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "math-4a",
+      "node_type": "course",
+      "label": "MATH 4A",
+      "title": "Linear Algebra & Differential Equations",
+      "description": "Linear Algebra & Differential Equations — part of the Applied Mathematics prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "math-8",
+      "node_type": "course",
+      "label": "MATH 8",
+      "title": "Transition to Proofs",
+      "description": "Transition to Proofs — part of the Applied Mathematics prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "phys-7a",
+      "node_type": "course",
+      "label": "PHYS 7A",
+      "title": "PHYS 7A",
+      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "math-118a",
+      "node_type": "course",
+      "label": "MATH 118A",
+      "title": "Real Analysis",
+      "description": "Real Analysis — part of the Applied Mathematics prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "math-111a",
+      "node_type": "course",
+      "label": "MATH 111A",
+      "title": "Abstract Algebra",
+      "description": "Abstract Algebra — part of the Applied Mathematics prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "math-124",
+      "node_type": "course",
+      "label": "MATH 124",
+      "title": "MATH 124",
+      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "math-132",
+      "node_type": "course",
+      "label": "MATH 132",
+      "title": "MATH 132",
+      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "math-160",
+      "node_type": "course",
+      "label": "MATH 160",
+      "title": "MATH 160",
+      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "math-170",
+      "node_type": "course",
+      "label": "MATH 170",
+      "title": "MATH 170",
+      "description": "Required or recommended course for the Applied Mathematics major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 80
+    },
+    {
+      "id": "career-data-science",
+      "node_type": "career",
+      "label": "Data science",
+      "title": "Data science",
+      "description": "Career path for Applied Mathematics graduates: Data science.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 80
+    },
+    {
+      "id": "career-engineering",
+      "node_type": "career",
+      "label": "Engineering",
+      "title": "Engineering",
+      "description": "Career path for Applied Mathematics graduates: Engineering.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 300
+    },
+    {
+      "id": "career-finance",
+      "node_type": "career",
+      "label": "Finance",
+      "title": "Finance",
+      "description": "Career path for Applied Mathematics graduates: Finance.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 520
+    },
+    {
+      "id": "career-research",
+      "node_type": "career",
+      "label": "Research",
+      "title": "Research",
+      "description": "Career path for Applied Mathematics graduates: Research.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "math-3a",
+      "target_id": "math-4a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-4a",
+      "target_id": "math-8",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "math-8",
+      "target_id": "phys-7a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "phys-7a",
+      "target_id": "math-118a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "math-118a",
+      "target_id": "math-111a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "math-111a",
+      "target_id": "math-124",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "math-124",
+      "target_id": "math-132",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "math-132",
+      "target_id": "math-160",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "math-160",
+      "target_id": "math-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "math-170",
+      "target_id": "career-data-science",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "math-132",
+      "target_id": "career-engineering",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "math-170",
+      "target_id": "career-finance",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "math-132",
+      "target_id": "career-research",
+      "edge_type": "leads_to"
+    }
+  ]
+}

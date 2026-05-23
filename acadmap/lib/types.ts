@@ -59,6 +59,12 @@ export interface Major {
 export interface SeedRoadmapInput {
   school: Omit<School, "id"> & { id?: string };
   major: Omit<Major, "id" | "school_id"> & { id?: string; school_id?: string };
+  metadata?: {
+    source?: string;
+    source_url?: string;
+    gear_page?: number;
+    [key: string]: unknown;
+  };
   nodes: Omit<RoadmapNode, "roadmap_id">[];
   edges: Omit<RoadmapEdge, "roadmap_id">[];
 }

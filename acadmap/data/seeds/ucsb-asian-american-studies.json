@@ -1,0 +1,163 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Asian American Studies",
+    "slug": "asian-american-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Asian American Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAASAM"
+  },
+  "nodes": [
+    {
+      "id": "am-1",
+      "node_type": "course",
+      "label": "AM 1",
+      "title": "Introduction to Asian American Studies",
+      "description": "Introduction to Asian American Studies — part of the Asian American Studies prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "am-110",
+      "node_type": "course",
+      "label": "AM 110",
+      "title": "AM 110",
+      "description": "Required or recommended course for the Asian American Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "am-130",
+      "node_type": "course",
+      "label": "AM 130",
+      "title": "AM 130",
+      "description": "Required or recommended course for the Asian American Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "am-150",
+      "node_type": "course",
+      "label": "AM 150",
+      "title": "AM 150",
+      "description": "Required or recommended course for the Asian American Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "am-170",
+      "node_type": "course",
+      "label": "AM 170",
+      "title": "AM 170",
+      "description": "Required or recommended course for the Asian American Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for Asian American Studies graduates: Law.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-education",
+      "node_type": "career",
+      "label": "Education",
+      "title": "Education",
+      "description": "Career path for Asian American Studies graduates: Education.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "career-nonprofit",
+      "node_type": "career",
+      "label": "Nonprofit",
+      "title": "Nonprofit",
+      "description": "Career path for Asian American Studies graduates: Nonprofit.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 520
+    },
+    {
+      "id": "career-public-policy",
+      "node_type": "career",
+      "label": "Public policy",
+      "title": "Public policy",
+      "description": "Career path for Asian American Studies graduates: Public policy.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "am-1",
+      "target_id": "am-110",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "am-110",
+      "target_id": "am-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "am-130",
+      "target_id": "am-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "am-150",
+      "target_id": "am-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "am-170",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "am-130",
+      "target_id": "career-education",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "am-170",
+      "target_id": "career-nonprofit",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "am-130",
+      "target_id": "career-public-policy",
+      "edge_type": "leads_to"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Art",
+    "slug": "art",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Art (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAART"
+  },
+  "nodes": [
+    {
+      "id": "art-1a",
+      "node_type": "course",
+      "label": "ART 1A",
+      "title": "Foundation studio sequence",
+      "description": "Required or recommended course for the Art major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "art-12",
+      "node_type": "course",
+      "label": "ART 12",
+      "title": "Art history survey",
+      "description": "Art history survey — part of the Art prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "art-130",
+      "node_type": "course",
+      "label": "ART 130",
+      "title": "ART 130",
+      "description": "Required or recommended course for the Art major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "art-140",
+      "node_type": "course",
+      "label": "ART 140",
+      "title": "ART 140",
+      "description": "Required or recommended course for the Art major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "art-150",
+      "node_type": "course",
+      "label": "ART 150",
+      "title": "ART 150",
+      "description": "Required or recommended course for the Art major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "art-190",
+      "node_type": "course",
+      "label": "ART 190",
+      "title": "ART 190",
+      "description": "Required or recommended course for the Art major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-fine-arts",
+      "node_type": "career",
+      "label": "Fine arts",
+      "title": "Fine arts",
+      "description": "Career path for Art graduates: Fine arts.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "career-graphic-design",
+      "node_type": "career",
+      "label": "Graphic design",
+      "title": "Graphic design",
+      "description": "Career path for Art graduates: Graphic design.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "career-museum-gallery",
+      "node_type": "career",
+      "label": "Museum/gallery",
+      "title": "Museum/gallery",
+      "description": "Career path for Art graduates: Museum/gallery.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 520
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for Art graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "art-1a",
+      "target_id": "art-12",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "art-12",
+      "target_id": "art-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "art-130",
+      "target_id": "art-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "art-140",
+      "target_id": "art-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "art-150",
+      "target_id": "art-190",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "art-190",
+      "target_id": "career-fine-arts",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "art-140",
+      "target_id": "career-graphic-design",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "art-190",
+      "target_id": "career-museum-gallery",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "art-140",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Chicano and Chicana Studies",
+    "slug": "chicano-and-chicano-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Chicano and Chicana Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BACHST"
+  },
+  "nodes": [
+    {
+      "id": "st-1a",
+      "node_type": "course",
+      "label": "ST 1A",
+      "title": "Introduction to Chicana/o Studies",
+      "description": "Introduction to Chicana/o Studies — part of the Chicano and Chicana Studies prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "st-110",
+      "node_type": "course",
+      "label": "ST 110",
+      "title": "ST 110",
+      "description": "Required or recommended course for the Chicano and Chicana Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "st-130",
+      "node_type": "course",
+      "label": "ST 130",
+      "title": "ST 130",
+      "description": "Required or recommended course for the Chicano and Chicana Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "st-150",
+      "node_type": "course",
+      "label": "ST 150",
+      "title": "ST 150",
+      "description": "Required or recommended course for the Chicano and Chicana Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "st-170",
+      "node_type": "course",
+      "label": "ST 170",
+      "title": "ST 170",
+      "description": "Required or recommended course for the Chicano and Chicana Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-education",
+      "node_type": "career",
+      "label": "Education",
+      "title": "Education",
+      "description": "Career path for Chicano and Chicana Studies graduates: Education.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-law",
+      "node_type": "career",
+      "label": "Law",
+      "title": "Law",
+      "description": "Career path for Chicano and Chicana Studies graduates: Law.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "career-social-work",
+      "node_type": "career",
+      "label": "Social work",
+      "title": "Social work",
+      "description": "Career path for Chicano and Chicana Studies graduates: Social work.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 520
+    },
+    {
+      "id": "career-public-policy",
+      "node_type": "career",
+      "label": "Public policy",
+      "title": "Public policy",
+      "description": "Career path for Chicano and Chicana Studies graduates: Public policy.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "st-1a",
+      "target_id": "st-110",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "st-110",
+      "target_id": "st-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "st-130",
+      "target_id": "st-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "st-150",
+      "target_id": "st-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "st-170",
+      "target_id": "career-education",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "st-130",
+      "target_id": "career-law",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "st-170",
+      "target_id": "career-social-work",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "st-130",
+      "target_id": "career-public-policy",
+      "edge_type": "leads_to"
+    }
+  ]
+}

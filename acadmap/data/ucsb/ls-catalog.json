@@ -103,7 +103,7 @@
       "department_url": "https://www.anth.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAANT",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "ANTH 2 — Introductory Cultural Anthropology",
         "ANTH 3 or 5 (biological archaeology / archaeology intro)",
@@ -129,7 +129,7 @@
         "Public health",
         "Academia"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#anthropology",
       "catalog_program_code": "BAANT",
       "detail_available": true
@@ -142,7 +142,7 @@
       "department_url": "https://www.math.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSAPM",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "MATH 3A-B — Calculus",
         "MATH 4A-B — Linear Algebra & Differential Equations",
@@ -169,7 +169,7 @@
         "Research",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#applied-mathematics",
       "catalog_program_code": "BSAPM",
       "selective": true,
@@ -183,7 +183,7 @@
       "department_url": "https://www.biology.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSAQB",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B-C (or 2 series)",
         "MATH 3A-B",
@@ -210,7 +210,7 @@
         "Environmental consulting",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#aquatic-biology",
       "catalog_program_code": "BSAQB",
       "selective": true,
@@ -224,7 +224,7 @@
       "department_url": "https://www.art.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAART",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "ART 1A-B-C — Foundation studio sequence",
         "ART 12 — Art history survey",
@@ -250,7 +250,7 @@
         "Teaching",
         "Creative direction"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#art",
       "catalog_program_code": "BAART",
       "detail_available": true
@@ -263,7 +263,7 @@
       "department_url": "https://www.asam.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAASAM",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "AS AM 1 — Introduction to Asian American Studies",
         "Lower-division AS AM courses",
@@ -289,7 +289,7 @@
         "Public policy",
         "Community organizing"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#asian-american-studies",
       "catalog_program_code": "BAASAM",
       "detail_available": true
@@ -302,7 +302,7 @@
       "department_url": "https://www.ealc.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BAASST",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "EACS lower-division surveys",
         "Language study (Chinese, Japanese, or Korean)",
@@ -328,7 +328,7 @@
         "Teaching",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#asian-studies",
       "catalog_program_code": "BAASST",
       "detail_available": true
@@ -341,7 +341,7 @@
       "department_url": "https://www.chem.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSBCH",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B-C",
         "CHEM 6AL-BL",
@@ -369,7 +369,7 @@
         "Research",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#biochemistry",
       "catalog_program_code": "BSBCH",
       "selective": true,
@@ -383,7 +383,7 @@
       "department_url": "https://www.biology.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSBIO",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B-C (or 2A-B-C series)",
         "CHEM 1LB or 2LC",
@@ -412,7 +412,7 @@
         "Marine biology",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#biological-sciences",
       "catalog_program_code": "BSBIO",
       "selective": true,
@@ -426,7 +426,7 @@
       "department_url": "https://www.psych.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSBPSY",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "PSY 1 — Introductory Psychology",
         "CHEM 1A-B (or 2 series)",
@@ -454,7 +454,7 @@
         "Graduate study",
         "Clinical psychology"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#biopsychology",
       "catalog_program_code": "BSBPSY",
       "selective": true,
@@ -468,7 +468,7 @@
       "department_url": "https://www.blackstudies.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BABLS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "BL ST 1 — Introduction to Black Studies",
         "Lower-division BL ST courses",
@@ -494,7 +494,7 @@
         "Public policy",
         "Community leadership"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#black-studies",
       "catalog_program_code": "BABLS",
       "detail_available": true
@@ -507,7 +507,7 @@
       "department_url": "https://www.chem.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSCHEM",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B-C",
         "CHEM 6AL-BL (organic chemistry labs)",
@@ -536,7 +536,7 @@
         "Graduate study",
         "Analytical chemistry"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#chemistry",
       "catalog_program_code": "BSCHEM",
       "selective": true,
@@ -550,7 +550,7 @@
       "department_url": "https://www.chicst.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BACHST",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CH ST 1A-B — Introduction to Chicana/o Studies",
         "Lower-division CH ST courses",
@@ -576,7 +576,7 @@
         "Public policy",
         "Community organizing"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#chicano-and-chicano-studies",
       "catalog_program_code": "BACHST",
       "detail_available": true
@@ -589,7 +589,7 @@
       "department_url": "https://www.ealc.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BACHIN",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHIN 1-6 — Chinese language sequence",
         "EACS lower-division survey",
@@ -615,7 +615,7 @@
         "Teaching",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#chinese",
       "catalog_program_code": "BACHIN",
       "detail_available": true
@@ -628,7 +628,7 @@
       "department_url": "https://www.classics.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BACLAS",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "Greek or Latin language sequence",
         "CLAS lower-division surveys",
@@ -654,7 +654,7 @@
         "Graduate study",
         "Publishing"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#classics",
       "catalog_program_code": "BACLAS",
       "detail_available": true
@@ -667,7 +667,7 @@
       "department_url": "https://www.comm.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BACOMM",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "COMM 1 — Introduction to Communication",
         "COMM 88A or statistics course",
@@ -693,7 +693,7 @@
         "UX",
         "Law"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#communication",
       "catalog_program_code": "BACOMM",
       "detail_available": true
@@ -706,7 +706,7 @@
       "department_url": "https://www.complit.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BACMLT",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "Lower-division literature in two languages",
         "C LIT gateway courses",
@@ -732,7 +732,7 @@
         "Graduate study",
         "International NGOs"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#comparative-literature",
       "catalog_program_code": "BACMLT",
       "detail_available": true
@@ -745,7 +745,7 @@
       "department_url": "https://www.theaterdance.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BADAN",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "DANCE lower-division technique courses",
         "DANCE history/theory",
@@ -771,7 +771,7 @@
         "Arts administration",
         "Physical therapy"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#dance",
       "catalog_program_code": "BADAN",
       "detail_available": true
@@ -784,7 +784,7 @@
       "department_url": "https://www.earth.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSEAR",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B",
         "MATH 3A-B, 4A",
@@ -811,7 +811,7 @@
         "Energy",
         "Graduate study"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#earth-science",
       "catalog_program_code": "BSEAR",
       "detail_available": true
@@ -824,7 +824,7 @@
       "department_url": "https://www.biology.ucsb.edu/",
       "curriculum_url": "https://catalog.ucsb.edu/programs/BSEEMB",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "CHEM 1A-B-C",
         "MATH 3A-B",
@@ -851,7 +851,7 @@
         "Graduate study",
         "Wildlife biology"
       ],
-      "requirements_level": "summary",
+      "requirements_level": "roadmap",
       "admissions_url": "https://admissions.sa.ucsb.edu/majors#ecology-and-evolution",
       "catalog_program_code": "BSEEMB",
       "selective": true,

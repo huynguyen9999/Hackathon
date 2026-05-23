@@ -1,0 +1,231 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Biochemistry",
+    "slug": "biochemistry",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Biochemistry (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSBCH"
+  },
+  "nodes": [
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Biochemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Biochemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "phys-7a",
+      "node_type": "course",
+      "label": "PHYS 7A",
+      "title": "PHYS 7A",
+      "description": "Required or recommended course for the Biochemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "chem-109a",
+      "node_type": "course",
+      "label": "CHEM 109A",
+      "title": "CHEM 109A",
+      "description": "Required or recommended course for the Biochemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "chem-113a",
+      "node_type": "course",
+      "label": "CHEM 113A",
+      "title": "Physical Chemistry",
+      "description": "Physical Chemistry — part of the Biochemistry prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "chem-171",
+      "node_type": "course",
+      "label": "CHEM 171",
+      "title": "CHEM 171",
+      "description": "Required or recommended course for the Biochemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "mcdb-108a",
+      "node_type": "course",
+      "label": "MCDB 108A",
+      "title": "MCDB 108A",
+      "description": "Required or recommended course for the Biochemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "chem-173",
+      "node_type": "course",
+      "label": "CHEM 173",
+      "title": "CHEM 173",
+      "description": "Required or recommended course for the Biochemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "bchm-142",
+      "node_type": "course",
+      "label": "BCHM 142",
+      "title": "BCHM 142",
+      "description": "Required or recommended course for the Biochemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "career-biotech",
+      "node_type": "career",
+      "label": "Biotech",
+      "title": "Biotech",
+      "description": "Career path for Biochemistry graduates: Biotech.",
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 80
+    },
+    {
+      "id": "career-pharmaceutical-r-d",
+      "node_type": "career",
+      "label": "Pharmaceutical R&D",
+      "title": "Pharmaceutical R&D",
+      "description": "Career path for Biochemistry graduates: Pharmaceutical R&D.",
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 300
+    },
+    {
+      "id": "career-medicine",
+      "node_type": "career",
+      "label": "Medicine",
+      "title": "Medicine",
+      "description": "Career path for Biochemistry graduates: Medicine.",
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 520
+    },
+    {
+      "id": "career-research",
+      "node_type": "career",
+      "label": "Research",
+      "title": "Research",
+      "description": "Career path for Biochemistry graduates: Research.",
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chem-1a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3a",
+      "target_id": "phys-7a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "phys-7a",
+      "target_id": "chem-109a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "chem-109a",
+      "target_id": "chem-113a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "chem-113a",
+      "target_id": "chem-171",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "chem-171",
+      "target_id": "mcdb-108a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "mcdb-108a",
+      "target_id": "chem-173",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "chem-173",
+      "target_id": "bchm-142",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "bchm-142",
+      "target_id": "career-biotech",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "mcdb-108a",
+      "target_id": "career-pharmaceutical-r-d",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "bchm-142",
+      "target_id": "career-medicine",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "mcdb-108a",
+      "target_id": "career-research",
+      "edge_type": "leads_to"
+    }
+  ]
+}

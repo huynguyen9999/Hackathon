@@ -1,0 +1,146 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Asian Studies",
+    "slug": "asian-studies",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Asian Studies (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAASST"
+  },
+  "nodes": [
+    {
+      "id": "eacs-120",
+      "node_type": "course",
+      "label": "EACS 120",
+      "title": "EACS 120",
+      "description": "Required or recommended course for the Asian Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "eacs-140",
+      "node_type": "course",
+      "label": "EACS 140",
+      "title": "EACS 140",
+      "description": "Required or recommended course for the Asian Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "chin-120",
+      "node_type": "course",
+      "label": "CHIN 120",
+      "title": "CHIN 120",
+      "description": "Required or recommended course for the Asian Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "japan-120",
+      "node_type": "course",
+      "label": "JAPAN 120",
+      "title": "JAPAN 120",
+      "description": "Required or recommended course for the Asian Studies major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "career-international-business",
+      "node_type": "career",
+      "label": "International business",
+      "title": "International business",
+      "description": "Career path for Asian Studies graduates: International business.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-diplomacy",
+      "node_type": "career",
+      "label": "Diplomacy",
+      "title": "Diplomacy",
+      "description": "Career path for Asian Studies graduates: Diplomacy.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 300
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for Asian Studies graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 520
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for Asian Studies graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "eacs-120",
+      "target_id": "eacs-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "eacs-140",
+      "target_id": "chin-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "chin-120",
+      "target_id": "japan-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "japan-120",
+      "target_id": "career-international-business",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "eacs-140",
+      "target_id": "career-diplomacy",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "japan-120",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "eacs-140",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    }
+  ]
+}

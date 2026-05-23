@@ -1,0 +1,197 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Communication",
+    "slug": "communication",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Communication (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BACOMM"
+  },
+  "nodes": [
+    {
+      "id": "comm-1",
+      "node_type": "course",
+      "label": "COMM 1",
+      "title": "Introduction to Communication",
+      "description": "Introduction to Communication — part of the Communication prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "comm-88a",
+      "node_type": "course",
+      "label": "COMM 88A",
+      "title": "COMM 88A",
+      "description": "Required or recommended course for the Communication major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "comm-100a",
+      "node_type": "course",
+      "label": "COMM 100A",
+      "title": "COMM 100A",
+      "description": "Required or recommended course for the Communication major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "comm-121",
+      "node_type": "course",
+      "label": "COMM 121",
+      "title": "COMM 121",
+      "description": "Required or recommended course for the Communication major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "comm-130",
+      "node_type": "course",
+      "label": "COMM 130",
+      "title": "COMM 130",
+      "description": "Required or recommended course for the Communication major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "comm-145",
+      "node_type": "course",
+      "label": "COMM 145",
+      "title": "COMM 145",
+      "description": "Required or recommended course for the Communication major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "comm-160",
+      "node_type": "course",
+      "label": "COMM 160",
+      "title": "COMM 160",
+      "description": "Required or recommended course for the Communication major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "career-marketing",
+      "node_type": "career",
+      "label": "Marketing",
+      "title": "Marketing",
+      "description": "Career path for Communication graduates: Marketing.",
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "career-media",
+      "node_type": "career",
+      "label": "Media",
+      "title": "Media",
+      "description": "Career path for Communication graduates: Media.",
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 300
+    },
+    {
+      "id": "career-corporate-comms",
+      "node_type": "career",
+      "label": "Corporate comms",
+      "title": "Corporate comms",
+      "description": "Career path for Communication graduates: Corporate comms.",
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 520
+    },
+    {
+      "id": "career-ux",
+      "node_type": "career",
+      "label": "UX",
+      "title": "UX",
+      "description": "Career path for Communication graduates: UX.",
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "comm-1",
+      "target_id": "comm-88a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "comm-88a",
+      "target_id": "comm-100a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "comm-100a",
+      "target_id": "comm-121",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "comm-121",
+      "target_id": "comm-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "comm-130",
+      "target_id": "comm-145",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "comm-145",
+      "target_id": "comm-160",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "comm-160",
+      "target_id": "career-marketing",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "comm-130",
+      "target_id": "career-media",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "comm-160",
+      "target_id": "career-corporate-comms",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "comm-130",
+      "target_id": "career-ux",
+      "edge_type": "leads_to"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Earth Science",
+    "slug": "earth-science",
+    "degree_type": "BA/BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Earth Science (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSEAR"
+  },
+  "nodes": [
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Earth Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Earth Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "earth-2",
+      "node_type": "course",
+      "label": "EARTH 2",
+      "title": "Intro geology sequence",
+      "description": "Series through EARTH 4",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "phys-7a",
+      "node_type": "course",
+      "label": "PHYS 7A",
+      "title": "PHYS 7A",
+      "description": "Required or recommended course for the Earth Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "earth-120",
+      "node_type": "course",
+      "label": "EARTH 120",
+      "title": "EARTH 120",
+      "description": "Required or recommended course for the Earth Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "earth-130",
+      "node_type": "course",
+      "label": "EARTH 130",
+      "title": "EARTH 130",
+      "description": "Required or recommended course for the Earth Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "earth-150",
+      "node_type": "course",
+      "label": "EARTH 150",
+      "title": "EARTH 150",
+      "description": "Required or recommended course for the Earth Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "earth-170",
+      "node_type": "course",
+      "label": "EARTH 170",
+      "title": "EARTH 170",
+      "description": "Required or recommended course for the Earth Science major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "career-environmental-consulting",
+      "node_type": "career",
+      "label": "Environmental consulting",
+      "title": "Environmental consulting",
+      "description": "Career path for Earth Science graduates: Environmental consulting.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "career-geology",
+      "node_type": "career",
+      "label": "Geology",
+      "title": "Geology",
+      "description": "Career path for Earth Science graduates: Geology.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 300
+    },
+    {
+      "id": "career-climate-science",
+      "node_type": "career",
+      "label": "Climate science",
+      "title": "Climate science",
+      "description": "Career path for Earth Science graduates: Climate science.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 520
+    },
+    {
+      "id": "career-energy",
+      "node_type": "career",
+      "label": "Energy",
+      "title": "Energy",
+      "description": "Career path for Earth Science graduates: Energy.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chem-1a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3a",
+      "target_id": "earth-2",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "earth-2",
+      "target_id": "phys-7a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "phys-7a",
+      "target_id": "earth-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "earth-120",
+      "target_id": "earth-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "earth-130",
+      "target_id": "earth-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "earth-150",
+      "target_id": "earth-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "earth-170",
+      "target_id": "career-environmental-consulting",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "earth-130",
+      "target_id": "career-geology",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "earth-170",
+      "target_id": "career-climate-science",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "earth-130",
+      "target_id": "career-energy",
+      "edge_type": "leads_to"
+    }
+  ]
+}

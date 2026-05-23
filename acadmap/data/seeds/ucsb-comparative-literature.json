@@ -1,0 +1,146 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Comparative Literature",
+    "slug": "comparative-literature",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Comparative Literature (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BACMLT"
+  },
+  "nodes": [
+    {
+      "id": "lit-110",
+      "node_type": "course",
+      "label": "LIT 110",
+      "title": "LIT 110",
+      "description": "Required or recommended course for the Comparative Literature major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "lit-130",
+      "node_type": "course",
+      "label": "LIT 130",
+      "title": "LIT 130",
+      "description": "Required or recommended course for the Comparative Literature major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "lit-150",
+      "node_type": "course",
+      "label": "LIT 150",
+      "title": "LIT 150",
+      "description": "Required or recommended course for the Comparative Literature major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "lit-170",
+      "node_type": "course",
+      "label": "LIT 170",
+      "title": "LIT 170",
+      "description": "Required or recommended course for the Comparative Literature major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "career-publishing",
+      "node_type": "career",
+      "label": "Publishing",
+      "title": "Publishing",
+      "description": "Career path for Comparative Literature graduates: Publishing.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for Comparative Literature graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 300
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for Comparative Literature graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 520
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Comparative Literature graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "lit-110",
+      "target_id": "lit-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "lit-130",
+      "target_id": "lit-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "lit-150",
+      "target_id": "lit-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "lit-170",
+      "target_id": "career-publishing",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "lit-130",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "lit-170",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "lit-130",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Biological Sciences",
+    "slug": "biological-sciences",
+    "degree_type": "BA/BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Biological Sciences (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSBIO"
+  },
+  "nodes": [
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "math-4a",
+      "node_type": "course",
+      "label": "MATH 4A",
+      "title": "MATH 4A",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "pstat-5a",
+      "node_type": "course",
+      "label": "PSTAT 5A",
+      "title": "PSTAT 5A",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "eemb-2",
+      "node_type": "course",
+      "label": "EEMB 2",
+      "title": "EEMB 2",
+      "description": "Series through EEMB 3",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "mcdb-1a",
+      "node_type": "course",
+      "label": "MCDB 1A",
+      "title": "MCDB 1A",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "phys-6a",
+      "node_type": "course",
+      "label": "PHYS 6A",
+      "title": "PHYS 6A",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "eemb-120",
+      "node_type": "course",
+      "label": "EEMB 120",
+      "title": "EEMB 120",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "mcdb-108a",
+      "node_type": "course",
+      "label": "MCDB 108A",
+      "title": "MCDB 108A",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "eemb-157",
+      "node_type": "course",
+      "label": "EEMB 157",
+      "title": "EEMB 157",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 80
+    },
+    {
+      "id": "mcdb-131",
+      "node_type": "course",
+      "label": "MCDB 131",
+      "title": "MCDB 131",
+      "description": "Required or recommended course for the Biological Sciences major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 80
+    },
+    {
+      "id": "career-medicine",
+      "node_type": "career",
+      "label": "Medicine",
+      "title": "Medicine",
+      "description": "Career path for Biological Sciences graduates: Medicine.",
+      "self_learnable": false,
+      "position_x": 3380,
+      "position_y": 80
+    },
+    {
+      "id": "career-biotech",
+      "node_type": "career",
+      "label": "Biotech",
+      "title": "Biotech",
+      "description": "Career path for Biological Sciences graduates: Biotech.",
+      "self_learnable": false,
+      "position_x": 3380,
+      "position_y": 300
+    },
+    {
+      "id": "career-environmental-science",
+      "node_type": "career",
+      "label": "Environmental science",
+      "title": "Environmental science",
+      "description": "Career path for Biological Sciences graduates: Environmental science.",
+      "self_learnable": false,
+      "position_x": 3380,
+      "position_y": 520
+    },
+    {
+      "id": "career-marine-biology",
+      "node_type": "career",
+      "label": "Marine biology",
+      "title": "Marine biology",
+      "description": "Career path for Biological Sciences graduates: Marine biology.",
+      "self_learnable": false,
+      "position_x": 3380,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chem-1a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3a",
+      "target_id": "math-4a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "math-4a",
+      "target_id": "pstat-5a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "pstat-5a",
+      "target_id": "eemb-2",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "eemb-2",
+      "target_id": "mcdb-1a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "mcdb-1a",
+      "target_id": "phys-6a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "phys-6a",
+      "target_id": "eemb-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "eemb-120",
+      "target_id": "mcdb-108a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "mcdb-108a",
+      "target_id": "eemb-157",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e10",
+      "source_id": "eemb-157",
+      "target_id": "mcdb-131",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "mcdb-131",
+      "target_id": "career-medicine",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "mcdb-108a",
+      "target_id": "career-biotech",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "mcdb-131",
+      "target_id": "career-environmental-science",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "mcdb-108a",
+      "target_id": "career-marine-biology",
+      "edge_type": "leads_to"
+    }
+  ]
+}

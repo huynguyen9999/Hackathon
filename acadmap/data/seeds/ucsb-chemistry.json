@@ -1,0 +1,248 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Chemistry",
+    "slug": "chemistry",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Chemistry (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSCHEM"
+  },
+  "nodes": [
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "phys-7a",
+      "node_type": "course",
+      "label": "PHYS 7A",
+      "title": "PHYS 7A",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "chem-109a",
+      "node_type": "course",
+      "label": "CHEM 109A",
+      "title": "CHEM 109A",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "chem-113a",
+      "node_type": "course",
+      "label": "CHEM 113A",
+      "title": "CHEM 113A",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "chem-142a",
+      "node_type": "course",
+      "label": "CHEM 142A",
+      "title": "CHEM 142A",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "chem-171",
+      "node_type": "course",
+      "label": "CHEM 171",
+      "title": "CHEM 171",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "chem-173",
+      "node_type": "course",
+      "label": "CHEM 173",
+      "title": "CHEM 173",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "chem-174",
+      "node_type": "course",
+      "label": "CHEM 174",
+      "title": "CHEM 174",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "chem-180",
+      "node_type": "course",
+      "label": "CHEM 180",
+      "title": "CHEM 180",
+      "description": "Required or recommended course for the Chemistry major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 80
+    },
+    {
+      "id": "career-pharmaceutical-r-d",
+      "node_type": "career",
+      "label": "Pharmaceutical R&D",
+      "title": "Pharmaceutical R&D",
+      "description": "Career path for Chemistry graduates: Pharmaceutical R&D.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 80
+    },
+    {
+      "id": "career-materials-science",
+      "node_type": "career",
+      "label": "Materials science",
+      "title": "Materials science",
+      "description": "Career path for Chemistry graduates: Materials science.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 300
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for Chemistry graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 520
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Chemistry graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chem-1a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "math-3a",
+      "target_id": "phys-7a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "phys-7a",
+      "target_id": "chem-109a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "chem-109a",
+      "target_id": "chem-113a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "chem-113a",
+      "target_id": "chem-142a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "chem-142a",
+      "target_id": "chem-171",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "chem-171",
+      "target_id": "chem-173",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "chem-173",
+      "target_id": "chem-174",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "chem-174",
+      "target_id": "chem-180",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "chem-180",
+      "target_id": "career-pharmaceutical-r-d",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "chem-173",
+      "target_id": "career-materials-science",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "chem-180",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "chem-173",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Anthropology",
+    "slug": "anthropology",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Anthropology (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BAANT"
+  },
+  "nodes": [
+    {
+      "id": "anth-2",
+      "node_type": "course",
+      "label": "ANTH 2",
+      "title": "Introductory Cultural Anthropology",
+      "description": "Introductory Cultural Anthropology — part of the Anthropology prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "anth-3",
+      "node_type": "course",
+      "label": "ANTH 3",
+      "title": "ANTH 3",
+      "description": "Required or recommended course for the Anthropology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "anth-102",
+      "node_type": "course",
+      "label": "ANTH 102",
+      "title": "ANTH 102",
+      "description": "Required or recommended course for the Anthropology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "anth-120",
+      "node_type": "course",
+      "label": "ANTH 120",
+      "title": "ANTH 120",
+      "description": "Required or recommended course for the Anthropology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "anth-130",
+      "node_type": "course",
+      "label": "ANTH 130",
+      "title": "ANTH 130",
+      "description": "Required or recommended course for the Anthropology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "anth-150",
+      "node_type": "course",
+      "label": "ANTH 150",
+      "title": "ANTH 150",
+      "description": "Required or recommended course for the Anthropology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "anth-170",
+      "node_type": "course",
+      "label": "ANTH 170",
+      "title": "ANTH 170",
+      "description": "Required or recommended course for the Anthropology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "career-ux-research",
+      "node_type": "career",
+      "label": "UX research",
+      "title": "UX research",
+      "description": "Career path for Anthropology graduates: UX research.",
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "career-museums",
+      "node_type": "career",
+      "label": "Museums",
+      "title": "Museums",
+      "description": "Career path for Anthropology graduates: Museums.",
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 300
+    },
+    {
+      "id": "career-international-development",
+      "node_type": "career",
+      "label": "International development",
+      "title": "International development",
+      "description": "Career path for Anthropology graduates: International development.",
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 520
+    },
+    {
+      "id": "career-public-health",
+      "node_type": "career",
+      "label": "Public health",
+      "title": "Public health",
+      "description": "Career path for Anthropology graduates: Public health.",
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "anth-2",
+      "target_id": "anth-3",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "anth-3",
+      "target_id": "anth-102",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "anth-102",
+      "target_id": "anth-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "anth-120",
+      "target_id": "anth-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "anth-130",
+      "target_id": "anth-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "anth-150",
+      "target_id": "anth-170",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "anth-170",
+      "target_id": "career-ux-research",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "anth-130",
+      "target_id": "career-museums",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "anth-170",
+      "target_id": "career-international-development",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "anth-130",
+      "target_id": "career-public-health",
+      "edge_type": "leads_to"
+    }
+  ]
+}

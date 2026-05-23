@@ -1,0 +1,163 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Chinese",
+    "slug": "chinese",
+    "degree_type": "BA"
+  },
+  "metadata": {
+    "source": "UCSB L&S Chinese (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BACHIN"
+  },
+  "nodes": [
+    {
+      "id": "chin-1",
+      "node_type": "course",
+      "label": "CHIN 1",
+      "title": "Chinese language sequence",
+      "description": "Series through CHIN 6",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "chin-120",
+      "node_type": "course",
+      "label": "CHIN 120",
+      "title": "Advanced Chinese",
+      "description": "Advanced Chinese — part of the Chinese prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "chin-140",
+      "node_type": "course",
+      "label": "CHIN 140",
+      "title": "CHIN 140",
+      "description": "Required or recommended course for the Chinese major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "eacs-130",
+      "node_type": "course",
+      "label": "EACS 130",
+      "title": "EACS 130",
+      "description": "Required or recommended course for the Chinese major at UCSB.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "eacs-150",
+      "node_type": "course",
+      "label": "EACS 150",
+      "title": "EACS 150",
+      "description": "Required or recommended course for the Chinese major at UCSB.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "career-translation",
+      "node_type": "career",
+      "label": "Translation",
+      "title": "Translation",
+      "description": "Career path for Chinese graduates: Translation.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "career-international-business",
+      "node_type": "career",
+      "label": "International business",
+      "title": "International business",
+      "description": "Career path for Chinese graduates: International business.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "career-diplomacy",
+      "node_type": "career",
+      "label": "Diplomacy",
+      "title": "Diplomacy",
+      "description": "Career path for Chinese graduates: Diplomacy.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 520
+    },
+    {
+      "id": "career-teaching",
+      "node_type": "career",
+      "label": "Teaching",
+      "title": "Teaching",
+      "description": "Career path for Chinese graduates: Teaching.",
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "chin-1",
+      "target_id": "chin-120",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "chin-120",
+      "target_id": "chin-140",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "chin-140",
+      "target_id": "eacs-130",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "eacs-130",
+      "target_id": "eacs-150",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "eacs-150",
+      "target_id": "career-translation",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "chin-140",
+      "target_id": "career-international-business",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "eacs-150",
+      "target_id": "career-diplomacy",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "chin-140",
+      "target_id": "career-teaching",
+      "edge_type": "leads_to"
+    }
+  ]
+}

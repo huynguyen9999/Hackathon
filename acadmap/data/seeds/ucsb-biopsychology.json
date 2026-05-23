@@ -1,0 +1,248 @@
+{
+  "school": {
+    "name": "UC Santa Barbara",
+    "short_name": "ucsb",
+    "location": "Santa Barbara, CA"
+  },
+  "major": {
+    "name": "Biopsychology",
+    "slug": "biopsychology",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCSB L&S Biopsychology (2025-2026)",
+    "source_url": "https://catalog.ucsb.edu/programs/BSBPSY"
+  },
+  "nodes": [
+    {
+      "id": "psy-1",
+      "node_type": "course",
+      "label": "PSY 1",
+      "title": "Introductory Psychology",
+      "description": "Introductory Psychology — part of the Biopsychology prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "chem-1a",
+      "node_type": "course",
+      "label": "CHEM 1A",
+      "title": "CHEM 1A",
+      "description": "Required or recommended course for the Biopsychology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "math-3a",
+      "node_type": "course",
+      "label": "MATH 3A",
+      "title": "MATH 3A",
+      "description": "Required or recommended course for the Biopsychology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "mcdb-1a",
+      "node_type": "course",
+      "label": "MCDB 1A",
+      "title": "MCDB 1A",
+      "description": "Required or recommended course for the Biopsychology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "eemb-2",
+      "node_type": "course",
+      "label": "EEMB 2",
+      "title": "EEMB 2",
+      "description": "Required or recommended course for the Biopsychology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "psy-10a",
+      "node_type": "course",
+      "label": "PSY 10A",
+      "title": "Methods and Statistics",
+      "description": "Methods and Statistics — part of the Biopsychology prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "psy-112",
+      "node_type": "course",
+      "label": "PSY 112",
+      "title": "Biopsychology",
+      "description": "Biopsychology — part of the Biopsychology prerequisite and major sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 80
+    },
+    {
+      "id": "psy-114",
+      "node_type": "course",
+      "label": "PSY 114",
+      "title": "PSY 114",
+      "description": "Required or recommended course for the Biopsychology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 80
+    },
+    {
+      "id": "mcdb-108a",
+      "node_type": "course",
+      "label": "MCDB 108A",
+      "title": "MCDB 108A",
+      "description": "Required or recommended course for the Biopsychology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "psy-199",
+      "node_type": "course",
+      "label": "PSY 199",
+      "title": "PSY 199",
+      "description": "Required or recommended course for the Biopsychology major at UCSB.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2780,
+      "position_y": 80
+    },
+    {
+      "id": "career-neuroscience-research",
+      "node_type": "career",
+      "label": "Neuroscience research",
+      "title": "Neuroscience research",
+      "description": "Career path for Biopsychology graduates: Neuroscience research.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 80
+    },
+    {
+      "id": "career-medicine",
+      "node_type": "career",
+      "label": "Medicine",
+      "title": "Medicine",
+      "description": "Career path for Biopsychology graduates: Medicine.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 300
+    },
+    {
+      "id": "career-pharmaceutical",
+      "node_type": "career",
+      "label": "Pharmaceutical",
+      "title": "Pharmaceutical",
+      "description": "Career path for Biopsychology graduates: Pharmaceutical.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 520
+    },
+    {
+      "id": "career-graduate-study",
+      "node_type": "career",
+      "label": "Graduate study",
+      "title": "Graduate study",
+      "description": "Career path for Biopsychology graduates: Graduate study.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source_id": "psy-1",
+      "target_id": "chem-1a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e2",
+      "source_id": "chem-1a",
+      "target_id": "math-3a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e3",
+      "source_id": "math-3a",
+      "target_id": "mcdb-1a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e4",
+      "source_id": "mcdb-1a",
+      "target_id": "eemb-2",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e5",
+      "source_id": "eemb-2",
+      "target_id": "psy-10a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e6",
+      "source_id": "psy-10a",
+      "target_id": "psy-112",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e7",
+      "source_id": "psy-112",
+      "target_id": "psy-114",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e8",
+      "source_id": "psy-114",
+      "target_id": "mcdb-108a",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "e9",
+      "source_id": "mcdb-108a",
+      "target_id": "psy-199",
+      "edge_type": "prerequisite"
+    },
+    {
+      "id": "ec1",
+      "source_id": "psy-199",
+      "target_id": "career-neuroscience-research",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec2",
+      "source_id": "psy-114",
+      "target_id": "career-medicine",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec3",
+      "source_id": "psy-199",
+      "target_id": "career-pharmaceutical",
+      "edge_type": "leads_to"
+    },
+    {
+      "id": "ec4",
+      "source_id": "psy-114",
+      "target_id": "career-graduate-study",
+      "edge_type": "leads_to"
+    }
+  ]
+}
