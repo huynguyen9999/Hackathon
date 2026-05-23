@@ -110,6 +110,26 @@ export function useRoadmapSchedule(roadmapId: string) {
     setState(DEFAULT_STATE);
   }, []);
 
+  const applyStatusByNodeId = useCallback(
+    (statusByNodeId: Record<string, "planned" | "completed">) => {
+      const completedCourseIds: string[] = [];
+      const plannedCourseIds: string[] = [];
+      for (const [nodeId, status] of Object.entries(statusByNodeId)) {
+        if (status === "completed") {
+          completedCourseIds.push(nodeId);
+        } else if (status === "planned") {
+          plannedCourseIds.push(nodeId);
+        }
+      }
+      setState((prev) => ({
+        ...prev,
+        completedCourseIds,
+        plannedCourseIds,
+      }));
+    },
+    [],
+  );
+
   return {
     state,
     hydrated,
@@ -118,5 +138,6 @@ export function useRoadmapSchedule(roadmapId: string) {
     setWhatIfRemoved,
     setActiveAnalysisMode,
     clearSchedule,
+    applyStatusByNodeId,
   };
 }

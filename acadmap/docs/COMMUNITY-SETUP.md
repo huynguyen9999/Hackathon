@@ -56,6 +56,15 @@ Redeploy from `acadmap/`:
 cd acadmap && vercel --prod --yes
 ```
 
+Or push env vars from `.env.local` automatically:
+
+```bash
+cd acadmap
+cp .env.example .env.local   # fill in Supabase URL + anon key
+./scripts/push-community-env-to-vercel.sh
+vercel --prod --yes
+```
+
 ### Local
 
 ```bash

@@ -21,6 +21,7 @@ import {
 } from "@/lib/flow";
 import type { DegreeAuditRules } from "@/lib/planner/degree-audit";
 import type { iGauchoBackNodeData, RoadmapDetail } from "@/lib/types";
+import { useRoadmapSchedule } from "@/lib/use-roadmap-schedule";
 import type { DepartmentFacultyFile } from "@/lib/ucsb-faculty-types";
 
 type ExternalRule = {
@@ -41,6 +42,20 @@ export type RoadmapViewProps = {
   plannerCollabEnabled: boolean;
 };
 
+function statusMapFromSchedule(
+  completedCourseIds: string[],
+  plannedCourseIds: string[],
+): Record<string, "planned" | "completed"> {
+  const map: Record<string, "planned" | "completed"> = {};
+  for (const nodeId of completedCourseIds) {
+    map[nodeId] = "completed";
+  }
+  for (const nodeId of plannedCourseIds) {
+    map[nodeId] = "planned";
+  }
+  return map;
+}
+
 export function RoadmapView({
   roadmap,
   departmentFaculty,
@@ -49,16 +64,16 @@ export function RoadmapView({
   transferRules,
   plannerCollabEnabled,
 }: RoadmapViewProps) {
-  const [selectedNode, setSelectedNode] = useState<Node<iGauchoBackNodeData> | null>(
-    null,
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const schedule = useRoadmapSchedule(roadmap.id);
+
+  const { completedCourseIds, plannedCourseIds, whatIfRemovedId, activeAnalysisMode } =
+    schedule.state;
+
+  const plannerStatusByNodeId = useMemo(
+    () => statusMapFromSchedule(completedCourseIds, plannedCourseIds),
+    [completedCourseIds, plannedCourseIds],
   );
-  const [plannerStatusByNodeId, setPlannerStatusByNodeId] = useState<
-    Record<string, "planned" | "completed">
-  >({});
-  const [analysisMode, setAnalysisMode] = useState<
-    "conflicts" | "criticalPath" | "whatIf" | "bottlenecks"
-  >("conflicts");
-  const [whatIfRemovedId, setWhatIfRemovedId] = useState<string | null>(null);
 
   const baseFlowNodes = useMemo(
     () =>
@@ -74,25 +89,10 @@ export function RoadmapView({
     [roadmap.edges, roadmap.nodes],
   );
 
-  const completedNodeIds = useMemo(
-    () =>
-      Object.entries(plannerStatusByNodeId)
-        .filter(([, status]) => status === "completed")
-        .map(([nodeId]) => nodeId),
-    [plannerStatusByNodeId],
-  );
-
-  const plannedNodeIds = useMemo(
-    () =>
-      Object.entries(plannerStatusByNodeId)
-        .filter(([, status]) => status === "planned")
-        .map(([nodeId]) => nodeId),
-    [plannerStatusByNodeId],
-  );
-
   const conflicts = useMemo(
-    () => findPrerequisiteConflicts(plannedNodeIds, completedNodeIds, graphModel),
-    [completedNodeIds, graphModel, plannedNodeIds],
+    () =>
+      findPrerequisiteConflicts(plannedCourseIds, completedCourseIds, graphModel),
+    [completedCourseIds, graphModel, plannedCourseIds],
   );
   const criticalPath = useMemo(() => findCriticalPath(graphModel), [graphModel]);
   const bottlenecks = useMemo(() => findBottlenecks(graphModel), [graphModel]);
@@ -104,7 +104,7 @@ export function RoadmapView({
   const analyzedNodeState = useMemo(() => {
     const state = new Map<string, { analysisState?: string; note?: string }>();
 
-    if (analysisMode === "conflicts") {
+    if (activeAnalysisMode === "conflicts") {
       for (const conflict of conflicts) {
         state.set(conflict.plannedNodeId, {
           analysisState: "conflict",
@@ -121,7 +121,7 @@ export function RoadmapView({
       }
     }
 
-    if (analysisMode === "criticalPath") {
+    if (activeAnalysisMode === "criticalPath") {
       for (const nodeId of criticalPath.nodeIds) {
         state.set(nodeId, {
           analysisState: "critical",
@@ -130,7 +130,7 @@ export function RoadmapView({
       }
     }
 
-    if (analysisMode === "bottlenecks") {
+    if (activeAnalysisMode === "bottlenecks") {
       for (const bottleneck of bottlenecks.slice(0, 10)) {
         state.set(bottleneck.nodeId, {
           analysisState: "bottleneck",
@@ -139,7 +139,7 @@ export function RoadmapView({
       }
     }
 
-    if (analysisMode === "whatIf" && whatIfResult) {
+    if (activeAnalysisMode === "whatIf" && whatIfResult) {
       state.set(whatIfResult.removedNodeId, {
         analysisState: "removed",
         note: "Hypothetically dropped from plan.",
@@ -153,7 +153,14 @@ export function RoadmapView({
     }
 
     return state;
-  }, [analysisMode, bottlenecks, conflicts, criticalPath.nodeIds, graphModel.nodesById, whatIfResult]);
+  }, [
+    activeAnalysisMode,
+    bottlenecks,
+    conflicts,
+    criticalPath.nodeIds,
+    graphModel.nodesById,
+    whatIfResult,
+  ]);
 
   const flowNodes = useMemo(
     () =>
@@ -178,6 +185,11 @@ export function RoadmapView({
       }),
     [analyzedNodeState, baseFlowNodes, plannerStatusByNodeId],
   );
+
+  const sidebarNode = useMemo(() => {
+    if (!selectedNodeId) return null;
+    return flowNodes.find((n) => n.id === selectedNodeId) ?? null;
+  }, [flowNodes, selectedNodeId]);
 
   const flowEdges = useMemo(() => {
     const base = roadmapEdgesToFlowEdges(roadmap.edges);
@@ -207,28 +219,42 @@ export function RoadmapView({
   }, [conflicts, criticalPath.edgeIds, roadmap.edges, whatIfResult?.edgeIds]);
 
   const onNodeClick: NodeMouseHandler = useCallback((_event, node) => {
-    setSelectedNode((prev) =>
-      prev?.id === node.id ? null : (node as Node<iGauchoBackNodeData>),
-    );
+    setSelectedNodeId(node.id);
   }, []);
 
   const onPaneClick = useCallback(() => {
-    setSelectedNode(null);
+    setSelectedNodeId(null);
   }, []);
 
   const onClose = useCallback(() => {
-    setSelectedNode(null);
+    setSelectedNodeId(null);
   }, []);
 
-  const onRunWhatIf = useCallback((nodeId: string) => {
-    setAnalysisMode("whatIf");
-    setWhatIfRemovedId(nodeId);
-  }, []);
+  const onRunWhatIf = useCallback(
+    (nodeId: string) => {
+      schedule.setWhatIfRemoved(nodeId);
+    },
+    [schedule],
+  );
 
   const onClearWhatIf = useCallback(() => {
-    setWhatIfRemovedId(null);
-    setAnalysisMode("conflicts");
-  }, []);
+    schedule.setWhatIfRemoved(null);
+    schedule.setActiveAnalysisMode("conflicts");
+  }, [schedule]);
+
+  const onModeChange = useCallback(
+    (mode: typeof activeAnalysisMode) => {
+      schedule.setActiveAnalysisMode(mode);
+      if (mode !== "whatIf") {
+        schedule.setWhatIfRemoved(null);
+      }
+    },
+    [schedule],
+  );
+
+  const onClearSchedule = useCallback(() => {
+    schedule.clearSchedule();
+  }, [schedule]);
 
   return (
     <div className="space-y-4">
@@ -237,7 +263,7 @@ export function RoadmapView({
           <RoadmapGraph
             flowNodes={flowNodes}
             flowEdges={flowEdges}
-            focusedNodeId={selectedNode?.id ?? null}
+            focusedNodeId={selectedNodeId}
             onNodeClick={onNodeClick}
             onPaneClick={onPaneClick}
             className="h-full min-h-[360px]"
@@ -245,11 +271,13 @@ export function RoadmapView({
         </div>
         <div className="h-[280px] shrink-0 lg:h-auto lg:w-[340px]">
           <Sidebar
-            selectedNode={selectedNode}
+            selectedNode={sidebarNode as Node<iGauchoBackNodeData> | null}
             departmentFaculty={departmentFaculty}
+            onToggleCompleted={schedule.toggleCompleted}
+            onTogglePlanned={schedule.togglePlanned}
             onRunWhatIf={onRunWhatIf}
             onClearWhatIf={onClearWhatIf}
-            onClose={selectedNode ? onClose : undefined}
+            onClose={selectedNodeId ? onClose : undefined}
             className="h-full"
           />
         </div>
@@ -257,24 +285,15 @@ export function RoadmapView({
 
       <RoadmapAnalysisPanel
         graph={graphModel}
-        completedCount={completedNodeIds.length}
-        plannedCount={plannedNodeIds.length}
-        activeMode={analysisMode}
+        completedCount={completedCourseIds.length}
+        plannedCount={plannedCourseIds.length}
+        activeMode={activeAnalysisMode}
         conflicts={conflicts}
         criticalPath={criticalPath}
         whatIfResult={whatIfResult}
         bottlenecks={bottlenecks}
-        onModeChange={(mode) => {
-          setAnalysisMode(mode);
-          if (mode !== "whatIf") {
-            setWhatIfRemovedId(null);
-          }
-        }}
-        onClearSchedule={() => {
-          setPlannerStatusByNodeId({});
-          setWhatIfRemovedId(null);
-          setAnalysisMode("conflicts");
-        }}
+        onModeChange={onModeChange}
+        onClearSchedule={onClearSchedule}
       />
 
       {plannerCollabEnabled ? (
@@ -283,7 +302,7 @@ export function RoadmapView({
           auditRules={auditRules}
           apRules={apRules}
           transferRules={transferRules}
-          onPlannerNodeStatusChange={setPlannerStatusByNodeId}
+          onPlannerNodeStatusChange={schedule.applyStatusByNodeId}
         />
       ) : (
         <section className="rounded-xl border border-gaucho-blue/15 bg-white p-4 text-sm text-slate-600 dark:border-gaucho-gold/20 dark:bg-gaucho-blue-dark/30 dark:text-slate-300">
