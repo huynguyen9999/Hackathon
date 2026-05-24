@@ -4,14 +4,22 @@ import { isAdminOpsAuthorized } from "@/lib/admin-ops-auth";
 import { runCommunityBootstrap } from "@/lib/bootstrap-community";
 import { runSeedMigration } from "@/lib/migrate-seeds";
 
+export const maxDuration = 300;
+
 export async function POST(request: Request) {
   if (!isAdminOpsAuthorized(request)) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  let body: { action?: string; force?: boolean } = {};
+  let body: { action?: string; force?: boolean; offset?: number; limit?: number } =
+    {};
   try {
-    body = (await request.json()) as { action?: string; force?: boolean };
+    body = (await request.json()) as {
+      action?: string;
+      force?: boolean;
+      offset?: number;
+      limit?: number;
+    };
   } catch {
     body = {};
   }
@@ -20,7 +28,11 @@ export async function POST(request: Request) {
 
   try {
     if (action === "migrate-seeds") {
-      const result = await runSeedMigration({ force: body.force === true });
+      const result = await runSeedMigration({
+        force: body.force === true,
+        offset: body.offset,
+        limit: body.limit,
+      });
       const status = result.errors.length > 0 ? 207 : 200;
       return NextResponse.json({ action, ...result }, { status });
     }

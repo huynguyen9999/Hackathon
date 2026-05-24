@@ -27,7 +27,6 @@ function loadSeedFiles(): { file: string; input: SeedRoadmapInput }[] {
     }
     results.push({ file, input: parsed });
   }
-
   return results;
 }
 
@@ -196,10 +195,18 @@ async function insertApprovedRoadmap(
 
 export async function runSeedMigration(options?: {
   force?: boolean;
+  offset?: number;
+  limit?: number;
 }): Promise<SeedMigrationResult> {
   const force = options?.force ?? false;
+  const offset = Math.max(0, options?.offset ?? 0);
+  const limit =
+    options?.limit && options.limit > 0 ? options.limit : undefined;
   const supabase = createAdminClient();
-  const seeds = loadSeedFiles();
+  const allSeeds = loadSeedFiles();
+  const seeds = limit
+    ? allSeeds.slice(offset, offset + limit)
+    : allSeeds.slice(offset);
 
   let inserted = 0;
   let skipped = 0;
@@ -207,7 +214,9 @@ export async function runSeedMigration(options?: {
   const errors: string[] = [];
   const logs: string[] = [];
 
-  logs.push(`Migrating ${seeds.length} seed files${force ? " (--force)" : ""}…`);
+  logs.push(
+    `Migrating ${seeds.length} of ${allSeeds.length} seed files (offset ${offset})${force ? " (--force)" : ""}…`,
+  );
 
   for (const { file, input } of seeds) {
     const label = `${input.school.short_name}/${input.major.slug}`;
@@ -242,7 +251,7 @@ export async function runSeedMigration(options?: {
   );
 
   return {
-    total: seeds.length,
+    total: allSeeds.length,
     inserted,
     skipped,
     replaced,
