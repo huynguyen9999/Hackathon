@@ -45,8 +45,11 @@
     "test:planner": "node --import tsx --test tests/planner/*.test.ts"
   },
   "dependencies": {
+    "@sentry/nextjs": "^10.53.1",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.47.10",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.38.0",
     "@xyflow/react": "^12.3.6",
     "next": "^14.2.21",
     "pg": "^8.21.0",

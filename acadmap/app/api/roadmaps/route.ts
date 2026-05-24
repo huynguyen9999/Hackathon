@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
 
+import * as Sentry from "@sentry/nextjs";
+
 import { getAuthenticatedUserId } from "@/lib/auth";
 import { isSupabaseConfigured } from "@/lib/env";
+import { jsonWithCache, ROADMAP_LIST_CACHE } from "@/lib/http-cache";
 import {
   getApprovedRoadmapList,
   insertRoadmapFromSeed,
@@ -11,8 +14,9 @@ import { isSeedRoadmapInput } from "@/lib/validate-seed";
 export async function GET() {
   try {
     const roadmaps = await getApprovedRoadmapList();
-    return NextResponse.json({ roadmaps });
+    return jsonWithCache({ roadmaps }, ROADMAP_LIST_CACHE);
   } catch (error) {
+    Sentry.captureException(error);
     console.error("[GET /api/roadmaps]", error);
     return NextResponse.json(
       { error: "Failed to load roadmaps" },
@@ -73,6 +77,7 @@ export async function POST(request: Request) {
       { status: 201 },
     );
   } catch (error) {
+    Sentry.captureException(error);
     console.error("[POST /api/roadmaps]", error);
     const message =
       error instanceof Error ? error.message : "Failed to save roadmap";

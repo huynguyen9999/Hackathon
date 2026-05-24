@@ -6,6 +6,7 @@ import type { Node, NodeMouseHandler } from "@xyflow/react";
 import { PlannerWorkspace } from "@/components/planner/PlannerWorkspace";
 import { RoadmapAnalysisPanel } from "@/components/RoadmapAnalysisPanel";
 import { RoadmapGraph } from "@/components/RoadmapGraph";
+import { RoadmapGraphErrorBoundary } from "@/components/RoadmapGraphErrorBoundary";
 import { Sidebar } from "@/components/Sidebar";
 import {
   buildGraph,
@@ -262,14 +263,19 @@ export function RoadmapView({
     <div className="space-y-4">
       <div className="flex h-[calc(100vh-8.5rem)] min-h-[520px] flex-col gap-4 lg:flex-row">
         <div className="min-h-[360px] flex-1 lg:min-h-0">
-          <RoadmapGraph
-            flowNodes={flowNodes}
-            flowEdges={flowEdges}
-            focusedNodeId={selectedNodeId}
-            onNodeClick={onNodeClick}
-            onPaneClick={onPaneClick}
-            className="h-full min-h-[360px]"
-          />
+          <RoadmapGraphErrorBoundary
+            majorHref={`/schools/${roadmap.school.short_name}/engineering/${roadmap.major.slug}`}
+            majorName={roadmap.major.name}
+          >
+            <RoadmapGraph
+              flowNodes={flowNodes}
+              flowEdges={flowEdges}
+              focusedNodeId={selectedNodeId}
+              onNodeClick={onNodeClick}
+              onPaneClick={onPaneClick}
+              className="h-full min-h-[360px]"
+            />
+          </RoadmapGraphErrorBoundary>
         </div>
         <div className="h-[280px] shrink-0 lg:h-auto lg:w-[340px]">
           <Sidebar

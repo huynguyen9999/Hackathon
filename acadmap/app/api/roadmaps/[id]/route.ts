@@ -1,8 +1,11 @@
 import { NextResponse } from "next/server";
 
+import * as Sentry from "@sentry/nextjs";
+
 import { getAuthenticatedUserId } from "@/lib/auth";
 import { isMaintainer } from "@/lib/community/auth";
 import { isSupabaseConfigured } from "@/lib/env";
+import { jsonWithCache, ROADMAP_DETAIL_CACHE } from "@/lib/http-cache";
 import { getRoadmapDetailById } from "@/lib/roadmap";
 import { createAdminClient } from "@/lib/supabase-admin";
 import type { RoadmapStatus } from "@/lib/types";
@@ -34,8 +37,9 @@ export async function GET(_request: Request, { params }: RouteContext) {
       );
     }
 
-    return NextResponse.json({ roadmap });
+    return jsonWithCache({ roadmap }, ROADMAP_DETAIL_CACHE);
   } catch (error) {
+    Sentry.captureException(error);
     console.error("[GET /api/roadmaps/[id]]", error);
     return NextResponse.json(
       { error: "Failed to load roadmap" },
@@ -99,6 +103,7 @@ export async function PATCH(request: Request, { params }: RouteContext) {
       .maybeSingle();
 
     if (error) {
+      Sentry.captureException(error);
       console.error("[PATCH /api/roadmaps/[id]]", error);
       return NextResponse.json({ error: "Failed to update roadmap." }, { status: 500 });
     }
@@ -107,11 +112,17 @@ export async function PATCH(request: Request, { params }: RouteContext) {
       return NextResponse.json({ error: "Roadmap not found." }, { status: 404 });
     }
 
-    return NextResponse.json({
-      message: `Roadmap ${status}.`,
-      roadmap: data,
-    });
+    return NextResponse.json(
+      {
+        message: `Roadmap ${status}.`,
+        roadmap: data,
+      },
+      {
+        headers: { "Cache-Control": "no-store" },
+      },
+    );
   } catch (error) {
+    Sentry.captureException(error);
     console.error("[PATCH /api/roadmaps/[id]]", error);
     return NextResponse.json(
       { error: "Failed to update roadmap." },
