@@ -1,11 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { AuthControls } from "@/components/AuthControls";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { APP_LOGO_INITIALS, APP_NAME } from "@/lib/brand";
+import { APP_LOGO_ALT, APP_LOGO_PATH, APP_NAME } from "@/lib/brand";
 import type { NavAuthState } from "@/lib/auth-session";
 
 type NavLink = {
@@ -63,12 +64,14 @@ export function Navbar({ className = "", initialAuth }: NavbarProps) {
     >
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-3.5 sm:px-6">
         <Link href="/" className="group flex items-center gap-3">
-          <span
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-gaucho-blue text-sm font-bold text-gaucho-gold"
-            aria-hidden
-          >
-            {APP_LOGO_INITIALS}
-          </span>
+          <Image
+            src={APP_LOGO_PATH}
+            alt={APP_LOGO_ALT}
+            width={44}
+            height={30}
+            className="h-9 w-auto shrink-0 rounded-sm object-contain"
+            priority
+          />
           <span className="flex flex-col gap-0.5">
             <span className="text-lg font-bold tracking-tight text-gaucho-blue dark:text-white">
               {APP_NAME}

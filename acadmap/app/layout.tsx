@@ -19,6 +19,10 @@ export const metadata: Metadata = {
   title: `${APP_NAME} - ${APP_TAGLINE}`,
   description:
     "Interactive degree roadmaps for courses, prerequisites, and career paths.",
+  icons: {
+    icon: "/brand/gauchos-logo.jpg",
+    apple: "/brand/gauchos-logo.jpg",
+  },
 };
 
 export default async function RootLayout({
