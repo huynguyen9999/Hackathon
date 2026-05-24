@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>iGauchoBack — Portfolio Tech Stack & Resume Guide</title>
+<style>
+  @page { margin: 0.65in; size: letter; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 10pt; line-height: 1.45; color: #1a1a1a; margin: 0; padding: 0.5in; }
+  h1 { font-size: 21pt; color: #003660; border-bottom: 3px solid #FEBC11; padding-bottom: 8px; page-break-after: avoid; }
+  h2 { font-size: 13pt; color: #003660; margin-top: 1.3em; page-break-after: avoid; border-bottom: 1px solid #ddd; padding-bottom: 3px; }
+  h3 { font-size: 11pt; color: #333; margin-top: 0.9em; page-break-after: avoid; }
+  h4 { font-size: 10pt; color: #555; page-break-after: avoid; }
+  table { border-collapse: collapse; width: 100%; margin: 0.6em 0; font-size: 8.5pt; page-break-inside: avoid; }
+  th, td { border: 1px solid #bbb; padding: 5px 7px; text-align: left; vertical-align: top; }
+  th { background: #003660; color: white; font-weight: 600; }
+  tr:nth-child(even) td { background: #f6f8fa; }
+  blockquote { border-left: 4px solid #FEBC11; margin: 0.8em 0; padding: 0.4em 0.9em; background: #fffbf0; font-style: italic; page-break-inside: avoid; }
+  code { background: #f0f0f0; padding: 1px 4px; border-radius: 3px; font-size: 8.5pt; font-family: ui-monospace, monospace; }
+  pre { background: #f4f4f4; padding: 10px; border-radius: 5px; font-size: 8pt; page-break-inside: avoid; white-space: pre-wrap; word-wrap: break-word; }
+  pre code { background: none; padding: 0; }
+  ul, ol { margin: 0.4em 0; padding-left: 1.3em; }
+  li { margin: 0.2em 0; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 1.2em 0; }
+  strong { color: #003660; }
+  a { color: #003660; text-decoration: none; }
+  p { margin: 0.5em 0; }
+</style>
+</head>
+<body><h1>iGauchoBack — Portfolio Tech Stack &amp; Resume Guide</h1>
+<p><strong>Candidate portfolio document · FAANG recruiter perspective</strong><br><strong>Live product:</strong> <a href="https://hackathon-nu-taupe.vercel.app">https://hackathon-nu-taupe.vercel.app</a><br><strong>Repo:</strong> github.com/huynguyen9999/Hackathon (subfolder: <code>acadmap</code>)</p>
+<hr>
+<h2>Executive summary (30-second pitch)</h2>
+<blockquote>
+<p>I built <strong>iGauchoBack</strong>, a production-deployed full-stack web app that turns official UC degree requirements into interactive prerequisite graphs for <strong>72 majors across 3 campuses</strong>. I owned the entire stack: Next.js App Router frontend, 24 REST API routes, Supabase Postgres with RLS, AI-assisted PDF transcript parsing, edge caching, rate limiting, and observability—shipping from hackathon prototype to hardened Vercel production with real users.</p>
+</blockquote>
+<p>Use this pitch in interviews, LinkedIn About, and the top of your resume project section.</p>
+<hr>
+<h2>Part 1 — Complete tech stack</h2>
+<h3>Frontend</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+<th>How you used it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Framework</td>
+<td><strong>Next.js 14.2</strong> (App Router)</td>
+<td>Server Components for data pages; client islands for React Flow, planner, forms</td>
+</tr>
+<tr>
+<td>UI library</td>
+<td><strong>React 18.3</strong></td>
+<td>77+ components, custom design system (no component library)</td>
+</tr>
+<tr>
+<td>Language</td>
+<td><strong>TypeScript 5.7</strong></td>
+<td>Strict typing across API contracts, domain models, Zod schemas</td>
+</tr>
+<tr>
+<td>Styling</td>
+<td><strong>Tailwind CSS 3.4</strong></td>
+<td>Responsive layout, dark mode, brand theming</td>
+</tr>
+<tr>
+<td>Graph viz</td>
+<td><strong>@xyflow/react 12.3</strong></td>
+<td>Interactive degree roadmaps with prerequisite edges, node selection, analysis overlays</td>
+</tr>
+<tr>
+<td>Fonts</td>
+<td><strong>Inter</strong> via <code>next/font</code></td>
+<td>Performance-optimized font loading</td>
+</tr>
+</tbody></table>
+<h3>Backend &amp; API</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+<th>How you used it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>API style</td>
+<td><strong>Next.js Route Handlers</strong></td>
+<td>24 REST endpoints under <code>app/api/</code></td>
+</tr>
+<tr>
+<td>Runtime</td>
+<td><strong>Node.js</strong> (Vercel Fluid Compute)</td>
+<td>Transcript parsing, admin ops, planner CRUD</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td><strong>Zod 4.4</strong></td>
+<td>AI structured output, request body validation</td>
+</tr>
+<tr>
+<td>Middleware</td>
+<td><strong>Next.js Edge Middleware</strong></td>
+<td>Rate limiting, selective auth session refresh</td>
+</tr>
+<tr>
+<td>Caching</td>
+<td><strong>Vercel Edge Cache</strong></td>
+<td><code>s-maxage=3600</code>, <code>stale-while-revalidate=86400</code> on public roadmap GETs</td>
+</tr>
+<tr>
+<td>Direct DB</td>
+<td><strong>pg 8.21</strong></td>
+<td>Admin schema application scripts</td>
+</tr>
+</tbody></table>
+<h3>Database &amp; auth</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+<th>How you used it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Database</td>
+<td><strong>Supabase (Postgres)</strong></td>
+<td>Roadmaps, votes, community, planner (717-line schema)</td>
+</tr>
+<tr>
+<td>Auth</td>
+<td><strong>Supabase Auth + @supabase/ssr</strong></td>
+<td>Google, GitHub, LinkedIn OAuth; cookie sessions</td>
+</tr>
+<tr>
+<td>Security</td>
+<td><strong>Row Level Security (RLS)</strong></td>
+<td>Member-scoped planner, public-read community, maintainer-only writes</td>
+</tr>
+<tr>
+<td>Client tiers</td>
+<td>Anon + service role</td>
+<td>Service role on cacheable GETs to avoid cookie cache busting</td>
+</tr>
+<tr>
+<td>Offline-first</td>
+<td><strong>JSON seed files</strong></td>
+<td>72 roadmaps run with zero env vars for local dev and demo deploys</td>
+</tr>
+</tbody></table>
+<h3>AI / ML pipeline</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+<th>How you used it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SDK</td>
+<td><strong>Vercel AI SDK 6.0</strong></td>
+<td>Structured generation pipeline</td>
+</tr>
+<tr>
+<td>Gateway</td>
+<td><strong>@ai-sdk/gateway 3.0</strong></td>
+<td>Provider routing via Vercel AI Gateway</td>
+</tr>
+<tr>
+<td>Model</td>
+<td><strong>google/gemini-2.0-flash</strong></td>
+<td>Fallback parser when regex finds &lt;3 courses</td>
+</tr>
+<tr>
+<td>PDF extraction</td>
+<td><strong>unpdf 1.6</strong></td>
+<td>In-memory text extraction (FERPA-aware: no PDF storage)</td>
+</tr>
+<tr>
+<td>Parsing strategy</td>
+<td>Regex-first, AI fallback</td>
+<td>Cost/latency control; UCSB GOLD/Banner format support</td>
+</tr>
+<tr>
+<td>Matching</td>
+<td>Custom normalization + graph match</td>
+<td>Transcript course codes → roadmap node IDs</td>
+</tr>
+</tbody></table>
+<h3>Infrastructure &amp; production</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+<th>How you used it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Hosting</td>
+<td><strong>Vercel</strong></td>
+<td>CI/CD from GitHub main, monorepo subfolder deploy</td>
+</tr>
+<tr>
+<td>Rate limiting</td>
+<td><strong>Upstash Redis + @upstash/ratelimit</strong></td>
+<td>Sliding window: 120/min read, 10/min write, 20/hr transcript</td>
+</tr>
+<tr>
+<td>Monitoring</td>
+<td><strong>Sentry 10.53</strong></td>
+<td>Client graph crashes, API 500s, edge middleware failures</td>
+</tr>
+<tr>
+<td>Feature flags</td>
+<td>Env-based</td>
+<td>Planner collab, live UCSB connector toggles</td>
+</tr>
+</tbody></table>
+<h3>Data engineering &amp; tooling</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Technology</th>
+<th>How you used it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Scripts</td>
+<td><strong>34 TSX pipeline scripts</strong></td>
+<td>Fetch, validate, sync UCSB/UCLA/Berkeley catalogs, grades, faculty</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td><strong>Node.js test runner</strong></td>
+<td>Planner + transcript unit tests (14+ cases)</td>
+</tr>
+<tr>
+<td>Linting</td>
+<td><strong>ESLint + eslint-config-next</strong></td>
+<td>CI-quality TypeScript/React</td>
+</tr>
+</tbody></table>
+<h3>Architecture diagram</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────┐
+│                        Vercel Edge                               │
+│  Middleware: Upstash rate limits · selective Supabase refresh   │
+└──────────────────────────┬──────────────────────────────────────┘
+                           │
+┌──────────────────────────▼──────────────────────────────────────┐
+│                    Next.js 14 App Router                         │
+│  ┌─────────────┐  ┌──────────────┐  ┌─────────────────────────┐ │
+│  │ Server      │  │ Client       │  │ Route Handlers (24)     │ │
+│  │ Components  │  │ React Flow   │  │ roadmaps · transcript   │ │
+│  │ explore ·   │  │ planner ·    │  │ community · plans ·     │ │
+│  │ schools     │  │ community    │  │ ucsb · admin/ops        │ │
+│  └──────┬──────┘  └──────┬───────┘  └───────────┬─────────────┘ │
+└─────────┼─────────────────┼──────────────────────┼───────────────┘
+          │                 │                      │
+   ┌──────▼──────┐   ┌──────▼──────┐      ┌───────▼────────┐
+   │ JSON seeds  │   │ localStorage│      │ Supabase       │
+   │ 72 roadmaps │   │ schedule ·  │      │ Postgres + RLS │
+   │ grades ·    │   │ theme       │      │ Auth OAuth     │
+   │ curriculum  │   └─────────────┘      └───────┬────────┘
+   └─────────────┘                                │
+                                          ┌───────▼────────┐
+                                          │ Upstash Redis  │
+                                          │ Sentry         │
+                                          │ AI Gateway     │
+                                          └────────────────┘
+</code></pre>
+<hr>
+<h2>Part 2 — Feature inventory (what you actually shipped)</h2>
+<p>Use these as proof points in interviews. Numbers matter.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Scale / impact</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Interactive degree roadmaps</td>
+<td><strong>72 seed roadmaps</strong>, 65+ UCSB, UCLA/Berkeley preview</td>
+</tr>
+<tr>
+<td>Major requirement pages</td>
+<td><strong>58 L&amp;S + 5 CoE + 9 CCS</strong> UCSB detail sheets</td>
+</tr>
+<tr>
+<td>Explore / discovery</td>
+<td>Search, filters, compare 2 majors, shareable URLs</td>
+</tr>
+<tr>
+<td>Graph analysis</td>
+<td>Prerequisite conflicts, critical path, what-if, bottlenecks</td>
+</tr>
+<tr>
+<td>Transcript PDF import</td>
+<td>Regex + AI fallback, UCSB GOLD format, undo last/all apply</td>
+</tr>
+<tr>
+<td>Community hub</td>
+<td>Q&amp;A, reviews, alumni outcomes, announcements (Supabase RLS)</td>
+</tr>
+<tr>
+<td>Contribute workflow</td>
+<td>Auth-gated submissions, maintainer approval pipeline</td>
+</tr>
+<tr>
+<td>UCSB grades explorer</td>
+<td>Daily Nexus open data, GE area mapping, leaderboards</td>
+</tr>
+<tr>
+<td>UCSB course catalog</td>
+<td>Snapshot + optional live Developer API</td>
+</tr>
+<tr>
+<td>Degree planner</td>
+<td>8-quarter drag-drop, prereq validation, degree audit (feature-flagged)</td>
+</tr>
+<tr>
+<td>Production hardening</td>
+<td>Sentry, Upstash rate limits, edge cache, error boundaries</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Part 3 — How to sell yourself (recruiter lens)</h2>
+<h3>What FAANG recruiters scan for in 6 seconds</h3>
+<ol>
+<li><strong>Scope</strong> — Did you build a toy or a system?</li>
+<li><strong>Ownership</strong> — End-to-end vs. &quot;helped with UI&quot;</li>
+<li><strong>Production signals</strong> — Deployed, monitored, rate-limited, tested</li>
+<li><strong>Technical depth</strong> — One area where you go deep (AI pipeline, caching tradeoffs, RLS)</li>
+<li><strong>Impact language</strong> — Users, latency, cost, reliability—not just &quot;built X&quot;</li>
+</ol>
+<h3>Your strongest positioning angles</h3>
+<p>Pick <strong>2 primary</strong> and <strong>1 secondary</strong> for each job application:</p>
+<table>
+<thead>
+<tr>
+<th>Target role</th>
+<th>Lead with</th>
+<th>Supporting proof</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Full-stack SWE</strong></td>
+<td>End-to-end Next.js + Supabase + Vercel deploy</td>
+<td>24 APIs, RLS, OAuth, 72 roadmaps</td>
+</tr>
+<tr>
+<td><strong>Backend SWE</strong></td>
+<td>API design, caching, rate limiting, Postgres RLS</td>
+<td>Middleware split for cache hits, Upstash, admin ops</td>
+</tr>
+<tr>
+<td><strong>AI/ML Engineer</strong></td>
+<td>Hybrid regex + LLM pipeline with cost controls</td>
+<td>Structured output, fallback logic, FERPA constraints</td>
+</tr>
+<tr>
+<td><strong>ML-adjacent SWE</strong></td>
+<td>Production AI feature, not a notebook</td>
+<td>Transcript parse → match → apply with undo state machine</td>
+</tr>
+</tbody></table>
+<h3>What makes this project credible (not &quot;another todo app&quot;)</h3>
+<ul>
+<li><strong>Dual data layer</strong>: JSON seeds + Supabase merge—real architectural decision for zero-config dev</li>
+<li><strong>Deliberate cache/auth tradeoff</strong>: Skip session refresh on cacheable API paths</li>
+<li><strong>FERPA-aware design</strong>: PDF never stored, text-only AI fallback</li>
+<li><strong>Data pipeline at scale</strong>: 34 scripts ingesting multi-campus official catalogs</li>
+<li><strong>Graph algorithms</strong>: Critical path, bottleneck detection on prerequisite DAGs</li>
+<li><strong>Production ops docs</strong>: You wrote runbooks, not just code</li>
+</ul>
+<h3>Honest gaps to address in interviews</h3>
+<p>Recruiters will probe these—have answers ready:</p>
+<table>
+<thead>
+<tr>
+<th>Gap</th>
+<th>How to frame it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>No load test metrics</td>
+<td>&quot;Designed for hackathon scale; rate limits and edge cache are the scaling levers I&#39;d load-test next&quot;</td>
+</tr>
+<tr>
+<td>Planner collab is feature-flagged</td>
+<td>&quot;Architecturally complete with RLS; shipped MVP with flag for staged rollout&quot;</td>
+</tr>
+<tr>
+<td>AI eval is manual</td>
+<td>&quot;14 unit tests on parse/match/schedule; next step is golden-file eval set for transcript formats&quot;</td>
+</tr>
+<tr>
+<td>Solo/small team</td>
+<td>&quot;Owned full stack; can walk through any layer in system design&quot;</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Part 4 — STAR resume bullets</h2>
+<p><strong>STAR format:</strong> Situation → Task → Action → Result<br><strong>Resume rule:</strong> Lead with <strong>Result</strong>, weave in Action, keep Situation/Task implicit.<br><strong>Length:</strong> 1–2 lines per bullet. Start with strong verb.</p>
+<hr>
+<h3>Full-stack / general SWE (pick 4–6)</h3>
+<p><strong>1. Shipped production full-stack degree planning platform</strong></p>
+<ul>
+<li><strong>S:</strong> UC students lack a unified tool to visualize prerequisites across 70+ majors and 3 campuses.</li>
+<li><strong>T:</strong> Build and deploy an interactive roadmap product from scratch within a hackathon timeline.</li>
+<li><strong>A:</strong> Architected Next.js 14 App Router app with React Flow graphs, 24 REST APIs, Supabase auth/Postgres, and Vercel CI/CD; ingested official UC catalog data via 34 TypeScript pipeline scripts.</li>
+<li><strong>R:</strong> Deployed live app covering <strong>72 degree roadmaps</strong> (UCSB full, UCLA/Berkeley preview) with zero-config JSON fallback for offline dev.</li>
+<li><strong>Resume bullet:</strong> <em>Shipped <strong>iGauchoBack</strong>, a production full-stack degree roadmap platform (<strong>72 majors</strong>, 3 UC campuses) using <strong>Next.js, Supabase, and Vercel</strong>, with JSON-seed offline fallback and automated catalog ingestion pipelines.</em></li>
+</ul>
+<p><strong>2. Built interactive prerequisite graph with analysis engine</strong></p>
+<ul>
+<li><strong>S:</strong> Static PDF degree sheets don&#39;t show blocking courses or graduation bottlenecks.</li>
+<li><strong>T:</strong> Give students actionable graph analysis on live roadmap data.</li>
+<li><strong>A:</strong> Implemented React Flow visualization with prerequisite DAG algorithms for conflict detection, critical path, what-if removal, and bottleneck scoring; persisted user schedule state in localStorage with undo-safe transcript apply tracking.</li>
+<li><strong>R:</strong> Students can mark completed/planned courses and run what-if scenarios without backend round-trips.</li>
+<li><strong>Resume bullet:</strong> <em>Built <strong>React Flow</strong> prerequisite graph viewer with <strong>critical-path, conflict, and bottleneck analysis</strong> on degree DAGs, plus persistent client-side schedule overlay with batch undo for transcript imports.</em></li>
+</ul>
+<p><strong>3. Designed dual-layer data architecture (JSON + Postgres)</strong></p>
+<ul>
+<li><strong>S:</strong> Hackathon deploy couldn&#39;t require Supabase credentials; production needed auth and community writes.</li>
+<li><strong>T:</strong> Support both demo-grade zero-config deploy and production Supabase features.</li>
+<li><strong>A:</strong> Designed merge layer loading 72 JSON seed roadmaps first, Supabase overrides when configured; documented schema (717 lines) with RLS for community, planner, and contribution workflows.</li>
+<li><strong>R:</strong> App runs fully functional without any env vars; production adds OAuth, submissions, and live community with one config change.</li>
+<li><strong>Resume bullet:</strong> <em>Architected <strong>dual JSON + Supabase</strong> data layer enabling zero-env local dev while supporting <strong>OAuth auth, RLS-scoped community writes, and maintainer approval workflows</strong> in production.</em></li>
+</ul>
+<p><strong>4. Implemented contributor submission and review pipeline</strong></p>
+<ul>
+<li><strong>S:</strong> Community-generated roadmaps need moderation before going public.</li>
+<li><strong>T:</strong> Build auth-gated contribute flow with maintainer approval.</li>
+<li><strong>A:</strong> Built POST/PATCH API with Supabase RLS (contributors read own pending; public reads approved only); maintainer role checks for approve/reject PATCH.</li>
+<li><strong>R:</strong> End-to-end submission pipeline from student upload to public roadmap without service-role exposure on client.</li>
+<li><strong>Resume bullet:</strong> <em>Implemented <strong>auth-gated roadmap submission pipeline</strong> with Supabase <strong>RLS</strong> policies and maintainer approve/reject workflow, separating public reads from contributor-scoped pending state.</em></li>
+</ul>
+<hr>
+<h3>Backend / infrastructure (pick 3–5)</h3>
+<p><strong>5. Production-hardened public APIs with edge caching and rate limiting</strong></p>
+<ul>
+<li><strong>S:</strong> Public roadmap APIs on Vercel faced cache-busting from auth cookies and abuse risk at launch.</li>
+<li><strong>T:</strong> Harden GET endpoints for performance and protect write/transcript endpoints from abuse.</li>
+<li><strong>A:</strong> Split middleware to skip Supabase session refresh on cacheable <code>/api/roadmaps</code> paths; added <code>Cache-Control: s-maxage=3600, stale-while-revalidate=86400</code>; integrated Upstash sliding-window limits (120/min read, 10/min write, 20/hr transcript); wired Sentry on API 500s and React error boundary.</li>
+<li><strong>R:</strong> Cacheable public reads; 429 responses with Retry-After on abuse; production error visibility.</li>
+<li><strong>Resume bullet:</strong> <em>Hardened production APIs with <strong>Vercel edge caching</strong> (1h TTL + SWR), <strong>Upstash Redis rate limiting</strong>, and <strong>Sentry</strong> observability; redesigned middleware to preserve cache hits on public GET routes.</em></li>
+</ul>
+<p><strong>6. Edge middleware auth/cache split</strong></p>
+<ul>
+<li><strong>S:</strong> Supabase SSR session refresh on every request prevented CDN cache hits on public roadmap data.</li>
+<li><strong>T:</strong> Keep auth fresh for app pages without breaking edge cache on public APIs.</li>
+<li><strong>A:</strong> Implemented path-based middleware: rate-limit-only for <code>/api/roadmaps*</code> and <code>/api/transcript/*</code>; full session refresh elsewhere; service-role client on cacheable GET handlers.</li>
+<li><strong>R:</strong> Public roadmap list/detail responses cacheable at edge while authenticated pages stay session-fresh.</li>
+<li><strong>Resume bullet:</strong> <em>Resolved <strong>auth vs. cache conflict</strong> in Next.js middleware by path-splitting session refresh, enabling <strong>edge-cached public roadmap APIs</strong> without sacrificing OAuth session freshness on app routes.</em></li>
+</ul>
+<hr>
+<h3>AI / ML engineering (pick 3–4)</h3>
+<p><strong>7. Built hybrid AI transcript parsing pipeline</strong></p>
+<ul>
+<li><strong>S:</strong> Students manually mark 40+ completed courses on graphs after each enrollment period.</li>
+<li><strong>T:</strong> Auto-import completed courses from official transcript PDFs with privacy and cost constraints.</li>
+<li><strong>A:</strong> Built <code>/api/transcript/parse</code> pipeline: unpdf in-memory extraction → regex parser (UCSB GOLD/Banner formats) → Gemini 2.0 Flash fallback via Vercel AI Gateway with Zod structured output when regex finds &lt;3 courses → graph node matching → preview-before-apply with undo last/all batch state machine.</li>
+<li><strong>R:</strong> Reduced manual course marking to one PDF upload; PDF never stored (FERPA-aware); AI invoked only when regex insufficient.</li>
+<li><strong>Resume bullet:</strong> <em>Designed <strong>hybrid regex + LLM transcript parser</strong> (Gemini via <strong>Vercel AI Gateway</strong>, <strong>Zod</strong> structured output) with <strong>FERPA-safe in-memory PDF processing</strong>, auto-matching courses to prerequisite graphs, and batch undo state management.</em></li>
+</ul>
+<p><strong>8. Cost-aware AI fallback strategy</strong></p>
+<ul>
+<li><strong>S:</strong> Sending every transcript to an LLM is expensive and slow at scale.</li>
+<li><strong>T:</strong> Maximize regex coverage; use AI only when necessary.</li>
+<li><strong>A:</strong> Implemented parser selection logic triggering AI only when regex extracts fewer than 3 courses; normalized multi-format course codes (UCSB quarter prefixes, grade-before-units layout); unit-tested parse, match, and schedule apply/undo paths.</li>
+<li><strong>R:</strong> Most text-based UCSB transcripts parse via regex alone; AI handles scanned/sparse layouts.</li>
+<li><strong>Resume bullet:</strong> <em>Reduced LLM invocation cost with <strong>regex-first parsing</strong> and conditional AI fallback (&lt;3 courses threshold), supporting <strong>multi-format UC transcript layouts</strong> with <strong>14 automated test cases</strong> for parse/match/schedule logic.</em></li>
+</ul>
+<hr>
+<h3>Data engineering (pick 2–3)</h3>
+<p><strong>9. Multi-campus catalog ingestion pipeline</strong></p>
+<ul>
+<li><strong>S:</strong> Official degree requirements live in PDFs and scattered web pages across UCSB, UCLA, Berkeley.</li>
+<li><strong>T:</strong> Normalize into structured JSON seeds powering 72 interactive roadmaps.</li>
+<li><strong>A:</strong> Built 34 TypeScript scripts to fetch, parse (GEAR grids, LASAR/DUELS, UCLA announcements), validate, and sync major detail sheets; committed snapshot JSON for curriculum, grades, and catalogs enabling deploy without runtime API keys.</li>
+<li><strong>R:</strong> <strong>72 validated seed roadmaps</strong> + <strong>58 L&amp;S major sheets</strong> + UCSB grade distribution explorer from open data.</li>
+<li><strong>Resume bullet:</strong> <em>Built <strong>34-script TypeScript data pipeline</strong> ingesting official <strong>UC degree catalogs</strong> (GEAR, LASAR, UCLA Samueli) into validated JSON seeds powering <strong>72 interactive roadmaps</strong>, with snapshot-first deploy requiring no runtime API keys.</em></li>
+</ul>
+<p><strong>10. UCSB grades open-data product feature</strong></p>
+<ul>
+<li><strong>S:</strong> Students lack easy access to historical grade distributions when choosing courses.</li>
+<li><strong>T:</strong> Ship searchable grades explorer integrated with degree planning context.</li>
+<li><strong>A:</strong> Ingested Daily Nexus open grade data; built department aggregates, GE area explorer, leaderboards, and search index; exposed via <code>/schools/ucsb/grades</code> with validation scripts.</li>
+<li><strong>R:</strong> Full UCSB grades explorer with GE applicability mapping alongside roadmap graphs.</li>
+<li><strong>Resume bullet:</strong> <em>Shipped <strong>UCSB grade distribution explorer</strong> by ingesting open university data into searchable aggregates with <strong>GE area mapping</strong> and validation pipeline, integrated into the degree planning product.</em></li>
+</ul>
+<hr>
+<h3>Community / product (pick 1–2)</h3>
+<p><strong>11. School community hub with Supabase RLS</strong></p>
+<ul>
+<li><strong>S:</strong> Students need peer Q&amp;A, course reviews, and alumni outcomes per campus.</li>
+<li><strong>T:</strong> Build community features with correct auth boundaries.</li>
+<li><strong>A:</strong> Implemented 7 community API routes and RLS policies (public read, auth write, maintainer-only announcements); dual demo JSON / live Supabase mode; school email domain verification.</li>
+<li><strong>R:</strong> Per-school hub with Q&amp;A upvotes, course review leaderboard, alumni outcomes feed.</li>
+<li><strong>Resume bullet:</strong> <em>Built <strong>per-school community hub</strong> (Q&amp;A, course reviews, alumni outcomes) on <strong>Supabase Postgres with RLS</strong>, supporting demo JSON and production auth modes with maintainer-scoped announcement writes.</em></li>
+</ul>
+<hr>
+<h2>Part 5 — Resume section templates</h2>
+<h3>Project block (copy-paste skeleton)</h3>
+<pre><code>iGauchoBack — Full-Stack Degree Roadmap Platform          [Live Demo] [GitHub]
+Next.js · TypeScript · Supabase · React Flow · Vercel AI SDK · Upstash · Sentry
+https://hackathon-nu-taupe.vercel.app
+
+• Shipped production full-stack platform covering 72 UC degree roadmaps across 3 campuses
+  (Next.js 14, Supabase Postgres/RLS, Vercel edge deploy)
+• Built hybrid regex + LLM transcript parser (Gemini via AI Gateway) with FERPA-safe
+  in-memory PDF processing and graph auto-matching
+• Hardened public APIs with edge caching, Upstash rate limiting, and Sentry observability;
+  resolved auth/cache middleware conflict for CDN cache hits
+• Architected dual JSON + Supabase data layer and 34-script catalog ingestion pipeline
+  for multi-campus official degree requirements
+</code></pre>
+<h3>Skills to list (tailor per job)</h3>
+<p><strong>Languages:</strong> TypeScript, JavaScript, SQL<br><strong>Frontend:</strong> React, Next.js (App Router), Tailwind CSS, React Flow<br><strong>Backend:</strong> REST API design, Node.js, Edge Middleware, Zod validation<br><strong>Data:</strong> PostgreSQL, Supabase, RLS, JSON schema design, ETL scripts<br><strong>AI/ML:</strong> Vercel AI SDK, LLM structured output, hybrid parsing pipelines, prompt-adjacent system design<br><strong>Infra:</strong> Vercel, Upstash Redis, Sentry, CI/CD, edge caching, rate limiting<br><strong>Concepts:</strong> OAuth, DAG algorithms, feature flags, snapshot-first architecture, privacy-by-design</p>
+<hr>
+<h2>Part 6 — Interview story bank</h2>
+<p>Prepare 2-minute versions of these:</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Story to tell</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&quot;Tell me about a technical tradeoff&quot;</td>
+<td>Auth session refresh vs. edge cache on public APIs</td>
+</tr>
+<tr>
+<td>&quot;Tell me about an AI feature you shipped&quot;</td>
+<td>Transcript regex-first + AI fallback + cost control</td>
+</tr>
+<tr>
+<td>&quot;Tell me about a bug you fixed in production&quot;</td>
+<td>UCSB GOLD transcript format (grade-before-units, quarter prefixes)</td>
+</tr>
+<tr>
+<td>&quot;Tell me about system design&quot;</td>
+<td>Dual JSON/Supabase layer, RLS tiers, planner collab schema</td>
+</tr>
+<tr>
+<td>&quot;Tell me about data at scale&quot;</td>
+<td>34-script ingestion, 72 seeds, grades snapshot pipeline</td>
+</tr>
+<tr>
+<td>&quot;Tell me about ownership&quot;</td>
+<td>Hackathon → production hardening (Sentry, Upstash, docs)</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>Part 7 — Portfolio presentation checklist</h2>
+<h3>Must-have links</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Live demo URL on resume (above the fold)</li>
+<li><input disabled="" type="checkbox"> GitHub repo (public or accessible)</li>
+<li><input disabled="" type="checkbox"> 60-second Loom walkthrough: upload transcript → apply → undo</li>
+<li><input disabled="" type="checkbox"> README with architecture diagram (this doc helps)</li>
+</ul>
+<h3>GitHub polish recruiters notice</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Clear README with tech stack table and deploy link</li>
+<li><input disabled="" type="checkbox"> <code>docs/PRODUCTION-OPS.md</code> proves you think about ops</li>
+<li><input disabled="" type="checkbox"> Test scripts runnable via npm</li>
+<li><input disabled="" type="checkbox"> Meaningful commit messages (you have these)</li>
+</ul>
+<h3>LinkedIn post angle (one paragraph)</h3>
+<blockquote>
+<p>I built iGauchoBack because UC degree requirements are buried in PDFs. It turns official catalogs into interactive prerequisite graphs for 72 majors, lets you upload a transcript to auto-mark completed courses (regex + Gemini fallback), and ships with production hardening—edge cache, rate limits, Sentry. Stack: Next.js, Supabase, Vercel AI Gateway. Live at hackathon-nu-taupe.vercel.app</p>
+</blockquote>
+<hr>
+<h2>Part 8 — Role-specific tailoring guide</h2>
+<h3>Applying to AI/ML roles</h3>
+<p><strong>Lead bullets:</strong> #7, #8<br><strong>Emphasize:</strong> Hybrid pipeline, structured output, cost control, eval gap + plan<br><strong>Project title variant:</strong> &quot;AI-Assisted Degree Planning Platform&quot;</p>
+<h3>Applying to backend roles</h3>
+<p><strong>Lead bullets:</strong> #5, #6, #4<br><strong>Emphasize:</strong> API design, caching, RLS, rate limiting, middleware<br><strong>Project title variant:</strong> &quot;Full-Stack Backend for UC Degree Graph Platform&quot;</p>
+<h3>Applying to full-stack roles</h3>
+<p><strong>Lead bullets:</strong> #1, #2, #7, #5<br><strong>Emphasize:</strong> End-to-end ownership, deploy, UX + infra<br><strong>Project title variant:</strong> &quot;iGauchoBack — Interactive UC Degree Roadmaps&quot;</p>
+<hr>
+<h2>Appendix — Key metrics reference card</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Seed roadmaps</td>
+<td>72</td>
+</tr>
+<tr>
+<td>UCSB majors covered</td>
+<td>65+ (CoE 5, L&amp;S 58, CCS 9)</td>
+</tr>
+<tr>
+<td>API routes</td>
+<td>24</td>
+</tr>
+<tr>
+<td>Page routes</td>
+<td>18+</td>
+</tr>
+<tr>
+<td>React components</td>
+<td>~77</td>
+</tr>
+<tr>
+<td>lib/ modules</td>
+<td>~83</td>
+</tr>
+<tr>
+<td>Data pipeline scripts</td>
+<td>34</td>
+</tr>
+<tr>
+<td>Unit tests</td>
+<td>14+ (planner + transcript)</td>
+</tr>
+<tr>
+<td>Supabase schema</td>
+<td>~717 lines</td>
+</tr>
+<tr>
+<td>Schools</td>
+<td>UCSB (full), UCLA (preview), Berkeley (preview)</td>
+</tr>
+<tr>
+<td>Production URL</td>
+<td>hackathon-nu-taupe.vercel.app</td>
+</tr>
+<tr>
+<td>Rate limits</td>
+<td>120/min read · 10/min write · 20/hr transcript</td>
+</tr>
+<tr>
+<td>Edge cache TTL</td>
+<td>1h + 24h SWR</td>
+</tr>
+</tbody></table>
+<hr>
+<p><em>Document generated for portfolio and job search use. Update metrics as the project grows.</em></p>
+</body>
+</html>
