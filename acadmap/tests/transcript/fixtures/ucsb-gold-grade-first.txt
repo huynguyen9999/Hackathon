@@ -1,0 +1,19 @@
+University of California, Santa Barbara
+Unofficial Transcript
+
+2024 Winter
+CMPSC   16      INTRO TO CS II                  A      4.00
+ECE     10A     CIRCUIT THEORY I                B+     4.00
+ECE     10B     CIRCUIT THEORY II               A-     4.00
+MATH    4B      DIFFERENTIAL EQUATIONS          B      4.00
+PHYS    2       BASIC PHYSICS                   A-     4.00
+
+2024 Spring
+ECE     10C     CIRCUIT THEORY III              B      4.00
+ECE     130A    ELECTRONICS I                   A      4.00
+ENGL    10      LS WRITING                      B+     4.00
+CMPSC   32      OBJECT ORIENTED                 A      4.00
+
+2024 Fall
+ECE     152A    IC DESIGN                       B+     4.00
+ECE     130B    ELECTRONICS II                  A      4.00

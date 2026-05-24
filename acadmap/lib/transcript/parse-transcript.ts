@@ -24,22 +24,87 @@ async function chooseParser(
 ): Promise<{ courses: ParsedCourse[]; parser: TranscriptParserKind }> {
   const regexCourses = parseCoursesFromText(text, school);
   const minCourses = getAiFallbackMinCourses();
-  const sparseText = text.replace(/\s+/g, " ").trim().length < 200;
+  const aiConfigured = isTranscriptAiConfigured();
 
-  if (
-    regexCourses.length >= minCourses ||
-    (!sparseText && regexCourses.length > 0) ||
-    !isTranscriptAiConfigured()
-  ) {
+  // #region agent log
+  fetch("http://127.0.0.1:7831/ingest/e16f4ef7-dba8-4ded-ac8f-0f0a350f1814", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Debug-Session-Id": "989c05",
+    },
+    body: JSON.stringify({
+      sessionId: "989c05",
+      runId: "pre-fix",
+      hypothesisId: "C",
+      location: "parse-transcript.ts:chooseParser",
+      message: "parser branch decision inputs",
+      data: {
+        regexCount: regexCourses.length,
+        minCourses,
+        textLen: text.replace(/\s+/g, " ").trim().length,
+        aiConfigured,
+      },
+      timestamp: Date.now(),
+    }),
+  }).catch(() => {});
+  // #endregion
+
+  if (regexCourses.length >= minCourses) {
     return { courses: regexCourses, parser: "regex" };
   }
 
-  const aiCourses = await parseCoursesWithAi(text, school);
-  if (aiCourses.length > regexCourses.length) {
-    return { courses: aiCourses, parser: "ai" };
+  if (!aiConfigured) {
+    return { courses: regexCourses, parser: "regex" };
   }
 
-  return { courses: regexCourses, parser: regexCourses.length > 0 ? "regex" : "ai" };
+  try {
+    const aiCourses = await parseCoursesWithAi(text, school);
+    if (aiCourses.length > regexCourses.length) {
+      // #region agent log
+      fetch("http://127.0.0.1:7831/ingest/e16f4ef7-dba8-4ded-ac8f-0f0a350f1814", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Debug-Session-Id": "989c05",
+        },
+        body: JSON.stringify({
+          sessionId: "989c05",
+          runId: "pre-fix",
+          hypothesisId: "C",
+          location: "parse-transcript.ts:chooseParser",
+          message: "selected AI parser",
+          data: { aiCount: aiCourses.length, regexCount: regexCourses.length },
+          timestamp: Date.now(),
+        }),
+      }).catch(() => {});
+      // #endregion
+      return { courses: aiCourses, parser: "ai" };
+    }
+  } catch (error) {
+    // #region agent log
+    fetch("http://127.0.0.1:7831/ingest/e16f4ef7-dba8-4ded-ac8f-0f0a350f1814", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Debug-Session-Id": "989c05",
+      },
+      body: JSON.stringify({
+        sessionId: "989c05",
+        runId: "pre-fix",
+        hypothesisId: "C",
+        location: "parse-transcript.ts:chooseParser",
+        message: "AI fallback failed",
+        data: {
+          error: error instanceof Error ? error.message : "unknown",
+        },
+        timestamp: Date.now(),
+      }),
+    }).catch(() => {});
+    // #endregion
+  }
+
+  return { courses: regexCourses, parser: "regex" };
 }
 
 export async function parseTranscriptPdf(input: {
@@ -60,6 +125,33 @@ export async function parseTranscriptPdf(input: {
     nodes: input.nodes,
     school: input.school,
   });
+
+  // #region agent log
+  fetch("http://127.0.0.1:7831/ingest/e16f4ef7-dba8-4ded-ac8f-0f0a350f1814", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Debug-Session-Id": "989c05",
+    },
+    body: JSON.stringify({
+      sessionId: "989c05",
+      runId: "pre-fix",
+      hypothesisId: "D",
+      location: "parse-transcript.ts:parseTranscriptPdf",
+      message: "parse result summary",
+      data: {
+        parser,
+        courseCount: courses.length,
+        matchedCount: matched.length,
+        unmatchedCount: unmatched.length,
+        unmatchedSample: unmatched.slice(0, 5).map((u) => u.code),
+        nodeCount: input.nodes.filter((n) => n.node_type === "course").length,
+        school: input.school ?? null,
+      },
+      timestamp: Date.now(),
+    }),
+  }).catch(() => {});
+  // #endregion
 
   return { courses, matched, unmatched, parser };
 }

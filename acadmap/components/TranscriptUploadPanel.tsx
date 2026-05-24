@@ -247,6 +247,23 @@ function PreviewTable({
         </p>
       )}
 
+      {unmatched.length > 0 ? (
+        <details className="text-sm text-slate-600 dark:text-slate-400">
+          <summary className="cursor-pointer font-medium">
+            {unmatched.length} course{unmatched.length === 1 ? "" : "s"} not on
+            this major
+          </summary>
+          <ul className="mt-2 list-inside list-disc space-y-1 pl-1">
+            {unmatched.slice(0, 12).map((row) => (
+              <li key={row.code}>
+                {row.code}
+                {row.grade ? ` (${row.grade})` : ""}
+              </li>
+            ))}
+          </ul>
+        </details>
+      ) : null}
+
       <button
         type="button"
         onClick={onApply}

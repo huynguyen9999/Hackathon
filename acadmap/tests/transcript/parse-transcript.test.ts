@@ -78,6 +78,24 @@ test("matchCoursesToRoadmap maps transcript codes to roadmap nodes", () => {
   assert.ok(unmatched.length > 0);
 });
 
+test("parseCoursesFromText handles UCSB GOLD grade-before-units layout", () => {
+  const text = readFileSync(
+    path.join(process.cwd(), "tests/transcript/fixtures/ucsb-gold-grade-first.txt"),
+    "utf-8",
+  );
+  const courses = parseCoursesFromText(text, "ucsb");
+  const codes = courses.map((c) => c.code);
+
+  assert.ok(courses.length >= 10);
+  assert.ok(codes.includes("CMPSC 16"));
+  assert.ok(codes.includes("ECE 10A"));
+  assert.ok(codes.includes("ECE 152A"));
+});
+
+test("normalizeCourseCode handles concatenated CMPSC16", () => {
+  assert.equal(normalizeCourseCode("CMPSC16", "ucsb"), "CMPSC 16");
+});
+
 test("parseTranscriptTextForTests returns regex parser for fixture", async () => {
   const text = readFileSync(fixturePath, "utf-8");
   const result = await parseTranscriptTextForTests({
