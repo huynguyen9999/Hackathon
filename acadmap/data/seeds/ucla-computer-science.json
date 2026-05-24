@@ -139,58 +139,69 @@
   ],
   "edges": [
     {
-      "source": "com-sci-1",
-      "target": "com-sci-31",
+      "id": "e-com-sci-1-31",
+      "source_id": "com-sci-1",
+      "target_id": "com-sci-31",
       "edge_type": "recommended"
     },
     {
-      "source": "com-sci-31",
-      "target": "com-sci-32",
+      "id": "e-com-sci-31-32",
+      "source_id": "com-sci-31",
+      "target_id": "com-sci-32",
       "edge_type": "prerequisite"
     },
     {
-      "source": "com-sci-32",
-      "target": "com-sci-33",
+      "id": "e-com-sci-32-33",
+      "source_id": "com-sci-32",
+      "target_id": "com-sci-33",
       "edge_type": "prerequisite"
     },
     {
-      "source": "com-sci-32",
-      "target": "com-sci-m51a",
+      "id": "e-com-sci-32-m51a",
+      "source_id": "com-sci-32",
+      "target_id": "com-sci-m51a",
       "edge_type": "prerequisite"
     },
     {
-      "source": "com-sci-33",
-      "target": "com-sci-35l",
+      "id": "e-com-sci-33-35l",
+      "source_id": "com-sci-33",
+      "target_id": "com-sci-35l",
       "edge_type": "prerequisite"
     },
     {
-      "source": "com-sci-35l",
-      "target": "com-sci-111",
+      "id": "e-com-sci-35l-111",
+      "source_id": "com-sci-35l",
+      "target_id": "com-sci-111",
       "edge_type": "prerequisite"
     },
     {
-      "source": "com-sci-35l",
-      "target": "com-sci-130",
+      "id": "e-com-sci-35l-130",
+      "source_id": "com-sci-35l",
+      "target_id": "com-sci-130",
       "edge_type": "prerequisite"
     },
     {
-      "source": "com-sci-111",
-      "target": "com-sci-180",
+      "id": "e-com-sci-111-180",
+      "source_id": "com-sci-111",
+      "target_id": "com-sci-180",
       "edge_type": "prerequisite"
     },
     {
-      "source": "com-sci-180",
-      "target": "career-swe",
+      "id": "e-com-sci-180-swe",
+      "source_id": "com-sci-180",
+      "target_id": "career-swe",
       "edge_type": "leads_to"
     },
     {
-      "source": "com-sci-130",
-      "target": "career-swe",
+      "id": "e-com-sci-130-swe",
+      "source_id": "com-sci-130",
+      "target_id": "career-swe",
       "edge_type": "leads_to"
     },
     {
-      "source": "com-sci-180",
-      "target": "career-ml",
+      "id": "e-com-sci-180-ml",
+      "source_id": "com-sci-180",
+      "target_id": "career-ml",
       "edge_type": "leads_to"
     }
   ]
