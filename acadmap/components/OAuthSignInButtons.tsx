@@ -18,6 +18,22 @@ export type OAuthSignInButtonsProps = {
 const buttonBase =
   "inline-flex w-full items-center justify-center rounded-lg px-4 py-2.5 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-60";
 
+function formatOAuthError(provider: OAuthProvider, message: string): string {
+  if (!message.includes("missing OAuth secret")) {
+    return message;
+  }
+
+  if (provider === "google") {
+    return "Google sign-in is not fully configured yet. Add the Google Client Secret in Supabase (Authentication → Providers → Google).";
+  }
+
+  if (provider === "linkedin_oidc") {
+    return "LinkedIn sign-in is not fully configured yet. Add the LinkedIn Client Secret in Supabase (Authentication → Providers → LinkedIn OIDC).";
+  }
+
+  return message;
+}
+
 export function OAuthSignInButtons({
   nextPath,
   layout = "stack",
@@ -51,7 +67,7 @@ export function OAuthSignInButtons({
       });
 
       if (signInError) {
-        onError?.(signInError.message);
+        onError?.(formatOAuthError(provider, signInError.message));
         setLoadingProvider(null);
       }
     } catch (err) {

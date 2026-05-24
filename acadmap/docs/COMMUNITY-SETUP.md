@@ -52,6 +52,25 @@ Used for sign-in on `/contribute` and `/auth/sign-in` alongside GitHub.
 
 No additional Next.js env vars — Supabase stores LinkedIn credentials.
 
+**Troubleshooting:** If LinkedIn shows `redirect_uri_mismatch`, add this exact URL in the LinkedIn app **Auth** tab (not your Vercel URL):
+
+`https://jhdxccwfisyhuqblartj.supabase.co/auth/v1/callback`
+
+Also enable **Sign In with LinkedIn using OpenID Connect** under **Products**.
+
+**Automated fix (optional):** With a [Supabase access token](https://supabase.com/dashboard/account/tokens) and LinkedIn credentials in `.env.local`:
+
+```bash
+cd acadmap
+npm run configure:linkedin-oauth
+```
+
+Verify only (prints the callback URL Supabase sends to LinkedIn):
+
+```bash
+npm run configure:linkedin-oauth -- --verify-only
+```
+
 ## 3c. Google OAuth
 
 Primary sign-in for students on `/contribute` and `/auth/sign-in`.
@@ -63,6 +82,19 @@ Primary sign-in for students on `/contribute` and `/auth/sign-in`.
 5. Supabase → **Authentication → Providers → Google** → enable, paste credentials
 
 No additional Next.js env vars — Supabase stores Google credentials.
+
+**Troubleshooting:** If sign-in shows `missing OAuth secret`, the Google provider is enabled but the **Client Secret** field in Supabase is empty. Re-paste both Client ID and Client Secret, click **Save**, wait ~30s, retry.
+
+**Automated fix (optional):** With a [Supabase access token](https://supabase.com/dashboard/account/tokens) and Google OAuth credentials in `.env.local`:
+
+```bash
+cd acadmap
+npm run configure:google-oauth
+```
+
+This also sets Site URL and redirect URLs via the Management API. Google Cloud redirect URI must be:
+
+`https://jhdxccwfisyhuqblartj.supabase.co/auth/v1/callback`
 
 ## 4. Environment variables
 

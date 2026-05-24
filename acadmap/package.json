@@ -22,6 +22,8 @@
     "sync:berkeley-details": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-berkeley-details.ts",
     "validate:berkeley-details": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-berkeley-details.ts",
     "check:community-setup": "node ./node_modules/tsx/dist/cli.mjs scripts/check-community-setup.ts",
+    "configure:google-oauth": "node ./node_modules/tsx/dist/cli.mjs scripts/configure-google-oauth.ts",
+    "configure:linkedin-oauth": "node ./node_modules/tsx/dist/cli.mjs scripts/configure-linkedin-oauth.ts",
     "migrate:seeds": "node ./node_modules/tsx/dist/cli.mjs scripts/migrate-seeds-to-supabase.ts",
     "generate:career-salaries": "node ./node_modules/tsx/dist/cli.mjs scripts/generate-career-salary-catalog.ts",
     "validate:career-salaries": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-career-salaries.ts",

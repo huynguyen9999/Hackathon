@@ -85,7 +85,12 @@ export default async function HomePage() {
             one stop shop for planning your major.
           </p>
 
-          <div className="mt-8 flex flex-wrap gap-3">
+          <p className="mt-6 max-w-2xl text-sm italic leading-relaxed text-slate-600 dark:text-slate-400">
+            the interactive degree map that every university should have built for
+            their students — but never did.
+          </p>
+
+          <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/explore" className="btn-primary">
               Explore roadmaps
             </Link>
