@@ -52,8 +52,17 @@ export default async function EngineeringHubPage({ params }: PageProps) {
 
   const shortName = catalog.school.short_name;
   const isUcla = shortName === "ucla";
-  const badgeLabel = isUcla ? "Announcement" : "GEAR";
-  const ctaLabel = isUcla ? "View requirements" : "View GEAR plan";
+  const isBerkeley = shortName === "berkeley";
+  const badgeLabel = isUcla
+    ? "Announcement"
+    : isBerkeley
+      ? "Guide"
+      : "GEAR";
+  const ctaLabel = isUcla
+    ? "View requirements"
+    : isBerkeley
+      ? "View requirements"
+      : "View GEAR plan";
   const dataPath = `data/${shortName}/coe-catalog.json`;
   const gradPrograms =
     shortName === "ucsb" ? await listGradPrograms() : [];
@@ -67,6 +76,13 @@ export default async function EngineeringHubPage({ params }: PageProps) {
         )
       : [];
 
+  const sortedMajors = [...catalog.majors].sort((a, b) => {
+    if (a.roadmap_available === b.roadmap_available) {
+      return a.name.localeCompare(b.name);
+    }
+    return a.roadmap_available ? -1 : 1;
+  });
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
       <PageHeader
@@ -78,12 +94,20 @@ export default async function EngineeringHubPage({ params }: PageProps) {
           },
           { label: "Engineering" },
         ]}
-        eyebrow={isUcla ? "Henry Samueli School" : "College of Engineering"}
+        eyebrow={
+          isUcla
+            ? "Henry Samueli School"
+            : isBerkeley
+              ? "Berkeley Engineering"
+              : "College of Engineering"
+        }
         title={catalog.school.college}
         description={
           isUcla
             ? "Requirements from the 2025-26 UCLA Samueli Announcement — 10 BS engineering programs."
-            : "Requirements from the 2025-26 GEAR PDF — prep, upper-division, and electives for all BS engineering majors."
+            : isBerkeley
+              ? "Requirements from the 2024-25 Berkeley Engineering Guide — 12 BS engineering majors."
+              : "Requirements from the 2025-26 GEAR PDF — prep, upper-division, and electives for all BS engineering majors."
         }
       />
 
@@ -113,7 +137,7 @@ export default async function EngineeringHubPage({ params }: PageProps) {
             </Link>
           </div>
           <MajorCatalogGrid
-            majors={catalog.majors}
+            majors={sortedMajors}
             getMajorHref={(slug) => coeMajorHubHref(shortName, slug)}
             badgeLabel={badgeLabel}
             ctaLabel={ctaLabel}

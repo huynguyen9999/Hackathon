@@ -46,6 +46,7 @@ export default async function RoadmapPage({ params }: PageProps) {
 
   const isUcsb = roadmap.school.short_name === "ucsb";
   const isUcla = roadmap.school.short_name === "ucla";
+  const isBerkeley = roadmap.school.short_name === "berkeley";
   const isGrad = ["MS", "PhD", "MA"].includes(roadmap.major.degree_type);
   const isCoe =
     !isGrad && (await isCoeMajorSlug(major, roadmap.school.short_name));
@@ -119,7 +120,23 @@ export default async function RoadmapPage({ params }: PageProps) {
                   },
                   { label: "Roadmap" },
                 ]
-              : [
+              : isBerkeley && isCoe
+                ? [
+                    {
+                      label: "Berkeley",
+                      href: schoolHubHref("berkeley"),
+                    },
+                    {
+                      label: "Engineering",
+                      href: coeCollegeHubHref("berkeley"),
+                    },
+                    {
+                      label: roadmap.major.name,
+                      href: coeMajorHubHref("berkeley", major),
+                    },
+                    { label: "Roadmap" },
+                  ]
+                : [
                   { label: roadmap.school.short_name.toUpperCase() },
                   { label: roadmap.major.name },
                 ]),

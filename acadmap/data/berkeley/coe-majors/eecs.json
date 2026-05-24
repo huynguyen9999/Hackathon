@@ -1,0 +1,193 @@
+{
+  "slug": "eecs",
+  "name": "Electrical Engineering & Computer Sciences",
+  "catalog_year": "2024-2025",
+  "gear_page": 1,
+  "graduation_units": 120,
+  "sources": [
+    {
+      "title": "Berkeley Engineering — Majors & Minors",
+      "url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "title": "2024-25 ECE Sample Program",
+      "url": "https://engineering.berkeley.edu/2024-25-undergraduate-guide/2024-25-electrical-computer-engineering/"
+    },
+    {
+      "title": "ECE Lower-Division Requirements",
+      "url": "https://eecs.berkeley.edu/resources/undergrads/ece-major-information/ece-major-lower-division-degree-requirements/"
+    },
+    {
+      "title": "ECE Upper-Division Requirements",
+      "url": "https://eecs.berkeley.edu/resources/undergrads/ece-major-information/ece-major-upper-division-degree-requirements/"
+    },
+    {
+      "title": "ECE Bachelor of Science",
+      "url": "https://eecs.berkeley.edu/academics/undergraduate/ece-bs/"
+    }
+  ],
+  "preparation": {
+    "label": "Lower-division major requirements",
+    "units": 52,
+    "courses": [
+      { "code": "MATH 51", "units": 4, "notes": "Calculus I" },
+      { "code": "MATH 52", "units": 4, "notes": "Calculus II" },
+      { "code": "MATH 53", "units": 4, "notes": "Multivariable calculus" },
+      { "code": "MATH 54", "units": 4, "notes": "Linear algebra and differential equations" },
+      { "code": "PHYSICS 7A", "units": 4 },
+      { "code": "PHYSICS 7B", "units": 4 },
+      { "code": "COMPSCI 61A", "units": 4 },
+      { "code": "COMPSCI 61C", "units": 4 },
+      { "code": "EECS 16A", "units": 4 },
+      { "code": "EECS 16B", "units": 4 },
+      { "code": "Science Elective", "units": 4, "notes": "Approved biology, chemistry, or physics course" }
+    ],
+    "notes": [
+      "Berkeley uses a semester calendar; sample plan below maps Fall/Spring terms.",
+      "Students admitted to EECS complete the ECE major track within the department."
+    ]
+  },
+  "upper_division": [
+    {
+      "label": "Upper-division ECE requirements",
+      "units": 28,
+      "courses": [
+        { "code": "ECE Breadth", "units": 12, "notes": "Three approved ECE breadth courses" },
+        { "code": "Probability", "units": 4, "notes": "ELENG 126, STAT 134, or approved equivalent" },
+        { "code": "Technical Electives", "units": 12, "notes": "Three upper-division technical electives" },
+        { "code": "Design Course", "units": 4, "notes": "Major design experience (ELENG/EECS list)" },
+        { "code": "ENGIN 125", "units": 3, "notes": "Ethics, Engineering, and Society" }
+      ]
+    }
+  ],
+  "electives": {
+    "label": "Humanities and social sciences",
+    "choose_units": 24,
+    "courses": [
+      { "code": "H/SS", "notes": "Six courses satisfying Berkeley breadth and R&C requirements" }
+    ],
+    "notes": [
+      "Engineering ethics may be satisfied by ENGIN 125 or other approved courses.",
+      "See Berkeley Engineering Guide for current H/SS and breadth rules."
+    ]
+  },
+  "regulations": {
+    "letter_grade_only": true,
+    "letter_grade_minimum": "C",
+    "pnp_allowed": false,
+    "other": [
+      "Minimum 120 semester units for the BS degree.",
+      "Upper-division major courses require minimum 2.0 major GPA.",
+      "All major courses must be at least 3 units except ethics."
+    ]
+  },
+  "recommended_plans": [
+    {
+      "year": 1,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "COMPSCI 61A", "units": 4 },
+        { "code": "EECS 16A", "units": 4 },
+        { "code": "MATH 51", "units": 4 },
+        { "slot": "GE", "label": "H/SS", "units": 4 }
+      ]
+    },
+    {
+      "year": 1,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "COMPSCI 61C", "units": 4 },
+        { "code": "EECS 16B", "units": 4 },
+        { "code": "MATH 52", "units": 4 },
+        { "code": "PHYSICS 7A", "units": 4 },
+        { "slot": "GE", "label": "H/SS", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "code": "MATH 53", "units": 4 },
+        { "code": "PHYSICS 7B", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Science Elective", "units": 4 },
+        { "slot": "GE", "label": "H/SS", "units": 4 }
+      ]
+    },
+    {
+      "year": 2,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "code": "MATH 54", "units": 4 },
+        { "slot": "ELECTIVE", "label": "ECE Breadth", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Probability", "units": 4 },
+        { "slot": "GE", "label": "H/SS", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "slot": "ELECTIVE", "label": "ECE Breadth", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Technical Elective", "units": 4 },
+        { "slot": "GE", "label": "H/SS", "units": 4 }
+      ]
+    },
+    {
+      "year": 3,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "slot": "ELECTIVE", "label": "ECE Breadth", "units": 4 },
+        { "slot": "ELECTIVE", "label": "Technical Elective", "units": 4 },
+        { "slot": "CAPSTONE", "label": "Design Course", "units": 4 },
+        { "code": "ENGIN 125", "units": 3 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Fall",
+      "track": "freshman",
+      "entries": [
+        { "slot": "ELECTIVE", "label": "Technical Elective", "units": 4 },
+        { "slot": "GE", "label": "H/SS", "units": 4 }
+      ]
+    },
+    {
+      "year": 4,
+      "quarter": "Spring",
+      "track": "freshman",
+      "entries": [
+        { "slot": "ELECTIVE", "label": "Technical Elective", "units": 4 },
+        { "slot": "GE", "label": "H/SS", "units": 4 }
+      ]
+    }
+  ],
+  "quarter_totals": [
+    { "year": 1, "quarter": "Fall", "units": 16 },
+    { "year": 1, "quarter": "Spring", "units": 20 },
+    { "year": 2, "quarter": "Fall", "units": 16 },
+    { "year": 2, "quarter": "Spring", "units": 16 },
+    { "year": 3, "quarter": "Fall", "units": 12 },
+    { "year": 3, "quarter": "Spring", "units": 15 },
+    { "year": 4, "quarter": "Fall", "units": 8 },
+    { "year": 4, "quarter": "Spring", "units": 8 }
+  ],
+  "career_outcomes": [
+    "Software Engineer",
+    "Hardware Engineer",
+    "ML Engineer",
+    "Systems Engineer",
+    "Chip Designer"
+  ],
+  "quality_tier": "gear",
+  "notes": [
+    "Sample program follows the 2024-25 Berkeley Engineering ECE guide.",
+    "Berkeley uses semesters; Fall/Spring terms are stored in the quarter plan schema for UI compatibility.",
+    "EECS department also offers CS and EECS major tracks; this plan reflects the ECE BS path."
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "catalog_year": "2024-2025",
+  "guide_url": "https://engineering.berkeley.edu/2024-25-undergraduate-guide/",
+  "majors_url": "https://engineering.berkeley.edu/academics/majors-and-minors/",
+  "sources": {
+    "aerospace-engineering": {
+      "dept_page": "https://aero.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "bioengineering": {
+      "dept_page": "https://bioeng.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "civil-engineering": {
+      "dept_page": "https://ce.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "eecs": {
+      "dept_page": "https://eecs.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/2024-25-undergraduate-guide/2024-25-electrical-computer-engineering/",
+      "catalog_major_url": "https://guide.berkeley.edu/undergraduate/degree-programs/electrical-engineering-computer-sciences/"
+    },
+    "energy-engineering": {
+      "dept_page": "https://engineeringscience.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "engineering-mathematics-statistics": {
+      "dept_page": "https://engineeringscience.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "engineering-physics": {
+      "dept_page": "https://engineeringscience.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "environmental-engineering-science": {
+      "dept_page": "https://engineeringscience.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "industrial-engineering-operations-research": {
+      "dept_page": "https://ieor.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "materials-science-engineering": {
+      "dept_page": "https://mse.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "mechanical-engineering": {
+      "dept_page": "https://me.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    "nuclear-engineering": {
+      "dept_page": "https://nuc.berkeley.edu/",
+      "four_year_plan_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    }
+  }
+}

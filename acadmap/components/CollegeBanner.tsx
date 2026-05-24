@@ -22,6 +22,7 @@ export function CollegeBanner({
 }: CollegeBannerProps) {
   if (variant === "engineering" && coeCatalog?.gear) {
     const isUcla = schoolShortName === "ucla";
+    const isBerkeley = schoolShortName === "berkeley";
     return (
       <GearBanner
         gear={coeCatalog.gear}
@@ -29,12 +30,16 @@ export function CollegeBanner({
         headline={
           isUcla
             ? "UCLA Samueli School Announcement"
-            : "General Engineering Academic Requirements (GEAR)"
+            : isBerkeley
+              ? "Berkeley Engineering Guide"
+              : "General Engineering Academic Requirements (GEAR)"
         }
         buttonLabel={
           isUcla
             ? `Open ${coeCatalog.gear.catalog_year} Announcement PDF ↗`
-            : undefined
+            : isBerkeley
+              ? `Open ${coeCatalog.gear.catalog_year} Engineering Guide ↗`
+              : undefined
         }
       />
     );

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { AuthControls } from "@/components/AuthControls";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { APP_LOGO_INITIALS, APP_NAME } from "@/lib/brand";
+import type { NavAuthState } from "@/lib/auth-session";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -32,9 +33,10 @@ function isGradesNavActive(pathname: string, href: string): boolean {
 
 export type NavbarProps = {
   className?: string;
+  initialAuth: NavAuthState;
 };
 
-export function Navbar({ className = "" }: NavbarProps) {
+export function Navbar({ className = "", initialAuth }: NavbarProps) {
   const pathname = usePathname();
 
   return (
@@ -99,7 +101,7 @@ export function Navbar({ className = "" }: NavbarProps) {
               );
             })}
           </nav>
-          <AuthControls />
+          <AuthControls initialAuth={initialAuth} />
           <ThemeToggle />
         </div>
       </div>

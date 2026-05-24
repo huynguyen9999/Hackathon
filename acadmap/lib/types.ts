@@ -259,11 +259,3 @@ export type DbEdgeRow = {
   edge_type: EdgeType;
   label: string | null;
 };
-
-export type ContributeFormData = {
-  schoolName: string;
-  shortName: string;
-  major: string;
-  degreeType: string;
-  contributorNotes: string;
-};

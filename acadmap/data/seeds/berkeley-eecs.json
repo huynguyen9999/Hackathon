@@ -1,0 +1,263 @@
+{
+  "school": {
+    "name": "UC Berkeley",
+    "short_name": "berkeley",
+    "location": "Berkeley, CA"
+  },
+  "major": {
+    "name": "Electrical Engineering & Computer Sciences",
+    "slug": "eecs",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "Berkeley Engineering Guide 2024-25 + EECS Department",
+    "source_url": "https://engineering.berkeley.edu/2024-25-undergraduate-guide/2024-25-electrical-computer-engineering/",
+    "guide_page": 1,
+    "capstone": {
+      "required": true,
+      "label": "Design Course",
+      "notes": "One major design experience from the approved ELENG/EECS design list.",
+      "source_url": "https://eecs.berkeley.edu/resources/undergrads/ece-major-information/ece-major-upper-division-degree-requirements/"
+    }
+  },
+  "nodes": [
+    {
+      "id": "compsci-61a",
+      "node_type": "course",
+      "label": "COMPSCI 61A",
+      "title": "Structure and Interpretation of Computer Programs",
+      "description": "Introduction to programming and computer science. Abstraction, recursion, interpreters, and functional programming in Python.",
+      "units": 4,
+      "self_learnable": true,
+      "resources": [
+        {
+          "name": "Berkeley CS 61A course page",
+          "url": "https://cs61a.org/"
+        }
+      ],
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "eecs-16a",
+      "node_type": "course",
+      "label": "EECS 16A",
+      "title": "Designing Information Devices and Systems I",
+      "description": "Linear algebra, circuits, and information processing foundations for EECS. Introduces sensing, actuation, and optimization.",
+      "units": 4,
+      "self_learnable": false,
+      "resources": [
+        {
+          "name": "EECS 16A course site",
+          "url": "https://eecs16a.org/"
+        }
+      ],
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "eecs-16b",
+      "node_type": "course",
+      "label": "EECS 16B",
+      "title": "Designing Information Devices and Systems II",
+      "description": "Continuation of 16A: circuits, signals, control, and machine learning basics for EECS majors.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "compsci-61c",
+      "node_type": "course",
+      "label": "COMPSCI 61C",
+      "title": "Great Ideas of Computer Architecture",
+      "description": "Machine structures, assembly, pipelining, memory hierarchy, and parallelism.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 300
+    },
+    {
+      "id": "math-54",
+      "node_type": "course",
+      "label": "MATH 54",
+      "title": "Linear Algebra and Differential Equations",
+      "description": "Matrices, vector spaces, eigenvalues, and ODEs supporting EECS theory courses.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "eleng-120",
+      "node_type": "course",
+      "label": "ELENG 120",
+      "title": "Signals and Systems",
+      "description": "Continuous and discrete-time signals, Fourier analysis, and LTI systems.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "eleng-121",
+      "node_type": "course",
+      "label": "ELENG 121",
+      "title": "Introduction to Digital Communications",
+      "description": "Modulation, channel models, and communication system design fundamentals.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "eleng-105",
+      "node_type": "course",
+      "label": "ELENG 105",
+      "title": "Microelectronic Devices and Circuits",
+      "description": "Semiconductor devices, MOSFET operation, and analog circuit design.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 300
+    },
+    {
+      "id": "eleng-117",
+      "node_type": "course",
+      "label": "ELENG 117",
+      "title": "Electromagnetic Fields and Waves",
+      "description": "Maxwell equations, wave propagation, transmission lines, and antennas.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "compsci-162",
+      "node_type": "course",
+      "label": "COMPSCI 162",
+      "title": "Operating Systems and System Programming",
+      "description": "Processes, virtual memory, file systems, and concurrent programming.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 300
+    },
+    {
+      "id": "compsci-170",
+      "node_type": "course",
+      "label": "COMPSCI 170",
+      "title": "Efficient Algorithms and Intractable Problems",
+      "description": "Graph algorithms, dynamic programming, NP-completeness, and algorithm design.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 520
+    },
+    {
+      "id": "eleng-140",
+      "node_type": "course",
+      "label": "ELENG 140",
+      "title": "Linear Integrated Circuits",
+      "description": "Analog IC design, op-amps, feedback, and layout considerations.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "design-course",
+      "node_type": "course",
+      "label": "Design Course",
+      "title": "ECE Major Design Experience",
+      "description": "Senior design course from the approved ELENG/EECS list integrating breadth coursework into a capstone project.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "role": "capstone" },
+      "resources": [
+        {
+          "name": "ECE upper-division requirements",
+          "url": "https://eecs.berkeley.edu/resources/undergrads/ece-major-information/ece-major-upper-division-degree-requirements/"
+        }
+      ],
+      "position_x": 2180,
+      "position_y": 300
+    },
+    {
+      "id": "engin-125",
+      "node_type": "course",
+      "label": "ENGIN 125",
+      "title": "Ethics, Engineering, and Society",
+      "description": "Professional ethics, social responsibility, and case studies in engineering decision-making.",
+      "units": 3,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 520
+    },
+    {
+      "id": "career-swe",
+      "node_type": "career",
+      "label": "Software Engineer",
+      "title": "Software Engineer",
+      "description": "Build scalable systems, applications, and infrastructure at tech companies.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 80
+    },
+    {
+      "id": "career-hardware",
+      "node_type": "career",
+      "label": "Hardware Engineer",
+      "title": "Hardware / IC Engineer",
+      "description": "Design boards, ASICs, and embedded hardware for consumer and industrial products.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 300
+    },
+    {
+      "id": "career-ml",
+      "node_type": "career",
+      "label": "ML Engineer",
+      "title": "ML Engineer",
+      "description": "Deploy machine learning models and build data-intensive intelligent systems.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 520
+    },
+    {
+      "id": "career-systems",
+      "node_type": "career",
+      "label": "Systems Engineer",
+      "title": "Systems / Embedded Engineer",
+      "description": "Integrate hardware and software for robotics, communications, and IoT platforms.",
+      "self_learnable": false,
+      "position_x": 2480,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    { "id": "e1", "source_id": "compsci-61a", "target_id": "eecs-16a", "edge_type": "recommended" },
+    { "id": "e2", "source_id": "eecs-16a", "target_id": "eecs-16b", "edge_type": "prerequisite" },
+    { "id": "e3", "source_id": "compsci-61a", "target_id": "compsci-61c", "edge_type": "prerequisite" },
+    { "id": "e4", "source_id": "eecs-16b", "target_id": "eleng-120", "edge_type": "prerequisite" },
+    { "id": "e5", "source_id": "math-54", "target_id": "eleng-120", "edge_type": "prerequisite" },
+    { "id": "e6", "source_id": "eleng-120", "target_id": "eleng-121", "edge_type": "prerequisite" },
+    { "id": "e7", "source_id": "eecs-16b", "target_id": "eleng-105", "edge_type": "prerequisite" },
+    { "id": "e8", "source_id": "eleng-105", "target_id": "eleng-140", "edge_type": "prerequisite" },
+    { "id": "e9", "source_id": "eleng-120", "target_id": "eleng-117", "edge_type": "recommended" },
+    { "id": "e10", "source_id": "compsci-61c", "target_id": "compsci-162", "edge_type": "prerequisite" },
+    { "id": "e11", "source_id": "compsci-61a", "target_id": "compsci-170", "edge_type": "recommended" },
+    { "id": "e12", "source_id": "compsci-162", "target_id": "compsci-170", "edge_type": "recommended" },
+    { "id": "e13", "source_id": "eleng-140", "target_id": "design-course", "edge_type": "recommended" },
+    { "id": "e14", "source_id": "eleng-121", "target_id": "design-course", "edge_type": "recommended" },
+    { "id": "e15", "source_id": "compsci-170", "target_id": "design-course", "edge_type": "recommended" },
+    { "id": "e16", "source_id": "design-course", "target_id": "career-swe", "edge_type": "leads_to" },
+    { "id": "e17", "source_id": "design-course", "target_id": "career-hardware", "edge_type": "leads_to" },
+    { "id": "e18", "source_id": "compsci-170", "target_id": "career-ml", "edge_type": "leads_to" },
+    { "id": "e19", "source_id": "eleng-117", "target_id": "career-systems", "edge_type": "leads_to" },
+    { "id": "e20", "source_id": "compsci-162", "target_id": "career-systems", "edge_type": "leads_to" },
+    { "id": "e21", "source_id": "eleng-140", "target_id": "career-hardware", "edge_type": "leads_to" },
+    { "id": "e22", "source_id": "compsci-61c", "target_id": "career-swe", "edge_type": "leads_to" },
+    { "id": "e23", "source_id": "eecs-16b", "target_id": "math-54", "edge_type": "recommended" }
+  ]
+}

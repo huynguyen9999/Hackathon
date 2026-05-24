@@ -6,7 +6,8 @@ export type RequirementsLevel =
   | "summary"
   | "sheet"
   | "gear"
-  | "roadmap";
+  | "roadmap"
+  | "catalog";
 
 export type UcsbMajor = {
   name: string;

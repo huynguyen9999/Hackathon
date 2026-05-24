@@ -24,4 +24,14 @@ for key in NEXT_PUBLIC_SUPABASE_URL NEXT_PUBLIC_SUPABASE_ANON_KEY NEXT_PUBLIC_SI
   echo "Set $key on Vercel"
 done
 
+if [[ -n "${SUPABASE_SERVICE_ROLE_KEY:-}" ]]; then
+  for env in production development; do
+    printf '%s' "$SUPABASE_SERVICE_ROLE_KEY" | vercel env add SUPABASE_SERVICE_ROLE_KEY "$env" --force
+  done
+  vercel env add SUPABASE_SERVICE_ROLE_KEY preview --value "$SUPABASE_SERVICE_ROLE_KEY" --yes --force
+  echo "Set SUPABASE_SERVICE_ROLE_KEY on Vercel (server-only)"
+else
+  echo "WARN: SUPABASE_SERVICE_ROLE_KEY not in .env.local — maintainer PATCH /api/roadmaps/[id] will fail on Vercel"
+fi
+
 echo "Done. Redeploy: vercel --prod --yes"

@@ -1,0 +1,422 @@
+{
+  "school": {
+    "name": "UC Berkeley",
+    "short_name": "berkeley",
+    "location": "Berkeley, CA",
+    "college": "College of Engineering",
+    "official_url": "https://engineering.berkeley.edu/",
+    "majors_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+  },
+  "gear": {
+    "catalog_year": "2024-2025",
+    "pdf_url": "https://engineering.berkeley.edu/2024-25-undergraduate-guide/",
+    "note": "Berkeley Engineering undergraduate guide. Students follow requirements for their catalog year."
+  },
+  "gear_framework": {
+    "total_units": "120 semester units minimum (CoE)",
+    "university_requirements": [
+      "American History and Institutions",
+      "Entry-level writing requirement"
+    ],
+    "ge_general_subject_areas": [
+      "Humanities (6 units)",
+      "Social sciences (6 units)",
+      "Biological sciences (4 units)",
+      "Physical sciences (4 units)"
+    ],
+    "ge_special_subject_areas": [
+      "American cultures",
+      "Reading and composition",
+      "Engineering ethics course"
+    ],
+    "gear_note": "Berkeley CoE BS students complete college, campus, and major requirements on a semester calendar."
+  },
+  "last_updated": "2026-05-24",
+  "majors": [
+    {
+      "name": "Aerospace Engineering",
+      "slug": "aerospace-engineering",
+      "degree_type": "BS",
+      "department": "Mechanical Engineering",
+      "department_url": "https://aero.berkeley.edu/",
+      "curriculum_url": "https://aero.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "PHYSICS 7A",
+        "PHYSICS 7B",
+        "ENGIN 7"
+      ],
+      "upper_division_required": [
+        "ME 104",
+        "ME 109",
+        "ME 131A",
+        "ME 132"
+      ],
+      "career_outcomes": [
+        "Aerospace Engineer",
+        "Systems Engineer",
+        "Propulsion Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Bioengineering",
+      "slug": "bioengineering",
+      "degree_type": "BS",
+      "department": "Bioengineering",
+      "department_url": "https://bioeng.berkeley.edu/",
+      "curriculum_url": "https://bioeng.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "CHEM 1A",
+        "PHYSICS 7A",
+        "BIOENG 10"
+      ],
+      "upper_division_required": [
+        "BIOENG 100",
+        "BIOENG 110",
+        "BIOENG 115",
+        "BIOENG 141"
+      ],
+      "career_outcomes": [
+        "Biomedical Engineer",
+        "Research Scientist",
+        "Medical Device Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Civil Engineering",
+      "slug": "civil-engineering",
+      "degree_type": "BS",
+      "department": "Civil & Environmental Engineering",
+      "department_url": "https://ce.berkeley.edu/",
+      "curriculum_url": "https://ce.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "PHYSICS 7A",
+        "CHEM 1A",
+        "ENGIN 7"
+      ],
+      "upper_division_required": [
+        "CIVENG C30",
+        "CIVENG 60",
+        "CIVENG 93",
+        "CIVENG 100"
+      ],
+      "career_outcomes": [
+        "Structural Engineer",
+        "Transportation Engineer",
+        "Environmental Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Electrical Engineering & Computer Sciences",
+      "slug": "eecs",
+      "degree_type": "BS",
+      "department": "Electrical Engineering & Computer Sciences",
+      "department_url": "https://eecs.berkeley.edu/",
+      "curriculum_url": "https://eecs.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": true,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "MATH 54",
+        "PHYSICS 7A",
+        "PHYSICS 7B",
+        "COMPSCI 61A",
+        "COMPSCI 61C",
+        "EECS 16A",
+        "EECS 16B"
+      ],
+      "upper_division_required": [
+        "ECE Breadth",
+        "Probability",
+        "Technical Electives",
+        "Design Course",
+        "ENGIN 125"
+      ],
+      "career_outcomes": [
+        "Software Engineer",
+        "Hardware Engineer",
+        "ML Engineer",
+        "Systems Engineer",
+        "Chip Designer"
+      ],
+      "detail_available": true,
+      "requirements_level": "roadmap",
+      "plan_of_study_url": "https://engineering.berkeley.edu/2024-25-undergraduate-guide/2024-25-electrical-computer-engineering/",
+      "gear_page": 1
+    },
+    {
+      "name": "Energy Engineering",
+      "slug": "energy-engineering",
+      "degree_type": "BS",
+      "department": "Engineering Science",
+      "department_url": "https://engineeringscience.berkeley.edu/",
+      "curriculum_url": "https://engineeringscience.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "PHYSICS 7A",
+        "CHEM 1A",
+        "ENGIN 7"
+      ],
+      "upper_division_required": [
+        "ENG SCI electives",
+        "Energy systems core"
+      ],
+      "career_outcomes": [
+        "Energy Engineer",
+        "Renewables Analyst",
+        "Grid Systems Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Engineering Mathematics & Statistics",
+      "slug": "engineering-mathematics-statistics",
+      "degree_type": "BS",
+      "department": "Engineering Science",
+      "department_url": "https://engineeringscience.berkeley.edu/",
+      "curriculum_url": "https://engineeringscience.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "MATH 54",
+        "PHYSICS 7A",
+        "ENGIN 7"
+      ],
+      "upper_division_required": [
+        "MATH 110",
+        "STAT 134",
+        "ENG SCI electives"
+      ],
+      "career_outcomes": [
+        "Quantitative Analyst",
+        "Data Scientist",
+        "Operations Researcher"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Engineering Physics",
+      "slug": "engineering-physics",
+      "degree_type": "BS",
+      "department": "Engineering Science",
+      "department_url": "https://engineeringscience.berkeley.edu/",
+      "curriculum_url": "https://engineeringscience.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "MATH 54",
+        "PHYSICS 7A",
+        "PHYSICS 7B"
+      ],
+      "upper_division_required": [
+        "PHYSICS 137A",
+        "ENG SCI electives"
+      ],
+      "career_outcomes": [
+        "Research Engineer",
+        "Photonics Engineer",
+        "Graduate Research"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Environmental Engineering Science",
+      "slug": "environmental-engineering-science",
+      "degree_type": "BS",
+      "department": "Engineering Science",
+      "department_url": "https://engineeringscience.berkeley.edu/",
+      "curriculum_url": "https://engineeringscience.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "CHEM 1A",
+        "PHYSICS 7A",
+        "BIOLOGY 1A",
+        "ENGIN 7"
+      ],
+      "upper_division_required": [
+        "CIVENG/ENG SCI environmental core",
+        "Design elective"
+      ],
+      "career_outcomes": [
+        "Environmental Engineer",
+        "Water Resources Engineer",
+        "Sustainability Consultant"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Industrial Engineering & Operations Research",
+      "slug": "industrial-engineering-operations-research",
+      "degree_type": "BS",
+      "department": "Industrial Engineering & Operations Research",
+      "department_url": "https://ieor.berkeley.edu/",
+      "curriculum_url": "https://ieor.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "MATH 54",
+        "PHYSICS 7A",
+        "ENGIN 7"
+      ],
+      "upper_division_required": [
+        "IEOR 172",
+        "IEOR 173",
+        "IEOR 174",
+        "IEOR 185"
+      ],
+      "career_outcomes": [
+        "Operations Researcher",
+        "Supply Chain Analyst",
+        "Product Manager"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Materials Science & Engineering",
+      "slug": "materials-science-engineering",
+      "degree_type": "BS",
+      "department": "Materials Science & Engineering",
+      "department_url": "https://mse.berkeley.edu/",
+      "curriculum_url": "https://mse.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "CHEM 1A",
+        "PHYSICS 7A",
+        "ENGIN 45"
+      ],
+      "upper_division_required": [
+        "MAT SCI 112",
+        "MAT SCI 113",
+        "MAT SCI 130",
+        "MAT SCI 136"
+      ],
+      "career_outcomes": [
+        "Materials Engineer",
+        "Semiconductor Process Engineer",
+        "Battery Researcher"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Mechanical Engineering",
+      "slug": "mechanical-engineering",
+      "degree_type": "BS",
+      "department": "Mechanical Engineering",
+      "department_url": "https://me.berkeley.edu/",
+      "curriculum_url": "https://me.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "PHYSICS 7A",
+        "PHYSICS 7B",
+        "ENGIN 7"
+      ],
+      "upper_division_required": [
+        "ME 104",
+        "ME 109",
+        "ME 130",
+        "ME 132"
+      ],
+      "career_outcomes": [
+        "Mechanical Engineer",
+        "Robotics Engineer",
+        "Product Design Engineer"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "name": "Nuclear Engineering",
+      "slug": "nuclear-engineering",
+      "degree_type": "BS",
+      "department": "Nuclear Engineering",
+      "department_url": "https://nuc.berkeley.edu/",
+      "curriculum_url": "https://nuc.berkeley.edu/",
+      "graduation_units": 120,
+      "roadmap_available": false,
+      "preparation_for_major": [
+        "MATH 51",
+        "MATH 52",
+        "MATH 53",
+        "PHYSICS 7A",
+        "PHYSICS 7B",
+        "CHEM 1A"
+      ],
+      "upper_division_required": [
+        "NUCENG 101",
+        "NUCENG 104",
+        "NUCENG 150",
+        "NUCENG 170"
+      ],
+      "career_outcomes": [
+        "Nuclear Engineer",
+        "Radiation Safety Engineer",
+        "Energy Policy Analyst"
+      ],
+      "detail_available": false,
+      "requirements_level": "catalog",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    }
+  ]
+}

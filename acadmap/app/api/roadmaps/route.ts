@@ -23,10 +23,10 @@ export async function GET() {
 
 export async function POST(request: Request) {
   if (!isSupabaseConfigured()) {
+    console.error("[POST /api/roadmaps] Supabase is not configured");
     return NextResponse.json(
       {
-        error:
-          "Supabase is not configured. Set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY.",
+        error: "Submissions are not available right now. Please try again later.",
       },
       { status: 503 },
     );
@@ -35,7 +35,7 @@ export async function POST(request: Request) {
   const userId = await getAuthenticatedUserId();
   if (!userId) {
     return NextResponse.json(
-      { error: "Authentication required. Sign in with GitHub to contribute." },
+      { error: "Authentication required. Sign in to contribute." },
       { status: 401 },
     );
   }

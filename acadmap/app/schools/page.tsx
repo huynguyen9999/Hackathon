@@ -40,6 +40,7 @@ export default async function SchoolsIndexPage() {
         collegeCount: school.colleges.length,
         majorCount,
         liveGraphs,
+        preview: school.preview,
       };
     }),
   );

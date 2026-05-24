@@ -15,6 +15,7 @@ export type SchoolHubCardData = {
   collegeCount?: number;
   majorCount?: number;
   liveGraphs?: number;
+  preview?: boolean;
 };
 
 export type SchoolHubSectionProps = {
@@ -22,15 +23,30 @@ export type SchoolHubSectionProps = {
   variant?: "home" | "page";
 };
 
+function isEarlyPreview(school: SchoolHubCardData): boolean {
+  return school.preview === true || (school.liveGraphs ?? 0) <= 2;
+}
+
+function EarlyPreviewBadge() {
+  return (
+    <span className="rounded-full bg-amber-500/15 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-amber-800 dark:text-amber-200">
+      Early preview
+    </span>
+  );
+}
+
 function HomeSchoolCard({ school }: { school: SchoolHubCardData }) {
   return (
     <Link
       href={`/schools/${school.short_name}`}
       className="card-glow group flex flex-col rounded-lg border border-gaucho-blue/15 bg-white p-6 transition hover:border-gaucho-gold/40 dark:bg-gaucho-blue-dark/50"
     >
-      <p className="text-xs font-semibold uppercase tracking-wider text-gaucho-blue-light dark:text-gaucho-gold">
-        {school.location}
-      </p>
+      <div className="flex items-start justify-between gap-2">
+        <p className="text-xs font-semibold uppercase tracking-wider text-gaucho-blue-light dark:text-gaucho-gold">
+          {school.location}
+        </p>
+        {isEarlyPreview(school) ? <EarlyPreviewBadge /> : null}
+      </div>
       <h3 className="mt-2 text-xl font-semibold text-slate-900 dark:text-white">
         {school.name}
       </h3>
@@ -54,9 +70,12 @@ function PageSchoolCard({ school }: { school: SchoolHubCardData }) {
       href={`/schools/${school.short_name}`}
       className="card-glow group rounded-xl border border-gaucho-blue/20 bg-white p-8 transition hover:border-gaucho-gold/40 dark:bg-gaucho-blue-dark/40"
     >
-      <p className="text-xs font-semibold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold">
-        {school.location}
-      </p>
+      <div className="flex items-start justify-between gap-2">
+        <p className="text-xs font-semibold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold">
+          {school.location}
+        </p>
+        {isEarlyPreview(school) ? <EarlyPreviewBadge /> : null}
+      </div>
       <h2 className="mt-2 text-2xl font-bold text-gaucho-blue dark:text-white group-hover:text-gaucho-gold">
         {school.name}
       </h2>

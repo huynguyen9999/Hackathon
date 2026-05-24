@@ -17,6 +17,7 @@ export type SchoolConfig = {
   location: string;
   email_domains: string[];
   official_url: string;
+  preview?: boolean;
   theme: { primary: string; accent: string };
   colleges: SchoolCollegeConfig[];
 };

@@ -30,7 +30,12 @@ export async function generateMetadata({ params }: PageProps) {
   }
   const major = await getCoeMajorBySlug(params.school, params.major);
   if (!major) return { title: "Major not found | iGauchoBack" };
-  const sourceLabel = params.school === "ucla" ? "Samueli" : "GEAR";
+  const sourceLabel =
+    params.school === "ucla"
+      ? "Samueli"
+      : params.school === "berkeley"
+        ? "Berkeley Engineering"
+        : "GEAR";
   return {
     title: `${major.name} (${sourceLabel}) | iGauchoBack`,
     description: `${config.name} ${major.name} requirements and quarter plan.`,
@@ -55,11 +60,18 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
 
   const shortName = catalog.school.short_name;
   const isUcla = shortName === "ucla";
+  const isBerkeley = shortName === "berkeley";
   const roadmapHref = majorRoadmapHref(shortName, major.slug);
-  const pdfLabel = isUcla ? "Announcement PDF" : "GEAR PDF";
+  const pdfLabel = isUcla
+    ? "Announcement PDF"
+    : isBerkeley
+      ? "Engineering Guide"
+      : "GEAR PDF";
   const requirementsLabel = isUcla
     ? "Samueli major requirements"
-    : "GEAR major requirements";
+    : isBerkeley
+      ? "Berkeley major requirements"
+      : "GEAR major requirements";
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
@@ -141,7 +153,7 @@ export default async function EngineeringMajorPage({ params }: PageProps) {
               requirementsLabel={requirementsLabel}
               pageRefLabel={
                 major.gear_page != null
-                  ? ` · ${isUcla ? "Announcement" : "GEAR"} p.${major.gear_page}`
+                  ? ` · ${isUcla ? "Announcement" : isBerkeley ? "Guide" : "GEAR"} p.${major.gear_page}`
                   : undefined
               }
             />

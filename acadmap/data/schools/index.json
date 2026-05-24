@@ -38,6 +38,7 @@
       "location": "Los Angeles, CA",
       "email_domains": ["ucla.edu"],
       "official_url": "https://samueli.ucla.edu/",
+      "preview": true,
       "theme": { "primary": "#2774AE", "accent": "#FFD100" },
       "colleges": [
         {
@@ -46,6 +47,24 @@
           "subtitle": "7 departments · 10 BS programs",
           "catalogType": "coe",
           "description": "Samueli Announcement 2025-26 · Interactive CS roadmap"
+        }
+      ]
+    },
+    {
+      "short_name": "berkeley",
+      "name": "UC Berkeley",
+      "location": "Berkeley, CA",
+      "email_domains": ["berkeley.edu"],
+      "official_url": "https://engineering.berkeley.edu/",
+      "preview": true,
+      "theme": { "primary": "#003262", "accent": "#FDB515" },
+      "colleges": [
+        {
+          "slug": "engineering",
+          "label": "College of Engineering",
+          "subtitle": "12 BS majors · EECS pilot roadmap",
+          "catalogType": "coe",
+          "description": "Berkeley Engineering undergraduate guide · Interactive EECS roadmap"
         }
       ]
     }

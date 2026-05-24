@@ -4,19 +4,24 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
-import { isSupabaseConfigured } from "@/lib/env";
+import type { NavAuthState } from "@/lib/auth-session";
 import { createBrowserClient } from "@/lib/supabase-browser";
 
 type AuthState = {
-  loading: boolean;
   email: string | null;
 };
 
-export function AuthControls() {
+export type AuthControlsProps = {
+  initialAuth: NavAuthState;
+};
+
+export function AuthControls({ initialAuth }: AuthControlsProps) {
   const router = useRouter();
   const pathname = usePathname();
-  const [state, setState] = useState<AuthState>({ loading: true, email: null });
-  const supabaseReady = isSupabaseConfigured();
+  const [state, setState] = useState<AuthState>({
+    email: initialAuth.email,
+  });
+  const supabaseReady = initialAuth.configured;
 
   const signInHref = useMemo(() => {
     const next = pathname || "/";
@@ -24,19 +29,21 @@ export function AuthControls() {
   }, [pathname]);
 
   useEffect(() => {
-    if (!supabaseReady) {
-      setState({ loading: false, email: null });
-      return;
-    }
+    if (!supabaseReady) return;
 
     const supabase = createBrowserClient();
 
-    supabase.auth.getUser().then(({ data }) => {
-      setState({ loading: false, email: data.user?.email ?? null });
-    });
+    supabase.auth
+      .getUser()
+      .then(({ data }) => {
+        setState({ email: data.user?.email ?? null });
+      })
+      .catch(() => {
+        setState({ email: null });
+      });
 
     const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
-      setState({ loading: false, email: session?.user?.email ?? null });
+      setState({ email: session?.user?.email ?? null });
       router.refresh();
     });
 
@@ -50,10 +57,6 @@ export function AuthControls() {
     const supabase = createBrowserClient();
     await supabase.auth.signOut();
     router.refresh();
-  }
-
-  if (state.loading) {
-    return <span className="text-xs text-slate-500">Checking session…</span>;
   }
 
   if (!state.email) {

@@ -65,6 +65,7 @@ export default async function SchoolHubPage({ params }: PageProps) {
     school === "ucsb" ? await getGradHubStats() : null;
   const gradesMeta =
     school === "ucsb" ? await getGradesMeta() : null;
+  const isPreviewSchool = config.preview === true;
 
   const collegeStats = await Promise.all(
     config.colleges.map(async (college) => {
@@ -89,6 +90,11 @@ export default async function SchoolHubPage({ params }: PageProps) {
     }),
   );
 
+  const previewLiveGraphs = collegeStats.reduce(
+    (sum, { liveGraphs }) => sum + liveGraphs,
+    0,
+  );
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
       <PageHeader
@@ -97,6 +103,53 @@ export default async function SchoolHubPage({ params }: PageProps) {
         title={`${config.name} hub`}
         description="Community Q&A, course reviews, alumni outcomes, and college major catalogs — your one-stop shop for degree planning."
       />
+
+      {isPreviewSchool && school === "ucla" && (
+        <section className="mt-8 rounded-xl border border-amber-500/30 bg-amber-50 px-5 py-4 dark:bg-amber-950/25">
+          <p className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-200">
+            Early preview
+          </p>
+          <p className="mt-2 text-sm text-amber-950 dark:text-amber-100">
+            Samueli preview — {previewLiveGraphs} interactive roadmap
+            {previewLiveGraphs !== 1 ? "s" : ""} (Computer Science, Electrical
+            Engineering). More majors coming soon.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-3">
+            <Link
+              href="/roadmap/ucla/computer-science"
+              className="text-sm font-medium text-amber-900 underline underline-offset-2 hover:text-amber-700 dark:text-amber-200"
+            >
+              CS roadmap →
+            </Link>
+            <Link
+              href="/roadmap/ucla/electrical-engineering"
+              className="text-sm font-medium text-amber-900 underline underline-offset-2 hover:text-amber-700 dark:text-amber-200"
+            >
+              EE roadmap →
+            </Link>
+          </div>
+        </section>
+      )}
+
+      {isPreviewSchool && school === "berkeley" && (
+        <section className="mt-8 rounded-xl border border-amber-500/30 bg-amber-50 px-5 py-4 dark:bg-amber-950/25">
+          <p className="text-xs font-bold uppercase tracking-wider text-amber-800 dark:text-amber-200">
+            Early preview
+          </p>
+          <p className="mt-2 text-sm text-amber-950 dark:text-amber-100">
+            Berkeley Engineering preview — {previewLiveGraphs} interactive
+            roadmap (EECS). More majors coming soon.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-3">
+            <Link
+              href="/roadmap/berkeley/eecs"
+              className="text-sm font-medium text-amber-900 underline underline-offset-2 hover:text-amber-700 dark:text-amber-200"
+            >
+              EECS roadmap →
+            </Link>
+          </div>
+        </section>
+      )}
 
       <SchoolHubCommunity schoolShortName={school} data={communityData} />
 

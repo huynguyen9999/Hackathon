@@ -55,7 +55,13 @@ export default async function HomePage() {
               href="/roadmap/ucla/computer-science"
               className="inline-flex items-center rounded-lg px-5 py-2.5 text-sm font-medium text-slate-600 underline-offset-4 hover:text-gaucho-blue hover:underline dark:text-slate-400 dark:hover:text-gaucho-gold"
             >
-              UCLA CS sample graph
+              UCLA CS preview graph
+            </Link>
+            <Link
+              href="/roadmap/berkeley/eecs"
+              className="inline-flex items-center rounded-lg px-5 py-2.5 text-sm font-medium text-slate-600 underline-offset-4 hover:text-gaucho-blue hover:underline dark:text-slate-400 dark:hover:text-gaucho-gold"
+            >
+              Berkeley EECS preview graph
             </Link>
           </div>
         </div>
@@ -128,6 +134,7 @@ export default async function HomePage() {
           name: school.name,
           location: school.location,
           collegesLabel: school.colleges.map((c) => c.label).join(" · "),
+          preview: school.preview,
         }))}
       />
 

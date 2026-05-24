@@ -61,12 +61,12 @@ Use this file when running **multiple Cursor agents** (or subagents) in parallel
 
 ### Phase 3 — Split across agents
 
-**Data agent**
+**Data agent** (done)
 
-1. Apply `supabase/schema.sql` in Supabase SQL editor.
-2. Implement `lib/roadmap.ts` Supabase paths (approved roadmaps only).
-3. Seed `schools` / `majors` from JSON or migration script.
-4. Harden `POST /api/roadmaps` with validation + `pending` status.
+- [x] Apply `supabase/schema.sql` in Supabase SQL editor.
+- [x] Implement `lib/roadmap.ts` Supabase paths (approved roadmaps only).
+- [x] Seed `schools` / `majors` from JSON via `npm run migrate:seeds`.
+- [x] Harden `POST /api/roadmaps` with validation + `pending` status.
 
 **Graph agent**
 
@@ -74,17 +74,18 @@ Use this file when running **multiple Cursor agents** (or subagents) in parallel
 2. Layout helper (dagre) optional — keep manual positions in seeds for MVP.
 3. Mobile: collapsible sidebar, pinch-zoom notes in README.
 
-**Product agent**
+**Product agent** (partial)
 
-1. Explore: group by school, empty states, loading skeletons.
-2. Contribute: wire Supabase Auth GitHub button.
-3. Landing: screenshots / demo GIF.
+- [x] Explore: SSR catalog, empty states.
+- [x] Contribute: GitHub auth + seed JSON upload.
+- [ ] Landing: screenshots / demo GIF.
 
-**Auth agent**
+**Auth agent** (done)
 
-1. `middleware.ts` session refresh (`@supabase/ssr`).
-2. Protect `/contribute` and POST routes.
-3. Contributor attribution on `roadmaps.contributor_id`.
+- [x] `middleware.ts` session refresh (`@supabase/ssr`).
+- [x] Protect `/contribute` and POST routes.
+- [x] Contributor attribution on `roadmaps.contributor_id`.
+- [x] Maintainer `PATCH /api/roadmaps/[id]` for approve/reject.
 
 ## Conventions
 
@@ -108,6 +109,8 @@ npm run generate:details     # auto-generate catalog-tier ls-majors for all 58 m
 npm run validate:details     # validate ls-majors/*.json schema
 npm run validate:coe-details  # validate coe-majors/*.json
 npm run sync:coe-details      # sync detail + roadmap flags into coe-catalog.json
+npm run check:community-setup # verify Supabase env vars
+npm run migrate:seeds         # import data/seeds/*.json to Supabase (needs SERVICE_ROLE_KEY)
 ```
 
 If the parent folder path contains `:`, prefer:

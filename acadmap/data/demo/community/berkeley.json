@@ -1,0 +1,73 @@
+{
+  "announcements": [
+    {
+      "id": "demo-berkeley-1",
+      "title": "Fall 2026 EECS enrollment",
+      "body": "EECS 16A and COMPSCI 61A fill quickly — add backup sections and watch Phase I/II appointment times on CalCentral.",
+      "pinned": true,
+      "created_at": "2026-01-12T00:00:00Z"
+    },
+    {
+      "id": "demo-berkeley-2",
+      "title": "Engineering Guide update",
+      "body": "Check the 2024-25 undergraduate guide for the latest ECE sample program and design course list.",
+      "pinned": true,
+      "created_at": "2026-01-08T00:00:00Z"
+    }
+  ],
+  "questions": [
+    {
+      "id": "demo-bq1",
+      "title": "16A vs 16B workload?",
+      "body": "How much time should I budget for labs and homework in the 16 series?",
+      "course_code": "EECS 16A",
+      "major_slug": "eecs",
+      "author_name": "bear_eecs28",
+      "created_at": "2026-02-03T00:00:00Z",
+      "answers": [
+        {
+          "id": "demo-ba1",
+          "body": "Plan 12–15 hours/week combined once projects start. Go to office hours early for the design labs.",
+          "author_name": "verified_bear",
+          "is_verified_student": true,
+          "vote_count": 9
+        }
+      ]
+    },
+    {
+      "id": "demo-bq2",
+      "title": "Best path to upper-div ECE breadth?",
+      "body": "Should I take ELENG 120 before 105 or does order matter?",
+      "course_code": "ELENG 120",
+      "major_slug": "eecs",
+      "author_name": "cal_breadth",
+      "created_at": "2026-02-10T00:00:00Z",
+      "answers": []
+    }
+  ],
+  "course_reviews": [
+    {
+      "id": "demo-br1",
+      "course_code": "COMPSCI 61A",
+      "rating": 4,
+      "review_text": "Great intro to CS thinking. Projects ramp up fast after midterm — start early.",
+      "author_name": "61a_alum",
+      "created_at": "2026-01-20T00:00:00Z"
+    }
+  ],
+  "alumni_outcomes": [
+    {
+      "id": "demo-bo1",
+      "name": "Alex K.",
+      "graduation_year": 2024,
+      "major_slug": "eecs",
+      "role": "Software Engineer",
+      "company": "Tech company (Bay Area)",
+      "story": "EECS breadth + 61A/61C/170 path prepared me well for backend interviews."
+    }
+  ],
+  "contributor_spotlight": {
+    "school_short_name": "berkeley",
+    "message": "Berkeley hub is in early preview — help us expand major guides and roadmaps."
+  }
+}

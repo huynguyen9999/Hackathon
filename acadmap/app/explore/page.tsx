@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Suspense } from "react";
 
 import { ExploreCatalog } from "@/components/ExploreCatalog";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { filtersFromSearchParams } from "@/lib/explore-filters";
 import { loadExploreIndex } from "@/lib/school-catalog";
 import { listActiveSchools } from "@/lib/schools/registry";
 
@@ -12,13 +12,28 @@ export const metadata = {
     "Discover majors across schools—filter by campus, college, interest, and interactive graph availability.",
 };
 
-function ExploreCatalogFallback() {
-  return (
-    <p className="text-sm text-slate-500">Loading majors catalog…</p>
-  );
+type PageProps = {
+  searchParams: Record<string, string | string[] | undefined>;
+};
+
+function toURLSearchParams(
+  searchParams: Record<string, string | string[] | undefined>,
+): URLSearchParams {
+  const params = new URLSearchParams();
+  for (const [key, value] of Object.entries(searchParams)) {
+    if (typeof value === "string") {
+      params.set(key, value);
+    } else if (Array.isArray(value)) {
+      params.set(key, value.join(","));
+    }
+  }
+  return params;
 }
 
-export default async function ExplorePage() {
+export default async function ExplorePage({ searchParams }: PageProps) {
+  const urlParams = toURLSearchParams(searchParams);
+  const initialFilters = filtersFromSearchParams(urlParams);
+
   const [majors, schools] = await Promise.all([
     loadExploreIndex(),
     listActiveSchools(),
@@ -42,9 +57,12 @@ export default async function ExplorePage() {
         }
       />
 
-      <Suspense fallback={<ExploreCatalogFallback />}>
-        <ExploreCatalog majors={majors} schoolOptions={schoolOptions} />
-      </Suspense>
+      <ExploreCatalog
+        key={urlParams.toString()}
+        majors={majors}
+        schoolOptions={schoolOptions}
+        initialFilters={initialFilters}
+      />
     </div>
   );
 }

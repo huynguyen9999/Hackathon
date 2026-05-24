@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useMemo, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import { ExploreCompareModal } from "@/components/ExploreCompareModal";
 import { ExploreFilters } from "@/components/ExploreFilters";
@@ -20,7 +20,6 @@ import {
 import {
   countActiveFilters,
   filterExploreMajors,
-  filtersFromSearchParams,
   filtersToSearchParams,
 } from "@/lib/explore-filters";
 import type {
@@ -34,6 +33,7 @@ import type {
 export type ExploreCatalogProps = {
   majors: ExploreMajor[];
   schoolOptions?: { value: string; label: string }[];
+  initialFilters: ExploreFiltersState;
 };
 
 function groupByCollege(
@@ -191,14 +191,12 @@ function NoGraphBanner({ count }: { count: number }) {
   );
 }
 
-export function ExploreCatalog({ majors, schoolOptions = [] }: ExploreCatalogProps) {
+export function ExploreCatalog({
+  majors,
+  schoolOptions = [],
+  initialFilters,
+}: ExploreCatalogProps) {
   const router = useRouter();
-  const searchParams = useSearchParams();
-
-  const initialFilters = useMemo(
-    () => filtersFromSearchParams(searchParams),
-    [searchParams],
-  );
 
   const [filters, setFilters] = useState<ExploreFiltersState>(initialFilters);
   const [activeLane, setActiveLane] = useState<GoalLaneId | null>(null);
