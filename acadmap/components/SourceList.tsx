@@ -1,9 +1,9 @@
 export type SourceListProps = {
-  sources: { title: string; url: string }[];
+  sources?: { title: string; url: string }[];
   className?: string;
 };
 
-export function SourceList({ sources, className = "" }: SourceListProps) {
+export function SourceList({ sources = [], className = "" }: SourceListProps) {
   return (
     <section
       className={`rounded-xl border border-slate-300 dark:border-slate-700/50 bg-slate-100 dark:bg-slate-900/40 p-5 ${className}`}

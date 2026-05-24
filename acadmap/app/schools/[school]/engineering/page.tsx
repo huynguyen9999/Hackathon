@@ -177,7 +177,7 @@ export default async function EngineeringHubPage({ params }: PageProps) {
         )}
 
         <section className="grid gap-6 lg:grid-cols-2">
-          <SourceList sources={catalog.sources} />
+          <SourceList sources={catalog.sources ?? []} />
           <div className="rounded-xl border border-gaucho-blue-light/20 bg-gaucho-blue/5 p-5 dark:bg-gaucho-blue-dark/20">
             <h2 className="text-xs font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold/80">
               Data files

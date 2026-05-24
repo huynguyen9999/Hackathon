@@ -130,7 +130,7 @@ export default async function LettersScienceHubPage({ params }: PageProps) {
           <LsMajorCatalog majors={catalog.majors} schoolShortName={shortName} />
         </section>
 
-        <SourceList sources={catalog.sources} />
+        <SourceList sources={catalog.sources ?? []} />
       </div>
     </div>
   );

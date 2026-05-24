@@ -418,5 +418,19 @@
       "requirements_level": "catalog",
       "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
     }
+  ],
+  "sources": [
+    {
+      "title": "2024-25 Berkeley Engineering Guide",
+      "url": "https://engineering.berkeley.edu/2024-25-undergraduate-guide/"
+    },
+    {
+      "title": "Majors & Minors",
+      "url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+    },
+    {
+      "title": "Berkeley Engineering",
+      "url": "https://engineering.berkeley.edu/"
+    }
   ]
 }

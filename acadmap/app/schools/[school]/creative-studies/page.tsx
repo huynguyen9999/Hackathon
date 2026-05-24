@@ -135,7 +135,7 @@ export default async function CreativeStudiesHubPage({ params }: PageProps) {
           />
         </section>
 
-        <SourceList sources={catalog.sources} />
+        <SourceList sources={catalog.sources ?? []} />
       </div>
     </div>
   );
