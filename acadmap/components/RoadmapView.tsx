@@ -263,16 +263,14 @@ export function RoadmapView({
 
   const onApplyTranscript = useCallback(
     (matched: MatchedCourse[]) => {
-      const statusByNodeId: Record<string, "planned" | "completed"> = {
-        ...plannerStatusByNodeId,
-      };
-      for (const row of matched) {
-        statusByNodeId[row.nodeId] = "completed";
-      }
-      schedule.applyStatusByNodeId(statusByNodeId);
+      schedule.applyTranscript(matched.map((m) => m.nodeId));
     },
-    [plannerStatusByNodeId, schedule],
+    [schedule],
   );
+
+  const onUndoTranscript = useCallback(() => {
+    schedule.undoTranscriptApply();
+  }, [schedule]);
 
   return (
     <div className="space-y-4">
@@ -311,6 +309,9 @@ export function RoadmapView({
         roadmapId={roadmap.id}
         school={roadmap.school.short_name}
         onApply={onApplyTranscript}
+        onUndo={onUndoTranscript}
+        canUndo={schedule.hasTranscriptApply}
+        appliedCount={schedule.state.transcriptAppliedNodeIds.length}
       />
 
       <RoadmapAnalysisPanel

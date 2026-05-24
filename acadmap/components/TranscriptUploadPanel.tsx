@@ -14,20 +14,30 @@ export type TranscriptUploadPanelProps = {
   roadmapId: string;
   school: string;
   onApply: (matched: MatchedCourse[]) => void;
+  onUndo: () => void;
+  canUndo: boolean;
+  appliedCount: number;
 };
 
 const MAX_FILE_MB = 5;
+
+const secondaryBtnClass =
+  "rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-600 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-800";
 
 export function TranscriptUploadPanel({
   roadmapId,
   school,
   onApply,
+  onUndo,
+  canUndo,
+  appliedCount,
 }: TranscriptUploadPanelProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [state, setState] = useState<PanelState>("idle");
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<TranscriptParseResponse | null>(null);
   const [dragOver, setDragOver] = useState(false);
+  const [lastAppliedCount, setLastAppliedCount] = useState(0);
 
   const parseFile = useCallback(
     async (file: File) => {
@@ -92,6 +102,7 @@ export function TranscriptUploadPanel({
   const onApplyClick = useCallback(() => {
     if (!result?.matched.length) return;
     onApply(result.matched);
+    setLastAppliedCount(result.matched.length);
     setState("applied");
   }, [onApply, result]);
 
@@ -100,6 +111,15 @@ export function TranscriptUploadPanel({
     setError(null);
     setResult(null);
   }, []);
+
+  const onUndoClick = useCallback(() => {
+    onUndo();
+    setLastAppliedCount(0);
+    setState("idle");
+    setResult(null);
+  }, [onUndo]);
+
+  const undoCount = appliedCount > 0 ? appliedCount : lastAppliedCount;
 
   return (
     <section className="rounded-2xl border border-gaucho-blue/15 bg-white p-4 shadow-card dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark/70">
@@ -117,15 +137,23 @@ export function TranscriptUploadPanel({
           </p>
         </div>
         {state === "applied" || state === "preview" ? (
-          <button
-            type="button"
-            onClick={onReset}
-            className="rounded-lg border border-slate-300 px-3 py-1.5 text-xs font-medium text-slate-600 hover:bg-slate-100 dark:border-slate-600 dark:text-slate-300 dark:hover:bg-slate-800"
-          >
+          <button type="button" onClick={onReset} className={secondaryBtnClass}>
             Upload another
           </button>
         ) : null}
       </div>
+
+      {canUndo && state !== "applied" ? (
+        <div className="mt-4 flex flex-wrap items-center gap-3 rounded-xl border border-amber-200/80 bg-amber-50/80 px-4 py-3 dark:border-amber-500/25 dark:bg-amber-950/20">
+          <p className="text-sm text-amber-900 dark:text-amber-100">
+            Transcript apply active on this roadmap ({undoCount} course
+            {undoCount === 1 ? "" : "s"}).
+          </p>
+          <button type="button" onClick={onUndoClick} className={secondaryBtnClass}>
+            Undo transcript apply ({undoCount})
+          </button>
+        </div>
+      ) : null}
 
       {state === "idle" || state === "error" ? (
         <div className="mt-4">
@@ -181,9 +209,14 @@ export function TranscriptUploadPanel({
       ) : null}
 
       {state === "applied" && result ? (
-        <div className="mt-4 rounded-xl bg-emerald-500/10 px-4 py-3 text-sm text-emerald-800 dark:text-emerald-200">
-          Applied {result.matched.length} completed course
-          {result.matched.length === 1 ? "" : "s"} to the graph.
+        <div className="mt-4 space-y-3">
+          <div className="rounded-xl bg-emerald-500/10 px-4 py-3 text-sm text-emerald-800 dark:text-emerald-200">
+            Applied {lastAppliedCount} completed course
+            {lastAppliedCount === 1 ? "" : "s"} to the graph.
+          </div>
+          <button type="button" onClick={onUndoClick} className={secondaryBtnClass}>
+            Undo transcript apply ({lastAppliedCount})
+          </button>
         </div>
       ) : null}
     </section>

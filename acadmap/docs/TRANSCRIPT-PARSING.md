@@ -10,6 +10,7 @@ Upload an official transcript PDF on any roadmap page to auto-mark completed cou
 4. If regex finds too few courses, AI fallback via Vercel AI Gateway (text only, not raw PDF)
 5. Courses are matched to roadmap node labels and previewed before apply
 6. User confirms → nodes marked **completed** via the same schedule overlay as manual marking
+7. **Undo transcript apply** removes only the last apply batch; manually marked courses and planned courses are preserved
 
 ## Supported formats
 
