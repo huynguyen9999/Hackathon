@@ -38,7 +38,10 @@ export async function applyDatabaseSchema(): Promise<ApplySchemaResult> {
   const sql = readFileSync(schemaPath, "utf-8");
   const statements = splitSqlStatements(sql);
 
-  const client = new Client({ connectionString: getPostgresUrl() });
+  const client = new Client({
+    connectionString: getPostgresUrl(),
+    ssl: { rejectUnauthorized: false },
+  });
   await client.connect();
 
   let statementsRun = 0;
