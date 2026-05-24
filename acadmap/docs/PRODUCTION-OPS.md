@@ -69,6 +69,8 @@ Approved roadmap JSON is cacheable at Vercel's edge (not user-specific):
 
 POST/PATCH responses use `Cache-Control: no-store`.
 
+**Requires `SUPABASE_SERVICE_ROLE_KEY` on Vercel** for GET handlers to avoid cookie-based session reads (which disable edge caching). The key is already needed for maintainer PATCH routes.
+
 ### Verify
 
 ```bash
@@ -89,4 +91,4 @@ npm run build
 git push origin main
 ```
 
-Ensure Vercel has: Supabase vars (existing), Upstash vars, Sentry DSN vars.
+Ensure Vercel has: Supabase vars (existing), **`SUPABASE_SERVICE_ROLE_KEY`** (edge cache + maintainer PATCH), Upstash vars, Sentry DSN vars.
