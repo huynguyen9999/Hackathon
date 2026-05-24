@@ -21,6 +21,9 @@ export async function middleware(request: NextRequest) {
         },
       );
     }
+
+    // Skip session refresh so GET handlers can set edge Cache-Control headers.
+    return NextResponse.next();
   }
 
   const supabaseConfigured =

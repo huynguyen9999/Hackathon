@@ -2,6 +2,7 @@ import { promises as fs } from "fs";
 import path from "path";
 
 import { isSupabaseConfigured } from "@/lib/env";
+import { createAdminClient } from "@/lib/supabase-admin";
 import { createServerClient } from "@/lib/supabase";
 import type {
   DbEdgeRow,
@@ -445,7 +446,9 @@ async function hydrateDetail(
 }
 
 async function fetchApprovedListFromSupabase(): Promise<RoadmapListItem[]> {
-  const supabase = await createServerClient();
+  const supabase = process.env.SUPABASE_SERVICE_ROLE_KEY
+    ? createAdminClient()
+    : await createServerClient();
 
   const { data, error } = await supabase
     .from("roadmaps")
@@ -499,7 +502,9 @@ async function fetchApprovedListFromSupabase(): Promise<RoadmapListItem[]> {
 async function fetchRoadmapDetailFromSupabase(
   id: string,
 ): Promise<RoadmapDetail | null> {
-  const supabase = await createServerClient();
+  const supabase = process.env.SUPABASE_SERVICE_ROLE_KEY
+    ? createAdminClient()
+    : await createServerClient();
 
   const { data: roadmap, error } = await supabase
     .from("roadmaps")
@@ -546,7 +551,9 @@ async function fetchRoadmapDetailBySlugFromSupabase(
   shortName: string,
   majorSlug: string,
 ): Promise<RoadmapDetail | null> {
-  const supabase = await createServerClient();
+  const supabase = process.env.SUPABASE_SERVICE_ROLE_KEY
+    ? createAdminClient()
+    : await createServerClient();
 
   const { data: school } = await supabase
     .from("schools")
