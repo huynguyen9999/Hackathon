@@ -1,0 +1,120 @@
+{
+  "dept": "ASTROW",
+  "courses": [
+    {
+      "courseId": "ASTROW 1",
+      "dept": "ASTROW",
+      "offerings": [
+        {
+          "quarter": "Summer",
+          "year": 2025,
+          "instructor": "GELLER R M",
+          "counts": {
+            "A": 8,
+            "Ap": 0,
+            "Am": 7,
+            "B": 1,
+            "Bp": 3,
+            "Bm": 2,
+            "C": 3,
+            "Cp": 2,
+            "Cm": 1,
+            "D": 1,
+            "Dp": 3,
+            "Dm": 0,
+            "F": 5,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.594444444444445,
+          "nLetterStudents": 36,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Summer",
+          "year": 2024,
+          "instructor": "GELLER R M",
+          "counts": {
+            "A": 29,
+            "Ap": 0,
+            "Am": 8,
+            "B": 1,
+            "Bp": 4,
+            "Bm": 1,
+            "C": 1,
+            "Cp": 0,
+            "Cm": 1,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 5,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.363999999999999,
+          "nLetterStudents": 50,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Summer",
+          "year": 2023,
+          "instructor": "GELLER R M",
+          "counts": {
+            "A": 39,
+            "Ap": 2,
+            "Am": 9,
+            "B": 3,
+            "Bp": 1,
+            "Bm": 1,
+            "C": 0,
+            "Cp": 2,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 4,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.555737704918033,
+          "nLetterStudents": 61,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.2551020408163267,
+        "totalStudents": 147,
+        "gradeDistribution": {
+          "A": 76,
+          "Ap": 2,
+          "Am": 24,
+          "B": 5,
+          "Bp": 8,
+          "Bm": 4,
+          "C": 4,
+          "Cp": 4,
+          "Cm": 2,
+          "D": 1,
+          "Dp": 3,
+          "Dm": 0,
+          "F": 14,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 3,
+        "latestOffering": {
+          "quarter": "Summer",
+          "year": 2025
+        }
+      }
+    }
+  ]
+}

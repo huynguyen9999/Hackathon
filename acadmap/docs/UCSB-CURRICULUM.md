@@ -80,3 +80,7 @@ Full degree requirements live in department handbooks and on [Graduate Division]
 - Hub: `/schools/ucsb/graduate`
 - Roadmap seeds: `data/seeds/ucsb-*-ms.json`, `ucsb-computer-science-phd.json`
 - Undergrad ↔ grad bridges: `data/ucsb/grad-bridges.json`
+
+## Related: grade distributions
+
+Historical grade data and GE applicability (Daily Nexus open data) are documented in [UCSB-GRADES.md](./UCSB-GRADES.md). The grades hub at `/schools/ucsb/grades` complements the course catalog with avg GPA, instructor history, and GE explorer tabs.

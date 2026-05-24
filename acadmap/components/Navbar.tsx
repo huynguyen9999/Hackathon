@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/schools", label: "Schools" },
   { href: "/schools/ucsb/courses", label: "Courses" },
+  { href: "/schools/ucsb/grades", label: "Grades", accent: "grades" as const },
   { href: "/schools/ucsb/graduate", label: "Graduate", accent: "graduate" as const },
   { href: "/explore", label: "Explore" },
   { href: "/contribute", label: "Contribute" },
@@ -23,6 +24,10 @@ function isGraduateNavActive(pathname: string, href: string): boolean {
     return true;
   }
   return false;
+}
+
+function isGradesNavActive(pathname: string, href: string): boolean {
+  return href === "/schools/ucsb/grades" && pathname.startsWith(href);
 }
 
 export type NavbarProps = {
@@ -64,9 +69,11 @@ export function Navbar({ className = "" }: NavbarProps) {
               const active =
                 accent === "graduate"
                   ? isGraduateNavActive(pathname, href)
-                  : href === "/"
-                    ? pathname === "/"
-                    : pathname.startsWith(href);
+                  : accent === "grades"
+                    ? isGradesNavActive(pathname, href)
+                    : href === "/"
+                      ? pathname === "/"
+                      : pathname.startsWith(href);
 
               return (
                 <Link
@@ -77,10 +84,14 @@ export function Navbar({ className = "" }: NavbarProps) {
                     active
                       ? accent === "graduate"
                         ? "bg-violet-600 text-white"
-                        : "bg-gaucho-blue text-white dark:bg-gaucho-gold dark:text-gaucho-blue-dark"
+                        : accent === "grades"
+                          ? "bg-teal-600 text-white"
+                          : "bg-gaucho-blue text-white dark:bg-gaucho-gold dark:text-gaucho-blue-dark"
                       : accent === "graduate"
                         ? "text-violet-700 hover:text-violet-900 dark:text-violet-300 dark:hover:text-violet-100"
-                        : "text-slate-600 hover:text-gaucho-blue dark:text-slate-300 dark:hover:text-gaucho-gold-light",
+                        : accent === "grades"
+                          ? "text-teal-700 hover:text-teal-900 dark:text-teal-300 dark:hover:text-teal-100"
+                          : "text-slate-600 hover:text-gaucho-blue dark:text-slate-300 dark:hover:text-gaucho-gold-light",
                   ].join(" ")}
                 >
                   {label}

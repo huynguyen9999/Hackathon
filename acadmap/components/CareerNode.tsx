@@ -2,12 +2,14 @@
 
 import { Handle, Position, type NodeProps } from "@xyflow/react";
 import type { Node } from "@xyflow/react";
+import { formatSalaryCompact } from "@/lib/career-salaries/format";
 import type { CareerNodeData } from "@/lib/types";
 
 export type CareerFlowNode = Node<CareerNodeData, "career">;
 
 export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
   const isFocused = data.focused || selected;
+  const salaryLine = data.salary ? formatSalaryCompact(data.salary) : null;
 
   return (
     <div
@@ -45,6 +47,11 @@ export function CareerNode({ data, selected }: NodeProps<CareerFlowNode>) {
         <h3 className="text-sm font-semibold leading-tight text-white">
           {data.title}
         </h3>
+        {salaryLine ? (
+          <p className="text-[10px] font-medium leading-snug text-gaucho-gold-light">
+            {salaryLine}
+          </p>
+        ) : null}
         {data.description && (
           <p className="mt-1 line-clamp-2 text-[11px] leading-snug text-slate-200">
             {data.description}

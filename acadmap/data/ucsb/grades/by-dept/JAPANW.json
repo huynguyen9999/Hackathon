@@ -1,0 +1,310 @@
+{
+  "dept": "JAPANW",
+  "courses": [
+    {
+      "courseId": "JAPANW 120A",
+      "dept": "JAPANW",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2022,
+          "instructor": "YAMAUCHI Y",
+          "counts": {
+            "A": 6,
+            "Ap": 14,
+            "Am": 7,
+            "B": 1,
+            "Bp": 5,
+            "Bm": 2,
+            "C": 0,
+            "Cp": 1,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 2,
+            "Dm": 0,
+            "F": 2,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.3925000000000005,
+          "nLetterStudents": 40,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.3925000000000005,
+        "totalStudents": 40,
+        "gradeDistribution": {
+          "A": 6,
+          "Ap": 14,
+          "Am": 7,
+          "B": 1,
+          "Bp": 5,
+          "Bm": 2,
+          "C": 0,
+          "Cp": 1,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 2,
+          "Dm": 0,
+          "F": 2,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2022
+        }
+      }
+    },
+    {
+      "courseId": "JAPANW 120B",
+      "dept": "JAPANW",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2023,
+          "instructor": "YAMAUCHI Y",
+          "counts": {
+            "A": 7,
+            "Ap": 3,
+            "Am": 6,
+            "B": 1,
+            "Bp": 1,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.8055555555555554,
+          "nLetterStudents": 18,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.8055555555555554,
+        "totalStudents": 18,
+        "gradeDistribution": {
+          "A": 7,
+          "Ap": 3,
+          "Am": 6,
+          "B": 1,
+          "Bp": 1,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2023
+        }
+      }
+    },
+    {
+      "courseId": "JAPANW 120C",
+      "dept": "JAPANW",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2023,
+          "instructor": "YAMAUCHI Y",
+          "counts": {
+            "A": 5,
+            "Ap": 5,
+            "Am": 4,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 1,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 1,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.59375,
+          "nLetterStudents": 16,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.59375,
+        "totalStudents": 16,
+        "gradeDistribution": {
+          "A": 5,
+          "Ap": 5,
+          "Am": 4,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 1,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 1,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2023
+        }
+      }
+    },
+    {
+      "courseId": "JAPANW 5",
+      "dept": "JAPANW",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2023,
+          "instructor": "YAMAUCHI Y",
+          "counts": {
+            "A": 5,
+            "Ap": 5,
+            "Am": 1,
+            "B": 0,
+            "Bp": 5,
+            "Bm": 1,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.7,
+          "nLetterStudents": 17,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.7,
+        "totalStudents": 17,
+        "gradeDistribution": {
+          "A": 5,
+          "Ap": 5,
+          "Am": 1,
+          "B": 0,
+          "Bp": 5,
+          "Bm": 1,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2023
+        }
+      }
+    },
+    {
+      "courseId": "JAPANW 6",
+      "dept": "JAPANW",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2023,
+          "instructor": "YAMAUCHI Y",
+          "counts": {
+            "A": 7,
+            "Ap": 4,
+            "Am": 2,
+            "B": 1,
+            "Bp": 3,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.782352941176472,
+          "nLetterStudents": 17,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.7823529411764722,
+        "totalStudents": 17,
+        "gradeDistribution": {
+          "A": 7,
+          "Ap": 4,
+          "Am": 2,
+          "B": 1,
+          "Bp": 3,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2023
+        }
+      }
+    }
+  ]
+}

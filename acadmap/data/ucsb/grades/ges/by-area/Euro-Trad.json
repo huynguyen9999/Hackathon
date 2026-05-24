@@ -1,0 +1,393 @@
+{
+  "area": "Euro Trad",
+  "courses": [
+    {
+      "courseId": "ARTHI 136K 20TH",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 136L",
+      "avgGpa": 2.966666666666667
+    },
+    {
+      "courseId": "ARTHI 141G",
+      "avgGpa": 3.3823809523809527
+    },
+    {
+      "courseId": "ARTHI 6A",
+      "avgGpa": 3.0206689536878217
+    },
+    {
+      "courseId": "ARTHI 6B",
+      "avgGpa": 3.1638682252922417
+    },
+    {
+      "courseId": "ARTHI 6C",
+      "avgGpa": 3.1670365312393303
+    },
+    {
+      "courseId": "ARTHI 6M",
+      "avgGpa": 3.5395270270270265
+    },
+    {
+      "courseId": "ARTHIW 6R",
+      "avgGpa": 3.3409090909090904
+    },
+    {
+      "courseId": "C LIT 114",
+      "avgGpa": 3.505660377358491
+    },
+    {
+      "courseId": "C LIT 134",
+      "avgGpa": 3.4372549019607845
+    },
+    {
+      "courseId": "C LIT 186FL",
+      "avgGpa": 3.2065433854907535
+    },
+    {
+      "courseId": "C LIT 30A",
+      "avgGpa": 3.3301384310307807
+    },
+    {
+      "courseId": "C LIT 30B",
+      "avgGpa": 3.4280305093979844
+    },
+    {
+      "courseId": "C LIT 30C",
+      "avgGpa": 3.3819616411750424
+    },
+    {
+      "courseId": "C LIT 50",
+      "avgGpa": 3.4428571428571435
+    },
+    {
+      "courseId": "C LIT 50A",
+      "avgGpa": 3.485106382978723
+    },
+    {
+      "courseId": "C LIT 50B",
+      "avgGpa": 3.504210526315789
+    },
+    {
+      "courseId": "C LIT 50C",
+      "avgGpa": 3.655205047318612
+    },
+    {
+      "courseId": "CLASS 101",
+      "avgGpa": 3.1546052631578947
+    },
+    {
+      "courseId": "CLASS 102",
+      "avgGpa": 3.3572519083969468
+    },
+    {
+      "courseId": "CLASS 106",
+      "avgGpa": 3.016964285714286
+    },
+    {
+      "courseId": "CLASS 109",
+      "avgGpa": 3.186530612244898
+    },
+    {
+      "courseId": "CLASS 110",
+      "avgGpa": 3.1640281726544335
+    },
+    {
+      "courseId": "CLASS 130",
+      "avgGpa": 2.996497584541063
+    },
+    {
+      "courseId": "CLASS 140",
+      "avgGpa": 3.4142857142857146
+    },
+    {
+      "courseId": "CLASS 150",
+      "avgGpa": 2.855349344978166
+    },
+    {
+      "courseId": "CLASS 152",
+      "avgGpa": 3.192857142857143
+    },
+    {
+      "courseId": "CLASS 165",
+      "avgGpa": 3.6590277777777778
+    },
+    {
+      "courseId": "CLASS 170",
+      "avgGpa": 3.5011787819253435
+    },
+    {
+      "courseId": "CLASS 171",
+      "avgGpa": 3.3458292443572124
+    },
+    {
+      "courseId": "CLASS 175",
+      "avgGpa": 3.461016949152542
+    },
+    {
+      "courseId": "CLASS 20A",
+      "avgGpa": 3.5633703920421294
+    },
+    {
+      "courseId": "CLASS 20B",
+      "avgGpa": 3.2240209585838344
+    },
+    {
+      "courseId": "CLASS 36",
+      "avgGpa": 3.4372965643260063
+    },
+    {
+      "courseId": "CLASS 39",
+      "avgGpa": 3.0720575022461816
+    },
+    {
+      "courseId": "CLASS 40",
+      "avgGpa": 3.1422430640599908
+    },
+    {
+      "courseId": "CLASS 50",
+      "avgGpa": 3.386428130783467
+    },
+    {
+      "courseId": "CLASS 55",
+      "avgGpa": 3.6320584926884134
+    },
+    {
+      "courseId": "CLASS 60",
+      "avgGpa": 3.108847184986595
+    },
+    {
+      "courseId": "ENGL 22",
+      "avgGpa": 3.0897753516691164
+    },
+    {
+      "courseId": "FR 50AX",
+      "avgGpa": 3.3191666666666673
+    },
+    {
+      "courseId": "FR 50BX",
+      "avgGpa": 3.392507204610951
+    },
+    {
+      "courseId": "FR 50CX",
+      "avgGpa": 3.5107279693486593
+    },
+    {
+      "courseId": "GER 109AA",
+      "avgGpa": 4
+    },
+    {
+      "courseId": "GER 109MA",
+      "avgGpa": 3.6692307692307695
+    },
+    {
+      "courseId": "GER 111",
+      "avgGpa": 3.183050847457628
+    },
+    {
+      "courseId": "GER 112",
+      "avgGpa": null
+    },
+    {
+      "courseId": "GREEK 100",
+      "avgGpa": 3.6642857142857146
+    },
+    {
+      "courseId": "GREEK 101",
+      "avgGpa": 3.7782608695652176
+    },
+    {
+      "courseId": "HIST 117C",
+      "avgGpa": 3.137786259541985
+    },
+    {
+      "courseId": "HIST 121A",
+      "avgGpa": 3.211186440677966
+    },
+    {
+      "courseId": "HIST 133D",
+      "avgGpa": 3.162581544466128
+    },
+    {
+      "courseId": "HIST 140A",
+      "avgGpa": 2.7891812865497077
+    },
+    {
+      "courseId": "HIST 140B",
+      "avgGpa": 2.592721518987342
+    },
+    {
+      "courseId": "HIST 2A",
+      "avgGpa": 2.9489021043000916
+    },
+    {
+      "courseId": "HIST 2AH",
+      "avgGpa": 3.941666666666665
+    },
+    {
+      "courseId": "HIST 2B",
+      "avgGpa": 3.138179393131044
+    },
+    {
+      "courseId": "HIST 2BH",
+      "avgGpa": null
+    },
+    {
+      "courseId": "HIST 2C",
+      "avgGpa": 3.1667525527244966
+    },
+    {
+      "courseId": "HIST 2CH",
+      "avgGpa": 3.9245283018867925
+    },
+    {
+      "courseId": "HIST 4A",
+      "avgGpa": 3.371374023953749
+    },
+    {
+      "courseId": "HIST 4AH",
+      "avgGpa": null
+    },
+    {
+      "courseId": "HIST 4B",
+      "avgGpa": 3.0795138888888887
+    },
+    {
+      "courseId": "HIST 4BH",
+      "avgGpa": null
+    },
+    {
+      "courseId": "HIST 4C",
+      "avgGpa": 3.019043593768869
+    },
+    {
+      "courseId": "HIST 4CH",
+      "avgGpa": null
+    },
+    {
+      "courseId": "HIST W 121A",
+      "avgGpa": 3.079624664879357
+    },
+    {
+      "courseId": "INT 35LT",
+      "avgGpa": 3.799555555555555
+    },
+    {
+      "courseId": "ITAL 114X",
+      "avgGpa": 2.965625
+    },
+    {
+      "courseId": "ITAL 120X",
+      "avgGpa": 3.591571753986332
+    },
+    {
+      "courseId": "ITAL 139CX",
+      "avgGpa": 3.4373333333333336
+    },
+    {
+      "courseId": "ITAL 139DX",
+      "avgGpa": 2.61
+    },
+    {
+      "courseId": "ITAL 139EX",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ITAL 139FX",
+      "avgGpa": 3.5199275362318843
+    },
+    {
+      "courseId": "ITAL 139GX",
+      "avgGpa": 3.134375
+    },
+    {
+      "courseId": "ITAL 139HX",
+      "avgGpa": 2.6575
+    },
+    {
+      "courseId": "ITAL 139IX",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ITAL 139TX",
+      "avgGpa": 3.7
+    },
+    {
+      "courseId": "ITAL 139YX",
+      "avgGpa": 3.6416666666666666
+    },
+    {
+      "courseId": "ITAL 139ZX",
+      "avgGpa": 3.573039215686274
+    },
+    {
+      "courseId": "ITAL 189X",
+      "avgGpa": 3.1268817204301085
+    },
+    {
+      "courseId": "LATIN 100",
+      "avgGpa": 3.4360759493670883
+    },
+    {
+      "courseId": "LATIN 101",
+      "avgGpa": 3.631538461538461
+    },
+    {
+      "courseId": "LING 30",
+      "avgGpa": 3.456410256410256
+    },
+    {
+      "courseId": "MUS 10A",
+      "avgGpa": 3.2781512605042025
+    },
+    {
+      "courseId": "MUS 10B",
+      "avgGpa": 3.230666666666667
+    },
+    {
+      "courseId": "MUS 10C",
+      "avgGpa": 3.2455284552845525
+    },
+    {
+      "courseId": "PHIL 20A",
+      "avgGpa": 3.1477848101265815
+    },
+    {
+      "courseId": "PHIL 20B",
+      "avgGpa": 2.9799693123169204
+    },
+    {
+      "courseId": "PHIL 20C",
+      "avgGpa": 2.9447524020694753
+    },
+    {
+      "courseId": "RG ST 25",
+      "avgGpa": 2.9568306010928964
+    },
+    {
+      "courseId": "RG ST 80A",
+      "avgGpa": 2.5777777777777775
+    },
+    {
+      "courseId": "RG ST 80B",
+      "avgGpa": 3.014100185528757
+    },
+    {
+      "courseId": "RG ST 80C",
+      "avgGpa": 2.8936389148737134
+    },
+    {
+      "courseId": "SLAV 35",
+      "avgGpa": 3.6427480916030537
+    },
+    {
+      "courseId": "THTR 2C",
+      "avgGpa": 3.3198604401502956
+    },
+    {
+      "courseId": "THTR 8",
+      "avgGpa": null
+    }
+  ]
+}

@@ -6,7 +6,9 @@ import type { Node } from "@xyflow/react";
 import type { iGauchoBackNodeData } from "@/lib/types";
 import type { DepartmentFacultyFile } from "@/lib/ucsb-faculty-types";
 import { FacultySidebarSection } from "@/components/FacultySidebarSection";
+import { GradeDistributionSidebarSection } from "@/components/grades/GradeDistributionSidebarSection";
 import { PartnerResourcesSection } from "@/components/PartnerResourcesSection";
+import { formatSalaryDetail } from "@/lib/career-salaries/format";
 import { getPartnerOffersForNode } from "@/lib/partners";
 import { buildCatalogUrlFromCourseLabel } from "@/lib/ucsb-curriculum-urls";
 import {
@@ -81,6 +83,9 @@ export function Sidebar({
   const whatIfDisabled = hasScheduleMark;
   const disabledScheduleBtnClass =
     "cursor-not-allowed opacity-50 hover:bg-transparent dark:hover:bg-transparent";
+  const careerSalary =
+    !isCourse && "salary" in data && data.salary ? data.salary : undefined;
+  const salaryDetail = careerSalary ? formatSalaryDetail(careerSalary) : null;
 
   return (
     <aside
@@ -160,6 +165,34 @@ export function Sidebar({
           </p>
         </section>
 
+        {salaryDetail && careerSalary ? (
+          <section className="mb-6 rounded-lg border border-gaucho-gold/25 bg-gaucho-gold/10 px-3 py-3 dark:border-gaucho-gold/20 dark:bg-gaucho-blue-dark/50">
+            <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">
+              Starting salary
+            </h3>
+            <p className="text-sm leading-relaxed text-slate-800 dark:text-slate-200">
+              {salaryDetail.headline}
+            </p>
+            {salaryDetail.california ? (
+              <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-slate-400">
+                {salaryDetail.california}
+              </p>
+            ) : null}
+            <p className="mt-3 text-[11px] text-slate-500 dark:text-slate-400">
+              Estimates from {salaryDetail.sourceLabel}. Not a job offer — verify
+              on the linked source.
+            </p>
+            <a
+              href={careerSalary.source_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 inline-flex text-xs font-medium text-gaucho-blue hover:underline dark:text-gaucho-gold"
+            >
+              View on Glassdoor →
+            </a>
+          </section>
+        ) : null}
+
         {isCourse && data.selfLearnable && (
           <section className="mb-6 rounded-lg border border-emerald-500/20 bg-emerald-50 dark:bg-emerald-950/20 px-3 py-2.5">
             <p className="text-xs leading-relaxed text-emerald-800/90 dark:text-emerald-200/90">
@@ -195,6 +228,10 @@ export function Sidebar({
               View in course catalog
             </Link>
           </section>
+        )}
+
+        {isCourse && (
+          <GradeDistributionSidebarSection courseLabel={data.label} />
         )}
 
         {gradBridge && gradBridge.programSlugs.length > 0 && (

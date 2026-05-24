@@ -8,6 +8,8 @@ The integration boundary isolates provider-specific code behind one connector in
 
 Curriculum search (undergrad + graduate courses) is documented in [UCSB-CURRICULUM.md](./UCSB-CURRICULUM.md) and implemented in `lib/ucsb-curriculum.ts`.
 
+Grade distributions and GE data (Daily Nexus snapshots) are documented in [UCSB-GRADES.md](./UCSB-GRADES.md) and implemented in `lib/ucsb-grades.ts` / `lib/ucsb-ges.ts`.
+
 ## Connector interface
 
 Defined in `lib/integrations/ucsb/connector.ts`:

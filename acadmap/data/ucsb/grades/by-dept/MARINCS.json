@@ -1,0 +1,459 @@
+{
+  "dept": "MARINCS",
+  "courses": [
+    {
+      "courseId": "MARINCS 10",
+      "dept": "MARINCS",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2025,
+          "instructor": "JAMES A K",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 12,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 12
+        },
+        {
+          "quarter": "Fall",
+          "year": 2024,
+          "instructor": "JAMES A K",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 19,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 19
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 31,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 31,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 2,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2025
+        }
+      }
+    },
+    {
+      "courseId": "MARINCS 100A",
+      "dept": "MARINCS",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2026,
+          "instructor": "CZAPANSKIY M",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": null,
+        "totalStudents": 0,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2026
+        }
+      }
+    },
+    {
+      "courseId": "MARINCS 100B",
+      "dept": "MARINCS",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2025,
+          "instructor": "CZAPANSKIY M",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 27,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 27
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 27,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 27,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2025
+        }
+      }
+    },
+    {
+      "courseId": "MARINCS 100C",
+      "dept": "MARINCS",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "JAMES A K",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 10,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 10
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 10,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 10,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2025
+        }
+      }
+    },
+    {
+      "courseId": "MARINCS 106",
+      "dept": "MARINCS",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "CZAPANSKIY M",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 21,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 21
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 21,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 21,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2025
+        }
+      }
+    },
+    {
+      "courseId": "MARINCS 170A",
+      "dept": "MARINCS",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2025,
+          "instructor": "VALENTINE D L",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 7,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 7
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 7,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 7,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2025
+        }
+      }
+    },
+    {
+      "courseId": "MARINCS 170B",
+      "dept": "MARINCS",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "VALENTINE D L",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 9,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 9
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 9,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 9,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2025
+        }
+      }
+    }
+  ]
+}

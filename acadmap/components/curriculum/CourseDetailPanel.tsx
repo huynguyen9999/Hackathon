@@ -1,5 +1,6 @@
 "use client";
 
+import { GradeDistributionCatalogSection } from "@/components/grades/GradeDistributionCatalogSection";
 import {
   OFFICIAL_COURSE_SEARCH_URL,
   type UcsbCoursePrimary,
@@ -56,6 +57,8 @@ export function CourseDetailPanel({ course }: CourseDetailPanelProps) {
             </p>
           </section>
         )}
+
+        <GradeDistributionCatalogSection courseId={course.courseId} />
 
         {course.sections.length > 0 && (
           <section className="mb-6">

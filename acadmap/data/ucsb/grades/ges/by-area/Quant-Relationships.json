@@ -1,0 +1,225 @@
+{
+  "area": "Quant Relationships",
+  "courses": [
+    {
+      "courseId": "ASTRO 1",
+      "avgGpa": 2.7972697724810414
+    },
+    {
+      "courseId": "ASTRO 2",
+      "avgGpa": 2.7980561555075596
+    },
+    {
+      "courseId": "ASTROW 1",
+      "avgGpa": 3.2551020408163267
+    },
+    {
+      "courseId": "C LIT 152",
+      "avgGpa": 3.130555555555555
+    },
+    {
+      "courseId": "CHEM 1A",
+      "avgGpa": 2.3785315807202076
+    },
+    {
+      "courseId": "CHEM 1AL",
+      "avgGpa": 2.9700281906714503
+    },
+    {
+      "courseId": "CHEM 25",
+      "avgGpa": 2.546238620028749
+    },
+    {
+      "courseId": "CHEM 2A",
+      "avgGpa": 3.432512315270935
+    },
+    {
+      "courseId": "CHEM 2AC",
+      "avgGpa": null
+    },
+    {
+      "courseId": "CMPSC 5A",
+      "avgGpa": 3.392555092316855
+    },
+    {
+      "courseId": "CMPSC 5B",
+      "avgGpa": 3.532126696832579
+    },
+    {
+      "courseId": "CMPSC 8",
+      "avgGpa": 3.2334118703018055
+    },
+    {
+      "courseId": "CMPSCW 8",
+      "avgGpa": 3.2427095990279464
+    },
+    {
+      "courseId": "COMM 87",
+      "avgGpa": 2.6487647194643262
+    },
+    {
+      "courseId": "EARTH 1",
+      "avgGpa": null
+    },
+    {
+      "courseId": "EARTH 10",
+      "avgGpa": 3.0272504184515863
+    },
+    {
+      "courseId": "EARTH 11",
+      "avgGpa": 3.338509316770186
+    },
+    {
+      "courseId": "EARTH 123",
+      "avgGpa": 2.966361556064073
+    },
+    {
+      "courseId": "EARTH 130",
+      "avgGpa": 3.004123711340206
+    },
+    {
+      "courseId": "EARTH 2",
+      "avgGpa": 2.8582126888112196
+    },
+    {
+      "courseId": "EARTH 20",
+      "avgGpa": 3.198301329394387
+    },
+    {
+      "courseId": "EARTH 4",
+      "avgGpa": 3.0778085248554095
+    },
+    {
+      "courseId": "EARTH 7",
+      "avgGpa": 2.8859240183478985
+    },
+    {
+      "courseId": "EARTH 9",
+      "avgGpa": 2.6706036745406823
+    },
+    {
+      "courseId": "EARTHW 20",
+      "avgGpa": 3.4678507366711036
+    },
+    {
+      "courseId": "ENV S 115",
+      "avgGpa": 2.962544964028778
+    },
+    {
+      "courseId": "GEOG 8",
+      "avgGpa": 3.3303278688524585
+    },
+    {
+      "courseId": "GEOG W 8",
+      "avgGpa": 2.765656565656566
+    },
+    {
+      "courseId": "GER 152",
+      "avgGpa": 3.623529411764706
+    },
+    {
+      "courseId": "LING 185",
+      "avgGpa": 3.158641975308642
+    },
+    {
+      "courseId": "MATH 2A",
+      "avgGpa": 3.197423510466989
+    },
+    {
+      "courseId": "MATH 2B",
+      "avgGpa": 3.0061216526023125
+    },
+    {
+      "courseId": "MATH 34A",
+      "avgGpa": 3.0639606616919255
+    },
+    {
+      "courseId": "MATH 34B",
+      "avgGpa": 3.1773113657825696
+    },
+    {
+      "courseId": "MATH 3A",
+      "avgGpa": 2.7595373406759274
+    },
+    {
+      "courseId": "MATH 3B",
+      "avgGpa": 2.8754405169602086
+    },
+    {
+      "courseId": "PHYS 1",
+      "avgGpa": 2.9490418818129656
+    },
+    {
+      "courseId": "PHYS 10",
+      "avgGpa": 3.423076923076923
+    },
+    {
+      "courseId": "PHYS 2",
+      "avgGpa": 2.9852731893265565
+    },
+    {
+      "courseId": "PHYS 21",
+      "avgGpa": 2.9091016914886447
+    },
+    {
+      "courseId": "PHYS 3",
+      "avgGpa": 2.8756435366536097
+    },
+    {
+      "courseId": "PHYS 3L",
+      "avgGpa": 3.7010516160154365
+    },
+    {
+      "courseId": "PHYS 4",
+      "avgGpa": 2.9351149657119806
+    },
+    {
+      "courseId": "PHYS 4L",
+      "avgGpa": 3.635714285714286
+    },
+    {
+      "courseId": "PHYS 5",
+      "avgGpa": 2.865902140672783
+    },
+    {
+      "courseId": "PHYS 5L",
+      "avgGpa": 3.7040800615858354
+    },
+    {
+      "courseId": "PHYS 6A",
+      "avgGpa": 2.7437354887832486
+    },
+    {
+      "courseId": "PHYS 6AL",
+      "avgGpa": 3.5243377917650145
+    },
+    {
+      "courseId": "PHYS 6B",
+      "avgGpa": 2.8878840013937066
+    },
+    {
+      "courseId": "PHYS 6BL",
+      "avgGpa": 3.586533200943279
+    },
+    {
+      "courseId": "PHYS 6C",
+      "avgGpa": 3.191531755915318
+    },
+    {
+      "courseId": "PHYS 6CL",
+      "avgGpa": 3.5604498671978773
+    },
+    {
+      "courseId": "PSTAT 5A",
+      "avgGpa": 2.8429895977740167
+    },
+    {
+      "courseId": "PSTAT 5LS",
+      "avgGpa": 3.0289528202307046
+    },
+    {
+      "courseId": "SHS 121",
+      "avgGpa": 3.466666666666667
+    }
+  ]
+}

@@ -33,6 +33,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# Daily Nexus raw CSV downloads (processed snapshots are committed)
+/data/ucsb/grades/raw/
+
 # IDE
 .idea
 .vscode

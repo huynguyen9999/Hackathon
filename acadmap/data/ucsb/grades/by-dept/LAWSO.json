@@ -1,0 +1,574 @@
+{
+  "dept": "LAWSO",
+  "courses": [
+    {
+      "courseId": "LAWSO 1",
+      "dept": "LAWSO",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "DARIAN-SMITH",
+          "counts": {
+            "A": 22,
+            "Ap": 7,
+            "Am": 21,
+            "B": 22,
+            "Bp": 19,
+            "Bm": 11,
+            "C": 2,
+            "Cp": 7,
+            "Cm": 2,
+            "D": 1,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 2,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.2465517241379307,
+          "nLetterStudents": 116,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.2465517241379307,
+        "totalStudents": 116,
+        "gradeDistribution": {
+          "A": 22,
+          "Ap": 7,
+          "Am": 21,
+          "B": 22,
+          "Bp": 19,
+          "Bm": 11,
+          "C": 2,
+          "Cp": 7,
+          "Cm": 2,
+          "D": 1,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 2,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "LAWSO 156",
+      "dept": "LAWSO",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "PARK J S W",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 2,
+            "B": 2,
+            "Bp": 1,
+            "Bm": 1,
+            "C": 4,
+            "Cp": 1,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.9000000000000004,
+          "nLetterStudents": 13,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.9000000000000004,
+        "totalStudents": 13,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 0,
+          "Am": 2,
+          "B": 2,
+          "Bp": 1,
+          "Bm": 1,
+          "C": 4,
+          "Cp": 1,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "LAWSO 163",
+      "dept": "LAWSO",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "PRIETO S G",
+          "counts": {
+            "A": 5,
+            "Ap": 0,
+            "Am": 2,
+            "B": 3,
+            "Bp": 3,
+            "Bm": 2,
+            "C": 2,
+            "Cp": 1,
+            "Cm": 2,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.0699999999999994,
+          "nLetterStudents": 20,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.0699999999999994,
+        "totalStudents": 20,
+        "gradeDistribution": {
+          "A": 5,
+          "Ap": 0,
+          "Am": 2,
+          "B": 3,
+          "Bp": 3,
+          "Bm": 2,
+          "C": 2,
+          "Cp": 1,
+          "Cm": 2,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "LAWSO 192",
+      "dept": "LAWSO",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "UNANDER R L",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 22,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 22
+        },
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "UNANDER R L",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 19,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 19
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 41,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 41,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 2,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "LAWSO 3A",
+      "dept": "LAWSO",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "GITTLER J",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 18,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 18
+        },
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "LIBEU A",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 18,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 18
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 36,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 36,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 2,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "LAWSO 3B",
+      "dept": "LAWSO",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "GITTLER J",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 16,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 16
+        },
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "LIBEU A",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 16,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 16
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 32,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 32,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 2,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "LAWSO 5B",
+      "dept": "LAWSO",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "DARIAN-SMITH",
+          "counts": {
+            "A": 10,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.636363636363636,
+          "nLetterStudents": 11,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.636363636363636,
+        "totalStudents": 11,
+        "gradeDistribution": {
+          "A": 10,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "LAWSO 5C",
+      "dept": "LAWSO",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "DARIAN-SMITH",
+          "counts": {
+            "A": 10,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 10,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 4,
+        "totalStudents": 10,
+        "gradeDistribution": {
+          "A": 10,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    }
+  ]
+}

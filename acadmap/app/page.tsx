@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { SchoolHubSection } from "@/components/SchoolHubSection";
 import { listActiveSchools } from "@/lib/schools/registry";
 
 const FEATURES = [
@@ -60,6 +61,36 @@ export default async function HomePage() {
         </div>
       </section>
 
+      <section className="border-b border-teal-500/20 bg-gradient-to-r from-teal-50 to-white dark:from-teal-950/30 dark:to-gaucho-blue-dark/40">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-teal-700 dark:text-teal-200">
+              UCSB Grades
+            </p>
+            <h2 className="mt-1 text-xl font-semibold text-gaucho-blue dark:text-white">
+              Compare course GPAs before you enroll
+            </h2>
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+              Daily Nexus open data · GE explorer · instructor history
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/schools/ucsb/grades"
+              className="rounded-lg bg-teal-600 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
+            >
+              Grade search
+            </Link>
+            <Link
+              href="/schools/ucsb/grades?tab=ge"
+              className="rounded-lg border border-teal-500/30 px-4 py-2.5 text-sm font-medium text-teal-800 transition hover:bg-teal-500/10 dark:text-teal-200"
+            >
+              GE explorer
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-violet-500/20 bg-gradient-to-r from-violet-50 to-white dark:from-violet-950/30 dark:to-gaucho-blue-dark/40">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <div>
@@ -90,33 +121,15 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-        <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">
-          School hubs
-        </h2>
-        <div className="grid gap-4 sm:grid-cols-2">
-          {schools.map((school) => (
-            <Link
-              key={school.short_name}
-              href={`/schools/${school.short_name}`}
-              className="card-glow group flex flex-col rounded-lg border border-gaucho-blue/15 bg-white p-6 transition hover:border-gaucho-gold/40 dark:bg-gaucho-blue-dark/50"
-            >
-              <p className="text-xs font-semibold uppercase tracking-wider text-gaucho-blue-light dark:text-gaucho-gold">
-                {school.location}
-              </p>
-              <h3 className="mt-2 text-xl font-semibold text-slate-900 dark:text-white">
-                {school.name}
-              </h3>
-              <p className="mt-2 flex-1 text-sm text-slate-600 dark:text-slate-400">
-                {school.colleges.map((c) => c.label).join(" · ")}
-              </p>
-              <span className="mt-4 text-sm font-medium text-gaucho-blue group-hover:text-gaucho-gold dark:text-gaucho-gold">
-                Open community hub →
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <SchoolHubSection
+        variant="home"
+        schools={schools.map((school) => ({
+          short_name: school.short_name,
+          name: school.name,
+          location: school.location,
+          collegesLabel: school.colleges.map((c) => c.label).join(" · "),
+        }))}
+      />
 
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
         <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">

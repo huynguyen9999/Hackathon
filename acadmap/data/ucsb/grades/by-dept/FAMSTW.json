@@ -1,0 +1,262 @@
+{
+  "dept": "FAMSTW",
+  "courses": [
+    {
+      "courseId": "FAMSTW 150FT",
+      "dept": "FAMSTW",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2026,
+          "instructor": "MUZAMMAL M",
+          "counts": {
+            "A": 8,
+            "Ap": 2,
+            "Am": 18,
+            "B": 13,
+            "Bp": 10,
+            "Bm": 6,
+            "C": 1,
+            "Cp": 8,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 1,
+            "F": 3,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.0842857142857145,
+          "nLetterStudents": 70,
+          "nPnpStudents": 5
+        },
+        {
+          "quarter": "Summer",
+          "year": 2025,
+          "instructor": "MUZAMMAL M",
+          "counts": {
+            "A": 7,
+            "Ap": 1,
+            "Am": 5,
+            "B": 9,
+            "Bp": 6,
+            "Bm": 6,
+            "C": 2,
+            "Cp": 6,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 1,
+            "F": 2,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.933333333333333,
+          "nLetterStudents": 45,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "MUZAMMAL M",
+          "counts": {
+            "A": 15,
+            "Ap": 2,
+            "Am": 13,
+            "B": 11,
+            "Bp": 8,
+            "Bm": 10,
+            "C": 6,
+            "Cp": 7,
+            "Cm": 1,
+            "D": 1,
+            "Dp": 2,
+            "Dm": 0,
+            "F": 2,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.0243589743589743,
+          "nLetterStudents": 78,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.026370851370851,
+        "totalStudents": 198,
+        "gradeDistribution": {
+          "A": 30,
+          "Ap": 5,
+          "Am": 36,
+          "B": 33,
+          "Bp": 24,
+          "Bm": 22,
+          "C": 9,
+          "Cp": 21,
+          "Cm": 1,
+          "D": 1,
+          "Dp": 2,
+          "Dm": 2,
+          "F": 7,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 3,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2026
+        }
+      }
+    },
+    {
+      "courseId": "FAMSTW 151FA",
+      "dept": "FAMSTW",
+      "offerings": [
+        {
+          "quarter": "Summer",
+          "year": 2024,
+          "instructor": "DRISKEL D B",
+          "counts": {
+            "A": 1,
+            "Ap": 0,
+            "Am": 1,
+            "B": 3,
+            "Bp": 1,
+            "Bm": 1,
+            "C": 5,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 3,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 2,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.1,
+          "nLetterStudents": 17,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Summer",
+          "year": 2023,
+          "instructor": "DRISKEL D B",
+          "counts": {
+            "A": 1,
+            "Ap": 0,
+            "Am": 2,
+            "B": 2,
+            "Bp": 1,
+            "Bm": 2,
+            "C": 0,
+            "Cp": 3,
+            "Cm": 0,
+            "D": 1,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.6153846153846154,
+          "nLetterStudents": 13,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Summer",
+          "year": 2022,
+          "instructor": "DRISKEL D B",
+          "counts": {
+            "A": 1,
+            "Ap": 0,
+            "Am": 3,
+            "B": 0,
+            "Bp": 3,
+            "Bm": 2,
+            "C": 3,
+            "Cp": 2,
+            "Cm": 3,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.561111111111112,
+          "nLetterStudents": 18,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Summer",
+          "year": 2021,
+          "instructor": "DRISKEL D B",
+          "counts": {
+            "A": 2,
+            "Ap": 1,
+            "Am": 1,
+            "B": 3,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 3,
+            "Cp": 2,
+            "Cm": 3,
+            "D": 0,
+            "Dp": 1,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.452941176470588,
+          "nLetterStudents": 17,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.423076923076923,
+        "totalStudents": 65,
+        "gradeDistribution": {
+          "A": 5,
+          "Ap": 1,
+          "Am": 7,
+          "B": 8,
+          "Bp": 5,
+          "Bm": 5,
+          "C": 11,
+          "Cp": 7,
+          "Cm": 6,
+          "D": 4,
+          "Dp": 1,
+          "Dm": 0,
+          "F": 5,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 4,
+        "latestOffering": {
+          "quarter": "Summer",
+          "year": 2024
+        }
+      }
+    }
+  ]
+}

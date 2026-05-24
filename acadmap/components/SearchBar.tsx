@@ -7,6 +7,9 @@ export type SearchBarProps = {
   debounceMs?: number;
   defaultValue?: string;
   className?: string;
+  placeholder?: string;
+  label?: string;
+  inputId?: string;
 };
 
 export function SearchBar({
@@ -14,6 +17,9 @@ export function SearchBar({
   debounceMs = 300,
   defaultValue = "",
   className = "",
+  placeholder = "Search schools or majors...",
+  label = "Search schools or majors",
+  inputId = "igauchoback-search",
 }: SearchBarProps) {
   const [value, setValue] = useState(defaultValue);
 
@@ -27,8 +33,8 @@ export function SearchBar({
 
   return (
     <div className={`relative ${className}`}>
-      <label htmlFor="igauchoback-search" className="sr-only">
-        Search schools or majors
+      <label htmlFor={inputId} className="sr-only">
+        {label}
       </label>
       <span
         className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-gaucho-blue-light/70"
@@ -48,11 +54,11 @@ export function SearchBar({
         </svg>
       </span>
       <input
-        id="igauchoback-search"
+        id={inputId}
         type="search"
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        placeholder="Search schools or majors..."
+        placeholder={placeholder}
         className="w-full rounded-xl border border-gaucho-blue-light/30 bg-white dark:bg-slate-900/80 py-2.5 pl-10 pr-4 text-sm text-slate-900 dark:text-slate-100 placeholder:text-slate-500 shadow-inner shadow-gaucho-blue-dark/20 outline-none ring-0 transition focus:border-gaucho-gold/60 focus:ring-2 focus:ring-gaucho-gold/25"
         autoComplete="off"
       />

@@ -1,0 +1,533 @@
+{
+  "highestGpa": [
+    {
+      "courseId": "MUS 288",
+      "dept": "MUS",
+      "avgGpa": 4,
+      "offeringCount": 30,
+      "totalStudents": 96
+    },
+    {
+      "courseId": "MATRL 596",
+      "dept": "MATRL",
+      "avgGpa": 4,
+      "offeringCount": 19,
+      "totalStudents": 63
+    },
+    {
+      "courseId": "EEMB 595TE",
+      "dept": "EEMB",
+      "avgGpa": 4,
+      "offeringCount": 53,
+      "totalStudents": 360
+    },
+    {
+      "courseId": "EEMB 595P",
+      "dept": "EEMB",
+      "avgGpa": 4,
+      "offeringCount": 13,
+      "totalStudents": 102
+    },
+    {
+      "courseId": "EEMB 595EV",
+      "dept": "EEMB",
+      "avgGpa": 4,
+      "offeringCount": 64,
+      "totalStudents": 394
+    },
+    {
+      "courseId": "EEMB 508",
+      "dept": "EEMB",
+      "avgGpa": 4,
+      "offeringCount": 47,
+      "totalStudents": 603
+    },
+    {
+      "courseId": "ANTH 234",
+      "dept": "ANTH",
+      "avgGpa": 4,
+      "offeringCount": 28,
+      "totalStudents": 190
+    },
+    {
+      "courseId": "MUS A 70I",
+      "dept": "MUS",
+      "avgGpa": 4,
+      "offeringCount": 9,
+      "totalStudents": 53
+    },
+    {
+      "courseId": "LING 223",
+      "dept": "LING",
+      "avgGpa": 4,
+      "offeringCount": 7,
+      "totalStudents": 57
+    },
+    {
+      "courseId": "HIST 294",
+      "dept": "HIST",
+      "avgGpa": 4,
+      "offeringCount": 38,
+      "totalStudents": 341
+    },
+    {
+      "courseId": "MCDB 153H",
+      "dept": "MCDB",
+      "avgGpa": 4,
+      "offeringCount": 11,
+      "totalStudents": 182
+    },
+    {
+      "courseId": "MATRL 286G",
+      "dept": "MATRL",
+      "avgGpa": 4,
+      "offeringCount": 7,
+      "totalStudents": 83
+    },
+    {
+      "courseId": "EEMB 595RR",
+      "dept": "EEMB",
+      "avgGpa": 4,
+      "offeringCount": 19,
+      "totalStudents": 123
+    },
+    {
+      "courseId": "EEMB 247",
+      "dept": "EEMB",
+      "avgGpa": 4,
+      "offeringCount": 6,
+      "totalStudents": 52
+    },
+    {
+      "courseId": "GLOBL 232A",
+      "dept": "GLOBL",
+      "avgGpa": 4,
+      "offeringCount": 16,
+      "totalStudents": 55
+    },
+    {
+      "courseId": "FEMST 195HA",
+      "dept": "FEMST",
+      "avgGpa": 4,
+      "offeringCount": 9,
+      "totalStudents": 57
+    },
+    {
+      "courseId": "ED S 321F",
+      "dept": "ED",
+      "avgGpa": 4,
+      "offeringCount": 5,
+      "totalStudents": 54
+    },
+    {
+      "courseId": "MATH 241B",
+      "dept": "MATH",
+      "avgGpa": 4,
+      "offeringCount": 14,
+      "totalStudents": 57
+    },
+    {
+      "courseId": "ED 210F",
+      "dept": "ED",
+      "avgGpa": 4,
+      "offeringCount": 5,
+      "totalStudents": 57
+    },
+    {
+      "courseId": "ECON 253A",
+      "dept": "ECON",
+      "avgGpa": 4,
+      "offeringCount": 7,
+      "totalStudents": 55
+    },
+    {
+      "courseId": "EARTH 182A",
+      "dept": "EARTH",
+      "avgGpa": 4,
+      "offeringCount": 9,
+      "totalStudents": 76
+    },
+    {
+      "courseId": "MATH 241C",
+      "dept": "MATH",
+      "avgGpa": 4,
+      "offeringCount": 12,
+      "totalStudents": 50
+    },
+    {
+      "courseId": "ED 268",
+      "dept": "ED",
+      "avgGpa": 4,
+      "offeringCount": 60,
+      "totalStudents": 819
+    },
+    {
+      "courseId": "ED 265D",
+      "dept": "ED",
+      "avgGpa": 4,
+      "offeringCount": 92,
+      "totalStudents": 1044
+    },
+    {
+      "courseId": "INT 594ST",
+      "dept": "INT",
+      "avgGpa": 4,
+      "offeringCount": 17,
+      "totalStudents": 76
+    }
+  ],
+  "lowestGpa": [
+    {
+      "courseId": "PSY 199P",
+      "dept": "PSY",
+      "avgGpa": 0,
+      "offeringCount": 241,
+      "totalStudents": 1352
+    },
+    {
+      "courseId": "PHYS CS 31",
+      "dept": "PHYS",
+      "avgGpa": 0,
+      "offeringCount": 30,
+      "totalStudents": 578
+    },
+    {
+      "courseId": "PHYS CS 15A",
+      "dept": "PHYS",
+      "avgGpa": 0,
+      "offeringCount": 20,
+      "totalStudents": 329
+    },
+    {
+      "courseId": "MUS CS 105",
+      "dept": "MUS",
+      "avgGpa": 0,
+      "offeringCount": 68,
+      "totalStudents": 873
+    },
+    {
+      "courseId": "MUS CS 101",
+      "dept": "MUS",
+      "avgGpa": 0,
+      "offeringCount": 67,
+      "totalStudents": 574
+    },
+    {
+      "courseId": "MUS 1",
+      "dept": "MUS",
+      "avgGpa": 0,
+      "offeringCount": 36,
+      "totalStudents": 1417
+    },
+    {
+      "courseId": "ME 11",
+      "dept": "ME",
+      "avgGpa": 0,
+      "offeringCount": 16,
+      "totalStudents": 978
+    },
+    {
+      "courseId": "MCDB 262",
+      "dept": "MCDB",
+      "avgGpa": 0,
+      "offeringCount": 49,
+      "totalStudents": 67
+    },
+    {
+      "courseId": "MATH CS 120",
+      "dept": "MATH",
+      "avgGpa": 0,
+      "offeringCount": 56,
+      "totalStudents": 743
+    },
+    {
+      "courseId": "MATH CS 103",
+      "dept": "MATH",
+      "avgGpa": 0,
+      "offeringCount": 15,
+      "totalStudents": 228
+    },
+    {
+      "courseId": "MATH CS 101",
+      "dept": "MATH",
+      "avgGpa": 0,
+      "offeringCount": 15,
+      "totalStudents": 234
+    },
+    {
+      "courseId": "LIT CS 113",
+      "dept": "LIT",
+      "avgGpa": 0,
+      "offeringCount": 13,
+      "totalStudents": 167
+    },
+    {
+      "courseId": "LIT CS 111",
+      "dept": "LIT",
+      "avgGpa": 0,
+      "offeringCount": 21,
+      "totalStudents": 286
+    },
+    {
+      "courseId": "LIT CS 110",
+      "dept": "LIT",
+      "avgGpa": 0,
+      "offeringCount": 38,
+      "totalStudents": 592
+    },
+    {
+      "courseId": "LIT CS 105",
+      "dept": "LIT",
+      "avgGpa": 0,
+      "offeringCount": 20,
+      "totalStudents": 769
+    },
+    {
+      "courseId": "LIT CS 103",
+      "dept": "LIT",
+      "avgGpa": 0,
+      "offeringCount": 22,
+      "totalStudents": 255
+    },
+    {
+      "courseId": "LIT CS 102",
+      "dept": "LIT",
+      "avgGpa": 0,
+      "offeringCount": 54,
+      "totalStudents": 747
+    },
+    {
+      "courseId": "LIT CS 101",
+      "dept": "LIT",
+      "avgGpa": 0,
+      "offeringCount": 22,
+      "totalStudents": 311
+    },
+    {
+      "courseId": "LING 5",
+      "dept": "LING",
+      "avgGpa": 0,
+      "offeringCount": 12,
+      "totalStudents": 166
+    },
+    {
+      "courseId": "LING 4",
+      "dept": "LING",
+      "avgGpa": 0,
+      "offeringCount": 39,
+      "totalStudents": 572
+    },
+    {
+      "courseId": "INT CS 120",
+      "dept": "INT",
+      "avgGpa": 0,
+      "offeringCount": 49,
+      "totalStudents": 664
+    },
+    {
+      "courseId": "INT 192DC",
+      "dept": "INT",
+      "avgGpa": 0,
+      "offeringCount": 34,
+      "totalStudents": 764
+    },
+    {
+      "courseId": "INT 190MB",
+      "dept": "INT",
+      "avgGpa": 0,
+      "offeringCount": 14,
+      "totalStudents": 93
+    },
+    {
+      "courseId": "INT 190MA",
+      "dept": "INT",
+      "avgGpa": 0,
+      "offeringCount": 19,
+      "totalStudents": 125
+    },
+    {
+      "courseId": "INT 1",
+      "dept": "INT",
+      "avgGpa": 0,
+      "offeringCount": 127,
+      "totalStudents": 2628
+    }
+  ],
+  "mostOffered": [
+    {
+      "courseId": "WRIT 2",
+      "dept": "WRIT",
+      "avgGpa": 3.480426517895307,
+      "offeringCount": 1056,
+      "totalStudents": 44453
+    },
+    {
+      "courseId": "ECE 596",
+      "dept": "ECE",
+      "avgGpa": 0,
+      "offeringCount": 652,
+      "totalStudents": 27
+    },
+    {
+      "courseId": "CHEM 596",
+      "dept": "CHEM",
+      "avgGpa": 3.958883594281825,
+      "offeringCount": 476,
+      "totalStudents": 2938
+    },
+    {
+      "courseId": "MATRL 290",
+      "dept": "MATRL",
+      "avgGpa": 0,
+      "offeringCount": 452,
+      "totalStudents": 3
+    },
+    {
+      "courseId": "CMPSC 596",
+      "dept": "CMPSC",
+      "avgGpa": 3.9675763182238657,
+      "offeringCount": 443,
+      "totalStudents": 2162
+    },
+    {
+      "courseId": "ES 1- 99",
+      "dept": "ES",
+      "avgGpa": 0,
+      "offeringCount": 341,
+      "totalStudents": 3738
+    },
+    {
+      "courseId": "WRIT 1",
+      "dept": "WRIT",
+      "avgGpa": 3.4010221285563715,
+      "offeringCount": 329,
+      "totalStudents": 9490
+    },
+    {
+      "courseId": "PSY 199",
+      "dept": "PSY",
+      "avgGpa": 3.987834870443566,
+      "offeringCount": 326,
+      "totalStudents": 2277
+    },
+    {
+      "courseId": "CH E 291",
+      "dept": "CH",
+      "avgGpa": 1.3333333333333333,
+      "offeringCount": 309,
+      "totalStudents": 3
+    },
+    {
+      "courseId": "PHYS 596",
+      "dept": "PHYS",
+      "avgGpa": 0,
+      "offeringCount": 299,
+      "totalStudents": 14
+    },
+    {
+      "courseId": "MATH 8",
+      "dept": "MATH",
+      "avgGpa": 2.9670689767049505,
+      "offeringCount": 293,
+      "totalStudents": 10274
+    },
+    {
+      "courseId": "MCDB 199",
+      "dept": "MCDB",
+      "avgGpa": 3.9911278195488715,
+      "offeringCount": 245,
+      "totalStudents": 1330
+    },
+    {
+      "courseId": "PSY 199P",
+      "dept": "PSY",
+      "avgGpa": 0,
+      "offeringCount": 241,
+      "totalStudents": 1352
+    },
+    {
+      "courseId": "ED 370",
+      "dept": "ED",
+      "avgGpa": 0,
+      "offeringCount": 234,
+      "totalStudents": 1
+    },
+    {
+      "courseId": "WRIT 107B",
+      "dept": "WRIT",
+      "avgGpa": 3.6314549180327877,
+      "offeringCount": 220,
+      "totalStudents": 6832
+    },
+    {
+      "courseId": "COMM 199RA",
+      "dept": "COMM",
+      "avgGpa": 3.9829664570230605,
+      "offeringCount": 217,
+      "totalStudents": 1908
+    },
+    {
+      "courseId": "ENGL 197",
+      "dept": "ENGL",
+      "avgGpa": 3.5783483691880624,
+      "offeringCount": 214,
+      "totalStudents": 2882
+    },
+    {
+      "courseId": "MATRL 599",
+      "dept": "MATRL",
+      "avgGpa": null,
+      "offeringCount": 209,
+      "totalStudents": 0
+    },
+    {
+      "courseId": "CNCSP 209A",
+      "dept": "CNCSP",
+      "avgGpa": 4,
+      "offeringCount": 203,
+      "totalStudents": 35
+    },
+    {
+      "courseId": "MATRL 598",
+      "dept": "MATRL",
+      "avgGpa": 0,
+      "offeringCount": 199,
+      "totalStudents": 2
+    },
+    {
+      "courseId": "MCDB 596",
+      "dept": "MCDB",
+      "avgGpa": 3.984070796460177,
+      "offeringCount": 192,
+      "totalStudents": 791
+    },
+    {
+      "courseId": "ENGL 10",
+      "dept": "ENGL",
+      "avgGpa": 3.3876302738446062,
+      "offeringCount": 192,
+      "totalStudents": 13913
+    },
+    {
+      "courseId": "ECON 290",
+      "dept": "ECON",
+      "avgGpa": 3.0709359605911333,
+      "offeringCount": 187,
+      "totalStudents": 203
+    },
+    {
+      "courseId": "EEMB 596",
+      "dept": "EEMB",
+      "avgGpa": 3.969359331476323,
+      "offeringCount": 181,
+      "totalStudents": 718
+    },
+    {
+      "courseId": "ESM 401B",
+      "dept": "ESM",
+      "avgGpa": 3.9633630289532285,
+      "offeringCount": 175,
+      "totalStudents": 898
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "dept": "GLOBLW",
+  "courses": [
+    {
+      "courseId": "GLOBLW 13",
+      "dept": "GLOBLW",
+      "offerings": [
+        {
+          "quarter": "Summer",
+          "year": 2025,
+          "instructor": "BARANDIARAN J",
+          "counts": {
+            "A": 13,
+            "Ap": 0,
+            "Am": 3,
+            "B": 6,
+            "Bp": 1,
+            "Bm": 0,
+            "C": 1,
+            "Cp": 1,
+            "Cm": 1,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.3481481481481485,
+          "nLetterStudents": 27,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.3481481481481485,
+        "totalStudents": 27,
+        "gradeDistribution": {
+          "A": 13,
+          "Ap": 0,
+          "Am": 3,
+          "B": 6,
+          "Bp": 1,
+          "Bm": 0,
+          "C": 1,
+          "Cp": 1,
+          "Cm": 1,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Summer",
+          "year": 2025
+        }
+      }
+    }
+  ]
+}

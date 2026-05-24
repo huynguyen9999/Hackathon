@@ -1,0 +1,15 @@
+{
+  "source": "Daily Nexus / UCSB Office of the Registrar (CPRA)",
+  "sourceUrl": "https://github.com/dailynexusdata/grades-data",
+  "interactiveUrl": "https://dailynexus.com/interactives/grades/",
+  "attribution": "Daily Nexus Grades Search",
+  "contactEmail": "data@dailynexus.com",
+  "asOf": "2026-05-24T00:00:27.946Z",
+  "quarterRange": {
+    "from": "Fall 2009",
+    "to": "Winter 2026"
+  },
+  "courseCount": 10559,
+  "offeringCount": 104497,
+  "disclaimer": "Courses with fewer than five enrolled students are excluded from the source data. Grade counts are before P/NP and S/U conversions where applicable."
+}

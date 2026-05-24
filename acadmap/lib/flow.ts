@@ -1,4 +1,5 @@
 import { layoutRoadmapNodes } from "@/lib/roadmap-layout";
+import { resolveCareerSalary } from "@/lib/career-salaries/resolve";
 import type {
   CourseNodeMetadata,
   EdgeType,
@@ -59,6 +60,7 @@ export function roadmapNodeToFlowNode(node: RoadmapNode): FlowNode | null {
   const description = node.description ?? "";
 
   if (node.node_type === "career") {
+    const salary = resolveCareerSalary(title, node.metadata) ?? undefined;
     return {
       id: node.id,
       type: "career",
@@ -70,6 +72,7 @@ export function roadmapNodeToFlowNode(node: RoadmapNode): FlowNode | null {
         description,
         selfLearnable: node.self_learnable,
         resources,
+        salary,
       },
     };
   }

@@ -1,0 +1,3128 @@
+{
+  "dept": "GEOL",
+  "courses": [
+    {
+      "courseId": "GEOL 100",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "JI C",
+          "counts": {
+            "A": 3,
+            "Ap": 1,
+            "Am": 0,
+            "B": 5,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 1,
+            "Cp": 0,
+            "Cm": 1,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 1,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.8000000000000003,
+          "nLetterStudents": 15,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.8000000000000003,
+        "totalStudents": 15,
+        "gradeDistribution": {
+          "A": 3,
+          "Ap": 1,
+          "Am": 0,
+          "B": 5,
+          "Bp": 2,
+          "Bm": 0,
+          "C": 1,
+          "Cp": 0,
+          "Cm": 1,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 1,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 102A",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "SPERA F J",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 1,
+            "B": 2,
+            "Bp": 3,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.45,
+          "nLetterStudents": 8,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.45,
+        "totalStudents": 8,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 0,
+          "Am": 1,
+          "B": 2,
+          "Bp": 3,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 104A",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "BURBANK D W",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 2,
+            "B": 8,
+            "Bp": 3,
+            "Bm": 5,
+            "C": 5,
+            "Cp": 5,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.81,
+          "nLetterStudents": 30,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.81,
+        "totalStudents": 30,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 0,
+          "Am": 2,
+          "B": 8,
+          "Bp": 3,
+          "Bm": 5,
+          "C": 5,
+          "Cp": 5,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 104B",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "HACKER B R",
+          "counts": {
+            "A": 4,
+            "Ap": 0,
+            "Am": 2,
+            "B": 4,
+            "Bp": 4,
+            "Bm": 4,
+            "C": 1,
+            "Cp": 2,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.142857142857143,
+          "nLetterStudents": 21,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.142857142857143,
+        "totalStudents": 21,
+        "gradeDistribution": {
+          "A": 4,
+          "Ap": 0,
+          "Am": 2,
+          "B": 4,
+          "Bp": 4,
+          "Bm": 4,
+          "C": 1,
+          "Cp": 2,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 111",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "TIFFNEY B H",
+          "counts": {
+            "A": 1,
+            "Ap": 2,
+            "Am": 1,
+            "B": 0,
+            "Bp": 4,
+            "Bm": 5,
+            "C": 2,
+            "Cp": 6,
+            "Cm": 5,
+            "D": 0,
+            "Dp": 3,
+            "Dm": 2,
+            "F": 6,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2,
+          "nLetterStudents": 37,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2,
+        "totalStudents": 37,
+        "gradeDistribution": {
+          "A": 1,
+          "Ap": 2,
+          "Am": 1,
+          "B": 0,
+          "Bp": 4,
+          "Bm": 5,
+          "C": 2,
+          "Cp": 6,
+          "Cm": 5,
+          "D": 0,
+          "Dp": 3,
+          "Dm": 2,
+          "F": 6,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 113",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "KELLER E A",
+          "counts": {
+            "A": 3,
+            "Ap": 1,
+            "Am": 0,
+            "B": 10,
+            "Bp": 1,
+            "Bm": 0,
+            "C": 2,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 1,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.8421052631578947,
+          "nLetterStudents": 19,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.8421052631578947,
+        "totalStudents": 19,
+        "gradeDistribution": {
+          "A": 3,
+          "Ap": 1,
+          "Am": 0,
+          "B": 10,
+          "Bp": 1,
+          "Bm": 0,
+          "C": 2,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 1,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 114A",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "LEA D W",
+          "counts": {
+            "A": 4,
+            "Ap": 0,
+            "Am": 4,
+            "B": 7,
+            "Bp": 8,
+            "Bm": 7,
+            "C": 2,
+            "Cp": 1,
+            "Cm": 1,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.0911764705882354,
+          "nLetterStudents": 34,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "SPERA F J",
+          "counts": {
+            "A": 4,
+            "Ap": 0,
+            "Am": 4,
+            "B": 7,
+            "Bp": 8,
+            "Bm": 7,
+            "C": 2,
+            "Cp": 1,
+            "Cm": 1,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.0911764705882354,
+          "nLetterStudents": 34,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.0911764705882354,
+        "totalStudents": 68,
+        "gradeDistribution": {
+          "A": 8,
+          "Ap": 0,
+          "Am": 8,
+          "B": 14,
+          "Bp": 16,
+          "Bm": 14,
+          "C": 4,
+          "Cp": 2,
+          "Cm": 2,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 2,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 114B",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "COTTLE J",
+          "counts": {
+            "A": 2,
+            "Ap": 1,
+            "Am": 13,
+            "B": 5,
+            "Bp": 7,
+            "Bm": 3,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 1,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.3625000000000003,
+          "nLetterStudents": 32,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.3625000000000003,
+        "totalStudents": 32,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 1,
+          "Am": 13,
+          "B": 5,
+          "Bp": 7,
+          "Bm": 3,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 1,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 115",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "MATTINSON J M",
+          "counts": {
+            "A": 4,
+            "Ap": 0,
+            "Am": 7,
+            "B": 2,
+            "Bp": 5,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.577777777777778,
+          "nLetterStudents": 18,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.577777777777778,
+        "totalStudents": 18,
+        "gradeDistribution": {
+          "A": 4,
+          "Ap": 0,
+          "Am": 7,
+          "B": 2,
+          "Bp": 5,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 118",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Summer",
+          "year": 2010,
+          "instructor": "GANS P B",
+          "counts": {
+            "A": 2,
+            "Ap": 1,
+            "Am": 3,
+            "B": 3,
+            "Bp": 3,
+            "Bm": 1,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.4384615384615387,
+          "nLetterStudents": 13,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.4384615384615387,
+        "totalStudents": 13,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 1,
+          "Am": 3,
+          "B": 3,
+          "Bp": 3,
+          "Bm": 1,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Summer",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 119",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Summer",
+          "year": 2010,
+          "instructor": "GANS P B",
+          "counts": {
+            "A": 1,
+            "Ap": 0,
+            "Am": 1,
+            "B": 2,
+            "Bp": 0,
+            "Bm": 1,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.28,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.28,
+        "totalStudents": 5,
+        "gradeDistribution": {
+          "A": 1,
+          "Ap": 0,
+          "Am": 1,
+          "B": 2,
+          "Bp": 0,
+          "Bm": 1,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Summer",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 121",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "SWEET S S",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 1,
+            "C": 2,
+            "Cp": 0,
+            "Cm": 3,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.2,
+          "nLetterStudents": 9,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.2,
+        "totalStudents": 9,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 1,
+          "C": 2,
+          "Cp": 0,
+          "Cm": 3,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 122",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "BUSBY C",
+          "counts": {
+            "A": 0,
+            "Ap": 3,
+            "Am": 2,
+            "B": 2,
+            "Bp": 1,
+            "Bm": 0,
+            "C": 2,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.2700000000000005,
+          "nLetterStudents": 10,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.2700000000000005,
+        "totalStudents": 10,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 3,
+          "Am": 2,
+          "B": 2,
+          "Bp": 1,
+          "Bm": 0,
+          "C": 2,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 123",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Summer",
+          "year": 2010,
+          "instructor": "SPERA F J",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 4,
+            "B": 7,
+            "Bp": 3,
+            "Bm": 1,
+            "C": 2,
+            "Cp": 2,
+            "Cm": 1,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 2,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.779166666666667,
+          "nLetterStudents": 24,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.779166666666667,
+        "totalStudents": 24,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 0,
+          "Am": 4,
+          "B": 7,
+          "Bp": 3,
+          "Bm": 1,
+          "C": 2,
+          "Cp": 2,
+          "Cm": 1,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 2,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Summer",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 130",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "LEA D W",
+          "counts": {
+            "A": 19,
+            "Ap": 4,
+            "Am": 10,
+            "B": 14,
+            "Bp": 9,
+            "Bm": 5,
+            "C": 3,
+            "Cp": 4,
+            "Cm": 6,
+            "D": 5,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 8,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.8114942528735627,
+          "nLetterStudents": 87,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.8114942528735627,
+        "totalStudents": 87,
+        "gradeDistribution": {
+          "A": 19,
+          "Ap": 4,
+          "Am": 10,
+          "B": 14,
+          "Bp": 9,
+          "Bm": 5,
+          "C": 3,
+          "Cp": 4,
+          "Cm": 6,
+          "D": 5,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 8,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 134",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "ARCHULETA R J",
+          "counts": {
+            "A": 4,
+            "Ap": 0,
+            "Am": 3,
+            "B": 3,
+            "Bp": 4,
+            "Bm": 1,
+            "C": 4,
+            "Cp": 3,
+            "Cm": 1,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.858333333333334,
+          "nLetterStudents": 24,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.858333333333334,
+        "totalStudents": 24,
+        "gradeDistribution": {
+          "A": 4,
+          "Ap": 0,
+          "Am": 3,
+          "B": 3,
+          "Bp": 4,
+          "Bm": 1,
+          "C": 4,
+          "Cp": 3,
+          "Cm": 1,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 136",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "JI C",
+          "counts": {
+            "A": 1,
+            "Ap": 0,
+            "Am": 1,
+            "B": 2,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 1,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.14,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.14,
+        "totalStudents": 5,
+        "gradeDistribution": {
+          "A": 1,
+          "Ap": 0,
+          "Am": 1,
+          "B": 2,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 1,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 149",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "WYSS A R",
+          "counts": {
+            "A": 2,
+            "Ap": 1,
+            "Am": 4,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 2,
+            "C": 3,
+            "Cp": 4,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 2,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.6333333333333337,
+          "nLetterStudents": 18,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.6333333333333337,
+        "totalStudents": 18,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 1,
+          "Am": 4,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 2,
+          "C": 3,
+          "Cp": 4,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 2,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 160",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "TANIMOTO T",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 26,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 26
+        },
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "WELDEAB S",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 23,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 26
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 52,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 49,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 2,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 164A",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "HAYMON R M",
+          "counts": {
+            "A": 3,
+            "Ap": 0,
+            "Am": 2,
+            "B": 1,
+            "Bp": 2,
+            "Bm": 2,
+            "C": 2,
+            "Cp": 3,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.02,
+          "nLetterStudents": 15,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.02,
+        "totalStudents": 15,
+        "gradeDistribution": {
+          "A": 3,
+          "Ap": 0,
+          "Am": 2,
+          "B": 1,
+          "Bp": 2,
+          "Bm": 2,
+          "C": 2,
+          "Cp": 3,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 164B",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "VALENTINE D L",
+          "counts": {
+            "A": 5,
+            "Ap": 1,
+            "Am": 2,
+            "B": 6,
+            "Bp": 3,
+            "Bm": 3,
+            "C": 2,
+            "Cp": 0,
+            "Cm": 1,
+            "D": 2,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.0040000000000004,
+          "nLetterStudents": 25,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.0040000000000004,
+        "totalStudents": 25,
+        "gradeDistribution": {
+          "A": 5,
+          "Ap": 1,
+          "Am": 2,
+          "B": 6,
+          "Bp": 3,
+          "Bm": 3,
+          "C": 2,
+          "Cp": 0,
+          "Cm": 1,
+          "D": 2,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 164C",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "PAK D K",
+          "counts": {
+            "A": 3,
+            "Ap": 0,
+            "Am": 3,
+            "B": 4,
+            "Bp": 4,
+            "Bm": 3,
+            "C": 4,
+            "Cp": 1,
+            "Cm": 2,
+            "D": 1,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.734615384615384,
+          "nLetterStudents": 26,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.734615384615384,
+        "totalStudents": 26,
+        "gradeDistribution": {
+          "A": 3,
+          "Ap": 0,
+          "Am": 3,
+          "B": 4,
+          "Bp": 4,
+          "Bm": 3,
+          "C": 4,
+          "Cp": 1,
+          "Cm": 2,
+          "D": 1,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 169",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "CLARK J",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 3,
+            "B": 1,
+            "Bp": 1,
+            "Bm": 4,
+            "C": 0,
+            "Cp": 2,
+            "Cm": 1,
+            "D": 1,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.9000000000000004,
+          "nLetterStudents": 15,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.9000000000000004,
+        "totalStudents": 15,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 0,
+          "Am": 3,
+          "B": 1,
+          "Bp": 1,
+          "Bm": 4,
+          "C": 0,
+          "Cp": 2,
+          "Cm": 1,
+          "D": 1,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 173",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "LOAICIGA H",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 4,
+            "B": 2,
+            "Bp": 5,
+            "Bm": 1,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 1,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.10625,
+          "nLetterStudents": 16,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.10625,
+        "totalStudents": 16,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 0,
+          "Am": 4,
+          "B": 2,
+          "Bp": 5,
+          "Bm": 1,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 1,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 18",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "GANS P B",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 34,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 34
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 34,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 34,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 19",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "KELLER E A",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 32,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 32
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 32,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 32,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 194",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "MATTINSON J M",
+          "counts": {
+            "A": 4,
+            "Ap": 0,
+            "Am": 7,
+            "B": 2,
+            "Bp": 5,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.577777777777778,
+          "nLetterStudents": 18,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.577777777777778,
+        "totalStudents": 18,
+        "gradeDistribution": {
+          "A": 4,
+          "Ap": 0,
+          "Am": 7,
+          "B": 2,
+          "Bp": 5,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 199RA",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "COTTLE J",
+          "counts": {
+            "A": 6,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 6,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 4,
+        "totalStudents": 6,
+        "gradeDistribution": {
+          "A": 6,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 2",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "GANS P B",
+          "counts": {
+            "A": 6,
+            "Ap": 3,
+            "Am": 5,
+            "B": 15,
+            "Bp": 11,
+            "Bm": 6,
+            "C": 11,
+            "Cp": 7,
+            "Cm": 5,
+            "D": 1,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 6,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.626315789473684,
+          "nLetterStudents": 76,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "DEVECCHIO D E",
+          "counts": {
+            "A": 10,
+            "Ap": 6,
+            "Am": 10,
+            "B": 18,
+            "Bp": 11,
+            "Bm": 6,
+            "C": 14,
+            "Cp": 9,
+            "Cm": 0,
+            "D": 5,
+            "Dp": 1,
+            "Dm": 1,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.860869565217391,
+          "nLetterStudents": 92,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "WYSS A R",
+          "counts": {
+            "A": 12,
+            "Ap": 0,
+            "Am": 8,
+            "B": 19,
+            "Bp": 18,
+            "Bm": 19,
+            "C": 17,
+            "Cp": 19,
+            "Cm": 16,
+            "D": 11,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 2,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.5617021276595744,
+          "nLetterStudents": 141,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.6666666666666665,
+        "totalStudents": 309,
+        "gradeDistribution": {
+          "A": 28,
+          "Ap": 9,
+          "Am": 23,
+          "B": 52,
+          "Bp": 40,
+          "Bm": 31,
+          "C": 42,
+          "Cp": 35,
+          "Cm": 21,
+          "D": 17,
+          "Dp": 1,
+          "Dm": 1,
+          "F": 9,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 3,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 20",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Summer",
+          "year": 2010,
+          "instructor": "MARTIN G B",
+          "counts": {
+            "A": 7,
+            "Ap": 1,
+            "Am": 11,
+            "B": 5,
+            "Bp": 7,
+            "Bm": 4,
+            "C": 1,
+            "Cp": 3,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.2625,
+          "nLetterStudents": 40,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "TANIMOTO T",
+          "counts": {
+            "A": 66,
+            "Ap": 0,
+            "Am": 0,
+            "B": 76,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 86,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 13,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 6,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.740890688259109,
+          "nLetterStudents": 247,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "BUSBY C",
+          "counts": {
+            "A": 45,
+            "Ap": 40,
+            "Am": 25,
+            "B": 41,
+            "Bp": 23,
+            "Bm": 24,
+            "C": 25,
+            "Cp": 11,
+            "Cm": 0,
+            "D": 13,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 15,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.9942748091603053,
+          "nLetterStudents": 262,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.8998178506375227,
+        "totalStudents": 549,
+        "gradeDistribution": {
+          "A": 118,
+          "Ap": 41,
+          "Am": 36,
+          "B": 122,
+          "Bp": 30,
+          "Bm": 28,
+          "C": 112,
+          "Cp": 14,
+          "Cm": 0,
+          "D": 26,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 22,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 3,
+        "latestOffering": {
+          "quarter": "Summer",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 201A",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "AWRAMIK S M",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": null,
+        "totalStudents": 0,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 201B",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "BURBANK D W",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "WYSS A R",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": null,
+        "totalStudents": 0,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 2,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 258",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "GANS P B",
+          "counts": {
+            "A": 0,
+            "Ap": 1,
+            "Am": 3,
+            "B": 0,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.1000000000000005,
+          "nLetterStudents": 7,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.1000000000000005,
+        "totalStudents": 7,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 1,
+          "Am": 3,
+          "B": 0,
+          "Bp": 2,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 260",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "WELDEAB S",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 1,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 1,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 1,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 264",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "HACKER B R",
+          "counts": {
+            "A": 7,
+            "Ap": 1,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 8,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 4,
+        "totalStudents": 8,
+        "gradeDistribution": {
+          "A": 7,
+          "Ap": 1,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 266",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "LEA D W",
+          "counts": {
+            "A": 3,
+            "Ap": 1,
+            "Am": 0,
+            "B": 1,
+            "Bp": 3,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.6125,
+          "nLetterStudents": 8,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.6125,
+        "totalStudents": 8,
+        "gradeDistribution": {
+          "A": 3,
+          "Ap": 1,
+          "Am": 0,
+          "B": 1,
+          "Bp": 3,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 270",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "TANIMOTO T",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "BUSBY C",
+          "counts": {
+            "A": 0,
+            "Ap": 6,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 6,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "VALENTINE D L",
+          "counts": {
+            "A": 6,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 6,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "BURBANK D W",
+          "counts": {
+            "A": 3,
+            "Ap": 0,
+            "Am": 3,
+            "B": 0,
+            "Bp": 1,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.771428571428572,
+          "nLetterStudents": 7,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "JI C",
+          "counts": {
+            "A": 1,
+            "Ap": 1,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 2,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "TANIMOTO T",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 2,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.930434782608696,
+        "totalStudents": 23,
+        "gradeDistribution": {
+          "A": 12,
+          "Ap": 7,
+          "Am": 3,
+          "B": 0,
+          "Bp": 1,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 6,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 276",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "WELDEAB S",
+          "counts": {
+            "A": 5,
+            "Ap": 1,
+            "Am": 4,
+            "B": 2,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.6714285714285713,
+          "nLetterStudents": 14,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.6714285714285713,
+        "totalStudents": 14,
+        "gradeDistribution": {
+          "A": 5,
+          "Ap": 1,
+          "Am": 4,
+          "B": 2,
+          "Bp": 2,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 3",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "AWRAMIK S M",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 3,
+            "B": 3,
+            "Bp": 2,
+            "Bm": 3,
+            "C": 4,
+            "Cp": 4,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 3,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.5,
+          "nLetterStudents": 24,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.5,
+        "totalStudents": 24,
+        "gradeDistribution": {
+          "A": 2,
+          "Ap": 0,
+          "Am": 3,
+          "B": 3,
+          "Bp": 2,
+          "Bm": 3,
+          "C": 4,
+          "Cp": 4,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 3,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 30",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "AWRAMIK S M",
+          "counts": {
+            "A": 9,
+            "Ap": 2,
+            "Am": 8,
+            "B": 34,
+            "Bp": 20,
+            "Bm": 22,
+            "C": 34,
+            "Cp": 29,
+            "Cm": 6,
+            "D": 8,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 8,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.5216666666666665,
+          "nLetterStudents": 180,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.5216666666666665,
+        "totalStudents": 180,
+        "gradeDistribution": {
+          "A": 9,
+          "Ap": 2,
+          "Am": 8,
+          "B": 34,
+          "Bp": 20,
+          "Bm": 22,
+          "C": 34,
+          "Cp": 29,
+          "Cm": 6,
+          "D": 8,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 8,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 30H",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "AWRAMIK S M",
+          "counts": {
+            "A": 24,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 24,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 4,
+        "totalStudents": 24,
+        "gradeDistribution": {
+          "A": 24,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 4",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Summer",
+          "year": 2010,
+          "instructor": "MEDLEY S E",
+          "counts": {
+            "A": 3,
+            "Ap": 0,
+            "Am": 0,
+            "B": 3,
+            "Bp": 2,
+            "Bm": 2,
+            "C": 2,
+            "Cp": 2,
+            "Cm": 0,
+            "D": 2,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 2,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.4222222222222225,
+          "nLetterStudents": 18,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Winter",
+          "year": 2010,
+          "instructor": "LISIECKI L E",
+          "counts": {
+            "A": 33,
+            "Ap": 3,
+            "Am": 32,
+            "B": 51,
+            "Bp": 40,
+            "Bm": 35,
+            "C": 28,
+            "Cp": 20,
+            "Cm": 7,
+            "D": 3,
+            "Dp": 3,
+            "Dm": 2,
+            "F": 3,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.938846153846153,
+          "nLetterStudents": 260,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "VALENTINE D L",
+          "counts": {
+            "A": 34,
+            "Ap": 6,
+            "Am": 0,
+            "B": 49,
+            "Bp": 28,
+            "Bm": 32,
+            "C": 48,
+            "Cp": 22,
+            "Cm": 18,
+            "D": 7,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 11,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.627450980392157,
+          "nLetterStudents": 255,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.772420262664165,
+        "totalStudents": 533,
+        "gradeDistribution": {
+          "A": 70,
+          "Ap": 9,
+          "Am": 32,
+          "B": 103,
+          "Bp": 70,
+          "Bm": 69,
+          "C": 78,
+          "Cp": 44,
+          "Cm": 25,
+          "D": 12,
+          "Dp": 3,
+          "Dm": 2,
+          "F": 16,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 3,
+        "latestOffering": {
+          "quarter": "Summer",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 4H",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2009,
+          "instructor": "VALENTINE D L",
+          "counts": {
+            "A": 6,
+            "Ap": 5,
+            "Am": 0,
+            "B": 1,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.8285714285714287,
+          "nLetterStudents": 14,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.8285714285714287,
+        "totalStudents": 14,
+        "gradeDistribution": {
+          "A": 6,
+          "Ap": 5,
+          "Am": 0,
+          "B": 1,
+          "Bp": 2,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2009
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 596",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "HACKER B R",
+          "counts": {
+            "A": 5,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 4,
+        "totalStudents": 5,
+        "gradeDistribution": {
+          "A": 5,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    },
+    {
+      "courseId": "GEOL 7",
+      "dept": "GEOL",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2010,
+          "instructor": "PORTER S M",
+          "counts": {
+            "A": 87,
+            "Ap": 2,
+            "Am": 78,
+            "B": 95,
+            "Bp": 77,
+            "Bm": 55,
+            "C": 88,
+            "Cp": 54,
+            "Cm": 0,
+            "D": 13,
+            "Dp": 13,
+            "Dm": 6,
+            "F": 19,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 2.83901192504259,
+          "nLetterStudents": 587,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 2.83901192504259,
+        "totalStudents": 587,
+        "gradeDistribution": {
+          "A": 87,
+          "Ap": 2,
+          "Am": 78,
+          "B": 95,
+          "Bp": 77,
+          "Bm": 55,
+          "C": 88,
+          "Cp": 54,
+          "Cm": 0,
+          "D": 13,
+          "Dp": 13,
+          "Dm": 6,
+          "F": 19,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2010
+        }
+      }
+    }
+  ]
+}

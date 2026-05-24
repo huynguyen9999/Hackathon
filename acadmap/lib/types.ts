@@ -135,6 +135,25 @@ export type CourseNodeMetadata = {
   course_level?: "graduate" | "undergraduate";
 };
 
+/** Entry-level compensation estimate (curated from Glassdoor research). */
+export type CareerSalaryProfile = {
+  salary_type: "w2" | "stipend_or_na";
+  currency: "USD";
+  experience_level: "entry";
+  geo: "US";
+  median?: number;
+  range_low?: number;
+  range_high?: number;
+  california_median?: number;
+  california_note?: string;
+  source_name: "Glassdoor";
+  source_url: string;
+  as_of: string;
+  glassdoor_search_title?: string;
+  /** Short label for stipend/NA outcomes (e.g. grad school). */
+  note?: string;
+};
+
 export type RoadmapNodeData = {
   nodeType: "course";
   label: string;
@@ -161,6 +180,7 @@ export type CareerNodeData = {
   units?: number;
   selfLearnable?: boolean;
   resources?: Resource[];
+  salary?: CareerSalaryProfile;
   scheduleStatus?: ScheduleStatus;
   analysisState?: NodeAnalysisState;
   analysisNote?: string;

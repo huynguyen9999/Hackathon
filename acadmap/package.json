@@ -20,6 +20,9 @@
     "sync:ucla-details": "node ./node_modules/tsx/dist/cli.mjs scripts/sync-ucla-details.ts",
     "validate:ucla-details": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ucla-details.ts",
     "check:community-setup": "node ./node_modules/tsx/dist/cli.mjs scripts/check-community-setup.ts",
+    "generate:career-salaries": "node ./node_modules/tsx/dist/cli.mjs scripts/generate-career-salary-catalog.ts",
+    "validate:career-salaries": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-career-salaries.ts",
+    "enrich:career-salaries": "node ./node_modules/tsx/dist/cli.mjs scripts/enrich-career-salaries.ts",
     "relayout:seeds": "node ./node_modules/tsx/dist/cli.mjs scripts/relayout-seed-positions.ts",
     "relayout:seeds:ls": "node ./node_modules/tsx/dist/cli.mjs scripts/relayout-seed-positions.ts --ls-only",
     "generate:ls-seeds": "node ./node_modules/tsx/dist/cli.mjs scripts/generate-ls-seeds.ts",
@@ -31,6 +34,9 @@
     "seed:ucsb-curriculum": "node ./node_modules/tsx/dist/cli.mjs scripts/seed-ucsb-curriculum-snapshots.ts",
     "fetch:ucsb-curriculum": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-ucsb-curriculum.ts",
     "validate:ucsb-curriculum": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ucsb-curriculum.ts",
+    "fetch:ucsb-grades": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-ucsb-grades-data.ts",
+    "build:ucsb-grades": "node ./node_modules/tsx/dist/cli.mjs scripts/build-ucsb-grades-snapshots.ts",
+    "validate:ucsb-grades": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ucsb-grades.ts",
     "test:planner": "node --import tsx --test tests/planner/*.test.ts"
   },
   "dependencies": {

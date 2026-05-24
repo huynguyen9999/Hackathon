@@ -63,12 +63,20 @@ export default async function UcsbCoursesPage({ searchParams }: PageProps) {
         title="UCSB course catalog"
         description="Browse undergraduate and graduate offerings by subject and quarter — faster filtering than the official ASPX page, with deep links from roadmaps."
         actions={
-          <Link
-            href="/schools/ucsb/graduate"
-            className="rounded-lg border border-violet-500/30 bg-violet-500/10 px-3 py-1.5 text-xs font-medium text-violet-800 transition hover:bg-violet-500/20 dark:text-violet-200"
-          >
-            Graduate programs →
-          </Link>
+          <div className="flex flex-wrap gap-2">
+            <Link
+              href="/schools/ucsb/grades"
+              className="rounded-lg border border-teal-500/30 bg-teal-500/10 px-3 py-1.5 text-xs font-medium text-teal-800 transition hover:bg-teal-500/20 dark:text-teal-200"
+            >
+              Browse grade distributions →
+            </Link>
+            <Link
+              href="/schools/ucsb/graduate"
+              className="rounded-lg border border-violet-500/30 bg-violet-500/10 px-3 py-1.5 text-xs font-medium text-violet-800 transition hover:bg-violet-500/20 dark:text-violet-200"
+            >
+              Graduate programs →
+            </Link>
+          </div>
         }
       />
 

@@ -13,6 +13,7 @@ import {
 import { loadUcsbCcsCatalog } from "@/lib/ucsb-ccs";
 import { loadUcsbLsCatalog } from "@/lib/ucsb-ls";
 import { getGradHubStats } from "@/lib/ucsb-grad-programs";
+import { getGradesMeta } from "@/lib/ucsb-grades";
 import {
   getSchoolConfig,
   listActiveSchools,
@@ -62,6 +63,8 @@ export default async function SchoolHubPage({ params }: PageProps) {
   const communityData = await loadCommunityHubData(school);
   const gradStats =
     school === "ucsb" ? await getGradHubStats() : null;
+  const gradesMeta =
+    school === "ucsb" ? await getGradesMeta() : null;
 
   const collegeStats = await Promise.all(
     config.colleges.map(async (college) => {
@@ -96,6 +99,30 @@ export default async function SchoolHubPage({ params }: PageProps) {
       />
 
       <SchoolHubCommunity schoolShortName={school} data={communityData} />
+
+      {gradesMeta && (
+        <section className="mt-14">
+          <Link
+            href="/schools/ucsb/grades"
+            className="card-glow group flex flex-col rounded-xl border-2 border-teal-500/30 bg-gradient-to-br from-teal-50/80 to-white p-8 transition hover:border-teal-500/50 dark:from-teal-950/25 dark:to-gaucho-blue-dark/40"
+          >
+            <p className="text-xs font-bold uppercase tracking-wider text-teal-700 dark:text-teal-200">
+              Student essentials · Daily Nexus data
+            </p>
+            <h2 className="mt-2 text-2xl font-bold text-gaucho-blue group-hover:text-teal-700 dark:text-white dark:group-hover:text-teal-200">
+              Grade distributions & GE explorer
+            </h2>
+            <p className="mt-3 max-w-2xl flex-1 text-sm text-slate-600 dark:text-slate-400">
+              {gradesMeta.courseCount.toLocaleString()} courses tracked from{" "}
+              {gradesMeta.quarterRange.from} through {gradesMeta.quarterRange.to}.
+              Search GPA history, browse GE areas, and compare leaderboards.
+            </p>
+            <p className="mt-4 text-sm font-medium text-teal-700 dark:text-teal-200">
+              Open grades hub →
+            </p>
+          </Link>
+        </section>
+      )}
 
       {gradStats && (
         <section className="mt-14">

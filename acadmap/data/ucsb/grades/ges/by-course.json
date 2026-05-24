@@ -1,0 +1,6505 @@
+{
+  "courses": {
+    "ANTH 109": [
+      "Area D"
+    ],
+    "ANTH 110": [
+      "Area D",
+      "World Cult"
+    ],
+    "ANTH 116A": [
+      "Writing"
+    ],
+    "ANTH 116B": [
+      "Writing"
+    ],
+    "ANTH 131": [
+      "Area D",
+      "World Cult",
+      "AHI"
+    ],
+    "ANTH 134": [
+      "Area D",
+      "World Cult"
+    ],
+    "ANTH 135": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "ANTH 137": [
+      "Area D",
+      "World Cult"
+    ],
+    "ANTH 138TS": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "ANTH 141": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "ANTH 142": [
+      "Area D",
+      "World Cult"
+    ],
+    "ANTH 143": [
+      "Writing"
+    ],
+    "ANTH 148A": [
+      "Ethnicity"
+    ],
+    "ANTH 156": [
+      "Area D",
+      "World Cult"
+    ],
+    "ANTH 169": [
+      "Writing"
+    ],
+    "ANTH 172": [
+      "Writing"
+    ],
+    "ANTH 176": [
+      "Area D",
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "ANTH 176TS": [
+      "Area E",
+      "World Cult"
+    ],
+    "ANTH 2": [
+      "Area D",
+      "World Cult"
+    ],
+    "ANTH 25": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "ANTH 3": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "ANTH 3SS": [
+      "Area D",
+      "World Cult"
+    ],
+    "ANTH 5": [
+      "Area C"
+    ],
+    "ANTH 7": [
+      "Area D"
+    ],
+    "ART 106W": [
+      "Area F"
+    ],
+    "ART 125": [
+      "Area F"
+    ],
+    "ART 179C": [
+      "Area G",
+      "Writing"
+    ],
+    "ART 1A": [
+      "Area F",
+      "Writing"
+    ],
+    "ART 7A": [
+      "Area F"
+    ],
+    "ARTHI 1": [
+      "Area F"
+    ],
+    "ARTHI 103A": [
+      "Area F"
+    ],
+    "ARTHI 103B": [
+      "Area F"
+    ],
+    "ARTHI 103C": [
+      "Area F"
+    ],
+    "ARTHI 105C": [
+      "Area F"
+    ],
+    "ARTHI 105E": [
+      "Area F"
+    ],
+    "ARTHI 105G": [
+      "Area F"
+    ],
+    "ARTHI 105L": [
+      "Area F"
+    ],
+    "ARTHI 107A 15C": [
+      "Area F"
+    ],
+    "ARTHI 107B 16C": [
+      "Area F"
+    ],
+    "ARTHI 109A": [
+      "Area F"
+    ],
+    "ARTHI 109B": [
+      "Area F"
+    ],
+    "ARTHI 109C": [
+      "Area F"
+    ],
+    "ARTHI 109D": [
+      "Area F"
+    ],
+    "ARTHI 109E": [
+      "Area F"
+    ],
+    "ARTHI 109F": [
+      "Area F"
+    ],
+    "ARTHI 109G": [
+      "Area F"
+    ],
+    "ARTHI 111B": [
+      "Area F"
+    ],
+    "ARTHI 111C": [
+      "Area F"
+    ],
+    "ARTHI 111E": [
+      "Area F"
+    ],
+    "ARTHI 111F": [
+      "Area F"
+    ],
+    "ARTHI 113A 17C": [
+      "Area F"
+    ],
+    "ARTHI 113B 17C": [
+      "Area F"
+    ],
+    "ARTHI 113F": [
+      "Area F"
+    ],
+    "ARTHI 115B 18C:": [
+      "Area F"
+    ],
+    "ARTHI 115D 18C": [
+      "Area F"
+    ],
+    "ARTHI 115E": [
+      "Area E"
+    ],
+    "ARTHI 117B 19C": [
+      "Area F"
+    ],
+    "ARTHI 117F": [
+      "Area F"
+    ],
+    "ARTHI 119B": [
+      "Area F"
+    ],
+    "ARTHI 119C 20C": [
+      "Area F"
+    ],
+    "ARTHI 119D": [
+      "Area F"
+    ],
+    "ARTHI 119E": [
+      "Area F"
+    ],
+    "ARTHI 119F": [
+      "Area F"
+    ],
+    "ARTHI 119G": [
+      "Area F"
+    ],
+    "ARTHI 121A": [
+      "Area F",
+      "AHI"
+    ],
+    "ARTHI 121B": [
+      "Area F",
+      "AHI"
+    ],
+    "ARTHI 121C": [
+      "Area F",
+      "AHI"
+    ],
+    "ARTHI 121D": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "ARTHI 121E": [
+      "Writing"
+    ],
+    "ARTHI 121E 3-D": [
+      "Area F",
+      "AHI"
+    ],
+    "ARTHI 123D": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 123E": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 127A": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 127B": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 130A": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 130B": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 130C": [
+      "Area F"
+    ],
+    "ARTHI 130D": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 132A": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 132I": [
+      "Area F"
+    ],
+    "ARTHI 134A": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 134B": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 134C": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 134D": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 134E": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 134F": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 134G": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 134H": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 136A 19TH": [
+      "Area F"
+    ],
+    "ARTHI 136B 20TH": [
+      "Area F"
+    ],
+    "ARTHI 136C": [
+      "Area F"
+    ],
+    "ARTHI 136D": [
+      "Area F"
+    ],
+    "ARTHI 136H": [
+      "Area F",
+      "AHI"
+    ],
+    "ARTHI 136I": [
+      "Area E",
+      "Area F"
+    ],
+    "ARTHI 136J": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 136K 20TH": [
+      "Area F",
+      "Euro Trad"
+    ],
+    "ARTHI 136L": [
+      "Area F",
+      "Euro Trad"
+    ],
+    "ARTHI 136M": [
+      "Area F"
+    ],
+    "ARTHI 136O": [
+      "Area F"
+    ],
+    "ARTHI 136R": [
+      "Area F"
+    ],
+    "ARTHI 136V": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 136W": [
+      "Area F"
+    ],
+    "ARTHI 136Y": [
+      "Area F"
+    ],
+    "ARTHI 138B": [
+      "Area F"
+    ],
+    "ARTHI 138C": [
+      "Area F"
+    ],
+    "ARTHI 140E": [
+      "Area F"
+    ],
+    "ARTHI 141D": [
+      "Area F"
+    ],
+    "ARTHI 141G": [
+      "Area F",
+      "Euro Trad"
+    ],
+    "ARTHI 144A": [
+      "Area F"
+    ],
+    "ARTHI 144C": [
+      "Area F"
+    ],
+    "ARTHI 144D": [
+      "Area E",
+      "Area F"
+    ],
+    "ARTHI 148A": [
+      "Area E",
+      "Area F"
+    ],
+    "ARTHI 148B": [
+      "Area E",
+      "Area F"
+    ],
+    "ARTHI 186B": [
+      "Writing"
+    ],
+    "ARTHI 186D": [
+      "Writing"
+    ],
+    "ARTHI 186E": [
+      "Writing"
+    ],
+    "ARTHI 186F": [
+      "Writing"
+    ],
+    "ARTHI 186G": [
+      "Writing"
+    ],
+    "ARTHI 186H": [
+      "Writing"
+    ],
+    "ARTHI 186J": [
+      "Writing"
+    ],
+    "ARTHI 186K": [
+      "Writing"
+    ],
+    "ARTHI 186N": [
+      "Writing"
+    ],
+    "ARTHI 186P": [
+      "Writing"
+    ],
+    "ARTHI 186Q": [
+      "Writing"
+    ],
+    "ARTHI 186R": [
+      "Writing"
+    ],
+    "ARTHI 186RS": [
+      "Writing"
+    ],
+    "ARTHI 186RW": [
+      "Writing"
+    ],
+    "ARTHI 186T": [
+      "Writing"
+    ],
+    "ARTHI 186V": [
+      "Writing"
+    ],
+    "ARTHI 186Y": [
+      "Writing"
+    ],
+    "ARTHI 187B": [
+      "Writing"
+    ],
+    "ARTHI 187H": [
+      "Writing"
+    ],
+    "ARTHI 187Z": [
+      "Writing"
+    ],
+    "ARTHI 5A": [
+      "Area F",
+      "Writing"
+    ],
+    "ARTHI 5B": [
+      "Area F"
+    ],
+    "ARTHI 6A": [
+      "Area E",
+      "Area F",
+      "Writing",
+      "Euro Trad"
+    ],
+    "ARTHI 6B": [
+      "Area E",
+      "Area F",
+      "Writing",
+      "Euro Trad"
+    ],
+    "ARTHI 6C": [
+      "Area E",
+      "Area F",
+      "Writing",
+      "Euro Trad"
+    ],
+    "ARTHI 6DL": [
+      "Area E",
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "ARTHI 6DS": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "ARTHI 6DW": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "ARTHI 6E": [
+      "Area F",
+      "World Cult"
+    ],
+    "ARTHI 6F": [
+      "Area F",
+      "Writing"
+    ],
+    "ARTHI 6G": [
+      "Area F",
+      "Writing"
+    ],
+    "ARTHI 6H": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "ARTHI 6J": [
+      "Area F"
+    ],
+    "ARTHI 6K": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "ARTHI 6L": [
+      "Area E",
+      "Area F",
+      "Writing"
+    ],
+    "ARTHI 6M": [
+      "Area E",
+      "Area F",
+      "Writing",
+      "Euro Trad"
+    ],
+    "ARTHIW 6R": [
+      "Area E",
+      "Area F",
+      "Writing",
+      "Euro Trad"
+    ],
+    "AS AM 1": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "AS AM 100AA": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 100BB": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "AS AM 100CC": [
+      "Ethnicity"
+    ],
+    "AS AM 100DD": [
+      "Ethnicity"
+    ],
+    "AS AM 100FF": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "AS AM 107": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 109": [
+      "Ethnicity"
+    ],
+    "AS AM 111": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "AS AM 113": [
+      "Ethnicity"
+    ],
+    "AS AM 118": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "AS AM 119": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 120": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "AS AM 121": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "AS AM 122": [
+      "Area G",
+      "Writing"
+    ],
+    "AS AM 124": [
+      "Ethnicity"
+    ],
+    "AS AM 125": [
+      "Ethnicity"
+    ],
+    "AS AM 127": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "AS AM 128": [
+      "Area G",
+      "Writing"
+    ],
+    "AS AM 130": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 131": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "AS AM 134": [
+      "Writing"
+    ],
+    "AS AM 136": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "AS AM 137": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "AS AM 138": [
+      "Area E",
+      "Ethnicity"
+    ],
+    "AS AM 140": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "AS AM 146": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "AS AM 148": [
+      "Ethnicity"
+    ],
+    "AS AM 149": [
+      "Ethnicity"
+    ],
+    "AS AM 154": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 155": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 156": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 157": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 160": [
+      "Ethnicity"
+    ],
+    "AS AM 161": [
+      "Area E",
+      "Writing",
+      "Ethnicity"
+    ],
+    "AS AM 162": [
+      "Ethnicity"
+    ],
+    "AS AM 165": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 170KK": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "AS AM 2": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "AS AM 3": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 4": [
+      "Area F",
+      "Writing",
+      "Ethnicity"
+    ],
+    "AS AM 5": [
+      "Area G",
+      "Ethnicity"
+    ],
+    "AS AM 7": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 71": [
+      "Area E",
+      "Ethnicity"
+    ],
+    "AS AM 79": [
+      "Area F",
+      "Writing"
+    ],
+    "AS AM 8": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AM 9": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "AS AMW 1": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ASTRO 1": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "ASTRO 2": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "ASTROW 1": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "BL ST 1": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "BL ST 100": [
+      "Area D"
+    ],
+    "BL ST 102": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 103": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "BL ST 104": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 108": [
+      "Ethnicity"
+    ],
+    "BL ST 122": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "BL ST 124": [
+      "Area D",
+      "Writing"
+    ],
+    "BL ST 125": [
+      "Area D",
+      "Writing"
+    ],
+    "BL ST 126": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 127": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 129": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 130A": [
+      "Area E",
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 130B": [
+      "Area E",
+      "Area G",
+      "World Cult"
+    ],
+    "BL ST 131": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 137E": [
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "BL ST 14": [
+      "Area F",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 142": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "BL ST 15": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "BL ST 153": [
+      "Area F",
+      "Writing"
+    ],
+    "BL ST 160": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 161": [
+      "Area F",
+      "World Cult"
+    ],
+    "BL ST 162": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 169BR": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "BL ST 169CR": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "BL ST 170": [
+      "Area F",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 171": [
+      "Area D",
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 172": [
+      "Area F",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 174": [
+      "Area D",
+      "Writing"
+    ],
+    "BL ST 175": [
+      "Area F",
+      "World Cult"
+    ],
+    "BL ST 1H": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "BL ST 3": [
+      "Area E",
+      "World Cult"
+    ],
+    "BL ST 33": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 38A": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 38B": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 4": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "BL ST 45": [
+      "Area F",
+      "Writing"
+    ],
+    "BL ST 49A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 49B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 49C": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 5": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "BL ST 50": [
+      "Area E",
+      "Writing",
+      "Ethnicity"
+    ],
+    "BL ST 6": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "BL ST 6H": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "BL ST 7": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "C LIT 100": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 101": [
+      "Area E"
+    ],
+    "C LIT 103": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 107": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 113": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 114": [
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "C LIT 115": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "C LIT 119": [
+      "Area D",
+      "Area E",
+      "Writing"
+    ],
+    "C LIT 122A": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 122B": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 126": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "C LIT 128A": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 130": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "C LIT 133": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "C LIT 134": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "C LIT 152": [
+      "Area E",
+      "Quant Relationships"
+    ],
+    "C LIT 153": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "C LIT 153B": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 154": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 154I": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 155": [
+      "Area E"
+    ],
+    "C LIT 161": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 170": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 171": [
+      "Area E",
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "C LIT 175A": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "C LIT 179A": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 179B": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 179C": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 181A": [
+      "Area E",
+      "Writing"
+    ],
+    "C LIT 181B": [
+      "Area E",
+      "Writing"
+    ],
+    "C LIT 183": [
+      "Area E",
+      "Area G"
+    ],
+    "C LIT 184A": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "C LIT 184C": [
+      "Area G",
+      "World Cult"
+    ],
+    "C LIT 185": [
+      "Area E",
+      "Writing"
+    ],
+    "C LIT 186AD": [
+      "Area G"
+    ],
+    "C LIT 186EE": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 186FF": [
+      "Area F"
+    ],
+    "C LIT 186FL": [
+      "Area D",
+      "Writing",
+      "Euro Trad"
+    ],
+    "C LIT 186G": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 186IR": [
+      "Area D",
+      "Writing"
+    ],
+    "C LIT 186RR": [
+      "Area E",
+      "Writing"
+    ],
+    "C LIT 187": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 188": [
+      "Area G"
+    ],
+    "C LIT 189": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 190A": [
+      "Area E",
+      "Writing"
+    ],
+    "C LIT 191": [
+      "Area G"
+    ],
+    "C LIT 27": [
+      "Area C",
+      "Area E"
+    ],
+    "C LIT 28": [
+      "Area E",
+      "Writing"
+    ],
+    "C LIT 29": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "C LIT 30A": [
+      "Area E",
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "C LIT 30B": [
+      "Area E",
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "C LIT 30C": [
+      "Area E",
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "C LIT 31": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "C LIT 32": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "C LIT 33": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "C LIT 34": [
+      "Area G",
+      "Writing"
+    ],
+    "C LIT 35": [
+      "Area E",
+      "Writing"
+    ],
+    "C LIT 36": [
+      "Writing",
+      "World Cult"
+    ],
+    "C LIT 43A": [
+      "Area E",
+      "Writing"
+    ],
+    "C LIT 50": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "C LIT 50A": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "C LIT 50B": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "C LIT 50C": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "C LIT 82": [
+      "Area E",
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "CH ST 113": [
+      "Area E",
+      "World Cult"
+    ],
+    "CH ST 114": [
+      "Area D"
+    ],
+    "CH ST 124G": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "CH ST 125B": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "CH ST 13": [
+      "Area E",
+      "World Cult"
+    ],
+    "CH ST 137": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "CH ST 138": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "CH ST 139": [
+      "Ethnicity"
+    ],
+    "CH ST 140": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "CH ST 144": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "CH ST 148": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "CH ST 151": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "CH ST 152": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "CH ST 168A": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "CH ST 168B": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "CH ST 168E": [
+      "Ethnicity"
+    ],
+    "CH ST 168F": [
+      "Ethnicity"
+    ],
+    "CH ST 171": [
+      "Ethnicity"
+    ],
+    "CH ST 172": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "CH ST 173": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "CH ST 174": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "CH ST 175": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "CH ST 176": [
+      "Area D"
+    ],
+    "CH ST 178A": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "CH ST 179": [
+      "Area D",
+      "Writing"
+    ],
+    "CH ST 180": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "CH ST 180H": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "CH ST 181": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "CH ST 184A": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "CH ST 187": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "CH ST 188C": [
+      "Area F",
+      "Ethnicity",
+      "AHI"
+    ],
+    "CH ST 189": [
+      "Ethnicity"
+    ],
+    "CH ST 1A": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "CH ST 1B": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "CH ST 1C": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "CH STW 1B": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "CHEM 1A": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "CHEM 1AL": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "CHEM 25": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "CHEM 2A": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "CHEM 2AC": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "CHEM 3A": [
+      "Area C"
+    ],
+    "CHIN 124A": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "CHIN 132A": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "CHIN 134D": [
+      "Area F",
+      "World Cult"
+    ],
+    "CHIN 148": [
+      "Area E",
+      "Area G",
+      "World Cult"
+    ],
+    "CHIN 170": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "CHIN 176": [
+      "Area F",
+      "World Cult"
+    ],
+    "CHIN 183B": [
+      "Area E",
+      "World Cult"
+    ],
+    "CHIN 185A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "CHIN 185B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "CHIN 3": [
+      "Area B"
+    ],
+    "CHIN 32": [
+      "Area E",
+      "World Cult"
+    ],
+    "CHIN 3NH": [
+      "Area B"
+    ],
+    "CHIN 4": [
+      "Area B"
+    ],
+    "CHIN 40": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "CHIN 48": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "CHIN 4NH": [
+      "Area B"
+    ],
+    "CHIN 5": [
+      "Area B"
+    ],
+    "CHIN 5NH": [
+      "Area B"
+    ],
+    "CHIN 6": [
+      "Area B"
+    ],
+    "CHIN 80": [
+      "Area G"
+    ],
+    "CHIN 82": [
+      "Area E",
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "CHIN W 80": [
+      "Area G"
+    ],
+    "CLASS 101": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "CLASS 102": [
+      "Area F",
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "CLASS 106": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "CLASS 109": [
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "CLASS 110": [
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "CLASS 130": [
+      "Area G",
+      "Euro Trad"
+    ],
+    "CLASS 140": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "CLASS 150": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "CLASS 151": [
+      "Area E"
+    ],
+    "CLASS 152": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "CLASS 165": [
+      "Area F",
+      "Euro Trad"
+    ],
+    "CLASS 170": [
+      "Area F",
+      "Euro Trad"
+    ],
+    "CLASS 171": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "CLASS 175": [
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "CLASS 20A": [
+      "Area G",
+      "Euro Trad"
+    ],
+    "CLASS 20B": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "CLASS 36": [
+      "Area G",
+      "Euro Trad"
+    ],
+    "CLASS 39": [
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "CLASS 40": [
+      "Area G",
+      "Euro Trad"
+    ],
+    "CLASS 50": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "CLASS 55": [
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "CLASS 60": [
+      "Euro Trad"
+    ],
+    "CMPSC 4": [
+      "Area C"
+    ],
+    "CMPSC 5A": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "CMPSC 5B": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "CMPSC 8": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "CMPSCW 8": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "CNCSP 101": [
+      "Writing"
+    ],
+    "COMM 1": [
+      "Area D",
+      "Writing"
+    ],
+    "COMM 130": [
+      "Writing"
+    ],
+    "COMM 137": [
+      "Writing"
+    ],
+    "COMM 153": [
+      "Writing"
+    ],
+    "COMM 87": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "COURSE &": [
+      "Area D"
+    ],
+    "DANCE 145B": [
+      "Area F",
+      "Writing"
+    ],
+    "DANCE 35": [
+      "Area F",
+      "World Cult"
+    ],
+    "DANCE 36": [
+      "Area F",
+      "Writing"
+    ],
+    "DANCE 45": [
+      "Area F"
+    ],
+    "DANCEW 36": [
+      "Area F",
+      "Writing"
+    ],
+    "EACS 103A": [
+      "Area D",
+      "World Cult"
+    ],
+    "EACS 103B": [
+      "Area D",
+      "World Cult"
+    ],
+    "EACS 103C": [
+      "Area D",
+      "World Cult"
+    ],
+    "EACS 128": [
+      "Area E",
+      "World Cult"
+    ],
+    "EACS 134A": [
+      "Area F",
+      "World Cult"
+    ],
+    "EACS 140": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "EACS 156A": [
+      "Area D",
+      "World Cult"
+    ],
+    "EACS 21": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "EACS 3": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "EACS 40": [
+      "Area D",
+      "World Cult"
+    ],
+    "EACS 4A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "EACS 4B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "EACS 5": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "EACS 7": [
+      "Area E",
+      "World Cult"
+    ],
+    "EACS 80": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "EARTH 1": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "EARTH 10": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "EARTH 104A": [
+      "Writing"
+    ],
+    "EARTH 104B": [
+      "Writing"
+    ],
+    "EARTH 11": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "EARTH 111": [
+      "Area C"
+    ],
+    "EARTH 117": [
+      "Writing"
+    ],
+    "EARTH 123": [
+      "Area C",
+      "Writing",
+      "Quant Relationships"
+    ],
+    "EARTH 130": [
+      "Area C",
+      "Writing",
+      "Quant Relationships"
+    ],
+    "EARTH 161": [
+      "Area C"
+    ],
+    "EARTH 2": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "EARTH 20": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "EARTH 30": [
+      "Area C"
+    ],
+    "EARTH 4": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "EARTH 6": [
+      "Area C",
+      "Writing"
+    ],
+    "EARTH 7": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "EARTH 8": [
+      "Area C"
+    ],
+    "EARTH 9": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "EARTHW 20": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "ECON 1": [
+      "Area D"
+    ],
+    "ECON 107A": [
+      "Writing"
+    ],
+    "ECON 117A": [
+      "Writing"
+    ],
+    "ECON 2": [
+      "Area D"
+    ],
+    "ECON 9": [
+      "Area D"
+    ],
+    "ED 20": [
+      "Writing"
+    ],
+    "EEMB 134": [
+      "Writing"
+    ],
+    "EEMB 135": [
+      "Writing"
+    ],
+    "EEMB 136": [
+      "Area C"
+    ],
+    "EEMB 138": [
+      "Writing"
+    ],
+    "EEMB 142BL": [
+      "Writing"
+    ],
+    "EEMB 142CL": [
+      "Writing"
+    ],
+    "EEMB 179": [
+      "Writing"
+    ],
+    "EEMB 21": [
+      "Area C"
+    ],
+    "EEMB 22": [
+      "Area C"
+    ],
+    "EEMB 23": [
+      "Area C"
+    ],
+    "EEMB 3": [
+      "Area C"
+    ],
+    "EEMB 40": [
+      "Area C"
+    ],
+    "EEMB 50": [
+      "Area C"
+    ],
+    "EEMB W 22": [
+      "Area C"
+    ],
+    "ENGL 101": [
+      "Area G"
+    ],
+    "ENGL 102BA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 103A": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 103B": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 103WT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 104A": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 104B": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 105A": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 105B": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 113LC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 113MI": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 113PS": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114AA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114AF": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114BW": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "ENGL 114EM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114FE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114GT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114I": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114MW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114PC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114RW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114TN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114WB": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114WC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 114WR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 115": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 116A": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 116B": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 119": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 119X": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 120": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 121": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122AA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122AP": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122BC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122BH": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122CC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122CD": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122CF": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122CL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122CM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122CR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122CS": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122CU": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122EA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122EC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122EE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122EN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122FC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122FE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122FR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122GW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122IL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122LE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122LJ": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122MD": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122ME": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122MM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122NE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122NR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122NW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122PW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122RC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122RE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122RH": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122RM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122RS": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122RT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122RW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122RX": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122SA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122SN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122SR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122SW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122UE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122UK": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122UM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 122WE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 124": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 126B": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128AA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128AF": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128AN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128AU": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128CM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128CO": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128CP": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128ED": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128EN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128FT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128GN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128ML": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128MM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128NA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128NE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128PH": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128PM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128PT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128RM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128RT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128SA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128SC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128SN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128SS": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128T": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128TR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 128ZZ": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 131AR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 131AW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 131BR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 131GT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 131HF": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 131IS": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 131NS": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 131SI": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 131ZZ": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 133BB": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 133CL": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 133GC": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 133GP": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 133MV": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 133PL": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 133SA": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 133SO": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 133TL": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 134AA": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134AD": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134AL": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134BB": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134BL": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134CA": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "ENGL 134CI": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134CR": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134FC": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134IA": [
+      "Writing"
+    ],
+    "ENGL 134IA 20C": [
+      "Area G",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134IB": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134IR": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134LC": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134LI": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134LL": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 134MD": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134MP": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134NA": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134NM": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134PC": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134RJ": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134RR": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134RS": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134TC": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134TR": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 134XX": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 136": [
+      "Area G"
+    ],
+    "ENGL 137A": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 137B": [
+      "Area G",
+      "Writing",
+      "AHI"
+    ],
+    "ENGL 141MC": [
+      "Area E",
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "ENGL 15": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 150": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 152A": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 156": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 157": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 15SH": [
+      "Area F",
+      "Area G"
+    ],
+    "ENGL 162": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165AA": [
+      "Area G"
+    ],
+    "ENGL 165AAERATUR": [
+      "Writing"
+    ],
+    "ENGL 165AC": [
+      "Area G"
+    ],
+    "ENGL 165ACERATUR": [
+      "Writing"
+    ],
+    "ENGL 165AD": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165AE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165AM": [
+      "Area G"
+    ],
+    "ENGL 165AMERATUR": [
+      "Writing"
+    ],
+    "ENGL 165AN": [
+      "Area G"
+    ],
+    "ENGL 165ANERATUR": [
+      "Writing"
+    ],
+    "ENGL 165AR": [
+      "Area G"
+    ],
+    "ENGL 165ARERATUR": [
+      "Writing"
+    ],
+    "ENGL 165AS": [
+      "Area G"
+    ],
+    "ENGL 165ASERATUR": [
+      "Writing"
+    ],
+    "ENGL 165AT": [
+      "Area G"
+    ],
+    "ENGL 165ATERATUR": [
+      "Writing"
+    ],
+    "ENGL 165BA": [
+      "Area G"
+    ],
+    "ENGL 165BAERATUR": [
+      "Writing"
+    ],
+    "ENGL 165BB": [
+      "Area G"
+    ],
+    "ENGL 165BBERATUR": [
+      "Writing"
+    ],
+    "ENGL 165BW": [
+      "Area G"
+    ],
+    "ENGL 165BWERATUR": [
+      "Writing"
+    ],
+    "ENGL 165CB": [
+      "Area G"
+    ],
+    "ENGL 165CBERATUR": [
+      "Writing"
+    ],
+    "ENGL 165CC": [
+      "Area G"
+    ],
+    "ENGL 165CCERATUR": [
+      "Writing"
+    ],
+    "ENGL 165CD": [
+      "Area G"
+    ],
+    "ENGL 165CDERATUR": [
+      "Writing"
+    ],
+    "ENGL 165CI": [
+      "Area G"
+    ],
+    "ENGL 165CIERATUR": [
+      "Writing"
+    ],
+    "ENGL 165CL": [
+      "Area G"
+    ],
+    "ENGL 165CLERATUR": [
+      "Writing"
+    ],
+    "ENGL 165CP": [
+      "Area G"
+    ],
+    "ENGL 165CPERATUR": [
+      "Writing"
+    ],
+    "ENGL 165CT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165CY": [
+      "Area G"
+    ],
+    "ENGL 165CYERATUR": [
+      "Writing"
+    ],
+    "ENGL 165DD": [
+      "Area G"
+    ],
+    "ENGL 165DDERATUR": [
+      "Writing"
+    ],
+    "ENGL 165DL": [
+      "Area G"
+    ],
+    "ENGL 165DLERATUR": [
+      "Writing"
+    ],
+    "ENGL 165DP": [
+      "Area G"
+    ],
+    "ENGL 165DPERATUR": [
+      "Writing"
+    ],
+    "ENGL 165EB": [
+      "Area G"
+    ],
+    "ENGL 165EBERATUR": [
+      "Writing"
+    ],
+    "ENGL 165EE": [
+      "Area G"
+    ],
+    "ENGL 165EEERATUR": [
+      "Writing"
+    ],
+    "ENGL 165EF": [
+      "Area G"
+    ],
+    "ENGL 165EFERATUR": [
+      "Writing"
+    ],
+    "ENGL 165EM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165EN": [
+      "Area G"
+    ],
+    "ENGL 165ENERATUR": [
+      "Writing"
+    ],
+    "ENGL 165EW": [
+      "Area G"
+    ],
+    "ENGL 165EWERATUR": [
+      "Writing"
+    ],
+    "ENGL 165FF": [
+      "Area G"
+    ],
+    "ENGL 165FFERATUR": [
+      "Writing"
+    ],
+    "ENGL 165FL": [
+      "Area G"
+    ],
+    "ENGL 165FLERATUR": [
+      "Writing"
+    ],
+    "ENGL 165FS": [
+      "Area G"
+    ],
+    "ENGL 165FSERATUR": [
+      "Writing"
+    ],
+    "ENGL 165GL": [
+      "Area G"
+    ],
+    "ENGL 165GLERATUR": [
+      "Writing"
+    ],
+    "ENGL 165GN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165GS": [
+      "Area G"
+    ],
+    "ENGL 165GSERATUR": [
+      "Writing"
+    ],
+    "ENGL 165HE": [
+      "Area G"
+    ],
+    "ENGL 165HEERATUR": [
+      "Writing"
+    ],
+    "ENGL 165HN": [
+      "Area G"
+    ],
+    "ENGL 165HNERATUR": [
+      "Writing"
+    ],
+    "ENGL 165HR": [
+      "Area G"
+    ],
+    "ENGL 165HRERATUR": [
+      "Writing"
+    ],
+    "ENGL 165HS": [
+      "Area G"
+    ],
+    "ENGL 165HSERATUR": [
+      "Writing"
+    ],
+    "ENGL 165IB": [
+      "Area G"
+    ],
+    "ENGL 165IBERATUR": [
+      "Writing"
+    ],
+    "ENGL 165IF": [
+      "Area G"
+    ],
+    "ENGL 165IFERATUR": [
+      "Writing"
+    ],
+    "ENGL 165JT": [
+      "Area G"
+    ],
+    "ENGL 165JTERATUR": [
+      "Writing"
+    ],
+    "ENGL 165JW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165LA": [
+      "Area G"
+    ],
+    "ENGL 165LAERATUR": [
+      "Writing"
+    ],
+    "ENGL 165LB": [
+      "Area G"
+    ],
+    "ENGL 165LBERATUR": [
+      "Writing"
+    ],
+    "ENGL 165LE": [
+      "Area G"
+    ],
+    "ENGL 165LEERATUR": [
+      "Writing"
+    ],
+    "ENGL 165LF": [
+      "Area G"
+    ],
+    "ENGL 165LFERATUR": [
+      "Writing"
+    ],
+    "ENGL 165LG": [
+      "Area G"
+    ],
+    "ENGL 165LGERATUR": [
+      "Writing"
+    ],
+    "ENGL 165LP": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165LR": [
+      "Area G"
+    ],
+    "ENGL 165LRERATUR": [
+      "Writing"
+    ],
+    "ENGL 165LV": [
+      "Area G"
+    ],
+    "ENGL 165LVERATUR": [
+      "Writing"
+    ],
+    "ENGL 165LW": [
+      "Area G"
+    ],
+    "ENGL 165LWERATUR": [
+      "Writing"
+    ],
+    "ENGL 165LY": [
+      "Area G"
+    ],
+    "ENGL 165LYERATUR": [
+      "Writing"
+    ],
+    "ENGL 165MA": [
+      "Area G"
+    ],
+    "ENGL 165MAERATUR": [
+      "Writing"
+    ],
+    "ENGL 165MC": [
+      "Area G"
+    ],
+    "ENGL 165MCERATUR": [
+      "Writing"
+    ],
+    "ENGL 165MI": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165ML": [
+      "Area G"
+    ],
+    "ENGL 165MLERATUR": [
+      "Writing"
+    ],
+    "ENGL 165MM": [
+      "Area G"
+    ],
+    "ENGL 165MMERATUR": [
+      "Writing"
+    ],
+    "ENGL 165MP": [
+      "Area G"
+    ],
+    "ENGL 165MPERATUR": [
+      "Writing"
+    ],
+    "ENGL 165MT": [
+      "Area G"
+    ],
+    "ENGL 165MTERATUR": [
+      "Writing"
+    ],
+    "ENGL 165NA": [
+      "Area G"
+    ],
+    "ENGL 165NAERATUR": [
+      "Writing"
+    ],
+    "ENGL 165NC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165NG": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165NT": [
+      "Area G"
+    ],
+    "ENGL 165NTERATUR": [
+      "Writing"
+    ],
+    "ENGL 165NV": [
+      "Area G"
+    ],
+    "ENGL 165NVERATUR": [
+      "Writing"
+    ],
+    "ENGL 165PC": [
+      "Area G"
+    ],
+    "ENGL 165PCERATUR": [
+      "Writing"
+    ],
+    "ENGL 165PH": [
+      "Area G"
+    ],
+    "ENGL 165PHERATUR": [
+      "Writing"
+    ],
+    "ENGL 165PL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165PM": [
+      "Area G"
+    ],
+    "ENGL 165PMERATUR": [
+      "Writing"
+    ],
+    "ENGL 165PP": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165PR": [
+      "Area G"
+    ],
+    "ENGL 165PRERATUR": [
+      "Writing"
+    ],
+    "ENGL 165RC": [
+      "Area G"
+    ],
+    "ENGL 165RCERATUR": [
+      "Writing"
+    ],
+    "ENGL 165RD": [
+      "Area G"
+    ],
+    "ENGL 165RDERATUR": [
+      "Writing"
+    ],
+    "ENGL 165RL": [
+      "Area G"
+    ],
+    "ENGL 165RLERATUR": [
+      "Writing"
+    ],
+    "ENGL 165RP": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165RR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 165RS": [
+      "Area G"
+    ],
+    "ENGL 165RSERATUR": [
+      "Writing"
+    ],
+    "ENGL 165ST": [
+      "Area G"
+    ],
+    "ENGL 165STERATUR": [
+      "Writing"
+    ],
+    "ENGL 165TL": [
+      "Area G"
+    ],
+    "ENGL 165TLERATUR": [
+      "Writing"
+    ],
+    "ENGL 165TP": [
+      "Area G"
+    ],
+    "ENGL 165TPERATUR": [
+      "Writing"
+    ],
+    "ENGL 165TR": [
+      "Area G"
+    ],
+    "ENGL 165TRERATUR": [
+      "Writing"
+    ],
+    "ENGL 165VP": [
+      "Area G"
+    ],
+    "ENGL 165VPERATUR": [
+      "Writing"
+    ],
+    "ENGL 165WD": [
+      "Area G"
+    ],
+    "ENGL 165WDERATUR": [
+      "Writing"
+    ],
+    "ENGL 165WH": [
+      "Area G"
+    ],
+    "ENGL 165WHERATUR": [
+      "Writing"
+    ],
+    "ENGL 165WN": [
+      "Area G"
+    ],
+    "ENGL 165WNERATUR": [
+      "Writing"
+    ],
+    "ENGL 165WT": [
+      "Area G"
+    ],
+    "ENGL 165WTERATUR": [
+      "Writing"
+    ],
+    "ENGL 165XX": [
+      "Area G"
+    ],
+    "ENGL 165XXERATUR": [
+      "Writing"
+    ],
+    "ENGL 170BL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170CD": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170CM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170IC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170IM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170LM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170MB": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170MT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170NV": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170SB": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 170TL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 171LE": [
+      "Area E",
+      "Writing"
+    ],
+    "ENGL 171NH": [
+      "Area E",
+      "Writing"
+    ],
+    "ENGL 172": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 179": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 18": [
+      "Writing"
+    ],
+    "ENGL 180": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 181AL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 181LV": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 181MT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 184": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 185": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187AA": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "ENGL 187AG": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187BA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187BB": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187BP": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187EL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187FM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187IL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187LJ": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187LL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187ML": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187MT": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187SM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187TD": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187TM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187US": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187VW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 187WW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 189": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 190AL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 190CA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 190GL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 190SA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 190WL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 191": [
+      "Area G",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "ENGL 192CR": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 192DF": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 192EF": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 192FE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 192SC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 192SF": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 192SS": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 192WW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 193": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 22": [
+      "Area E",
+      "Area G",
+      "Euro Trad"
+    ],
+    "ENGL 23": [
+      "Area E",
+      "Area G"
+    ],
+    "ENGL 24": [
+      "Area E",
+      "Area G",
+      "World Cult"
+    ],
+    "ENGL 25": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 34NA": [
+      "Area E",
+      "Area G"
+    ],
+    "ENGL 36": [
+      "Writing",
+      "World Cult"
+    ],
+    "ENGL 37": [
+      "Area E"
+    ],
+    "ENGL 38A": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "ENGL 38B": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "ENGL 39": [
+      "Area E",
+      "Area G",
+      "Ethnicity"
+    ],
+    "ENGL 50": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "ENGL 65AA": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65AC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65AN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65BB": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65BP": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65EM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65FM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65GL": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65HS": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65IC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65IW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65LC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65LE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65LP": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65LV": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65MM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65PM": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65PW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65SN": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65SS": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65TW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENGL 65WW": [
+      "Area G",
+      "Writing"
+    ],
+    "ENV S 1": [
+      "Area D",
+      "Writing"
+    ],
+    "ENV S 110": [
+      "Writing"
+    ],
+    "ENV S 115": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "ENV S 122CC": [
+      "Area G",
+      "Writing"
+    ],
+    "ENV S 122LE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENV S 122NE": [
+      "Area G",
+      "Writing"
+    ],
+    "ENV S 130A": [
+      "Area D",
+      "World Cult"
+    ],
+    "ENV S 130B": [
+      "Area D",
+      "World Cult"
+    ],
+    "ENV S 132": [
+      "Area D"
+    ],
+    "ENV S 136O": [
+      "Area F"
+    ],
+    "ENV S 143": [
+      "Writing"
+    ],
+    "ENV S 146": [
+      "Writing"
+    ],
+    "ENV S 160": [
+      "Area G",
+      "Writing"
+    ],
+    "ENV S 161": [
+      "Writing"
+    ],
+    "ENV S 173": [
+      "AHI"
+    ],
+    "ENV S 189": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "ENV S 2": [
+      "Area C",
+      "Writing"
+    ],
+    "ENV S 3": [
+      "Area E",
+      "Writing"
+    ],
+    "FAMST 101A": [
+      "Writing"
+    ],
+    "FAMST 101B": [
+      "Writing"
+    ],
+    "FAMST 101C": [
+      "Writing"
+    ],
+    "FAMST 120": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "FAMST 121": [
+      "Area F",
+      "World Cult"
+    ],
+    "FAMST 122AA": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122AC": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122AD": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122AE": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122AG": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122AR": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122AU": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122AZ": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122CA": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122CN": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122CU": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122EA": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122EC": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122EU": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122FF": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122FI": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122FL": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122FR": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122HE": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122HK": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122HU": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122IC": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122IM": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122IN": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122IT": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122JA": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122KO": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122MC": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122ME": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122NA": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122NG": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122NI": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122PC": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122RA": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122TH": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122TN": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 122WN": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 123": [
+      "Writing"
+    ],
+    "FAMST 124": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 124V": [
+      "Area F",
+      "World Cult"
+    ],
+    "FAMST 126": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 127": [
+      "Area F",
+      "Writing",
+      "Ethnicity"
+    ],
+    "FAMST 127M": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 134": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 144": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 163": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 169": [
+      "Area F"
+    ],
+    "FAMST 175": [
+      "Area F"
+    ],
+    "FAMST 46": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 55BE": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 55CY": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 55DD": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 55QM": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 56FR": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 56MR": [
+      "Area F",
+      "Writing"
+    ],
+    "FAMST 56ZM": [
+      "Area F",
+      "Writing"
+    ],
+    "FEMST 117C": [
+      "Area D",
+      "Writing"
+    ],
+    "FEMST 142": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "FEMST 150": [
+      "Writing"
+    ],
+    "FEMST 150H": [
+      "Writing"
+    ],
+    "FEMST 153": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "FEMST 154A": [
+      "Writing"
+    ],
+    "FEMST 159B": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "FEMST 159C": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "FEMST 162": [
+      "Writing"
+    ],
+    "FEMST 171CN": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "FEMST 20": [
+      "Area D",
+      "Writing"
+    ],
+    "FEMST 20H": [
+      "Area D",
+      "Writing"
+    ],
+    "FEMST 30": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "FEMST 30H": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "FEMST 40": [
+      "Area G",
+      "Writing"
+    ],
+    "FEMST 40H": [
+      "Area G",
+      "Writing"
+    ],
+    "FEMST 50": [
+      "Area D",
+      "Writing"
+    ],
+    "FEMST 50H": [
+      "Area D",
+      "Writing"
+    ],
+    "FEMST 60": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "FEMST 60H": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "FEMST 80": [
+      "Writing"
+    ],
+    "FEMST 80H": [
+      "Writing"
+    ],
+    "FEMSTW 150": [
+      "Writing"
+    ],
+    "FEMSTW 20": [
+      "Area D",
+      "Writing"
+    ],
+    "FR 101A": [
+      "Area G"
+    ],
+    "FR 101B": [
+      "Area G"
+    ],
+    "FR 101C": [
+      "Area G"
+    ],
+    "FR 111": [
+      "Area D"
+    ],
+    "FR 147A": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 147B": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 148C": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 148E": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 149C": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "FR 149D": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 149E": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 151G": [
+      "Area D",
+      "World Cult"
+    ],
+    "FR 153A": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 153B": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 153C": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 153D": [
+      "Area G"
+    ],
+    "FR 153F": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 154A": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 154D": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 154E": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 154F": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "FR 154G": [
+      "Area E",
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "FR 154I": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "FR 154J": [
+      "Area G"
+    ],
+    "FR 154L": [
+      "Area D",
+      "World Cult"
+    ],
+    "FR 155A": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 155B": [
+      "Area G"
+    ],
+    "FR 155C": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 155D": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "FR 156A": [
+      "Area F",
+      "Writing"
+    ],
+    "FR 156C": [
+      "Area F",
+      "Area G",
+      "Writing"
+    ],
+    "FR 156D": [
+      "Area F",
+      "Writing"
+    ],
+    "FR 189": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 3": [
+      "Area B"
+    ],
+    "FR 34": [
+      "Area G",
+      "Writing"
+    ],
+    "FR 4": [
+      "Area B"
+    ],
+    "FR 40X": [
+      "Area C",
+      "Area E"
+    ],
+    "FR 5": [
+      "Area B"
+    ],
+    "FR 50AX": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "FR 50BX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "FR 50CX": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "FR 6": [
+      "Area B"
+    ],
+    "FR 6GS": [
+      "Area B"
+    ],
+    "GEOG 108": [
+      "Area D"
+    ],
+    "GEOG 12": [
+      "Area C"
+    ],
+    "GEOG 140": [
+      "Writing"
+    ],
+    "GEOG 148": [
+      "Writing"
+    ],
+    "GEOG 150": [
+      "Area D"
+    ],
+    "GEOG 2": [
+      "Area D",
+      "World Cult"
+    ],
+    "GEOG 20": [
+      "Area D"
+    ],
+    "GEOG 3": [
+      "Area C"
+    ],
+    "GEOG 4": [
+      "Area C"
+    ],
+    "GEOG 5": [
+      "Area D"
+    ],
+    "GEOG 6": [
+      "Area D"
+    ],
+    "GEOG 8": [
+      "Area C",
+      "Writing",
+      "Quant Relationships"
+    ],
+    "GEOG W 12": [
+      "Area C"
+    ],
+    "GEOG W 8": [
+      "Area C",
+      "Writing",
+      "Quant Relationships"
+    ],
+    "GER 109AA": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "GER 109MA": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "GER 111": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "GER 112": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "GER 115A": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 115B": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 115C": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 116A": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "GER 143": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 151C": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 152": [
+      "Area E",
+      "Quant Relationships"
+    ],
+    "GER 155": [
+      "Area E"
+    ],
+    "GER 164E": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 164F": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 164G": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 164H": [
+      "Area E",
+      "Writing"
+    ],
+    "GER 177A": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "GER 179A": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "GER 179B": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 179C": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 183": [
+      "Area F",
+      "Writing"
+    ],
+    "GER 185": [
+      "Area E",
+      "Writing"
+    ],
+    "GER 187": [
+      "Area G",
+      "Writing"
+    ],
+    "GER 3": [
+      "Area B"
+    ],
+    "GER 35": [
+      "Area E",
+      "Writing"
+    ],
+    "GER 4": [
+      "Area B"
+    ],
+    "GER 43A": [
+      "Area E",
+      "Writing"
+    ],
+    "GER 43C": [
+      "Area E",
+      "Writing"
+    ],
+    "GER 5": [
+      "Area B"
+    ],
+    "GER 55A": [
+      "Area F",
+      "Writing"
+    ],
+    "GER 6": [
+      "Area B"
+    ],
+    "GER 95B": [
+      "Area B"
+    ],
+    "GER 95C": [
+      "Area B"
+    ],
+    "GLOBL 1": [
+      "Area E",
+      "World Cult"
+    ],
+    "GLOBL 180A": [
+      "Writing"
+    ],
+    "GLOBL 2": [
+      "Area D"
+    ],
+    "GLOBL 60C": [
+      "Area B"
+    ],
+    "GLOBL 60D": [
+      "Area B"
+    ],
+    "GLOBL 60E": [
+      "Area B"
+    ],
+    "GLOBL 60F": [
+      "Area B"
+    ],
+    "GREEK 100": [
+      "Area G",
+      "Euro Trad"
+    ],
+    "GREEK 101": [
+      "Area G",
+      "Euro Trad"
+    ],
+    "GREEK 3": [
+      "Area B"
+    ],
+    "HEB 114A": [
+      "Area G",
+      "Writing"
+    ],
+    "HEB 114B": [
+      "Area G",
+      "Writing"
+    ],
+    "HEB 114C": [
+      "Area G",
+      "Writing"
+    ],
+    "HEB 3": [
+      "Area B"
+    ],
+    "HEB 4": [
+      "Area B"
+    ],
+    "HEB 5": [
+      "Area B"
+    ],
+    "HEB 6": [
+      "Area B"
+    ],
+    "HIST 104G": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 105A": [
+      "Area D",
+      "AHI"
+    ],
+    "HIST 106A": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 106B": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 106C": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 107C": [
+      "Area E"
+    ],
+    "HIST 114B": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 114C": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 117A": [
+      "Area D",
+      "Writing"
+    ],
+    "HIST 117C": [
+      "Area D",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 11A": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 121A": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 123A": [
+      "Writing"
+    ],
+    "HIST 123B": [
+      "Writing"
+    ],
+    "HIST 123C": [
+      "Writing"
+    ],
+    "HIST 133B 20TH": [
+      "Area E"
+    ],
+    "HIST 133C 20TH": [
+      "Area E"
+    ],
+    "HIST 133D": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "HIST 140A": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 140B": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 142AL": [
+      "AHI"
+    ],
+    "HIST 142S": [
+      "AHI"
+    ],
+    "HIST 144B": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "HIST 144C": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "HIST 144J": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "HIST 144W": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "HIST 146": [
+      "World Cult"
+    ],
+    "HIST 146T": [
+      "World Cult"
+    ],
+    "HIST 146W": [
+      "World Cult"
+    ],
+    "HIST 155A": [
+      "Writing"
+    ],
+    "HIST 156A": [
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 156B": [
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 157A": [
+      "Writing"
+    ],
+    "HIST 157B": [
+      "Writing"
+    ],
+    "HIST 159B": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 159C": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 160A": [
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 160B": [
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 161A": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 161B": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 164C": [
+      "Area E",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 164IA": [
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 164IB": [
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 165": [
+      "AHI"
+    ],
+    "HIST 166A": [
+      "AHI"
+    ],
+    "HIST 166B": [
+      "AHI"
+    ],
+    "HIST 166C": [
+      "AHI"
+    ],
+    "HIST 166D": [
+      "AHI"
+    ],
+    "HIST 166LB": [
+      "AHI"
+    ],
+    "HIST 167CA": [
+      "Area D",
+      "Writing"
+    ],
+    "HIST 167CB": [
+      "Area D",
+      "Writing"
+    ],
+    "HIST 168A": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 168B": [
+      "Area D",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 168C": [
+      "AHI"
+    ],
+    "HIST 168D": [
+      "AHI"
+    ],
+    "HIST 168E": [
+      "Ethnicity"
+    ],
+    "HIST 168M": [
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 168N": [
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 169M": [
+      "AHI"
+    ],
+    "HIST 171C": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 171D": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 172A": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 172B": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 173T": [
+      "AHI"
+    ],
+    "HIST 175A": [
+      "Area D",
+      "AHI"
+    ],
+    "HIST 175B": [
+      "Area D",
+      "AHI"
+    ],
+    "HIST 176A": [
+      "AHI"
+    ],
+    "HIST 176B": [
+      "AHI"
+    ],
+    "HIST 177": [
+      "AHI"
+    ],
+    "HIST 178A": [
+      "AHI"
+    ],
+    "HIST 178B": [
+      "AHI"
+    ],
+    "HIST 179A": [
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 179B": [
+      "Ethnicity",
+      "AHI"
+    ],
+    "HIST 17A": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 17AH": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 17B": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 17BH": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 17C": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 17CH": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST 182A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 182B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 184A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 184B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 185A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 185B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 187A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 187B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 187C": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 188S": [
+      "Area D",
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 189E": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 20": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 22": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 25": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 28": [
+      "Area E"
+    ],
+    "HIST 2A": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 2AH": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 2B": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 2BH": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 2C": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 2CH": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 46A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 46B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 49A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 49B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 49C": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 4A": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 4AH": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 4B": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 4BH": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 4C": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 4CH": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST 5": [
+      "Area D",
+      "Writing"
+    ],
+    "HIST 56": [
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 7": [
+      "Area D",
+      "Writing"
+    ],
+    "HIST 74": [
+      "Area D",
+      "Area E",
+      "Writing"
+    ],
+    "HIST 8": [
+      "Area E",
+      "Writing"
+    ],
+    "HIST 80": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 87": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST 88": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "HIST W 121A": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "HIST W 17B": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "HIST W 80": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "INT 133C": [
+      "Area D",
+      "Area E"
+    ],
+    "INT 137EV": [
+      "Writing"
+    ],
+    "INT 137MK": [
+      "Writing"
+    ],
+    "INT 137RP": [
+      "Writing"
+    ],
+    "INT 137RS": [
+      "Writing"
+    ],
+    "INT 137RV": [
+      "Writing"
+    ],
+    "INT 137TH": [
+      "Writing"
+    ],
+    "INT 35HD": [
+      "Area C",
+      "Area E",
+      "Writing"
+    ],
+    "INT 35LT": [
+      "Area G",
+      "Euro Trad"
+    ],
+    "INT 36BH": [
+      "Writing"
+    ],
+    "INT 36CC": [
+      "Writing"
+    ],
+    "INT 36DL": [
+      "Writing"
+    ],
+    "INT 36GS": [
+      "Writing"
+    ],
+    "INT 36IA": [
+      "Writing"
+    ],
+    "INT 36KX": [
+      "Writing"
+    ],
+    "INT 36LH": [
+      "Writing"
+    ],
+    "INT 36MM": [
+      "Writing"
+    ],
+    "INT 36TS": [
+      "Writing"
+    ],
+    "INT 37UD": [
+      "Area E",
+      "Writing"
+    ],
+    "ITAL 101": [
+      "Area G"
+    ],
+    "ITAL 102": [
+      "Area G"
+    ],
+    "ITAL 111": [
+      "Area G"
+    ],
+    "ITAL 114X": [
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "ITAL 120X": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 124X": [
+      "Area F"
+    ],
+    "ITAL 126A": [
+      "Area G"
+    ],
+    "ITAL 126AA": [
+      "Area G"
+    ],
+    "ITAL 126BB": [
+      "Area G"
+    ],
+    "ITAL 126DD": [
+      "Area G"
+    ],
+    "ITAL 126EE": [
+      "Area G"
+    ],
+    "ITAL 138A": [
+      "Area E",
+      "Area G",
+      "Writing"
+    ],
+    "ITAL 138AA": [
+      "Area E"
+    ],
+    "ITAL 138D": [
+      "Area E"
+    ],
+    "ITAL 138F": [
+      "Area E"
+    ],
+    "ITAL 138N": [
+      "Area E"
+    ],
+    "ITAL 138T": [
+      "Area E"
+    ],
+    "ITAL 139CX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 139DX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 139EX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 139FX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 139GX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 139HX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 139IX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 139TX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 139YX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 139ZX": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 142X": [
+      "Area G",
+      "Writing"
+    ],
+    "ITAL 161X": [
+      "Area D",
+      "Writing"
+    ],
+    "ITAL 179X": [
+      "Area F",
+      "Area G"
+    ],
+    "ITAL 180X": [
+      "Area F"
+    ],
+    "ITAL 189X": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "ITAL 20X": [
+      "Area E"
+    ],
+    "ITAL 3": [
+      "Area B"
+    ],
+    "ITAL 4": [
+      "Area B"
+    ],
+    "ITAL 5": [
+      "Area B"
+    ],
+    "ITAL 6": [
+      "Area B"
+    ],
+    "JAPAN 112": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "JAPAN 115 20TH": [
+      "Area G",
+      "World Cult"
+    ],
+    "JAPAN 149": [
+      "Area F",
+      "World Cult"
+    ],
+    "JAPAN 159": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "JAPAN 162": [
+      "Area D",
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "JAPAN 164": [
+      "Area E",
+      "World Cult"
+    ],
+    "JAPAN 165": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "JAPAN 167A": [
+      "Writing"
+    ],
+    "JAPAN 17": [
+      "World Cult"
+    ],
+    "JAPAN 25": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "JAPAN 3": [
+      "Area B"
+    ],
+    "JAPAN 4": [
+      "Area B"
+    ],
+    "JAPAN 5": [
+      "Area B"
+    ],
+    "JAPAN 6": [
+      "Area B"
+    ],
+    "JAPAN 63": [
+      "Area D",
+      "World Cult"
+    ],
+    "JAPAN 80": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "JAPANW 5": [
+      "Area B"
+    ],
+    "JAPANW 6": [
+      "Area B"
+    ],
+    "KOR 113": [
+      "Area G",
+      "World Cult"
+    ],
+    "KOR 182A": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "KOR 182B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "KOR 3": [
+      "Area B"
+    ],
+    "KOR 4": [
+      "Area B"
+    ],
+    "KOR 5": [
+      "Area B"
+    ],
+    "KOR 6": [
+      "Area B"
+    ],
+    "LAIS 10": [
+      "Writing",
+      "World Cult"
+    ],
+    "LAIS 100": [
+      "Writing",
+      "World Cult"
+    ],
+    "LAIS 100S": [
+      "Writing",
+      "World Cult"
+    ],
+    "LAIS 101": [
+      "Area E",
+      "Writing"
+    ],
+    "LAIS 101S": [
+      "Area E",
+      "Writing"
+    ],
+    "LAIS 102": [
+      "Area G",
+      "Writing"
+    ],
+    "LAIS 102S": [
+      "Area G",
+      "Writing"
+    ],
+    "LAIS 156A": [
+      "Writing",
+      "World Cult"
+    ],
+    "LAIS 174": [
+      "Area G"
+    ],
+    "LATIN 100": [
+      "Area G",
+      "Euro Trad"
+    ],
+    "LATIN 101": [
+      "Area G",
+      "Euro Trad"
+    ],
+    "LATIN 3": [
+      "Area B"
+    ],
+    "LING 106": [
+      "Area C"
+    ],
+    "LING 113": [
+      "Writing"
+    ],
+    "LING 130": [
+      "Area D"
+    ],
+    "LING 131": [
+      "Writing"
+    ],
+    "LING 132": [
+      "Area D",
+      "Writing"
+    ],
+    "LING 136": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "LING 137": [
+      "Writing"
+    ],
+    "LING 138": [
+      "Writing"
+    ],
+    "LING 15": [
+      "Area C",
+      "Area E"
+    ],
+    "LING 170": [
+      "Area D",
+      "Writing"
+    ],
+    "LING 180": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "LING 185": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "LING 187": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "LING 20": [
+      "Area D"
+    ],
+    "LING 30": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "LING 36": [
+      "Area D",
+      "Area E",
+      "Ethnicity"
+    ],
+    "LING 50": [
+      "Area E"
+    ],
+    "LING 70": [
+      "Area D",
+      "Writing"
+    ],
+    "LING 80": [
+      "Area E",
+      "World Cult"
+    ],
+    "MATH 2A": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "MATH 2B": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "MATH 34A": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "MATH 34B": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "MATH 3A": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "MATH 3B": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "MATRL 10": [
+      "Area C",
+      "Writing"
+    ],
+    "MCDB 149": [
+      "Writing"
+    ],
+    "MCDB 1A": [
+      "Area C"
+    ],
+    "MCDB 20": [
+      "Area C"
+    ],
+    "MCDB 21": [
+      "Area C"
+    ],
+    "MCDB 23": [
+      "Area C"
+    ],
+    "MCDB 24": [
+      "Area C"
+    ],
+    "MCDB 26": [
+      "Area C"
+    ],
+    "MCDB 28": [
+      "Area C"
+    ],
+    "MCDB 29": [
+      "Area C"
+    ],
+    "MES 45": [
+      "Area E",
+      "World Cult"
+    ],
+    "MS 27": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "MUS 10A": [
+      "Writing",
+      "Euro Trad"
+    ],
+    "MUS 10B": [
+      "Writing",
+      "Euro Trad"
+    ],
+    "MUS 10C": [
+      "Writing",
+      "Euro Trad"
+    ],
+    "MUS 11": [
+      "Area F"
+    ],
+    "MUS 113A": [
+      "Area F",
+      "Writing"
+    ],
+    "MUS 114": [
+      "Area F",
+      "Writing"
+    ],
+    "MUS 115": [
+      "Area F",
+      "Writing"
+    ],
+    "MUS 116": [
+      "Area F",
+      "Writing"
+    ],
+    "MUS 118A": [
+      "Area F",
+      "Writing"
+    ],
+    "MUS 119A": [
+      "Area F",
+      "Writing"
+    ],
+    "MUS 119B": [
+      "Area F"
+    ],
+    "MUS 15": [
+      "Area F",
+      "Writing"
+    ],
+    "MUS 16": [
+      "Area F",
+      "Writing"
+    ],
+    "MUS 17": [
+      "Area F"
+    ],
+    "MUS 175E": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "MUS 175F": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "MUS 175G": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "MUS 175I": [
+      "Area D",
+      "World Cult"
+    ],
+    "MUS 187": [
+      "Area G",
+      "Writing"
+    ],
+    "MUS 3A": [
+      "Writing"
+    ],
+    "MUS 3B": [
+      "Area F",
+      "Writing"
+    ],
+    "PHIL 1": [
+      "Area E",
+      "Writing"
+    ],
+    "PHIL 100A": [
+      "Area E",
+      "Writing"
+    ],
+    "PHIL 100B": [
+      "Area E",
+      "Writing"
+    ],
+    "PHIL 100C": [
+      "Area E",
+      "Writing"
+    ],
+    "PHIL 100D": [
+      "Area E",
+      "Writing"
+    ],
+    "PHIL 100E": [
+      "Area E",
+      "Writing"
+    ],
+    "PHIL 100F": [
+      "Area E",
+      "Writing"
+    ],
+    "PHIL 112": [
+      "Area E",
+      "Writing"
+    ],
+    "PHIL 183": [
+      "Area C"
+    ],
+    "PHIL 20A": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "PHIL 20B": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "PHIL 20C": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "PHIL 3": [
+      "Area E"
+    ],
+    "PHIL 4": [
+      "Area E",
+      "Writing"
+    ],
+    "PHIL 7": [
+      "Writing"
+    ],
+    "PHYS 1": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PHYS 10": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PHYS 128AL": [
+      "Writing"
+    ],
+    "PHYS 128BL": [
+      "Writing"
+    ],
+    "PHYS 2": [
+      "Quant Relationships"
+    ],
+    "PHYS 21": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PHYS 3": [
+      "Quant Relationships"
+    ],
+    "PHYS 3L": [
+      "Quant Relationships"
+    ],
+    "PHYS 4": [
+      "Quant Relationships"
+    ],
+    "PHYS 4L": [
+      "Quant Relationships"
+    ],
+    "PHYS 5": [
+      "Quant Relationships"
+    ],
+    "PHYS 5L": [
+      "Quant Relationships"
+    ],
+    "PHYS 6A": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PHYS 6AL": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PHYS 6B": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PHYS 6BL": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PHYS 6C": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PHYS 6CL": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "POL S 1": [
+      "Writing"
+    ],
+    "POL S 114": [
+      "Writing"
+    ],
+    "POL S 12": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "POL S 121": [
+      "Area D",
+      "Writing"
+    ],
+    "POL S 127": [
+      "Writing",
+      "AHI"
+    ],
+    "POL S 145": [
+      "Area D",
+      "Writing"
+    ],
+    "POL S 150A": [
+      "Area D"
+    ],
+    "POL S 151": [
+      "Area D",
+      "AHI"
+    ],
+    "POL S 152": [
+      "AHI"
+    ],
+    "POL S 153": [
+      "AHI"
+    ],
+    "POL S 155": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "POL S 157": [
+      "AHI"
+    ],
+    "POL S 160": [
+      "Ethnicity"
+    ],
+    "POL S 161": [
+      "Ethnicity"
+    ],
+    "POL S 162": [
+      "AHI"
+    ],
+    "POL S 165": [
+      "AHI"
+    ],
+    "POL S 180": [
+      "AHI"
+    ],
+    "POL S 185": [
+      "AHI"
+    ],
+    "POL S 7": [
+      "Writing"
+    ],
+    "POL SW 121": [
+      "Area D",
+      "Writing"
+    ],
+    "PORT 105": [
+      "Area G"
+    ],
+    "PORT 115A": [
+      "Area G"
+    ],
+    "PORT 115AA": [
+      "Area G"
+    ],
+    "PORT 115B": [
+      "Area G"
+    ],
+    "PORT 115BB": [
+      "Area G"
+    ],
+    "PORT 115ED": [
+      "Area G"
+    ],
+    "PORT 115EE": [
+      "Area G"
+    ],
+    "PORT 115EO": [
+      "Area G"
+    ],
+    "PORT 116": [
+      "Area G"
+    ],
+    "PORT 125A": [
+      "Area E",
+      "Writing"
+    ],
+    "PORT 125B": [
+      "Area E",
+      "Writing"
+    ],
+    "PORT 16B": [
+      "Area B"
+    ],
+    "PORT 3": [
+      "Area B"
+    ],
+    "PORT 31": [
+      "Area G"
+    ],
+    "PORT 4": [
+      "Area B"
+    ],
+    "PORT 5": [
+      "Area B"
+    ],
+    "PORT 6": [
+      "Area B"
+    ],
+    "PSTAT 5A": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PSTAT 5LS": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "PSY 1": [
+      "Area D"
+    ],
+    "PSY 102": [
+      "Area D"
+    ],
+    "PSY 105": [
+      "Area D"
+    ],
+    "PSY 106": [
+      "Area C"
+    ],
+    "PSY 108": [
+      "Area C"
+    ],
+    "PSY 10A": [
+      "Writing"
+    ],
+    "PSY 111L": [
+      "Writing"
+    ],
+    "PSY 117L": [
+      "Writing"
+    ],
+    "PSY 118L": [
+      "Writing"
+    ],
+    "PSY 120L": [
+      "Writing"
+    ],
+    "PSY 129": [
+      "Area C"
+    ],
+    "PSY 129L": [
+      "Writing"
+    ],
+    "PSY 138L": [
+      "Writing"
+    ],
+    "PSY 150L": [
+      "Writing"
+    ],
+    "PSY 155L": [
+      "Writing"
+    ],
+    "PSY 159": [
+      "Area D"
+    ],
+    "PSY 183": [
+      "Area D"
+    ],
+    "PSY 90A": [
+      "Writing"
+    ],
+    "PSY 90B": [
+      "Writing"
+    ],
+    "PSY 90C": [
+      "Writing"
+    ],
+    "PSY W 1": [
+      "Area D"
+    ],
+    "RG ST 1": [
+      "Area E",
+      "Writing"
+    ],
+    "RG ST 101": [
+      "Area E"
+    ],
+    "RG ST 106": [
+      "Writing"
+    ],
+    "RG ST 10C": [
+      "Area B"
+    ],
+    "RG ST 10D": [
+      "Area B"
+    ],
+    "RG ST 10E": [
+      "Area B"
+    ],
+    "RG ST 10F": [
+      "Area B"
+    ],
+    "RG ST 110D": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "RG ST 114X": [
+      "Area G",
+      "Writing"
+    ],
+    "RG ST 115A": [
+      "Area D"
+    ],
+    "RG ST 115G": [
+      "Area E",
+      "Area G",
+      "World Cult"
+    ],
+    "RG ST 116A": [
+      "Area E",
+      "Writing"
+    ],
+    "RG ST 119F": [
+      "Area E"
+    ],
+    "RG ST 11C": [
+      "Area B"
+    ],
+    "RG ST 11D": [
+      "Area B"
+    ],
+    "RG ST 11E": [
+      "Area B"
+    ],
+    "RG ST 11F": [
+      "Area B"
+    ],
+    "RG ST 12": [
+      "Area E"
+    ],
+    "RG ST 123": [
+      "Area E",
+      "Writing",
+      "Ethnicity"
+    ],
+    "RG ST 124G": [
+      "Area D",
+      "Ethnicity"
+    ],
+    "RG ST 126": [
+      "Area E",
+      "Writing"
+    ],
+    "RG ST 127B": [
+      "Writing"
+    ],
+    "RG ST 128": [
+      "Area E",
+      "World Cult"
+    ],
+    "RG ST 129": [
+      "Area G",
+      "World Cult"
+    ],
+    "RG ST 13": [
+      "Area F"
+    ],
+    "RG ST 130": [
+      "Area E",
+      "Writing"
+    ],
+    "RG ST 131F": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "RG ST 131H": [
+      "Area D",
+      "World Cult"
+    ],
+    "RG ST 131J": [
+      "Writing"
+    ],
+    "RG ST 133B": [
+      "Area F",
+      "Ethnicity"
+    ],
+    "RG ST 133C": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 133D": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "RG ST 133E": [
+      "Area G",
+      "World Cult"
+    ],
+    "RG ST 138B": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 14": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "RG ST 140A": [
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 140B": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 140C": [
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 140D": [
+      "World Cult"
+    ],
+    "RG ST 140E": [
+      "Ethnicity"
+    ],
+    "RG ST 140F": [
+      "World Cult"
+    ],
+    "RG ST 141": [
+      "Area E",
+      "Writing"
+    ],
+    "RG ST 141A": [
+      "Area D",
+      "Writing"
+    ],
+    "RG ST 144": [
+      "Area E"
+    ],
+    "RG ST 145": [
+      "Writing"
+    ],
+    "RG ST 147": [
+      "Area D",
+      "Writing"
+    ],
+    "RG ST 149H": [
+      "Area E"
+    ],
+    "RG ST 149R": [
+      "World Cult"
+    ],
+    "RG ST 151A": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "RG ST 151B": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "RG ST 152": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "RG ST 156A": [
+      "Area D",
+      "World Cult"
+    ],
+    "RG ST 157A": [
+      "Area B"
+    ],
+    "RG ST 157B": [
+      "Area B",
+      "Writing"
+    ],
+    "RG ST 157C": [
+      "Area B"
+    ],
+    "RG ST 157CP": [
+      "Area G",
+      "World Cult"
+    ],
+    "RG ST 157G": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 157I": [
+      "Area E",
+      "Ethnicity"
+    ],
+    "RG ST 157PP": [
+      "Area G",
+      "World Cult"
+    ],
+    "RG ST 158E": [
+      "Area B",
+      "Writing"
+    ],
+    "RG ST 158F": [
+      "Writing"
+    ],
+    "RG ST 159C": [
+      "Area B"
+    ],
+    "RG ST 160A": [
+      "World Cult"
+    ],
+    "RG ST 162A": [
+      "World Cult"
+    ],
+    "RG ST 162J": [
+      "World Cult"
+    ],
+    "RG ST 167A": [
+      "Writing"
+    ],
+    "RG ST 169": [
+      "World Cult"
+    ],
+    "RG ST 179B": [
+      "Area G",
+      "Writing"
+    ],
+    "RG ST 17C": [
+      "Area B"
+    ],
+    "RG ST 18": [
+      "Area E"
+    ],
+    "RG ST 183B": [
+      "Area E",
+      "World Cult"
+    ],
+    "RG ST 185": [
+      "Area E",
+      "World Cult"
+    ],
+    "RG ST 19": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 193": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "RG ST 20": [
+      "Area E",
+      "World Cult"
+    ],
+    "RG ST 21": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 25": [
+      "Area E",
+      "Euro Trad"
+    ],
+    "RG ST 28": [
+      "Area E"
+    ],
+    "RG ST 3": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 30": [
+      "Area E",
+      "Writing"
+    ],
+    "RG ST 30C": [
+      "Area B"
+    ],
+    "RG ST 30D": [
+      "Area B"
+    ],
+    "RG ST 30E": [
+      "Area B"
+    ],
+    "RG ST 30F": [
+      "Area B"
+    ],
+    "RG ST 31": [
+      "Area E",
+      "World Cult"
+    ],
+    "RG ST 32": [
+      "Area E",
+      "World Cult"
+    ],
+    "RG ST 35": [
+      "Area D",
+      "Writing"
+    ],
+    "RG ST 37": [
+      "Area E"
+    ],
+    "RG ST 4": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 48": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 5": [
+      "Area E",
+      "Writing"
+    ],
+    "RG ST 57C": [
+      "Area B"
+    ],
+    "RG ST 57D": [
+      "Area B"
+    ],
+    "RG ST 57E": [
+      "Area B"
+    ],
+    "RG ST 57F": [
+      "Area B"
+    ],
+    "RG ST 58C": [
+      "Area B"
+    ],
+    "RG ST 58D": [
+      "Area B"
+    ],
+    "RG ST 6": [
+      "Area E",
+      "World Cult"
+    ],
+    "RG ST 60C": [
+      "Area B"
+    ],
+    "RG ST 60D": [
+      "Area B"
+    ],
+    "RG ST 60E": [
+      "Area B"
+    ],
+    "RG ST 60F": [
+      "Area B"
+    ],
+    "RG ST 61": [
+      "Area E",
+      "Ethnicity"
+    ],
+    "RG ST 62": [
+      "Area E",
+      "Ethnicity"
+    ],
+    "RG ST 65C": [
+      "Area B"
+    ],
+    "RG ST 65D": [
+      "Area B"
+    ],
+    "RG ST 65E": [
+      "Area B"
+    ],
+    "RG ST 65F": [
+      "Area B"
+    ],
+    "RG ST 7": [
+      "Area D",
+      "Writing",
+      "AHI"
+    ],
+    "RG ST 71": [
+      "Area E",
+      "Ethnicity"
+    ],
+    "RG ST 80A": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "RG ST 80B": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "RG ST 80C": [
+      "Area E",
+      "Writing",
+      "Euro Trad"
+    ],
+    "RG ST 82": [
+      "Area E",
+      "Writing",
+      "World Cult"
+    ],
+    "RG ST 84": [
+      "Writing",
+      "World Cult"
+    ],
+    "RUSS 3": [
+      "Area B"
+    ],
+    "RUSS 4": [
+      "Area B"
+    ],
+    "RUSS 5": [
+      "Area B"
+    ],
+    "RUSS 6": [
+      "Area B"
+    ],
+    "SHS 121": [
+      "Area C",
+      "Quant Relationships"
+    ],
+    "SHS 50": [
+      "Writing"
+    ],
+    "SLAV 117F": [
+      "Area G"
+    ],
+    "SLAV 117G": [
+      "Area G",
+      "Writing"
+    ],
+    "SLAV 117H": [
+      "Area G",
+      "Writing"
+    ],
+    "SLAV 123A 19TH": [
+      "Area G"
+    ],
+    "SLAV 123B 19TH": [
+      "Area G"
+    ],
+    "SLAV 123C 20TH-C": [
+      "Area G"
+    ],
+    "SLAV 123D 20TH-C": [
+      "Area G"
+    ],
+    "SLAV 130A": [
+      "Area F"
+    ],
+    "SLAV 130B": [
+      "Area F"
+    ],
+    "SLAV 130C": [
+      "Area F"
+    ],
+    "SLAV 130D": [
+      "Area E",
+      "Area F"
+    ],
+    "SLAV 130E": [
+      "Area F"
+    ],
+    "SLAV 151C": [
+      "Area G",
+      "Writing"
+    ],
+    "SLAV 152A": [
+      "Area D",
+      "Writing"
+    ],
+    "SLAV 152B": [
+      "Area D",
+      "Writing"
+    ],
+    "SLAV 152C": [
+      "Area D",
+      "Writing"
+    ],
+    "SLAV 164B": [
+      "Area G",
+      "Writing"
+    ],
+    "SLAV 164C": [
+      "Area G",
+      "Writing"
+    ],
+    "SLAV 175A": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "SLAV 181A": [
+      "Area E",
+      "Writing"
+    ],
+    "SLAV 181B": [
+      "Area E",
+      "Writing"
+    ],
+    "SLAV 187": [
+      "Area G",
+      "Writing"
+    ],
+    "SLAV 33": [
+      "Area E"
+    ],
+    "SLAV 35": [
+      "Area G",
+      "Writing",
+      "Euro Trad"
+    ],
+    "SOC 1": [
+      "Area D"
+    ],
+    "SOC 128": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "SOC 130LA": [
+      "Writing"
+    ],
+    "SOC 130ME": [
+      "Writing",
+      "World Cult"
+    ],
+    "SOC 131": [
+      "Area D"
+    ],
+    "SOC 134": [
+      "Area D",
+      "Writing"
+    ],
+    "SOC 134RC": [
+      "Writing"
+    ],
+    "SOC 139A": [
+      "Ethnicity"
+    ],
+    "SOC 144": [
+      "Area D",
+      "Writing",
+      "Ethnicity",
+      "AHI"
+    ],
+    "SOC 152A": [
+      "Area D"
+    ],
+    "SOC 153": [
+      "Area D",
+      "Writing",
+      "Ethnicity"
+    ],
+    "SOC 154A": [
+      "Writing"
+    ],
+    "SOC 154F": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "SOC 155M": [
+      "Writing",
+      "Ethnicity"
+    ],
+    "SOC 155W": [
+      "Ethnicity"
+    ],
+    "SOC 156A": [
+      "Writing"
+    ],
+    "SOC 170": [
+      "Writing"
+    ],
+    "SOC 176A": [
+      "Writing"
+    ],
+    "SPAN 106": [
+      "Writing",
+      "World Cult"
+    ],
+    "SPAN 107": [
+      "Area E",
+      "Writing"
+    ],
+    "SPAN 108": [
+      "Area G",
+      "Writing"
+    ],
+    "SPAN 109": [
+      "Ethnicity"
+    ],
+    "SPAN 120A": [
+      "Area G",
+      "Writing"
+    ],
+    "SPAN 120B": [
+      "Area G",
+      "Writing"
+    ],
+    "SPAN 124": [
+      "Area D"
+    ],
+    "SPAN 124E": [
+      "Area D"
+    ],
+    "SPAN 126": [
+      "Area F"
+    ],
+    "SPAN 126E": [
+      "Area F"
+    ],
+    "SPAN 131": [
+      "Area G"
+    ],
+    "SPAN 135": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "SPAN 137A": [
+      "Area G"
+    ],
+    "SPAN 137B": [
+      "Area G"
+    ],
+    "SPAN 138": [
+      "Area G"
+    ],
+    "SPAN 139": [
+      "Area G",
+      "Ethnicity"
+    ],
+    "SPAN 140A": [
+      "Area G"
+    ],
+    "SPAN 140B": [
+      "Area G"
+    ],
+    "SPAN 142": [
+      "Area G",
+      "Writing"
+    ],
+    "SPAN 148B": [
+      "Area F"
+    ],
+    "SPAN 153": [
+      "Area E"
+    ],
+    "SPAN 153E": [
+      "Area E"
+    ],
+    "SPAN 166": [
+      "Area G"
+    ],
+    "SPAN 166E": [
+      "Area G"
+    ],
+    "SPAN 16A": [
+      "Area B",
+      "Writing",
+      "Ethnicity"
+    ],
+    "SPAN 16B": [
+      "Area B",
+      "Writing",
+      "Ethnicity"
+    ],
+    "SPAN 174": [
+      "Area G"
+    ],
+    "SPAN 177": [
+      "Area E",
+      "World Cult"
+    ],
+    "SPAN 178": [
+      "Area D",
+      "Writing",
+      "World Cult"
+    ],
+    "SPAN 179": [
+      "Area G",
+      "Writing",
+      "Ethnicity"
+    ],
+    "SPAN 181": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "SPAN 181E": [
+      "Area G",
+      "Writing",
+      "World Cult"
+    ],
+    "SPAN 25": [
+      "Writing"
+    ],
+    "SPAN 3": [
+      "Area B"
+    ],
+    "SPAN 30": [
+      "Area G"
+    ],
+    "SPAN 31": [
+      "Area G"
+    ],
+    "SPAN 3HY": [
+      "Area B"
+    ],
+    "SPAN 4": [
+      "Area B"
+    ],
+    "SPAN 5": [
+      "Area B"
+    ],
+    "SPAN 6": [
+      "Area B"
+    ],
+    "SPAN W 3": [
+      "Area B"
+    ],
+    "THTR 1": [
+      "Writing"
+    ],
+    "THTR 143": [
+      "Area F"
+    ],
+    "THTR 180A": [
+      "Area F",
+      "Writing",
+      "AHI"
+    ],
+    "THTR 180B": [
+      "Area F",
+      "Writing",
+      "AHI"
+    ],
+    "THTR 180C": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 180E": [
+      "Area F",
+      "Writing",
+      "Ethnicity"
+    ],
+    "THTR 180F": [
+      "Ethnicity"
+    ],
+    "THTR 180G": [
+      "Area F",
+      "Writing",
+      "Ethnicity"
+    ],
+    "THTR 181S": [
+      "Area F"
+    ],
+    "THTR 182A": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 182M": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 182MC": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 182N": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 182RM": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 184AA": [
+      "Area F",
+      "Writing",
+      "Ethnicity"
+    ],
+    "THTR 184CA": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "THTR 185TH": [
+      "Writing"
+    ],
+    "THTR 188S": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 2A": [
+      "Area F",
+      "World Cult"
+    ],
+    "THTR 2B": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "THTR 2C": [
+      "Area F",
+      "Writing",
+      "Euro Trad"
+    ],
+    "THTR 3": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 5": [
+      "Area F"
+    ],
+    "THTR 7": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 8": [
+      "Area F",
+      "Writing",
+      "Euro Trad"
+    ],
+    "THTR 9": [
+      "Area F",
+      "Writing"
+    ],
+    "THTR 91": [
+      "Writing"
+    ],
+    "THTR W 2B": [
+      "Area F",
+      "Writing",
+      "World Cult"
+    ],
+    "WRIT 18": [
+      "Writing"
+    ],
+    "WRIT 24": [
+      "Writing"
+    ]
+  }
+}

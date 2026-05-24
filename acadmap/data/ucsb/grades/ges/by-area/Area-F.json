@@ -1,0 +1,1029 @@
+{
+  "area": "Area F",
+  "courses": [
+    {
+      "courseId": "ART 106W",
+      "avgGpa": 3.03625
+    },
+    {
+      "courseId": "ART 125",
+      "avgGpa": 3.478199052132702
+    },
+    {
+      "courseId": "ART 1A",
+      "avgGpa": 3.1234137178530985
+    },
+    {
+      "courseId": "ART 7A",
+      "avgGpa": 3.4707788161993767
+    },
+    {
+      "courseId": "ARTHI 1",
+      "avgGpa": 2.875395610005105
+    },
+    {
+      "courseId": "ARTHI 103A",
+      "avgGpa": 2.559183673469388
+    },
+    {
+      "courseId": "ARTHI 103B",
+      "avgGpa": 2.8757425742574263
+    },
+    {
+      "courseId": "ARTHI 103C",
+      "avgGpa": 2.520987654320988
+    },
+    {
+      "courseId": "ARTHI 105C",
+      "avgGpa": 2.6932367149758454
+    },
+    {
+      "courseId": "ARTHI 105E",
+      "avgGpa": 2.5469387755102035
+    },
+    {
+      "courseId": "ARTHI 105G",
+      "avgGpa": 2.8499999999999996
+    },
+    {
+      "courseId": "ARTHI 105L",
+      "avgGpa": 3.3693877551020406
+    },
+    {
+      "courseId": "ARTHI 107A 15C",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 107B 16C",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 109A",
+      "avgGpa": 3.4311926605504586
+    },
+    {
+      "courseId": "ARTHI 109B",
+      "avgGpa": 3.468156424581006
+    },
+    {
+      "courseId": "ARTHI 109C",
+      "avgGpa": 3.5254999999999996
+    },
+    {
+      "courseId": "ARTHI 109D",
+      "avgGpa": 3.366666666666667
+    },
+    {
+      "courseId": "ARTHI 109E",
+      "avgGpa": 3.4242718446601947
+    },
+    {
+      "courseId": "ARTHI 109F",
+      "avgGpa": 3.0707937852110603
+    },
+    {
+      "courseId": "ARTHI 109G",
+      "avgGpa": 3.354507337526205
+    },
+    {
+      "courseId": "ARTHI 111B",
+      "avgGpa": 3.2390588235294118
+    },
+    {
+      "courseId": "ARTHI 111C",
+      "avgGpa": 3.2529209621993123
+    },
+    {
+      "courseId": "ARTHI 111E",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 111F",
+      "avgGpa": 3.3458333333333337
+    },
+    {
+      "courseId": "ARTHI 113A 17C",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 113B 17C",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 113F",
+      "avgGpa": 3.194140625
+    },
+    {
+      "courseId": "ARTHI 115B 18C:",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 115D 18C",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 117B 19C",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 117F",
+      "avgGpa": 3.4419148936170214
+    },
+    {
+      "courseId": "ARTHI 119B",
+      "avgGpa": 3.387898089171975
+    },
+    {
+      "courseId": "ARTHI 119C 20C",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 119D",
+      "avgGpa": 3.3565217391304354
+    },
+    {
+      "courseId": "ARTHI 119E",
+      "avgGpa": 3.2008438818565406
+    },
+    {
+      "courseId": "ARTHI 119F",
+      "avgGpa": 3.1237410071942446
+    },
+    {
+      "courseId": "ARTHI 119G",
+      "avgGpa": 3.125339366515837
+    },
+    {
+      "courseId": "ARTHI 121A",
+      "avgGpa": 3.460408163265306
+    },
+    {
+      "courseId": "ARTHI 121B",
+      "avgGpa": 3.468959435626102
+    },
+    {
+      "courseId": "ARTHI 121C",
+      "avgGpa": 3.343678160919541
+    },
+    {
+      "courseId": "ARTHI 121D",
+      "avgGpa": 3.566666666666667
+    },
+    {
+      "courseId": "ARTHI 121E 3-D",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 123D",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 123E",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 127A",
+      "avgGpa": 3.2629032258064514
+    },
+    {
+      "courseId": "ARTHI 127B",
+      "avgGpa": 3.2044776119402982
+    },
+    {
+      "courseId": "ARTHI 130A",
+      "avgGpa": 2.8725925925925933
+    },
+    {
+      "courseId": "ARTHI 130B",
+      "avgGpa": 2.9474747474747476
+    },
+    {
+      "courseId": "ARTHI 130C",
+      "avgGpa": 3.2199999999999998
+    },
+    {
+      "courseId": "ARTHI 130D",
+      "avgGpa": 3.332193732193732
+    },
+    {
+      "courseId": "ARTHI 132A",
+      "avgGpa": 2.8176000000000005
+    },
+    {
+      "courseId": "ARTHI 132I",
+      "avgGpa": 2.262790697674419
+    },
+    {
+      "courseId": "ARTHI 134A",
+      "avgGpa": 3.4173076923076926
+    },
+    {
+      "courseId": "ARTHI 134B",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 134C",
+      "avgGpa": 3.3185534591194976
+    },
+    {
+      "courseId": "ARTHI 134D",
+      "avgGpa": 3.2469230769230766
+    },
+    {
+      "courseId": "ARTHI 134E",
+      "avgGpa": 3.312885154061624
+    },
+    {
+      "courseId": "ARTHI 134F",
+      "avgGpa": 3.015384615384615
+    },
+    {
+      "courseId": "ARTHI 134G",
+      "avgGpa": 3.50125
+    },
+    {
+      "courseId": "ARTHI 134H",
+      "avgGpa": 3.5805000000000002
+    },
+    {
+      "courseId": "ARTHI 136A 19TH",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 136B 20TH",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 136C",
+      "avgGpa": 3.173958333333333
+    },
+    {
+      "courseId": "ARTHI 136D",
+      "avgGpa": 3.037168141592921
+    },
+    {
+      "courseId": "ARTHI 136H",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 136I",
+      "avgGpa": 3.1599164926931116
+    },
+    {
+      "courseId": "ARTHI 136J",
+      "avgGpa": 2.9385135135135134
+    },
+    {
+      "courseId": "ARTHI 136K 20TH",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 136L",
+      "avgGpa": 2.966666666666667
+    },
+    {
+      "courseId": "ARTHI 136M",
+      "avgGpa": 2.9918478260869565
+    },
+    {
+      "courseId": "ARTHI 136O",
+      "avgGpa": 3.65015015015015
+    },
+    {
+      "courseId": "ARTHI 136R",
+      "avgGpa": 3.3160000000000007
+    },
+    {
+      "courseId": "ARTHI 136V",
+      "avgGpa": 2.722727272727273
+    },
+    {
+      "courseId": "ARTHI 136W",
+      "avgGpa": 3.4024193548387096
+    },
+    {
+      "courseId": "ARTHI 136Y",
+      "avgGpa": 3.5109340958605673
+    },
+    {
+      "courseId": "ARTHI 138B",
+      "avgGpa": 3.5791666666666666
+    },
+    {
+      "courseId": "ARTHI 138C",
+      "avgGpa": 3.466666666666667
+    },
+    {
+      "courseId": "ARTHI 140E",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 141D",
+      "avgGpa": 2.930543933054394
+    },
+    {
+      "courseId": "ARTHI 141G",
+      "avgGpa": 3.3823809523809527
+    },
+    {
+      "courseId": "ARTHI 144A",
+      "avgGpa": 2.9799999999999995
+    },
+    {
+      "courseId": "ARTHI 144C",
+      "avgGpa": 2.996296296296296
+    },
+    {
+      "courseId": "ARTHI 144D",
+      "avgGpa": 2.707142857142857
+    },
+    {
+      "courseId": "ARTHI 148A",
+      "avgGpa": 3.328971962616823
+    },
+    {
+      "courseId": "ARTHI 148B",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ARTHI 5A",
+      "avgGpa": 3.1441478439425055
+    },
+    {
+      "courseId": "ARTHI 5B",
+      "avgGpa": 3.427377515993135
+    },
+    {
+      "courseId": "ARTHI 6A",
+      "avgGpa": 3.0206689536878217
+    },
+    {
+      "courseId": "ARTHI 6B",
+      "avgGpa": 3.1638682252922417
+    },
+    {
+      "courseId": "ARTHI 6C",
+      "avgGpa": 3.1670365312393303
+    },
+    {
+      "courseId": "ARTHI 6DL",
+      "avgGpa": 3.1312056737588647
+    },
+    {
+      "courseId": "ARTHI 6DS",
+      "avgGpa": 3.3022029897718337
+    },
+    {
+      "courseId": "ARTHI 6DW",
+      "avgGpa": 3.4635135135135133
+    },
+    {
+      "courseId": "ARTHI 6E",
+      "avgGpa": 3.114573221391403
+    },
+    {
+      "courseId": "ARTHI 6F",
+      "avgGpa": 3.079437609841828
+    },
+    {
+      "courseId": "ARTHI 6G",
+      "avgGpa": 3.2485207100591715
+    },
+    {
+      "courseId": "ARTHI 6H",
+      "avgGpa": 3.3251002865329515
+    },
+    {
+      "courseId": "ARTHI 6J",
+      "avgGpa": 3.3856409806330827
+    },
+    {
+      "courseId": "ARTHI 6K",
+      "avgGpa": 2.927729636048527
+    },
+    {
+      "courseId": "ARTHI 6L",
+      "avgGpa": 3.3809306569343067
+    },
+    {
+      "courseId": "ARTHI 6M",
+      "avgGpa": 3.5395270270270265
+    },
+    {
+      "courseId": "ARTHIW 6R",
+      "avgGpa": 3.3409090909090904
+    },
+    {
+      "courseId": "AS AM 118",
+      "avgGpa": 3.5400523560209427
+    },
+    {
+      "courseId": "AS AM 120",
+      "avgGpa": 3.2777777777777772
+    },
+    {
+      "courseId": "AS AM 127",
+      "avgGpa": 3.637261146496815
+    },
+    {
+      "courseId": "AS AM 140",
+      "avgGpa": null
+    },
+    {
+      "courseId": "AS AM 146",
+      "avgGpa": 3.14724409448819
+    },
+    {
+      "courseId": "AS AM 170KK",
+      "avgGpa": null
+    },
+    {
+      "courseId": "AS AM 4",
+      "avgGpa": 3.269053708439898
+    },
+    {
+      "courseId": "AS AM 79",
+      "avgGpa": 3.388732394366198
+    },
+    {
+      "courseId": "BL ST 14",
+      "avgGpa": 3.4934475806451615
+    },
+    {
+      "courseId": "BL ST 142",
+      "avgGpa": 3.2499172185430463
+    },
+    {
+      "courseId": "BL ST 153",
+      "avgGpa": 3.4188320209973755
+    },
+    {
+      "courseId": "BL ST 161",
+      "avgGpa": 3.4544959128065393
+    },
+    {
+      "courseId": "BL ST 162",
+      "avgGpa": 3.432311320754717
+    },
+    {
+      "courseId": "BL ST 170",
+      "avgGpa": 3.326343154246101
+    },
+    {
+      "courseId": "BL ST 171",
+      "avgGpa": 3.5333333333333337
+    },
+    {
+      "courseId": "BL ST 172",
+      "avgGpa": 3.240583941605839
+    },
+    {
+      "courseId": "BL ST 175",
+      "avgGpa": 3.491286307053942
+    },
+    {
+      "courseId": "BL ST 45",
+      "avgGpa": 3.557549234135667
+    },
+    {
+      "courseId": "C LIT 184A",
+      "avgGpa": 3.4827160493827165
+    },
+    {
+      "courseId": "C LIT 186FF",
+      "avgGpa": 3.6450000000000005
+    },
+    {
+      "courseId": "CH ST 125B",
+      "avgGpa": 3.3795511221945134
+    },
+    {
+      "courseId": "CH ST 138",
+      "avgGpa": 3.0280532043530832
+    },
+    {
+      "courseId": "CH ST 148",
+      "avgGpa": 3.3659810126582284
+    },
+    {
+      "courseId": "CH ST 188C",
+      "avgGpa": 3.4789743589743596
+    },
+    {
+      "courseId": "CHIN 134D",
+      "avgGpa": 3.3200000000000003
+    },
+    {
+      "courseId": "CHIN 170",
+      "avgGpa": 3.494047619047619
+    },
+    {
+      "courseId": "CHIN 176",
+      "avgGpa": 3.6491525423728812
+    },
+    {
+      "courseId": "CHIN 40",
+      "avgGpa": 3.3578947368421046
+    },
+    {
+      "courseId": "CLASS 102",
+      "avgGpa": 3.3572519083969468
+    },
+    {
+      "courseId": "CLASS 165",
+      "avgGpa": 3.6590277777777778
+    },
+    {
+      "courseId": "CLASS 170",
+      "avgGpa": 3.5011787819253435
+    },
+    {
+      "courseId": "DANCE 145B",
+      "avgGpa": 3.4713114754098364
+    },
+    {
+      "courseId": "DANCE 35",
+      "avgGpa": 3.3480000000000003
+    },
+    {
+      "courseId": "DANCE 36",
+      "avgGpa": 3.2619140625000003
+    },
+    {
+      "courseId": "DANCE 45",
+      "avgGpa": 3.3162395037444656
+    },
+    {
+      "courseId": "DANCEW 36",
+      "avgGpa": 3.04208084824387
+    },
+    {
+      "courseId": "EACS 134A",
+      "avgGpa": null
+    },
+    {
+      "courseId": "ENGL 15SH",
+      "avgGpa": 3.6451094890510958
+    },
+    {
+      "courseId": "ENV S 136O",
+      "avgGpa": 3.686241610738256
+    },
+    {
+      "courseId": "FAMST 120",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 121",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122AA",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122AC",
+      "avgGpa": 3.450406504065041
+    },
+    {
+      "courseId": "FAMST 122AD",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122AE",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122AG",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122AR",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122AU",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122AZ",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122CA",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122CN",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122CU",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122EA",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122EC",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122EU",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122FF",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122FI",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122FL",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122FR",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122HE",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122HK",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122HU",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122IC",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122IM",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122IN",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122IT",
+      "avgGpa": 3.067272727272727
+    },
+    {
+      "courseId": "FAMST 122JA",
+      "avgGpa": 3.58
+    },
+    {
+      "courseId": "FAMST 122KO",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122MC",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122ME",
+      "avgGpa": 3.7584615384615376
+    },
+    {
+      "courseId": "FAMST 122NA",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122NG",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122NI",
+      "avgGpa": 3.3661764705882358
+    },
+    {
+      "courseId": "FAMST 122PC",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122RA",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122TH",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122TN",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 122WN",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 124",
+      "avgGpa": 2.761825726141079
+    },
+    {
+      "courseId": "FAMST 124V",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 126",
+      "avgGpa": 3.188888888888889
+    },
+    {
+      "courseId": "FAMST 127",
+      "avgGpa": 2.4023529411764706
+    },
+    {
+      "courseId": "FAMST 127M",
+      "avgGpa": 3.0323529411764714
+    },
+    {
+      "courseId": "FAMST 134",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 144",
+      "avgGpa": 3.430508474576272
+    },
+    {
+      "courseId": "FAMST 163",
+      "avgGpa": 2.935238095238095
+    },
+    {
+      "courseId": "FAMST 169",
+      "avgGpa": 3.050424863387978
+    },
+    {
+      "courseId": "FAMST 175",
+      "avgGpa": 3.8660606060606058
+    },
+    {
+      "courseId": "FAMST 46",
+      "avgGpa": 2.9815290029403902
+    },
+    {
+      "courseId": "FAMST 55BE",
+      "avgGpa": 3.858608058608059
+    },
+    {
+      "courseId": "FAMST 55CY",
+      "avgGpa": 3.388235294117647
+    },
+    {
+      "courseId": "FAMST 55DD",
+      "avgGpa": 3.7570093457943927
+    },
+    {
+      "courseId": "FAMST 55QM",
+      "avgGpa": 3.4616438356164383
+    },
+    {
+      "courseId": "FAMST 56FR",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 56MR",
+      "avgGpa": null
+    },
+    {
+      "courseId": "FAMST 56ZM",
+      "avgGpa": 2.6748148148148148
+    },
+    {
+      "courseId": "FR 156A",
+      "avgGpa": 3.189320388349514
+    },
+    {
+      "courseId": "FR 156C",
+      "avgGpa": 3.157391304347827
+    },
+    {
+      "courseId": "FR 156D",
+      "avgGpa": null
+    },
+    {
+      "courseId": "GER 183",
+      "avgGpa": null
+    },
+    {
+      "courseId": "GER 55A",
+      "avgGpa": 3.593203883495146
+    },
+    {
+      "courseId": "ITAL 124X",
+      "avgGpa": 3.0295508274231677
+    },
+    {
+      "courseId": "ITAL 179X",
+      "avgGpa": 3.158661887694146
+    },
+    {
+      "courseId": "ITAL 180X",
+      "avgGpa": 3.036979166666667
+    },
+    {
+      "courseId": "JAPAN 149",
+      "avgGpa": 3.0003558718861205
+    },
+    {
+      "courseId": "JAPAN 159",
+      "avgGpa": 3.0741134751773047
+    },
+    {
+      "courseId": "MUS 11",
+      "avgGpa": 3.338718586327822
+    },
+    {
+      "courseId": "MUS 113A",
+      "avgGpa": 3.5217391304347827
+    },
+    {
+      "courseId": "MUS 114",
+      "avgGpa": 3.426714801444043
+    },
+    {
+      "courseId": "MUS 115",
+      "avgGpa": 3.3450381679389323
+    },
+    {
+      "courseId": "MUS 116",
+      "avgGpa": 3.3791741094882846
+    },
+    {
+      "courseId": "MUS 118A",
+      "avgGpa": 2.3
+    },
+    {
+      "courseId": "MUS 119A",
+      "avgGpa": 3.5727447216890593
+    },
+    {
+      "courseId": "MUS 119B",
+      "avgGpa": 3.7
+    },
+    {
+      "courseId": "MUS 15",
+      "avgGpa": 3.4770640278362333
+    },
+    {
+      "courseId": "MUS 16",
+      "avgGpa": 3.6972115384615383
+    },
+    {
+      "courseId": "MUS 17",
+      "avgGpa": 3.396570659365926
+    },
+    {
+      "courseId": "MUS 3B",
+      "avgGpa": 3.5068877551020403
+    },
+    {
+      "courseId": "RG ST 13",
+      "avgGpa": 3.2138339920948615
+    },
+    {
+      "courseId": "RG ST 133B",
+      "avgGpa": 3.4768
+    },
+    {
+      "courseId": "RG ST 157G",
+      "avgGpa": 3.9291139240506325
+    },
+    {
+      "courseId": "SLAV 130A",
+      "avgGpa": 3.0991935483870967
+    },
+    {
+      "courseId": "SLAV 130B",
+      "avgGpa": 3.4777777777777783
+    },
+    {
+      "courseId": "SLAV 130C",
+      "avgGpa": 3.075187969924812
+    },
+    {
+      "courseId": "SLAV 130D",
+      "avgGpa": 3.2421052631578946
+    },
+    {
+      "courseId": "SLAV 130E",
+      "avgGpa": 3.1315789473684212
+    },
+    {
+      "courseId": "SPAN 126",
+      "avgGpa": 3.4056852791878174
+    },
+    {
+      "courseId": "SPAN 126E",
+      "avgGpa": null
+    },
+    {
+      "courseId": "SPAN 148B",
+      "avgGpa": 3.716071428571429
+    },
+    {
+      "courseId": "THTR 143",
+      "avgGpa": 3.873770491803279
+    },
+    {
+      "courseId": "THTR 180A",
+      "avgGpa": 3.097572815533981
+    },
+    {
+      "courseId": "THTR 180B",
+      "avgGpa": 3.140857787810384
+    },
+    {
+      "courseId": "THTR 180C",
+      "avgGpa": 3.5139072847682122
+    },
+    {
+      "courseId": "THTR 180E",
+      "avgGpa": 3.5835249042145594
+    },
+    {
+      "courseId": "THTR 180G",
+      "avgGpa": 3.5022624434389145
+    },
+    {
+      "courseId": "THTR 181S",
+      "avgGpa": null
+    },
+    {
+      "courseId": "THTR 182A",
+      "avgGpa": 3.4177545691906004
+    },
+    {
+      "courseId": "THTR 182M",
+      "avgGpa": 3.2359413202933984
+    },
+    {
+      "courseId": "THTR 182MC",
+      "avgGpa": 3.1473214285714284
+    },
+    {
+      "courseId": "THTR 182N",
+      "avgGpa": null
+    },
+    {
+      "courseId": "THTR 182RM",
+      "avgGpa": null
+    },
+    {
+      "courseId": "THTR 184AA",
+      "avgGpa": 3.5379411764705884
+    },
+    {
+      "courseId": "THTR 184CA",
+      "avgGpa": 3.6655555555555552
+    },
+    {
+      "courseId": "THTR 188S",
+      "avgGpa": 3.466666666666667
+    },
+    {
+      "courseId": "THTR 2A",
+      "avgGpa": 3.44026369168357
+    },
+    {
+      "courseId": "THTR 2B",
+      "avgGpa": 3.401463963963964
+    },
+    {
+      "courseId": "THTR 2C",
+      "avgGpa": 3.3198604401502956
+    },
+    {
+      "courseId": "THTR 3",
+      "avgGpa": 3.694366197183097
+    },
+    {
+      "courseId": "THTR 5",
+      "avgGpa": 3.757200188857413
+    },
+    {
+      "courseId": "THTR 7",
+      "avgGpa": 3.1529824561403514
+    },
+    {
+      "courseId": "THTR 8",
+      "avgGpa": null
+    },
+    {
+      "courseId": "THTR 9",
+      "avgGpa": 3.4840277777777775
+    },
+    {
+      "courseId": "THTR W 2B",
+      "avgGpa": 3.7001102535832415
+    }
+  ]
+}

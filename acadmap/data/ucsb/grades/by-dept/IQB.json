@@ -1,0 +1,844 @@
+{
+  "dept": "IQB",
+  "courses": [
+    {
+      "courseId": "IQB 210",
+      "dept": "IQB",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2024,
+          "instructor": "LOUIS M R",
+          "counts": {
+            "A": 7,
+            "Ap": 3,
+            "Am": 1,
+            "B": 0,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.8692307692307697,
+          "nLetterStudents": 13,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2024,
+          "instructor": "MARCHETTI M",
+          "counts": {
+            "A": 7,
+            "Ap": 3,
+            "Am": 1,
+            "B": 0,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.8692307692307697,
+          "nLetterStudents": 13,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2024,
+          "instructor": "PLAXCO K W",
+          "counts": {
+            "A": 7,
+            "Ap": 3,
+            "Am": 1,
+            "B": 0,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.8692307692307697,
+          "nLetterStudents": 13,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.8692307692307693,
+        "totalStudents": 39,
+        "gradeDistribution": {
+          "A": 21,
+          "Ap": 9,
+          "Am": 3,
+          "B": 0,
+          "Bp": 6,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 3,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2024
+        }
+      }
+    },
+    {
+      "courseId": "IQB 224",
+      "dept": "IQB",
+      "offerings": [
+        {
+          "quarter": "Fall",
+          "year": 2024,
+          "instructor": "DOGIC Z",
+          "counts": {
+            "A": 7,
+            "Ap": 3,
+            "Am": 1,
+            "B": 0,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.8692307692307697,
+          "nLetterStudents": 13,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2024,
+          "instructor": "FYGENSON D K",
+          "counts": {
+            "A": 7,
+            "Ap": 3,
+            "Am": 1,
+            "B": 0,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.8692307692307697,
+          "nLetterStudents": 13,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2024,
+          "instructor": "VOLKMANN N",
+          "counts": {
+            "A": 7,
+            "Ap": 3,
+            "Am": 1,
+            "B": 0,
+            "Bp": 2,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.8692307692307697,
+          "nLetterStudents": 13,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.8692307692307693,
+        "totalStudents": 39,
+        "gradeDistribution": {
+          "A": 21,
+          "Ap": 9,
+          "Am": 3,
+          "B": 0,
+          "Bp": 6,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 3,
+        "latestOffering": {
+          "quarter": "Fall",
+          "year": 2024
+        }
+      }
+    },
+    {
+      "courseId": "IQB 226",
+      "dept": "IQB",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "DE TOMASO A W",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 2,
+            "B": 0,
+            "Bp": 1,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.74,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "MAHAN M J",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 2,
+            "B": 0,
+            "Bp": 1,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.74,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "ROTHMAN J H",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 2,
+            "B": 0,
+            "Bp": 1,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.74,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "SMITH I",
+          "counts": {
+            "A": 2,
+            "Ap": 0,
+            "Am": 2,
+            "B": 0,
+            "Bp": 1,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.74,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.7400000000000007,
+        "totalStudents": 20,
+        "gradeDistribution": {
+          "A": 8,
+          "Ap": 0,
+          "Am": 8,
+          "B": 0,
+          "Bp": 4,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 4,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2025
+        }
+      }
+    },
+    {
+      "courseId": "IQB 229",
+      "dept": "IQB",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2025,
+          "instructor": "WAITE J H",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 1,
+            "B": 4,
+            "Bp": 6,
+            "Bm": 1,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 3.1833333333333336,
+          "nLetterStudents": 12,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 3.1833333333333336,
+        "totalStudents": 12,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 1,
+          "B": 4,
+          "Bp": 6,
+          "Bm": 1,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2025
+        }
+      }
+    },
+    {
+      "courseId": "IQB 247",
+      "dept": "IQB",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "BRIGGS C J",
+          "counts": {
+            "A": 8,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 8,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 4,
+        "totalStudents": 8,
+        "gradeDistribution": {
+          "A": 8,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2025
+        }
+      }
+    },
+    {
+      "courseId": "IQB 248",
+      "dept": "IQB",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "KIM S",
+          "counts": {
+            "A": 5,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "MONTELL C",
+          "counts": {
+            "A": 5,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "MONTELL D J",
+          "counts": {
+            "A": 5,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 5,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 4,
+        "totalStudents": 15,
+        "gradeDistribution": {
+          "A": 15,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 3,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2025
+        }
+      }
+    },
+    {
+      "courseId": "IQB 262",
+      "dept": "IQB",
+      "offerings": [
+        {
+          "quarter": "Winter",
+          "year": 2026,
+          "instructor": "WEIMBS T",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 33,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 33
+        },
+        {
+          "quarter": "Fall",
+          "year": 2025,
+          "instructor": "WEIMBS T",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "HAYES C S",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Winter",
+          "year": 2025,
+          "instructor": "HAYES C S",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 0,
+          "nPnpStudents": 0
+        },
+        {
+          "quarter": "Fall",
+          "year": 2024,
+          "instructor": "HAYES C S",
+          "counts": {
+            "A": 0,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 1,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 0,
+          "nLetterStudents": 1,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 0,
+        "totalStudents": 34,
+        "gradeDistribution": {
+          "A": 0,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 1,
+          "P": 33,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 5,
+        "latestOffering": {
+          "quarter": "Winter",
+          "year": 2026
+        }
+      }
+    },
+    {
+      "courseId": "IQB 596",
+      "dept": "IQB",
+      "offerings": [
+        {
+          "quarter": "Spring",
+          "year": 2025,
+          "instructor": "MONTELL D J",
+          "counts": {
+            "A": 6,
+            "Ap": 0,
+            "Am": 0,
+            "B": 0,
+            "Bp": 0,
+            "Bm": 0,
+            "C": 0,
+            "Cp": 0,
+            "Cm": 0,
+            "D": 0,
+            "Dp": 0,
+            "Dm": 0,
+            "F": 0,
+            "P": 0,
+            "s": 0,
+            "su": 0,
+            "IP": 0
+          },
+          "avgGpa": 4,
+          "nLetterStudents": 6,
+          "nPnpStudents": 0
+        }
+      ],
+      "rollup": {
+        "avgGpa": 4,
+        "totalStudents": 6,
+        "gradeDistribution": {
+          "A": 6,
+          "Ap": 0,
+          "Am": 0,
+          "B": 0,
+          "Bp": 0,
+          "Bm": 0,
+          "C": 0,
+          "Cp": 0,
+          "Cm": 0,
+          "D": 0,
+          "Dp": 0,
+          "Dm": 0,
+          "F": 0,
+          "P": 0,
+          "s": 0,
+          "su": 0,
+          "IP": 0
+        },
+        "offeringCount": 1,
+        "latestOffering": {
+          "quarter": "Spring",
+          "year": 2025
+        }
+      }
+    }
+  ]
+}
