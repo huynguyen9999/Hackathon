@@ -27,15 +27,41 @@ function getPostgresUrl(): string {
 }
 
 function splitSqlStatements(sql: string): string[] {
-  const withoutComments = sql
-    .split("\n")
-    .filter((line) => !line.trim().startsWith("--"))
-    .join("\n");
+  const statements: string[] = [];
+  let current = "";
+  let inDollarQuote = false;
 
-  return withoutComments
-    .split(";")
-    .map((chunk) => chunk.trim())
-    .filter((chunk) => chunk.length > 0);
+  for (let i = 0; i < sql.length; i++) {
+    const char = sql[i];
+    const next = sql[i + 1] ?? "";
+
+    if (!inDollarQuote && char === "-" && next === "-") {
+      while (i < sql.length && sql[i] !== "\n") i++;
+      current += "\n";
+      continue;
+    }
+
+    if (char === "$" && next === "$") {
+      inDollarQuote = !inDollarQuote;
+      current += "$$";
+      i++;
+      continue;
+    }
+
+    if (char === ";" && !inDollarQuote) {
+      const trimmed = current.trim();
+      if (trimmed.length > 0) statements.push(trimmed);
+      current = "";
+      continue;
+    }
+
+    current += char;
+  }
+
+  const trailing = current.trim();
+  if (trailing.length > 0) statements.push(trailing);
+
+  return statements;
 }
 
 export async function applyDatabaseSchema(): Promise<ApplySchemaResult> {
