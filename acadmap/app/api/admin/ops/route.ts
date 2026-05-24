@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 
 import { isAdminOpsAuthorized } from "@/lib/admin-ops-auth";
+import { applyDatabaseSchema } from "@/lib/apply-schema";
 import { runCommunityBootstrap } from "@/lib/bootstrap-community";
 import { runSeedMigration } from "@/lib/migrate-seeds";
 
@@ -39,6 +40,11 @@ export async function POST(request: Request) {
 
     if (action === "bootstrap-community") {
       const result = await runCommunityBootstrap();
+      return NextResponse.json({ action, ...result });
+    }
+
+    if (action === "apply-schema") {
+      const result = await applyDatabaseSchema();
       return NextResponse.json({ action, ...result });
     }
 
