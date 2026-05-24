@@ -9,16 +9,21 @@ export type ApplySchemaResult = {
 };
 
 function getPostgresUrl(): string {
-  const url =
+  const raw =
     process.env.POSTGRES_URL_NON_POOLING ??
     process.env.POSTGRES_URL ??
     process.env.SUPABASE_DB_URL;
 
-  if (!url || url.length < 20) {
+  if (!raw || raw.length < 20) {
     throw new Error("Missing POSTGRES_URL for schema application");
   }
 
-  return url;
+  const url = new URL(raw);
+  if (!url.searchParams.has("sslmode")) {
+    url.searchParams.set("sslmode", "no-verify");
+  }
+
+  return url.toString();
 }
 
 function splitSqlStatements(sql: string): string[] {
@@ -40,7 +45,10 @@ export async function applyDatabaseSchema(): Promise<ApplySchemaResult> {
 
   const client = new Client({
     connectionString: getPostgresUrl(),
-    ssl: { rejectUnauthorized: false },
+    ssl: {
+      requestCert: false,
+      rejectUnauthorized: false,
+    },
   });
   await client.connect();
 
