@@ -11,6 +11,14 @@ export const maxDuration = 60;
 
 export async function POST(request: Request) {
   try {
+    const contentType = request.headers.get("content-type") ?? "";
+    if (!contentType.includes("multipart/form-data")) {
+      return NextResponse.json(
+        { error: "Expected multipart/form-data with a PDF file." },
+        { status: 400 },
+      );
+    }
+
     const formData = await request.formData();
     const file = formData.get("file");
     const roadmapId = String(formData.get("roadmapId") ?? "").trim();
