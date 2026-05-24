@@ -42,19 +42,24 @@
     "fetch:ucsb-grades": "node ./node_modules/tsx/dist/cli.mjs scripts/fetch-ucsb-grades-data.ts",
     "build:ucsb-grades": "node ./node_modules/tsx/dist/cli.mjs scripts/build-ucsb-grades-snapshots.ts",
     "validate:ucsb-grades": "node ./node_modules/tsx/dist/cli.mjs scripts/validate-ucsb-grades.ts",
-    "test:planner": "node --import tsx --test tests/planner/*.test.ts"
+    "test:planner": "node --import tsx --test tests/planner/*.test.ts",
+    "test:transcript": "node --import tsx --test tests/transcript/*.test.ts"
   },
   "dependencies": {
+    "@ai-sdk/gateway": "^3.0.120",
     "@sentry/nextjs": "^10.53.1",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.47.10",
     "@upstash/ratelimit": "^2.0.8",
     "@upstash/redis": "^1.38.0",
     "@xyflow/react": "^12.3.6",
+    "ai": "^6.0.191",
     "next": "^14.2.21",
     "pg": "^8.21.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "unpdf": "^1.6.2",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^20.17.10",

@@ -15,6 +15,7 @@ Interactive degree roadmaps for UC campuses—official requirements, React Flow 
 - **Contribute** — Submit roadmaps for review (Supabase auth when configured)
 - **UCSB extras** — Course catalog, grade distributions, graduate program index
 - **Production hardening** — Upstash per-IP rate limits on roadmap API, Sentry error tracking, edge-cached GET responses
+- **Transcript import** — Upload PDF on roadmap pages to auto-mark completed courses ([docs/TRANSCRIPT-PARSING.md](./docs/TRANSCRIPT-PARSING.md))
 
 ## Schools
 
@@ -107,8 +108,9 @@ git push origin main
 | POST | `/api/roadmaps` | Submit roadmap — auth required |
 | PATCH | `/api/roadmaps/:id` | Approve/reject — maintainer only |
 | GET | `/api/schools` | Schools with approved roadmaps |
+| POST | `/api/transcript/parse` | Parse transcript PDF → match courses to roadmap |
 
-Rate limits (when Upstash is configured): 120 GET / 10 write requests per IP per 60 seconds.
+Rate limits (when Upstash is configured): 120 GET / 10 write requests per IP per 60 seconds on `/api/roadmaps*`; 5 transcript parses per IP per hour.
 
 ## Documentation
 
@@ -119,6 +121,7 @@ Rate limits (when Upstash is configured): 120 GET / 10 write requests per IP per
 | [docs/UCSB-CURRICULUM.md](./docs/UCSB-CURRICULUM.md) | UCSB course catalog connector |
 | [docs/COMMUNITY-SETUP.md](./docs/COMMUNITY-SETUP.md) | Supabase + OAuth for community |
 | [docs/PRODUCTION-OPS.md](./docs/PRODUCTION-OPS.md) | Rate limits, Sentry, edge cache |
+| [docs/TRANSCRIPT-PARSING.md](./docs/TRANSCRIPT-PARSING.md) | PDF transcript import setup |
 | [AGENTS.md](./AGENTS.md) | Multi-agent delegation guide |
 
 ## License

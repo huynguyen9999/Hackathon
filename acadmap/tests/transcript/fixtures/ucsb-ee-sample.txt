@@ -1,0 +1,9 @@
+Fall 2022    CMPSC 16    Introduction to CS II    4.00    A
+Winter 2023   ECE 10A     Circuit Theory I         4.00    B+
+Spring 2023   ECE 10B     Circuit Theory II        4.00    A-
+Fall 2023     ECE 10C     Circuit Theory III       4.00    B
+Winter 2024   ECE 130A    Electronics I            4.00    A
+Spring 2024   ECE 130B    Electronics II           4.00    A
+Fall 2024     ECE 152A    IC Design                4.00    B+
+Winter 2025   ECE 152B    IC Design Lab            4.00    IP
+Spring 2025   ECE 153A    Comp Architecture        4.00    W

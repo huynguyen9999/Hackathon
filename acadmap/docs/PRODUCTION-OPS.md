@@ -83,6 +83,27 @@ curl -I https://hackathon-nu-taupe.vercel.app/api/roadmaps
 
 ---
 
+## Transcript PDF import
+
+`POST /api/transcript/parse` — upload PDF, extract courses, match to roadmap nodes.
+
+| Control | Setting |
+|---------|---------|
+| Rate limit | **5 parses / hour / IP** (prefix `rl:transcript`) |
+| Max file size | 5 MB (override with `TRANSCRIPT_MAX_FILE_MB`) |
+| AI fallback | Requires `AI_GATEWAY_API_KEY` on Vercel |
+
+See [TRANSCRIPT-PARSING.md](./TRANSCRIPT-PARSING.md) for setup and privacy notes.
+
+### Verify
+
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" -X POST https://hackathon-nu-taupe.vercel.app/api/transcript/parse
+# Expect 400 (missing file), not 404
+```
+
+---
+
 ## Deploy checklist
 
 ```bash
@@ -91,4 +112,4 @@ npm run build
 git push origin main
 ```
 
-Ensure Vercel has: Supabase vars (existing), **`SUPABASE_SERVICE_ROLE_KEY`** (edge cache + maintainer PATCH), Upstash vars, Sentry DSN vars.
+Ensure Vercel has: Supabase vars (existing), **`SUPABASE_SERVICE_ROLE_KEY`** (edge cache + maintainer PATCH), Upstash vars, Sentry DSN vars, **`AI_GATEWAY_API_KEY`** (transcript AI fallback).

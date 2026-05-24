@@ -1,13 +1,34 @@
 import { NextResponse, type NextRequest } from "next/server";
 
-import { checkRoadmapRateLimit } from "@/lib/rate-limit";
+import { checkRoadmapRateLimit, checkTranscriptRateLimit } from "@/lib/rate-limit";
 import { updateSession } from "@/lib/supabase/middleware";
 
 function isRoadmapApiPath(pathname: string): boolean {
   return pathname === "/api/roadmaps" || pathname.startsWith("/api/roadmaps/");
 }
 
+function isTranscriptApiPath(pathname: string): boolean {
+  return pathname === "/api/transcript" || pathname.startsWith("/api/transcript/");
+}
+
 export async function middleware(request: NextRequest) {
+  if (isTranscriptApiPath(request.nextUrl.pathname)) {
+    const rateLimit = await checkTranscriptRateLimit(request);
+    if (rateLimit.limited) {
+      return NextResponse.json(
+        { error: "Too many transcript uploads. Please try again later." },
+        {
+          status: 429,
+          headers: {
+            "Retry-After": String(rateLimit.retryAfterSeconds),
+          },
+        },
+      );
+    }
+
+    return NextResponse.next();
+  }
+
   if (isRoadmapApiPath(request.nextUrl.pathname)) {
     const rateLimit = await checkRoadmapRateLimit(request);
     if (rateLimit.limited) {

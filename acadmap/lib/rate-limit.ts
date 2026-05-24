@@ -3,6 +3,7 @@ import { Redis } from "@upstash/redis/cloudflare";
 
 let readLimiter: Ratelimit | null = null;
 let writeLimiter: Ratelimit | null = null;
+let transcriptLimiter: Ratelimit | null = null;
 let warnedMissingEnv = false;
 
 function isRateLimitConfigured(): boolean {
@@ -45,6 +46,18 @@ function getWriteLimiter(): Ratelimit {
   return writeLimiter;
 }
 
+function getTranscriptLimiter(): Ratelimit {
+  if (!transcriptLimiter) {
+    transcriptLimiter = new Ratelimit({
+      redis: getRedis(),
+      limiter: Ratelimit.slidingWindow(5, "3600 s"),
+      prefix: "rl:transcript",
+      analytics: true,
+    });
+  }
+  return transcriptLimiter;
+}
+
 export function getClientIp(request: Request): string {
   const forwarded = request.headers.get("x-forwarded-for");
   if (forwarded) {
@@ -75,6 +88,28 @@ export async function checkRoadmapRateLimit(
   const isWrite = method === "POST" || method === "PATCH" || method === "PUT";
   const limiter = isWrite ? getWriteLimiter() : getReadLimiter();
   const result = await limiter.limit(ip);
+
+  if (result.success) {
+    return { limited: false };
+  }
+
+  const retryAfterSeconds = Math.max(
+    1,
+    Math.ceil((result.reset - Date.now()) / 1000),
+  );
+
+  return { limited: true, retryAfterSeconds };
+}
+
+export async function checkTranscriptRateLimit(
+  request: Request,
+): Promise<RateLimitResult> {
+  if (!isRateLimitConfigured()) {
+    return { limited: false };
+  }
+
+  const ip = getClientIp(request);
+  const result = await getTranscriptLimiter().limit(ip);
 
   if (result.success) {
     return { limited: false };

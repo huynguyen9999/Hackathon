@@ -31,3 +31,9 @@ export function getUcsbCurriculumCacheHours(): number {
   const parsed = raw ? Number.parseInt(raw, 10) : 24;
   return Number.isFinite(parsed) && parsed > 0 ? parsed : 24;
 }
+
+export function getTranscriptMaxFileMb(): number {
+  const raw = process.env.TRANSCRIPT_MAX_FILE_MB;
+  const parsed = raw ? Number.parseInt(raw, 10) : 5;
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : 5;
+}

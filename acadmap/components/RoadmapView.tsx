@@ -8,6 +8,7 @@ import { RoadmapAnalysisPanel } from "@/components/RoadmapAnalysisPanel";
 import { RoadmapGraph } from "@/components/RoadmapGraph";
 import { RoadmapGraphErrorBoundary } from "@/components/RoadmapGraphErrorBoundary";
 import { Sidebar } from "@/components/Sidebar";
+import { TranscriptUploadPanel } from "@/components/TranscriptUploadPanel";
 import {
   buildGraph,
   findBottlenecks,
@@ -21,6 +22,7 @@ import {
   roadmapNodesToFlowNodes,
 } from "@/lib/flow";
 import type { DegreeAuditRules } from "@/lib/planner/degree-audit";
+import type { MatchedCourse } from "@/lib/transcript/types";
 import type { iGauchoBackNodeData, RoadmapDetail } from "@/lib/types";
 import { useRoadmapSchedule } from "@/lib/use-roadmap-schedule";
 import type { DepartmentFacultyFile } from "@/lib/ucsb-faculty-types";
@@ -259,6 +261,19 @@ export function RoadmapView({
     schedule.clearSchedule();
   }, [schedule]);
 
+  const onApplyTranscript = useCallback(
+    (matched: MatchedCourse[]) => {
+      const statusByNodeId: Record<string, "planned" | "completed"> = {
+        ...plannerStatusByNodeId,
+      };
+      for (const row of matched) {
+        statusByNodeId[row.nodeId] = "completed";
+      }
+      schedule.applyStatusByNodeId(statusByNodeId);
+    },
+    [plannerStatusByNodeId, schedule],
+  );
+
   return (
     <div className="space-y-4">
       <div className="flex h-[calc(100vh-8.5rem)] min-h-[520px] flex-col gap-4 lg:flex-row">
@@ -291,6 +306,12 @@ export function RoadmapView({
           />
         </div>
       </div>
+
+      <TranscriptUploadPanel
+        roadmapId={roadmap.id}
+        school={roadmap.school.short_name}
+        onApply={onApplyTranscript}
+      />
 
       <RoadmapAnalysisPanel
         graph={graphModel}
