@@ -50,7 +50,7 @@ function getTranscriptLimiter(): Ratelimit {
   if (!transcriptLimiter) {
     transcriptLimiter = new Ratelimit({
       redis: getRedis(),
-      limiter: Ratelimit.slidingWindow(5, "3600 s"),
+      limiter: Ratelimit.slidingWindow(20, "3600 s"),
       prefix: "rl:transcript",
       analytics: true,
     });

@@ -110,7 +110,7 @@ git push origin main
 | GET | `/api/schools` | Schools with approved roadmaps |
 | POST | `/api/transcript/parse` | Parse transcript PDF → match courses to roadmap |
 
-Rate limits (when Upstash is configured): 120 GET / 10 write requests per IP per 60 seconds on `/api/roadmaps*`; 5 transcript parses per IP per hour.
+Rate limits (when Upstash is configured): 120 GET / 10 write requests per IP per 60 seconds on `/api/roadmaps*`; 20 transcript parses per IP per hour.
 
 ## Documentation
 

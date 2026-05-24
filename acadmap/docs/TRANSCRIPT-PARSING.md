@@ -28,7 +28,7 @@ Scanned image-only PDFs require AI fallback (`AI_GATEWAY_API_KEY` must be set).
 | `TRANSCRIPT_AI_MODEL` | No | `google/gemini-2.0-flash` | Model for structured extraction |
 | `TRANSCRIPT_MAX_FILE_MB` | No | `5` | Upload size limit |
 | `TRANSCRIPT_AI_FALLBACK_MIN_COURSES` | No | `3` | Regex threshold before AI |
-| `UPSTASH_REDIS_REST_URL` | Prod recommended | — | Rate limit (5 parses/hour/IP) |
+| `UPSTASH_REDIS_REST_URL` | Prod recommended | — | Rate limit (20 parses/hour/IP) |
 | `UPSTASH_REDIS_REST_TOKEN` | Prod recommended | — | Rate limit |
 
 ## Privacy (FERPA)

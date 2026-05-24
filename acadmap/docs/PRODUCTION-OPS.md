@@ -89,7 +89,7 @@ curl -I https://hackathon-nu-taupe.vercel.app/api/roadmaps
 
 | Control | Setting |
 |---------|---------|
-| Rate limit | **5 parses / hour / IP** (prefix `rl:transcript`) |
+| Rate limit | **20 parses / hour / IP** (prefix `rl:transcript`) |
 | Max file size | 5 MB (override with `TRANSCRIPT_MAX_FILE_MB`) |
 | AI fallback | Requires `AI_GATEWAY_API_KEY` on Vercel |
 
