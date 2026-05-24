@@ -70,6 +70,14 @@ export function OAuthSignInButtons({
     <div className={`${layoutClass} ${className}`}>
       <button
         type="button"
+        onClick={() => signInWith("google")}
+        disabled={formDisabled}
+        className={`${buttonBase} border border-slate-300 bg-white text-slate-800 hover:bg-slate-50 dark:border-slate-600 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800`}
+      >
+        {loadingProvider === "google" ? "Redirecting…" : "Continue with Google"}
+      </button>
+      <button
+        type="button"
         onClick={() => signInWith("github")}
         disabled={formDisabled}
         className={`${buttonBase} bg-gaucho-blue text-white hover:bg-gaucho-blue-light`}

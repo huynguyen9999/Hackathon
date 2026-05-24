@@ -8,15 +8,27 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { APP_LOGO_INITIALS, APP_NAME } from "@/lib/brand";
 import type { NavAuthState } from "@/lib/auth-session";
 
-const NAV_LINKS = [
+type NavLink = {
+  href: string;
+  label: string;
+  ucsbOnly?: boolean;
+  accent?: "grades" | "graduate";
+};
+
+const NAV_LINKS: NavLink[] = [
   { href: "/", label: "Home" },
   { href: "/schools", label: "Schools" },
-  { href: "/schools/ucsb/courses", label: "Courses" },
-  { href: "/schools/ucsb/grades", label: "Grades", accent: "grades" as const },
-  { href: "/schools/ucsb/graduate", label: "Graduate", accent: "graduate" as const },
+  { href: "/schools/ucsb/courses", label: "Courses", ucsbOnly: true },
+  { href: "/schools/ucsb/grades", label: "Grades", ucsbOnly: true, accent: "grades" },
+  { href: "/schools/ucsb/graduate", label: "Graduate", ucsbOnly: true, accent: "graduate" },
   { href: "/explore", label: "Explore" },
   { href: "/contribute", label: "Contribute" },
-] as const;
+];
+
+function schoolFromPath(pathname: string): string | null {
+  const match = pathname.match(/^\/schools\/([^/]+)/);
+  return match?.[1]?.toLowerCase() ?? null;
+}
 
 function isGraduateNavActive(pathname: string, href: string): boolean {
   if (href !== "/schools/ucsb/graduate") return false;
@@ -38,6 +50,12 @@ export type NavbarProps = {
 
 export function Navbar({ className = "", initialAuth }: NavbarProps) {
   const pathname = usePathname();
+  const activeSchool = schoolFromPath(pathname);
+  const showUcsbTools = !activeSchool || activeSchool === "ucsb";
+
+  const visibleLinks = NAV_LINKS.filter(
+    (link) => !link.ucsbOnly || showUcsbTools,
+  );
 
   return (
     <header
@@ -66,8 +84,7 @@ export function Navbar({ className = "", initialAuth }: NavbarProps) {
             className="flex items-center gap-0.5 rounded-lg border border-gaucho-blue/15 bg-slate-50 p-0.5 dark:border-gaucho-gold/20 dark:bg-gaucho-blue/30"
             aria-label="Main"
           >
-            {NAV_LINKS.map(({ href, label, ...rest }) => {
-              const accent = "accent" in rest ? rest.accent : undefined;
+            {visibleLinks.map(({ href, label, accent }) => {
               const active =
                 accent === "graduate"
                   ? isGraduateNavActive(pathname, href)

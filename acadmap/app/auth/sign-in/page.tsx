@@ -20,7 +20,7 @@ function SignInForm() {
         Sign in to {APP_NAME}
       </h1>
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-        Sign in with GitHub or LinkedIn to save plans, share with advisors, and
+        Sign in with Google, GitHub, or LinkedIn to save plans, share with advisors, and
         submit roadmap updates.
       </p>
 

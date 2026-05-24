@@ -33,15 +33,6 @@ export function AuthControls({ initialAuth }: AuthControlsProps) {
 
     const supabase = createBrowserClient();
 
-    supabase.auth
-      .getUser()
-      .then(({ data }) => {
-        setState({ email: data.user?.email ?? null });
-      })
-      .catch(() => {
-        setState({ email: null });
-      });
-
     const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
       setState({ email: session?.user?.email ?? null });
       router.refresh();

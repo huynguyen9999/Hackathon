@@ -52,6 +52,18 @@ Used for sign-in on `/contribute` and `/auth/sign-in` alongside GitHub.
 
 No additional Next.js env vars — Supabase stores LinkedIn credentials.
 
+## 3c. Google OAuth
+
+Primary sign-in for students on `/contribute` and `/auth/sign-in`.
+
+1. [Google Cloud Console](https://console.cloud.google.com/) → **APIs & Services → Credentials** → **Create OAuth client ID**
+2. Application type: **Web application**
+3. Authorized redirect URI: `https://<PROJECT-REF>.supabase.co/auth/v1/callback`
+4. Copy **Client ID** and **Client Secret**
+5. Supabase → **Authentication → Providers → Google** → enable, paste credentials
+
+No additional Next.js env vars — Supabase stores Google credentials.
+
 ## 4. Environment variables
 
 ### Vercel (Project → Settings → Environment Variables)

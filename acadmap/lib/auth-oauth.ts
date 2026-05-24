@@ -1,4 +1,4 @@
-export type OAuthProvider = "github" | "linkedin_oidc";
+export type OAuthProvider = "google" | "github" | "linkedin_oidc";
 
 /** Only allow same-origin relative redirects after OAuth. */
 export function safeNextPath(next: string | null | undefined): string {

@@ -38,7 +38,8 @@ export function CourseReviewLeaderboard({
               </span>
             </span>
             <span className="text-xs text-slate-600 dark:text-slate-400">
-              {e.rating}/5 · diff {e.difficulty}/5 · {e.review_count} reviews
+              {e.rating}/5 · diff {(e.difficulty ?? 3.5).toFixed(1)}/5 ·{" "}
+              {e.review_count ?? 1} review{(e.review_count ?? 1) !== 1 ? "s" : ""}
             </span>
           </li>
         ))}

@@ -5,7 +5,7 @@ export type ContributorSpotlightProps = {
 };
 
 export function ContributorSpotlight({ spotlight }: ContributorSpotlightProps) {
-  if (!spotlight) {
+  if (!spotlight?.display_name?.trim()) {
     return (
       <section className="rounded-xl border border-dashed border-slate-300 p-5 dark:border-gaucho-blue/30">
         <h2 className="text-lg font-semibold text-slate-900 dark:text-white">
@@ -30,8 +30,8 @@ export function ContributorSpotlight({ spotlight }: ContributorSpotlightProps) {
         {spotlight.bio}
       </p>
       <p className="mt-4 text-sm font-medium text-gaucho-blue dark:text-gaucho-gold">
-        {spotlight.contribution_count} approved contribution
-        {spotlight.contribution_count !== 1 ? "s" : ""}
+        {spotlight.contribution_count ?? 0} approved contribution
+        {(spotlight.contribution_count ?? 0) !== 1 ? "s" : ""}
       </p>
     </section>
   );

@@ -25,7 +25,11 @@ export function RecentlyUpdatedRoadmaps({ roadmaps }: RecentlyUpdatedRoadmapsPro
                 {r.major_name}
               </span>
               <span className="text-xs text-slate-500">
-                {new Date(r.updated_at).toLocaleDateString()}
+                {new Date(r.updated_at).toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                  year: "numeric",
+                })}
               </span>
             </Link>
           </li>

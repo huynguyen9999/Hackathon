@@ -26,7 +26,7 @@ export function ContributeAuthBanner({ auth }: ContributeAuthBannerProps) {
       >
         <p>
           <strong className="font-semibold">Sign in required.</strong> Sign in
-          with GitHub or LinkedIn to submit a roadmap.
+          with Google, GitHub, or LinkedIn to submit a roadmap.
         </p>
         <OAuthSignInButtons nextPath="/contribute" className="mt-3 max-w-sm" />
       </div>

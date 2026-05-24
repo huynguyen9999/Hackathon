@@ -46,28 +46,29 @@
     }
   ],
   "course_reviews": [
-    {
-      "id": "demo-br1",
-      "course_code": "COMPSCI 61A",
-      "rating": 4,
-      "review_text": "Great intro to CS thinking. Projects ramp up fast after midterm — start early.",
-      "author_name": "61a_alum",
-      "created_at": "2026-01-20T00:00:00Z"
-    }
+    { "course_code": "COMPSCI 61A", "rating": 4.3, "difficulty": 4.1, "review_count": 42 },
+    { "course_code": "EECS 16A", "rating": 4.0, "difficulty": 3.8, "review_count": 28 },
+    { "course_code": "ELENG 120", "rating": 4.2, "difficulty": 4.4, "review_count": 19 },
+    { "course_code": "COMPSCI 70", "rating": 3.9, "difficulty": 4.6, "review_count": 15 }
   ],
   "alumni_outcomes": [
     {
-      "id": "demo-bo1",
-      "name": "Alex K.",
-      "graduation_year": 2024,
-      "major_slug": "eecs",
       "role": "Software Engineer",
       "company": "Tech company (Bay Area)",
-      "story": "EECS breadth + 61A/61C/170 path prepared me well for backend interviews."
+      "major_slug": "eecs",
+      "grad_year": 2024
+    },
+    {
+      "role": "Hardware Engineer",
+      "company": "Semiconductor startup",
+      "major_slug": "eecs",
+      "grad_year": 2023
     }
   ],
   "contributor_spotlight": {
-    "school_short_name": "berkeley",
-    "message": "Berkeley hub is in early preview — help us expand major guides and roadmaps."
+    "display_name": "berkeley_mapper",
+    "bio": "Early preview contributor building the Berkeley EECS interactive roadmap from the 2024-25 Engineering Guide.",
+    "contribution_count": 1,
+    "school_short_name": "berkeley"
   }
 }

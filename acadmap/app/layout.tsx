@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 
 import { Navbar } from "@/components/Navbar";
-import { APP_NAME, APP_TAGLINE } from "@/lib/brand";
+import { APP_FOOTER_TAGLINE, APP_NAME, APP_TAGLINE } from "@/lib/brand";
 import { getNavAuthState } from "@/lib/auth-session";
 import { themeInitScript } from "@/lib/theme";
 
@@ -39,7 +39,7 @@ export default async function RootLayout({
         <Navbar initialAuth={initialAuth} />
         <main className="flex-1">{children}</main>
         <footer className="border-t border-gaucho-blue/10 bg-white py-6 text-center text-xs text-slate-500 dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark">
-          {APP_NAME} · UCSB degree roadmaps
+          {APP_NAME} · {APP_FOOTER_TAGLINE}
         </footer>
       </body>
     </html>
