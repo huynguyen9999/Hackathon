@@ -15,8 +15,11 @@ export type TranscriptUploadPanelProps = {
   school: string;
   onApply: (matched: MatchedCourse[]) => void;
   onUndo: () => void;
+  onUndoAll: () => void;
   canUndo: boolean;
+  canUndoAll: boolean;
   appliedCount: number;
+  allAppliedCount: number;
 };
 
 const MAX_FILE_MB = 5;
@@ -29,8 +32,11 @@ export function TranscriptUploadPanel({
   school,
   onApply,
   onUndo,
+  onUndoAll,
   canUndo,
+  canUndoAll,
   appliedCount,
+  allAppliedCount,
 }: TranscriptUploadPanelProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [state, setState] = useState<PanelState>("idle");
@@ -119,7 +125,18 @@ export function TranscriptUploadPanel({
     setResult(null);
   }, [onUndo]);
 
+  const onUndoAllClick = useCallback(() => {
+    onUndoAll();
+    setLastAppliedCount(0);
+    setState("idle");
+    setResult(null);
+  }, [onUndoAll]);
+
   const undoCount = appliedCount > 0 ? appliedCount : lastAppliedCount;
+  const allCount = allAppliedCount > 0 ? allAppliedCount : lastAppliedCount;
+  const showUndoLast = canUndo || (state === "applied" && lastAppliedCount > 0);
+  const showUndoAll = canUndoAll && allCount > undoCount;
+  const showUndoBanner = showUndoLast || showUndoAll || (canUndoAll && !canUndo);
 
   return (
     <section className="rounded-2xl border border-gaucho-blue/15 bg-white p-4 shadow-card dark:border-gaucho-gold/15 dark:bg-gaucho-blue-dark/70">
@@ -143,15 +160,27 @@ export function TranscriptUploadPanel({
         ) : null}
       </div>
 
-      {canUndo && state !== "applied" ? (
-        <div className="mt-4 flex flex-wrap items-center gap-3 rounded-xl border border-amber-200/80 bg-amber-50/80 px-4 py-3 dark:border-amber-500/25 dark:bg-amber-950/20">
+      {showUndoBanner && state !== "applied" ? (
+        <div className="mt-4 flex flex-col gap-3 rounded-xl border border-amber-200/80 bg-amber-50/80 px-4 py-3 dark:border-amber-500/25 dark:bg-amber-950/20">
           <p className="text-sm text-amber-900 dark:text-amber-100">
-            Transcript apply active on this roadmap ({undoCount} course
-            {undoCount === 1 ? "" : "s"}).
+            {showUndoLast && showUndoAll
+              ? "Transcript courses on this roadmap — undo the last apply or every transcript apply."
+              : showUndoAll
+                ? `Transcript apply active on this roadmap (${allCount} course${allCount === 1 ? "" : "s"} total).`
+                : `Transcript apply active on this roadmap (${undoCount} course${undoCount === 1 ? "" : "s"}).`}
           </p>
-          <button type="button" onClick={onUndoClick} className={secondaryBtnClass}>
-            Undo transcript apply ({undoCount})
-          </button>
+          <div className="flex flex-wrap gap-2">
+            {showUndoLast ? (
+              <button type="button" onClick={onUndoClick} className={secondaryBtnClass}>
+                Undo transcript apply ({undoCount})
+              </button>
+            ) : null}
+            {showUndoAll || (canUndoAll && !showUndoLast) ? (
+              <button type="button" onClick={onUndoAllClick} className={secondaryBtnClass}>
+                Undo all transcript applies ({allCount})
+              </button>
+            ) : null}
+          </div>
         </div>
       ) : null}
 
@@ -214,9 +243,16 @@ export function TranscriptUploadPanel({
             Applied {lastAppliedCount} completed course
             {lastAppliedCount === 1 ? "" : "s"} to the graph.
           </div>
-          <button type="button" onClick={onUndoClick} className={secondaryBtnClass}>
-            Undo transcript apply ({lastAppliedCount})
-          </button>
+          <div className="flex flex-wrap gap-2">
+            <button type="button" onClick={onUndoClick} className={secondaryBtnClass}>
+              Undo transcript apply ({lastAppliedCount})
+            </button>
+            {allCount > lastAppliedCount ? (
+              <button type="button" onClick={onUndoAllClick} className={secondaryBtnClass}>
+                Undo all transcript applies ({allCount})
+              </button>
+            ) : null}
+          </div>
         </div>
       ) : null}
     </section>

@@ -12,6 +12,7 @@ export type RoadmapScheduleState = {
   completedCourseIds: string[];
   plannedCourseIds: string[];
   transcriptAppliedNodeIds: string[];
+  allTranscriptAppliedNodeIds: string[];
   whatIfRemovedId: string | null;
   activeAnalysisMode: AnalysisMode;
 };
@@ -20,6 +21,7 @@ const DEFAULT_STATE: RoadmapScheduleState = {
   completedCourseIds: [],
   plannedCourseIds: [],
   transcriptAppliedNodeIds: [],
+  allTranscriptAppliedNodeIds: [],
   whatIfRemovedId: null,
   activeAnalysisMode: "conflicts",
 };
@@ -46,6 +48,11 @@ function parseStoredState(value: string | null): RoadmapScheduleState {
       transcriptAppliedNodeIds: Array.isArray(parsed.transcriptAppliedNodeIds)
         ? parsed.transcriptAppliedNodeIds
         : [],
+      allTranscriptAppliedNodeIds: Array.isArray(parsed.allTranscriptAppliedNodeIds)
+        ? parsed.allTranscriptAppliedNodeIds
+        : Array.isArray(parsed.transcriptAppliedNodeIds)
+          ? [...parsed.transcriptAppliedNodeIds]
+          : [],
       whatIfRemovedId: parsed.whatIfRemovedId ?? null,
       activeAnalysisMode: parsed.activeAnalysisMode ?? "conflicts",
     });
@@ -83,6 +90,10 @@ export function applyTranscriptToState(
     completedCourseIds,
     plannedCourseIds,
     transcriptAppliedNodeIds,
+    allTranscriptAppliedNodeIds: unique([
+      ...state.allTranscriptAppliedNodeIds,
+      ...transcriptAppliedNodeIds,
+    ]),
   };
 }
 
@@ -95,6 +106,22 @@ export function undoTranscriptFromState(
     ...state,
     completedCourseIds: state.completedCourseIds.filter((id) => !remove.has(id)),
     transcriptAppliedNodeIds: [],
+    allTranscriptAppliedNodeIds: state.allTranscriptAppliedNodeIds.filter(
+      (id) => !remove.has(id),
+    ),
+  };
+}
+
+/** Pure helper — remove every transcript-applied course (exported for tests). */
+export function undoAllTranscriptsFromState(
+  state: RoadmapScheduleState,
+): RoadmapScheduleState {
+  const remove = new Set(state.allTranscriptAppliedNodeIds);
+  return {
+    ...state,
+    completedCourseIds: state.completedCourseIds.filter((id) => !remove.has(id)),
+    transcriptAppliedNodeIds: [],
+    allTranscriptAppliedNodeIds: [],
   };
 }
 
@@ -184,6 +211,10 @@ export function useRoadmapSchedule(roadmapId: string) {
     setState((prev) => undoTranscriptFromState(prev));
   }, []);
 
+  const undoAllTranscriptApplies = useCallback(() => {
+    setState((prev) => undoAllTranscriptsFromState(prev));
+  }, []);
+
   const applyStatusByNodeId = useCallback(
     (statusByNodeId: Record<string, "planned" | "completed">) => {
       const completedCourseIds: string[] = [];
@@ -208,6 +239,7 @@ export function useRoadmapSchedule(roadmapId: string) {
     state,
     hydrated,
     hasTranscriptApply: state.transcriptAppliedNodeIds.length > 0,
+    hasAnyTranscriptApply: state.allTranscriptAppliedNodeIds.length > 0,
     toggleCompleted,
     togglePlanned,
     setWhatIfRemoved,
@@ -215,6 +247,7 @@ export function useRoadmapSchedule(roadmapId: string) {
     clearSchedule,
     applyTranscript,
     undoTranscriptApply,
+    undoAllTranscriptApplies,
     applyStatusByNodeId,
   };
 }

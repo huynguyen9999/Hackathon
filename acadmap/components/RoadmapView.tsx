@@ -272,6 +272,10 @@ export function RoadmapView({
     schedule.undoTranscriptApply();
   }, [schedule]);
 
+  const onUndoAllTranscript = useCallback(() => {
+    schedule.undoAllTranscriptApplies();
+  }, [schedule]);
+
   return (
     <div className="space-y-4">
       <div className="flex h-[calc(100vh-8.5rem)] min-h-[520px] flex-col gap-4 lg:flex-row">
@@ -310,8 +314,11 @@ export function RoadmapView({
         school={roadmap.school.short_name}
         onApply={onApplyTranscript}
         onUndo={onUndoTranscript}
+        onUndoAll={onUndoAllTranscript}
         canUndo={schedule.hasTranscriptApply}
+        canUndoAll={schedule.hasAnyTranscriptApply}
         appliedCount={schedule.state.transcriptAppliedNodeIds.length}
+        allAppliedCount={schedule.state.allTranscriptAppliedNodeIds.length}
       />
 
       <RoadmapAnalysisPanel
