@@ -126,6 +126,17 @@ function normalizeDemoHubData(
   parsed: CommunityHubData,
   schoolShortName: string,
 ): CommunityHubData {
+  const normalized = normalizeDemoHubDataFields(parsed, schoolShortName);
+  return {
+    ...normalized,
+    questions: normalized.questions.filter((q) => q.answers.length > 0),
+  };
+}
+
+function normalizeDemoHubDataFields(
+  parsed: CommunityHubData,
+  schoolShortName: string,
+): CommunityHubData {
   return {
     ...parsed,
     course_reviews: normalizeCourseReviews(parsed.course_reviews ?? []),

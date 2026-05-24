@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 import { SchoolHubSection } from "@/components/SchoolHubSection";
+import { loadCoeCatalog } from "@/lib/school-catalog";
+import { loadUcsbCcsCatalog } from "@/lib/ucsb-ccs";
+import { loadUcsbLsCatalog } from "@/lib/ucsb-ls";
 import { listActiveSchools } from "@/lib/schools/registry";
 
 const FEATURES = [
@@ -21,8 +24,46 @@ const FEATURES = [
   },
 ] as const;
 
-export default async function HomePage() {
+async function buildSchoolCards() {
   const schools = await listActiveSchools();
+
+  return Promise.all(
+    schools.map(async (school) => {
+      let majorCount = 0;
+      let liveGraphs = 0;
+
+      for (const college of school.colleges) {
+        if (college.catalogType === "coe") {
+          const coe = await loadCoeCatalog(school.short_name);
+          majorCount += coe?.majors.length ?? 0;
+          liveGraphs +=
+            coe?.majors.filter((m) => m.roadmap_available).length ?? 0;
+        } else if (college.catalogType === "ls" && school.short_name === "ucsb") {
+          const ls = await loadUcsbLsCatalog();
+          majorCount += ls?.majors.length ?? 0;
+          liveGraphs += ls?.majors.filter((m) => m.roadmap_available).length ?? 0;
+        } else if (college.catalogType === "ccs" && school.short_name === "ucsb") {
+          const ccs = await loadUcsbCcsCatalog();
+          majorCount += ccs?.majors.length ?? 0;
+        }
+      }
+
+      return {
+        short_name: school.short_name,
+        name: school.name,
+        location: school.location,
+        collegesLabel: school.colleges.map((c) => c.label).join(" · "),
+        collegeCount: school.colleges.length,
+        majorCount,
+        liveGraphs,
+        preview: school.preview,
+      };
+    }),
+  );
+}
+
+export default async function HomePage() {
+  const schoolCards = await buildSchoolCards();
 
   return (
     <div>
@@ -58,6 +99,12 @@ export default async function HomePage() {
               UCLA CS preview graph
             </Link>
             <Link
+              href="/roadmap/ucla/mechanical-engineering"
+              className="inline-flex items-center rounded-lg px-5 py-2.5 text-sm font-medium text-slate-600 underline-offset-4 hover:text-gaucho-blue hover:underline dark:text-slate-400 dark:hover:text-gaucho-gold"
+            >
+              UCLA ME preview graph
+            </Link>
+            <Link
               href="/roadmap/berkeley/eecs"
               className="inline-flex items-center rounded-lg px-5 py-2.5 text-sm font-medium text-slate-600 underline-offset-4 hover:text-gaucho-blue hover:underline dark:text-slate-400 dark:hover:text-gaucho-gold"
             >
@@ -80,20 +127,12 @@ export default async function HomePage() {
               Daily Nexus open data · GE explorer · instructor history
             </p>
           </div>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/schools/ucsb/grades"
-              className="rounded-lg bg-teal-600 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
-            >
-              Grade search
-            </Link>
-            <Link
-              href="/schools/ucsb/grades?tab=ge"
-              className="rounded-lg border border-teal-500/30 px-4 py-2.5 text-sm font-medium text-teal-800 transition hover:bg-teal-500/10 dark:text-teal-200"
-            >
-              GE explorer
-            </Link>
-          </div>
+          <Link
+            href="/schools/ucsb/grades"
+            className="rounded-lg bg-teal-600 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700"
+          >
+            Open grades hub
+          </Link>
         </div>
       </section>
 
@@ -127,16 +166,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <SchoolHubSection
-        variant="home"
-        schools={schools.map((school) => ({
-          short_name: school.short_name,
-          name: school.name,
-          location: school.location,
-          collegesLabel: school.colleges.map((c) => c.label).join(" · "),
-          preview: school.preview,
-        }))}
-      />
+      <SchoolHubSection variant="home" schools={schoolCards} />
 
       <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
         <h2 className="mb-6 text-sm font-semibold uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold">

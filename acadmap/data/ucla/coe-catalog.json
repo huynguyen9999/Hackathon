@@ -350,7 +350,7 @@
       "department_url": "https://mae.ucla.edu/",
       "curriculum_url": "https://www.mae.ucla.edu/",
       "graduation_units": 180,
-      "roadmap_available": false,
+      "roadmap_available": true,
       "preparation_for_major": [
         "MATH 31A-B",
         "MATH 32A-B",
@@ -372,7 +372,7 @@
         "Thermal Systems Engineer"
       ],
       "detail_available": true,
-      "requirements_level": "gear",
+      "requirements_level": "roadmap",
       "plan_of_study_url": "https://www.seasoasa.ucla.edu/",
       "gear_page": 142
     }
@@ -391,5 +391,5 @@
       "url": "https://www.seasoasa.ucla.edu/"
     }
   ],
-  "last_updated": "2026-05-23"
+  "last_updated": "2026-05-24"
 }

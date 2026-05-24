@@ -25,7 +25,7 @@ function parseSeedJson(raw: string): { ok: true; data: SeedRoadmapInput } | { ok
     return {
       ok: false,
       error:
-        "Invalid seed format. Required: school, major, nodes[] (with positions), edges[] referencing node ids.",
+        "Invalid roadmap format. Required: school, major, nodes[] (with positions), edges[] referencing node ids.",
     };
   }
 
@@ -40,6 +40,7 @@ export function ContributeForm({
 }: ContributeFormProps) {
   const [jsonText, setJsonText] = useState("");
   const [parseError, setParseError] = useState<string | null>(null);
+  const [showAdvanced, setShowAdvanced] = useState(false);
   const formDisabled = disabled || isSubmitting;
 
   const inputClass =
@@ -92,20 +93,18 @@ export function ContributeForm({
           Submit a roadmap
         </h2>
         <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-          Upload or paste a seed JSON file with school, major, course/career nodes,
-          and prerequisite edges. Submissions are reviewed before going live.
+          Upload a roadmap JSON file with your school, major, course nodes, and
+          prerequisite connections. Submissions are reviewed before going live.
         </p>
         <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
-          Format matches files in{" "}
-          <code className="rounded bg-slate-100 px-1 dark:bg-slate-800">data/seeds/</code>
-          . See{" "}
+          See a{" "}
           <Link
             href="/roadmap/ucsb/electrical-engineering"
             className="font-medium text-gaucho-blue underline underline-offset-2 dark:text-gaucho-gold"
           >
-            UCSB EE
+            live example roadmap
           </Link>{" "}
-          for a live example graph built from a seed file.
+          for the expected structure.
         </p>
       </div>
 
@@ -122,21 +121,33 @@ export function ContributeForm({
         />
       </label>
 
-      <label className="block">
-        <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold/90">
-          Or paste seed JSON
-        </span>
-        <textarea
-          rows={14}
-          required
+      <div>
+        <button
+          type="button"
           disabled={formDisabled}
-          value={jsonText}
-          onChange={(e) => handleTextChange(e.target.value)}
-          placeholder={'{\n  "school": { "name": "...", "short_name": "ucsb" },\n  "major": { "name": "...", "slug": "...", "degree_type": "BS" },\n  "nodes": [...],\n  "edges": [...]\n}'}
-          className={`${inputClass} resize-y font-mono text-xs`}
-          spellCheck={false}
-        />
-      </label>
+          onClick={() => setShowAdvanced((open) => !open)}
+          className="text-xs font-medium text-gaucho-blue underline underline-offset-2 dark:text-gaucho-gold"
+        >
+          {showAdvanced ? "Hide advanced paste" : "Advanced: paste JSON"}
+        </button>
+
+        {showAdvanced ? (
+          <label className="mt-3 block">
+            <span className="mb-1.5 block text-xs font-medium uppercase tracking-wider text-gaucho-blue dark:text-gaucho-gold/90">
+              Paste roadmap JSON
+            </span>
+            <textarea
+              rows={12}
+              disabled={formDisabled}
+              value={jsonText}
+              onChange={(e) => handleTextChange(e.target.value)}
+              placeholder="Paste your roadmap JSON here…"
+              className={`${inputClass} resize-y font-mono text-xs`}
+              spellCheck={false}
+            />
+          </label>
+        ) : null}
+      </div>
 
       {parseError && (
         <p
@@ -148,9 +159,8 @@ export function ContributeForm({
       )}
 
       <p className="rounded-lg border border-slate-300 bg-slate-50 px-3 py-2.5 text-xs leading-relaxed text-slate-600 dark:border-slate-700/60 dark:bg-slate-950/50 dark:text-slate-400">
-        Submissions are tied to your account for attribution and review.
-        Your roadmap will be saved with status <strong>pending</strong> until a
-        maintainer approves it.
+        Submissions are tied to your account for attribution. Our team reviews
+        each roadmap before it appears in Explore.
       </p>
 
       <button

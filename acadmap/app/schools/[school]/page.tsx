@@ -72,27 +72,89 @@ export default async function SchoolHubPage({ params }: PageProps) {
       if (college.catalogType === "coe") {
         const catalog = await loadCoeCatalog(school);
         const live = catalog?.majors.filter((m) => m.roadmap_available).length ?? 0;
+        const detail =
+          catalog?.majors.filter((m) => m.detail_available).length ?? 0;
         return {
           college,
           majorCount: catalog?.majors.length ?? 0,
           liveGraphs: live,
+          detailMajors: detail,
         };
       }
       if (college.catalogType === "ls" && school === "ucsb") {
         const ls = await loadUcsbLsCatalog();
-        return { college, majorCount: ls?.majors.length ?? 0, liveGraphs: 0 };
+        return {
+          college,
+          majorCount: ls?.majors.length ?? 0,
+          liveGraphs: 0,
+          detailMajors: 0,
+        };
       }
       if (college.catalogType === "ccs" && school === "ucsb") {
         const ccs = await loadUcsbCcsCatalog();
-        return { college, majorCount: ccs?.majors.length ?? 0, liveGraphs: 0 };
+        return {
+          college,
+          majorCount: ccs?.majors.length ?? 0,
+          liveGraphs: 0,
+          detailMajors: 0,
+        };
       }
-      return { college, majorCount: 0, liveGraphs: 0 };
+      return { college, majorCount: 0, liveGraphs: 0, detailMajors: 0 };
     }),
   );
 
   const previewLiveGraphs = collegeStats.reduce(
     (sum, { liveGraphs }) => sum + liveGraphs,
     0,
+  );
+  const previewDetailMajors = collegeStats.reduce(
+    (sum, { detailMajors }) => sum + detailMajors,
+    0,
+  );
+  const previewMajorCount = collegeStats.reduce(
+    (sum, { majorCount }) => sum + majorCount,
+    0,
+  );
+
+  const collegesSection = (
+    <section className={isPreviewSchool ? "mt-8" : "mt-14"}>
+      <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
+        Undergraduate colleges
+      </h2>
+      <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+        Browse official requirements and interactive roadmaps by college.
+      </p>
+
+      <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {collegeStats.map(({ college, majorCount, liveGraphs, detailMajors }) => (
+          <Link
+            key={college.slug}
+            href={collegeHubHref(school, college.slug)}
+            className="card-glow group flex flex-col rounded-lg border border-gaucho-blue/20 bg-white p-8 transition hover:border-gaucho-gold/40 dark:bg-gaucho-blue-dark/40"
+          >
+            <p className="text-xs font-bold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold">
+              {college.subtitle}
+            </p>
+            <h3 className="mt-2 text-2xl font-bold text-gaucho-blue group-hover:text-gaucho-blue-light dark:text-white dark:group-hover:text-gaucho-gold">
+              {college.label}
+            </h3>
+            <p className="mt-3 flex-1 text-sm text-slate-600 dark:text-slate-400">
+              {college.description}
+            </p>
+            <p className="mt-4 text-sm font-medium text-gaucho-blue dark:text-gaucho-gold">
+              {majorCount} majors cataloged
+              {detailMajors > 0
+                ? ` · ${detailMajors} with full guides`
+                : ""}
+              {liveGraphs > 0
+                ? ` · ${liveGraphs} live graph${liveGraphs !== 1 ? "s" : ""}`
+                : ""}{" "}
+              →
+            </p>
+          </Link>
+        ))}
+      </div>
+    </section>
   );
 
   return (
@@ -110,9 +172,9 @@ export default async function SchoolHubPage({ params }: PageProps) {
             Early preview
           </p>
           <p className="mt-2 text-sm text-amber-950 dark:text-amber-100">
-            Samueli preview — {previewLiveGraphs} interactive roadmap
-            {previewLiveGraphs !== 1 ? "s" : ""} (Computer Science, Electrical
-            Engineering). More majors coming soon.
+            {previewMajorCount} majors with official Samueli requirements ·{" "}
+            {previewDetailMajors} with full requirement guides ·{" "}
+            {previewLiveGraphs} interactive roadmaps (CS, EE, ME).
           </p>
           <div className="mt-3 flex flex-wrap gap-3">
             <Link
@@ -127,6 +189,12 @@ export default async function SchoolHubPage({ params }: PageProps) {
             >
               EE roadmap →
             </Link>
+            <Link
+              href="/roadmap/ucla/mechanical-engineering"
+              className="text-sm font-medium text-amber-900 underline underline-offset-2 hover:text-amber-700 dark:text-amber-200"
+            >
+              ME roadmap →
+            </Link>
           </div>
         </section>
       )}
@@ -137,8 +205,9 @@ export default async function SchoolHubPage({ params }: PageProps) {
             Early preview
           </p>
           <p className="mt-2 text-sm text-amber-950 dark:text-amber-100">
-            Berkeley Engineering preview — {previewLiveGraphs} interactive
-            roadmap (EECS). More majors coming soon.
+            {previewMajorCount} majors in catalog · {previewDetailMajors} with
+            full requirement guides · {previewLiveGraphs} interactive roadmap
+            (EECS).
           </p>
           <div className="mt-3 flex flex-wrap gap-3">
             <Link
@@ -147,11 +216,35 @@ export default async function SchoolHubPage({ params }: PageProps) {
             >
               EECS roadmap →
             </Link>
+            <Link
+              href="/schools/berkeley/engineering/mechanical-engineering"
+              className="text-sm font-medium text-amber-900 underline underline-offset-2 hover:text-amber-700 dark:text-amber-200"
+            >
+              ME requirements →
+            </Link>
+            <Link
+              href="/schools/berkeley/engineering/civil-engineering"
+              className="text-sm font-medium text-amber-900 underline underline-offset-2 hover:text-amber-700 dark:text-amber-200"
+            >
+              Civil requirements →
+            </Link>
           </div>
         </section>
       )}
 
-      <SchoolHubCommunity schoolShortName={school} data={communityData} />
+      {isPreviewSchool ? collegesSection : null}
+
+      {!isPreviewSchool ? null : (
+        <div className="mt-14">
+          <SchoolHubCommunity schoolShortName={school} data={communityData} />
+        </div>
+      )}
+
+      {!isPreviewSchool ? (
+        <div className="mt-14">
+          <SchoolHubCommunity schoolShortName={school} data={communityData} />
+        </div>
+      ) : null}
 
       {gradesMeta && (
         <section className="mt-14">
@@ -201,39 +294,7 @@ export default async function SchoolHubPage({ params }: PageProps) {
         </section>
       )}
 
-      <section className="mt-14">
-        <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-50">
-          Undergraduate colleges
-        </h2>
-        <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
-          Browse official requirements and interactive roadmaps by college.
-        </p>
-
-        <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {collegeStats.map(({ college, majorCount, liveGraphs }) => (
-            <Link
-              key={college.slug}
-              href={collegeHubHref(school, college.slug)}
-              className="card-glow group flex flex-col rounded-lg border border-gaucho-blue/20 bg-white p-8 transition hover:border-gaucho-gold/40 dark:bg-gaucho-blue-dark/40"
-            >
-              <p className="text-xs font-bold uppercase tracking-wider text-gaucho-gold-dark dark:text-gaucho-gold">
-                {college.subtitle}
-              </p>
-              <h3 className="mt-2 text-2xl font-bold text-gaucho-blue group-hover:text-gaucho-blue-light dark:text-white dark:group-hover:text-gaucho-gold">
-                {college.label}
-              </h3>
-              <p className="mt-3 flex-1 text-sm text-slate-600 dark:text-slate-400">
-                {college.description}
-              </p>
-              <p className="mt-4 text-sm font-medium text-gaucho-blue dark:text-gaucho-gold">
-                {majorCount} majors
-                {liveGraphs > 0 ? ` · ${liveGraphs} live graph${liveGraphs !== 1 ? "s" : ""}` : ""}{" "}
-                →
-              </p>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {!isPreviewSchool ? collegesSection : null}
     </div>
   );
 }

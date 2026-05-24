@@ -111,6 +111,25 @@ export function AskCommunityBoard({
               </div>
             ))}
 
+            {q.answers.length === 0 ? (
+              <p className="mt-3 text-sm text-slate-500 dark:text-slate-400">
+                No answers yet —{" "}
+                {session.signedIn ? (
+                  "be the first to reply below."
+                ) : (
+                  <>
+                    <Link
+                      href={`/auth/sign-in?next=/schools/${schoolShortName}`}
+                      className="font-medium text-gaucho-blue underline underline-offset-2 dark:text-gaucho-gold"
+                    >
+                      sign in
+                    </Link>{" "}
+                    to be the first to reply.
+                  </>
+                )}
+              </p>
+            ) : null}
+
             {session.signedIn ? <AnswerForm questionId={q.id} /> : null}
           </li>
         ))}

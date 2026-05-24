@@ -1,0 +1,278 @@
+{
+  "school": {
+    "name": "UC Los Angeles",
+    "short_name": "ucla",
+    "location": "Los Angeles, CA"
+  },
+  "major": {
+    "name": "Mechanical Engineering",
+    "slug": "mechanical-engineering",
+    "degree_type": "BS"
+  },
+  "metadata": {
+    "source": "UCLA Samueli Announcement 2025-2026",
+    "source_url": "https://www.seasoasa.ucla.edu/wp-content/uploads/seasoasa/UCLASamueli-Anncmt-25-26.pdf",
+    "announcement_page": 142,
+    "capstone": {
+      "required": true,
+      "label": "MECH&AE 156A / 156B",
+      "notes": "Senior design sequence integrating mechanical systems analysis and design.",
+      "source_url": "https://www.seasoasa.ucla.edu/wp-content/uploads/seasoasa/UCLASamueli-Anncmt-25-26.pdf"
+    }
+  },
+  "nodes": [
+    {
+      "id": "math-31a",
+      "node_type": "course",
+      "label": "MATH 31A",
+      "title": "Differential and Integral Calculus",
+      "description": "Limits, derivatives, and integrals for engineering applications.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 80,
+      "position_y": 80
+    },
+    {
+      "id": "math-31b",
+      "node_type": "course",
+      "label": "MATH 31B",
+      "title": "Integration and Infinite Series",
+      "description": "Integration techniques, sequences, and series.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 80
+    },
+    {
+      "id": "math-32a",
+      "node_type": "course",
+      "label": "MATH 32A",
+      "title": "Calculus of Several Variables",
+      "description": "Partial derivatives, gradients, and multivariable integration.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 80
+    },
+    {
+      "id": "math-32b",
+      "node_type": "course",
+      "label": "MATH 32B",
+      "title": "Calculus of Several Variables II",
+      "description": "Line integrals, Green's theorem, and vector calculus.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 80
+    },
+    {
+      "id": "math-33a",
+      "node_type": "course",
+      "label": "MATH 33A",
+      "title": "Linear Algebra and Applications",
+      "description": "Matrices, eigenvalues, and linear systems for engineering.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 980,
+      "position_y": 300
+    },
+    {
+      "id": "physics-1a",
+      "node_type": "course",
+      "label": "PHYSICS 1A",
+      "title": "Physics for Scientists and Engineers: Mechanics",
+      "description": "Kinematics, Newton's laws, energy, and momentum.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 380,
+      "position_y": 300
+    },
+    {
+      "id": "physics-1b",
+      "node_type": "course",
+      "label": "PHYSICS 1B",
+      "title": "Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields",
+      "description": "Oscillations, waves, and introductory electromagnetism.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 680,
+      "position_y": 300
+    },
+    {
+      "id": "physics-1c",
+      "node_type": "course",
+      "label": "PHYSICS 1C",
+      "title": "Physics for Scientists and Engineers: Electrodynamics, Optics, and Special Relativity",
+      "description": "Electrodynamics, optics, and special relativity.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1280,
+      "position_y": 300
+    },
+    {
+      "id": "mechae-82",
+      "node_type": "course",
+      "label": "MECH&AE 82",
+      "title": "Programming Fundamentals for Engineers",
+      "description": "Programming and numerical methods for mechanical engineering problems.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 1280,
+      "position_y": 80
+    },
+    {
+      "id": "mechae-94",
+      "node_type": "course",
+      "label": "MECH&AE 94",
+      "title": "Introduction to Mechanical Engineering",
+      "description": "Overview of ME fields, design process, and professional practice.",
+      "units": 4,
+      "self_learnable": true,
+      "position_x": 80,
+      "position_y": 520
+    },
+    {
+      "id": "mechae-103",
+      "node_type": "course",
+      "label": "MECH&AE 103",
+      "title": "Engineering Thermodynamics",
+      "description": "First and second laws, properties of pure substances, and energy analysis.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 80
+    },
+    {
+      "id": "mechae-104",
+      "node_type": "course",
+      "label": "MECH&AE 104",
+      "title": "Engineering Mechanics: Statics",
+      "description": "Equilibrium of particles and rigid bodies, trusses, and frames.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1580,
+      "position_y": 300
+    },
+    {
+      "id": "mechae-105a",
+      "node_type": "course",
+      "label": "MECH&AE 105A",
+      "title": "Engineering Mechanics: Dynamics",
+      "description": "Kinematics and kinetics of particles and rigid bodies.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 300
+    },
+    {
+      "id": "mechae-106a",
+      "node_type": "course",
+      "label": "MECH&AE 106A",
+      "title": "Mechanics of Deformable Solids",
+      "description": "Stress, strain, axial loading, torsion, and bending.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 1880,
+      "position_y": 520
+    },
+    {
+      "id": "mechae-106b",
+      "node_type": "course",
+      "label": "MECH&AE 106B",
+      "title": "Mechanics of Deformable Solids II",
+      "description": "Advanced solid mechanics and failure analysis.",
+      "units": 4,
+      "self_learnable": false,
+      "position_x": 2180,
+      "position_y": 520
+    },
+    {
+      "id": "mechae-156a",
+      "node_type": "course",
+      "label": "MECH&AE 156A",
+      "title": "Mechanical Systems Design I",
+      "description": "Team-based mechanical design project — first quarter of senior capstone sequence.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "role": "capstone" },
+      "position_x": 2480,
+      "position_y": 300
+    },
+    {
+      "id": "mechae-156b",
+      "node_type": "course",
+      "label": "MECH&AE 156B",
+      "title": "Mechanical Systems Design II",
+      "description": "Capstone design project completion, prototyping, and documentation.",
+      "units": 4,
+      "self_learnable": false,
+      "metadata": { "role": "capstone" },
+      "position_x": 2780,
+      "position_y": 300
+    },
+    {
+      "id": "career-design",
+      "node_type": "career",
+      "label": "Design Engineer",
+      "title": "Mechanical Design Engineer",
+      "description": "Product design, CAD, and prototyping for consumer and industrial hardware.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 80
+    },
+    {
+      "id": "career-robotics",
+      "node_type": "career",
+      "label": "Robotics Engineer",
+      "title": "Robotics Engineer",
+      "description": "Mechanisms, controls, and embedded systems for autonomous robots.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 300
+    },
+    {
+      "id": "career-thermal",
+      "node_type": "career",
+      "label": "Thermal Engineer",
+      "title": "Thermal Systems Engineer",
+      "description": "HVAC, energy systems, and heat transfer for buildings and vehicles.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 520
+    },
+    {
+      "id": "career-aerospace",
+      "node_type": "career",
+      "label": "Aerospace Engineer",
+      "title": "Aerospace / Propulsion Engineer",
+      "description": "Structures, propulsion, and vehicle design for aerospace applications.",
+      "self_learnable": false,
+      "position_x": 3080,
+      "position_y": 740
+    }
+  ],
+  "edges": [
+    { "id": "e1", "source_id": "math-31a", "target_id": "math-31b", "edge_type": "prerequisite" },
+    { "id": "e2", "source_id": "math-31b", "target_id": "math-32a", "edge_type": "prerequisite" },
+    { "id": "e3", "source_id": "math-32a", "target_id": "math-32b", "edge_type": "prerequisite" },
+    { "id": "e4", "source_id": "math-32a", "target_id": "math-33a", "edge_type": "prerequisite" },
+    { "id": "e5", "source_id": "math-31b", "target_id": "physics-1a", "edge_type": "prerequisite" },
+    { "id": "e6", "source_id": "physics-1a", "target_id": "physics-1b", "edge_type": "prerequisite" },
+    { "id": "e7", "source_id": "physics-1b", "target_id": "physics-1c", "edge_type": "prerequisite" },
+    { "id": "e8", "source_id": "math-32b", "target_id": "mechae-82", "edge_type": "recommended" },
+    { "id": "e9", "source_id": "mechae-94", "target_id": "mechae-103", "edge_type": "recommended" },
+    { "id": "e10", "source_id": "physics-1a", "target_id": "mechae-104", "edge_type": "prerequisite" },
+    { "id": "e11", "source_id": "mechae-104", "target_id": "mechae-105a", "edge_type": "prerequisite" },
+    { "id": "e12", "source_id": "mechae-104", "target_id": "mechae-106a", "edge_type": "prerequisite" },
+    { "id": "e13", "source_id": "mechae-106a", "target_id": "mechae-106b", "edge_type": "prerequisite" },
+    { "id": "e14", "source_id": "mechae-103", "target_id": "career-thermal", "edge_type": "leads_to" },
+    { "id": "e15", "source_id": "mechae-105a", "target_id": "career-robotics", "edge_type": "leads_to" },
+    { "id": "e16", "source_id": "mechae-106b", "target_id": "mechae-156a", "edge_type": "prerequisite" },
+    { "id": "e17", "source_id": "mechae-105a", "target_id": "mechae-156a", "edge_type": "prerequisite" },
+    { "id": "e18", "source_id": "mechae-156a", "target_id": "mechae-156b", "edge_type": "prerequisite" },
+    { "id": "e19", "source_id": "mechae-156b", "target_id": "career-design", "edge_type": "leads_to" },
+    { "id": "e20", "source_id": "mechae-156b", "target_id": "career-robotics", "edge_type": "leads_to" },
+    { "id": "e21", "source_id": "mechae-156b", "target_id": "career-thermal", "edge_type": "leads_to" },
+    { "id": "e22", "source_id": "mechae-156b", "target_id": "career-aerospace", "edge_type": "leads_to" }
+  ]
+}

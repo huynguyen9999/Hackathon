@@ -36,6 +36,9 @@ function EarlyPreviewBadge() {
 }
 
 function HomeSchoolCard({ school }: { school: SchoolHubCardData }) {
+  const majorCount = school.majorCount ?? 0;
+  const liveGraphs = school.liveGraphs ?? 0;
+
   return (
     <Link
       href={`/schools/${school.short_name}`}
@@ -51,7 +54,12 @@ function HomeSchoolCard({ school }: { school: SchoolHubCardData }) {
         {school.name}
       </h3>
       <p className="mt-2 flex-1 text-sm text-slate-600 dark:text-slate-400">
-        {school.collegesLabel}
+        {majorCount > 0
+          ? `${majorCount} majors cataloged`
+          : school.collegesLabel}
+        {liveGraphs > 0
+          ? ` · ${liveGraphs} live roadmap${liveGraphs !== 1 ? "s" : ""}`
+          : ""}
       </p>
       <span className="mt-4 text-sm font-medium text-gaucho-blue group-hover:text-gaucho-gold dark:text-gaucho-gold">
         Open community hub →
@@ -80,10 +88,12 @@ function PageSchoolCard({ school }: { school: SchoolHubCardData }) {
         {school.name}
       </h2>
       <p className="mt-3 text-sm text-slate-600 dark:text-slate-400">
-        {collegeCount} college
-        {collegeCount !== 1 ? "s" : ""} · {majorCount} majors cataloged
+        {majorCount} majors cataloged
         {liveGraphs > 0
           ? ` · ${liveGraphs} live roadmap${liveGraphs !== 1 ? "s" : ""}`
+          : ""}
+        {collegeCount > 0
+          ? ` · ${collegeCount} college${collegeCount !== 1 ? "s" : ""}`
           : ""}
       </p>
       <span className="mt-4 inline-block text-sm font-medium text-gaucho-blue dark:text-gaucho-gold">

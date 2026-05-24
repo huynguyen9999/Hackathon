@@ -42,33 +42,32 @@
       "major_slug": "eecs",
       "author_name": "cal_breadth",
       "created_at": "2026-02-10T00:00:00Z",
-      "answers": []
+      "answers": [
+        {
+          "id": "demo-ba2",
+          "body": "105 before 120 is the usual path — 105 builds signals fundamentals you'll use in 120. Check the ECE sample program if you're doing design-heavy electives.",
+          "author_name": "verified_bear",
+          "is_verified_student": true,
+          "vote_count": 6
+        }
+      ]
     }
   ],
   "course_reviews": [
-    { "course_code": "COMPSCI 61A", "rating": 4.3, "difficulty": 4.1, "review_count": 42 },
-    { "course_code": "EECS 16A", "rating": 4.0, "difficulty": 3.8, "review_count": 28 },
-    { "course_code": "ELENG 120", "rating": 4.2, "difficulty": 4.4, "review_count": 19 },
-    { "course_code": "COMPSCI 70", "rating": 3.9, "difficulty": 4.6, "review_count": 15 }
+    { "course_code": "COMPSCI 61A", "rating": 4.4, "difficulty": 4.2, "review_count": 31 },
+    { "course_code": "EECS 16A", "rating": 4.1, "difficulty": 4.0, "review_count": 22 },
+    { "course_code": "EECS 16B", "rating": 3.9, "difficulty": 4.3, "review_count": 18 },
+    { "course_code": "ELENG 105", "rating": 4.0, "difficulty": 4.1, "review_count": 14 }
   ],
   "alumni_outcomes": [
-    {
-      "role": "Software Engineer",
-      "company": "Tech company (Bay Area)",
-      "major_slug": "eecs",
-      "grad_year": 2024
-    },
-    {
-      "role": "Hardware Engineer",
-      "company": "Semiconductor startup",
-      "major_slug": "eecs",
-      "grad_year": 2023
-    }
+    { "role": "Software Engineer", "company": "Google", "major_slug": "eecs", "grad_year": 2024 },
+    { "role": "Hardware Engineer", "company": "Apple", "major_slug": "eecs", "grad_year": 2023 },
+    { "role": "Mechanical Design Engineer", "company": "Tesla", "major_slug": "mechanical-engineering", "grad_year": 2025 }
   ],
   "contributor_spotlight": {
-    "display_name": "berkeley_mapper",
-    "bio": "Early preview contributor building the Berkeley EECS interactive roadmap from the 2024-25 Engineering Guide.",
-    "contribution_count": 1,
+    "display_name": "bear_mapper",
+    "bio": "Built the Berkeley EECS interactive roadmap and verified course descriptions from the Engineering Guide.",
+    "contribution_count": 2,
     "school_short_name": "berkeley"
   }
 }

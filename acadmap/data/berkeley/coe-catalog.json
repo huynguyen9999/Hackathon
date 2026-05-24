@@ -110,24 +110,28 @@
         "MATH 51",
         "MATH 52",
         "MATH 53",
+        "MATH 54",
         "PHYSICS 7A",
-        "CHEM 1A",
-        "ENGIN 7"
+        "PHYSICS 7B"
       ],
       "upper_division_required": [
         "CIVENG C30",
         "CIVENG 60",
         "CIVENG 93",
-        "CIVENG 100"
+        "CIVENG 100",
+        "CIVENG Design Course",
+        "CIVENG Technical Electives"
       ],
       "career_outcomes": [
         "Structural Engineer",
         "Transportation Engineer",
-        "Environmental Engineer"
+        "Environmental Engineer",
+        "Construction Project Manager"
       ],
-      "detail_available": false,
-      "requirements_level": "catalog",
-      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+      "detail_available": true,
+      "requirements_level": "gear",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/",
+      "gear_page": 1
     },
     {
       "name": "Electrical Engineering & Computer Sciences",
@@ -367,24 +371,28 @@
         "MATH 51",
         "MATH 52",
         "MATH 53",
+        "MATH 54",
         "PHYSICS 7A",
-        "PHYSICS 7B",
-        "ENGIN 7"
+        "PHYSICS 7B"
       ],
       "upper_division_required": [
         "ME 104",
         "ME 109",
         "ME 130",
-        "ME 132"
+        "ME 132",
+        "ME Design Course",
+        "ME Technical Electives"
       ],
       "career_outcomes": [
-        "Mechanical Engineer",
+        "Mechanical Design Engineer",
         "Robotics Engineer",
-        "Product Design Engineer"
+        "Thermal Systems Engineer",
+        "Aerospace Engineer"
       ],
-      "detail_available": false,
-      "requirements_level": "catalog",
-      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/"
+      "detail_available": true,
+      "requirements_level": "gear",
+      "plan_of_study_url": "https://engineering.berkeley.edu/academics/majors-and-minors/",
+      "gear_page": 1
     },
     {
       "name": "Nuclear Engineering",
